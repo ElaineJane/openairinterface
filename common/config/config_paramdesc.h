@@ -72,7 +72,7 @@ typedef struct paramdef
      uint64_t  *u64ptr;
      int64_t   *i64ptr;
      double    *dblptr;
-     } ;
+     } __attribute__((aligned(8))) ;
    union {                                /* default parameter value, to be used when PARAMFLAG_MANDATORY is not specified */
      char *defstrval;
      char **defstrlistval;
