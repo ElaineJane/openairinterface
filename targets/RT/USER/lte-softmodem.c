@@ -565,7 +565,6 @@ static void get_options(void) {
   paramdef_t cmdline_logparams[] =CMDLINE_LOGPARAMS_DESC ;
 
   config_process_cmdline( cmdline_params,sizeof(cmdline_params)/sizeof(paramdef_t),NULL); 
-  printf("---- value of %s %s\n\n",cmdline_params[0].optname, rf_config_file );
   if (strlen(in_path) > 0) {
       opt_type = OPT_PCAP;
       opt_enabled=1;

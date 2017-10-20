@@ -20,7 +20,7 @@ set(OPENAIR_TARGET_DIR $ENV{OPENAIR_DIR}/targets)
 set(OPENAIR_COMMONUTILS_DIR $ENV{OPENAIR_DIR}/common/utils)
 set(OPENAIR2_COMMON_DIR $ENV{OPENAIR_DIR}/openair2/COMMON)
 set(OPENAIR_ASN1INC  ${OPENAIR_BUILD_DIR}/lte_build_oai/build/CMakeFiles/Rel14)
-set(OPENAIR_NFAPIINC $ENV{NFAPI_DIR} )
+set(OPENAIR_NFAPIINC  ${OPENAIR_DIR}/nfapi )
 
 set(CMAKE_INSTALL_PREFIX $ENV{OPENAIR_TARGETS})
 
@@ -40,6 +40,7 @@ set(TELNETSRV_SOURCE
     ${APPROOT}/telnetsrv.c
     ${APPROOT}/telnetsrv_phycmd.c
     ${APPROOT}/telnetsrv_proccmd.c
+    ${APPROOT}/telnetsrv_loader.c
     )
 
 #set(TELNETSRV_ETHDEVCMD_SOURCE

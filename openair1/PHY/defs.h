@@ -1526,6 +1526,24 @@ typedef struct RRU_config_s {
 } RRU_config_t;
 
 
+typedef uint8_t(*decoder_if_t)(int16_t *,
+    		    uint8_t *,
+    		    uint16_t,
+    		    uint16_t,
+    		    uint16_t,
+    		    uint8_t,
+    		    uint8_t,
+    		    uint8_t,
+    		    time_stats_t *,
+    		    time_stats_t *,
+    		    time_stats_t *,
+    		    time_stats_t *,
+    		    time_stats_t *,
+    		    time_stats_t *,
+    		    time_stats_t *);
+
+
+
 static inline void wait_sync(char *thread_name) {
 
   printf( "waiting for sync (%s)\n",thread_name);

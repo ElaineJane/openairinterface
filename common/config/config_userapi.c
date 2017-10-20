@@ -50,9 +50,8 @@ configmodule_interface_t *config_get_if(void)
 char * config_check_valptr(paramdef_t *cfgoptions, char **ptr, int length) 
 {
 
-     printf_ptrs("-- %s ptr: 0x%08lx requested size: %i\n",cfgoptions->optname,(uintptr_t)(ptr),length);
+     printf_ptrs("[CONFIG] %s ptr: 0x%08lx requested size: %i\n",cfgoptions->optname,(uintptr_t)(ptr),length);
      if(cfgoptions->numelt > 0) { /* already allocated */
-          printf("Already allocated...\n");
           return *ptr;
      }
 

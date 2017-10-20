@@ -57,7 +57,7 @@
 
 #include "telnetsrv_phycmd.h"
 #include "telnetsrv_proccmd.h"	
-static char* telnet_defstatmod[] = {"softmodem","phy"}; 
+static char* telnet_defstatmod[] = {"softmodem","phy","loader"}; 
 static telnetsrv_params_t telnetparams;
 #define TELNETSRV_LISTENADDR 0
 #define TELNETSRV_LISTENPORT 1
@@ -77,8 +77,8 @@ paramdef_t telnetoptions[] = {
 	{"loopcount",     "<loop command iterations>",   0,                 uptr:&(telnetparams.loopcount),       defuintval:10,                  TYPE_UINT,      0 },
 	{"loopdelay",     "<loop command delay (ms)>",   0,                 uptr:&(telnetparams.loopdelay),       defuintval:5000,                TYPE_UINT,      0 },
 	{"phypbsize",     "<phy dump buff size (bytes)>",0,                 uptr:&(telnetparams.phyprntbuff_size),defuintval:65000,               TYPE_UINT,      0 },
-        {"staticmod",     "<static modules selection>",  0,                 NULL,                                 defstrlistval:telnet_defstatmod,TYPE_STRINGLIST,1},
-        {"shrmod",        "<static modules selection>",  0,                 NULL,                                 NULL,TYPE_STRINGLIST,0 },
+        {"staticmod",     "<static modules selection>",  0,                 NULL,                                 defstrlistval:telnet_defstatmod,TYPE_STRINGLIST,3},
+        {"shrmod",        "<shared modules selection>",  0,                 NULL,                                 NULL,TYPE_STRINGLIST,0 },
 };
 
 int get_phybsize() {return telnetparams.phyprntbuff_size; };
@@ -642,7 +642,7 @@ void (*fptr)();
        }
 }
 
-int init_telnetsrv(char *cfgfile)
+int telnetsrv_autoinit(char *cfgfile)
  {
   void *lib_handle;
   char** moduleslist; 
