@@ -272,7 +272,7 @@ void pdsch_procedures(PHY_VARS_eNB *eNB,
 
   if (dlsch->rnti == 0x02) {//frame < 200) {
 
-    LOG_I(PHY,
+    LOG_D(PHY,
 	  "[eNB %"PRIu8"][PDSCH %"PRIx16"/%"PRIu8"] Frame %d, subframe %d: Generating PDSCH/DLSCH with input size = %"PRIu16", pdsch_start %d, G %d, nb_rb %"PRIu16", rb0 %x, rb1 %x, TBS %"PRIu16", pmi_alloc %"PRIx64", rv %"PRIu8" (round %"PRIu8")\n",
 	  eNB->Mod_id, dlsch->rnti,harq_pid,
 	  frame, subframe, input_buffer_length, dlsch_harq->pdsch_start,
@@ -748,8 +748,8 @@ void fill_sr_indication(PHY_VARS_eNB *eNB,uint16_t rnti,int frame,int subframe,u
   //  pdu->rx_ue_information.handle                       = handle;
   pdu->rx_ue_information.rnti                         = rnti;
 
-  int SNRtimes10 = dB_fixed_times10(stat) - 10*max(eNB->measurements.n0_subband_power_tot_dB[0],
-                                                   eNB->measurements.n0_subband_power_tot_dB[eNB->frame_parms.N_RB_UL-1]);
+  int SNRtimes10 = dB_fixed_times10(stat) - max(eNB->measurements.n0_subband_power_tot_dB[0],
+                                                eNB->measurements.n0_subband_power_tot_dB[eNB->frame_parms.N_RB_UL-1]);
 
   if      (SNRtimes10 < -640) pdu->ul_cqi_information.ul_cqi=0;
   else if (SNRtimes10 >  635) pdu->ul_cqi_information.ul_cqi=255;
@@ -1545,8 +1545,7 @@ void fill_rx_indication(PHY_VARS_eNB *eNB,int UE_id,int frame,int subframe)
 
   // estimate UL_CQI for MAC (from antenna port 0 only)
   int SNRtimes10 = dB_fixed_times10(eNB->pusch_vars[UE_id]->ulsch_power[0]) - 
-                   10*max(eNB->measurements.n0_subband_power_tot_dB[0],
-                          eNB->measurements.n0_subband_power_tot_dB[eNB->frame_parms.N_RB_UL-1]);
+                   dB_fixed_times10(eNB->measurements.n0_power_tot);
 
   if      (SNRtimes10 < -640) pdu->rx_indication_rel8.ul_cqi=0;
   else if (SNRtimes10 >  635) pdu->rx_indication_rel8.ul_cqi=255;
@@ -1757,10 +1756,10 @@ void fill_uci_harq_indication(PHY_VARS_eNB *eNB,
   pdu->rx_ue_information.rnti                         = uci->rnti;
 
   // estimate UL_CQI for MAC (from antenna port 0 only)
-  int SNRtimes10 = dB_fixed_times10(uci->stat) - 10*max(eNB->measurements.n0_subband_power_tot_dB[0],
-                                                        eNB->measurements.n0_subband_power_tot_dB[eNB->frame_parms.N_RB_UL-1]);
+  int SNRtimes10 = dB_fixed_times10(uci->stat) - max(eNB->measurements.n0_subband_power_tot_dB[0],
+                                                     eNB->measurements.n0_subband_power_tot_dB[eNB->frame_parms.N_RB_UL-1]);
 
-  if (SNRtimes10 < -100) LOG_I(PHY,"uci->stat %d \n",uci->stat);
+  if (SNRtimes10 < -100) LOG_D(PHY,"uci->stat %d \n",uci->stat);
 
   if      (SNRtimes10 < -640) pdu->ul_cqi_information.ul_cqi=0;
   else if (SNRtimes10 >  635) pdu->ul_cqi_information.ul_cqi=255;
@@ -1948,7 +1947,6 @@ void phy_procedures_eNB_uespec_RX(PHY_VARS_eNB *eNB,eNB_rxtx_proc_t *proc,const 
   // Call SRS first since all others depend on presence of SRS or lack thereof
   srs_procedures(eNB,proc);
 
-  eNB->first_run_I0_measurements = 0;
 
   uci_procedures(eNB,proc);
 
@@ -1958,16 +1956,16 @@ void phy_procedures_eNB_uespec_RX(PHY_VARS_eNB *eNB,eNB_rxtx_proc_t *proc,const 
                           subframe,
                           0,
                           eNB->first_run_I0_measurements);
+  eNB->first_run_I0_measurements = 0;
 
   int min_I0=1000,max_I0=0;
   if ((frame==0) && (subframe==2)) { 
     for (int i=0;i<eNB->frame_parms.N_RB_UL;i++) {
-      if (i==(eNB->frame_parms.N_RB_UL>>1) - 1) i+=2;
  
       if (eNB->measurements.n0_subband_power_tot_dB[i]<min_I0) min_I0 = eNB->measurements.n0_subband_power_tot_dB[i];
       if (eNB->measurements.n0_subband_power_tot_dB[i]>max_I0) max_I0 = eNB->measurements.n0_subband_power_tot_dB[i];
     }
-    LOG_I(PHY,"max_I0 %d, min_I0 %d\n",max_I0,min_I0);
+    LOG_I(PHY,"max_I0 %2.1f, min_I0 %2.1f, avg_I0 %2.1f\n",max_I0/10.0,min_I0/10.0,dB_fixed_times10(eNB->measurements.n0_power_tot)/10.0);
   }
 
   

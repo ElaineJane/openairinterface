@@ -1183,7 +1183,7 @@ schedule_ue_spec(
 
           /* TODO: fix how we deal with power, unit is not dBm, it's special from nfapi */
 	  normalized_rx_power = ue_sched_ctl->pucch1_snr[CC_id];
-	  target_rx_power = 208;
+	  target_rx_power = 178;
 	    
           // this assumes accumulated tpc
 	  // make sure that we are only sending a tpc update once a frame, otherwise the control loop will freak out

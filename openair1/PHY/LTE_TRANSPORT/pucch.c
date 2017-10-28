@@ -1803,7 +1803,7 @@ uint32_t rx_pucch(PHY_VARS_eNB *eNB,
   //  PUCCH_CONFIG_DEDICATED *pucch_config_dedicated = &eNB->pucch_config_dedicated[UE_id];
 
   int8_t sigma2_dB                                   = max(eNB->measurements.n0_subband_power_tot_dB[0],
-                                                           eNB->measurements.n0_subband_power_tot_dB[eNB->frame_parms.N_RB_UL-1]);
+                                                           eNB->measurements.n0_subband_power_tot_dB[eNB->frame_parms.N_RB_UL-1])/10;
 
   uint32_t u,v,n,aa;
   uint32_t z[12*14];

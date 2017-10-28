@@ -405,7 +405,7 @@ void wakeup_prach_eNB(PHY_VARS_eNB *eNB,RU_t *ru,int frame,int subframe) {
     
   // check if we have to detect PRACH first
   if (is_prach_subframe(fp,frame,subframe)>0) { 
-    LOG_I(PHY,"Triggering prach processing, frame %d, subframe %d\n",frame,subframe);
+    LOG_D(PHY,"Triggering prach processing, frame %d, subframe %d\n",frame,subframe);
     if (proc->instance_cnt_prach == 0) {
       LOG_W(PHY,"[eNB] Frame %d Subframe %d, dropping PRACH\n", frame,subframe);
       return;
@@ -944,6 +944,7 @@ void init_eNB(int single_thread_flag,int wait_for_sync) {
       eNB->UL_INFO.cqi_ind.cqi_pdu_list = eNB->cqi_pdu_list;
       eNB->UL_INFO.cqi_ind.cqi_raw_pdu_list = eNB->cqi_raw_pdu_list;
       eNB->prach_energy_counter = 0;
+      eNB->first_run_I0_measurements = 1;
     }
 
   }

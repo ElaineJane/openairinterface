@@ -1207,7 +1207,7 @@ void initiate_ra_proc(module_id_t module_idP,
     ext4_prach=cc->radioResourceConfigCommon_BR->ext4->prach_ConfigCommon_v1310;
     prach_ParametersListCE_r13= &ext4_prach->prach_ParametersListCE_r13;
   }
-  LOG_I(MAC,"[eNB %d][RAPROC] CC_id %d Frame %d, Subframe %d  Initiating RA procedure for preamble index %d\n",module_idP,CC_id,frameP,subframeP,preamble_index);
+  LOG_D(MAC,"[eNB %d][RAPROC] CC_id %d Frame %d, Subframe %d  Initiating RA procedure for preamble index %d\n",module_idP,CC_id,frameP,subframeP,preamble_index);
 #ifdef Rel14
   LOG_D(MAC,"[eNB %d][RAPROC] CC_id %d Frame %d, Subframe %d  PRACH resource type %d\n",module_idP,CC_id,frameP,subframeP,rach_resource_type);
 #endif
