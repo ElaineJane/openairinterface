@@ -826,6 +826,8 @@ void schedule_ulsch(module_id_t module_idP,
       }
     }
   }
+  // check for PRACH in this subframe and avoid PRBs
+  set_ul_mask_for_prach(module_idP, frameP, subframeP, sched_subframe);
 
   schedule_ulsch_rnti(module_idP, frameP, subframeP, sched_subframe,first_rb);
 

@@ -143,6 +143,8 @@ uint16_t mac_computeRIV(uint16_t N_RB_DL,uint16_t RBstart,uint16_t Lcrbs);
 
 void add_msg3(module_id_t module_idP,int CC_id, RA_TEMPLATE *RA_template, frame_t frameP, sub_frame_t subframeP);
 
+void set_ul_mask_for_prach(module_id_t module_idP, frame_t frameP, sub_frame_t subframeP, sub_frame_t sched_subframeP);
+
 //main.c
 
 int mac_top_init(int eMBMS_active, char *uecap_xer,uint8_t cba_group_active, uint8_t HO_active);
