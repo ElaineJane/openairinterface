@@ -156,6 +156,9 @@ void handle_ulsch(UL_IND_t *UL_info) {
 #define C do { size = 0; put(0); } while (0)
 #define A(...) do { char t[4096]; sprintf(t, __VA_ARGS__); append_string(t); } while (0)
 
+#if 0
+
+/* eats lots of ms at startup, disrupts realtime */
 static char *s;
 static int size;
 static int maxsize;
@@ -168,6 +171,22 @@ static void put(char x)
   }
   s[size++] = x;
 }
+
+#else
+
+/* eats nothing at startup, but fixed size */
+#define SMAX 65536
+static char s[SMAX];
+static int size;
+static int maxsize = SMAX;
+
+static void put(char x)
+{
+  if (size == maxsize) { printf("incrase SMAX\n"); exit(1); }
+  s[size++] = x;
+}
+
+#endif
 
 static void append_string(char *t)
 {
@@ -365,6 +384,14 @@ static void dump_dl(Sched_Rsp_t *d)
   A("XXXX up          dl_assignment_index  %d\n", q->dl_assignment_index);
   A("XXXX up          tpc_bitmap           %d\n", q->tpc_bitmap);
   A("XXXX up          transmission_power   %d\n", q->transmission_power);
+          }
+          if (p->pdu_type == NFAPI_HI_DCI0_HI_PDU_TYPE) {
+            nfapi_hi_dci0_hi_pdu_rel8_t *q = &p->hi_pdu.hi_pdu_rel8;
+  A("XXXX up          rb start    %d\n", q->resource_block_start);
+  A("XXXX up          cs2_drms    %d\n", q->cyclic_shift_2_for_drms);
+  A("XXXX up          ack         %d\n", q->hi_value);
+  A("XXXX up          i_phich     %d\n", q->i_phich);
+  A("XXXX up          power       %d\n", q->transmission_power);
           }
         }
       }
