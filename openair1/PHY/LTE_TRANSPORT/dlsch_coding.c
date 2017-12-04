@@ -752,7 +752,7 @@ int dlsch_encoding_all(PHY_VARS_eNB *eNB,
 		}
 	}
 
-	if(C >= 5)
+	if(0/*C >= 5*/)
 		{
 		encoding_return =
 		dlsch_encoding_2threads(eNB,
