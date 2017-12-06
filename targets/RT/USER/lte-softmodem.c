@@ -385,6 +385,8 @@ static void *scope_thread(void *arg) {
   int UE_id, CC_id;
   int ue_cnt=0;
 
+  //eNB_proc_t *eNB_proc  = (eNB_proc_t*)arg;
+
   sched_param.sched_priority = sched_get_priority_min(SCHED_FIFO)+1;
   sched_setscheduler(0, SCHED_FIFO,&sched_param);
 
@@ -400,6 +402,10 @@ static void *scope_thread(void *arg) {
 #endif
 
   while (!oai_exit) {
+
+    //if (wait_on_condition(&proc->mutex_rxtx,&proc->cond_rxtx,&proc->instance_cnt_rxtx,thread_name)<0) break;
+    //if (oai_exit) break;    
+
     if (UE_flag==1) {
       dump_ue_stats (PHY_vars_UE_g[0][0], &PHY_vars_UE_g[0][0]->proc.proc_rxtx[0],stats_buffer, 0, mode,rx_input_level_dBm);
       //fl_set_object_label(form_stats->stats_text, stats_buffer);
@@ -1179,73 +1185,13 @@ int main( int argc, char **argv )
   }
   
   
-  
-  
   mlockall(MCL_CURRENT | MCL_FUTURE);
   
   pthread_cond_init(&sync_cond,NULL);
   pthread_mutex_init(&sync_mutex, NULL);
   
-#ifdef XFORMS
-  int UE_id;
-  
-  if (do_forms==1) {
-    fl_initialize (&argc, argv, NULL, 0, 0);
-    
-    if (UE_flag==0) {
-      form_stats_l2 = create_form_stats_form();
-      fl_show_form (form_stats_l2->stats_form, FL_PLACE_HOTSPOT, FL_FULLBORDER, "l2 stats");
-      form_stats = create_form_stats_form();
-      fl_show_form (form_stats->stats_form, FL_PLACE_HOTSPOT, FL_FULLBORDER, "stats");
-      
-      for(UE_id=0; UE_id<scope_enb_num_ue; UE_id++) {
-	for(CC_id=0; CC_id<MAX_NUM_CCs; CC_id++) {
-	  form_enb[CC_id][UE_id] = create_lte_phy_scope_enb();
-	  sprintf (title, "LTE UL SCOPE eNB for CC_id %d, UE %d",CC_id,UE_id);
-	  fl_show_form (form_enb[CC_id][UE_id]->lte_phy_scope_enb, FL_PLACE_HOTSPOT, FL_FULLBORDER, title);
-	  
-	  if (otg_enabled) {
-	    fl_set_button(form_enb[CC_id][UE_id]->button_0,1);
-	    fl_set_object_label(form_enb[CC_id][UE_id]->button_0,"DL Traffic ON");
-	  } else {
-	    fl_set_button(form_enb[CC_id][UE_id]->button_0,0);
-	    fl_set_object_label(form_enb[CC_id][UE_id]->button_0,"DL Traffic OFF");
-	  }
-	} // CC_id
-      } // UE_id
-    } else {
-      form_stats = create_form_stats_form();
-      fl_show_form (form_stats->stats_form, FL_PLACE_HOTSPOT, FL_FULLBORDER, "stats");
-      UE_id = 0;
-      form_ue[UE_id] = create_lte_phy_scope_ue();
-      sprintf (title, "LTE DL SCOPE UE");
-      fl_show_form (form_ue[UE_id]->lte_phy_scope_ue, FL_PLACE_HOTSPOT, FL_FULLBORDER, title);
-      
-      /*
-	if (openair_daq_vars.use_ia_receiver) {
-	fl_set_button(form_ue[UE_id]->button_0,1);
-	fl_set_object_label(form_ue[UE_id]->button_0, "IA Receiver ON");
-	} else {
-	fl_set_button(form_ue[UE_id]->button_0,0);
-	fl_set_object_label(form_ue[UE_id]->button_0, "IA Receiver OFF");
-	}*/
-      fl_set_button(form_ue[UE_id]->button_0,0);
-      fl_set_object_label(form_ue[UE_id]->button_0, "IA Receiver OFF");
-    }
-    
-    ret = pthread_create(&forms_thread, NULL, scope_thread, NULL);
-    
-    if (ret == 0)
-      pthread_setname_np( forms_thread, "xforms" );
-    
-    printf("Scope thread created, ret=%d\n",ret);
-  }
-  
-#endif
   
   rt_sleep_ns(10*100000000ULL);
-  
-  
   
   
   // start the main threads
@@ -1322,7 +1268,62 @@ int main( int argc, char **argv )
     
   }
   
+#ifdef XFORMS
+  int UE_id;
   
+  if (do_forms==1) {
+    fl_initialize (&argc, argv, NULL, 0, 0);
+    
+    if (UE_flag==0) {
+      form_stats_l2 = create_form_stats_form();
+      fl_show_form (form_stats_l2->stats_form, FL_PLACE_HOTSPOT, FL_FULLBORDER, "l2 stats");
+      form_stats = create_form_stats_form();
+      fl_show_form (form_stats->stats_form, FL_PLACE_HOTSPOT, FL_FULLBORDER, "stats");
+      
+      for(UE_id=0; UE_id<scope_enb_num_ue; UE_id++) {
+	for(CC_id=0; CC_id<MAX_NUM_CCs; CC_id++) {
+	  form_enb[CC_id][UE_id] = create_lte_phy_scope_enb();
+	  sprintf (title, "LTE UL SCOPE eNB for CC_id %d, UE %d",CC_id,UE_id);
+	  fl_show_form (form_enb[CC_id][UE_id]->lte_phy_scope_enb, FL_PLACE_HOTSPOT, FL_FULLBORDER, title);
+	  
+	  if (otg_enabled) {
+	    fl_set_button(form_enb[CC_id][UE_id]->button_0,1);
+	    fl_set_object_label(form_enb[CC_id][UE_id]->button_0,"DL Traffic ON");
+	  } else {
+	    fl_set_button(form_enb[CC_id][UE_id]->button_0,0);
+	    fl_set_object_label(form_enb[CC_id][UE_id]->button_0,"DL Traffic OFF");
+	  }
+	} // CC_id
+      } // UE_id
+    } else {
+      form_stats = create_form_stats_form();
+      fl_show_form (form_stats->stats_form, FL_PLACE_HOTSPOT, FL_FULLBORDER, "stats");
+      UE_id = 0;
+      form_ue[UE_id] = create_lte_phy_scope_ue();
+      sprintf (title, "LTE DL SCOPE UE");
+      fl_show_form (form_ue[UE_id]->lte_phy_scope_ue, FL_PLACE_HOTSPOT, FL_FULLBORDER, title);
+      
+      /*
+	if (openair_daq_vars.use_ia_receiver) {
+	fl_set_button(form_ue[UE_id]->button_0,1);
+	fl_set_object_label(form_ue[UE_id]->button_0, "IA Receiver ON");
+	} else {
+	fl_set_button(form_ue[UE_id]->button_0,0);
+	fl_set_object_label(form_ue[UE_id]->button_0, "IA Receiver OFF");
+	}*/
+      fl_set_button(form_ue[UE_id]->button_0,0);
+      fl_set_object_label(form_ue[UE_id]->button_0, "IA Receiver OFF");
+    }
+    
+    ret = pthread_create(&forms_thread, NULL, scope_thread, NULL);
+    
+    if (ret == 0)
+      pthread_setname_np( forms_thread, "xforms" );
+    
+    printf("Scope thread created, ret=%d\n",ret);
+  }
+  
+#endif
   
   
   printf("Sending sync to all threads\n");
