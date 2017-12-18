@@ -22,7 +22,7 @@
 #ifndef FLEXRAN_MESSAGES_TYPES_H_
 #define FLEXRAN_MESSAGES_TYPES_H_
 
-#include "flexran_agent_defs.h"
+//#include "flexran_agent_defs.h"
 
 #define FLEXRAN_ENB_VARS_IND(mSGpTR) (mSGpTR)->ittiMsg.flexran_enb_vars_ind
 
