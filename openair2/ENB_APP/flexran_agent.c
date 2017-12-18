@@ -58,6 +58,7 @@ void *flexran_agent_task(void *args){
   int size;
   err_code_t err_code;
   int                   priority = 0;
+  uint8_t enb_id;
 
   MessageDef                     *msg_p           = NULL;
   const char                     *msg_name        = NULL;
@@ -81,7 +82,14 @@ void *flexran_agent_task(void *args){
     case MESSAGE_TEST:
       LOG_I(FLEXRAN_AGENT, "Received %s\n", ITTI_MSG_NAME(msg_p));
       break;
-    
+
+    case RECONFIGURE_FLEXRAN_ENB_VARS:
+      for (enb_id = FLEXRAN_ENB_VARS_IND(msg_p).eNB_index_start;
+            enb_id = FLEXRAN_ENB_VARS_IND(msg_p).eNB_index_end; enb_id++) {
+        flexran_set_enb_vars(enb_i, FLEXRAN_ENB_VARS_IND(msg_p).ran_name);
+      }
+      break;
+
     case TIMER_HAS_EXPIRED:
       msg = flexran_agent_process_timeout(msg_p->ittiMsg.timer_has_expired.timer_id, msg_p->ittiMsg.timer_has_expired.arg);
       if (msg != NULL){

@@ -1576,6 +1576,12 @@ int restart_L1L2(int enb_id)
     LOG_I(PDCP, "Re-created task for L2L1 successfully\n");
   }
 
+  msg = itti_alloc_new_message (ENB_APP, RECONFIGURE_FLEXRAN_ENB_VARS);
+  RECONFIGURE_FLEXRAN_ENB_VARS(msg).eNB_index_start = 0;
+  RECONFIGURE_FLEXRAN_ENB_VARS(msg).eNB_index_end   = NB_eNB_INST;
+  RECONFIGURE_FLEXRAN_ENB_VARS(msg).ran_name        = RAN_LTE_OAI;
+  itti_send_msg_to_task (FLEXRAN_AGENT, ENB_MODULE_ID_TO_INSTANCE(0), msg);
+
   /* TODO XForms here */
 
   printf("Initializing eNB threads\n");
@@ -1611,6 +1617,9 @@ int main( int argc, char **argv ) {
     int i,aa;
 #if defined (XFORMS)
     void *status;
+#endif
+#if defined (ENABLE_ITTI) && defined (FLEXRAN_AGENT_SB_IF)
+    MessageDef *msg;
 #endif
 
     int CC_id;
@@ -1809,11 +1818,8 @@ int main( int argc, char **argv ) {
       pthread_cond_wait(&cond_node_ctrl, &mutex_node_ctrl);
     pthread_mutex_unlock(&mutex_node_ctrl);
 
-    /* reconfigure eNB in case FlexRAN controller applied changes */
-    for (i=0; i < NB_eNB_INST; i++){
-      LOG_I(ENB_APP, "Reconfigure eNB module %d and FlexRAN eNB variables\n", i);
+    for (i = 0; i <NB_eNB_INST; i++) {
       reconfigure_enb_params(i);
-      flexran_set_enb_vars(i, RAN_LTE_OAI);
     }
 #endif
 
@@ -1979,6 +1985,15 @@ int main( int argc, char **argv ) {
         }
 
     printf("ITTI tasks created\n");
+
+#if defined FLEXRAN_AGENT_SB_IF
+    /* inform FlexRAN that RRC/MAC are now configured */
+    msg = itti_alloc_new_message (ENB_APP, RECONFIGURE_FLEXRAN_ENB_VARS);
+    RECONFIGURE_FLEXRAN_ENB_VARS(msg).eNB_index_start = 0;
+    RECONFIGURE_FLEXRAN_ENB_VARS(msg).eNB_index_end   = NB_eNB_INST;
+    RECONFIGURE_FLEXRAN_ENB_VARS(msg).ran_name        = RAN_LTE_OAI;
+    itti_send_msg_to_task (FLEXRAN_AGENT, ENB_MODULE_ID_TO_INSTANCE(0), msg);
+#endif
 #endif
 
     if (phy_test==0) {

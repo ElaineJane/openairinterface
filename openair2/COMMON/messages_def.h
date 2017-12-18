@@ -33,6 +33,9 @@
 #if ENABLE_RAL
 #include "ral_messages_def.h"
 #endif
+#if FLEXRAN_AGENT_SB_IF
+#include "flexran_messages_def.h"
+#endif
 #include "s1ap_messages_def.h"
 #include "x2ap_messages_def.h"
 #include "sctp_messages_def.h"
