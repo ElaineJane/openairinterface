@@ -620,7 +620,7 @@ dlsch_scheduler_pre_processor(module_id_t Mod_id,
 	    if (UE_list->active[i] != TRUE)
 		continue;
 
-            if (!flexran_slice_member(UE_id, slice_id))
+            if (!flexran_slice_member(i, slice_id))
                 continue;
 
 	    UE_id = i;
@@ -730,6 +730,7 @@ dlsch_scheduler_pre_processor(module_id_t Mod_id,
 					   message.dl_Bandwidth) - total_rbs_used[CC_id];
 
 			//recalcualte based on the what is left after retransmission
+			ue_sched_ctl = &UE_list->UE_sched_ctrl[UE_id];
                         /* TODO Navid: as above */
 			ue_sched_ctl->max_rbs_allowed_slice[CC_id][slice_id]= flexran_nb_rbs_allowed_slice(slice_percentage[slice_id],N_RB_DL);
 
