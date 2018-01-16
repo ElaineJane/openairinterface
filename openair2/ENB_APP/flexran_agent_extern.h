@@ -30,11 +30,10 @@
 #ifndef __FLEXRAN_AGENT_EXTERN_H__
 #define __FLEXRAN_AGENT_EXTERN_H__
 
-// #include "flexran_agent_defs.h"
+#include "flexran_agent_defs.h"
 #include "flexran_agent_mac_defs.h"
 #include "flexran_agent_rrc_defs.h"
 #include "flexran_agent_pdcp_defs.h"
-#include "common/ran_context.h"
 
 /* Control module interface for the communication of the MAC Control Module with the agent */
 extern AGENT_MAC_xface *agent_mac_xface[NUM_MAX_ENB];
@@ -54,8 +53,14 @@ extern AGENT_PDCP_xface *agent_pdcp_xface[NUM_MAX_ENB];
 /* Flag indicating whether the VSFs for the RRC control module have been registered */
 extern unsigned int pdcp_agent_registered[NUM_MAX_ENB];
 
+/* TODO Navid: Used NUMBER_OF_UE_MAX which is defined in PHY/defs.h leading to
+ * circular dependency of includes, leaving RAN_CONTEXT_t undefined on first
+ * occurence. Omitting this includes leaves us without NUMBER_OF_UE_MAX, but
+ * using NUM_MAX_UE from flexran_agent_defs.h (like NUM_MAX_ENB) solves this
+ * (but this is a problem, since we do not use the same variables, which could
+ * lead to nasty problems). Should both usages be unified? */
 /* Requried to know which UEs had a harq updated over some subframe */
-extern int harq_pid_updated[NUMBER_OF_UE_MAX][8];
-extern int harq_pid_round[NUMBER_OF_UE_MAX][8];
+extern int harq_pid_updated[NUM_MAX_UE][8];
+extern int harq_pid_round[NUM_MAX_UE][8];
 
 #endif
