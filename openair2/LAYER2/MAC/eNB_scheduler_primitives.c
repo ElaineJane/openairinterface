@@ -61,7 +61,6 @@
 #define ENABLE_MAC_PAYLOAD_DEBUG
 #define DEBUG_eNB_SCHEDULER 1
 
-
 //------------------------------------------------------------------------------
 void init_ue_sched_info(void)
 //------------------------------------------------------------------------------
@@ -262,6 +261,9 @@ void dump_ue_list(UE_list_t *listP, int ul_flag)
     }
   }
 }
+
+
+//---------------------
 
 int add_new_ue(module_id_t mod_idP, int cc_idP, rnti_t rntiP,int harq_pidP)
 {

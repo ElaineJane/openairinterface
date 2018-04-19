@@ -168,6 +168,7 @@ typedef struct {
   uint8_t codeword;
 } LTE_DL_eNB_HARQ_t;
 
+
 typedef struct {
   /// Indicator of first transmission
   uint8_t first_tx;
@@ -805,6 +806,10 @@ typedef struct {
   uint8_t dci_pdu[8];
 } DCI_ALLOC_t;
 
+
+
+
+//---------------------------------------------------------------------------------------
 
 /**@}*/
 #endif

@@ -148,6 +148,217 @@ PHY_VARS_eNB* init_lte_eNB(LTE_DL_FRAME_PARMS *frame_parms,
   return (PHY_vars_eNB);
 }
 
+
+
+PHY_VARS_eNB_NB_IoT* init_lte_eNB_NB_IoT(NB_IoT_DL_FRAME_PARMS *frame_parms,
+                                         uint8_t eNB_id,
+                                         uint8_t Nid_cell,
+                                         eNB_func_NB_IoT_t node_function,
+                                         uint8_t abstraction_flag)
+{
+
+  //int i;
+  PHY_VARS_eNB_NB_IoT* PHY_vars_eNB = malloc(sizeof(PHY_VARS_eNB_NB_IoT));
+  memset(PHY_vars_eNB,0,sizeof(PHY_VARS_eNB_NB_IoT));
+  PHY_vars_eNB->Mod_id=eNB_id;
+  PHY_vars_eNB->cooperation_flag=0;//cooperation_flag;
+  memcpy(&(PHY_vars_eNB->frame_parms), frame_parms, sizeof(NB_IoT_DL_FRAME_PARMS));
+  PHY_vars_eNB->frame_parms.Nid_cell = ((Nid_cell/3)*3)+((eNB_id+Nid_cell)%3);
+  PHY_vars_eNB->frame_parms.nushift = PHY_vars_eNB->frame_parms.Nid_cell%6;
+  phy_init_lte_eNB_NB_IoT(PHY_vars_eNB,0,abstraction_flag);
+
+  /*LOG_I(PHY,"init eNB: Node Function %d\n",node_function);
+  LOG_I(PHY,"init eNB: Nid_cell %d\n", frame_parms->Nid_cell);
+  LOG_I(PHY,"init eNB: frame_type %d,tdd_config %d\n", frame_parms->frame_type,frame_parms->tdd_config);
+  LOG_I(PHY,"init eNB: number of ue max %d number of enb max %d number of harq pid max %d\n",
+        NUMBER_OF_UE_MAX, NUMBER_OF_eNB_MAX, NUMBER_OF_HARQ_PID_MAX);
+  LOG_I(PHY,"init eNB: N_RB_DL %d\n", frame_parms->N_RB_DL);
+  LOG_I(PHY,"init eNB: prach_config_index %d\n", frame_parms->prach_config_common.prach_ConfigInfo.prach_ConfigIndex);
+  */
+/*
+  if (node_function >= NGFI_RRU_IF5)
+    // For RRU, don't allocate DLSCH/ULSCH Transport channel buffers
+    return (PHY_vars_eNB);
+
+*/
+  /*
+  for (i=0; i<NUMBER_OF_UE_MAX_NB_IoT; i++) {
+    LOG_I(PHY,"Allocating Transport Channel Buffers for DLSCH, UE %d\n",i);
+    for (j=0; j<2; j++) {
+      PHY_vars_eNB->dlsch[i][j] = new_eNB_dlsch(1,8,NSOFT,frame_parms->N_RB_DL,abstraction_flag,frame_parms);
+      if (!PHY_vars_eNB->dlsch[i][j]) {
+  LOG_E(PHY,"Can't get eNB dlsch structures for UE %d \n", i);
+  exit(-1);
+      } else {
+  LOG_D(PHY,"dlsch[%d][%d] => %p\n",i,j,PHY_vars_eNB->dlsch[i][j]);
+  PHY_vars_eNB->dlsch[i][j]->rnti=0;
+      }
+    }
+    
+    LOG_I(PHY,"Allocating Transport Channel Buffer for ULSCH, UE %d\n", i);
+    PHY_vars_eNB->ulsch[1+i] = new_eNB_ulsch(MAX_TURBO_ITERATIONS,frame_parms->N_RB_UL, abstraction_flag);
+    
+    if (!PHY_vars_eNB->ulsch[1+i]) {
+      LOG_E(PHY,"Can't get eNB ulsch structures\n");
+      exit(-1);
+    }
+    
+*/
+
+    // this is the transmission mode for the signalling channels
+    // this will be overwritten with the real transmission mode by the RRC once the UE is connected
+    PHY_vars_eNB->transmission_mode[0] =  1 ;
+/*#ifdef LOCALIZATION
+    PHY_vars_eNB->ulsch[1+i]->aggregation_period_ms = 5000; // 5000 milliseconds // could be given as an argument (TBD))
+    struct timeval ts;
+    gettimeofday(&ts, NULL);
+    PHY_vars_eNB->ulsch[1+i]->reference_timestamp_ms = ts.tv_sec * 1000 + ts.tv_usec / 1000;
+    int j;
+    
+    for (j=0; j<10; j++) {
+      initialize(&PHY_vars_eNB->ulsch[1+i]->loc_rss_list[j]);
+      initialize(&PHY_vars_eNB->ulsch[1+i]->loc_rssi_list[j]);
+      initialize(&PHY_vars_eNB->ulsch[1+i]->loc_subcarrier_rss_list[j]);
+      initialize(&PHY_vars_eNB->ulsch[1+i]->loc_timing_advance_list[j]);
+      initialize(&PHY_vars_eNB->ulsch[1+i]->loc_timing_update_list[j]);
+    }
+    
+    initialize(&PHY_vars_eNB->ulsch[1+i]->tot_loc_rss_list);
+    initialize(&PHY_vars_eNB->ulsch[1+i]->tot_loc_rssi_list);
+    initialize(&PHY_vars_eNB->ulsch[1+i]->tot_loc_subcarrier_rss_list);
+    initialize(&PHY_vars_eNB->ulsch[1+i]->tot_loc_timing_advance_list);
+    initialize(&PHY_vars_eNB->ulsch[1+i]->tot_loc_timing_update_list);
+#endif*/
+ // }
+ 
+  /*
+  // ULSCH for RA
+  PHY_vars_eNB->ulsch[0] = new_eNB_ulsch(MAX_TURBO_ITERATIONS, frame_parms->N_RB_UL, abstraction_flag);
+  
+  if (!PHY_vars_eNB->ulsch[0]) {
+    LOG_E(PHY,"Can't get eNB ulsch structures\n");
+    exit(-1);
+  }
+  PHY_vars_eNB->dlsch_SI  = new_eNB_dlsch(1,8,NSOFT,frame_parms->N_RB_DL, abstraction_flag, frame_parms);
+  LOG_D(PHY,"eNB %d : SI %p\n",eNB_id,PHY_vars_eNB->dlsch_SI);
+  PHY_vars_eNB->dlsch_ra  = new_eNB_dlsch(1,8,NSOFT,frame_parms->N_RB_DL, abstraction_flag, frame_parms);
+  LOG_D(PHY,"eNB %d : RA %p\n",eNB_id,PHY_vars_eNB->dlsch_ra);
+  PHY_vars_eNB->dlsch_MCH = new_eNB_dlsch(1,8,NSOFT,frame_parms->N_RB_DL, 0, frame_parms);
+  LOG_D(PHY,"eNB %d : MCH %p\n",eNB_id,PHY_vars_eNB->dlsch_MCH);
+  */
+  
+  PHY_vars_eNB->rx_total_gain_dB=130;
+  
+ /* for(i=0; i<NUMBER_OF_UE_MAX; i++)
+    PHY_vars_eNB->mu_mimo_mode[i].dl_pow_off = 2;
+  
+  PHY_vars_eNB->check_for_total_transmissions = 0;
+  
+  PHY_vars_eNB->check_for_MUMIMO_transmissions = 0;
+  
+  PHY_vars_eNB->FULL_MUMIMO_transmissions = 0;
+  
+  PHY_vars_eNB->check_for_SUMIMO_transmissions = 0;
+  
+    PHY_vars_eNB->frame_parms.pucch_config_common.deltaPUCCH_Shift = 1;
+*/
+  return (PHY_vars_eNB);
+
+}
+
+
+/*this is a function just for initialization of NB-IoT stuff*/
+
+/*
+
+void init_lte_eNB_NB(
+					PHY_VARS_eNB  *PHY_vars_eNB,
+					NB_IoT_DL_FRAME_PARMS *frame_parms,
+                    uint8_t eNB_id,
+                    uint8_t Nid_cell,
+				    eNB_func_t node_function,
+                    int8_t abstraction_flag)
+{
+
+  int i,j;
+
+  memset(PHY_vars_eNB,0,sizeof(PHY_VARS_eNB));
+  PHY_vars_eNB->Mod_id=eNB_id;
+  PHY_vars_eNB->cooperation_flag=0;//cooperation_flag;
+  memcpy(&(PHY_vars_eNB->frame_parms_nb_iot), frame_parms, sizeof(NB_IoT_DL_FRAME_PARMS));
+  PHY_vars_eNB->frame_parms_nb_iot.Nid_cell = ((Nid_cell/3)*3)+((eNB_id+Nid_cell)%3); //XXX NB_IoT ????
+  PHY_vars_eNB->frame_parms_nb_iot.nushift = PHY_vars_eNB->frame_parms.Nid_cell%6;
+  phy_init_lte_eNB(PHY_vars_eNB,0,abstraction_flag);
+
+  LOG_I(PHY,"init eNB NB_IoT: Node Function %d\n",node_function);
+  LOG_I(PHY,"init eNB NB_IoT: Nid_cell %d\n", frame_parms->Nid_cell);
+  LOG_I(PHY,"init eNB NB_IoT: number of ue max %d number of enb max %d \n",
+        NUMBER_OF_UE_MAX, NUMBER_OF_eNB_MAX);
+ //LOG_I(PHY,"init eNB NB_IoT: N_RB_DL %d\n", frame_parms->N_RB_DL);
+  //LOG_I(PHY,"init eNB NB_IoT: prach_config_index %d\n", frame_parms->nprach_config_common.prach_ConfigInfo.prach_ConfigIndex);
+
+  if (node_function >= NGFI_RRU_IF5)
+    // For RRU, don't allocate DLSCH/ULSCH Transport channel buffers
+    return;
+
+
+
+
+  for (i=0; i<NUMBER_OF_UE_MAX; i++) {
+    LOG_I(PHY,"[NB-IoT] Allocating Transport Channel Buffers for NDLSCH, UE %d\n",i);
+      PHY_vars_eNB->ndlsch[i] = new_eNB_dlsch_NB_IoT(NSOFT,abstraction_flag,frame_parms);
+      if (!PHY_vars_eNB->ndlsch[i]) {
+	LOG_E(PHY,"Can't get eNB ndlsch structures for UE %d \n", i);
+	exit(-1);
+      } else {
+	LOG_D(PHY,"dlsch[%d] => %p\n",i,PHY_vars_eNB->ndlsch[i]);
+	PHY_vars_eNB->ndlsch[i]->rnti=0;
+      }
+
+
+    LOG_I(PHY," [NB-IoT] Allocating Transport Channel Buffer for ULSCH, UE %d\n", i);
+    PHY_vars_eNB->nulsch[1+i] = new_eNB_ulsch_NB(abstraction_flag);
+
+    if (!PHY_vars_eNB->nulsch[1+i]) {
+      LOG_E(PHY,"Can't get eNB nulsch structures\n");
+      exit(-1);
+    }
+  }
+
+  // ULSCH for RA
+  PHY_vars_eNB->nulsch[0] = new_eNB_ulsch_NB(abstraction_flag);
+
+  if (!PHY_vars_eNB->nulsch[0]) {
+    LOG_E(PHY,"Can't get eNB nulsch structures\n");
+    exit(-1);
+  }
+  PHY_vars_eNB->dlsch_SI_NB  = new_eNB_dlsch_NB_IoT(NSOFT, abstraction_flag, frame_parms);
+  LOG_D(PHY,"[NB-IoT] eNB %d : SI %p\n",eNB_id,PHY_vars_eNB->dlsch_SI_NB);
+  PHY_vars_eNB->dlsch_ra_NB  = new_eNB_dlsch_NB_IoT(NSOFT, abstraction_flag, frame_parms);
+  LOG_D(PHY,"[NB-IoT] eNB %d : RA %p\n",eNB_id,PHY_vars_eNB->dlsch_ra_NB);
+
+
+  //already set in the LTE function version
+  //PHY_vars_eNB->rx_total_gain_dB=130;
+
+//  for(i=0; i<NUMBER_OF_UE_MAX; i++)
+//  PHY_vars_eNB->mu_mimo_mode[i].dl_pow_off = 2;
+//
+//  PHY_vars_eNB->check_for_total_transmissions = 0;
+//
+//  PHY_vars_eNB->check_for_MUMIMO_transmissions = 0;
+//
+//  PHY_vars_eNB->FULL_MUMIMO_transmissions = 0;
+//
+//  PHY_vars_eNB->check_for_SUMIMO_transmissions = 0;
+//
+//    PHY_vars_eNB->frame_parms.pucch_config_common.deltaPUCCH_Shift = 1;
+
+  return;
+}
+
+*/
+
 PHY_VARS_UE* init_lte_UE(LTE_DL_FRAME_PARMS *frame_parms,
                          uint8_t UE_id,
                          uint8_t abstraction_flag)

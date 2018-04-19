@@ -38,6 +38,7 @@ uid_linear_allocator_init(
   uid_allocator_t* const uid_pP
 );
 
+
 uid_t
 uid_linear_allocator_new(
   eNB_RRC_INST* rrc_instance_pP
@@ -70,6 +71,7 @@ rrc_eNB_get_ue_context(
   eNB_RRC_INST* rrc_instance_pP,
   rnti_t rntiP
 );
+
 
 void rrc_eNB_remove_ue_context(
   const protocol_ctxt_t* const ctxt_pP,

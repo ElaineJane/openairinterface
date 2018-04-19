@@ -49,8 +49,21 @@
 #include "LAYER2/MAC/defs.h"
 #include "LAYER2/MAC/vars.h"
 #include "LAYER2/MAC/proto.h"
+
 #include "RRC/LITE/vars.h"
 #include "PHY_INTERFACE/vars.h"
+#include "PHY_INTERFACE/defs.h"
+
+/////////////////////////////NB-IoT Parameters here////////////////////////////////////////
+
+#include "PHY/vars_NB_IoT.h"
+
+#include "LAYER2/MAC/proto_NB_IoT.h"
+
+//#include "LAYER2/MAC/defs_NB_IoT.h"
+//#include "LAYER2/MAC/vars_NB_IoT.h"
+
+///////////////////////////////////////END/////////////////////////////////////////////////
 
 #ifdef SMBV
 #include "PHY/TOOLS/smbv.h"
@@ -170,8 +183,18 @@ int                             otg_enabled;
 //int                             number_of_cards =   1;
 
 static LTE_DL_FRAME_PARMS      *frame_parms[MAX_NUM_CCs];
+
 eNB_func_t node_function[MAX_NUM_CCs];
 eNB_timing_t node_timing[MAX_NUM_CCs];
+
+//////////////////////////////////////  NB-IoT  //////////////////////////////////////////////
+static NB_IoT_DL_FRAME_PARMS *frame_parms_NB_IoT[MAX_NUM_CCs]; // this will be still inside the PHY_VARS of LTE
+
+eNB_func_NB_IoT_t node_function_NB_IoT[MAX_NUM_CCs];
+eNB_timing_NB_IoT_t node_timing_NB_IoT[MAX_NUM_CCs];
+
+/////////////////////////////////////////END/////////////////////////////////////////////////
+
 int16_t   node_synch_ref[MAX_NUM_CCs];
 
 uint32_t target_dl_mcs = 28; //maximum allowed mcs
@@ -974,27 +997,35 @@ static void get_options (int argc, char **argv) {
 
         case 'r':
             UE_scan = 0;
-
+///////////////////////////////////////////////////////////////// frame_parms for NB-IoT are added for test
             for (CC_id=0; CC_id<MAX_NUM_CCs; CC_id++) {
                 switch(atoi(optarg)) {
                 case 6:
                     frame_parms[CC_id]->N_RB_DL=6;
                     frame_parms[CC_id]->N_RB_UL=6;
+                    frame_parms_NB_IoT[CC_id]->N_RB_DL=6;
+                    frame_parms_NB_IoT[CC_id]->N_RB_UL=6;
                     break;
 
                 case 25:
                     frame_parms[CC_id]->N_RB_DL=25;
                     frame_parms[CC_id]->N_RB_UL=25;
+                    frame_parms_NB_IoT[CC_id]->N_RB_DL=25;
+                    frame_parms_NB_IoT[CC_id]->N_RB_UL=25;
                     break;
 
                 case 50:
                     frame_parms[CC_id]->N_RB_DL=50;
                     frame_parms[CC_id]->N_RB_UL=50;
+                    frame_parms_NB_IoT[CC_id]->N_RB_DL=50;
+                    frame_parms_NB_IoT[CC_id]->N_RB_UL=50;
                     break;
 
                 case 100:
                     frame_parms[CC_id]->N_RB_DL=100;
                     frame_parms[CC_id]->N_RB_UL=100;
+                    frame_parms_NB_IoT[CC_id]->N_RB_DL=100;
+                    frame_parms_NB_IoT[CC_id]->N_RB_UL=100;
                     break;
 
                 default:
@@ -1059,6 +1090,8 @@ static void get_options (int argc, char **argv) {
         NB_eNB_INST = 1;
 
         /* Read eNB configuration file */
+       // enb_properties = enb_config_init(conf_config_file_name);
+
         enb_properties = enb_config_init(conf_config_file_name);
 
         AssertFatal (NB_eNB_INST <= enb_properties->number,
@@ -1123,12 +1156,20 @@ static void get_options (int argc, char **argv) {
 
                 node_function[CC_id]  = enb_properties->properties[i]->cc_node_function[CC_id];
                 node_timing[CC_id]    = enb_properties->properties[i]->cc_node_timing[CC_id];
+
+                node_function_NB_IoT[CC_id]  = enb_properties->properties[i]->cc_node_function[CC_id];
+                node_timing_NB_IoT[CC_id]    = enb_properties->properties[i]->cc_node_timing[CC_id];
+
                 node_synch_ref[CC_id] = enb_properties->properties[i]->cc_node_synch_ref[CC_id];
 
                 frame_parms[CC_id]->frame_type =       enb_properties->properties[i]->frame_type[CC_id];
                 frame_parms[CC_id]->tdd_config =       enb_properties->properties[i]->tdd_config[CC_id];
                 frame_parms[CC_id]->tdd_config_S =     enb_properties->properties[i]->tdd_config_s[CC_id];
                 frame_parms[CC_id]->Ncp =              enb_properties->properties[i]->prefix_type[CC_id];
+
+                frame_parms_NB_IoT[CC_id]->frame_type =       enb_properties->properties[i]->frame_type[CC_id];
+                frame_parms_NB_IoT[CC_id]->tdd_config =       enb_properties->properties[i]->tdd_config[CC_id];
+                frame_parms_NB_IoT[CC_id]->Ncp =              enb_properties->properties[i]->prefix_type[CC_id];
 
                 //for (j=0; j < enb_properties->properties[i]->nb_cc; j++ ){
                 frame_parms[CC_id]->Nid_cell            =  enb_properties->properties[i]->Nid_cell[CC_id];
@@ -1138,11 +1179,22 @@ static void get_options (int argc, char **argv) {
                 frame_parms[CC_id]->nb_antenna_ports_eNB  =  enb_properties->properties[i]->nb_antenna_ports[CC_id];
                 frame_parms[CC_id]->nb_antennas_rx      =  enb_properties->properties[i]->nb_antennas_rx[CC_id];
 
+                frame_parms_NB_IoT[CC_id]->Nid_cell            =  enb_properties->properties[i]->Nid_cell[CC_id]; // in case different CellID this value can be modified
+                frame_parms_NB_IoT[CC_id]->N_RB_DL             =  enb_properties->properties[i]->N_RB_DL[CC_id];
+                frame_parms_NB_IoT[CC_id]->N_RB_UL             =  enb_properties->properties[i]->N_RB_DL[CC_id];
+                frame_parms_NB_IoT[CC_id]->nb_antennas_tx      =  enb_properties->properties[i]->nb_antennas_tx[CC_id];
+                frame_parms_NB_IoT[CC_id]->nb_antenna_ports_eNB  =  enb_properties->properties[i]->nb_antenna_ports[CC_id];
+                frame_parms_NB_IoT[CC_id]->nb_antennas_rx      =  enb_properties->properties[i]->nb_antennas_rx[CC_id];
+
+
                 frame_parms[CC_id]->prach_config_common.prach_ConfigInfo.prach_ConfigIndex = enb_properties->properties[i]->prach_config_index[CC_id];
                 frame_parms[CC_id]->prach_config_common.prach_ConfigInfo.prach_FreqOffset  = enb_properties->properties[i]->prach_freq_offset[CC_id];
 
                 frame_parms[CC_id]->mode1_flag         = (frame_parms[CC_id]->nb_antenna_ports_eNB == 1) ? 1 : 0;
                 frame_parms[CC_id]->threequarter_fs    = threequarter_fs;
+
+
+                frame_parms_NB_IoT[CC_id]->threequarter_fs    = threequarter_fs;
 
                 //} // j
             }
@@ -1273,6 +1325,55 @@ void set_default_frame_parms(LTE_DL_FRAME_PARMS *frame_parms[MAX_NUM_CCs]) {
     }
 
 }
+
+//NB_IoT-------------------------------------------------
+void set_default_frame_parms_NB_IoT(NB_IoT_DL_FRAME_PARMS *frame_parms[MAX_NUM_CCs]);
+void set_default_frame_parms_NB_IoT(NB_IoT_DL_FRAME_PARMS *frame_parms[MAX_NUM_CCs]) {
+
+    int CC_id;
+
+    for (CC_id=0; CC_id<MAX_NUM_CCs; CC_id++) {
+        frame_parms[CC_id] = (NB_IoT_DL_FRAME_PARMS*) malloc(sizeof(NB_IoT_DL_FRAME_PARMS));
+        /* Set some default values that may be overwritten while reading options */
+        frame_parms[CC_id]->frame_type          = FDD;
+        frame_parms[CC_id]->tdd_config          = 3;
+        frame_parms[CC_id]->N_RB_DL             = 100;
+        frame_parms[CC_id]->N_RB_UL             = 100;
+        //XXX check if there are other parameters to be set
+        frame_parms[CC_id]->Ncp                 = NORMAL;
+        frame_parms[CC_id]->Ncp_UL              = NORMAL;
+        frame_parms[CC_id]->Nid_cell            = 0;
+        frame_parms[CC_id]->nb_antenna_ports_eNB  = 1;
+        frame_parms[CC_id]->nb_antennas_tx      = 1;
+        frame_parms[CC_id]->nb_antennas_rx      = 1;
+        frame_parms[CC_id]->nushift             = 0;
+        // UL RS Config
+        frame_parms[CC_id]->npusch_config_common.ul_ReferenceSignalsNPUSCH.groupHoppingEnabled = 0;
+        frame_parms[CC_id]->npusch_config_common.ul_ReferenceSignalsNPUSCH.groupAssignmentNPUSCH = 0;
+
+
+        //frame_parms[CC_id]->nprach_config_common.nprach_CP_Length
+		//frame_parms[CC_id]->nprach_config_common.nprach_ParametersList.list.array[CC_id]
+		//frame_parms[CC_id]->nprach_config_common.rsrp_ThresholdsPrachInfoList
+        downlink_frequency[CC_id][0] = 2680000000; // Use float to avoid issue with frequency over 2^31.
+        downlink_frequency[CC_id][1] = downlink_frequency[CC_id][0];
+        downlink_frequency[CC_id][2] = downlink_frequency[CC_id][0];
+        downlink_frequency[CC_id][3] = downlink_frequency[CC_id][0];
+
+		//already initialized in the set_default_frame_parms function for LTE
+
+//        downlink_frequency[CC_id][0] = 2680000000; // Use float to avoid issue with frequency over 2^31.
+//        downlink_frequency[CC_id][1] = downlink_frequency[CC_id][0];
+//        downlink_frequency[CC_id][2] = downlink_frequency[CC_id][0];
+//        downlink_frequency[CC_id][3] = downlink_frequency[CC_id][0];
+//        //printf("Downlink for CC_id %d frequency set to %u\n", CC_id, downlink_frequency[CC_id][0]);
+
+    }
+
+}
+
+
+
 
 void init_openair0(void);
 
@@ -1412,6 +1513,10 @@ int main( int argc, char **argv ) {
 
     // set default parameters
     set_default_frame_parms(frame_parms);
+
+    set_default_frame_parms_NB_IoT(frame_parms_NB_IoT);
+
+
 
     // initialize logging
     logInit();
@@ -1554,12 +1659,35 @@ int main( int argc, char **argv ) {
       frame_parms[CC_id]->nb_antenna_ports_eNB = 1; //initial value overwritten by initial sync later
 
       LOG_I(PHY,"Set nb_rx_antenna %d , nb_tx_antenna %d \n",frame_parms[CC_id]->nb_antennas_rx, frame_parms[CC_id]->nb_antennas_tx);
+
+//#ifdef NB_IOT     /////////////// for NB-IoT testing  ///////////////////////////
+      frame_parms_NB_IoT[CC_id]->nb_antennas_tx     = nb_antenna_tx;
+      frame_parms_NB_IoT[CC_id]->nb_antennas_rx     = nb_antenna_rx;
+      frame_parms_NB_IoT[CC_id]->nb_antenna_ports_eNB = 1; //initial value overwritten by initial sync later
+
+      LOG_I(PHY,"[NB-IoT] Set nb_rx_antenna %d , nb_tx_antenna %d \n",frame_parms_NB_IoT[CC_id]->nb_antennas_rx, frame_parms_NB_IoT[CC_id]->nb_antennas_tx);
+
+//#endif     //////////////////////////// END //////////////////////////////////
     }
 
+
+    //XXXX we need to modify it for NB-IoT????
     init_ul_hopping(frame_parms[CC_id]);
     init_frame_parms(frame_parms[CC_id],1);
     //   phy_init_top(frame_parms[CC_id]);
     phy_init_lte_top(frame_parms[CC_id]);
+
+
+    // for testing
+    //XXXX we need to modify it for NB-IoT????
+    //init_ul_hopping(frame_parms[CC_id]);
+
+   /////////////////////////////////////////////////////// NB-IoT //////////////////////////////////////////////////////// 
+    init_frame_parms_NB_IoT(frame_parms_NB_IoT[CC_id],1);
+    //   phy_init_top(frame_parms[CC_id]);
+    phy_init_lte_top_NB_IoT(frame_parms_NB_IoT[CC_id]);
+    /////////////////////////////////////////////////////// END //////////////////////////////////////////////////////////
+
   }
 
 
@@ -1645,12 +1773,28 @@ int main( int argc, char **argv ) {
 
         //  printf("tx_max_power = %d -> amp %d\n",tx_max_power,get_tx_amp(tx_max_poHwer,tx_max_power));
     } else {
-        //this is eNB
-        PHY_vars_eNB_g = malloc(sizeof(PHY_VARS_eNB**));
+      /////////////////////////////////////////////////// this is eNB /////////////////////////////////////////////////////////////
+        PHY_vars_eNB_g = malloc(sizeof(PHY_VARS_eNB**)); //global PHY_vars --> is a matrix
         PHY_vars_eNB_g[0] = malloc(sizeof(PHY_VARS_eNB*));
 
+        ///////////////////////// for NB-IoT testing ////////////////////////
+        PHY_vars_eNB_NB_IoT_g = malloc(sizeof(PHY_VARS_eNB_NB_IoT**)); //global PHY_vars --> is a matrix
+        PHY_vars_eNB_NB_IoT_g[0] = malloc(sizeof(PHY_VARS_eNB_NB_IoT*));
+        ///////////////////////////// END //////////////////////////////////
+
         for (CC_id=0; CC_id<MAX_NUM_CCs; CC_id++) {
+        	//we initialiaze DL/UL buffer and HARQ (inside the LTE_eNB_DLSCH)
+
             PHY_vars_eNB_g[0][CC_id] = init_lte_eNB(frame_parms[CC_id],0,frame_parms[CC_id]->Nid_cell,node_function[CC_id],abstraction_flag);
+
+            // for NB-IoT testing
+             PHY_vars_eNB_NB_IoT_g[0][CC_id] = init_lte_eNB_NB_IoT(frame_parms_NB_IoT[CC_id],0,frame_parms_NB_IoT[CC_id]->Nid_cell,node_function_NB_IoT[CC_id],abstraction_flag);
+
+            //this is a complementary function for just initialize manage NB_ioT stuff inside the PHY_Vars
+#ifdef NB_IOT
+            //init_lte_eNB_NB(PHY_vars_eNB_g[0][CC_id],frame_parms_NB_IoT[CC_id], 0, frame_parms_NB_IoT[CC_id]->Nid_cell,node_function[CC_id],abstraction_flag);
+#endif
+
             PHY_vars_eNB_g[0][CC_id]->ue_dl_rb_alloc=0x1fff;
             PHY_vars_eNB_g[0][CC_id]->target_ue_dl_mcs=target_dl_mcs;
             PHY_vars_eNB_g[0][CC_id]->ue_ul_nb_rb=6;
@@ -1682,6 +1826,24 @@ int main( int argc, char **argv ) {
                 }
             }
 
+            // for NB-IoT testing
+
+            if (phy_test==1) PHY_vars_eNB_NB_IoT_g[0][CC_id]->mac_enabled = 0;
+            else PHY_vars_eNB_NB_IoT_g[0][CC_id]->mac_enabled = 1;
+
+            if (PHY_vars_eNB_NB_IoT_g[0][CC_id]->mac_enabled == 0) { //set default parameters for testing mode
+                for (i=0; i<NUMBER_OF_UE_MAX; i++) {
+                    PHY_vars_eNB_NB_IoT_g[0][CC_id]->pusch_config_dedicated[i].betaOffset_ACK_Index = beta_ACK;
+                    PHY_vars_eNB_NB_IoT_g[0][CC_id]->pusch_config_dedicated[i].betaOffset_RI_Index  = beta_RI;
+                    PHY_vars_eNB_NB_IoT_g[0][CC_id]->pusch_config_dedicated[i].betaOffset_CQI_Index = beta_CQI;
+
+                    PHY_vars_eNB_NB_IoT_g[0][CC_id]->scheduling_request_config[i].sr_PUCCH_ResourceIndex = i;
+                    PHY_vars_eNB_NB_IoT_g[0][CC_id]->scheduling_request_config[i].sr_ConfigIndex = 7+(i%3);
+                    PHY_vars_eNB_NB_IoT_g[0][CC_id]->scheduling_request_config[i].dsr_TransMax = sr_n4;
+                }
+            }
+
+            // No need to do for  NB-IoT
             compute_prach_seq(&PHY_vars_eNB_g[0][CC_id]->frame_parms.prach_config_common,
                               PHY_vars_eNB_g[0][CC_id]->frame_parms.frame_type,
                               PHY_vars_eNB_g[0][CC_id]->X_u);
@@ -1698,6 +1860,21 @@ int main( int argc, char **argv ) {
                     PHY_vars_eNB_g[0][CC_id]->N_TA_offset = 624/2;
                 else if (frame_parms[CC_id]->N_RB_DL == 25)
                     PHY_vars_eNB_g[0][CC_id]->N_TA_offset = 624/4;
+            }
+
+            // for NB-IoT testing 
+
+            PHY_vars_eNB_NB_IoT_g[0][CC_id]->rx_total_gain_dB = (int)rx_gain[CC_id][0];
+
+            if (frame_parms_NB_IoT[CC_id]->frame_type==FDD) {
+                PHY_vars_eNB_NB_IoT_g[0][CC_id]->N_TA_offset = 0;
+            } else {
+                if (frame_parms_NB_IoT[CC_id]->N_RB_DL == 100)
+                    PHY_vars_eNB_NB_IoT_g[0][CC_id]->N_TA_offset = 624;
+                else if (frame_parms_NB_IoT[CC_id]->N_RB_DL == 50)
+                    PHY_vars_eNB_NB_IoT_g[0][CC_id]->N_TA_offset = 624/2;
+                else if (frame_parms_NB_IoT[CC_id]->N_RB_DL == 25)
+                    PHY_vars_eNB_NB_IoT_g[0][CC_id]->N_TA_offset = 624/4;
             }
 
         }
@@ -1762,11 +1939,23 @@ int main( int argc, char **argv ) {
 
     int eMBMS_active=0;
     if (node_function[0] <= NGFI_RAU_IF4p5) { // don't initialize L2 for RRU
+
+
+
+        //---------------------------
+
         LOG_I(PHY,"Intializing L2\n");
+
         mac_xface = malloc(sizeof(MAC_xface));
         l2_init(frame_parms[0],eMBMS_active,(uecap_xer_in==1)?uecap_xer:NULL,
                 0,// cba_group_active
                 0); // HO flag
+
+//initialize L2 for NB-IoT stuff (complementary to legacy OAI initialization)
+
+        l2_init_eNB_NB_IoT();
+
+
         mac_xface->macphy_exit = &exit_fun;
     } else if (node_function[0] == NGFI_RRU_IF4p5) { // Initialize PRACH in this case
 
@@ -1874,6 +2063,13 @@ int main( int argc, char **argv ) {
             PHY_vars_UE_g[0][CC_id]->rf_map.chain=CC_id+chain_offset;
         }
     } else {
+
+#ifdef NB_IOT
+        //printf("Initializing IF Module in PHY layer\n");
+        //register function
+        //IF_Module_init_L1();
+#endif
+
         printf("Initializing eNB threads\n");
         init_eNB(node_function,node_timing,1,eth_params,single_thread_flag,wait_for_sync);
 

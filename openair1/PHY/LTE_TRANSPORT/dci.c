@@ -2256,8 +2256,41 @@ uint8_t generate_dci_top(int num_dci,
 
   e_ptr = e;
 
+<<<<<<< HEAD
   // generate DCIs
   for (i=0; i<num_dci; i++) {
+=======
+  // generate DCIs in order of decreasing aggregation level, then common/ue spec
+  // MAC is assumed to have ordered the UE spec DCI according to the RNTI-based randomization
+  for (L=3; L>=0; L--) {
+
+	  //first common DCI
+    for (i=0; i<num_common_dci; i++) {
+
+      if (dci_alloc[i].L == (uint8_t)L) {
+
+#ifdef DEBUG_DCI_ENCODING
+        printf("Generating common DCI %d/%d (nCCE %d) of length %d, aggregation %d (%x)\n",i,num_common_dci,dci_alloc[i].firstCCE,dci_alloc[i].dci_length,1<<dci_alloc[i].L,
+              *(unsigned int*)dci_alloc[i].dci_pdu);
+        dump_dci(frame_parms,&dci_alloc[i]);
+#endif
+
+        if (dci_alloc[i].firstCCE>=0) {
+          e_ptr = generate_dci0(dci_alloc[i].dci_pdu,
+                                e+(72*dci_alloc[i].firstCCE),
+                                dci_alloc[i].dci_length,
+                                dci_alloc[i].L,
+                                dci_alloc[i].rnti);
+        }
+      }
+    }
+
+    //start the second loop from the end of the previous one for ue specific DCI
+    for (; i<num_ue_spec_dci + num_common_dci; i++) {
+
+      if (dci_alloc[i].L == (uint8_t)L) {
+
+>>>>>>> a2757c87dcb54abb9e2325e80dfa25be03abe766
 #ifdef DEBUG_DCI_ENCODING
     printf("Generating %s DCI %d/%d (nCCE %d) of length %d, aggregation %d (%x)\n",
            dci_alloc[i].search_space == DCI_COMMON_SPACE ? "common" : "UE",
@@ -2266,12 +2299,26 @@ uint8_t generate_dci_top(int num_dci,
     dump_dci(frame_parms,&dci_alloc[i]);
 #endif
 
+<<<<<<< HEAD
     if (dci_alloc[i].firstCCE>=0) {
       e_ptr = generate_dci0(dci_alloc[i].dci_pdu,
                             e+(72*dci_alloc[i].firstCCE),
                             dci_alloc[i].dci_length,
                             dci_alloc[i].L,
                             dci_alloc[i].rnti);
+=======
+        if (dci_alloc[i].firstCCE >= 0) {
+          e_ptr = generate_dci0(dci_alloc[i].dci_pdu,
+                                e+(72*dci_alloc[i].firstCCE),
+                                dci_alloc[i].dci_length,
+                                dci_alloc[i].L,
+                                dci_alloc[i].rnti);
+        }
+  else {
+    
+  }
+      }
+>>>>>>> a2757c87dcb54abb9e2325e80dfa25be03abe766
     }
   }
 
@@ -2479,7 +2526,6 @@ uint8_t generate_dci_top(int num_dci,
 
   return(num_pdcch_symbols);
 }
-
 #ifdef PHY_ABSTRACTION
 uint8_t generate_dci_top_emul(PHY_VARS_eNB *phy_vars_eNB,
                               int num_dci,

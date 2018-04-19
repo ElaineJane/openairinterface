@@ -69,6 +69,15 @@ extern int otg_enabled;
 #endif
 
 
+#ifdef NB_IOT
+#include "openair2/RRC/LITE/proto_NB_IoT.h"
+#undef maxDRB
+#define maxDRB maxDRB_NB_r13
+#endif
+
+
+
+
 //-----------------------------------------------------------------------------
 /*
  * If PDCP_UNIT_TEST is set here then data flow between PDCP and RLC is broken
@@ -1668,7 +1677,16 @@ pdcp_config_set_security(
 	  pdcp_pP->cipheringAlgorithm,
 	  pdcp_pP->integrityProtAlgorithm,
 	  ctxt_pP->rnti);
-  } else {
+  }
+  /*]SecurityModeFailure*/
+  else if(security_modeP == -1){
+	  // in this way in pdcp_data_req_NB_IoT function you never call "pdcp_apply_security"
+	  // and we never call pdcp_validate_security in NB_pdcp_data_indi
+	    	pdcp_pP->security_activated = 0;
+	    	pdcp_pP->cipheringAlgorithm = 0;
+	    	pdcp_pP->integrityProtAlgorithm = 0;
+  }
+  else {
 	  MSC_LOG_EVENT(
 	    (ctxt_pP->enb_flag == ENB_FLAG_YES) ? MSC_PDCP_ENB:MSC_PDCP_UE,
 	    "0 Set security failed UE %"PRIx16" ",
@@ -1680,6 +1698,7 @@ pdcp_config_set_security(
 }
 
 //-----------------------------------------------------------------------------
+// MP: seems to be no more used (old code)
 void
 rrc_pdcp_config_req (
   const protocol_ctxt_t* const  ctxt_pP,
@@ -1961,6 +1980,7 @@ void pdcp_layer_init(void)
   memset(Pdcp_stats_rx_bytes_last, 0, sizeof(Pdcp_stats_rx_bytes_last));
   memset(Pdcp_stats_rx_rate, 0, sizeof(Pdcp_stats_rx_rate));
 }
+
 
 //-----------------------------------------------------------------------------
 void pdcp_layer_cleanup (void)
