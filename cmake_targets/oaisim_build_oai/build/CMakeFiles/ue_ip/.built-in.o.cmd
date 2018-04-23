@@ -1,1 +1,0 @@
-cmd_/home/momo/openairinterface5g/cmake_targets/oaisim_build_oai/build/CMakeFiles/ue_ip/built-in.o :=  rm -f /home/momo/openairinterface5g/cmake_targets/oaisim_build_oai/build/CMakeFiles/ue_ip/built-in.o; ar rcsD /home/momo/openairinterface5g/cmake_targets/oaisim_build_oai/build/CMakeFiles/ue_ip/built-in.o
