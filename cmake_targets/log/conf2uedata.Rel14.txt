@@ -1,0 +1,19 @@
+Scanning dependencies of target conf2uedata
+[  6%] [ 12%] [ 25%] [ 25%] [ 31%] Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/TOOLS/conf_user_data.c.o
+[ 43%] [ 43%] Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/TOOLS/conf2uedata.c.o
+Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/TOOLS/conf_emm.c.o
+Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/TOOLS/conf_usim.c.o
+[ 50%] Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/TOOLS/conf_network.c.o
+Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/TOOLS/conf_user_plmn.c.o
+Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/TOOLS/conf_parser.c.o
+Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/TOOLS/fs.c.o
+[ 62%] [ 62%] Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/TOOLS/display.c.o
+Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/UE/API/USIM/usim_api.c.o
+[ 68%] [ 75%] Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/UE/API/USIM/aka_functions.c.o
+Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/COMMON/UTIL/memory.c.o
+[ 81%] Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/COMMON/UTIL/nas_log.c.o
+[ 87%] Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/COMMON/UTIL/OctetString.c.o
+[ 93%] [100%] Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/openair3/NAS/COMMON/UTIL/TLVEncoder.c.o
+Building C object CMakeFiles/conf2uedata.dir/home/momo/openairinterface5g/common/utils/utils.c.o
+Linking C executable conf2uedata
+[100%] Built target conf2uedata

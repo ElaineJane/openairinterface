@@ -1,0 +1,56 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/momo/openairinterface5g/cmake_targets/at_commands/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec664585320/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec664585320.dir/build.make CMakeFiles/cmTryCompileExec664585320.dir/build
+make[1]: 正在进入目录 `/home/momo/openairinterface5g/cmake_targets/at_commands/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/at_commands/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec664585320.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -msse4.2 -std=gnu99 -Wall -Wstrict-prototypes -fno-strict-aliasing -rdynamic -funroll-loops -Wno-packed-bitfield-compat -DCMAKER    -o CMakeFiles/cmTryCompileExec664585320.dir/CheckSymbolExists.c.o   -c /home/momo/openairinterface5g/cmake_targets/at_commands/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec664585320
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec664585320.dir/link.txt --verbose=1
+/usr/bin/cc   -msse4.2 -std=gnu99 -Wall -Wstrict-prototypes -fno-strict-aliasing -rdynamic -funroll-loops -Wno-packed-bitfield-compat -DCMAKER     CMakeFiles/cmTryCompileExec664585320.dir/CheckSymbolExists.c.o  -o cmTryCompileExec664585320 -rdynamic 
+CMakeFiles/cmTryCompileExec664585320.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+make[1]:正在离开目录 `/home/momo/openairinterface5g/cmake_targets/at_commands/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec664585320] 错误 1
+make: *** [cmTryCompileExec664585320/fast] 错误 2
+
+File /home/momo/openairinterface5g/cmake_targets/at_commands/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/momo/openairinterface5g/cmake_targets/at_commands/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4020214245/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4020214245.dir/build.make CMakeFiles/cmTryCompileExec4020214245.dir/build
+make[1]: 正在进入目录 `/home/momo/openairinterface5g/cmake_targets/at_commands/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/at_commands/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4020214245.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse4.2 -std=gnu99 -Wall -Wstrict-prototypes -fno-strict-aliasing -rdynamic -funroll-loops -Wno-packed-bitfield-compat -DCMAKER -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4020214245.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+ char CHECK_FUNCTION_EXISTS();
+ ^
+Linking C executable cmTryCompileExec4020214245
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4020214245.dir/link.txt --verbose=1
+/usr/bin/cc   -msse4.2 -std=gnu99 -Wall -Wstrict-prototypes -fno-strict-aliasing -rdynamic -funroll-loops -Wno-packed-bitfield-compat -DCMAKER -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec4020214245.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4020214245 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]:正在离开目录 `/home/momo/openairinterface5g/cmake_targets/at_commands/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec4020214245] 错误 1
+make: *** [cmTryCompileExec4020214245/fast] 错误 2
+
+
