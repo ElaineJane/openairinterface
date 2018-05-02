@@ -36,28 +36,28 @@ L2_OBJS=$(LOG_OBJS)
 ITTI_OBJS = $(RRC_TEST_BUILD)/intertask_interface.o $(RRC_TEST_BUILD)/intertask_interface_dump.o  $(RRC_TEST_BUILD)/signals.o $(RRC_TEST_BUILD)/timer.o
 ITTI_FILES =  $(ITTI_DIR)/intertask_interface.c  $(ITTI_DIR)/intertask_interface.h  $(ITTI_DIR)/assertions.h $(ITTI_DIR)/intertask_interface_dump.h  $(ITTI_DIR)/intertask_interface_init.h $(ITTI_DIR)/signals.h $(ITTI_DIR)/timer.h
 ITTI_FILES += $(ITTI_DIR)/intertask_interface_dump.c $(ITTI_DIR)/signals.c $(ITTI_DIR)/timer.c
-
+LIBS = libITTI.a
 
 all:	rrcsim
 
 rrcsim: $(OBJ) $(SYSOBJ) $(ITTI_OBJS)
-	cc  -I $(OPENAIR2_DIR/COMMON) -I $(ITTI_DIR) -o rrcsim $(OBJ) $(SYSOBJ) $(ITTI_OBJS)
+	cc -o rrcsim $(OBJ) $(SYSOBJ) $(ITTI_OBJS) $LIBS
 
 $(OBJ): 
-	cc -I $(OPENAIR2_DIR/COMMON) -I $(ITTI_DIR) -o $(OBJ) -c oaisim.c
+	cc -o $(OBJ) -c oaisim.c
 
 $(SYSOBJ): $(UTILS_DIR)/system.c $(UTILS_DIR)/system.h
-	cc -I $(OPENAIR2_DIR/COMMON) -I $(ITTI_DIR) -o $(SYSOBJ) -c $(UTILS_DIR)/system.c
+	cc -o $(SYSOBJ) -c $(UTILS_DIR)/system.c
 
-$(RRC_TEST_BUILD)/intertask_interface.o: intertask_interface.h assertions.h intertask_interface_dump.h  intertask_interface_init.h signals.h timer.h \
-		$(L2_COMMON)/intertask_interface_conf.h
-	cc  -I /home/momo/openairinterface5g/openair2/COMMON -I /home/momo/openairinterface5g/common/utils/itti -o $@ -c $<
-$(RRC_TEST_BUILD)/intertask_interface_dump.o:  intertask_interface.h assertions.h intertask_interface_dump.h itti_types.h intertask_interface_conf.h
-	cc  -I $(OPENAIR2_DIR/COMMON) -I $(ITTI_DIR) -o $@ -c $<
-$(RRC_TEST_BUILD)/signals.o: intertask_interface.h assertions.h signals.h timer.h backtrace.h  log.h intertask_interface_conf.h
-	cc  -I $(OPENAIR2_DIR/COMMON) -I $(ITTI_DIR) -o $@ -c $<
-$(RRC_TEST_BUILD)/timer.o: intertask_interface.h assertions.h log.h queue.h intertask_interface_conf.h
-	cc  -I $(OPENAIR2_DIR/COMMON) -I $(ITTI_DIR) -o $@ -c $<
+#$(RRC_TEST_BUILD)/intertask_interface.o: intertask_interface.h assertions.h intertask_interface_dump.h  intertask_interface_init.h signals.h timer.h \
+#		$(L2_COMMON)/intertask_interface_conf.h
+#	cc  -I /home/momo/openairinterface5g/openair2/COMMON -I /home/momo/openairinterface5g/common/utils/itti -o $@ -c $<
+#$(RRC_TEST_BUILD)/intertask_interface_dump.o:  intertask_interface.h assertions.h intertask_interface_dump.h itti_types.h intertask_interface_conf.h
+#	cc  -I $(OPENAIR2_DIR/COMMON) -I $(ITTI_DIR) -o $@ -c $<
+#$(RRC_TEST_BUILD)/signals.o: intertask_interface.h assertions.h signals.h timer.h backtrace.h  log.h intertask_interface_conf.h
+#	cc  -I $(OPENAIR2_DIR/COMMON) -I $(ITTI_DIR) -o $@ -c $<
+#$(RRC_TEST_BUILD)/timer.o: intertask_interface.h assertions.h log.h queue.h intertask_interface_conf.h
+#	cc  -I $(OPENAIR2_DIR/COMMON) -I $(ITTI_DIR) -o $@ -c $<
 
 clean:
 	rm -f rrcsim
