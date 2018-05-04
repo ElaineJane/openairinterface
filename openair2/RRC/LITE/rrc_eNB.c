@@ -4091,6 +4091,9 @@ while ( eNB_rrc_inst == NULL ) {
 
 }
 
+
+
+
 /*------------------------------------------------------------------------------*/
 int
 rrc_eNB_decode_ccch(
@@ -5049,10 +5052,7 @@ void rrc_eNB_reconfigure_DRBs (const protocol_ctxt_t* const ctxt_pP,
 
 
 //-----------------------------------------------------------------------------
-void*
-rrc_enb_task(
-  void* args_p
-)
+void* rrc_enb_task(void* args_p)
 //-----------------------------------------------------------------------------
 {
   MessageDef                         *msg_p;
@@ -5064,6 +5064,7 @@ rrc_enb_task(
 
   protocol_ctxt_t                     ctxt;
   itti_mark_task_ready(TASK_RRC_ENB);
+  printf("RRC eNB Task is marked ready\n");
 
   while (1) {
     // Wait for a message
@@ -5168,7 +5169,7 @@ rrc_enb_task(
       /* Messages from eNB app */
     case RRC_CONFIGURATION_REQ:
       LOG_I(RRC, "[eNB %d] Received %s\n", instance, msg_name_p);
-      openair_rrc_eNB_configuration(ENB_INSTANCE_TO_MODULE_ID(instance), &RRC_CONFIGURATION_REQ(msg_p));
+      openair_rrc_eNB_configuration_NB_IoT(ENB_INSTANCE_TO_MODULE_ID(instance), &RRC_CONFIGURATION_REQ(msg_p));
       break;
 
 #   if ENABLE_RAL

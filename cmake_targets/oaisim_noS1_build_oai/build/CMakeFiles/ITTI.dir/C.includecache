@@ -30,24 +30,6 @@ platform_types.h
 backtrace.h
 /home/momo/openairinterface5g/common/utils/itti/backtrace.h
 
-/home/momo/openairinterface5g/common/utils/itti/backtrace.c
-pthread.h
--
-stdio.h
--
-stdlib.h
--
-unistd.h
--
-string.h
--
-signal.h
--
-execinfo.h
--
-backtrace.h
-/home/momo/openairinterface5g/common/utils/itti/backtrace.h
-
 /home/momo/openairinterface5g/common/utils/itti/backtrace.h
 signal.h
 -
@@ -199,20 +181,6 @@ stdint.h
 -
 linux/types.h
 -
-
-/home/momo/openairinterface5g/common/utils/itti/memory_pools.c
-rtai_shm.h
--
-assertions.h
-/home/momo/openairinterface5g/common/utils/itti/assertions.h
-memory_pools.h
-/home/momo/openairinterface5g/common/utils/itti/memory_pools.h
-vcd_signal_dumper.h
-/home/momo/openairinterface5g/common/utils/itti/vcd_signal_dumper.h
-string.h
--
-T.h
-/home/momo/openairinterface5g/common/utils/itti/T.h
 
 /home/momo/openairinterface5g/common/utils/itti/memory_pools.h
 stdint.h
@@ -20923,4 +20891,6 @@ asn_application.h
 CMakeFiles/Rel14/xer_encoder.h
 asn_application.h
 -
+
+CMakeFiles/messages_xml.h
 

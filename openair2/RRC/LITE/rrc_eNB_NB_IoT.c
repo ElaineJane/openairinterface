@@ -1744,7 +1744,7 @@ char openair_rrc_eNB_configuration_NB_IoT(
   LOG_I(RRC,
         PROTOCOL_RRC_CTXT_FMT" Init...\n",
         PROTOCOL_RRC_CTXT_ARGS(&ctxt));
-
+ openair_rrc_top_init_eNB_NB_IoT();
 #if OCP_FRAMEWORK
 while ( eNB_rrc_inst_NB_IoT == NULL ) {
   LOG_E(RRC, "eNB_rrc_inst_NB_IoT not yet initialized, waiting 1 second\n");

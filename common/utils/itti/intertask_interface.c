@@ -961,6 +961,7 @@ int itti_init(task_id_t task_max, thread_id_t thread_max, MessagesIds messages_i
 
   CHECK_INIT_RETURN(timer_init ());
 
+  printf("ITTI  init OK\n");
   return 0;
 }
 

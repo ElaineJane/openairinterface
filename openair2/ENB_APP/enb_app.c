@@ -72,7 +72,7 @@ static void configure_phy(module_id_t enb_id, const Enb_properties_array_t* enb_
   msg_p = itti_alloc_new_message (TASK_ENB_APP, PHY_CONFIGURATION_REQ);
 
   for (CC_id=0; CC_id<MAX_NUM_CCs; CC_id++) {
-    PHY_CONFIGURATION_REQ (msg_p).frame_type[CC_id]              = enb_properties->properties[enb_id]->frame_type[CC_id];
+    PHY_CONFIGURATION_REQ (msg_p).frame_type[CC_id]              = enb_properties->properties[enb_id]->frame_type[CC_id]; //no value of this enb property
     PHY_CONFIGURATION_REQ (msg_p).prefix_type[CC_id]             = enb_properties->properties[enb_id]->prefix_type[CC_id];
     PHY_CONFIGURATION_REQ (msg_p).downlink_frequency[CC_id]      = enb_properties->properties[enb_id]->downlink_frequency[CC_id];
     PHY_CONFIGURATION_REQ (msg_p).uplink_frequency_offset[CC_id] = enb_properties->properties[enb_id]->uplink_frequency_offset[CC_id];
@@ -309,8 +309,10 @@ void *eNB_app_task(void *args_p)
                "Number of eNB is greater than eNB defined in configuration file (%d/%d)!",
                enb_nb, enb_properties_p->number);
 
+
+
   for (enb_id = enb_id_start; (enb_id < enb_id_end) ; enb_id++) {
-    configure_phy(enb_id, enb_properties_p);
+    //configure_phy(enb_id, enb_properties_p);
     configure_rrc(enb_id, enb_properties_p);
   }
 
@@ -328,8 +330,8 @@ void *eNB_app_task(void *args_p)
   register_enb_pending = eNB_app_register (enb_id_start, enb_id_end, enb_properties_p);
 # else
   /* Start L2L1 task */
-  msg_p = itti_alloc_new_message(TASK_ENB_APP, INITIALIZE_MESSAGE);
-  itti_send_msg_to_task(TASK_L2L1, INSTANCE_DEFAULT, msg_p);
+ // msg_p = itti_alloc_new_message(TASK_ENB_APP, INITIALIZE_MESSAGE);
+ // itti_send_msg_to_task(TASK_L2L1, INSTANCE_DEFAULT, msg_p);
 # endif
 
   do {

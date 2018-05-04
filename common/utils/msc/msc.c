@@ -127,6 +127,7 @@ int msc_init(const msc_env_t envP, const int max_threadsP)
   int   rv;
   void *pointer_p;
   char  msc_filename[256];
+  
   fprintf(stderr, "Initializing MSC logs\n");
 
   rv = snprintf(msc_filename, 256, "/tmp/openair.msc.%u.log", envP); // TODO NAME

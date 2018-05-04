@@ -261,18 +261,18 @@
 
 #define ENB_CONFIG_STRING_BCCH_MODIFICATIONPERIODCOEFF_NB_IOT              "bcch_modificationPeriodCoeff_NB"
 #define ENB_CONFIG_STRING_PCCH_DEFAULT_PAGING_CYCLE_NB_IOT                 "pcch_defaultPagingCycle_NB"
-#define ENB_CONFIG_STRING_NPRACH_CP_LENGTH_NB_IOT                          "nprach_CP_Length"
-#define ENB_CONFIG_STRING_NPRACH_RSRP_RANGE_NB_IOT                         "nprach_rsrp_range"
-#define ENB_CONFIG_STRING_NPDSCH_NRS_POWER_NB_IOT                          "npdsch_nrs_Power"
-#define ENB_CONFIG_STRING_NPUSCH_ACK_NACK_NUMREPETITIONS_NB_IOT            "npusch_ack_nack_numRepetitions_NB"
+#define ENB_CONFIG_STRING_NPRACH_CP_LENGTH_NB_IOT                          "nprach_CP_Length"//   
+#define ENB_CONFIG_STRING_NPRACH_RSRP_RANGE_NB_IOT                         "nprach_rsrp_range"//
+#define ENB_CONFIG_STRING_NPDSCH_NRS_POWER_NB_IOT                          "npdsch_nrs_Power"//
+#define ENB_CONFIG_STRING_NPUSCH_ACK_NACK_NUMREPETITIONS_NB_IOT            "npusch_ack_nack_numRepetitions_NB"//
 #define ENB_CONFIG_STRING_NPUSCH_SRS_SUBFRAMECONFIG_NB_IOT                 "npusch_srs_SubframeConfig_NB"
-#define ENB_CONFIG_STRING_NPUSCH_THREETONE_CYCLICSHIFT_R13_NB_IOT          "npusch_threeTone_CyclicShift_r13"
-#define ENB_CONFIG_STRING_NPUSCH_SIXTONE_CYCLICSHIFT_R13_NB_IOT            "npusch_sixTone_CyclicShift_r13"
+#define ENB_CONFIG_STRING_NPUSCH_THREETONE_CYCLICSHIFT_R13_NB_IOT          "npusch_threeTone_CyclicShift_r13"//
+#define ENB_CONFIG_STRING_NPUSCH_SIXTONE_CYCLICSHIFT_R13_NB_IOT            "npusch_sixTone_CyclicShift_r13"//
 #define ENB_CONFIG_STRING_NPUSCH_GROUP_HOPPING_EN_NB_IOT                   "npusch_groupHoppingEnabled"
 #define ENB_CONFIG_STRING_NPUSCH_GROUPASSIGNMENTNPUSH_R13_NB_IOT           "npusch_groupAssignmentNPUSCH_r13"
-#define ENB_CONFIG_STRING_DL_GAPTHRESHOLD_NB_IOT                           "dl_GapThreshold_NB"
-#define ENB_CONFIG_STRING_DL_GAPPERIODICITY_NB_IOT                         "dl_GapPeriodicity_NB"
-#define ENB_CONFIG_STRING_DL_GAPDURATIONCOEFF_NB_IOT                       "dl_GapDurationCoeff_NB"
+#define ENB_CONFIG_STRING_DL_GAPTHRESHOLD_NB_IOT                           "dl_GapThreshold_NB"//
+#define ENB_CONFIG_STRING_DL_GAPPERIODICITY_NB_IOT                         "dl_GapPeriodicity_NB"//
+#define ENB_CONFIG_STRING_DL_GAPDURATIONCOEFF_NB_IOT                       "dl_GapDurationCoeff_NB"//
 #define ENB_CONFIG_STRING_NPUSCH_P0NOMINALPUSH_NB_IOT                      "npusch_p0_NominalNPUSCH"
 #define ENB_CONFIG_STRING_NPUSCH_ALPHA_NB_IOT                              "npusch_alpha"
 #define ENB_CONFIG_STRING_DELTAPREAMBLEMSG3_NB_IOT                         "deltaPreambleMsg3"
@@ -287,16 +287,16 @@
 
 // NPRACH parameters 
 
-#define ENB_CONFIG_STRING_NPRACH_PERIODICITY_NB_IOT                        "nprach_Periodicity"
-#define ENB_CONFIG_STRING_NPRACH_STARTTIME_NB_IOT                          "nprach_StartTime"
-#define ENB_CONFIG_STRING_NPRACH_SUBCARRIEROFFSET_NB_IOT                   "nprach_SubcarrierOffset"
-#define ENB_CONFIG_STRING_NPRACH_NUMSUBCARRIERS_NB_IOT                     "nprach_NumSubcarriers"
-#define ENB_CONFIG_STRING_NPRACH_SUBCARRIERMSG3_RANGESTART_NB_IOT          "nprach_SubcarrierMSG3_RangeStart"
-#define ENB_CONFIG_STRING_MAXNUM_PREAMBLE_ATTEMPT_CE_NB_IOT                "maxNumPreambleAttemptCE_NB"
-#define ENB_CONFIG_STRING_NUMREPETITIONSPERPREAMBLEATTEMPT_NB_IOT          "numRepetitionsPerPreambleAttempt"
-#define ENB_CONFIG_STRING_NPDCCH_NUMREPETITIONS_RA_NB_IOT                  "npdcch_NumRepetitions_RA"
-#define ENB_CONFIG_STRING_NPDCCH_STARTSF_CSS_RA_NB_IOT                     "npdcch_StartSF_CSS_RA"
-#define ENB_CONFIG_STRING_NPDCCH_OFFSET_RA_NB_IOT                          "npdcch_Offset_RA"
+#define ENB_CONFIG_STRING_NPRACH_PERIODICITY_NB_IOT                        "nprach_Periodicity"//
+#define ENB_CONFIG_STRING_NPRACH_STARTTIME_NB_IOT                          "nprach_StartTime"//
+#define ENB_CONFIG_STRING_NPRACH_SUBCARRIEROFFSET_NB_IOT                   "nprach_SubcarrierOffset"//
+#define ENB_CONFIG_STRING_NPRACH_NUMSUBCARRIERS_NB_IOT                     "nprach_NumSubcarriers"//
+#define ENB_CONFIG_STRING_NPRACH_SUBCARRIERMSG3_RANGESTART_NB_IOT          "nprach_SubcarrierMSG3_RangeStart"//
+#define ENB_CONFIG_STRING_MAXNUM_PREAMBLE_ATTEMPT_CE_NB_IOT                "maxNumPreambleAttemptCE_NB"//
+#define ENB_CONFIG_STRING_NUMREPETITIONSPERPREAMBLEATTEMPT_NB_IOT          "numRepetitionsPerPreambleAttempt"//
+#define ENB_CONFIG_STRING_NPDCCH_NUMREPETITIONS_RA_NB_IOT                  "npdcch_NumRepetitions_RA"//
+#define ENB_CONFIG_STRING_NPDCCH_STARTSF_CSS_RA_NB_IOT                     "npdcch_StartSF_CSS_RA"//
+#define ENB_CONFIG_STRING_NPDCCH_OFFSET_RA_NB_IOT                          "npdcch_Offset_RA"//
 
 /////////////////////////////////////////////////END///////////////////////////////////////////////
 
@@ -4121,6 +4121,7 @@ const Enb_properties_array_t *enb_config_init(char* lib_config_file_name_pP)
 
 const Enb_properties_array_t *enb_config_get(void)
 {
+  enb_properties.number = 1;
   return &enb_properties;
 }
 

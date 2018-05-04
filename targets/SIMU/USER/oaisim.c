@@ -577,7 +577,7 @@ l2l1_task (void *args_p)
 
   itti_mark_task_ready (TASK_L2L1);
   LOG_I(EMU, "TASK_L2L1 is READY\n");
-
+printf("this is the testing point\n");//
   if ((oai_emulation.info.nb_enb_local > 0) && 
       (oai_emulation.info.node_function[0] < NGFI_RAU_IF4p5)) {
     /* Wait for the initialize message */
@@ -1201,7 +1201,100 @@ static void print_current_directory(void)
 int
 main (int argc, char **argv)
 {
+  printf("This is a test for OAI Simulator\n");
+  clock_t t;
 
+  print_current_directory();
+
+  start_background_system();
+  log_thread_init ();
+
+  init_oai_emulation (); // to initialize everything !!!
+
+  get_simulation_options(argc, argv);
+
+   // configure oaisim with OCG
+  oaisim_config (); // config OMG and OCG, OPT, OTG, OLG
+
+  if (ue_connection_test == 1) {
+    snr_direction = -snr_step;
+    snr_dB = 20;
+    sinr_dB = -20;
+  }
+
+  pthread_cond_init(&sync_cond,NULL);
+  pthread_mutex_init(&sync_mutex, NULL);
+  pthread_mutex_init(&subframe_mutex, NULL);
+
+
+//Before this call, NB_UE_INST and NB_eNB_INST are not set correctly
+  check_and_adjust_params ();
+
+  set_seed = oai_emulation.emulation_config.seed.value;
+
+  init_otg_pdcp_buffer ();
+
+  init_seed (set_seed);
+
+ // init_openair1 ();
+
+  //init_openair2 ();
+
+  #if defined(ENABLE_ITTI)
+  printf("ENABLE_ITTI is defined !\n");
+  // Note: Cannot handle both RRU/RAU and eNB at the same time, if the first "eNB" is an RRU/RAU, no NAS
+  if (oai_emulation.info.node_function[0] < NGFI_RAU_IF4p5) { 
+    //eNode_3GPP=0, jump in
+    if (create_tasks(oai_emulation.info.nb_enb_local, 
+         oai_emulation.info.nb_ue_local) < 0) 
+      exit(-1); // need a softer mode
+  }
+  else {
+    if (create_tasks(0, 
+         oai_emulation.info.nb_ue_local) < 0) 
+      exit(-1); // need a softer mode
+  }
+#endif
+
+// wait for all threads to startup 
+  sleep(3);
+  printf("Sending sync to all threads\n");
+
+  pthread_mutex_lock(&sync_mutex);
+  sync_var=0;
+  pthread_cond_broadcast(&sync_cond);
+  pthread_mutex_unlock(&sync_mutex);
+LOG_N(EMU,
+        ">>>>>>>>>>>>>>>>>>>>>>>>>>> OAIEMU initialization done <<<<<<<<<<<<<<<<<<<<<<<<<<\n\n");
+
+#ifndef PACKAGE_VERSION
+#  define PACKAGE_VERSION "UNKNOWN-EXPERIMENTAL"
+#endif
+  LOG_I(EMU, "Version: %s\n", PACKAGE_VERSION);
+
+#if defined(ENABLE_ITTI)
+
+  // Handle signals until all tasks are terminated
+  itti_wait_tasks_end();
+
+#else
+
+  if (oai_emulation.info.nb_enb_local > 0) {
+    eNB_app_task (NULL); // do nothing for the moment
+  }
+
+  l2l1_task (NULL);
+#endif
+  t = clock () - t;
+  LOG_I(EMU, "Duration of the simulation: %f seconds\n",
+        ((float) t) / CLOCKS_PER_SEC);
+
+  LOG_N(EMU,
+        ">>>>>>>>>>>>>>>>>>>>>>>>>>> OAIEMU Ending <<<<<<<<<<<<<<<<<<<<<<<<<<\n\n");
+
+  raise (SIGINT);
+  //  oai_shutdown ();
+  /*-------------------------------------------------------------------
   clock_t t;
 
   print_current_directory();
@@ -1233,9 +1326,11 @@ main (int argc, char **argv)
       /* we don't care about return value from system(), but let's the
        * compiler be silent, so let's do "if (XX);"
        */
-      if (system(command_line)) /* nothing */;
-  }
+  /*----------------------------------------------*/
+//----------------------------      if (system(command_line)) /* nothing */;
+ //-------------------------- }
   // start thread for log gen
+  /*-------------------------------------------------
   log_thread_init ();
 
   init_oai_emulation (); // to initialize everything !!!
@@ -1336,11 +1431,11 @@ main (int argc, char **argv)
   smbv_init_config(smbv_fname, smbv_nframes);
   smbv_write_config_from_frame_parms(smbv_fname, &PHY_vars_eNB_g[0][0]->frame_parms);
 #endif
-
+------------------------------------------*/
   /* #if defined (FLEXRAN_AGENT_SB_IF)
   flexran_agent_start();
   #endif */ 
-
+/*-------------------------------------------------------------------
   // add events to future event list: Currently not used
   //oai_emulation.info.oeh_enabled = 1;
   if (oai_emulation.info.oeh_enabled == 1)
@@ -1388,7 +1483,8 @@ main (int argc, char **argv)
 
   raise (SIGINT);
   //  oai_shutdown ();
-
+----------------------------------------------------------------*/
+  printf("This is the end of OAI Simulator\n");
   return (0);
 }
 

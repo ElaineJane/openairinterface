@@ -380,16 +380,6 @@ PHY/defs.h
 
 /home/momo/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/defs.h
 
-/home/momo/openairinterface5g/openair1/SIMULATION/RF/adc.c
-
-/home/momo/openairinterface5g/openair1/SIMULATION/RF/dac.c
-math.h
--
-stdio.h
--
-PHY/TOOLS/defs.h
-/home/momo/openairinterface5g/openair1/SIMULATION/RF/PHY/TOOLS/defs.h
-
 /home/momo/openairinterface5g/openair1/SIMULATION/RF/defs.h
 
 /home/momo/openairinterface5g/openair1/SIMULATION/RF/rf.c
@@ -487,20 +477,6 @@ defs.h
 /home/momo/openairinterface5g/openair1/SIMULATION/TOOLS/defs.h
 
 /home/momo/openairinterface5g/openair1/SIMULATION/TOOLS/scm_corrmat.h
-
-/home/momo/openairinterface5g/openair1/SIMULATION/TOOLS/taus.c
-time.h
--
-stdlib.h
--
-asm/io.h
--
-asm/rtai.h
--
-rtai.h
--
-rtai_sched.h
--
 
 /home/momo/openairinterface5g/openair2/COMMON/commonDef.h
 stdint.h

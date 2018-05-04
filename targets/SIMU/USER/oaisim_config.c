@@ -349,12 +349,14 @@ void oaisim_config(void)
   mRAL_init_default_values();
   eRAL_init_default_values();
 #endif
+  //skip because of strcmp error
   olg_config();
   ocg_config_emu();
   ocg_config_env();// mobility gen
+   //skip because of strcmp error
   ocg_config_topo(); // packet tracer using wireshark
   ocg_config_proto();
-
+ 
   // if T is set or ocg enabled
   if (oai_emulation.info.otg_enabled ) {
     set_component_filelog(OTG);

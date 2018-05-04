@@ -194,10 +194,6 @@ defs.h
 stdio.h
 -
 
-/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c
-PHY/CODING/defs_NB_IoT.h
-/home/momo/openairinterface5g/openair1/PHY/CODING/PHY/CODING/defs_NB_IoT.h
-
 /home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_lte.c
 defs.h
 /home/momo/openairinterface5g/openair1/PHY/CODING/defs.h
@@ -209,10 +205,6 @@ defs.h
 /home/momo/openairinterface5g/openair1/PHY/CODING/defs.h
 stdio.h
 -
-
-/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c
-PHY/CODING/defs_NB_IoT.h
-/home/momo/openairinterface5g/openair1/PHY/CODING/PHY/CODING/defs_NB_IoT.h
 
 /home/momo/openairinterface5g/openair1/PHY/CODING/defs.h
 stdint.h
@@ -285,16 +277,6 @@ lte_interleaver.h
 /home/momo/openairinterface5g/openair1/PHY/CODING/lte_interleaver.h
 lte_interleaver2.h
 /home/momo/openairinterface5g/openair1/PHY/CODING/lte_interleaver2.h
-
-/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c
-PHY/sse_intrin.h
-/home/momo/openairinterface5g/openair1/PHY/CODING/PHY/sse_intrin.h
-stdio.h
--
-stdlib.h
--
-string.h
--
 
 /home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c
 stdio.h
@@ -816,16 +798,6 @@ UTIL/LOG/log.h
 syscall.h
 -
 
-/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c
-string.h
--
-PHY/CODING/defs_NB_IoT.h
-/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/PHY/CODING/defs_NB_IoT.h
-PHY/LTE_TRANSPORT/defs_NB_IoT.h
-/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/PHY/LTE_TRANSPORT/defs_NB_IoT.h
-PHY/TOOLS/time_meas_NB_IoT.h
-/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/PHY/TOOLS/time_meas_NB_IoT.h
-
 /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c
 PHY/defs.h
 /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/PHY/defs.h
@@ -917,16 +889,6 @@ defs.h
 /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/defs.h
 UTIL/LOG/vcd_signal_dumper.h
 /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/UTIL/LOG/vcd_signal_dumper.h
-
-/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c
-math.h
--
-PHY/LTE_TRANSPORT/defs_NB_IoT.h
-/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/PHY/LTE_TRANSPORT/defs_NB_IoT.h
-PHY/impl_defs_lte_NB_IoT.h
-/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/PHY/impl_defs_lte_NB_IoT.h
-PHY/impl_defs_top_NB_IoT.h
-/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/PHY/impl_defs_top_NB_IoT.h
 
 /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c
 PHY/defs.h
@@ -1448,16 +1410,6 @@ defs.h
 UTIL/LOG/vcd_signal_dumper.h
 /home/momo/openairinterface5g/openair1/PHY/MODULATION/UTIL/LOG/vcd_signal_dumper.h
 
-/home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_bf_weights.c
-stdio.h
--
-stdint.h
--
-stdlib.h
--
-PHY/impl_defs_lte.h
-/home/momo/openairinterface5g/openair1/PHY/MODULATION/PHY/impl_defs_lte.h
-
 /home/momo/openairinterface5g/openair1/PHY/MODULATION/defs.h
 PHY/defs.h
 /home/momo/openairinterface5g/openair1/PHY/MODULATION/PHY/defs.h
@@ -1516,49 +1468,11 @@ PHY/sse_intrin.h
 
 /home/momo/openairinterface5g/openair1/PHY/TOOLS/alaw_lut.h
 
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/cadd_vv.c
-defs.h
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/defs.h
-stdio.h
--
-
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/cdot_prod.c
-defs.h
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/defs.h
-PHY/sse_intrin.h
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/PHY/sse_intrin.h
-
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_sv.c
-PHY/sse_intrin.h
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/PHY/sse_intrin.h
-defs.h
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/defs.h
-
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_vv.c
-defs.h
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/defs.h
-stdio.h
--
-
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/dB_routines.c
-defs.h
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/defs.h
-
 /home/momo/openairinterface5g/openair1/PHY/TOOLS/defs.h
 stdint.h
 -
 PHY/sse_intrin.h
 /home/momo/openairinterface5g/openair1/PHY/TOOLS/PHY/sse_intrin.h
-
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c
-string.h
--
-stdio.h
--
-stdlib.h
--
-
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/log2_approx.c
 
 /home/momo/openairinterface5g/openair1/PHY/TOOLS/lte_dfts.c
 stdio.h
@@ -1598,34 +1512,6 @@ twiddle24576.h
 string.h
 -
 stdio.h
--
-
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/lut.c
-
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/signal_energy.c
-defs.h
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/defs.h
-PHY/sse_intrin.h
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/PHY/sse_intrin.h
-math.h
--
-stdlib.h
--
-stdio.h
--
-string.h
--
-
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/sqrt.c
-
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/time_meas.c
-stdio.h
--
-time_meas.h
-/home/momo/openairinterface5g/openair1/PHY/TOOLS/time_meas.h
-math.h
--
-unistd.h
 -
 
 /home/momo/openairinterface5g/openair1/PHY/TOOLS/time_meas.h
