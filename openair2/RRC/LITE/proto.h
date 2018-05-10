@@ -462,3 +462,14 @@ long binary_search_int(int elements[], long numElem, int value);
 long binary_search_float(float elements[], long numElem, float value);
 
 /** @}*/
+
+
+/*--------------------------------------------------------*/
+int get_NB_IoT_frame(void);
+
+int get_NB_IoT_subframe(void);
+
+uint16_t get_NB_IoT_rnti(void);
+
+
+/*-----------------------------------------------------------*/

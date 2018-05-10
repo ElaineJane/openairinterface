@@ -53,6 +53,7 @@
 //#include for NB-IoT-------------------
 #include "RRCConnectionRequest-NB.h"
 #include "BCCH-DL-SCH-Message-NB.h"
+#include "BCCH-BCH-Message-NB.h"
 #include "UL-CCCH-Message-NB.h"
 #include "UL-DCCH-Message-NB.h"
 #include "DL-CCCH-Message-NB.h"
@@ -93,8 +94,9 @@ int errno;
 #endif
 
 
+
 /*do_MIB_NB_NB_IoT*/
-uint8_t do_MIB_NB_IoT(
+uint8_t do_MIB_NB_IoT(uint8_t Mod_id, int CC_id,
 		rrc_eNB_carrier_data_NB_IoT_t *carrier,
 		uint16_t N_RB_DL,//may not needed--> for NB_IoT only 1 PRB is used
 		uint32_t frame,
@@ -121,16 +123,28 @@ uint8_t do_MIB_NB_IoT(
   uint8_t hsfn_LSB = (uint8_t)(hyper_frame & 0x3); //2 bits set to 1 (0x3 = 0011)
   uint16_t spare=0; //11 bits --> use uint16
 
-  mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf = &sfn_MSB;
+
+  //mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf = MALLOC(1);
+  //memcpy(mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf, &sfn_MSB,1);
+  //mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0] =  (uint8_t)((frame>>6) & 0x0f);
+  mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf  = &sfn_MSB;
   mib_NB_IoT->message.systemFrameNumber_MSB_r13.size = 1; //if expressed in byte
   mib_NB_IoT->message.systemFrameNumber_MSB_r13.bits_unused = 4; //is byte based (so how many bits you don't use of the 8 bits of a bite
+  //printf("mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0] :%s\n",mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0] );
 
-  mib_NB_IoT->message.hyperSFN_LSB_r13.buf= &hsfn_LSB;
+  //mib_NB_IoT->message.hyperSFN_LSB_r13.buf= MALLOC(1);
+  //memcpy(mib_NB_IoT->message.hyperSFN_LSB_r13.buf, &hsfn_LSB, 1);
+  //mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0]= (uint8_t)(hyper_frame & 0x3);
+  mib_NB_IoT->message.hyperSFN_LSB_r13.buf = &hsfn_LSB;
   mib_NB_IoT->message.hyperSFN_LSB_r13.size= 1;
   mib_NB_IoT->message.hyperSFN_LSB_r13.bits_unused = 6;
+  //printf("mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0]:%s\n",mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0] );
 
   //XXX to be set??
-  mib_NB_IoT->message.spare.buf = (uint8_t *)&spare;
+  //mib_NB_IoT->message.spare.buf = MALLOC(2);
+  //mib_NB_IoT->message.spare.buf[0]= 0;
+  //mib_NB_IoT->message.spare.buf[1] = 0;
+  mib_NB_IoT->message.spare.buf =  (uint8_t *)&spare;
   mib_NB_IoT->message.spare.size = 2;
   mib_NB_IoT->message.spare.bits_unused = 5;
 
@@ -144,8 +158,8 @@ uint8_t do_MIB_NB_IoT(
   mib_NB_IoT->message.operationModeInfo_r13.choice.inband_SamePCI_r13.eutra_CRS_SequenceInfo_r13 = 0;
 
   printf("[MIB] Intialization of frame information ,sfn_MSB %x, hsfn_LSB %x\n",
-         (uint32_t)sfn_MSB,
-		 (uint32_t)hsfn_LSB);
+         (uint32_t)mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0] ,
+		 (uint32_t)mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0]);
 
   enc_rval = uper_encode_to_buffer(&asn_DEF_BCCH_BCH_Message_NB,
                                    (void*)mib_NB_IoT,
@@ -153,6 +167,27 @@ uint8_t do_MIB_NB_IoT(
                                    100);
   AssertFatal (enc_rval.encoded > 0, "ASN1 message encoding failed (%s, %lu)!\n",
                enc_rval.failed_type->name, enc_rval.encoded);
+
+#if defined(ENABLE_ITTI)
+# if !defined(DISABLE_XER_SPRINT)
+  {
+    char        message_string[20000];
+    size_t      message_string_size;
+
+    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_BCCH_BCH_Message_NB, (void *) &mib_NB_IoT)) > 0) {
+      MessageDef *msg_p;
+
+      msg_p = itti_alloc_new_message_sized (TASK_RRC_ENB, RRC_BCCH_BCH_DATA_IND, message_string_size + sizeof (IttiMsgText));
+      msg_p->ittiMsg.rrc_dl_bcch.size = message_string_size;
+      memcpy(&msg_p->ittiMsg.rrc_dl_bcch.text, message_string, message_string_size);
+
+      itti_send_msg_to_task(TASK_RRC_UE, Mod_id, msg_p);
+      printf("[eNB] RRC_BCCH_BCH_DATA_IND message has been sent to UE\n");
+    }
+  }
+# endif
+#endif
+
 
   if (enc_rval.encoded==-1) {
     return(-1);

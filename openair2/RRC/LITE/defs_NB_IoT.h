@@ -496,6 +496,9 @@ typedef struct UE_RRC_INST_NB_IoT_s {
   SRB_INFO_TABLE_ENTRY_NB_IoT     Srb1[NB_CNX_UE];
   SRB_INFO_TABLE_ENTRY_NB_IoT     Srb2[NB_CNX_UE];
   HANDOVER_INFO_UE_NB_IoT         HandoverInfoUe;
+
+ MasterInformationBlock_NB_t *mib[NB_CNX_UE];
+
   /*
   uint8_t *SIB1[NB_CNX_UE];
   uint8_t sizeof_SIB1[NB_CNX_UE];

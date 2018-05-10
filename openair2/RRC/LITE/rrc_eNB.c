@@ -125,6 +125,12 @@ uint8_t *get_NB_IoT_MIB(void)
   return eNB_rrc_inst_NB_IoT->carrier[0].MIB_NB_IoT;
 }
 
+uint8_t *get_NB_IoT_MIB_size(void)
+{
+  // CC_ID=0
+  return eNB_rrc_inst_NB_IoT->carrier[0].sizeof_MIB_NB_IoT;
+}
+
 void init_testing_NB_IoT(uint8_t Mod_id, int CC_id, rrc_eNB_carrier_data_NB_IoT_t *carrier, RrcConfigurationReq *configuration, uint32_t frame, uint32_t hyper_frame)
 {
 
@@ -150,7 +156,9 @@ void init_testing_NB_IoT(uint8_t Mod_id, int CC_id, rrc_eNB_carrier_data_NB_IoT_
   if (carrier[CC_id].MIB_NB_IoT)
   {
     carrier[CC_id].sizeof_MIB_NB_IoT =
-            do_MIB_NB_IoT(carrier,
+            do_MIB_NB_IoT(Mod_id,
+                CC_id,
+              carrier,
                   configuration->N_RB_DL[CC_id],
                   0, //frame
                   0// hyper sfn
@@ -5170,6 +5178,7 @@ void* rrc_enb_task(void* args_p)
     case RRC_CONFIGURATION_REQ:
       LOG_I(RRC, "[eNB %d] Received %s\n", instance, msg_name_p);
       openair_rrc_eNB_configuration_NB_IoT(ENB_INSTANCE_TO_MODULE_ID(instance), &RRC_CONFIGURATION_REQ(msg_p));
+      
       break;
 
 #   if ENABLE_RAL

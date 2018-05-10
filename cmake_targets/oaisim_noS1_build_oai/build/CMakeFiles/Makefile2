@@ -956,9 +956,9 @@ CMakeFiles/lte-softmodem.dir/all: CMakeFiles/SECU_OSA.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/UTIL.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/SECU_CN.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/SCHED_LIB.dir/all
-CMakeFiles/lte-softmodem.dir/all: CMakeFiles/GTPV1U.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/PHY.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/L2.dir/all
+CMakeFiles/lte-softmodem.dir/all: CMakeFiles/GTPV1U.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/SCTP_CLIENT.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/UDP.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/LFDS.dir/all
@@ -1365,9 +1365,9 @@ CMakeFiles/oaisim.dir/all: CMakeFiles/SECU_OSA.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/UTIL.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/SECU_CN.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/SCHED_LIB.dir/all
-CMakeFiles/oaisim.dir/all: CMakeFiles/GTPV1U.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/PHY.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/L2.dir/all
+CMakeFiles/oaisim.dir/all: CMakeFiles/GTPV1U.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/SCTP_CLIENT.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/UDP.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/LFDS.dir/all
@@ -1419,8 +1419,8 @@ CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/PHY.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/L2.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/LFDS.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/SIMU.dir/all
-CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/SIMU_ETH.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/LFDS7.dir/all
+CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/SIMU_ETH.dir/all
 	$(MAKE) -f CMakeFiles/oaisim_nos1.dir/build.make CMakeFiles/oaisim_nos1.dir/depend
 	$(MAKE) -f CMakeFiles/oaisim_nos1.dir/build.make CMakeFiles/oaisim_nos1.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/oaisim_noS1_build_oai/build/CMakeFiles  97
@@ -1954,9 +1954,9 @@ CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/HASHTABLE.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/UTIL.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/SECU_CN.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/SCHED_LIB.dir/all
-CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/GTPV1U.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/PHY.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/L2.dir/all
+CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/GTPV1U.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/SCTP_CLIENT.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/UDP.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/LFDS.dir/all
@@ -2002,8 +2002,8 @@ CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/HASHTABLE.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/UTIL.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/SECU_CN.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/SCHED_LIB.dir/all
-CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/GTPV1U.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/PHY.dir/all
+CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/GTPV1U.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/SCTP_CLIENT.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/UDP.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/LFDS.dir/all

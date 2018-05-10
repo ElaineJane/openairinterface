@@ -40,3 +40,6 @@ MESSAGE_DEF(RRC_MAC_CCCH_DATA_IND,      MESSAGE_PRIORITY_MED_PLUS, RrcMacCcchDat
 
 MESSAGE_DEF(RRC_MAC_MCCH_DATA_REQ,      MESSAGE_PRIORITY_MED_PLUS, RrcMacMcchDataReq,           rrc_mac_mcch_data_req)
 MESSAGE_DEF(RRC_MAC_MCCH_DATA_IND,      MESSAGE_PRIORITY_MED_PLUS, RrcMacMcchDataInd,           rrc_mac_mcch_data_ind)
+
+MESSAGE_DEF(RRC_BCCH_BCH_DATA_IND,      MESSAGE_PRIORITY_MED_PLUS, RrcBcchBchDataInd,           rrc_bcch_bch_data_ind)
+MESSAGE_DEF(RRC_BCCH_DLSCH_DATA_IND,      MESSAGE_PRIORITY_MED_PLUS, RrcBcchDlschDataInd,           rrc_bcch_dlsch_data_ind)

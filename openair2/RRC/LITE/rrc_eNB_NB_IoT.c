@@ -1598,8 +1598,22 @@ void rrc_eNB_generate_defaultRRCConnectionReconfiguration_NB_IoT(const protocol_
 }
 
 
+  int get_NB_IoT_frame(void)
+  {
+    return 1;
+  }
+
+  int get_NB_IoT_subframe(void)
+  {
+    return 1;
+  }
+
+  uint16_t get_NB_IoT_rnti(void)
+  {
+    return 0;
+  }
 /*-----------------CONFIGURATION-------------------*/
-/*
+
 //-----------------------------------------------------------------------------
 static void init_SI_NB_IoT(
   const protocol_ctxt_t* const ctxt_pP,
@@ -1608,10 +1622,6 @@ static void init_SI_NB_IoT(
 )
 //-----------------------------------------------------------------------------
 { 
-
-	config_INFO = malloc(sizeof(PHY_Config_t));
-
-
   //copy basic parameters
   eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].physCellId      = configuration->Nid_cell[CC_id];
   eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].p_eNB           = configuration->nb_antenna_ports[CC_id];
@@ -1635,11 +1645,37 @@ static void init_SI_NB_IoT(
   if (eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].MIB_NB_IoT)
   {
 	  eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sizeof_MIB_NB_IoT =
-	  			  do_MIB_NB_IoT(&eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id],
-	  					  	configuration->N_RB_DL[CC_id],
-					        0, //FIXME is correct to pass frame = 0??
-					        0
+	  			  do_MIB_NB_IoT(ctxt_pP->module_id,
+                                                 CC_id,
+                                                &eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id],
+	  					configuration->N_RB_DL[CC_id],
+					        1000 ,//FIXME is correct to pass frame = 0??
+					        1
                   );
+            //To send message to ITTI (UE)------------------------------
+/*#if defined(ENABLE_ITTI)
+
+    MessageDef                         *message_p;
+
+    message_p = itti_alloc_new_message(TASK_RRC_ENB, RRC_BCCH_BCH_DATA_IND);
+         RRC_BCCH_BCH_DATA_IND (message_p).frame     = get_NB_IoT_frame();
+          RRC_BCCH_BCH_DATA_IND (message_p).sub_frame = get_NB_IoT_subframe();
+          RRC_BCCH_BCH_DATA_IND (message_p).sdu_size  = eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sizeof_MIB_NB_IoT;
+          RRC_BCCH_BCH_DATA_IND (message_p).enb_index = 0;
+          //RRC_BCCH_BCH_DATA_IND (message_p).rnti      = get_NB_IoT_rnti();
+          memset (RRC_BCCH_BCH_DATA_IND (message_p).sdu, 0, BCCH_SDU_SIZE);
+          memcpy (RRC_BCCH_BCH_DATA_IND (message_p).sdu, eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].MIB_NB_IoT, eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sizeof_MIB_NB_IoT);
+          
+
+
+    itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, message_p);
+    printf("[eNB] RRC_BCCH_BCH_DATA_IND message has been sent to UE\n");
+
+#endif*/
+
+
+            //--------------------------------------------------------------------------
+
   }
   else {
       LOG_E(RRC, PROTOCOL_RRC_CTXT_FMT" init_SI: FATAL, no memory for MIB_NB_IoT allocated\n",
@@ -1710,7 +1746,7 @@ static void init_SI_NB_IoT(
           PROTOCOL_RRC_CTXT_ARGS(ctxt_pP));
 
     //
-         rrc_mac_config_req_NB_IoT(ctxt_pP->module_id,
+         /*rrc_mac_config_req_NB_IoT(ctxt_pP->module_id,
                                   CC_id,
                                   0,
                                   &eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id],
@@ -1718,17 +1754,16 @@ static void init_SI_NB_IoT(
                                   (RadioResourceConfigCommonSIB_NB_r13_t *) &eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sib2_NB_IoT->radioResourceConfigCommon_r13,
                                   (struct PhysicalConfigDedicated_NB_r13 *)NULL,
                                   (struct LogicalChannelConfig_NB_r13 *)NULL,
-                                  &mac_inst->rrc_config,
                                   0,
                                   0
-                                  );
+                                  );*/
   } else {
     LOG_E(RRC, PROTOCOL_RRC_CTXT_FMT" init_SI: FATAL, no memory for SIB2/3_NB allocated\n",
           PROTOCOL_RRC_CTXT_ARGS(ctxt_pP));
     //exit here
   }
 }
-*/
+
 //-----------------------------------------------------------------------------
 //aka openair_rrc_eNB_init
 char openair_rrc_eNB_configuration_NB_IoT(
@@ -1744,6 +1779,7 @@ char openair_rrc_eNB_configuration_NB_IoT(
   LOG_I(RRC,
         PROTOCOL_RRC_CTXT_FMT" Init...\n",
         PROTOCOL_RRC_CTXT_ARGS(&ctxt));
+  // Initalizing eNB_rrc_inst_NB_IoT variable
  openair_rrc_top_init_eNB_NB_IoT();
 #if OCP_FRAMEWORK
 while ( eNB_rrc_inst_NB_IoT == NULL ) {
@@ -1776,10 +1812,10 @@ while ( eNB_rrc_inst_NB_IoT == NULL ) {
   LOG_I(RRC, PROTOCOL_RRC_CTXT_FMT" NB-IoT Rel13 detected\n",PROTOCOL_RRC_CTXT_ARGS(&ctxt));
 
   //no CBA
-
+  printf("[eNB ]eNB has processed the RRC_CONFIGURATION_REQ message and start initializing system information!");
   //init SI
   for (CC_id = 0; CC_id < MAX_NUM_CCs; CC_id++) {
-    //init_SI_NB_IoT(&ctxt, CC_id,configuration);
+    init_SI_NB_IoT(&ctxt, CC_id,configuration);
   }
 
   /*New implementation Raymond*/

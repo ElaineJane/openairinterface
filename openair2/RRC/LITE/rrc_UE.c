@@ -88,6 +88,7 @@
 
 #include "SIMULATION/TOOLS/defs.h" // for taus
 
+//#include "extern_NB_IoT.h"
 
 #ifdef PHY_EMUL
 extern EMULATION_VARS *Emul_vars;
@@ -222,7 +223,7 @@ static int rrc_set_sub_state( module_id_t ue_mod_idP, Rrc_Sub_State_t subState )
   if (UE_rrc_inst[ue_mod_idP].RrcSubState != subState) {
     UE_rrc_inst[ue_mod_idP].RrcSubState = subState;
 
-#if defined(ENABLE_ITTI)
+/*#if defined(ENABLE_ITTI)
     {
       MessageDef *msg_p;
 
@@ -232,7 +233,7 @@ static int rrc_set_sub_state( module_id_t ue_mod_idP, Rrc_Sub_State_t subState )
 
       itti_send_msg_to_task(TASK_UNKNOWN, UE_MODULE_ID_TO_INSTANCE(ue_mod_idP), msg_p);
     }
-#endif
+#endif*/
     return (1);
   }
 
@@ -2628,7 +2629,93 @@ static const char* SIB2nB( long value )
   return str[value];
 }
 
+//-----------------------------------------------------------------------------
+int decode_BCCH_BCH_Message_NB_IoT(
+  const protocol_ctxt_t* const ctxt_pP,
+  const uint8_t                eNB_index,
+  uint8_t*               const Sdu,
+  const uint8_t                Sdu_len,
+  const uint8_t                rsrq,
+  const uint8_t                rsrp )
+{
+  BCCH_BCH_Message_NB_t *mib_NB_IoT = NULL;
+  MasterInformationBlock_NB_t* mib = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].mib[eNB_index];
+  int i;
 
+  uint8_t sfn_MSB;
+
+  VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_BCCH, VCD_FUNCTION_IN );
+
+ //FIXME: This is to be modified (Comment temporarily)
+
+  //rrc_set_sub_state( ctxt_pP->module_id, RRC_SUB_STATE_IDLE_RECEIVING_SIB );
+
+  asn_dec_rval_t dec_rval = uper_decode_complete( NULL,
+                            &asn_DEF_BCCH_BCH_Message_NB,
+                            (void **)&mib_NB_IoT,
+                            (const void *)Sdu,
+                            Sdu_len );
+
+  if ((dec_rval.code != RC_OK) && (dec_rval.consumed == 0)) {
+    LOG_E( RRC, "[UE %"PRIu8"] Failed to decode BCCH_BCH_MESSAGE (%zu bits)\n",
+           ctxt_pP->module_id,
+           dec_rval.consumed );
+    for (i=0;i<Sdu_len;i++)
+      printf("%02x ",Sdu[i]);
+    printf("\n");
+    // free the memory
+    SEQUENCE_free( &asn_DEF_BCCH_BCH_Message_NB, (void*)mib_NB_IoT, 1 );
+    VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_BCCH, VCD_FUNCTION_OUT );
+    return -1;
+  }
+
+/*#if defined(ENABLE_ITTI)
+# if defined(DISABLE_ITTI_XER_PRINT)
+  {
+    MessageDef *msg_p;
+
+    msg_p = itti_alloc_new_message (TASK_RRC_UE, RRC_DL_BCCH_MESSAGE);
+    memcpy (&msg_p->ittiMsg, (void *) bcch_bch_message_nbiot, sizeof(RrcDlBcchMessage));
+
+    itti_send_msg_to_task (TASK_UNKNOWN, ctxt_pP->instance, msg_p);
+  }
+# else
+  {
+    char        message_string[15000];
+    size_t      message_string_size;
+
+    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_BCCH_DL_SCH_Message, (void *)bcch_message)) > 0) {
+      MessageDef *msg_p;
+
+      msg_p = itti_alloc_new_message_sized (TASK_RRC_UE, RRC_DL_BCCH, message_string_size + sizeof (IttiMsgText));
+      msg_p->ittiMsg.rrc_dl_bcch.size = message_string_size;
+      memcpy(&msg_p->ittiMsg.rrc_dl_bcch.text, message_string, message_string_size);
+
+      itti_send_msg_to_task(TASK_UNKNOWN, ctxt_pP->instance, msg_p);
+    }
+  }
+# endif
+#endif*/
+
+  //if(typeof(mib_NB_IoT->message) == MasterInformationBlock_NB_t) {
+    
+     sfn_MSB = (uint8_t)mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf;
+
+    printf("sfn_MSB:%s\n",sfn_MSB);
+//}
+  /*if ((rrc_get_sub_state(ctxt_pP->module_id) == RRC_SUB_STATE_IDLE_SIB_COMPLETE)
+#if defined(ENABLE_USE_MME)
+      && (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].initialNasMsg.data != NULL)
+#endif
+     ) {
+    rrc_ue_generate_RRCConnectionRequest(ctxt_pP, 0);
+    rrc_set_sub_state( ctxt_pP->module_id, RRC_SUB_STATE_IDLE_CONNECTING );
+  }*/
+
+  VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_BCCH, VCD_FUNCTION_OUT );
+
+  return 0;
+}
 
 
 //-----------------------------------------------------------------------------
@@ -4273,6 +4360,7 @@ void *rrc_ue_task( void *args_p )
 
   protocol_ctxt_t  ctxt;
   itti_mark_task_ready (TASK_RRC_UE);
+  printf("UE RRC task is marked ready!\n");
 
   while(1) {
     // Wait for a message
@@ -4288,7 +4376,42 @@ void *rrc_ue_task( void *args_p )
       break;
 
     case MESSAGE_TEST:
+      printf("UE receive a message for  ITTI Test\n");
       LOG_D(RRC, "[UE %d] Received %s\n", ue_mod_id, msg_name);
+      break;
+      /*Message from eNB RRC  */
+    case RRC_BCCH_BCH_DATA_IND:
+    printf("[UE] UE receive a message from ITTI --- RRC_BCCH_BCH_DATA_IND\n");
+      LOG_D(RRC, "[UE %d] Received %s: frameP %d, eNB %d\n", ue_mod_id, msg_name,
+            RRC_BCCH_BCH_DATA_IND (msg_p).frame, RRC_BCCH_BCH_DATA_IND (msg_p).enb_index);
+
+      //      PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt, instance, ENB_FLAG_NO, NOT_A_RNTI, RRC_MAC_BCCH_DATA_IND (msg_p).frame, 0);
+      PROTOCOL_CTXT_SET_BY_MODULE_ID(&ctxt, ue_mod_id, ENB_FLAG_NO, NOT_A_RNTI, RRC_BCCH_BCH_DATA_IND (msg_p).frame, 0,RRC_MAC_BCCH_DATA_IND (msg_p).enb_index);
+      decode_BCCH_BCH_Message_NB_IoT (&ctxt,
+                                 RRC_BCCH_BCH_DATA_IND (msg_p).enb_index,
+                                RRC_BCCH_BCH_DATA_IND (msg_p).sdu,
+                                 //get_NB_IoT_MIB(),
+
+                                 RRC_BCCH_BCH_DATA_IND (msg_p).sdu_size,
+                                 //get_NB_IoT_MIB_size(),
+                                 RRC_BCCH_BCH_DATA_IND (msg_p).rsrq,
+                                 RRC_BCCH_BCH_DATA_IND (msg_p).rsrp);
+      printf("[UE] [MIB]Successfully decode MIB\n");
+
+      break;
+
+      case RRC_BCCH_DLSCH_DATA_IND:
+      LOG_D(RRC, "[UE %d] Received %s: frameP %d, eNB %d\n", ue_mod_id, msg_name,
+            RRC_BCCH_DLSCH_DATA_IND (msg_p).frame, RRC_BCCH_DLSCH_DATA_IND (msg_p).enb_index);
+
+      //      PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt, instance, ENB_FLAG_NO, NOT_A_RNTI, RRC_MAC_BCCH_DATA_IND (msg_p).frame, 0);
+      PROTOCOL_CTXT_SET_BY_MODULE_ID(&ctxt, ue_mod_id, ENB_FLAG_NO, NOT_A_RNTI, RRC_BCCH_DLSCH_DATA_IND (msg_p).frame, 0,RRC_MAC_BCCH_DATA_IND (msg_p).enb_index);
+      /*decode_BCCH_DLSCH_Message_NB_IoT (&ctxt,
+                                 RRC_BCCH_DLSCH_DATA_IND (msg_p).enb_index,
+                                 RRC_BCCH_DLSCH_DATA_IND (msg_p).sdu,
+                                 RRC_BCCH_DLSCH_DATA_IND (msg_p).sdu_size,
+                                 RRC_BCCH_DLSCH_DATA_IND (msg_p).rsrq,
+                                 RRC_BCCH_DLSCH_DATA_IND (msg_p).rsrp);*/
       break;
 
       /* MAC messages */
