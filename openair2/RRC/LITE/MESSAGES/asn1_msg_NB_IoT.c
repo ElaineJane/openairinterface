@@ -105,6 +105,7 @@ uint8_t do_MIB_NB_IoT(uint8_t Mod_id, int CC_id,
   asn_enc_rval_t enc_rval;
   BCCH_BCH_Message_NB_t *mib_NB_IoT = &(carrier->mib_NB_IoT);
 
+
   /*
    * systemFrameNumber-MSB: (TS 36.331 pag 576)
    * define the 4 MSB of the SFN (10 bits). The last significant 6 bits will be acquired implicitly by decoding the NPBCH
@@ -119,32 +120,32 @@ uint8_t do_MIB_NB_IoT(uint8_t Mod_id, int CC_id,
    */
 
   //XXX check if correct the bit assignment
-  uint8_t sfn_MSB = (uint8_t)((frame>>6) & 0x0f); // all the 4 bits are set to 1
+  /*uint8_t sfn_MSB = (uint8_t)((frame>>6) & 0x0f); // all the 4 bits are set to 1
   uint8_t hsfn_LSB = (uint8_t)(hyper_frame & 0x3); //2 bits set to 1 (0x3 = 0011)
-  uint16_t spare=0; //11 bits --> use uint16
+  uint16_t spare=0; //11 bits --> use uint16*/
 
 
-  //mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf = MALLOC(1);
+  mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf = MALLOC(1);
   //memcpy(mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf, &sfn_MSB,1);
-  //mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0] =  (uint8_t)((frame>>6) & 0x0f);
-  mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf  = &sfn_MSB;
+  mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0] =  (uint8_t)((frame>>2) & 0xf0);
+  //mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf  = &sfn_MSB;
   mib_NB_IoT->message.systemFrameNumber_MSB_r13.size = 1; //if expressed in byte
   mib_NB_IoT->message.systemFrameNumber_MSB_r13.bits_unused = 4; //is byte based (so how many bits you don't use of the 8 bits of a bite
   //printf("mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0] :%s\n",mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0] );
 
-  //mib_NB_IoT->message.hyperSFN_LSB_r13.buf= MALLOC(1);
+  mib_NB_IoT->message.hyperSFN_LSB_r13.buf= MALLOC(1);
   //memcpy(mib_NB_IoT->message.hyperSFN_LSB_r13.buf, &hsfn_LSB, 1);
-  //mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0]= (uint8_t)(hyper_frame & 0x3);
-  mib_NB_IoT->message.hyperSFN_LSB_r13.buf = &hsfn_LSB;
+  mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0]= (uint8_t)((hyper_frame & 0x3)<<6);
+ // mib_NB_IoT->message.hyperSFN_LSB_r13.buf = &hsfn_LSB;
   mib_NB_IoT->message.hyperSFN_LSB_r13.size= 1;
   mib_NB_IoT->message.hyperSFN_LSB_r13.bits_unused = 6;
   //printf("mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0]:%s\n",mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0] );
 
   //XXX to be set??
-  //mib_NB_IoT->message.spare.buf = MALLOC(2);
-  //mib_NB_IoT->message.spare.buf[0]= 0;
-  //mib_NB_IoT->message.spare.buf[1] = 0;
-  mib_NB_IoT->message.spare.buf =  (uint8_t *)&spare;
+  mib_NB_IoT->message.spare.buf = MALLOC(2);
+  mib_NB_IoT->message.spare.buf[0]= 0;
+  mib_NB_IoT->message.spare.buf[1] = 0;
+  //mib_NB_IoT->message.spare.buf =  (uint8_t *)&spare;
   mib_NB_IoT->message.spare.size = 2;
   mib_NB_IoT->message.spare.bits_unused = 5;
 
@@ -156,10 +157,11 @@ uint8_t do_MIB_NB_IoT(uint8_t Mod_id, int CC_id,
   //to be decided
   mib_NB_IoT->message.operationModeInfo_r13.present = MasterInformationBlock_NB__operationModeInfo_r13_PR_inband_SamePCI_r13;
   mib_NB_IoT->message.operationModeInfo_r13.choice.inband_SamePCI_r13.eutra_CRS_SequenceInfo_r13 = 0;
+  
 
   printf("[MIB] Intialization of frame information ,sfn_MSB %x, hsfn_LSB %x\n",
-         (uint32_t)mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0] ,
-		 (uint32_t)mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0]);
+         mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0] ,
+		 mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0]);
 
   enc_rval = uper_encode_to_buffer(&asn_DEF_BCCH_BCH_Message_NB,
                                    (void*)mib_NB_IoT,
@@ -168,25 +170,33 @@ uint8_t do_MIB_NB_IoT(uint8_t Mod_id, int CC_id,
   AssertFatal (enc_rval.encoded > 0, "ASN1 message encoding failed (%s, %lu)!\n",
                enc_rval.failed_type->name, enc_rval.encoded);
 
-#if defined(ENABLE_ITTI)
+/*#if defined(ENABLE_ITTI)
 # if !defined(DISABLE_XER_SPRINT)
   {
     char        message_string[20000];
     size_t      message_string_size;
 
-    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_BCCH_BCH_Message_NB, (void *) &mib_NB_IoT)) > 0) {
+    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_BCCH_BCH_Message_NB, (void *) mib_NB_IoT)) > 0) {
       MessageDef *msg_p;
 
-      msg_p = itti_alloc_new_message_sized (TASK_RRC_ENB, RRC_BCCH_BCH_DATA_IND, message_string_size + sizeof (IttiMsgText));
-      msg_p->ittiMsg.rrc_dl_bcch.size = message_string_size;
-      memcpy(&msg_p->ittiMsg.rrc_dl_bcch.text, message_string, message_string_size);
+      msg_p = itti_alloc_new_message(TASK_RRC_ENB, RRC_BCCH_BCH_DATA_IND);
+         RRC_BCCH_BCH_DATA_IND (msg_p).frame     = get_NB_IoT_frame();
+          RRC_BCCH_BCH_DATA_IND (msg_p).sub_frame = get_NB_IoT_subframe();
+          RRC_BCCH_BCH_DATA_IND (msg_p).sdu_size  = message_string_size;
+          RRC_BCCH_BCH_DATA_IND (msg_p).enb_index = 0;
+          //RRC_BCCH_BCH_DATA_IND (message_p).rnti      = get_NB_IoT_rnti();
+          memset (RRC_BCCH_BCH_DATA_IND (msg_p).sdu, 0, BCCH_SDU_SIZE);
+          memcpy (RRC_BCCH_BCH_DATA_IND (msg_p).sdu, message_string, message_string_size);
+      //msg_p = itti_alloc_new_message_sized (TASK_RRC_ENB, RRC_BCCH_BCH_DATA_IND, message_string_size + sizeof (IttiMsgText));
+      //msg_p->ittiMsg.rrc_dl_bcch.size = message_string_size;
+      //memcpy(&msg_p->ittiMsg.rrc_dl_bcch.text, message_string, message_string_size);
 
       itti_send_msg_to_task(TASK_RRC_UE, Mod_id, msg_p);
       printf("[eNB] RRC_BCCH_BCH_DATA_IND message has been sent to UE\n");
     }
   }
 # endif
-#endif
+#endif*/
 
 
   if (enc_rval.encoded==-1) {
@@ -322,7 +332,7 @@ uint8_t do_SIB1_NB_IoT(uint8_t Mod_id, int CC_id,
   (*sib1_NB_IoT)->cellAccessRelatedInfo_r13.trackingAreaCode_r13.bits_unused=0;
 
   // 28 bits --> i have to use 32 bits = 4 byte
-  (*sib1_NB_IoT)->cellAccessRelatedInfo_r13.cellIdentity_r13.buf = MALLOC(8); // why allocate 8 byte?
+  (*sib1_NB_IoT)->cellAccessRelatedInfo_r13.cellIdentity_r13.buf = MALLOC(4); // why allocate 8 byte?
 #if defined(ENABLE_ITTI)
   (*sib1_NB_IoT)->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[0] = (configuration->cell_identity >> 20) & 0xff;
   (*sib1_NB_IoT)->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[1] = (configuration->cell_identity >> 12) & 0xff;
@@ -345,7 +355,7 @@ uint8_t do_SIB1_NB_IoT(uint8_t Mod_id, int CC_id,
 
 
   (*sib1_NB_IoT)->cellSelectionInfo_r13.q_RxLevMin_r13=-65; //which value?? TS 36.331 V14.2.1 pag. 589
-  (*sib1_NB_IoT)->cellSelectionInfo_r13.q_QualMin_r13 = 0; //FIXME new parameter for SIB1-NB, not present in SIB1 (for cell reselection but if not used the UE should apply the default value)
+  (*sib1_NB_IoT)->cellSelectionInfo_r13.q_QualMin_r13 = -10; //FIXME new parameter for SIB1-NB, not present in SIB1 (for cell reselection but if not used the UE should apply the default value)
 
   (*sib1_NB_IoT)->p_Max_r13 = CALLOC(1, sizeof(P_Max_t));
   *((*sib1_NB_IoT)->p_Max_r13) = 23;
@@ -367,8 +377,8 @@ uint8_t do_SIB1_NB_IoT(uint8_t Mod_id, int CC_id,
        */
 
 
-   (*sib1_NB_IoT)->downlinkBitmap_r13 = CALLOC(1, sizeof(struct DL_Bitmap_NB_r13));
-   ((*sib1_NB_IoT)->downlinkBitmap_r13)->present= DL_Bitmap_NB_r13_PR_NOTHING;
+   /*(*sib1_NB_IoT)->downlinkBitmap_r13 = CALLOC(1, sizeof(struct DL_Bitmap_NB_r13));
+   ((*sib1_NB_IoT)->downlinkBitmap_r13)->present= DL_Bitmap_NB_r13_PR_NOTHING;*/
 
    *eutraControlRegionSize = 1;
    (*sib1_NB_IoT)->eutraControlRegionSize_r13 = eutraControlRegionSize;
@@ -439,13 +449,14 @@ uint8_t do_SIB1_NB_IoT(uint8_t Mod_id, int CC_id,
   enc_rval = uper_encode_to_buffer(&asn_DEF_BCCH_DL_SCH_Message_NB,
                                    (void*)bcch_message,
                                    carrier->SIB1_NB_IoT,
-                                   100);
+                                   1000);
 
-  if (enc_rval.encoded > 0){ 
+  /*if (enc_rval.encoded > 0){ 
        LOG_F(RRC,"ASN1 message encoding failed (%s, %lu)!\n",
                enc_rval.failed_type->name, enc_rval.encoded);
-  }
-
+  }*/
+AssertFatal (enc_rval.encoded > 0, "ASN1 message encoding failed (%s, %lu)!\n",
+               enc_rval.failed_type->name, enc_rval.encoded);
 
 #ifdef USER_MODE
   LOG_D(RRC,"[NB-IoT] SystemInformationBlockType1-NB Encoded %zd bits (%zd bytes)\n",enc_rval.encoded,(enc_rval.encoded+7)/8);

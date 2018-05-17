@@ -1358,8 +1358,8 @@ clean: CMakeFiles/oai_usrpdevif.dir/clean
 CMakeFiles/oaisim.dir/all: CMakeFiles/ITTI.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/S1AP_ENB.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/S1AP_LIB.dir/all
-CMakeFiles/oaisim.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/X2AP_LIB.dir/all
+CMakeFiles/oaisim.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/HASHTABLE.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/SECU_OSA.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/UTIL.dir/all
@@ -1408,8 +1408,8 @@ clean: CMakeFiles/oaisim.dir/clean
 
 # All Build rule for target.
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/ITTI.dir/all
-CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/X2AP_LIB.dir/all
+CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/HASHTABLE.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/SECU_OSA.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/UTIL.dir/all
@@ -1948,8 +1948,8 @@ clean: CMakeFiles/test_aes128_ctr_encrypt.dir/clean
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/ITTI.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/S1AP_ENB.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/S1AP_LIB.dir/all
-CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/X2AP_LIB.dir/all
+CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/HASHTABLE.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/UTIL.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/SECU_CN.dir/all
@@ -1996,8 +1996,8 @@ clean: CMakeFiles/test_epc_generate_scenario.dir/clean
 # All Build rule for target.
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/ITTI.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/S1AP_LIB.dir/all
-CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/X2AP_LIB.dir/all
+CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/HASHTABLE.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/UTIL.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/SECU_CN.dir/all

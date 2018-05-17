@@ -5061,7 +5061,6 @@ void rrc_eNB_reconfigure_DRBs (const protocol_ctxt_t* const ctxt_pP,
 
 //-----------------------------------------------------------------------------
 void* rrc_enb_task(void* args_p)
-//-----------------------------------------------------------------------------
 {
   MessageDef                         *msg_p;
   const char                         *msg_name_p;

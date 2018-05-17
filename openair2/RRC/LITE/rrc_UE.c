@@ -37,6 +37,7 @@
 #include "defs.h"
 #include "PHY/TOOLS/dB_routines.h"
 #include "extern.h"
+#include "extern_NB_IoT.h"
 #include "RRC/L2_INTERFACE/openair_rrc_L2_interface.h"
 #include "LAYER2/RLC/rlc.h"
 #include "COMMON/mac_rrc_primitives.h"
@@ -121,6 +122,10 @@ static int decode_SI( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_in
 
 static int decode_SIB1( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t rsrq, const uint8_t rsrp );
 
+static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index );
+
+static int decode_SIB1_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t rsrq, const uint8_t rsrp, SystemInformationBlockType1_NB_t* sib1_nb);
+
 /** \brief Generates/Encodes RRCConnnectionSetupComplete message at UE
  *  \param ctxt_pP Running context
  *  \param eNB_index Index of corresponding eNB/CH
@@ -201,27 +206,27 @@ static int rrc_set_sub_state( module_id_t ue_mod_idP, Rrc_Sub_State_t subState )
 {
 #if (defined(ENABLE_ITTI) && (defined(ENABLE_USE_MME) || ENABLE_RAL))
 
-  switch (UE_rrc_inst[ue_mod_idP].RrcState) {
+  switch (UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState) {
   case RRC_STATE_INACTIVE:
     AssertFatal ((RRC_SUB_STATE_INACTIVE_FIRST <= subState) && (subState <= RRC_SUB_STATE_INACTIVE_LAST),
-                 "Invalid sub state %d for state %d!\n", subState, UE_rrc_inst[ue_mod_idP].RrcState);
+                 "Invalid sub state %d for state %d!\n", subState, UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState);
     break;
 
   case RRC_STATE_IDLE:
     AssertFatal ((RRC_SUB_STATE_IDLE_FIRST <= subState) && (subState <= RRC_SUB_STATE_IDLE_LAST),
-                 "Invalid sub state %d for state %d!\n", subState, UE_rrc_inst[ue_mod_idP].RrcState);
+                 "Invalid sub state %d for state %d!\n", subState, UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState);
     break;
 
   case RRC_STATE_CONNECTED:
     AssertFatal ((RRC_SUB_STATE_CONNECTED_FIRST <= subState) && (subState <= RRC_SUB_STATE_CONNECTED_LAST),
-                 "Invalid sub state %d for state %d!\n", subState, UE_rrc_inst[ue_mod_idP].RrcState);
+                 "Invalid sub state %d for state %d!\n", subState, UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState);
     break;
   }
 
 #endif
 
-  if (UE_rrc_inst[ue_mod_idP].RrcSubState != subState) {
-    UE_rrc_inst[ue_mod_idP].RrcSubState = subState;
+  if (UE_rrc_inst_NB_IoT[ue_mod_idP].RrcSubState != subState) {
+    UE_rrc_inst_NB_IoT[ue_mod_idP].RrcSubState = subState;
 
 /*#if defined(ENABLE_ITTI)
     {
@@ -239,6 +244,36 @@ static int rrc_set_sub_state( module_id_t ue_mod_idP, Rrc_Sub_State_t subState )
 
   return (0);
 }
+
+static void init_SI_UE_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index )
+{
+  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sizeof_SIB1[eNB_index] = 0;
+  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sizeof_SI[eNB_index] = 0;
+  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SIB1[eNB_index] = (uint8_t*)malloc16_clear( 32 );
+  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType1_t) );
+/*  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType2_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib3[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType3_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib4[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType4_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib5[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType5_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib6[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType6_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib7[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType7_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib8[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType8_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib9[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType9_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib10[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType10_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib11[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType11_t) );
+#if defined(Rel10) || defined(Rel14)
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib12[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType12_r9_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib13[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType13_r9_t) );
+#endif*/
+  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SI[eNB_index] = (uint8_t*)malloc16_clear( 64 );
+
+  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].si[eNB_index] = (SystemInformation_t*)malloc16_clear( sizeof(SystemInformation_t) );
+
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus = 0;
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIcnt    = 0;
+}
+
+
 
 //-----------------------------------------------------------------------------
 static void init_SI_UE( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index )
@@ -2639,16 +2674,24 @@ int decode_BCCH_BCH_Message_NB_IoT(
   const uint8_t                rsrp )
 {
   BCCH_BCH_Message_NB_t *mib_NB_IoT = NULL;
-  MasterInformationBlock_NB_t* mib = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].mib[eNB_index];
+  //MasterInformationBlock_NB_t* mib = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].mib[eNB_index];
   int i;
 
   uint8_t sfn_MSB;
+  uint8_t hsfn_LSB;
+  uint8_t schedulingInfoSIB1;
+  uint8_t systemInfoValueTag;
+  uint8_t ab_Enabled;
+
+//This function initialize the UE rrc instance,but it should be in here
+  //init_SI_UE_NB_IoT(&ctxt_pP,eNB_index);
+
 
   VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_BCCH, VCD_FUNCTION_IN );
 
  //FIXME: This is to be modified (Comment temporarily)
 
-  //rrc_set_sub_state( ctxt_pP->module_id, RRC_SUB_STATE_IDLE_RECEIVING_SIB );
+  //rrc_set_sub_state( ctxt_pP->module_id, RRC_SUB_STATE_IDLE_RECEIVING_MIB_NB_IoT );
 
   asn_dec_rval_t dec_rval = uper_decode_complete( NULL,
                             &asn_DEF_BCCH_BCH_Message_NB,
@@ -2699,9 +2742,14 @@ int decode_BCCH_BCH_Message_NB_IoT(
 
   //if(typeof(mib_NB_IoT->message) == MasterInformationBlock_NB_t) {
     
-     sfn_MSB = (uint8_t)mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf;
-
-    printf("sfn_MSB:%s\n",sfn_MSB);
+     sfn_MSB = mib_NB_IoT->message.systemFrameNumber_MSB_r13.buf[0]>>mib_NB_IoT->message.systemFrameNumber_MSB_r13.bits_unused;
+     hsfn_LSB = mib_NB_IoT->message.hyperSFN_LSB_r13.buf[0]>>mib_NB_IoT->message.hyperSFN_LSB_r13.bits_unused;
+     schedulingInfoSIB1 = mib_NB_IoT->message.schedulingInfoSIB1_r13;
+     systemInfoValueTag = mib_NB_IoT->message.systemInfoValueTag_r13;
+     ab_Enabled = mib_NB_IoT->message.ab_Enabled_r13;
+     //operationMode is not print
+    printf("sfn_MSB:%d\nhsfn_LSB:%d\n",sfn_MSB, hsfn_LSB);
+    printf("schedulingInfoSIB1:%d\n systemInfoValueTag:%d\n ab_Enabled:%d\n",schedulingInfoSIB1, systemInfoValueTag, ab_Enabled);
 //}
   /*if ((rrc_get_sub_state(ctxt_pP->module_id) == RRC_SUB_STATE_IDLE_SIB_COMPLETE)
 #if defined(ENABLE_USE_MME)
@@ -2717,6 +2765,137 @@ int decode_BCCH_BCH_Message_NB_IoT(
   return 0;
 }
 
+int decode_BCCH_DLSCH_Message_NB_IoT(
+  const protocol_ctxt_t* const ctxt_pP,
+  const uint8_t                eNB_index,
+  uint8_t*               const Sdu,
+  const uint8_t                Sdu_len,
+  const uint8_t                rsrq,
+  const uint8_t                rsrp )
+{
+  BCCH_DL_SCH_Message_NB_t *bcch_message_nbiot = NULL;
+  SystemInformationBlockType1_NB_t* sib1_NB_IoT = MALLOC(sizeof(SystemInformationBlockType1_NB_t));
+  int i;
+
+ // VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_BCCH, VCD_FUNCTION_IN );
+  //Temp
+  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus = 1;
+
+  /*if (((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&1) == 1) &&  // SIB1 received
+      (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIcnt == sib1_nb->schedulingInfoList_r13.list.count)) {
+    // Avoid decoding  SystemInformationBlockType1_t* sib1 = UE_rrc_inst[ctxt_pP->module_id].sib1[eNB_index];
+    // to prevent memory bloating
+    VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_BCCH, VCD_FUNCTION_OUT );
+    return 0;
+  }*/
+
+  //rrc_set_sub_state( ctxt_pP->module_id, RRC_SUB_STATE_IDLE_RECEIVING_SIB_NB_IoT );
+
+  asn_dec_rval_t dec_rval = uper_decode_complete( NULL,
+                            &asn_DEF_BCCH_DL_SCH_Message_NB,
+                            (void **)&bcch_message_nbiot,
+                            (const void *)Sdu,
+                            Sdu_len );
+
+  if ((dec_rval.code != RC_OK) && (dec_rval.consumed == 0)) {
+    LOG_E( RRC, "[UE %"PRIu8"] Failed to decode BCCH_DLSCH_MESSAGE (%zu bits)\n",
+           ctxt_pP->module_id,
+           dec_rval.consumed );
+    for (i=0;i<Sdu_len;i++)
+      printf("%02x ",Sdu[i]);
+    printf("\n");
+    // free the memory
+    SEQUENCE_free( &asn_DEF_BCCH_DL_SCH_Message_NB, (void*)bcch_message_nbiot, 1 );
+    VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_BCCH, VCD_FUNCTION_OUT );
+    return -1;
+  }
+
+/*#if defined(ENABLE_ITTI)
+# if defined(DISABLE_ITTI_XER_PRINT)
+  {
+    MessageDef *msg_p;
+
+    msg_p = itti_alloc_new_message (TASK_RRC_UE, RRC_DL_BCCH_MESSAGE);
+    memcpy (&msg_p->ittiMsg, (void *) bcch_message_nbiot, sizeof(RrcDlBcchMessage));
+
+    itti_send_msg_to_task (TASK_UNKNOWN, ctxt_pP->instance, msg_p);
+  }
+# else
+  {
+    char        message_string[15000];
+    size_t      message_string_size;
+
+    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_BCCH_DL_SCH_Message, (void *)bcch_message_nbiot)) > 0) {
+      MessageDef *msg_p;
+
+      msg_p = itti_alloc_new_message_sized (TASK_RRC_UE, RRC_DL_BCCH, message_string_size + sizeof (IttiMsgText));
+      msg_p->ittiMsg.rrc_dl_bcch.size = message_string_size;
+      memcpy(&msg_p->ittiMsg.rrc_dl_bcch.text, message_string, message_string_size);
+
+      itti_send_msg_to_task(TASK_UNKNOWN, ctxt_pP->instance, msg_p);
+    }
+  }
+# endif
+#endif
+*/
+  if (bcch_message_nbiot->message.present) {
+    switch (bcch_message_nbiot->message.choice.c1.present) {
+    case BCCH_DL_SCH_MessageType_NB__c1_PR_systemInformationBlockType1_r13:
+      printf("[UE] SIB1-NB message received by UE!\n");
+      if ((ctxt_pP->frame % 2) == 0) {
+        // even frame
+        //if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&1) == 0) {
+         // SystemInformationBlockType1_NB_t* sib1_NB_IoT = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index];
+          /*memcpy( (void*)sib1_NB_IoT,
+                  (void*)&bcch_message_nbiot->message.choice.c1.choice.systemInformationBlockType1_r13,
+                  sizeof(SystemInformationBlockType1_NB_t) );*/
+        memcpy(sib1_NB_IoT,
+                  &bcch_message_nbiot->message.choice.c1.choice.systemInformationBlockType1_r13,
+                  sizeof(SystemInformationBlockType1_NB_t) );
+          LOG_D( RRC, "[UE %"PRIu8"] Decoding First NB-IoT SIB1\n", ctxt_pP->module_id );
+          decode_SIB1_NB_IoT( ctxt_pP, eNB_index, rsrq, rsrp, sib1_NB_IoT);
+        //}
+      }
+
+      break;
+
+    case BCCH_DL_SCH_MessageType__c1_PR_systemInformation:
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&1) == 1) {
+        // SIB1 with schedulingInfoList is available
+
+       // SystemInformation_t* si = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].si[eNB_index];
+        /*memcpy( si,
+                &bcch_message_nbiot->message.choice.c1.choice.systemInformation_r13,
+                sizeof(SystemInformation_t) );*/
+
+        LOG_D( RRC, "[UE %"PRIu8"] Decoding SI for frameP %"PRIu32"\n",
+               ctxt_pP->module_id,
+               ctxt_pP->frame );
+
+        //decode_SI_NB_IoT( ctxt_pP, eNB_index );
+      }
+
+      break;
+
+    case BCCH_DL_SCH_MessageType__c1_PR_NOTHING:
+    default:
+      break;
+    }
+  }
+
+ /* if ((rrc_get_sub_state(ctxt_pP->module_id) == RRC_SUB_STATE_IDLE_SIB_COMPLETE)
+#if defined(ENABLE_USE_MME)
+      && (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].initialNasMsg.data != NULL)
+#endif
+     ) {
+    rrc_ue_generate_RRCConnectionRequest(ctxt_pP, 0);
+    rrc_set_sub_state( ctxt_pP->module_id, RRC_SUB_STATE_IDLE_CONNECTING );
+  }*/
+
+  VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_BCCH, VCD_FUNCTION_OUT );
+
+  return 0;
+}
 
 //-----------------------------------------------------------------------------
 int decode_BCCH_DLSCH_Message(
@@ -3103,6 +3282,234 @@ static int decode_SIB1( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_
   }
 #endif
 
+  VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_RRC_UE_DECODE_SIB1, VCD_FUNCTION_OUT );
+
+  return 0;
+}
+
+
+//-----------------------------------------------------------------------------
+static int decode_SIB1_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t rsrq, const uint8_t rsrp, SystemInformationBlockType1_NB_t* sib1_nb)
+{
+  //SystemInformationBlockType1_NB_t* sib1_nb = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index];
+  printf("[UE] Start decode SIB1\n");
+
+  VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_RRC_UE_DECODE_SIB1, VCD_FUNCTION_IN );
+
+  LOG_I( RRC, "[UE %d] : Dumping SIB 1-NB\n", ctxt_pP->module_id );
+
+  PLMN_Identity_t *PLMN_identity = &sib1_nb->cellAccessRelatedInfo_r13.plmn_IdentityList_r13.list.array[0]->plmn_Identity_r13;
+
+  int mccdigits = PLMN_identity->mcc->list.count;
+  int mncdigits = PLMN_identity->mnc.list.count;
+
+  int mcc;
+
+  if (mccdigits == 2) {
+    mcc = *PLMN_identity->mcc->list.array[0]*10 + *PLMN_identity->mcc->list.array[1];
+  } else {
+    mcc = *PLMN_identity->mcc->list.array[0]*100 + *PLMN_identity->mcc->list.array[1]*10 + *PLMN_identity->mcc->list.array[2];
+  }
+
+  int mnc;
+
+  if (mncdigits == 2) {
+    mnc = *PLMN_identity->mnc.list.array[0]*10 + *PLMN_identity->mnc.list.array[1];
+  } else {
+    mnc = *PLMN_identity->mnc.list.array[0]*100 + *PLMN_identity->mnc.list.array[1]*10 + *PLMN_identity->mnc.list.array[2];
+  }
+
+  int tac = 0;
+
+  if (sib1_nb->cellAccessRelatedInfo_r13.trackingAreaCode_r13.size == 2) {
+    tac = (sib1_nb->cellAccessRelatedInfo_r13.trackingAreaCode_r13.buf[0]<<8) + sib1_nb->cellAccessRelatedInfo_r13.trackingAreaCode_r13.buf[1];
+  }
+
+  LOG_I( RRC, "PLMN MCC %0*d, MNC %0*d, TAC 0x%04x\n", mccdigits, mcc, mncdigits, mnc, tac );
+  long cellReservedForOperatorUse = sib1_nb->cellAccessRelatedInfo_r13.plmn_IdentityList_r13.list.array[0]->cellReservedForOperatorUse_r13;
+  LOG_I( RRC, "cellReservedForOperatorUse                 : raw:%ld decoded:%s\n", cellReservedForOperatorUse, SIBreserved(cellReservedForOperatorUse) );
+
+  // search internal table for provider name
+  int plmn_ind = 0;
+
+  while (plmn_data[plmn_ind].mcc > 0) {
+    if ((plmn_data[plmn_ind].mcc == mcc) && (plmn_data[plmn_ind].mnc == mnc)) {
+      LOG_I( RRC, "Found %s (name from internal table)\n", plmn_data[plmn_ind].oper_short );
+      break;
+    }
+
+    plmn_ind++;
+  }
+
+  if (plmn_data[plmn_ind].mcc < 0) {
+    LOG_I( RRC, "Found Unknown operator (no entry in internal table)\n" );
+  }
+
+  LOG_I( RRC, "cellAccessRelatedInfo_r13.cellIdentity_r13         : raw:%"PRIu32" decoded:%02x.%02x.%02x.%02x\n",
+         BIT_STRING_to_uint32( &sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13 ),
+         sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[0],
+         sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[1],
+         sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[2],
+         sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[3] >> sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.bits_unused);
+
+  long cellBarred = sib1_nb->cellAccessRelatedInfo_r13.cellBarred_r13;
+  LOG_I( RRC, "cellAccessRelatedInfo_r13.cellBarred_r13           : raw:%ld decoded:%s\n", cellBarred, SIBbarred(cellBarred) );
+  long intraFreqReselection = sib1_nb->cellAccessRelatedInfo_r13.intraFreqReselection_r13;
+  LOG_I( RRC, "cellAccessRelatedInfo_r13.intraFreqReselection : raw:%ld decoded:%s\n", intraFreqReselection, SIBallowed(intraFreqReselection) );
+  
+
+ 
+
+  LOG_I( RRC, "cellSelectionInfo_r13.q_RxLevMin               : %ld\n", sib1_nb->cellSelectionInfo_r13.q_RxLevMin_r13 );
+
+
+
+  if (sib1_nb->p_Max_r13)
+    LOG_I( RRC, "p_Max                                      : %ld\n", *sib1_nb->p_Max_r13);
+  else
+    LOG_I( RRC, "p_Max                                      : not defined\n" );
+
+  LOG_I( RRC, "freqBandIndicator                          : %ld\n", sib1_nb->freqBandIndicator_r13 );
+
+  if (sib1_nb->schedulingInfoList_r13.list.count > 0) {
+    for (int i=0; i<sib1_nb->schedulingInfoList_r13.list.count; i++) {
+      LOG_I( RRC, "si_Periodicity[%d]                          : %s\n", i, SIBPeriod[min(sib1_nb->schedulingInfoList_r13.list.array[i]->si_Periodicity_r13,7)]);
+
+      if (sib1_nb->schedulingInfoList_r13.list.array[i]->sib_MappingInfo_r13.list.count > 0) {
+        char temp[32 * sizeof(SIBType[0])] = {0}; // maxSIB==32
+
+        for (int j=0; j<sib1_nb->schedulingInfoList_r13.list.array[i]->sib_MappingInfo_r13.list.count; j++) {
+          sprintf( temp + j*sizeof(SIBType[0]), "%*s ", (int)sizeof(SIBType[0])-1, SIBType[min(*sib1_nb->schedulingInfoList_r13.list.array[i]->sib_MappingInfo_r13.list.array[0],11)] );
+        }
+
+        LOG_I( RRC, "siSchedulingInfoSIBType[%d]                 : %s\n", i, temp );
+      } else {
+        LOG_I( RRC, "mapping list %d is null\n", i );
+      }
+    }
+  } else {
+    LOG_E( RRC, "siSchedulingInfoPeriod[0]                  : PROBLEM!!!\n" );
+    return -1;
+  }
+
+  
+
+  LOG_I( RRC, "siWindowLength                             : %s\n", siWindowLength[min(sib1_nb->si_WindowLength_r13,7)] );
+  LOG_I( RRC, "systemInfoValueTag                         : %ld\n", sib1_nb->systemInfoValueTagList_r13 );
+
+//FIXME: This should be uncomment
+
+  /*UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIperiod     = siPeriod_int[sib1_nb->schedulingInfoList.list.array[0]->si_Periodicity];
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIwindowsize = siWindowLength_int[sib1_nb->si_WindowLength];
+  LOG_I( RRC, "[FRAME unknown][RRC_UE][MOD %02"PRIu8"][][--- MAC_CONFIG_REQ (SIB1 params eNB %"PRIu8") --->][MAC_UE][MOD %02"PRIu8"][]\n",
+         ctxt_pP->module_id, eNB_index, ctxt_pP->module_id );
+
+  rrc_mac_config_req(ctxt_pP->module_id, 0, ENB_FLAG_NO, 0, eNB_index,
+                      (RadioResourceConfigCommonSIB_t *)NULL,
+                      (struct PhysicalConfigDedicated *)NULL,
+#if defined(Rel10) || defined(Rel14)
+                      (SCellToAddMod_r10_t *)NULL,
+                      //(struct PhysicalConfigDedicatedSCell_r10 *)NULL,
+#endif
+                      (MeasObjectToAddMod_t **)NULL,
+                      (MAC_MainConfig_t *)NULL,
+                      0,
+                      (struct LogicalChannelConfig *)NULL,
+                      (MeasGapConfig_t *)NULL,
+                      UE_rrc_inst[ctxt_pP->module_id].sib1[eNB_index]->tdd_Config,
+                      (MobilityControlInfo_t *) NULL,
+                      &UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIwindowsize,
+                      &UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIperiod,
+                      NULL,
+                      NULL,
+                      NULL,
+                      (MBSFN_SubframeConfigList_t *)NULL
+#if defined(Rel10) || defined(Rel14)
+                      ,0,
+                      (MBSFN_AreaInfoList_r9_t *)NULL,
+                      (PMCH_InfoList_r9_t *)NULL
+#endif
+#ifdef CBA
+                      ,
+                      0,
+                      0
+#endif
+                    );
+
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus = 1;
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIB1systemInfoValueTag = sib1->systemInfoValueTag;
+
+#if defined(ENABLE_ITTI) && defined(ENABLE_USE_MME)
+  {
+    int cell_valid = 0;
+
+    if (sib1->cellAccessRelatedInfo.cellBarred == SystemInformationBlockType1__cellAccessRelatedInfo__cellBarred_notBarred) {
+      /* Cell is not barred */
+  /*
+      int plmn;
+      int plmn_number;
+
+      plmn_number = sib1->cellAccessRelatedInfo.plmn_IdentityList.list.count;
+
+      /* Compare requested PLMN and PLMNs from SIB1*/
+  /*
+      for (plmn = 0; plmn < plmn_number; plmn++) {
+        PLMN_Identity_t *plmn_Identity;
+
+        plmn_Identity = &sib1->cellAccessRelatedInfo.plmn_IdentityList.list.array[plmn]->plmn_Identity;
+
+        if (
+          (
+            (plmn_Identity->mcc == NULL)
+            ||
+            (
+              (UE_rrc_inst[ctxt_pP->module_id].plmnID.MCCdigit1 == *(plmn_Identity->mcc->list.array[0])) &&
+              (UE_rrc_inst[ctxt_pP->module_id].plmnID.MCCdigit2 == *(plmn_Identity->mcc->list.array[1])) &&
+              (UE_rrc_inst[ctxt_pP->module_id].plmnID.MCCdigit3 == *(plmn_Identity->mcc->list.array[2]))
+            )
+          )
+          &&
+          (UE_rrc_inst[ctxt_pP->module_id].plmnID.MNCdigit1 == *(plmn_Identity->mnc.list.array[0]))
+          &&
+          (UE_rrc_inst[ctxt_pP->module_id].plmnID.MNCdigit2 == *(plmn_Identity->mnc.list.array[1]))
+          &&
+          (
+            ((UE_rrc_inst[ctxt_pP->module_id].plmnID.MNCdigit3 == 0xf) && (plmn_Identity->mnc.list.count == 2))
+            ||
+            (UE_rrc_inst[ctxt_pP->module_id].plmnID.MNCdigit3 == *(plmn_Identity->mnc.list.array[2]))
+          )
+        ) {
+          /* PLMN match, send a confirmation to NAS */
+  /*
+          MessageDef  *msg_p;
+
+          msg_p = itti_alloc_new_message(TASK_RRC_UE, NAS_CELL_SELECTION_CNF);
+          NAS_CELL_SELECTION_CNF (msg_p).errCode = AS_SUCCESS;
+          NAS_CELL_SELECTION_CNF (msg_p).cellID = BIT_STRING_to_uint32(&sib1->cellAccessRelatedInfo.cellIdentity);
+          NAS_CELL_SELECTION_CNF (msg_p).tac = BIT_STRING_to_uint16(&sib1->cellAccessRelatedInfo.trackingAreaCode);
+          NAS_CELL_SELECTION_CNF (msg_p).rat = 0xFF;
+          NAS_CELL_SELECTION_CNF (msg_p).rsrq = rsrq;
+          NAS_CELL_SELECTION_CNF (msg_p).rsrp = rsrp;
+
+          itti_send_msg_to_task(TASK_NAS_UE, ctxt_pP->instance, msg_p);
+          cell_valid = 1;
+          break;
+        }
+      }
+    }
+
+    if (cell_valid == 0) {
+      /* Cell can not be used, ask PHY to try the next one */
+  /*
+      MessageDef  *msg_p;
+
+      msg_p = itti_alloc_new_message(TASK_RRC_UE, PHY_FIND_NEXT_CELL_REQ);
+
+      itti_send_msg_to_task(TASK_PHY_UE, ctxt_pP->instance, msg_p);
+    }
+  }
+#endif
+*/
   VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_RRC_UE_DECODE_SIB1, VCD_FUNCTION_OUT );
 
   return 0;
@@ -3869,6 +4276,272 @@ static int decode_SI( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_in
   return 0;
 }
 
+static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index )
+{
+
+  SystemInformation_t** si = &UE_rrc_inst_NB_IoT[ctxt_pP->module_id].si[eNB_index];
+  int new_sib = 0;
+  SystemInformationBlockType1_t* sib1 = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index];
+
+  VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_RRC_UE_DECODE_SI, VCD_FUNCTION_IN );
+
+  // Dump contents
+  if ((*si)->criticalExtensions.present == SystemInformation__criticalExtensions_PR_systemInformation_r8) {
+    LOG_D( RRC, "[UE] (*si)->criticalExtensions.choice.systemInformation_r8.sib_TypeAndInfo.list.count %d\n",
+           (*si)->criticalExtensions.choice.systemInformation_r8.sib_TypeAndInfo.list.count );
+  } else {
+    LOG_D( RRC, "[UE] Unknown criticalExtension version (not Rel8)\n" );
+    return -1;
+  }
+
+  for (int i=0; i<(*si)->criticalExtensions.choice.systemInformation_r8.sib_TypeAndInfo.list.count; i++) {
+    LOG_D( RRC, "SI count %d\n", i );
+    struct SystemInformation_r8_IEs__sib_TypeAndInfo__Member *typeandinfo;
+    typeandinfo = (*si)->criticalExtensions.choice.systemInformation_r8.sib_TypeAndInfo.list.array[i];
+
+    switch(typeandinfo->present) {
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib2:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&2) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=2;
+  new_sib=1;
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index], &typeandinfo->choice.sib2, sizeof(SystemInformationBlockType2_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB2 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+  dump_sib2( UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index] );
+  LOG_I( RRC, "[FRAME %05"PRIu32"][RRC_UE][MOD %02"PRIu8"][][--- MAC_CONFIG_REQ (SIB2 params  eNB %"PRIu8") --->][MAC_UE][MOD %02"PRIu8"][]\n",
+         ctxt_pP->frame, ctxt_pP->module_id, eNB_index, ctxt_pP->module_id );
+  rrc_mac_config_req(ctxt_pP->module_id, 0, ENB_FLAG_NO, 0, eNB_index,
+         &UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index]->radioResourceConfigCommon,
+         (struct PhysicalConfigDedicated *)NULL,
+#if defined(Rel10) || defined(Rel14)
+         (SCellToAddMod_r10_t *)NULL,
+#endif
+         (MeasObjectToAddMod_t **)NULL,
+         (MAC_MainConfig_t *)NULL,
+         0,
+         (struct LogicalChannelConfig *)NULL,
+         (MeasGapConfig_t *)NULL,
+         (TDD_Config_t *)NULL,
+         (MobilityControlInfo_t *)NULL,
+         NULL,
+         NULL,
+         UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index]->freqInfo.ul_CarrierFreq,
+         UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index]->freqInfo.ul_Bandwidth,
+         &UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index]->freqInfo.additionalSpectrumEmission,
+         UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index]->mbsfn_SubframeConfigList
+#if defined(Rel10) || defined(Rel14)
+         ,0,
+         (MBSFN_AreaInfoList_r9_t *)NULL,
+         (PMCH_InfoList_r9_t *)NULL
+#endif
+#ifdef CBA
+         ,0,
+         0
+#endif
+         );
+  // After SI is received, prepare RRCConnectionRequest
+#if defined(Rel10) || defined(Rel14)
+
+  if (UE_rrc_inst[ctxt_pP->module_id].MBMS_flag < 3) // see -Q option
+#endif
+#if !(defined(ENABLE_ITTI) && defined(ENABLE_USE_MME))
+    rrc_ue_generate_RRCConnectionRequest( ctxt_pP, eNB_index );
+  
+#endif
+  
+  if (UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].State == RRC_IDLE) {
+    LOG_I( RRC, "[UE %d] Received SIB1/SIB2/SIB3 Switching to RRC_SI_RECEIVED\n", ctxt_pP->module_id );
+    UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].State = RRC_SI_RECEIVED;
+#if ENABLE_RAL
+    {
+      MessageDef                            *message_ral_p = NULL;
+      rrc_ral_system_information_ind_t       ral_si_ind;
+      
+      message_ral_p = itti_alloc_new_message (TASK_RRC_UE, RRC_RAL_SYSTEM_INFORMATION_IND);
+      memset(&ral_si_ind, 0, sizeof(rrc_ral_system_information_ind_t));
+      ral_si_ind.plmn_id.MCCdigit2 = '0';
+      ral_si_ind.plmn_id.MCCdigit1 = '2';
+      ral_si_ind.plmn_id.MNCdigit3 = '0';
+      ral_si_ind.plmn_id.MCCdigit3 = '8';
+      ral_si_ind.plmn_id.MNCdigit2 = '9';
+      ral_si_ind.plmn_id.MNCdigit1 = '9';
+      ral_si_ind.cell_id        = 1;
+      ral_si_ind.dbm            = 0;
+      //ral_si_ind.dbm            = fifo_dump_emos_UE.PHY_measurements->rx_rssi_dBm[eNB_index];
+      // TO DO
+      ral_si_ind.sinr           = 0;
+      //ral_si_ind.sinr           = fifo_dump_emos_UE.PHY_measurements->subband_cqi_dB[eNB_index][phy_vars_ue->lte_frame_parms.nb_antennas_rx][0];
+      // TO DO
+      ral_si_ind.link_data_rate = 0;
+      memcpy (&message_ral_p->ittiMsg, (void *) &ral_si_ind, sizeof(rrc_ral_system_information_ind_t));
+#warning "ue_mod_idP ? for instance ?"
+      itti_send_msg_to_task (TASK_RAL_UE, UE_MODULE_ID_TO_INSTANCE(ctxt_pP->module_id), message_ral_p);
+    }
+#endif
+  }
+      }
+      break; // case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib2
+
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib3:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&4) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=4;
+  new_sib=1;
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib3[eNB_index], &typeandinfo->choice.sib3, sizeof(SystemInformationBlockType3_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB3 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+  dump_sib3( UE_rrc_inst[ctxt_pP->module_id].sib3[eNB_index] );
+
+      }
+      break;
+
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib4:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&8) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=8;
+  new_sib=1;
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib4[eNB_index], &typeandinfo->choice.sib4, sizeof(SystemInformationBlockType4_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB4 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+      }
+
+      break;
+
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib5:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&16) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=16;
+  new_sib=1;
+     
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib5[eNB_index], &typeandinfo->choice.sib5, sizeof(SystemInformationBlockType5_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB5 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+  dump_sib5(UE_rrc_inst[ctxt_pP->module_id].sib5[eNB_index]);
+      }
+      break;
+
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib6:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&32) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=32;
+  new_sib=1;
+     
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib6[eNB_index], &typeandinfo->choice.sib6, sizeof(SystemInformationBlockType6_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB6 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+      }
+      break;
+
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib7:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&64) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=64;
+  new_sib=1;
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib7[eNB_index], &typeandinfo->choice.sib7, sizeof(SystemInformationBlockType7_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB7 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+      }
+      break;
+
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib8:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&128) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=128;
+  new_sib=1;
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib8[eNB_index], &typeandinfo->choice.sib8, sizeof(SystemInformationBlockType8_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB8 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+      }
+      break;
+
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib9:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&256) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=256;
+  new_sib=1;
+      
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib9[eNB_index], &typeandinfo->choice.sib9, sizeof(SystemInformationBlockType9_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB9 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+      }
+      break;
+
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib10:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&512) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=512;
+  new_sib=1;
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib10[eNB_index], &typeandinfo->choice.sib10, sizeof(SystemInformationBlockType10_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB10 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+      }
+      break;
+
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib11:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&1024) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=1024;
+  new_sib=1;
+
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib11[eNB_index], &typeandinfo->choice.sib11, sizeof(SystemInformationBlockType11_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB11 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+      }
+      break;
+
+#if defined(Rel10) || defined(Rel14)
+
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib12_v920:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&2048) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=2048;
+  new_sib=1;
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib12[eNB_index], &typeandinfo->choice.sib12_v920, sizeof(SystemInformationBlockType12_r9_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB12 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+      }
+      break;
+  
+    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib13_v920:
+      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&4096) == 0) {
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=4096;
+  new_sib=1;
+  
+  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib13[eNB_index], &typeandinfo->choice.sib13_v920, sizeof(SystemInformationBlockType13_r9_t) );
+  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB13 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+  dump_sib13( UE_rrc_inst[ctxt_pP->module_id].sib13[eNB_index] );
+  // adding here function to store necessary parameters for using in decode_MCCH_Message + maybe transfer to PHY layer
+  LOG_I( RRC, "[FRAME %05"PRIu32"][RRC_UE][MOD %02"PRIu8"][][--- MAC_CONFIG_REQ (SIB13 params eNB %"PRIu8") --->][MAC_UE][MOD %02"PRIu8"][]\n",
+         ctxt_pP->frame, ctxt_pP->module_id, eNB_index, ctxt_pP->module_id);
+  rrc_mac_config_req(ctxt_pP->module_id,0,ENB_FLAG_NO,0,eNB_index,
+         (RadioResourceConfigCommonSIB_t *)NULL,
+         (struct PhysicalConfigDedicated *)NULL,
+         (SCellToAddMod_r10_t *)NULL,
+         (MeasObjectToAddMod_t **)NULL,
+         (MAC_MainConfig_t *)NULL,
+         0,
+         (struct LogicalChannelConfig *)NULL,
+         (MeasGapConfig_t *)NULL,
+         (TDD_Config_t *)NULL,
+         (MobilityControlInfo_t *)NULL,
+         NULL,
+         NULL,
+         NULL,
+         NULL,
+         NULL,
+         (MBSFN_SubframeConfigList_t *)NULL,
+         0,
+         &UE_rrc_inst[ctxt_pP->module_id].sib13[eNB_index]->mbsfn_AreaInfoList_r9,
+         (PMCH_InfoList_r9_t *)NULL
+#ifdef CBA
+         ,0,
+         0
+#endif
+         );
+  break;
+      }
+#endif
+    default:
+      break;
+    }
+
+  }
+  if (new_sib == 1) {
+    UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIcnt++;
+
+    if (UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIcnt == sib1->schedulingInfoList.list.count)
+      rrc_set_sub_state( ctxt_pP->module_id, RRC_SUB_STATE_IDLE_SIB_COMPLETE );
+
+    LOG_I(RRC,"SIStatus %x, SIcnt %d/%d\n", 
+    UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus,
+    UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIcnt,
+    sib1->schedulingInfoList.list.count);
+  }
+
+  VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME(VCD_SIGNAL_DUMPER_FUNCTIONS_RRC_UE_DECODE_SI  , VCD_FUNCTION_OUT);
+  return 0;
+}
+
+
 // layer 3 filtering of RSRP (EUTRA) measurements: 36.331, Sec. 5.5.3.2
 //-----------------------------------------------------------------------------
 void ue_meas_filtering( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index )
@@ -4357,8 +5030,11 @@ void *rrc_ue_task( void *args_p )
   unsigned int  ue_mod_id;
   int           result;
   SRB_INFO     *srb_info_p;
-
+ char *str;
   protocol_ctxt_t  ctxt;
+
+  
+
   itti_mark_task_ready (TASK_RRC_UE);
   printf("UE RRC task is marked ready!\n");
 
@@ -4380,13 +5056,15 @@ void *rrc_ue_task( void *args_p )
       LOG_D(RRC, "[UE %d] Received %s\n", ue_mod_id, msg_name);
       break;
       /*Message from eNB RRC  */
+      //to get the MIB
     case RRC_BCCH_BCH_DATA_IND:
     printf("[UE] UE receive a message from ITTI --- RRC_BCCH_BCH_DATA_IND\n");
       LOG_D(RRC, "[UE %d] Received %s: frameP %d, eNB %d\n", ue_mod_id, msg_name,
             RRC_BCCH_BCH_DATA_IND (msg_p).frame, RRC_BCCH_BCH_DATA_IND (msg_p).enb_index);
 
       //      PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt, instance, ENB_FLAG_NO, NOT_A_RNTI, RRC_MAC_BCCH_DATA_IND (msg_p).frame, 0);
-      PROTOCOL_CTXT_SET_BY_MODULE_ID(&ctxt, ue_mod_id, ENB_FLAG_NO, NOT_A_RNTI, RRC_BCCH_BCH_DATA_IND (msg_p).frame, 0,RRC_MAC_BCCH_DATA_IND (msg_p).enb_index);
+      PROTOCOL_CTXT_SET_BY_MODULE_ID(&ctxt, ue_mod_id, ENB_FLAG_NO, NOT_A_RNTI, RRC_BCCH_BCH_DATA_IND (msg_p).frame, 0,RRC_BCCH_BCH_DATA_IND (msg_p).enb_index);
+      str = RRC_BCCH_BCH_DATA_IND (msg_p).sdu;
       decode_BCCH_BCH_Message_NB_IoT (&ctxt,
                                  RRC_BCCH_BCH_DATA_IND (msg_p).enb_index,
                                 RRC_BCCH_BCH_DATA_IND (msg_p).sdu,
@@ -4398,20 +5076,22 @@ void *rrc_ue_task( void *args_p )
                                  RRC_BCCH_BCH_DATA_IND (msg_p).rsrp);
       printf("[UE] [MIB]Successfully decode MIB\n");
 
-      break;
 
+      break;
+      //to get SIB1 or SI
       case RRC_BCCH_DLSCH_DATA_IND:
+      printf("[UE] UE receive a message from ITTI --- RRC_BCCH_DLSCH_DATA_IND\n");
       LOG_D(RRC, "[UE %d] Received %s: frameP %d, eNB %d\n", ue_mod_id, msg_name,
             RRC_BCCH_DLSCH_DATA_IND (msg_p).frame, RRC_BCCH_DLSCH_DATA_IND (msg_p).enb_index);
 
       //      PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt, instance, ENB_FLAG_NO, NOT_A_RNTI, RRC_MAC_BCCH_DATA_IND (msg_p).frame, 0);
-      PROTOCOL_CTXT_SET_BY_MODULE_ID(&ctxt, ue_mod_id, ENB_FLAG_NO, NOT_A_RNTI, RRC_BCCH_DLSCH_DATA_IND (msg_p).frame, 0,RRC_MAC_BCCH_DATA_IND (msg_p).enb_index);
-      /*decode_BCCH_DLSCH_Message_NB_IoT (&ctxt,
+      PROTOCOL_CTXT_SET_BY_MODULE_ID(&ctxt, ue_mod_id, ENB_FLAG_NO, NOT_A_RNTI, RRC_BCCH_DLSCH_DATA_IND (msg_p).frame, 0,RRC_BCCH_DLSCH_DATA_IND (msg_p).enb_index);
+      decode_BCCH_DLSCH_Message_NB_IoT (&ctxt,
                                  RRC_BCCH_DLSCH_DATA_IND (msg_p).enb_index,
                                  RRC_BCCH_DLSCH_DATA_IND (msg_p).sdu,
                                  RRC_BCCH_DLSCH_DATA_IND (msg_p).sdu_size,
                                  RRC_BCCH_DLSCH_DATA_IND (msg_p).rsrq,
-                                 RRC_BCCH_DLSCH_DATA_IND (msg_p).rsrp);*/
+                                 RRC_BCCH_DLSCH_DATA_IND (msg_p).rsrp);
       break;
 
       /* MAC messages */

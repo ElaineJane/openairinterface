@@ -3029,6 +3029,8 @@ PHY/TOOLS/dB_routines.h
 /home/momo/openairinterface5g/openair2/RRC/LITE/PHY/TOOLS/dB_routines.h
 extern.h
 /home/momo/openairinterface5g/openair2/RRC/LITE/extern.h
+extern_NB_IoT.h
+/home/momo/openairinterface5g/openair2/RRC/LITE/extern_NB_IoT.h
 RRC/L2_INTERFACE/openair_rrc_L2_interface.h
 /home/momo/openairinterface5g/openair2/RRC/LITE/RRC/L2_INTERFACE/openair_rrc_L2_interface.h
 LAYER2/RLC/rlc.h

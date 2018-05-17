@@ -1822,7 +1822,7 @@ SET(CMAKE_C_COMPILER_ID "GNU")
 SET(CMAKE_TARGET_DEFINITIONS
   "ASN1_MINIMUM_VERSION=924"
   "CMAKER"
-  "CMAKE_BUILD_TYPE=\"RelWithDebInfo\""
+  "CMAKE_BUILD_TYPE=\"Debug\""
   "DRIVER2013"
   "ENABLE_FXP"
   "ENABLE_ITTI"
@@ -1856,7 +1856,7 @@ SET(CMAKE_TARGET_DEFINITIONS
   "OPENAIR_LTE"
   "PACKAGE_BUGREPORT=\"openair4g-devel@lists.eurecom.fr\""
   "PACKAGE_NAME=\"oaisim\""
-  "PACKAGE_VERSION=\"Branch: develop-nb-iot Abrev. Hash: 57658d9 Date: Fri May 4 15:28:49 2018 +0800\""
+  "PACKAGE_VERSION=\"Branch: develop-nb-iot Abrev. Hash: bd65c3c Date: Thu May 10 12:23:20 2018 +0800\""
   "PC_DSP"
   "PC_TARGET"
   "PDCP_USE_NETLINK"

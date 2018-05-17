@@ -1600,7 +1600,7 @@ void rrc_eNB_generate_defaultRRCConnectionReconfiguration_NB_IoT(const protocol_
 
   int get_NB_IoT_frame(void)
   {
-    return 1;
+    return 2;
   }
 
   int get_NB_IoT_subframe(void)
@@ -1653,7 +1653,7 @@ static void init_SI_NB_IoT(
 					        1
                   );
             //To send message to ITTI (UE)------------------------------
-/*#if defined(ENABLE_ITTI)
+#if defined(ENABLE_ITTI)
 
     MessageDef                         *message_p;
 
@@ -1671,7 +1671,7 @@ static void init_SI_NB_IoT(
     itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, message_p);
     printf("[eNB] RRC_BCCH_BCH_DATA_IND message has been sent to UE\n");
 
-#endif*/
+#endif
 
 
             //--------------------------------------------------------------------------
@@ -1691,15 +1691,37 @@ static void init_SI_NB_IoT(
  //SIB1_NB_IoT
   eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].SIB1_NB_IoT = (uint8_t*) malloc16(32);//allocation of buffer memory for SIB1_NB_IOT
 
-  if (eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].SIB1_NB_IoT)
+  if (eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].SIB1_NB_IoT){
     eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sizeof_SIB1_NB_IoT = do_SIB1_NB_IoT( //follow the new implementation
     				ctxt_pP->module_id,
 					CC_id,
 					&eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id],
 					configuration,
-					0 //FIXME is correct to pass frame = 0??
+					10 //FIXME is correct to pass frame = 0??
     				);
 
+
+  #if defined(ENABLE_ITTI)
+
+    MessageDef                         *sib1_message_p;
+
+    sib1_message_p = itti_alloc_new_message(TASK_RRC_ENB, RRC_BCCH_DLSCH_DATA_IND);
+         RRC_BCCH_DLSCH_DATA_IND (sib1_message_p).frame     = get_NB_IoT_frame();
+          RRC_BCCH_DLSCH_DATA_IND (sib1_message_p).sub_frame = get_NB_IoT_subframe();
+          RRC_BCCH_DLSCH_DATA_IND (sib1_message_p).sdu_size  = eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sizeof_SIB1_NB_IoT;
+          RRC_BCCH_DLSCH_DATA_IND (sib1_message_p).enb_index = 0;
+          //RRC_BCCH_BCH_DATA_IND (message_p).rnti      = get_NB_IoT_rnti();
+          memset (RRC_BCCH_DLSCH_DATA_IND (sib1_message_p).sdu, 0, BCCH_SDU_SIZE);
+          memcpy (RRC_BCCH_DLSCH_DATA_IND (sib1_message_p).sdu, eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].SIB1_NB_IoT, eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sizeof_SIB1_NB_IoT);
+          
+
+    sleep(3);
+    itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, sib1_message_p);
+    printf("[eNB] RRC_BCCH_DLSCH_DATA_IND (SIB 1) message has been sent to UE\n");
+    sleep(3);
+
+#endif
+  }
   else {
     LOG_E(RRC, PROTOCOL_RRC_CTXT_FMT" init_SI: FATAL, no memory for SIB1_NB_IoT allocated\n",
           PROTOCOL_RRC_CTXT_ARGS(ctxt_pP));
@@ -1708,6 +1730,7 @@ static void init_SI_NB_IoT(
 
   if (eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sizeof_SIB1_NB_IoT == 255) {
     //exit here
+    printf("Warning: the size of SIB1 is 255\n");
   }
 
   //SIB23_NB_IoT
@@ -1722,7 +1745,7 @@ static void init_SI_NB_IoT(
         );
 
     if (eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sizeof_SIB23_NB_IoT == 255) {
-      //exit here
+      printf("SIB2/3 encode failure, sizeof_SIB23_NB_IoT=255\n");
     }
 
     LOG_T(RRC, PROTOCOL_RRC_CTXT_FMT" SIB2/3 Contents (partial)\n",
@@ -1757,11 +1780,11 @@ static void init_SI_NB_IoT(
                                   0,
                                   0
                                   );*/
-  } else {
+/*  } else {
     LOG_E(RRC, PROTOCOL_RRC_CTXT_FMT" init_SI: FATAL, no memory for SIB2/3_NB allocated\n",
           PROTOCOL_RRC_CTXT_ARGS(ctxt_pP));
     //exit here
-  }
+  }*/
 }
 
 //-----------------------------------------------------------------------------
@@ -2886,7 +2909,7 @@ void* rrc_enb_task_NB_IoT(
       //instance, msg_name_p);
       break;
 
-#   endif
+#endif
 
       /* Messages from eNB app */
     case RRC_CONFIGURATION_REQ:
@@ -2897,12 +2920,14 @@ void* rrc_enb_task_NB_IoT(
     default:
       LOG_E(RRC, "[eNB %d] Received unexpected message %s\n", instance, msg_name_p);
       break;
-    }
+    }//switch
 
     result = itti_free(ITTI_MSG_ORIGIN_ID(msg_p), msg_p);
     AssertFatal(result == EXIT_SUCCESS, "Failed to free memory (%d)!\n", result);
     msg_p = NULL;
-  }
+  }//while
+  printf("The end of eNB task!\n");
+  exit(-1);
 }
 
 

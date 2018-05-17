@@ -499,17 +499,17 @@ typedef struct UE_RRC_INST_NB_IoT_s {
 
  MasterInformationBlock_NB_t *mib[NB_CNX_UE];
 
-  /*
+  
   uint8_t *SIB1[NB_CNX_UE];
   uint8_t sizeof_SIB1[NB_CNX_UE];
   uint8_t *SI[NB_CNX_UE];
   uint8_t sizeof_SI[NB_CNX_UE];
   uint8_t SIB1Status[NB_CNX_UE];
   uint8_t SIStatus[NB_CNX_UE];
-  SystemInformationBlockType1_t *sib1[NB_CNX_UE];
-  SystemInformation_t *si[NB_CNX_UE]; //!< Temporary storage for an SI message. Decoding happens in decode_SI().
-  */
-  SystemInformationBlockType2_t *sib2[NB_CNX_UE];
+  SystemInformationBlockType1_NB_t *sib1[NB_CNX_UE];
+  SystemInformation_NB_t *si[NB_CNX_UE]; //!< Temporary storage for an SI message. Decoding happens in decode_SI().
+  
+ SystemInformationBlockType2_t *sib2[NB_CNX_UE];
   /*
   SystemInformationBlockType3_t *sib3[NB_CNX_UE];
   SystemInformationBlockType4_t *sib4[NB_CNX_UE];
