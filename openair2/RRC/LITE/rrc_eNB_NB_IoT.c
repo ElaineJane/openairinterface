@@ -1620,7 +1620,6 @@ static void init_SI_NB_IoT(
   const int              CC_id,
   RrcConfigurationReq* configuration //openair2/COMMON/rrc_messages_types
 )
-//-----------------------------------------------------------------------------
 { 
   //copy basic parameters
   eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].physCellId      = configuration->Nid_cell[CC_id];
@@ -1785,6 +1784,7 @@ static void init_SI_NB_IoT(
           PROTOCOL_RRC_CTXT_ARGS(ctxt_pP));
     //exit here
   }*/
+}
 }
 
 //-----------------------------------------------------------------------------
@@ -2299,13 +2299,13 @@ int rrc_eNB_decode_dcch_NB_IoT(
 //#if defined(ENABLE_ITTI)
 //#   if defined(DISABLE_ITTI_XER_PRINT)
 
-  {
+  
     for (i = 0; i < sdu_sizeP; i++) {
       LOG_T(RRC, "%x.", Rx_sdu[i]);
     }
 
     LOG_T(RRC, "\n");
-  }
+  
 
   if ((dec_rval.code != RC_OK) && (dec_rval.consumed == 0)) {
     LOG_E(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Failed to decode UL-DCCH (%zu bytes)\n",
@@ -2317,12 +2317,12 @@ int rrc_eNB_decode_dcch_NB_IoT(
   ue_context_p = rrc_eNB_get_ue_context_NB_IoT(
                    &eNB_rrc_inst_NB_IoT[ctxt_pP->module_id],
                    ctxt_pP->rnti);
-
+/*
   if (ul_dcch_msg_NB_IoT->message.present == UL_DCCH_MessageType_NB_PR_c1) {
 
     switch (ul_dcch_msg_NB_IoT->message.choice.c1.present) {
     case UL_DCCH_MessageType_NB__c1_PR_NOTHING:   /* No components present */
-      break;
+      /*break;
 
       //no measurement reports
 
@@ -2359,7 +2359,7 @@ int rrc_eNB_decode_dcch_NB_IoT(
 	/*NN: revise the condition */
 
    //MP: RRC_RECONFIGURED_NB_IoT indicate if the default/dedicated bearer has been/not established
-
+/*
         if (ue_context_p->ue_context.Status == RRC_RECONFIGURED_NB_IoT){ // a dedicated bearers has been established
 	  dedicated_DRB = 1;
 	  LOG_I(RRC,
@@ -2414,8 +2414,8 @@ int rrc_eNB_decode_dcch_NB_IoT(
       }
 
       LOG_F(RRC,"\n");
-#endif
-
+#endif*/
+/*
       MSC_LOG_RX_MESSAGE(
         MSC_RRC_ENB,
         MSC_RRC_UE,
@@ -2485,12 +2485,12 @@ int rrc_eNB_decode_dcch_NB_IoT(
 
       break;
 
-    case UL_DCCH_MessageType_NB__c1_PR_securityModeComplete_r13:
+    case UL_DCCH_MessageType_NB__c1_PR_securityModeComplete_r13:*/
 
     	/* R2-163262 3GPP NB-IOT Ad-hoc Meeting #2
     	 * After receiving the SMC and performing the security activation, the UE shall use the SRB1.
     	 */
-
+/*
       T(T_ENB_RRC_SECURITY_MODE_COMPLETE, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
         T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
 
@@ -2539,13 +2539,13 @@ int rrc_eNB_decode_dcch_NB_IoT(
       break;
 
     case UL_DCCH_MessageType_NB__c1_PR_securityModeFailure_r13:
-
+*/
     	//MP: Security Mode failure should be received over SRB1bis since the security activation fails
     	/*(see R2-163262)
     	The SRB1-bis (no PDCP) is used for SecurityModeCommand and SecurityModeFailure messages,
     	The SRB1 (full PDCP) is used for SecurityModeComplete message.*/
-
-    	/*
+/*
+    	
     	 * Furthermore from TS 36.331 ch:5.3.4.3 Reception of the SecurityModeCommand by the UE
     	 * if the SecurityModeCommand message passes the integrity protection check
     	 * ....
@@ -2553,7 +2553,7 @@ int rrc_eNB_decode_dcch_NB_IoT(
     	 * 2> continue using the configuration used prior to the reception of the SecurityModeCommand message,
     	 *  i.e. neither apply integrity protection nor ciphering.
     	 * 2> submit the SecurityModeFailure message to lower layers for transmission, upon which the procedure ends
-    	 */
+    	 
 
       T(T_ENB_RRC_SECURITY_MODE_FAILURE, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
         T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
@@ -2658,8 +2658,8 @@ int rrc_eNB_decode_dcch_NB_IoT(
 #ifdef XER_PRINT
       xer_fprint(stdout, &asn_DEF_UL_DCCH_Message_NB, (void *)ul_dcch_msg);
 #endif
-      LOG_I(RRC, "got UE capabilities for UE %x\n", ctxt_pP->rnti);
-
+      LOG_I(RRC, "got UE capabilities for UE %x\n", ctxt_pP->rnti);*/
+/*
 
       //FIXME MP: ueCapabilityInformation different w.r.t LTE --> how to decode it?
       dec_rval = uper_decode(NULL,
@@ -2786,15 +2786,13 @@ int rrc_eNB_decode_dcch_NB_IoT(
           __FILE__, __LINE__);
     return -1;
   }
-
+*/
 }
+
 
 //-----------------------------------------------------------------------------
 //put out from the ITTI FIXME is completely based on ITTI--> must be changed (msg_p, itti_receive_msg ecc...)
-void* rrc_enb_task_NB_IoT(
-  void* args_p
-)
-//-----------------------------------------------------------------------------
+/*void* rrc_enb_task_NB_IoT( void* args_p)
 {
   MessageDef                         *msg_p;
   const char                         *msg_name_p;
@@ -2802,7 +2800,6 @@ void* rrc_enb_task_NB_IoT(
   int                                 result;
   SRB_INFO_NB_IoT                     *srb_info_p;
   int                                 CC_id;
-
   protocol_ctxt_t                     ctxt;
   itti_mark_task_ready(TASK_RRC_ENB);
 
@@ -2812,8 +2809,12 @@ void* rrc_enb_task_NB_IoT(
 
     msg_name_p = ITTI_MSG_NAME(msg_p);
     instance = ITTI_MSG_INSTANCE(msg_p);
-
-    switch (ITTI_MSG_ID(msg_p)) {
+  }
+  printf("123\n");
+}*/
+/*
+    switch (ITTI_MSG_ID(msg_p)) 
+    {
     case TERMINATE_MESSAGE:
       itti_exit_task();
       break;
@@ -2822,7 +2823,7 @@ void* rrc_enb_task_NB_IoT(
       LOG_I(RRC, "[eNB %d] Received %s\n", instance, msg_name_p);
       break;
 
-      /* Messages from MAC */
+      /* Messages from MAC *//*
     case RRC_MAC_CCCH_DATA_IND:
       PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt,
                                     instance,
@@ -2849,7 +2850,7 @@ void* rrc_enb_task_NB_IoT(
 
       break;
 
-      /* Messages from PDCP */
+      /* Messages from PDCP *//*
     case RRC_DCCH_DATA_IND:
       PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt,
                                     instance,
@@ -2873,7 +2874,7 @@ void* rrc_enb_task_NB_IoT(
 
 #if defined(ENABLE_USE_MME)
 
-      /* Messages from S1AP */
+      /* Messages from S1AP *//*
     case S1AP_DOWNLINK_NAS:
       rrc_eNB_process_S1AP_DOWNLINK_NAS(msg_p, msg_name_p, instance, &rrc_eNB_mui_NB_IoT);
       break;
@@ -2907,11 +2908,11 @@ void* rrc_enb_task_NB_IoT(
       /* Nothing to do. Apparently everything is done in S1AP processing */
       //LOG_I(RRC, "[eNB %d] Received message %s, not processed because procedure not synched\n",
       //instance, msg_name_p);
-      break;
+/*      break;
 
 #endif
 
-      /* Messages from eNB app */
+      /* Messages from eNB app *//*
     case RRC_CONFIGURATION_REQ:
       LOG_I(RRC, "[eNB %d] Received %s\n", instance, msg_name_p);
       openair_rrc_eNB_configuration_NB_IoT(ENB_INSTANCE_TO_MODULE_ID(instance), &RRC_CONFIGURATION_REQ(msg_p));
@@ -2921,14 +2922,14 @@ void* rrc_enb_task_NB_IoT(
       LOG_E(RRC, "[eNB %d] Received unexpected message %s\n", instance, msg_name_p);
       break;
     }//switch
+    */
 
-    result = itti_free(ITTI_MSG_ORIGIN_ID(msg_p), msg_p);
+    /*result = itti_free(ITTI_MSG_ORIGIN_ID(msg_p), msg_p);
     AssertFatal(result == EXIT_SUCCESS, "Failed to free memory (%d)!\n", result);
-    msg_p = NULL;
-  }//while
-  printf("The end of eNB task!\n");
-  exit(-1);
-}
+    msg_p = NULL;*/
+    //}
+//
+//}
 
 
 #ifndef USER_MODE

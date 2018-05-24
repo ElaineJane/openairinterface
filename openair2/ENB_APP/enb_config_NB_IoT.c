@@ -4115,7 +4115,7 @@ const Enb_properties_array_NB_IoT_t *enb_config_init_NB_IoT(char* lib_config_fil
   enb_config_display_NB_IoT();
   return &enb_properties;
 
-}
+}*/*/*/
 
 const Enb_properties_array_NB_IoT_t *enb_config_get_NB_IoT(void)
 {

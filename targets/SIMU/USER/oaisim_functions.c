@@ -182,7 +182,9 @@ eth_params_t *eth_params;
 void init_eNB(eNB_func_t node_function[], eNB_timing_t node_timing[],int nb_inst,eth_params_t *,int,int);
 void stop_eNB(int nb_inst);
 
-const Enb_properties_array_t *enb_properties;
+/*const Enb_properties_array_t *enb_properties;*/
+
+const Enb_properties_array_NB_IoT_t *enb_properties;
 
 int oaisim_flag=1;
 
@@ -794,7 +796,8 @@ void get_simulation_options(int argc, char *argv[])
 
   if ((oai_emulation.info.nb_enb_local > 0) && (conf_config_file_name != NULL)) {
     /* Read eNB configuration file */
-    enb_properties = enb_config_init(conf_config_file_name);
+    /*enb_properties = enb_config_init(conf_config_file_name);*/
+    enb_properties = enb_config_init_NB_IoT(conf_config_file_name); 
 
     AssertFatal (oai_emulation.info.nb_enb_local <= enb_properties->number,
                  "Number of eNB is greater than eNB defined in configuration file %s (%d/%d)!",

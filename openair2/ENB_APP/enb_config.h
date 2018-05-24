@@ -327,38 +327,37 @@ const Enb_properties_array_t *enb_config_init(char* lib_config_file_name_pP);
 
 const Enb_properties_array_t *enb_config_get(void);
 
-
 // ******************************************************** NB-IoT ********************************************************** //
 
-//typedef struct Enb_properties_NB_IoT_s {
+typedef struct Enb_properties_NB_IoT_s {
   /* Unique eNB_id to identify the eNB within EPC.
    * For macro eNB ids this field should be 20 bits long.
    * For home eNB ids this field should be 28 bits long.
    */
-//  uint32_t            eNB_id;
+ uint32_t            eNB_id;
 
   /* The type of the cell */
- // enum cell_type_e    cell_type;
+  enum cell_type_e    cell_type;
 
   /* Optional name for the cell
    * NOTE: the name can be NULL (i.e no name) and will be cropped to 150
    * characters.
    */
- // char               *eNB_name;
+  char               *eNB_name;
 
 
   /* Tracking area code */
-//  uint16_t            tac;
+  uint16_t            tac;
 
   /* Mobile Country Code
    * Mobile Network Code
    */
- /* uint16_t            mcc;
+  uint16_t            mcc;
   uint16_t            mnc;
   uint8_t             mnc_digit_length;
-*/
 
-/*
+
+
   // Physical parameters //
   int16_t                 nb_cc;
 #ifndef OCP_FRAMEWORK
@@ -452,6 +451,8 @@ const Enb_properties_array_t *enb_config_get(void);
   long              rach_preambleTransMax_CE_NB[1+MAX_NUM_CCs];
   long              bcch_modificationPeriodCoeff_NB[1+MAX_NUM_CCs];
   long              pcch_defaultPagingCycle_NB[1+MAX_NUM_CCs];
+  long              pcch_nB_NB[1+MAX_NUM_CCs];
+  long              pcch_npdcch_NumRepetitionPaging_NB[1+MAX_NUM_CCs];
   long              nprach_CP_Length[1+MAX_NUM_CCs];
   long              nprach_rsrp_range[1+MAX_NUM_CCs];
   char*             nprach_SubcarrierMSG3_RangeStart;
@@ -550,8 +551,8 @@ const Enb_properties_array_t *enb_config_get(void);
   int16_t           osa_log_verbosity;
 #endif
 } Enb_properties_NB_IoT_t;
-*/
-/*
+
+
 typedef struct Enb_properties_array_NB_IoT_s {
   int                  number;
   Enb_properties_NB_IoT_t    *properties[MAX_ENB];
@@ -559,10 +560,10 @@ typedef struct Enb_properties_array_NB_IoT_s {
 
 void                          enb_config_display_NB_IoT(void);
 
-const Enb_properties_array_NB_IoT_t *enb_config_init_NB_IoT(char* lib_config_file_name_pP);
 
+const Enb_properties_array_NB_IoT_t *enb_config_init_NB_IoT(char* lib_config_file_name_pP);
 const Enb_properties_array_NB_IoT_t *enb_config_get_NB_IoT(void);
-*/
+
 #endif 
 
 /* ENB_CONFIG_H_ */
