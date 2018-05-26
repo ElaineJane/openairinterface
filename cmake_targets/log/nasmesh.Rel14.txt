@@ -1,0 +1,27 @@
+Scanning dependencies of target nasmesh
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/netlink.c
+make[4]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/ioctl.c: In function ‘nas_ioCTL_cx_list_request’:
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/ioctl.c:108:1: warning: the frame size of 3088 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/ioctl.c: In function ‘nas_ioCTL_class_list_request’:
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/ioctl.c:451:1: warning: the frame size of 1824 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/classifier.c: In function ‘nas_CLASS_cx6’:
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/classifier.c:413:20: warning: assignment makes pointer from integer without a cast [enabled by default]
+           if ((dst = ((struct iphdr*)(skb_network_header(skb)))->daddr) == 0) {
+                    ^
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/classifier.c: In function ‘nas_CLASS_cx4’:
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/classifier.c:478:14: warning: comparison between pointer and integer [enabled by default]
+     if (daddr!=NULL) {
+              ^
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/tool.c: In function ‘print_TOOL_pk_all’:
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/tool.c:682:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     print_TOOL_pk_ipv6((struct ipv6hdr *)skb->network_header);
+                        ^
+/home/momo/openairinterface5g/openair2/NETWORK_DRIVER/MESH/tool.c:686:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     print_TOOL_pk_ipv4((struct iphdr *)skb->network_header);
+                        ^
+Built target nasmesh
