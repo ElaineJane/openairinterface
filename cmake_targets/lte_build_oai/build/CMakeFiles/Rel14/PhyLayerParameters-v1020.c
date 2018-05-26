@@ -1097,13 +1097,13 @@ static ber_tlv_tag_t asn_DEF_PhyLayerParameters_v1020_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PhyLayerParameters_v1020_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* twoAntennaPortsForPUCCH-r10 at 8820 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* tm9-With-8Tx-FDD-r10 at 8821 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pmi-Disabling-r10 at 8822 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* crossCarrierScheduling-r10 at 8823 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* simultaneousPUCCH-PUSCH-r10 at 8824 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* multiClusterPUSCH-WithinCC-r10 at 8825 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* nonContiguousUL-RA-WithinCC-List-r10 at 8826 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* twoAntennaPortsForPUCCH-r10 at 7977 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* tm9-With-8Tx-FDD-r10 at 7978 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pmi-Disabling-r10 at 7979 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* crossCarrierScheduling-r10 at 7980 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* simultaneousPUCCH-PUSCH-r10 at 7981 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* multiClusterPUSCH-WithinCC-r10 at 7982 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* nonContiguousUL-RA-WithinCC-List-r10 at 7983 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PhyLayerParameters_v1020_specs_1 = {
 	sizeof(struct PhyLayerParameters_v1020),

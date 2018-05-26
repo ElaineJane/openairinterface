@@ -38,8 +38,8 @@ static asn_TYPE_member_t asn_MBR_setup_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nonPrecoded-r13 at 4106 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* beamformed-r13 at 4108 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nonPrecoded-r13 at 3750 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* beamformed-r13 at 3752 */
 };
 static asn_CHOICE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct CSI_RS_ConfigEMIMO_r13__setup),
@@ -99,8 +99,8 @@ static asn_TYPE_member_t asn_MBR_CSI_RS_ConfigEMIMO_r13_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_CSI_RS_ConfigEMIMO_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4104 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4106 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3748 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3750 */
 };
 static asn_CHOICE_specifics_t asn_SPC_CSI_RS_ConfigEMIMO_r13_specs_1 = {
 	sizeof(struct CSI_RS_ConfigEMIMO_r13),

@@ -56,7 +56,7 @@ static asn_TYPE_member_t asn_MBR_RRCConnectionReconfiguration_v1310_IEs_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct RRCConnectionReconfiguration_v1310_IEs, nonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_RRCConnectionReconfiguration_v1430_IEs,
+		&asn_DEF_RRCConnectionReconfiguration_v14x0_IEs,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -68,12 +68,12 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionReconfiguration_v1310_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionReconfiguration_v1310_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellToReleaseListExt-r13 at 949 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sCellToAddModListExt-r13 at 950 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* lwa-Configuration-r13 at 951 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* lwip-Configuration-r13 at 952 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* rclwi-Configuration-r13 at 953 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* nonCriticalExtension at 954 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellToReleaseListExt-r13 at 902 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sCellToAddModListExt-r13 at 903 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* lwa-Configuration-r13 at 904 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* lwip-Configuration-r13 at 905 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* rclwi-Configuration-r13 at 906 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* nonCriticalExtension at 907 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionReconfiguration_v1310_IEs_specs_1 = {
 	sizeof(struct RRCConnectionReconfiguration_v1310_IEs),

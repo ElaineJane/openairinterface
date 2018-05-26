@@ -371,9 +371,6 @@ NB_ANTENNAS_TX:STRING=4
 //Number of antennas in ????
 NB_ANTENNAS_TXRX:STRING=2
 
-//Enabling NB-IoT code
-NB_IOT:BOOL=True
-
 //????
 NEW_FFT:BOOL=True
 

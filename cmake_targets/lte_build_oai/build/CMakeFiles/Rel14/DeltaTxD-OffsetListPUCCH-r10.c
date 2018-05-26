@@ -737,10 +737,10 @@ static ber_tlv_tag_t asn_DEF_DeltaTxD_OffsetListPUCCH_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_DeltaTxD_OffsetListPUCCH_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* deltaTxD-OffsetPUCCH-Format1-r10 at 6755 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* deltaTxD-OffsetPUCCH-Format1a1b-r10 at 6756 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* deltaTxD-OffsetPUCCH-Format22a2b-r10 at 6757 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* deltaTxD-OffsetPUCCH-Format3-r10 at 6758 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* deltaTxD-OffsetPUCCH-Format1-r10 at 6124 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* deltaTxD-OffsetPUCCH-Format1a1b-r10 at 6125 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* deltaTxD-OffsetPUCCH-Format22a2b-r10 at 6126 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* deltaTxD-OffsetPUCCH-Format3-r10 at 6127 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_DeltaTxD_OffsetListPUCCH_r10_specs_1 = {
 	sizeof(struct DeltaTxD_OffsetListPUCCH_r10),

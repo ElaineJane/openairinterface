@@ -314,13 +314,13 @@ static ber_tlv_tag_t asn_DEF_profiles_r13_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_profiles_r13_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* profile0x0002 at 12330 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* profile0x0003 at 12331 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* profile0x0004 at 12332 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* profile0x0006 at 12333 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* profile0x0102 at 12334 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* profile0x0103 at 12335 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* profile0x0104 at 12336 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* profile0x0002 at 10718 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* profile0x0003 at 10719 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* profile0x0004 at 10720 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* profile0x0006 at 10721 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* profile0x0102 at 10722 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* profile0x0103 at 10723 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* profile0x0104 at 10724 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_profiles_r13_specs_15 = {
 	sizeof(struct PDCP_Config_NB_r13__headerCompression_r13__rohc__profiles_r13),
@@ -386,8 +386,8 @@ static ber_tlv_tag_t asn_DEF_rohc_tags_13[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_rohc_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxCID-r13 at 12328 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* profiles-r13 at 12330 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxCID-r13 at 10716 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* profiles-r13 at 10718 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_rohc_specs_13 = {
 	sizeof(struct PDCP_Config_NB_r13__headerCompression_r13__rohc),
@@ -449,8 +449,8 @@ static asn_TYPE_member_t asn_MBR_headerCompression_r13_11[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_headerCompression_r13_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* notUsed at 12326 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rohc at 12328 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* notUsed at 10714 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rohc at 10716 */
 };
 static asn_CHOICE_specifics_t asn_SPC_headerCompression_r13_specs_11 = {
 	sizeof(struct PDCP_Config_NB_r13__headerCompression_r13),
@@ -514,8 +514,8 @@ static ber_tlv_tag_t asn_DEF_PDCP_Config_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PDCP_Config_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discardTimer-r13 at 12322 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* headerCompression-r13 at 12326 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discardTimer-r13 at 10710 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* headerCompression-r13 at 10714 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PDCP_Config_NB_r13_specs_1 = {
 	sizeof(struct PDCP_Config_NB_r13),

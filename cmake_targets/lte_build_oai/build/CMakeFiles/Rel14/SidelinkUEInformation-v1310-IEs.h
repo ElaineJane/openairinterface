@@ -31,7 +31,7 @@ struct SL_CommTxResourceReq_r12;
 struct SL_DiscTxResourceReq_r13;
 struct SL_GapRequest_r13;
 struct SL_DiscSysInfoReportFreqList_r13;
-struct SidelinkUEInformation_v1430_IEs;
+struct SidelinkUEInformation_v14x0_IEs;
 struct SL_DiscTxResourceReqPerFreqList_r13;
 
 /* SidelinkUEInformation-v1310-IEs */
@@ -56,7 +56,7 @@ typedef struct SidelinkUEInformation_v1310_IEs {
 	struct SL_GapRequest_r13	*discRxGapReq_r13	/* OPTIONAL */;
 	struct SL_GapRequest_r13	*discTxGapReq_r13	/* OPTIONAL */;
 	struct SL_DiscSysInfoReportFreqList_r13	*discSysInfoReportFreqList_r13	/* OPTIONAL */;
-	struct SidelinkUEInformation_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct SidelinkUEInformation_v14x0_IEs	*nonCriticalExtension	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -75,7 +75,7 @@ extern asn_TYPE_descriptor_t asn_DEF_SidelinkUEInformation_v1310_IEs;
 #include "SL-DiscTxResourceReq-r13.h"
 #include "SL-GapRequest-r13.h"
 #include "SL-DiscSysInfoReportFreqList-r13.h"
-#include "SidelinkUEInformation-v1430-IEs.h"
+#include "SidelinkUEInformation-v14x0-IEs.h"
 #include "SL-DiscTxResourceReqPerFreqList-r13.h"
 
 #endif	/* _SidelinkUEInformation_v1310_IEs_H_ */

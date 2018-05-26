@@ -372,8 +372,8 @@ static ber_tlv_tag_t asn_DEF_MAC_Parameters_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MAC_Parameters_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* logicalChannelSR-ProhibitTimer-r12 at 8736 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* longDRX-Command-r12 at 8737 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* logicalChannelSR-ProhibitTimer-r12 at 7905 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* longDRX-Command-r12 at 7906 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MAC_Parameters_r12_specs_1 = {
 	sizeof(struct MAC_Parameters_r12),

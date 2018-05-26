@@ -32,13 +32,9 @@ typedef enum MobilityControlInfoSCG_r12__t307_r12 {
 	MobilityControlInfoSCG_r12__t307_r12_ms2000	= 6,
 	MobilityControlInfoSCG_r12__t307_r12_spare1	= 7
 } e_MobilityControlInfoSCG_r12__t307_r12;
-typedef enum MobilityControlInfoSCG_r12__ext1__makeBeforeBreakSCG_r14 {
-	MobilityControlInfoSCG_r12__ext1__makeBeforeBreakSCG_r14_true	= 0
-} e_MobilityControlInfoSCG_r12__ext1__makeBeforeBreakSCG_r14;
 
 /* Forward declarations */
 struct RACH_ConfigDedicated;
-struct RACH_Skip_r14;
 
 /* MobilityControlInfoSCG-r12 */
 typedef struct MobilityControlInfoSCG_r12 {
@@ -50,13 +46,6 @@ typedef struct MobilityControlInfoSCG_r12 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct MobilityControlInfoSCG_r12__ext1 {
-		long	*makeBeforeBreakSCG_r14	/* OPTIONAL */;
-		struct RACH_Skip_r14	*rach_SkipSCG_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -64,7 +53,6 @@ typedef struct MobilityControlInfoSCG_r12 {
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_t307_r12_2;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_makeBeforeBreakSCG_r14_16;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_MobilityControlInfoSCG_r12;
 
 #ifdef __cplusplus
@@ -73,7 +61,6 @@ extern asn_TYPE_descriptor_t asn_DEF_MobilityControlInfoSCG_r12;
 
 /* Referred external types */
 #include "RACH-ConfigDedicated.h"
-#include "RACH-Skip-r14.h"
 
 #endif	/* _MobilityControlInfoSCG_r12_H_ */
 #include <asn_internal.h>

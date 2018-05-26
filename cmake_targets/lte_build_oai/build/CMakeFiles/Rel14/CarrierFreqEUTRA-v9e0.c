@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_CarrierFreqEUTRA_v9e0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CarrierFreqEUTRA_v9e0_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-CarrierFreq-v9e0 at 7024 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ul-CarrierFreq-v9e0 at 7025 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-CarrierFreq-v9e0 at 6374 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ul-CarrierFreq-v9e0 at 6375 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CarrierFreqEUTRA_v9e0_specs_1 = {
 	sizeof(struct CarrierFreqEUTRA_v9e0),

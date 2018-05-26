@@ -24,7 +24,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* dl-CarrierFreq-v1090 at 13659 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* dl-CarrierFreq-v1090 at 11862 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_7 = {
 	sizeof(struct CandidateCellInfo_r10__ext1),
@@ -82,7 +82,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rsrqResult-v1250 at 13661 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rsrqResult-v1250 at 11864 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_9 = {
 	sizeof(struct CandidateCellInfo_r10__ext2),
@@ -140,7 +140,7 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rs-sinr-Result-r13 at 13663 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rs-sinr-Result-r13 at 11866 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_11 = {
 	sizeof(struct CandidateCellInfo_r10__ext3),
@@ -251,13 +251,13 @@ static ber_tlv_tag_t asn_DEF_CandidateCellInfo_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CandidateCellInfo_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r10 at 13653 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* dl-CarrierFreq-r10 at 13654 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rsrpResult-r10 at 13656 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* rsrqResult-r10 at 13657 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 13659 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 13661 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext3 at 13663 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r10 at 11856 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* dl-CarrierFreq-r10 at 11857 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rsrpResult-r10 at 11859 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* rsrqResult-r10 at 11860 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 11862 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 11864 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext3 at 11866 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CandidateCellInfo_r10_specs_1 = {
 	sizeof(struct CandidateCellInfo_r10),

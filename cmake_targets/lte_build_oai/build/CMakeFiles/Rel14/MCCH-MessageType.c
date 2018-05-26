@@ -39,7 +39,7 @@ static asn_TYPE_member_t asn_MBR_c1_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_c1_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mbsfnAreaConfiguration-r9 at 67 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mbsfnAreaConfiguration-r9 at 47 */
 };
 static asn_CHOICE_specifics_t asn_SPC_c1_specs_2 = {
 	sizeof(struct MCCH_MessageType__c1),
@@ -90,7 +90,7 @@ static asn_TYPE_member_t asn_MBR_c2_5[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_c2_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mbmsCountingRequest-r10 at 71 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mbmsCountingRequest-r10 at 51 */
 };
 static asn_CHOICE_specifics_t asn_SPC_c2_specs_5 = {
 	sizeof(struct MCCH_MessageType__later__c2),
@@ -191,8 +191,8 @@ static asn_TYPE_member_t asn_MBR_later_4[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_later_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c2 at 71 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* messageClassExtension at 72 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c2 at 51 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* messageClassExtension at 52 */
 };
 static asn_CHOICE_specifics_t asn_SPC_later_specs_4 = {
 	sizeof(struct MCCH_MessageType__later),
@@ -252,8 +252,8 @@ static asn_TYPE_member_t asn_MBR_MCCH_MessageType_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_MCCH_MessageType_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 67 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* later at 71 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 47 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* later at 51 */
 };
 static asn_CHOICE_specifics_t asn_SPC_MCCH_MessageType_specs_1 = {
 	sizeof(struct MCCH_MessageType),

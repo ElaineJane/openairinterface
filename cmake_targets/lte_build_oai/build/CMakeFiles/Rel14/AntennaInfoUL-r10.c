@@ -386,8 +386,8 @@ static ber_tlv_tag_t asn_DEF_AntennaInfoUL_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_AntennaInfoUL_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* transmissionModeUL-r10 at 3662 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* fourAntennaPortActivated-r10 at 3664 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* transmissionModeUL-r10 at 3342 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* fourAntennaPortActivated-r10 at 3344 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_AntennaInfoUL_r10_specs_1 = {
 	sizeof(struct AntennaInfoUL_r10),

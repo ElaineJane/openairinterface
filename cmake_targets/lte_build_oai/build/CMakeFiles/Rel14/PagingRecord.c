@@ -203,8 +203,8 @@ static ber_tlv_tag_t asn_DEF_PagingRecord_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PagingRecord_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-Identity at 788 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cn-Domain at 789 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-Identity at 741 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cn-Domain at 742 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PagingRecord_specs_1 = {
 	sizeof(struct PagingRecord),

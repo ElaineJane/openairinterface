@@ -88,7 +88,7 @@ static ber_tlv_tag_t asn_DEF_own_r13_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_own_r13_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cif-Presence-r13 at 3978 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cif-Presence-r13 at 3632 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_own_r13_specs_3 = {
 	sizeof(struct CrossCarrierSchedulingConfig_r13__schedulingCellInfo_r13__own_r13),
@@ -162,9 +162,9 @@ static ber_tlv_tag_t asn_DEF_other_r13_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_other_r13_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* schedulingCellId-r13 at 3981 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pdsch-Start-r13 at 3982 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* cif-InSchedulingCell-r13 at 3983 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* schedulingCellId-r13 at 3635 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pdsch-Start-r13 at 3636 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* cif-InSchedulingCell-r13 at 3637 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_other_r13_specs_5 = {
 	sizeof(struct CrossCarrierSchedulingConfig_r13__schedulingCellInfo_r13__other_r13),
@@ -225,8 +225,8 @@ static asn_TYPE_member_t asn_MBR_schedulingCellInfo_r13_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_schedulingCellInfo_r13_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* own-r13 at 3979 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* other-r13 at 3981 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* own-r13 at 3633 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* other-r13 at 3635 */
 };
 static asn_CHOICE_specifics_t asn_SPC_schedulingCellInfo_r13_specs_2 = {
 	sizeof(struct CrossCarrierSchedulingConfig_r13__schedulingCellInfo_r13),
@@ -280,7 +280,7 @@ static ber_tlv_tag_t asn_DEF_CrossCarrierSchedulingConfig_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CrossCarrierSchedulingConfig_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* schedulingCellInfo-r13 at 3979 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* schedulingCellInfo-r13 at 3633 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CrossCarrierSchedulingConfig_r13_specs_1 = {
 	sizeof(struct CrossCarrierSchedulingConfig_r13),

@@ -930,11 +930,11 @@ static ber_tlv_tag_t asn_DEF_DeltaFList_PUCCH_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_DeltaFList_PUCCH_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* deltaF-PUCCH-Format1 at 6747 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* deltaF-PUCCH-Format1b at 6748 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* deltaF-PUCCH-Format2 at 6749 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* deltaF-PUCCH-Format2a at 6750 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* deltaF-PUCCH-Format2b at 6751 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* deltaF-PUCCH-Format1 at 6116 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* deltaF-PUCCH-Format1b at 6117 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* deltaF-PUCCH-Format2 at 6118 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* deltaF-PUCCH-Format2a at 6119 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* deltaF-PUCCH-Format2b at 6120 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_DeltaFList_PUCCH_specs_1 = {
 	sizeof(struct DeltaFList_PUCCH),

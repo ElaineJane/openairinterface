@@ -51,10 +51,10 @@ static asn_TYPE_member_t asn_MBR_SL_DiscTxResourcesInterFreq_r13_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_DiscTxResourcesInterFreq_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* acquireSI-FromCarrier-r13 at 3494 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discTxPoolCommon-r13 at 3495 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* requestDedicated-r13 at 3496 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* noTxOnCarrier-r13 at 3497 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* acquireSI-FromCarrier-r13 at 3234 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discTxPoolCommon-r13 at 3235 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* requestDedicated-r13 at 3236 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* noTxOnCarrier-r13 at 3237 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SL_DiscTxResourcesInterFreq_r13_specs_1 = {
 	sizeof(struct SL_DiscTxResourcesInterFreq_r13),

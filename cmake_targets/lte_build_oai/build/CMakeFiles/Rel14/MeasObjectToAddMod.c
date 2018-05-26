@@ -60,11 +60,11 @@ static asn_TYPE_member_t asn_MBR_measObject_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_measObject_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measObjectEUTRA at 7547 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measObjectUTRA at 7548 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measObjectGERAN at 7549 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* measObjectCDMA2000 at 7550 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* measObjectWLAN-r13 at 7553 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measObjectEUTRA at 6833 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measObjectUTRA at 6834 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measObjectGERAN at 6835 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* measObjectCDMA2000 at 6836 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* measObjectWLAN-r13 at 6839 */
 };
 static asn_CHOICE_specifics_t asn_SPC_measObject_specs_3 = {
 	sizeof(struct MeasObjectToAddMod__measObject),
@@ -127,8 +127,8 @@ static ber_tlv_tag_t asn_DEF_MeasObjectToAddMod_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasObjectToAddMod_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measObjectId at 7545 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measObject at 7547 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measObjectId at 6831 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measObject at 6833 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasObjectToAddMod_specs_1 = {
 	sizeof(struct MeasObjectToAddMod),

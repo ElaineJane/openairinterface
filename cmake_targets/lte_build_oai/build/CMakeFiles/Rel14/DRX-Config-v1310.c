@@ -53,7 +53,7 @@ static ber_tlv_tag_t asn_DEF_longDRX_CycleStartOffset_v1310_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_longDRX_CycleStartOffset_v1310_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sf60-v1310 at 4578 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sf60-v1310 at 4121 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_longDRX_CycleStartOffset_v1310_specs_2 = {
 	sizeof(struct DRX_Config_v1310__longDRX_CycleStartOffset_v1310),
@@ -109,7 +109,7 @@ static ber_tlv_tag_t asn_DEF_DRX_Config_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_DRX_Config_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* longDRX-CycleStartOffset-v1310 at 4579 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* longDRX-CycleStartOffset-v1310 at 4122 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_DRX_Config_v1310_specs_1 = {
 	sizeof(struct DRX_Config_v1310),

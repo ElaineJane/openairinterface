@@ -38,8 +38,8 @@ static asn_TYPE_member_t asn_MBR_c1_4[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_c1_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrcConnectionReestablishment-r13 at 11378 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* spare1 at 11379 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrcConnectionReestablishment-r13 at 10068 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* spare1 at 10069 */
 };
 static asn_CHOICE_specifics_t asn_SPC_c1_specs_4 = {
 	sizeof(struct RRCConnectionReestablishment_NB__criticalExtensions__c1),
@@ -140,8 +140,8 @@ static asn_TYPE_member_t asn_MBR_criticalExtensions_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_criticalExtensions_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 11378 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 11381 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 10068 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 10071 */
 };
 static asn_CHOICE_specifics_t asn_SPC_criticalExtensions_specs_3 = {
 	sizeof(struct RRCConnectionReestablishment_NB__criticalExtensions),
@@ -204,8 +204,8 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionReestablishment_NB_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionReestablishment_NB_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrc-TransactionIdentifier at 11375 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensions at 11380 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrc-TransactionIdentifier at 10065 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensions at 10070 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionReestablishment_NB_specs_1 = {
 	sizeof(struct RRCConnectionReestablishment_NB),

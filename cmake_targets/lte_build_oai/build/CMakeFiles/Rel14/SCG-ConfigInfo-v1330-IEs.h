@@ -20,12 +20,15 @@ extern "C" {
 
 /* Forward declarations */
 struct MeasResultListRSSI_SCG_r13;
-struct SCG_ConfigInfo_v1430_IEs;
 
 /* SCG-ConfigInfo-v1330-IEs */
 typedef struct SCG_ConfigInfo_v1330_IEs {
 	struct MeasResultListRSSI_SCG_r13	*measResultListRSSI_SCG_r13	/* OPTIONAL */;
-	struct SCG_ConfigInfo_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct SCG_ConfigInfo_v1330_IEs__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -40,7 +43,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SCG_ConfigInfo_v1330_IEs;
 
 /* Referred external types */
 #include "MeasResultListRSSI-SCG-r13.h"
-#include "SCG-ConfigInfo-v1430-IEs.h"
 
 #endif	/* _SCG_ConfigInfo_v1330_IEs_H_ */
 #include <asn_internal.h>

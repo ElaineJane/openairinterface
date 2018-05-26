@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_ThresholdEUTRA_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_ThresholdEUTRA_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threshold-RSRP at 8024 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* threshold-RSRQ at 8026 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threshold-RSRP at 7279 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* threshold-RSRQ at 7281 */
 };
 static asn_CHOICE_specifics_t asn_SPC_ThresholdEUTRA_specs_1 = {
 	sizeof(struct ThresholdEUTRA),

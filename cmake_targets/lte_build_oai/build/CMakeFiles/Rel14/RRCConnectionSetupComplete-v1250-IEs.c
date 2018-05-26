@@ -566,10 +566,10 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionSetupComplete_v1250_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionSetupComplete_v1250_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mobilityState-r12 at 1607 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mobilityHistoryAvail-r12 at 1608 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* logMeasAvailableMBSFN-r12 at 1609 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* nonCriticalExtension at 1610 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mobilityState-r12 at 1545 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mobilityHistoryAvail-r12 at 1546 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* logMeasAvailableMBSFN-r12 at 1547 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* nonCriticalExtension at 1548 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionSetupComplete_v1250_IEs_specs_1 = {
 	sizeof(struct RRCConnectionSetupComplete_v1250_IEs),

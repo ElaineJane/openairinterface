@@ -57,256 +57,6 @@ memb_gp1_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static int
-memb_gp2_r14_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 39)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_gp3_r14_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 79)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_gp_ncsg1_r14_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 39)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_gp_ncsg2_r14_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 79)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_gp_ncsg3_r14_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 39)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_gp_ncsg4_r14_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 79)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_gp_nonUniform1_r14_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 1279)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_gp_nonUniform2_r14_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 2559)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_gp_nonUniform3_r14_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 5119)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_gp_nonUniform4_r14_constraint_4(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 10239)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
 static asn_per_constraints_t asn_PER_memb_gp0_constr_5 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 6,  6,  0,  39 }	/* (0..39) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
@@ -314,56 +64,6 @@ static asn_per_constraints_t asn_PER_memb_gp0_constr_5 GCC_NOTUSED = {
 };
 static asn_per_constraints_t asn_PER_memb_gp1_constr_6 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 7,  7,  0,  79 }	/* (0..79) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_gp2_r14_constr_8 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 6,  6,  0,  39 }	/* (0..39) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_gp3_r14_constr_9 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 7,  7,  0,  79 }	/* (0..79) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_gp_ncsg1_r14_constr_10 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 6,  6,  0,  39 }	/* (0..39) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_gp_ncsg2_r14_constr_11 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 7,  7,  0,  79 }	/* (0..79) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_gp_ncsg3_r14_constr_12 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 6,  6,  0,  39 }	/* (0..39) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_gp_ncsg4_r14_constr_13 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 7,  7,  0,  79 }	/* (0..79) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_gp_nonUniform1_r14_constr_14 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 11,  11,  0,  1279 }	/* (0..1279) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_gp_nonUniform2_r14_constr_15 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 12,  12,  0,  2559 }	/* (0..2559) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_gp_nonUniform3_r14_constr_16 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 13,  13,  0,  5119 }	/* (0..5119) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_gp_nonUniform4_r14_constr_17 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 14,  14,  0,  10239 }	/* (0..10239) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
@@ -396,110 +96,10 @@ static asn_TYPE_member_t asn_MBR_gapOffset_4[] = {
 		0,
 		"gp1"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MeasGapConfig__setup__gapOffset, choice.gp2_r14),
-		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_gp2_r14_constraint_4,
-		&asn_PER_memb_gp2_r14_constr_8,
-		0,
-		"gp2-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MeasGapConfig__setup__gapOffset, choice.gp3_r14),
-		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_gp3_r14_constraint_4,
-		&asn_PER_memb_gp3_r14_constr_9,
-		0,
-		"gp3-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MeasGapConfig__setup__gapOffset, choice.gp_ncsg1_r14),
-		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_gp_ncsg1_r14_constraint_4,
-		&asn_PER_memb_gp_ncsg1_r14_constr_10,
-		0,
-		"gp-ncsg1-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MeasGapConfig__setup__gapOffset, choice.gp_ncsg2_r14),
-		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_gp_ncsg2_r14_constraint_4,
-		&asn_PER_memb_gp_ncsg2_r14_constr_11,
-		0,
-		"gp-ncsg2-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MeasGapConfig__setup__gapOffset, choice.gp_ncsg3_r14),
-		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_gp_ncsg3_r14_constraint_4,
-		&asn_PER_memb_gp_ncsg3_r14_constr_12,
-		0,
-		"gp-ncsg3-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MeasGapConfig__setup__gapOffset, choice.gp_ncsg4_r14),
-		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_gp_ncsg4_r14_constraint_4,
-		&asn_PER_memb_gp_ncsg4_r14_constr_13,
-		0,
-		"gp-ncsg4-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MeasGapConfig__setup__gapOffset, choice.gp_nonUniform1_r14),
-		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_gp_nonUniform1_r14_constraint_4,
-		&asn_PER_memb_gp_nonUniform1_r14_constr_14,
-		0,
-		"gp-nonUniform1-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MeasGapConfig__setup__gapOffset, choice.gp_nonUniform2_r14),
-		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_gp_nonUniform2_r14_constraint_4,
-		&asn_PER_memb_gp_nonUniform2_r14_constr_15,
-		0,
-		"gp-nonUniform2-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MeasGapConfig__setup__gapOffset, choice.gp_nonUniform3_r14),
-		(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_gp_nonUniform3_r14_constraint_4,
-		&asn_PER_memb_gp_nonUniform3_r14_constr_16,
-		0,
-		"gp-nonUniform3-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MeasGapConfig__setup__gapOffset, choice.gp_nonUniform4_r14),
-		(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_gp_nonUniform4_r14_constraint_4,
-		&asn_PER_memb_gp_nonUniform4_r14_constr_17,
-		0,
-		"gp-nonUniform4-r14"
-		},
 };
 static asn_TYPE_tag2member_t asn_MAP_gapOffset_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* gp0 at 7326 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* gp1 at 7327 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* gp2-r14 at 7330 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* gp3-r14 at 7331 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* gp-ncsg1-r14 at 7332 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* gp-ncsg2-r14 at 7333 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* gp-ncsg3-r14 at 7334 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* gp-ncsg4-r14 at 7335 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* gp-nonUniform1-r14 at 7336 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* gp-nonUniform2-r14 at 7337 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* gp-nonUniform3-r14 at 7338 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 } /* gp-nonUniform4-r14 at 7339 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* gp0 at 6657 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* gp1 at 6658 */
 };
 static asn_CHOICE_specifics_t asn_SPC_gapOffset_specs_4 = {
 	sizeof(struct MeasGapConfig__setup__gapOffset),
@@ -507,7 +107,7 @@ static asn_CHOICE_specifics_t asn_SPC_gapOffset_specs_4 = {
 	offsetof(struct MeasGapConfig__setup__gapOffset, present),
 	sizeof(((struct MeasGapConfig__setup__gapOffset *)0)->present),
 	asn_MAP_gapOffset_tag2el_4,
-	12,	/* Count of tags in the map */
+	2,	/* Count of tags in the map */
 	0,
 	2	/* Extensions start */
 };
@@ -534,7 +134,7 @@ asn_TYPE_descriptor_t asn_DEF_gapOffset_4 = {
 	0,	/* No tags (count) */
 	&asn_PER_type_gapOffset_constr_4,
 	asn_MBR_gapOffset_4,
-	12,	/* Elements count */
+	2,	/* Elements count */
 	&asn_SPC_gapOffset_specs_4	/* Additional specs */
 };
 
@@ -554,7 +154,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* gapOffset at 7326 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* gapOffset at 6657 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct MeasGapConfig__setup),
@@ -615,8 +215,8 @@ static asn_TYPE_member_t asn_MBR_MeasGapConfig_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasGapConfig_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7323 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7341 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6654 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6661 */
 };
 static asn_CHOICE_specifics_t asn_SPC_MeasGapConfig_specs_1 = {
 	sizeof(struct MeasGapConfig),

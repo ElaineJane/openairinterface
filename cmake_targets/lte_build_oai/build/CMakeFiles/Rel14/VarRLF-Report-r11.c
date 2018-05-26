@@ -31,8 +31,8 @@ static ber_tlv_tag_t asn_DEF_VarRLF_Report_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_VarRLF_Report_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rlf-Report-r10 at 12893 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* plmn-IdentityList-r11 at 12895 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rlf-Report-r10 at 11170 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* plmn-IdentityList-r11 at 11172 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_VarRLF_Report_r11_specs_1 = {
 	sizeof(struct VarRLF_Report_r11),

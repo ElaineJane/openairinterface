@@ -199,21 +199,21 @@ static ber_tlv_tag_t asn_DEF_SCG_ConfigInfo_r12_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SCG_ConfigInfo_r12_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* radioResourceConfigDedMCG-r12 at 13381 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sCellToAddModListMCG-r12 at 13382 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measGapConfig-r12 at 13383 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* powerCoordinationInfo-r12 at 13384 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* scg-RadioConfig-r12 at 13385 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* eutra-CapabilityInfo-r12 at 13386 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* scg-ConfigRestrictInfo-r12 at 13387 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* mbmsInterestIndication-r12 at 13388 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* measResultServCellListSCG-r12 at 13390 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* drb-ToAddModListSCG-r12 at 13391 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* drb-ToReleaseListSCG-r12 at 13392 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* sCellToAddModListSCG-r12 at 13393 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* sCellToReleaseListSCG-r12 at 13394 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* p-Max-r12 at 13395 */
-    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 } /* nonCriticalExtension at 13396 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* radioResourceConfigDedMCG-r12 at 11592 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sCellToAddModListMCG-r12 at 11593 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measGapConfig-r12 at 11594 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* powerCoordinationInfo-r12 at 11595 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* scg-RadioConfig-r12 at 11596 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* eutra-CapabilityInfo-r12 at 11597 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* scg-ConfigRestrictInfo-r12 at 11598 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* mbmsInterestIndication-r12 at 11599 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* measResultServCellListSCG-r12 at 11601 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* drb-ToAddModListSCG-r12 at 11602 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* drb-ToReleaseListSCG-r12 at 11603 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* sCellToAddModListSCG-r12 at 11604 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* sCellToReleaseListSCG-r12 at 11605 */
+    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* p-Max-r12 at 11606 */
+    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 } /* nonCriticalExtension at 11607 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SCG_ConfigInfo_r12_IEs_specs_1 = {
 	sizeof(struct SCG_ConfigInfo_r12_IEs),

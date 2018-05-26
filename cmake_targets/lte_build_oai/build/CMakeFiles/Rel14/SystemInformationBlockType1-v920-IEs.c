@@ -211,9 +211,9 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType1_v920_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType1_v920_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ims-EmergencySupport-r9 at 1937 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellSelectionInfo-v920 at 1938 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 1939 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ims-EmergencySupport-r9 at 1841 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellSelectionInfo-v920 at 1842 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 1843 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType1_v920_IEs_specs_1 = {
 	sizeof(struct SystemInformationBlockType1_v920_IEs),

@@ -429,9 +429,9 @@ static ber_tlv_tag_t asn_DEF_PUSCH_ConfigCommon_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PUSCH_ConfigCommon_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pusch-maxNumRepetitionCEmodeA-r13 at 5441 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pusch-maxNumRepetitionCEmodeB-r13 at 5443 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* pusch-HoppingOffset-v1310 at 5446 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pusch-maxNumRepetitionCEmodeA-r13 at 4911 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pusch-maxNumRepetitionCEmodeB-r13 at 4913 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* pusch-HoppingOffset-v1310 at 4916 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PUSCH_ConfigCommon_v1310_specs_1 = {
 	sizeof(struct PUSCH_ConfigCommon_v1310),

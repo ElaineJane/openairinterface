@@ -21,7 +21,6 @@
 #include "MBSFN-SubframeConfigList.h"
 #include <constr_SEQUENCE.h>
 #include <constr_CHOICE.h>
-#include "MBSFN-SubframeConfigList-v1430.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -47,11 +46,6 @@ typedef enum PDSCH_RE_MappingQCL_Config_r11__optionalSetOfFields_r11__pdsch_Star
 	PDSCH_RE_MappingQCL_Config_r11__optionalSetOfFields_r11__pdsch_Start_r11_n4	= 4,
 	PDSCH_RE_MappingQCL_Config_r11__optionalSetOfFields_r11__pdsch_Start_r11_assigned	= 5
 } e_PDSCH_RE_MappingQCL_Config_r11__optionalSetOfFields_r11__pdsch_Start_r11;
-typedef enum PDSCH_RE_MappingQCL_Config_r11__ext1__mbsfn_SubframeConfigList_v1430_PR {
-	PDSCH_RE_MappingQCL_Config_r11__ext1__mbsfn_SubframeConfigList_v1430_PR_NOTHING,	/* No components present */
-	PDSCH_RE_MappingQCL_Config_r11__ext1__mbsfn_SubframeConfigList_v1430_PR_release,
-	PDSCH_RE_MappingQCL_Config_r11__ext1__mbsfn_SubframeConfigList_v1430_PR_setup
-} PDSCH_RE_MappingQCL_Config_r11__ext1__mbsfn_SubframeConfigList_v1430_PR;
 
 /* PDSCH-RE-MappingQCL-Config-r11 */
 typedef struct PDSCH_RE_MappingQCL_Config_r11 {
@@ -85,26 +79,6 @@ typedef struct PDSCH_RE_MappingQCL_Config_r11 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct PDSCH_RE_MappingQCL_Config_r11__ext1 {
-		struct PDSCH_RE_MappingQCL_Config_r11__ext1__mbsfn_SubframeConfigList_v1430 {
-			PDSCH_RE_MappingQCL_Config_r11__ext1__mbsfn_SubframeConfigList_v1430_PR present;
-			union PDSCH_RE_MappingQCL_Config_r11__ext1__mbsfn_SubframeConfigList_v1430_u {
-				NULL_t	 release;
-				struct PDSCH_RE_MappingQCL_Config_r11__ext1__mbsfn_SubframeConfigList_v1430__setup {
-					MBSFN_SubframeConfigList_v1430_t	 subframeConfigList_v1430;
-					
-					/* Context for parsing across buffer boundaries */
-					asn_struct_ctx_t _asn_ctx;
-				} setup;
-			} choice;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *mbsfn_SubframeConfigList_v1430;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

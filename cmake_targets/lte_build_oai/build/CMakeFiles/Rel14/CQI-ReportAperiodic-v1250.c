@@ -290,9 +290,9 @@ static ber_tlv_tag_t asn_DEF_aperiodicCSI_Trigger_v1250_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_aperiodicCSI_Trigger_v1250_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* trigger-SubframeSetIndicator-r12 at 3839 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* trigger1-SubframeSetIndicator-r12 at 3840 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* trigger2-SubframeSetIndicator-r12 at 3841 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* trigger-SubframeSetIndicator-r12 at 3515 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* trigger1-SubframeSetIndicator-r12 at 3516 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* trigger2-SubframeSetIndicator-r12 at 3517 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_aperiodicCSI_Trigger_v1250_specs_4 = {
 	sizeof(struct CQI_ReportAperiodic_v1250__setup__aperiodicCSI_Trigger_v1250),
@@ -348,7 +348,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* aperiodicCSI-Trigger-v1250 at 3839 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* aperiodicCSI-Trigger-v1250 at 3515 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct CQI_ReportAperiodic_v1250__setup),
@@ -409,8 +409,8 @@ static asn_TYPE_member_t asn_MBR_CQI_ReportAperiodic_v1250_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_CQI_ReportAperiodic_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3836 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3843 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3512 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3519 */
 };
 static asn_CHOICE_specifics_t asn_SPC_CQI_ReportAperiodic_v1250_specs_1 = {
 	sizeof(struct CQI_ReportAperiodic_v1250),

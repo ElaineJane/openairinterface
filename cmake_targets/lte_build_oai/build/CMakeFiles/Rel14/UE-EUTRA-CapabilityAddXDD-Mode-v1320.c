@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_UE_EUTRA_CapabilityAddXDD_Mode_v1320_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UE_EUTRA_CapabilityAddXDD_Mode_v1320_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* phyLayerParameters-v1320 at 8707 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* scptm-Parameters-r13 at 8708 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* phyLayerParameters-v1320 at 7886 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* scptm-Parameters-r13 at 7887 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UE_EUTRA_CapabilityAddXDD_Mode_v1320_specs_1 = {
 	sizeof(struct UE_EUTRA_CapabilityAddXDD_Mode_v1320),

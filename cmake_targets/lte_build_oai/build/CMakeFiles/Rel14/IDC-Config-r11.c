@@ -479,124 +479,6 @@ idc_Indication_UL_CA_r11_25_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
-static int
-idc_HardwareSharingIndication_r13_28_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	/* Replace with underlying type checker */
-	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
-	return td->check_constraints(td, sptr, ctfailcb, app_key);
-}
-
-/*
- * This type is implemented using NativeEnumerated,
- * so here we adjust the DEF accordingly.
- */
-static void
-idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
-	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
-	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
-	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
-	td->der_encoder    = asn_DEF_NativeEnumerated.der_encoder;
-	td->xer_decoder    = asn_DEF_NativeEnumerated.xer_decoder;
-	td->xer_encoder    = asn_DEF_NativeEnumerated.xer_encoder;
-	td->uper_decoder   = asn_DEF_NativeEnumerated.uper_decoder;
-	td->uper_encoder   = asn_DEF_NativeEnumerated.uper_encoder;
-	td->aper_decoder   = asn_DEF_NativeEnumerated.aper_decoder;
-	td->aper_encoder   = asn_DEF_NativeEnumerated.aper_encoder;
-	td->compare        = asn_DEF_NativeEnumerated.compare;
-	if(!td->per_constraints)
-		td->per_constraints = asn_DEF_NativeEnumerated.per_constraints;
-	td->elements       = asn_DEF_NativeEnumerated.elements;
-	td->elements_count = asn_DEF_NativeEnumerated.elements_count;
-     /* td->specifics      = asn_DEF_NativeEnumerated.specifics;	// Defined explicitly */
-}
-
-static void
-idc_HardwareSharingIndication_r13_28_free(asn_TYPE_descriptor_t *td,
-		void *struct_ptr, int contents_only) {
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td);
-	td->free_struct(td, struct_ptr, contents_only);
-}
-
-static int
-idc_HardwareSharingIndication_r13_28_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
-		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td);
-	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
-}
-
-static asn_dec_rval_t
-idc_HardwareSharingIndication_r13_28_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td);
-	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
-}
-
-static asn_enc_rval_t
-idc_HardwareSharingIndication_r13_28_encode_der(asn_TYPE_descriptor_t *td,
-		void *structure, int tag_mode, ber_tlv_tag_t tag,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td);
-	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
-}
-
-static asn_dec_rval_t
-idc_HardwareSharingIndication_r13_28_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td);
-	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
-}
-
-static asn_enc_rval_t
-idc_HardwareSharingIndication_r13_28_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
-		int ilevel, enum xer_encoder_flags_e flags,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td);
-	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
-}
-
-static asn_dec_rval_t
-idc_HardwareSharingIndication_r13_28_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td);
-	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static asn_enc_rval_t
-idc_HardwareSharingIndication_r13_28_encode_uper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td);
-	return td->uper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_enc_rval_t
-idc_HardwareSharingIndication_r13_28_encode_aper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td);
-	return td->aper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_comp_rval_t * 
-idc_HardwareSharingIndication_r13_28_compare(asn_TYPE_descriptor_t *td1,
-		const void *structure1,
-		asn_TYPE_descriptor_t *td2,
-		const void *structure2) {
-	asn_comp_rval_t * res  = NULL;
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td1);
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td2);
-	res = td1->compare(td1, structure1, td2, structure2);
-	return res;
-}
-
-static asn_dec_rval_t
-idc_HardwareSharingIndication_r13_28_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	idc_HardwareSharingIndication_r13_28_inherit_TYPE_descriptor(td);
-	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
 static asn_per_constraints_t asn_PER_type_idc_Indication_r11_constr_2 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
@@ -613,11 +495,6 @@ static asn_per_constraints_t asn_PER_type_autonomousDenialValidity_r11_constr_14
 	0, 0	/* No PER value map */
 };
 static asn_per_constraints_t asn_PER_type_idc_Indication_UL_CA_r11_constr_25 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_type_idc_HardwareSharingIndication_r13_constr_28 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
@@ -816,8 +693,8 @@ static ber_tlv_tag_t asn_DEF_autonomousDenialParameters_r11_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_autonomousDenialParameters_r11_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* autonomousDenialSubframes-r11 at 8319 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* autonomousDenialValidity-r11 at 8322 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* autonomousDenialSubframes-r11 at 7530 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* autonomousDenialValidity-r11 at 7533 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_autonomousDenialParameters_r11_specs_4 = {
 	sizeof(struct IDC_Config_r11__autonomousDenialParameters_r11),
@@ -921,7 +798,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_24[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_24[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* idc-Indication-UL-CA-r11 at 8326 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* idc-Indication-UL-CA-r11 at 7537 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_24 = {
 	sizeof(struct IDC_Config_r11__ext1),
@@ -962,113 +839,8 @@ asn_TYPE_descriptor_t asn_DEF_ext1_24 = {
 	&asn_SPC_ext1_specs_24	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_idc_HardwareSharingIndication_r13_value2enum_28[] = {
-	{ 0,	5,	"setup" }
-};
-static unsigned int asn_MAP_idc_HardwareSharingIndication_r13_enum2value_28[] = {
-	0	/* setup(0) */
-};
-static asn_INTEGER_specifics_t asn_SPC_idc_HardwareSharingIndication_r13_specs_28 = {
-	asn_MAP_idc_HardwareSharingIndication_r13_value2enum_28,	/* "tag" => N; sorted by tag */
-	asn_MAP_idc_HardwareSharingIndication_r13_enum2value_28,	/* N => "tag"; sorted by N */
-	1,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_idc_HardwareSharingIndication_r13_tags_28[] = {
-	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_idc_HardwareSharingIndication_r13_28 = {
-	"idc-HardwareSharingIndication-r13",
-	"idc-HardwareSharingIndication-r13",
-	idc_HardwareSharingIndication_r13_28_free,
-	idc_HardwareSharingIndication_r13_28_print,
-	idc_HardwareSharingIndication_r13_28_constraint,
-	idc_HardwareSharingIndication_r13_28_decode_ber,
-	idc_HardwareSharingIndication_r13_28_encode_der,
-	idc_HardwareSharingIndication_r13_28_decode_xer,
-	idc_HardwareSharingIndication_r13_28_encode_xer,
-	idc_HardwareSharingIndication_r13_28_decode_uper,
-	idc_HardwareSharingIndication_r13_28_encode_uper,
-	idc_HardwareSharingIndication_r13_28_decode_aper,
-	idc_HardwareSharingIndication_r13_28_encode_aper,
-	idc_HardwareSharingIndication_r13_28_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_idc_HardwareSharingIndication_r13_tags_28,
-	sizeof(asn_DEF_idc_HardwareSharingIndication_r13_tags_28)
-		/sizeof(asn_DEF_idc_HardwareSharingIndication_r13_tags_28[0]) - 1, /* 1 */
-	asn_DEF_idc_HardwareSharingIndication_r13_tags_28,	/* Same as above */
-	sizeof(asn_DEF_idc_HardwareSharingIndication_r13_tags_28)
-		/sizeof(asn_DEF_idc_HardwareSharingIndication_r13_tags_28[0]), /* 2 */
-	&asn_PER_type_idc_HardwareSharingIndication_r13_constr_28,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_idc_HardwareSharingIndication_r13_specs_28	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext2_27[] = {
-	{ ATF_POINTER, 1, offsetof(struct IDC_Config_r11__ext2, idc_HardwareSharingIndication_r13),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_idc_HardwareSharingIndication_r13_28,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"idc-HardwareSharingIndication-r13"
-		},
-};
-static int asn_MAP_ext2_oms_27[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext2_tags_27[] = {
-	(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_27[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* idc-HardwareSharingIndication-r13 at 8328 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_27 = {
-	sizeof(struct IDC_Config_r11__ext2),
-	offsetof(struct IDC_Config_r11__ext2, _asn_ctx),
-	asn_MAP_ext2_tag2el_27,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext2_oms_27,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext2_27 = {
-	"ext2",
-	"ext2",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext2_tags_27,
-	sizeof(asn_DEF_ext2_tags_27)
-		/sizeof(asn_DEF_ext2_tags_27[0]) - 1, /* 1 */
-	asn_DEF_ext2_tags_27,	/* Same as above */
-	sizeof(asn_DEF_ext2_tags_27)
-		/sizeof(asn_DEF_ext2_tags_27[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext2_27,
-	1,	/* Elements count */
-	&asn_SPC_ext2_specs_27	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_IDC_Config_r11_1[] = {
-	{ ATF_POINTER, 4, offsetof(struct IDC_Config_r11, idc_Indication_r11),
+	{ ATF_POINTER, 3, offsetof(struct IDC_Config_r11, idc_Indication_r11),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_idc_Indication_r11_2,
@@ -1077,7 +849,7 @@ static asn_TYPE_member_t asn_MBR_IDC_Config_r11_1[] = {
 		0,
 		"idc-Indication-r11"
 		},
-	{ ATF_POINTER, 3, offsetof(struct IDC_Config_r11, autonomousDenialParameters_r11),
+	{ ATF_POINTER, 2, offsetof(struct IDC_Config_r11, autonomousDenialParameters_r11),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		0,
 		&asn_DEF_autonomousDenialParameters_r11_4,
@@ -1086,7 +858,7 @@ static asn_TYPE_member_t asn_MBR_IDC_Config_r11_1[] = {
 		0,
 		"autonomousDenialParameters-r11"
 		},
-	{ ATF_POINTER, 2, offsetof(struct IDC_Config_r11, ext1),
+	{ ATF_POINTER, 1, offsetof(struct IDC_Config_r11, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		0,
 		&asn_DEF_ext1_24,
@@ -1095,35 +867,25 @@ static asn_TYPE_member_t asn_MBR_IDC_Config_r11_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 1, offsetof(struct IDC_Config_r11, ext2),
-		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
-		0,
-		&asn_DEF_ext2_27,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext2"
-		},
 };
-static int asn_MAP_IDC_Config_r11_oms_1[] = { 0, 1, 2, 3 };
+static int asn_MAP_IDC_Config_r11_oms_1[] = { 0, 1, 2 };
 static ber_tlv_tag_t asn_DEF_IDC_Config_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_IDC_Config_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* idc-Indication-r11 at 8317 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* autonomousDenialParameters-r11 at 8320 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext1 at 8326 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext2 at 8328 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* idc-Indication-r11 at 7528 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* autonomousDenialParameters-r11 at 7531 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ext1 at 7537 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_IDC_Config_r11_specs_1 = {
 	sizeof(struct IDC_Config_r11),
 	offsetof(struct IDC_Config_r11, _asn_ctx),
 	asn_MAP_IDC_Config_r11_tag2el_1,
-	4,	/* Count of tags in the map */
+	3,	/* Count of tags in the map */
 	asn_MAP_IDC_Config_r11_oms_1,	/* Optional members */
-	2, 2,	/* Root/Additions */
+	2, 1,	/* Root/Additions */
 	1,	/* Start extensions */
-	5	/* Stop extensions */
+	4	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_IDC_Config_r11 = {
 	"IDC-Config-r11",
@@ -1149,7 +911,7 @@ asn_TYPE_descriptor_t asn_DEF_IDC_Config_r11 = {
 		/sizeof(asn_DEF_IDC_Config_r11_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_IDC_Config_r11_1,
-	4,	/* Elements count */
+	3,	/* Elements count */
 	&asn_SPC_IDC_Config_r11_specs_1	/* Additional specs */
 };
 

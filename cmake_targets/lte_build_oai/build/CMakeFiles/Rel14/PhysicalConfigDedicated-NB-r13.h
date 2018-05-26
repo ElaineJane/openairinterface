@@ -12,17 +12,11 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include <NativeEnumerated.h>
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-/* Dependencies */
-typedef enum PhysicalConfigDedicated_NB_r13__ext1__twoHARQ_ProcessesConfig_r14 {
-	PhysicalConfigDedicated_NB_r13__ext1__twoHARQ_ProcessesConfig_r14_true	= 0
-} e_PhysicalConfigDedicated_NB_r13__ext1__twoHARQ_ProcessesConfig_r14;
 
 /* Forward declarations */
 struct CarrierConfigDedicated_NB_r13;
@@ -40,19 +34,12 @@ typedef struct PhysicalConfigDedicated_NB_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct PhysicalConfigDedicated_NB_r13__ext1 {
-		long	*twoHARQ_ProcessesConfig_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
 } PhysicalConfigDedicated_NB_r13_t;
 
 /* Implementation */
-/* extern asn_TYPE_descriptor_t asn_DEF_twoHARQ_ProcessesConfig_r14_8;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_PhysicalConfigDedicated_NB_r13;
 
 #ifdef __cplusplus

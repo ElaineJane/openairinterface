@@ -31,8 +31,8 @@ static ber_tlv_tag_t asn_DEF_CarrierFreqCDMA2000_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CarrierFreqCDMA2000_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandClass at 6832 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* arfcn at 6834 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandClass at 6199 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* arfcn at 6201 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CarrierFreqCDMA2000_specs_1 = {
 	sizeof(struct CarrierFreqCDMA2000),

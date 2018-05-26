@@ -22,7 +22,7 @@ static ber_tlv_tag_t asn_DEF_CellReselectionServingFreqInfo_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CellReselectionServingFreqInfo_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cellReselectionSubPriority-r13 at 2809 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cellReselectionSubPriority-r13 at 2583 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CellReselectionServingFreqInfo_v1310_specs_1 = {
 	sizeof(struct CellReselectionServingFreqInfo_v1310),

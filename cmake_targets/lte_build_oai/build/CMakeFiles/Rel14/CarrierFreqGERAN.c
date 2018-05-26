@@ -31,8 +31,8 @@ static ber_tlv_tag_t asn_DEF_CarrierFreqGERAN_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CarrierFreqGERAN_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* arfcn at 6838 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* bandIndicator at 6840 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* arfcn at 6205 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* bandIndicator at 6207 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CarrierFreqGERAN_specs_1 = {
 	sizeof(struct CarrierFreqGERAN),

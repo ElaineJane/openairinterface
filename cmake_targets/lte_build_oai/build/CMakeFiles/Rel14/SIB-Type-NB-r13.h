@@ -25,9 +25,9 @@ typedef enum SIB_Type_NB_r13 {
 	SIB_Type_NB_r13_sibType5_NB_r13	= 2,
 	SIB_Type_NB_r13_sibType14_NB_r13	= 3,
 	SIB_Type_NB_r13_sibType16_NB_r13	= 4,
-	SIB_Type_NB_r13_sibType15_NB_r14	= 5,
-	SIB_Type_NB_r13_sibType20_NB_r14	= 6,
-	SIB_Type_NB_r13_sibType22_NB_r14	= 7
+	SIB_Type_NB_r13_spare3	= 5,
+	SIB_Type_NB_r13_spare2	= 6,
+	SIB_Type_NB_r13_spare1	= 7
 } e_SIB_Type_NB_r13;
 
 /* SIB-Type-NB-r13 */

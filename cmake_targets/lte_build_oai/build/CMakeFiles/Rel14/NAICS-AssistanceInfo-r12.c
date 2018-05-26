@@ -47,9 +47,9 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* neighCellsToReleaseList-r12 at 6039 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* neighCellsToAddModList-r12 at 6040 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* servCellp-a-r12 at 6041 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* neighCellsToReleaseList-r12 at 5449 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* neighCellsToAddModList-r12 at 5450 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* servCellp-a-r12 at 5451 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct NAICS_AssistanceInfo_r12__setup),
@@ -111,8 +111,8 @@ static asn_TYPE_member_t asn_MBR_NAICS_AssistanceInfo_r12_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_NAICS_AssistanceInfo_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6037 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6039 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5447 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5449 */
 };
 static asn_CHOICE_specifics_t asn_SPC_NAICS_AssistanceInfo_r12_specs_1 = {
 	sizeof(struct NAICS_AssistanceInfo_r12),

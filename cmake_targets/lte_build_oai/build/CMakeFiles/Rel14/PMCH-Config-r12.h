@@ -38,10 +38,6 @@ typedef enum PMCH_Config_r12__mch_SchedulingPeriod_r12 {
 	PMCH_Config_r12__mch_SchedulingPeriod_r12_rf512	= 7,
 	PMCH_Config_r12__mch_SchedulingPeriod_r12_rf1024	= 8
 } e_PMCH_Config_r12__mch_SchedulingPeriod_r12;
-typedef enum PMCH_Config_r12__ext1__mch_SchedulingPeriod_v1430 {
-	PMCH_Config_r12__ext1__mch_SchedulingPeriod_v1430_rf1	= 0,
-	PMCH_Config_r12__ext1__mch_SchedulingPeriod_v1430_rf2	= 1
-} e_PMCH_Config_r12__ext1__mch_SchedulingPeriod_v1430;
 
 /* PMCH-Config-r12 */
 typedef struct PMCH_Config_r12 {
@@ -61,12 +57,6 @@ typedef struct PMCH_Config_r12 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct PMCH_Config_r12__ext1 {
-		long	*mch_SchedulingPeriod_v1430	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -74,7 +64,6 @@ typedef struct PMCH_Config_r12 {
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_mch_SchedulingPeriod_r12_6;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_mch_SchedulingPeriod_v1430_18;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_PMCH_Config_r12;
 
 #ifdef __cplusplus

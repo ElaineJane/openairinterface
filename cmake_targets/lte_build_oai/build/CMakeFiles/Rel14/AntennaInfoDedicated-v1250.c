@@ -22,7 +22,7 @@ static ber_tlv_tag_t asn_DEF_AntennaInfoDedicated_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_AntennaInfoDedicated_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* alternativeCodebookEnabledFor4TX-r12 at 3653 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* alternativeCodebookEnabledFor4TX-r12 at 3337 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_AntennaInfoDedicated_v1250_specs_1 = {
 	sizeof(struct AntennaInfoDedicated_v1250),

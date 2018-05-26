@@ -56,10 +56,10 @@ static asn_TYPE_member_t asn_MBR_c1_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_c1_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrcConnectionReestablishment at 95 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rrcConnectionReestablishmentReject at 96 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rrcConnectionReject at 97 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* rrcConnectionSetup at 99 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrcConnectionReestablishment at 75 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rrcConnectionReestablishmentReject at 76 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rrcConnectionReject at 77 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* rrcConnectionSetup at 79 */
 };
 static asn_CHOICE_specifics_t asn_SPC_c1_specs_2 = {
 	sizeof(struct DL_CCCH_MessageType__c1),
@@ -160,8 +160,8 @@ static asn_TYPE_member_t asn_MBR_DL_CCCH_MessageType_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_DL_CCCH_MessageType_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 95 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* messageClassExtension at 100 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 75 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* messageClassExtension at 80 */
 };
 static asn_CHOICE_specifics_t asn_SPC_DL_CCCH_MessageType_specs_1 = {
 	sizeof(struct DL_CCCH_MessageType),

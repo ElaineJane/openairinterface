@@ -105,8 +105,8 @@ static asn_TYPE_member_t asn_MBR_cdma_SystemTime_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_cdma_SystemTime_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* synchronousSystemTime at 7186 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* asynchronousSystemTime at 7187 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* synchronousSystemTime at 6520 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* asynchronousSystemTime at 6521 */
 };
 static asn_CHOICE_specifics_t asn_SPC_cdma_SystemTime_specs_3 = {
 	sizeof(struct SystemTimeInfoCDMA2000__cdma_SystemTime),
@@ -169,8 +169,8 @@ static ber_tlv_tag_t asn_DEF_SystemTimeInfoCDMA2000_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemTimeInfoCDMA2000_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cdma-EUTRA-Synchronisation at 7184 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cdma-SystemTime at 7186 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cdma-EUTRA-Synchronisation at 6518 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cdma-SystemTime at 6520 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemTimeInfoCDMA2000_specs_1 = {
 	sizeof(struct SystemTimeInfoCDMA2000),

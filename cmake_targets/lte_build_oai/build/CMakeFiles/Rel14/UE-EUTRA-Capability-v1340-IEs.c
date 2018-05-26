@@ -50,7 +50,7 @@ static asn_TYPE_member_t asn_MBR_UE_EUTRA_Capability_v1340_IEs_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct UE_EUTRA_Capability_v1340_IEs, nonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_UE_EUTRA_Capability_v1350_IEs,
+		&asn_DEF_UE_EUTRA_Capability_v14xy_IEs,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -62,8 +62,8 @@ static ber_tlv_tag_t asn_DEF_UE_EUTRA_Capability_v1340_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UE_EUTRA_Capability_v1340_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-CategoryUL-v1340 at 8623 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 8624 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-CategoryUL-v1340 at 7832 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 7833 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UE_EUTRA_Capability_v1340_IEs_specs_1 = {
 	sizeof(struct UE_EUTRA_Capability_v1340_IEs),

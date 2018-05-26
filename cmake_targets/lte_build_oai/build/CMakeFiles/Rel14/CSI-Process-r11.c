@@ -333,8 +333,8 @@ static asn_TYPE_member_t asn_MBR_csi_IM_ConfigIdList_r12_13[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_csi_IM_ConfigIdList_r12_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4031 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4033 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3685 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3687 */
 };
 static asn_CHOICE_specifics_t asn_SPC_csi_IM_ConfigIdList_r12_specs_13 = {
 	sizeof(struct CSI_Process_r11__ext1__csi_IM_ConfigIdList_r12),
@@ -394,8 +394,8 @@ static asn_TYPE_member_t asn_MBR_cqi_ReportAperiodicProc2_r12_17[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_cqi_ReportAperiodicProc2_r12_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4035 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4037 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3689 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3691 */
 };
 static asn_CHOICE_specifics_t asn_SPC_cqi_ReportAperiodicProc2_r12_specs_17 = {
 	sizeof(struct CSI_Process_r11__ext1__cqi_ReportAperiodicProc2_r12),
@@ -469,9 +469,9 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_10[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* alternativeCodebookEnabledFor4TXProc-r12 at 4029 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-IM-ConfigIdList-r12 at 4031 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* cqi-ReportAperiodicProc2-r12 at 4035 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* alternativeCodebookEnabledFor4TXProc-r12 at 3683 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-IM-ConfigIdList-r12 at 3685 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* cqi-ReportAperiodicProc2-r12 at 3689 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_10 = {
 	sizeof(struct CSI_Process_r11__ext1),
@@ -533,8 +533,8 @@ static asn_TYPE_member_t asn_MBR_cqi_ReportAperiodicProc_v1310_21[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_cqi_ReportAperiodicProc_v1310_tag2el_21[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4040 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4042 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3694 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3696 */
 };
 static asn_CHOICE_specifics_t asn_SPC_cqi_ReportAperiodicProc_v1310_specs_21 = {
 	sizeof(struct CSI_Process_r11__ext2__cqi_ReportAperiodicProc_v1310),
@@ -594,8 +594,8 @@ static asn_TYPE_member_t asn_MBR_cqi_ReportAperiodicProc2_v1310_24[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_cqi_ReportAperiodicProc2_v1310_tag2el_24[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4044 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4046 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3698 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3700 */
 };
 static asn_CHOICE_specifics_t asn_SPC_cqi_ReportAperiodicProc2_v1310_specs_24 = {
 	sizeof(struct CSI_Process_r11__ext2__cqi_ReportAperiodicProc2_v1310),
@@ -669,9 +669,9 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_20[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_20[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cqi-ReportAperiodicProc-v1310 at 4040 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cqi-ReportAperiodicProc2-v1310 at 4044 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* eMIMO-Type-r13 at 4047 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cqi-ReportAperiodicProc-v1310 at 3694 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cqi-ReportAperiodicProc2-v1310 at 3698 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* eMIMO-Type-r13 at 3701 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_20 = {
 	sizeof(struct CSI_Process_r11__ext2),
@@ -712,84 +712,6 @@ asn_TYPE_descriptor_t asn_DEF_ext2_20 = {
 	&asn_SPC_ext2_specs_20	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext3_28[] = {
-	{ ATF_POINTER, 3, offsetof(struct CSI_Process_r11__ext3, eMIMO_Type_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_CSI_RS_ConfigEMIMO_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"eMIMO-Type-v1430"
-		},
-	{ ATF_POINTER, 2, offsetof(struct CSI_Process_r11__ext3, eMIMO_Hybrid_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_CSI_RS_ConfigEMIMO_Hybrid_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"eMIMO-Hybrid-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct CSI_Process_r11__ext3, advancedCodebookEnabled_r14),
-		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_BOOLEAN,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"advancedCodebookEnabled-r14"
-		},
-};
-static int asn_MAP_ext3_oms_28[] = { 0, 1, 2 };
-static ber_tlv_tag_t asn_DEF_ext3_tags_28[] = {
-	(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_28[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eMIMO-Type-v1430 at 4049 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eMIMO-Hybrid-r14 at 4050 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* advancedCodebookEnabled-r14 at 4051 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_28 = {
-	sizeof(struct CSI_Process_r11__ext3),
-	offsetof(struct CSI_Process_r11__ext3, _asn_ctx),
-	asn_MAP_ext3_tag2el_28,
-	3,	/* Count of tags in the map */
-	asn_MAP_ext3_oms_28,	/* Optional members */
-	3, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext3_28 = {
-	"ext3",
-	"ext3",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext3_tags_28,
-	sizeof(asn_DEF_ext3_tags_28)
-		/sizeof(asn_DEF_ext3_tags_28[0]) - 1, /* 1 */
-	asn_DEF_ext3_tags_28,	/* Same as above */
-	sizeof(asn_DEF_ext3_tags_28)
-		/sizeof(asn_DEF_ext3_tags_28[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext3_28,
-	3,	/* Elements count */
-	&asn_SPC_ext3_specs_28	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_CSI_Process_r11_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct CSI_Process_r11, csi_ProcessId_r11),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -827,7 +749,7 @@ static asn_TYPE_member_t asn_MBR_CSI_Process_r11_1[] = {
 		0,
 		"p-C-AndCBSRList-r11"
 		},
-	{ ATF_POINTER, 6, offsetof(struct CSI_Process_r11, cqi_ReportBothProc_r11),
+	{ ATF_POINTER, 5, offsetof(struct CSI_Process_r11, cqi_ReportBothProc_r11),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_CQI_ReportBothProc_r11,
@@ -836,7 +758,7 @@ static asn_TYPE_member_t asn_MBR_CSI_Process_r11_1[] = {
 		0,
 		"cqi-ReportBothProc-r11"
 		},
-	{ ATF_POINTER, 5, offsetof(struct CSI_Process_r11, cqi_ReportPeriodicProcId_r11),
+	{ ATF_POINTER, 4, offsetof(struct CSI_Process_r11, cqi_ReportPeriodicProcId_r11),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -845,7 +767,7 @@ static asn_TYPE_member_t asn_MBR_CSI_Process_r11_1[] = {
 		0,
 		"cqi-ReportPeriodicProcId-r11"
 		},
-	{ ATF_POINTER, 4, offsetof(struct CSI_Process_r11, cqi_ReportAperiodicProc_r11),
+	{ ATF_POINTER, 3, offsetof(struct CSI_Process_r11, cqi_ReportAperiodicProc_r11),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_CQI_ReportAperiodicProc_r11,
@@ -854,7 +776,7 @@ static asn_TYPE_member_t asn_MBR_CSI_Process_r11_1[] = {
 		0,
 		"cqi-ReportAperiodicProc-r11"
 		},
-	{ ATF_POINTER, 3, offsetof(struct CSI_Process_r11, ext1),
+	{ ATF_POINTER, 2, offsetof(struct CSI_Process_r11, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		0,
 		&asn_DEF_ext1_10,
@@ -863,7 +785,7 @@ static asn_TYPE_member_t asn_MBR_CSI_Process_r11_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 2, offsetof(struct CSI_Process_r11, ext2),
+	{ ATF_POINTER, 1, offsetof(struct CSI_Process_r11, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		0,
 		&asn_DEF_ext2_20,
@@ -872,41 +794,31 @@ static asn_TYPE_member_t asn_MBR_CSI_Process_r11_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 1, offsetof(struct CSI_Process_r11, ext3),
-		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
-		0,
-		&asn_DEF_ext3_28,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext3"
-		},
 };
-static int asn_MAP_CSI_Process_r11_oms_1[] = { 4, 5, 6, 7, 8, 9 };
+static int asn_MAP_CSI_Process_r11_oms_1[] = { 4, 5, 6, 7, 8 };
 static ber_tlv_tag_t asn_DEF_CSI_Process_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CSI_Process_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-ProcessId-r11 at 4021 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-RS-ConfigNZPId-r11 at 4022 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* csi-IM-ConfigId-r11 at 4023 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* p-C-AndCBSRList-r11 at 4024 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* cqi-ReportBothProc-r11 at 4025 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* cqi-ReportPeriodicProcId-r11 at 4026 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* cqi-ReportAperiodicProc-r11 at 4027 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext1 at 4029 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext2 at 4042 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* ext3 at 4049 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-ProcessId-r11 at 3675 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-RS-ConfigNZPId-r11 at 3676 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* csi-IM-ConfigId-r11 at 3677 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* p-C-AndCBSRList-r11 at 3678 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* cqi-ReportBothProc-r11 at 3679 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* cqi-ReportPeriodicProcId-r11 at 3680 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* cqi-ReportAperiodicProc-r11 at 3681 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext1 at 3683 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* ext2 at 3696 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CSI_Process_r11_specs_1 = {
 	sizeof(struct CSI_Process_r11),
 	offsetof(struct CSI_Process_r11, _asn_ctx),
 	asn_MAP_CSI_Process_r11_tag2el_1,
-	10,	/* Count of tags in the map */
+	9,	/* Count of tags in the map */
 	asn_MAP_CSI_Process_r11_oms_1,	/* Optional members */
-	3, 3,	/* Root/Additions */
+	3, 2,	/* Root/Additions */
 	6,	/* Start extensions */
-	11	/* Stop extensions */
+	10	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_CSI_Process_r11 = {
 	"CSI-Process-r11",
@@ -932,7 +844,7 @@ asn_TYPE_descriptor_t asn_DEF_CSI_Process_r11 = {
 		/sizeof(asn_DEF_CSI_Process_r11_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_CSI_Process_r11_1,
-	10,	/* Elements count */
+	9,	/* Elements count */
 	&asn_SPC_CSI_Process_r11_specs_1	/* Additional specs */
 };
 

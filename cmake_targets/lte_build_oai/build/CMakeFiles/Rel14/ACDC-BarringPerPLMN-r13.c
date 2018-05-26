@@ -70,9 +70,9 @@ static ber_tlv_tag_t asn_DEF_ACDC_BarringPerPLMN_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ACDC_BarringPerPLMN_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-IdentityIndex-r13 at 2703 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* acdc-OnlyForHPLMN-r13 at 2704 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* barringPerACDC-CategoryList-r13 at 2706 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-IdentityIndex-r13 at 2481 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* acdc-OnlyForHPLMN-r13 at 2482 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* barringPerACDC-CategoryList-r13 at 2484 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ACDC_BarringPerPLMN_r13_specs_1 = {
 	sizeof(struct ACDC_BarringPerPLMN_r13),

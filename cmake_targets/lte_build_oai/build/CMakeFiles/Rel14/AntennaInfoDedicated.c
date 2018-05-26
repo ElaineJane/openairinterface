@@ -687,14 +687,14 @@ static asn_TYPE_member_t asn_MBR_codebookSubsetRestriction_11[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_codebookSubsetRestriction_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* n2TxAntenna-tm3 at 3614 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* n4TxAntenna-tm3 at 3615 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* n2TxAntenna-tm4 at 3616 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* n4TxAntenna-tm4 at 3617 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* n2TxAntenna-tm5 at 3618 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* n4TxAntenna-tm5 at 3619 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* n2TxAntenna-tm6 at 3620 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* n4TxAntenna-tm6 at 3621 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* n2TxAntenna-tm3 at 3298 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* n4TxAntenna-tm3 at 3299 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* n2TxAntenna-tm4 at 3300 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* n4TxAntenna-tm4 at 3301 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* n2TxAntenna-tm5 at 3302 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* n4TxAntenna-tm5 at 3303 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* n2TxAntenna-tm6 at 3304 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* n4TxAntenna-tm6 at 3305 */
 };
 static asn_CHOICE_specifics_t asn_SPC_codebookSubsetRestriction_specs_11 = {
 	sizeof(struct AntennaInfoDedicated__codebookSubsetRestriction),
@@ -803,8 +803,8 @@ static asn_TYPE_member_t asn_MBR_ue_TransmitAntennaSelection_20[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_ue_TransmitAntennaSelection_tag2el_20[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3624 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3625 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3308 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3309 */
 };
 static asn_CHOICE_specifics_t asn_SPC_ue_TransmitAntennaSelection_specs_20 = {
 	sizeof(struct AntennaInfoDedicated__ue_TransmitAntennaSelection),
@@ -877,9 +877,9 @@ static ber_tlv_tag_t asn_DEF_AntennaInfoDedicated_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_AntennaInfoDedicated_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* transmissionMode at 3611 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* codebookSubsetRestriction at 3614 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ue-TransmitAntennaSelection at 3624 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* transmissionMode at 3295 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* codebookSubsetRestriction at 3298 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ue-TransmitAntennaSelection at 3308 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_AntennaInfoDedicated_specs_1 = {
 	sizeof(struct AntennaInfoDedicated),

@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_RSRQ_RangeConfig_r12_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_RSRQ_RangeConfig_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 8019 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 8021 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7274 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7276 */
 };
 static asn_CHOICE_specifics_t asn_SPC_RSRQ_RangeConfig_r12_specs_1 = {
 	sizeof(struct RSRQ_RangeConfig_r12),

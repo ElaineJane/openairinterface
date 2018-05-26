@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_purpose_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_purpose_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* handover at 681 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cellChangeOrder at 683 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* handover at 634 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cellChangeOrder at 636 */
 };
 static asn_CHOICE_specifics_t asn_SPC_purpose_specs_3 = {
 	sizeof(struct MobilityFromEUTRACommand_r8_IEs__purpose),
@@ -107,9 +107,9 @@ static ber_tlv_tag_t asn_DEF_MobilityFromEUTRACommand_r8_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MobilityFromEUTRACommand_r8_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cs-FallbackIndicator at 679 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* purpose at 681 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 684 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cs-FallbackIndicator at 632 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* purpose at 634 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 637 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MobilityFromEUTRACommand_r8_IEs_specs_1 = {
 	sizeof(struct MobilityFromEUTRACommand_r8_IEs),

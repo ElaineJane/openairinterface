@@ -17,32 +17,11 @@
 #include "Q-QualMin-r9.h"
 #include "P-Max.h"
 #include "Q-OffsetRange.h"
-#include <NativeInteger.h>
 #include <constr_SEQUENCE.h>
-#include <NativeEnumerated.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-/* Dependencies */
-typedef enum InterFreqCarrierFreqInfo_NB_r13__ext2__powerClass14dBm_Offset_r14 {
-	InterFreqCarrierFreqInfo_NB_r13__ext2__powerClass14dBm_Offset_r14_dB_6	= 0,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__powerClass14dBm_Offset_r14_dB_3	= 1,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__powerClass14dBm_Offset_r14_dB3	= 2,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__powerClass14dBm_Offset_r14_dB6	= 3,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__powerClass14dBm_Offset_r14_dB9	= 4,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__powerClass14dBm_Offset_r14_dB12	= 5
-} e_InterFreqCarrierFreqInfo_NB_r13__ext2__powerClass14dBm_Offset_r14;
-typedef enum InterFreqCarrierFreqInfo_NB_r13__ext2__ce_AuthorisationOffset_r14 {
-	InterFreqCarrierFreqInfo_NB_r13__ext2__ce_AuthorisationOffset_r14_dB5	= 0,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__ce_AuthorisationOffset_r14_dB10	= 1,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__ce_AuthorisationOffset_r14_dB15	= 2,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__ce_AuthorisationOffset_r14_dB20	= 3,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__ce_AuthorisationOffset_r14_dB25	= 4,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__ce_AuthorisationOffset_r14_dB30	= 5,
-	InterFreqCarrierFreqInfo_NB_r13__ext2__ce_AuthorisationOffset_r14_dB35	= 6
-} e_InterFreqCarrierFreqInfo_NB_r13__ext2__ce_AuthorisationOffset_r14;
 
 /* Forward declarations */
 struct InterFreqNeighCellList_NB_r13;
@@ -63,27 +42,12 @@ typedef struct InterFreqCarrierFreqInfo_NB_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct InterFreqCarrierFreqInfo_NB_r13__ext1 {
-		long	*delta_RxLevMin_v1350	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
-	struct InterFreqCarrierFreqInfo_NB_r13__ext2 {
-		long	*powerClass14dBm_Offset_r14	/* OPTIONAL */;
-		long	*ce_AuthorisationOffset_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext2;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
 } InterFreqCarrierFreqInfo_NB_r13_t;
 
 /* Implementation */
-/* extern asn_TYPE_descriptor_t asn_DEF_powerClass14dBm_Offset_r14_14;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_ce_AuthorisationOffset_r14_21;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_InterFreqCarrierFreqInfo_NB_r13;
 
 #ifdef __cplusplus

@@ -118,8 +118,8 @@ static asn_TYPE_member_t asn_MBR_eab_Param_r11_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_eab_Param_r11_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eab-Common-r11 at 3317 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* eab-PerPLMN-List-r11 at 3319 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eab-Common-r11 at 3067 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* eab-PerPLMN-List-r11 at 3069 */
 };
 static asn_CHOICE_specifics_t asn_SPC_eab_Param_r11_specs_2 = {
 	sizeof(struct SystemInformationBlockType14_r11__eab_Param_r11),
@@ -183,8 +183,8 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType14_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType14_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eab-Param-r11 at 3317 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* lateNonCriticalExtension at 3320 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eab-Param-r11 at 3067 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* lateNonCriticalExtension at 3070 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType14_r11_specs_1 = {
 	sizeof(struct SystemInformationBlockType14_r11),

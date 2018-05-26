@@ -31,8 +31,8 @@ static ber_tlv_tag_t asn_DEF_MeasResultCSI_RS_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasResultCSI_RS_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measCSI-RS-Id-r12 at 7744 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* csi-RSRP-Result-r12 at 7745 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measCSI-RS-Id-r12 at 7019 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* csi-RSRP-Result-r12 at 7020 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasResultCSI_RS_r12_specs_1 = {
 	sizeof(struct MeasResultCSI_RS_r12),

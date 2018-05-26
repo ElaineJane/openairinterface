@@ -741,12 +741,12 @@ static ber_tlv_tag_t asn_DEF_nonUL_Configuration_r10_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_nonUL_Configuration_r10_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-Bandwidth-r10 at 5758 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* antennaInfoCommon-r10 at 5760 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* mbsfn-SubframeConfigList-r10 at 5761 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* phich-Config-r10 at 5763 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* pdsch-ConfigCommon-r10 at 5765 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* tdd-Config-r10 at 5766 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-Bandwidth-r10 at 5178 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* antennaInfoCommon-r10 at 5180 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* mbsfn-SubframeConfigList-r10 at 5181 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* phich-Config-r10 at 5183 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* pdsch-ConfigCommon-r10 at 5185 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* tdd-Config-r10 at 5186 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_nonUL_Configuration_r10_specs_2 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10__nonUL_Configuration_r10),
@@ -879,9 +879,9 @@ static ber_tlv_tag_t asn_DEF_ul_FreqInfo_r10_tags_16[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ul_FreqInfo_r10_tag2el_16[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq-r10 at 5771 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Bandwidth-r10 at 5772 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* additionalSpectrumEmissionSCell-r10 at 5775 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq-r10 at 5191 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Bandwidth-r10 at 5192 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* additionalSpectrumEmissionSCell-r10 at 5195 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ul_FreqInfo_r10_specs_16 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10__ul_Configuration_r10__ul_FreqInfo_r10),
@@ -993,13 +993,13 @@ static ber_tlv_tag_t asn_DEF_ul_Configuration_r10_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ul_Configuration_r10_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-FreqInfo-r10 at 5771 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p-Max-r10 at 5776 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* uplinkPowerControlCommonSCell-r10 at 5777 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* soundingRS-UL-ConfigCommon-r10 at 5780 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ul-CyclicPrefixLength-r10 at 5781 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* prach-ConfigSCell-r10 at 5783 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* pusch-ConfigCommon-r10 at 5785 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-FreqInfo-r10 at 5191 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p-Max-r10 at 5196 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* uplinkPowerControlCommonSCell-r10 at 5197 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* soundingRS-UL-ConfigCommon-r10 at 5200 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ul-CyclicPrefixLength-r10 at 5201 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* prach-ConfigSCell-r10 at 5203 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* pusch-ConfigCommon-r10 at 5205 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ul_Configuration_r10_specs_15 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10__ul_Configuration_r10),
@@ -1057,7 +1057,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_33[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_33[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* ul-CarrierFreq-v1090 at 5787 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* ul-CarrierFreq-v1090 at 5207 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_33 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10__ext1),
@@ -1142,10 +1142,10 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_35[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_35[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rach-ConfigCommonSCell-r11 at 5789 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prach-ConfigSCell-r11 at 5790 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* tdd-Config-v1130 at 5791 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* uplinkPowerControlCommonSCell-v1130 at 5793 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rach-ConfigCommonSCell-r11 at 5209 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prach-ConfigSCell-r11 at 5210 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* tdd-Config-v1130 at 5211 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* uplinkPowerControlCommonSCell-v1130 at 5213 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_35 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10__ext2),
@@ -1203,7 +1203,7 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_40[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_40[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pusch-ConfigCommon-v1270 at 5795 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pusch-ConfigCommon-v1270 at 5215 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_40 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10__ext3),
@@ -1270,8 +1270,8 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_42[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_42[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pucch-ConfigCommon-r13 at 5797 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* uplinkPowerControlCommonSCell-v1310 at 5799 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pucch-ConfigCommon-r13 at 5217 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* uplinkPowerControlCommonSCell-v1310 at 5219 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_42 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10__ext4),
@@ -1404,9 +1404,9 @@ static ber_tlv_tag_t asn_DEF_ul_FreqInfo_r14_tags_49[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ul_FreqInfo_r14_tag2el_49[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq-r14 at 5805 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Bandwidth-r14 at 5806 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* additionalSpectrumEmissionSCell-r14 at 5809 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq-r14 at 5225 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Bandwidth-r14 at 5226 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* additionalSpectrumEmissionSCell-r14 at 5229 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ul_FreqInfo_r14_specs_49 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10__ext5__ul_Configuration_r14__ul_FreqInfo_r14),
@@ -1493,14 +1493,14 @@ static asn_TYPE_member_t asn_MBR_ul_Configuration_r14_48[] = {
 		0,
 		"prach-ConfigSCell-r14"
 		},
-	{ ATF_POINTER, 1, offsetof(struct RadioResourceConfigCommonSCell_r10__ext5__ul_Configuration_r14, uplinkPowerControlCommonPUSCH_LessCell_v1430),
+	{ ATF_POINTER, 1, offsetof(struct RadioResourceConfigCommonSCell_r10__ext5__ul_Configuration_r14, uplinkPowerControlCommonPUSCH_LessCell_v14xy),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_UplinkPowerControlCommonPUSCH_LessCell_v1430,
+		&asn_DEF_UplinkPowerControlCommonPUSCH_LessCell_v14xy,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
-		"uplinkPowerControlCommonPUSCH-LessCell-v1430"
+		"uplinkPowerControlCommonPUSCH-LessCell-v14xy"
 		},
 };
 static int asn_MAP_ul_Configuration_r14_oms_48[] = { 1, 4, 5 };
@@ -1509,12 +1509,12 @@ static ber_tlv_tag_t asn_DEF_ul_Configuration_r14_tags_48[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ul_Configuration_r14_tag2el_48[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-FreqInfo-r14 at 5805 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p-Max-r14 at 5810 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* soundingRS-UL-ConfigCommon-r14 at 5811 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ul-CyclicPrefixLength-r14 at 5812 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* prach-ConfigSCell-r14 at 5813 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* uplinkPowerControlCommonPUSCH-LessCell-v1430 at 5814 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-FreqInfo-r14 at 5225 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p-Max-r14 at 5230 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* soundingRS-UL-ConfigCommon-r14 at 5231 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ul-CyclicPrefixLength-r14 at 5232 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* prach-ConfigSCell-r14 at 5233 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* uplinkPowerControlCommonPUSCH-LessCell-v14xy at 5234 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ul_Configuration_r14_specs_48 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10__ext5__ul_Configuration_r14),
@@ -1663,14 +1663,14 @@ static asn_TYPE_member_t asn_MBR_ext5_45[] = {
 		0,
 		"highSpeedConfigSCell-r14"
 		},
-	{ ATF_POINTER, 4, offsetof(struct RadioResourceConfigCommonSCell_r10__ext5, prach_Config_v1430),
+	{ ATF_POINTER, 4, offsetof(struct RadioResourceConfigCommonSCell_r10__ext5, prach_Config_v14xy),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_PRACH_Config_v1430,
+		&asn_DEF_PRACH_Config_v14xy,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
-		"prach-Config-v1430"
+		"prach-Config-v14xy"
 		},
 	{ ATF_POINTER, 3, offsetof(struct RadioResourceConfigCommonSCell_r10__ext5, ul_Configuration_r14),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
@@ -1706,11 +1706,11 @@ static ber_tlv_tag_t asn_DEF_ext5_tags_45[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_45[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* highSpeedConfigSCell-r14 at 5801 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prach-Config-v1430 at 5802 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ul-Configuration-r14 at 5809 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* harq-ReferenceConfig-r14 at 5816 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* soundingRS-FlexibleTiming-r14 at 5817 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* highSpeedConfigSCell-r14 at 5221 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prach-Config-v14xy at 5222 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ul-Configuration-r14 at 5229 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* harq-ReferenceConfig-r14 at 5236 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* soundingRS-FlexibleTiming-r14 at 5237 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_45 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10__ext5),
@@ -1751,64 +1751,6 @@ asn_TYPE_descriptor_t asn_DEF_ext5_45 = {
 	&asn_SPC_ext5_specs_45	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext6_70[] = {
-	{ ATF_POINTER, 1, offsetof(struct RadioResourceConfigCommonSCell_r10__ext6, mbsfn_SubframeConfigList_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_MBSFN_SubframeConfigList_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"mbsfn-SubframeConfigList-v1430"
-		},
-};
-static int asn_MAP_ext6_oms_70[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext6_tags_70[] = {
-	(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext6_tag2el_70[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mbsfn-SubframeConfigList-v1430 at 5819 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext6_specs_70 = {
-	sizeof(struct RadioResourceConfigCommonSCell_r10__ext6),
-	offsetof(struct RadioResourceConfigCommonSCell_r10__ext6, _asn_ctx),
-	asn_MAP_ext6_tag2el_70,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext6_oms_70,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext6_70 = {
-	"ext6",
-	"ext6",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext6_tags_70,
-	sizeof(asn_DEF_ext6_tags_70)
-		/sizeof(asn_DEF_ext6_tags_70[0]) - 1, /* 1 */
-	asn_DEF_ext6_tags_70,	/* Same as above */
-	sizeof(asn_DEF_ext6_tags_70)
-		/sizeof(asn_DEF_ext6_tags_70[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext6_70,
-	1,	/* Elements count */
-	&asn_SPC_ext6_specs_70	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_RadioResourceConfigCommonSCell_r10_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct RadioResourceConfigCommonSCell_r10, nonUL_Configuration_r10),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -1819,7 +1761,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigCommonSCell_r10_1[] = {
 		0,
 		"nonUL-Configuration-r10"
 		},
-	{ ATF_POINTER, 7, offsetof(struct RadioResourceConfigCommonSCell_r10, ul_Configuration_r10),
+	{ ATF_POINTER, 6, offsetof(struct RadioResourceConfigCommonSCell_r10, ul_Configuration_r10),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		0,
 		&asn_DEF_ul_Configuration_r10_15,
@@ -1828,7 +1770,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigCommonSCell_r10_1[] = {
 		0,
 		"ul-Configuration-r10"
 		},
-	{ ATF_POINTER, 6, offsetof(struct RadioResourceConfigCommonSCell_r10, ext1),
+	{ ATF_POINTER, 5, offsetof(struct RadioResourceConfigCommonSCell_r10, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		0,
 		&asn_DEF_ext1_33,
@@ -1837,7 +1779,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigCommonSCell_r10_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 5, offsetof(struct RadioResourceConfigCommonSCell_r10, ext2),
+	{ ATF_POINTER, 4, offsetof(struct RadioResourceConfigCommonSCell_r10, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		0,
 		&asn_DEF_ext2_35,
@@ -1846,7 +1788,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigCommonSCell_r10_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 4, offsetof(struct RadioResourceConfigCommonSCell_r10, ext3),
+	{ ATF_POINTER, 3, offsetof(struct RadioResourceConfigCommonSCell_r10, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		0,
 		&asn_DEF_ext3_40,
@@ -1855,7 +1797,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigCommonSCell_r10_1[] = {
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 3, offsetof(struct RadioResourceConfigCommonSCell_r10, ext4),
+	{ ATF_POINTER, 2, offsetof(struct RadioResourceConfigCommonSCell_r10, ext4),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		0,
 		&asn_DEF_ext4_42,
@@ -1864,7 +1806,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigCommonSCell_r10_1[] = {
 		0,
 		"ext4"
 		},
-	{ ATF_POINTER, 2, offsetof(struct RadioResourceConfigCommonSCell_r10, ext5),
+	{ ATF_POINTER, 1, offsetof(struct RadioResourceConfigCommonSCell_r10, ext5),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		0,
 		&asn_DEF_ext5_45,
@@ -1873,39 +1815,29 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigCommonSCell_r10_1[] = {
 		0,
 		"ext5"
 		},
-	{ ATF_POINTER, 1, offsetof(struct RadioResourceConfigCommonSCell_r10, ext6),
-		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-		0,
-		&asn_DEF_ext6_70,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext6"
-		},
 };
-static int asn_MAP_RadioResourceConfigCommonSCell_r10_oms_1[] = { 1, 2, 3, 4, 5, 6, 7 };
+static int asn_MAP_RadioResourceConfigCommonSCell_r10_oms_1[] = { 1, 2, 3, 4, 5, 6 };
 static ber_tlv_tag_t asn_DEF_RadioResourceConfigCommonSCell_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RadioResourceConfigCommonSCell_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nonUL-Configuration-r10 at 5758 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Configuration-r10 at 5775 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext1 at 5787 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext2 at 5789 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext3 at 5795 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext4 at 5797 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext5 at 5801 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext6 at 5819 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nonUL-Configuration-r10 at 5178 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Configuration-r10 at 5195 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext1 at 5207 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext2 at 5209 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext3 at 5215 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext4 at 5217 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext5 at 5221 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RadioResourceConfigCommonSCell_r10_specs_1 = {
 	sizeof(struct RadioResourceConfigCommonSCell_r10),
 	offsetof(struct RadioResourceConfigCommonSCell_r10, _asn_ctx),
 	asn_MAP_RadioResourceConfigCommonSCell_r10_tag2el_1,
-	8,	/* Count of tags in the map */
+	7,	/* Count of tags in the map */
 	asn_MAP_RadioResourceConfigCommonSCell_r10_oms_1,	/* Optional members */
-	1, 6,	/* Root/Additions */
+	1, 5,	/* Root/Additions */
 	1,	/* Start extensions */
-	9	/* Stop extensions */
+	8	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_RadioResourceConfigCommonSCell_r10 = {
 	"RadioResourceConfigCommonSCell-r10",
@@ -1931,7 +1863,7 @@ asn_TYPE_descriptor_t asn_DEF_RadioResourceConfigCommonSCell_r10 = {
 		/sizeof(asn_DEF_RadioResourceConfigCommonSCell_r10_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_RadioResourceConfigCommonSCell_r10_1,
-	8,	/* Elements count */
+	7,	/* Elements count */
 	&asn_SPC_RadioResourceConfigCommonSCell_r10_specs_1	/* Additional specs */
 };
 

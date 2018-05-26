@@ -179,6 +179,47 @@ asn_TYPE_descriptor_t asn_DEF_powerPrefIndication_r11_2 = {
 	&asn_SPC_powerPrefIndication_r11_specs_2	/* Additional specs */
 };
 
+static ber_tlv_tag_t asn_DEF_nonCriticalExtension_tags_6[] = {
+	(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static asn_SEQUENCE_specifics_t asn_SPC_nonCriticalExtension_specs_6 = {
+	sizeof(struct UEAssistanceInformation_r11_IEs__nonCriticalExtension),
+	offsetof(struct UEAssistanceInformation_r11_IEs__nonCriticalExtension, _asn_ctx),
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* Start extensions */
+	-1	/* Stop extensions */
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_nonCriticalExtension_6 = {
+	"nonCriticalExtension",
+	"nonCriticalExtension",
+	SEQUENCE_free,
+	SEQUENCE_print,
+	SEQUENCE_constraint,
+	SEQUENCE_decode_ber,
+	SEQUENCE_encode_der,
+	SEQUENCE_decode_xer,
+	SEQUENCE_encode_xer,
+	SEQUENCE_decode_uper,
+	SEQUENCE_encode_uper,
+	SEQUENCE_decode_aper,
+	SEQUENCE_encode_aper,
+	SEQUENCE_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_nonCriticalExtension_tags_6,
+	sizeof(asn_DEF_nonCriticalExtension_tags_6)
+		/sizeof(asn_DEF_nonCriticalExtension_tags_6[0]) - 1, /* 1 */
+	asn_DEF_nonCriticalExtension_tags_6,	/* Same as above */
+	sizeof(asn_DEF_nonCriticalExtension_tags_6)
+		/sizeof(asn_DEF_nonCriticalExtension_tags_6[0]), /* 2 */
+	0,	/* No PER visible constraints */
+	0, 0,	/* No members */
+	&asn_SPC_nonCriticalExtension_specs_6	/* Additional specs */
+};
+
 static asn_TYPE_member_t asn_MBR_UEAssistanceInformation_r11_IEs_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct UEAssistanceInformation_r11_IEs, powerPrefIndication_r11),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -200,8 +241,8 @@ static asn_TYPE_member_t asn_MBR_UEAssistanceInformation_r11_IEs_1[] = {
 		},
 	{ ATF_POINTER, 1, offsetof(struct UEAssistanceInformation_r11_IEs, nonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_UEAssistanceInformation_v1430_IEs,
+		0,
+		&asn_DEF_nonCriticalExtension_6,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -213,9 +254,9 @@ static ber_tlv_tag_t asn_DEF_UEAssistanceInformation_r11_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UEAssistanceInformation_r11_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* powerPrefIndication-r11 at 2127 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* lateNonCriticalExtension at 2128 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 2129 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* powerPrefIndication-r11 at 1968 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* lateNonCriticalExtension at 1969 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 1970 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UEAssistanceInformation_r11_IEs_specs_1 = {
 	sizeof(struct UEAssistanceInformation_r11_IEs),

@@ -1679,17 +1679,17 @@ static ber_tlv_tag_t asn_DEF_PhyLayerParameters_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PhyLayerParameters_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* e-HARQ-Pattern-FDD-r12 at 8844 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* enhanced-4TxCodebook-r12 at 8845 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* tdd-FDD-CA-PCellDuplex-r12 at 8846 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* phy-TDD-ReConfig-TDD-PCell-r12 at 8847 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* phy-TDD-ReConfig-FDD-PCell-r12 at 8848 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pusch-FeedbackMode-r12 at 8849 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* pusch-SRS-PowerControl-SubframeSet-r12 at 8850 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* csi-SubframeSet-r12 at 8851 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* noResourceRestrictionForTTIBundling-r12 at 8852 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* discoverySignalsInDeactSCell-r12 at 8853 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 } /* naics-Capability-List-r12 at 8854 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* e-HARQ-Pattern-FDD-r12 at 8001 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* enhanced-4TxCodebook-r12 at 8002 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* tdd-FDD-CA-PCellDuplex-r12 at 8003 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* phy-TDD-ReConfig-TDD-PCell-r12 at 8004 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* phy-TDD-ReConfig-FDD-PCell-r12 at 8005 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pusch-FeedbackMode-r12 at 8006 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* pusch-SRS-PowerControl-SubframeSet-r12 at 8007 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* csi-SubframeSet-r12 at 8008 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* noResourceRestrictionForTTIBundling-r12 at 8009 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* discoverySignalsInDeactSCell-r12 at 8010 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 } /* naics-Capability-List-r12 at 8011 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PhyLayerParameters_v1250_specs_1 = {
 	sizeof(struct PhyLayerParameters_v1250),

@@ -21,13 +21,16 @@ extern "C" {
 /* Forward declarations */
 struct AffectedCarrierFreqList_v1310;
 struct AffectedCarrierFreqCombList_r13;
-struct InDeviceCoexIndication_v1360_IEs;
 
 /* InDeviceCoexIndication-v1310-IEs */
 typedef struct InDeviceCoexIndication_v1310_IEs {
 	struct AffectedCarrierFreqList_v1310	*affectedCarrierFreqList_v1310	/* OPTIONAL */;
 	struct AffectedCarrierFreqCombList_r13	*affectedCarrierFreqCombList_r13	/* OPTIONAL */;
-	struct InDeviceCoexIndication_v1360_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct InDeviceCoexIndication_v1310_IEs__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -43,7 +46,6 @@ extern asn_TYPE_descriptor_t asn_DEF_InDeviceCoexIndication_v1310_IEs;
 /* Referred external types */
 #include "AffectedCarrierFreqList-v1310.h"
 #include "AffectedCarrierFreqCombList-r13.h"
-#include "InDeviceCoexIndication-v1360-IEs.h"
 
 #endif	/* _InDeviceCoexIndication_v1310_IEs_H_ */
 #include <asn_internal.h>

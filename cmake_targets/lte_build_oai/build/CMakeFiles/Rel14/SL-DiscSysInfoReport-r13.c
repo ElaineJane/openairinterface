@@ -339,8 +339,8 @@ static ber_tlv_tag_t asn_DEF_discCellSelectionInfo_r13_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_discCellSelectionInfo_r13_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-RxLevMin-r13 at 10491 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* q-RxLevMinOffset-r13 at 10492 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-RxLevMin-r13 at 9461 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* q-RxLevMinOffset-r13 at 9462 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_discCellSelectionInfo_r13_specs_9 = {
 	sizeof(struct SL_DiscSysInfoReport_r13__discCellSelectionInfo_r13),
@@ -492,9 +492,9 @@ static ber_tlv_tag_t asn_DEF_cellReselectionInfo_r13_tags_12[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cellReselectionInfo_r13_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-Hyst-r13 at 10496 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* q-RxLevMin-r13 at 10498 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* t-ReselectionEUTRA-r13 at 10500 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-Hyst-r13 at 9466 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* q-RxLevMin-r13 at 9468 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* t-ReselectionEUTRA-r13 at 9470 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cellReselectionInfo_r13_specs_12 = {
 	sizeof(struct SL_DiscSysInfoReport_r13__cellReselectionInfo_r13),
@@ -626,9 +626,9 @@ static ber_tlv_tag_t asn_DEF_freqInfo_r13_tags_33[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_freqInfo_r13_tag2el_33[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq-r13 at 10503 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Bandwidth-r13 at 10504 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* additionalSpectrumEmission-r13 at 10506 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq-r13 at 9473 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Bandwidth-r13 at 9474 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* additionalSpectrumEmission-r13 at 9476 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_freqInfo_r13_specs_33 = {
 	sizeof(struct SL_DiscSysInfoReport_r13__freqInfo_r13),
@@ -793,19 +793,19 @@ static ber_tlv_tag_t asn_DEF_SL_DiscSysInfoReport_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_DiscSysInfoReport_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-IdentityList-r13 at 10483 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellIdentity-13 at 10484 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* carrierFreqInfo-13 at 10485 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* discRxResources-r13 at 10486 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* discTxPoolCommon-r13 at 10487 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* discTxPowerInfo-r13 at 10488 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* discSyncConfig-r13 at 10489 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* discCellSelectionInfo-r13 at 10491 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* cellReselectionInfo-r13 at 10497 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* tdd-Config-r13 at 10501 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* freqInfo-r13 at 10503 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* p-Max-r13 at 10508 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 } /* referenceSignalPower-r13 at 10509 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-IdentityList-r13 at 9453 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellIdentity-13 at 9454 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* carrierFreqInfo-13 at 9455 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* discRxResources-r13 at 9456 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* discTxPoolCommon-r13 at 9457 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* discTxPowerInfo-r13 at 9458 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* discSyncConfig-r13 at 9459 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* discCellSelectionInfo-r13 at 9461 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* cellReselectionInfo-r13 at 9467 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* tdd-Config-r13 at 9471 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* freqInfo-r13 at 9473 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* p-Max-r13 at 9478 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 } /* referenceSignalPower-r13 at 9479 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_DiscSysInfoReport_r13_specs_1 = {
 	sizeof(struct SL_DiscSysInfoReport_r13),

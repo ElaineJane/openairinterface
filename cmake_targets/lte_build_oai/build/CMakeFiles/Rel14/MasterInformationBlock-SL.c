@@ -349,12 +349,12 @@ static ber_tlv_tag_t asn_DEF_MasterInformationBlock_SL_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MasterInformationBlock_SL_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sl-Bandwidth-r12 at 11064 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* tdd-ConfigSL-r12 at 11065 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* directFrameNumber-r12 at 11066 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* directSubframeNumber-r12 at 11067 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* inCoverage-r12 at 11068 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* reserved-r12 at 11069 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sl-Bandwidth-r12 at 9787 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* tdd-ConfigSL-r12 at 9788 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* directFrameNumber-r12 at 9789 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* directSubframeNumber-r12 at 9790 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* inCoverage-r12 at 9791 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* reserved-r12 at 9792 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MasterInformationBlock_SL_specs_1 = {
 	sizeof(struct MasterInformationBlock_SL),

@@ -419,9 +419,9 @@ static ber_tlv_tag_t asn_DEF_SRS_ConfigAp_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SRS_ConfigAp_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* transmissionCombAp-v1310 at 6435 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cyclicShiftAp-v1310 at 6436 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* transmissionCombNum-r13 at 6437 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* transmissionCombAp-v1310 at 5845 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cyclicShiftAp-v1310 at 5846 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* transmissionCombNum-r13 at 5847 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SRS_ConfigAp_v1310_specs_1 = {
 	sizeof(struct SRS_ConfigAp_v1310),

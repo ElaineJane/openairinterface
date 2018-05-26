@@ -50,10 +50,10 @@ static ber_tlv_tag_t asn_DEF_RF_Parameters_v1320_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RF_Parameters_v1320_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* supportedBandListEUTRA-v1320 at 9069 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedBandCombination-v1320 at 9070 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* supportedBandCombinationAdd-v1320 at 9071 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* supportedBandCombinationReduced-v1320 at 9072 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* supportedBandListEUTRA-v1320 at 8173 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedBandCombination-v1320 at 8174 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* supportedBandCombinationAdd-v1320 at 8175 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* supportedBandCombinationReduced-v1320 at 8176 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RF_Parameters_v1320_specs_1 = {
 	sizeof(struct RF_Parameters_v1320),

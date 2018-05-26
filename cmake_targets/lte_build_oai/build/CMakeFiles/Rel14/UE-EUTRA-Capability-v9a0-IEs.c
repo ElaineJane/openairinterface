@@ -86,10 +86,10 @@ static ber_tlv_tag_t asn_DEF_UE_EUTRA_Capability_v9a0_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UE_EUTRA_Capability_v9a0_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* featureGroupIndRel9Add-r9 at 8407 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* fdd-Add-UE-EUTRA-Capabilities-r9 at 8408 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* tdd-Add-UE-EUTRA-Capabilities-r9 at 8409 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* nonCriticalExtension at 8410 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* featureGroupIndRel9Add-r9 at 7616 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* fdd-Add-UE-EUTRA-Capabilities-r9 at 7617 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* tdd-Add-UE-EUTRA-Capabilities-r9 at 7618 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* nonCriticalExtension at 7619 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UE_EUTRA_Capability_v9a0_IEs_specs_1 = {
 	sizeof(struct UE_EUTRA_Capability_v9a0_IEs),

@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_MeasSubframePatternPCell_r10_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasSubframePatternPCell_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6000 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6002 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5414 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5416 */
 };
 static asn_CHOICE_specifics_t asn_SPC_MeasSubframePatternPCell_r10_specs_1 = {
 	sizeof(struct MeasSubframePatternPCell_r10),

@@ -214,9 +214,9 @@ static asn_TYPE_member_t asn_MBR_carrierFreq_r9_5[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_carrierFreq_r9_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eutra-r9 at 817 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* utra-r9 at 818 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* eutra2-v9e0 at 821 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eutra-r9 at 770 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* utra-r9 at 771 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* eutra2-v9e0 at 774 */
 };
 static asn_CHOICE_specifics_t asn_SPC_carrierFreq_r9_specs_5 = {
 	sizeof(struct ProximityIndication_r9_IEs__carrierFreq_r9),
@@ -289,9 +289,9 @@ static ber_tlv_tag_t asn_DEF_ProximityIndication_r9_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ProximityIndication_r9_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* type-r9 at 815 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* carrierFreq-r9 at 817 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 822 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* type-r9 at 768 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* carrierFreq-r9 at 770 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 775 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ProximityIndication_r9_IEs_specs_1 = {
 	sizeof(struct ProximityIndication_r9_IEs),

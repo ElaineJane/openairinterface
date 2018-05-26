@@ -177,6 +177,47 @@ asn_TYPE_descriptor_t asn_DEF_drb_ContinueROHC_r13_6 = {
 	&asn_SPC_drb_ContinueROHC_r13_specs_6	/* Additional specs */
 };
 
+static ber_tlv_tag_t asn_DEF_nonCriticalExtension_tags_9[] = {
+	(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static asn_SEQUENCE_specifics_t asn_SPC_nonCriticalExtension_specs_9 = {
+	sizeof(struct RRCConnectionResume_r13_IEs__nonCriticalExtension),
+	offsetof(struct RRCConnectionResume_r13_IEs__nonCriticalExtension, _asn_ctx),
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* Start extensions */
+	-1	/* Stop extensions */
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_nonCriticalExtension_9 = {
+	"nonCriticalExtension",
+	"nonCriticalExtension",
+	SEQUENCE_free,
+	SEQUENCE_print,
+	SEQUENCE_constraint,
+	SEQUENCE_decode_ber,
+	SEQUENCE_encode_der,
+	SEQUENCE_decode_xer,
+	SEQUENCE_encode_xer,
+	SEQUENCE_decode_uper,
+	SEQUENCE_encode_uper,
+	SEQUENCE_decode_aper,
+	SEQUENCE_encode_aper,
+	SEQUENCE_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_nonCriticalExtension_tags_9,
+	sizeof(asn_DEF_nonCriticalExtension_tags_9)
+		/sizeof(asn_DEF_nonCriticalExtension_tags_9[0]) - 1, /* 1 */
+	asn_DEF_nonCriticalExtension_tags_9,	/* Same as above */
+	sizeof(asn_DEF_nonCriticalExtension_tags_9)
+		/sizeof(asn_DEF_nonCriticalExtension_tags_9[0]), /* 2 */
+	0,	/* No PER visible constraints */
+	0, 0,	/* No members */
+	&asn_SPC_nonCriticalExtension_specs_9	/* Additional specs */
+};
+
 static asn_TYPE_member_t asn_MBR_RRCConnectionResume_r13_IEs_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct RRCConnectionResume_r13_IEs, radioResourceConfigDedicated_r13),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -232,14 +273,14 @@ static asn_TYPE_member_t asn_MBR_RRCConnectionResume_r13_IEs_1[] = {
 		0,
 		"lateNonCriticalExtension"
 		},
-	{ ATF_POINTER, 1, offsetof(struct RRCConnectionResume_r13_IEs, rrcConnectionResume_v1430_IEs),
+	{ ATF_POINTER, 1, offsetof(struct RRCConnectionResume_r13_IEs, nonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_RRCConnectionResume_v1430_IEs,
+		0,
+		&asn_DEF_nonCriticalExtension_9,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
-		"rrcConnectionResume-v1430-IEs"
+		"nonCriticalExtension"
 		},
 };
 static int asn_MAP_RRCConnectionResume_r13_IEs_oms_1[] = { 0, 2, 3, 4, 5, 6 };
@@ -247,13 +288,13 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionResume_r13_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionResume_r13_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* radioResourceConfigDedicated-r13 at 1486 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* nextHopChainingCount-r13 at 1487 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measConfig-r13 at 1488 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* antennaInfoDedicatedPCell-r13 at 1489 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* drb-ContinueROHC-r13 at 1490 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* lateNonCriticalExtension at 1491 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* rrcConnectionResume-v1430-IEs at 1492 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* radioResourceConfigDedicated-r13 at 1429 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* nextHopChainingCount-r13 at 1430 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measConfig-r13 at 1431 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* antennaInfoDedicatedPCell-r13 at 1432 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* drb-ContinueROHC-r13 at 1433 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* lateNonCriticalExtension at 1434 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* nonCriticalExtension at 1435 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionResume_r13_IEs_specs_1 = {
 	sizeof(struct RRCConnectionResume_r13_IEs),

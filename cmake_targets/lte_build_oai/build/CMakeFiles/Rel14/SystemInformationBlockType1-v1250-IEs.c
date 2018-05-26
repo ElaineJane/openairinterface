@@ -317,7 +317,7 @@ static ber_tlv_tag_t asn_DEF_cellAccessRelatedInfo_v1250_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cellAccessRelatedInfo_v1250_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* category0Allowed-r12 at 1950 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* category0Allowed-r12 at 1854 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cellAccessRelatedInfo_v1250_specs_2 = {
 	sizeof(struct SystemInformationBlockType1_v1250_IEs__cellAccessRelatedInfo_v1250),
@@ -448,10 +448,10 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType1_v1250_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType1_v1250_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellAccessRelatedInfo-v1250 at 1950 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellSelectionInfo-v1250 at 1952 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* freqBandIndicatorPriority-r12 at 1953 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* nonCriticalExtension at 1954 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellAccessRelatedInfo-v1250 at 1854 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellSelectionInfo-v1250 at 1856 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* freqBandIndicatorPriority-r12 at 1857 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* nonCriticalExtension at 1858 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType1_v1250_IEs_specs_1 = {
 	sizeof(struct SystemInformationBlockType1_v1250_IEs),

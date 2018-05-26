@@ -33,7 +33,6 @@ typedef enum RRCConnectionSetupComplete_NB_r13_IEs__up_CIoT_EPS_Optimisation_r13
 /* Forward declarations */
 struct S_TMSI;
 struct RegisteredMME;
-struct RRCConnectionSetupComplete_NB_v1430_IEs;
 
 /* RRCConnectionSetupComplete-NB-r13-IEs */
 typedef struct RRCConnectionSetupComplete_NB_r13_IEs {
@@ -44,7 +43,11 @@ typedef struct RRCConnectionSetupComplete_NB_r13_IEs {
 	long	*attachWithoutPDN_Connectivity_r13	/* OPTIONAL */;
 	long	*up_CIoT_EPS_Optimisation_r13	/* OPTIONAL */;
 	OCTET_STRING_t	*lateNonCriticalExtension	/* OPTIONAL */;
-	struct RRCConnectionSetupComplete_NB_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct RRCConnectionSetupComplete_NB_r13_IEs__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -62,7 +65,6 @@ extern asn_TYPE_descriptor_t asn_DEF_RRCConnectionSetupComplete_NB_r13_IEs;
 /* Referred external types */
 #include "S-TMSI.h"
 #include "RegisteredMME.h"
-#include "RRCConnectionSetupComplete-NB-v1430-IEs.h"
 
 #endif	/* _RRCConnectionSetupComplete_NB_r13_IEs_H_ */
 #include <asn_internal.h>

@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_ZeroTxPowerCSI_RS_Conf_r12_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_ZeroTxPowerCSI_RS_Conf_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4093 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4095 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3737 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3739 */
 };
 static asn_CHOICE_specifics_t asn_SPC_ZeroTxPowerCSI_RS_Conf_r12_specs_1 = {
 	sizeof(struct ZeroTxPowerCSI_RS_Conf_r12),

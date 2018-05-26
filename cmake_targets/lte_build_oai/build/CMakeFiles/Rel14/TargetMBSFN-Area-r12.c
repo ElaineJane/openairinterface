@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_TargetMBSFN_Area_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_TargetMBSFN_Area_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbsfn-AreaId-r12 at 527 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* carrierFreq-r12 at 528 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbsfn-AreaId-r12 at 496 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* carrierFreq-r12 at 497 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_TargetMBSFN_Area_r12_specs_1 = {
 	sizeof(struct TargetMBSFN_Area_r12),

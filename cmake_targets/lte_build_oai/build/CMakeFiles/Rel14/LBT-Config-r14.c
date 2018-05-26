@@ -93,8 +93,8 @@ static asn_TYPE_member_t asn_MBR_LBT_Config_r14_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_LBT_Config_r14_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxEnergyDetectionThreshold-r14 at 5136 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* energyDetectionThresholdOffset-r14 at 5137 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxEnergyDetectionThreshold-r14 at 4622 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* energyDetectionThresholdOffset-r14 at 4623 */
 };
 static asn_CHOICE_specifics_t asn_SPC_LBT_Config_r14_specs_1 = {
 	sizeof(struct LBT_Config_r14),

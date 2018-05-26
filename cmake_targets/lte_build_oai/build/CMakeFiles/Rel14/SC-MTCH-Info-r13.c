@@ -280,7 +280,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* p-a-r13 at 10005 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* p-a-r13 at 8942 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_7 = {
 	sizeof(struct SC_MTCH_Info_r13__ext1),
@@ -373,11 +373,11 @@ static ber_tlv_tag_t asn_DEF_SC_MTCH_Info_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SC_MTCH_Info_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbmsSessionInfo-r13 at 9999 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* g-RNTI-r13 at 10000 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sc-mtch-schedulingInfo-r13 at 10001 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sc-mtch-neighbourCell-r13 at 10002 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 10006 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbmsSessionInfo-r13 at 8936 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* g-RNTI-r13 at 8937 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sc-mtch-schedulingInfo-r13 at 8938 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sc-mtch-neighbourCell-r13 at 8939 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 8943 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SC_MTCH_Info_r13_specs_1 = {
 	sizeof(struct SC_MTCH_Info_r13),

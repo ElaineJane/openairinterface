@@ -61,8 +61,8 @@ static ber_tlv_tag_t asn_DEF_AltTTT_CellsToAddMod_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_AltTTT_CellsToAddMod_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellIndex-r12 at 7498 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* physCellIdRange-r12 at 7500 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellIndex-r12 at 6786 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* physCellIdRange-r12 at 6788 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_AltTTT_CellsToAddMod_r12_specs_1 = {
 	sizeof(struct AltTTT_CellsToAddMod_r12),

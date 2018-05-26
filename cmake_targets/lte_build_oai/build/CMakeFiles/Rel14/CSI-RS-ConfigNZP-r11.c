@@ -363,11 +363,6 @@ static asn_per_constraints_t asn_PER_memb_qcl_ScramblingIdentity_r11_constr_12 G
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_mbsfn_SubframeConfigList_v1430_constr_29 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
 static asn_per_constraints_t asn_PER_memb_resourceConfig_r11_constr_8 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 5,  5,  0,  31 }	/* (0..31) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
@@ -505,7 +500,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_20[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_20[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* subframeConfigList at 4203 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* subframeConfigList at 3789 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_20 = {
 	sizeof(struct CSI_RS_ConfigNZP_r11__qcl_CRS_Info_r11__mbsfn_SubframeConfigList_r11__setup),
@@ -566,8 +561,8 @@ static asn_TYPE_member_t asn_MBR_mbsfn_SubframeConfigList_r11_18[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_mbsfn_SubframeConfigList_r11_tag2el_18[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4200 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4203 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3786 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3789 */
 };
 static asn_CHOICE_specifics_t asn_SPC_mbsfn_SubframeConfigList_r11_specs_18 = {
 	sizeof(struct CSI_RS_ConfigNZP_r11__qcl_CRS_Info_r11__mbsfn_SubframeConfigList_r11),
@@ -641,9 +636,9 @@ static ber_tlv_tag_t asn_DEF_qcl_CRS_Info_r11_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_qcl_CRS_Info_r11_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* qcl-ScramblingIdentity-r11 at 4197 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* crs-PortsCount-r11 at 4198 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* mbsfn-SubframeConfigList-r11 at 4200 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* qcl-ScramblingIdentity-r11 at 3783 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* crs-PortsCount-r11 at 3784 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* mbsfn-SubframeConfigList-r11 at 3786 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_qcl_CRS_Info_r11_specs_11 = {
 	sizeof(struct CSI_RS_ConfigNZP_r11__qcl_CRS_Info_r11),
@@ -701,7 +696,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_23[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_23[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* csi-RS-ConfigNZPId-v1310 at 4207 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* csi-RS-ConfigNZPId-v1310 at 3793 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_23 = {
 	sizeof(struct CSI_RS_ConfigNZP_r11__ext1),
@@ -740,249 +735,6 @@ asn_TYPE_descriptor_t asn_DEF_ext1_23 = {
 	asn_MBR_ext1_23,
 	1,	/* Elements count */
 	&asn_SPC_ext1_specs_23	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext2_25[] = {
-	{ ATF_POINTER, 2, offsetof(struct CSI_RS_ConfigNZP_r11__ext2, transmissionComb_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NZP_TransmissionComb_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"transmissionComb-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct CSI_RS_ConfigNZP_r11__ext2, frequencyDensity_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NZP_FrequencyDensity_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"frequencyDensity-r14"
-		},
-};
-static int asn_MAP_ext2_oms_25[] = { 0, 1 };
-static ber_tlv_tag_t asn_DEF_ext2_tags_25[] = {
-	(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_25[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* transmissionComb-r14 at 4209 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* frequencyDensity-r14 at 4210 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_25 = {
-	sizeof(struct CSI_RS_ConfigNZP_r11__ext2),
-	offsetof(struct CSI_RS_ConfigNZP_r11__ext2, _asn_ctx),
-	asn_MAP_ext2_tag2el_25,
-	2,	/* Count of tags in the map */
-	asn_MAP_ext2_oms_25,	/* Optional members */
-	2, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext2_25 = {
-	"ext2",
-	"ext2",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext2_tags_25,
-	sizeof(asn_DEF_ext2_tags_25)
-		/sizeof(asn_DEF_ext2_tags_25[0]) - 1, /* 1 */
-	asn_DEF_ext2_tags_25,	/* Same as above */
-	sizeof(asn_DEF_ext2_tags_25)
-		/sizeof(asn_DEF_ext2_tags_25[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext2_25,
-	2,	/* Elements count */
-	&asn_SPC_ext2_specs_25	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_setup_31[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430__setup, subframeConfigList_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_MBSFN_SubframeConfigList_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"subframeConfigList-v1430"
-		},
-};
-static ber_tlv_tag_t asn_DEF_setup_tags_31[] = {
-	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_31[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* subframeConfigList-v1430 at 4216 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_31 = {
-	sizeof(struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430__setup),
-	offsetof(struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430__setup, _asn_ctx),
-	asn_MAP_setup_tag2el_31,
-	1,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_setup_31 = {
-	"setup",
-	"setup",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_setup_tags_31,
-	sizeof(asn_DEF_setup_tags_31)
-		/sizeof(asn_DEF_setup_tags_31[0]) - 1, /* 1 */
-	asn_DEF_setup_tags_31,	/* Same as above */
-	sizeof(asn_DEF_setup_tags_31)
-		/sizeof(asn_DEF_setup_tags_31[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_setup_31,
-	1,	/* Elements count */
-	&asn_SPC_setup_specs_31	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_mbsfn_SubframeConfigList_v1430_29[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430, choice.release),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NULL,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"release"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430, choice.setup),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		0,
-		&asn_DEF_setup_31,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"setup"
-		},
-};
-static asn_TYPE_tag2member_t asn_MAP_mbsfn_SubframeConfigList_v1430_tag2el_29[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4213 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4216 */
-};
-static asn_CHOICE_specifics_t asn_SPC_mbsfn_SubframeConfigList_v1430_specs_29 = {
-	sizeof(struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430),
-	offsetof(struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430, _asn_ctx),
-	offsetof(struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430, present),
-	sizeof(((struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430 *)0)->present),
-	asn_MAP_mbsfn_SubframeConfigList_v1430_tag2el_29,
-	2,	/* Count of tags in the map */
-	0,
-	-1	/* Extensions start */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_mbsfn_SubframeConfigList_v1430_29 = {
-	"mbsfn-SubframeConfigList-v1430",
-	"mbsfn-SubframeConfigList-v1430",
-	CHOICE_free,
-	CHOICE_print,
-	CHOICE_constraint,
-	CHOICE_decode_ber,
-	CHOICE_encode_der,
-	CHOICE_decode_xer,
-	CHOICE_encode_xer,
-	CHOICE_decode_uper,
-	CHOICE_encode_uper,
-	CHOICE_decode_aper,
-	CHOICE_encode_aper,
-	CHOICE_compare,
-	CHOICE_outmost_tag,
-	0,	/* No effective tags (pointer) */
-	0,	/* No effective tags (count) */
-	0,	/* No tags (pointer) */
-	0,	/* No tags (count) */
-	&asn_PER_type_mbsfn_SubframeConfigList_v1430_constr_29,
-	asn_MBR_mbsfn_SubframeConfigList_v1430_29,
-	2,	/* Elements count */
-	&asn_SPC_mbsfn_SubframeConfigList_v1430_specs_29	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext3_28[] = {
-	{ ATF_POINTER, 1, offsetof(struct CSI_RS_ConfigNZP_r11__ext3, mbsfn_SubframeConfigList_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_mbsfn_SubframeConfigList_v1430_29,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"mbsfn-SubframeConfigList-v1430"
-		},
-};
-static int asn_MAP_ext3_oms_28[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext3_tags_28[] = {
-	(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_28[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mbsfn-SubframeConfigList-v1430 at 4213 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_28 = {
-	sizeof(struct CSI_RS_ConfigNZP_r11__ext3),
-	offsetof(struct CSI_RS_ConfigNZP_r11__ext3, _asn_ctx),
-	asn_MAP_ext3_tag2el_28,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext3_oms_28,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext3_28 = {
-	"ext3",
-	"ext3",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext3_tags_28,
-	sizeof(asn_DEF_ext3_tags_28)
-		/sizeof(asn_DEF_ext3_tags_28[0]) - 1, /* 1 */
-	asn_DEF_ext3_tags_28,	/* Same as above */
-	sizeof(asn_DEF_ext3_tags_28)
-		/sizeof(asn_DEF_ext3_tags_28[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext3_28,
-	1,	/* Elements count */
-	&asn_SPC_ext3_specs_28	/* Additional specs */
 };
 
 static asn_TYPE_member_t asn_MBR_CSI_RS_ConfigNZP_r11_1[] = {
@@ -1031,7 +783,7 @@ static asn_TYPE_member_t asn_MBR_CSI_RS_ConfigNZP_r11_1[] = {
 		0,
 		"scramblingIdentity-r11"
 		},
-	{ ATF_POINTER, 4, offsetof(struct CSI_RS_ConfigNZP_r11, qcl_CRS_Info_r11),
+	{ ATF_POINTER, 2, offsetof(struct CSI_RS_ConfigNZP_r11, qcl_CRS_Info_r11),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		0,
 		&asn_DEF_qcl_CRS_Info_r11_11,
@@ -1040,7 +792,7 @@ static asn_TYPE_member_t asn_MBR_CSI_RS_ConfigNZP_r11_1[] = {
 		0,
 		"qcl-CRS-Info-r11"
 		},
-	{ ATF_POINTER, 3, offsetof(struct CSI_RS_ConfigNZP_r11, ext1),
+	{ ATF_POINTER, 1, offsetof(struct CSI_RS_ConfigNZP_r11, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		0,
 		&asn_DEF_ext1_23,
@@ -1049,49 +801,29 @@ static asn_TYPE_member_t asn_MBR_CSI_RS_ConfigNZP_r11_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 2, offsetof(struct CSI_RS_ConfigNZP_r11, ext2),
-		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-		0,
-		&asn_DEF_ext2_25,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext2"
-		},
-	{ ATF_POINTER, 1, offsetof(struct CSI_RS_ConfigNZP_r11, ext3),
-		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-		0,
-		&asn_DEF_ext3_28,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext3"
-		},
 };
-static int asn_MAP_CSI_RS_ConfigNZP_r11_oms_1[] = { 5, 6, 7, 8 };
+static int asn_MAP_CSI_RS_ConfigNZP_r11_oms_1[] = { 5, 6 };
 static ber_tlv_tag_t asn_DEF_CSI_RS_ConfigNZP_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CSI_RS_ConfigNZP_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-RS-ConfigNZPId-r11 at 4191 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* antennaPortsCount-r11 at 4192 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* resourceConfig-r11 at 4193 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* subframeConfig-r11 at 4194 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* scramblingIdentity-r11 at 4195 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* qcl-CRS-Info-r11 at 4197 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext1 at 4207 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext2 at 4209 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* ext3 at 4217 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-RS-ConfigNZPId-r11 at 3777 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* antennaPortsCount-r11 at 3778 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* resourceConfig-r11 at 3779 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* subframeConfig-r11 at 3780 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* scramblingIdentity-r11 at 3781 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* qcl-CRS-Info-r11 at 3783 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext1 at 3793 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CSI_RS_ConfigNZP_r11_specs_1 = {
 	sizeof(struct CSI_RS_ConfigNZP_r11),
 	offsetof(struct CSI_RS_ConfigNZP_r11, _asn_ctx),
 	asn_MAP_CSI_RS_ConfigNZP_r11_tag2el_1,
-	9,	/* Count of tags in the map */
+	7,	/* Count of tags in the map */
 	asn_MAP_CSI_RS_ConfigNZP_r11_oms_1,	/* Optional members */
-	1, 3,	/* Root/Additions */
+	1, 1,	/* Root/Additions */
 	5,	/* Start extensions */
-	10	/* Stop extensions */
+	8	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_CSI_RS_ConfigNZP_r11 = {
 	"CSI-RS-ConfigNZP-r11",
@@ -1117,7 +849,7 @@ asn_TYPE_descriptor_t asn_DEF_CSI_RS_ConfigNZP_r11 = {
 		/sizeof(asn_DEF_CSI_RS_ConfigNZP_r11_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_CSI_RS_ConfigNZP_r11_1,
-	9,	/* Elements count */
+	7,	/* Elements count */
 	&asn_SPC_CSI_RS_ConfigNZP_r11_specs_1	/* Additional specs */
 };
 

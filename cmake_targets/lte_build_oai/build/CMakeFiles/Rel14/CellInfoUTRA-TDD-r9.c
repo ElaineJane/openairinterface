@@ -31,8 +31,8 @@ static ber_tlv_tag_t asn_DEF_CellInfoUTRA_TDD_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CellInfoUTRA_TDD_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r9 at 1436 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* utra-BCCH-Container-r9 at 1437 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r9 at 1379 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* utra-BCCH-Container-r9 at 1380 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CellInfoUTRA_TDD_r9_specs_1 = {
 	sizeof(struct CellInfoUTRA_TDD_r9),

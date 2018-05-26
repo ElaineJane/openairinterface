@@ -245,8 +245,8 @@ static ber_tlv_tag_t asn_DEF_UL_PDCP_DelayResult_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UL_PDCP_DelayResult_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* qci-Id-r13 at 7852 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* excessDelay-r13 at 7853 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* qci-Id-r13 at 7117 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* excessDelay-r13 at 7118 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UL_PDCP_DelayResult_r13_specs_1 = {
 	sizeof(struct UL_PDCP_DelayResult_r13),

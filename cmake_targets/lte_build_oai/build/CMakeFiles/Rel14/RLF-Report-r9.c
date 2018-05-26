@@ -447,8 +447,8 @@ static ber_tlv_tag_t asn_DEF_measResultLastServCell_r9_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResultLastServCell_r9_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrpResult-r9 at 2332 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rsrqResult-r9 at 2333 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrpResult-r9 at 2128 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rsrqResult-r9 at 2129 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResultLastServCell_r9_specs_2 = {
 	sizeof(struct RLF_Report_r9__measResultLastServCell_r9),
@@ -533,10 +533,10 @@ static ber_tlv_tag_t asn_DEF_measResultNeighCells_r9_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResultNeighCells_r9_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measResultListEUTRA-r9 at 2336 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultListUTRA-r9 at 2337 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measResultListGERAN-r9 at 2338 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measResultsCDMA2000-r9 at 2339 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measResultListEUTRA-r9 at 2132 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultListUTRA-r9 at 2133 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measResultListGERAN-r9 at 2134 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measResultsCDMA2000-r9 at 2135 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResultNeighCells_r9_specs_5 = {
 	sizeof(struct RLF_Report_r9__measResultNeighCells_r9),
@@ -602,8 +602,8 @@ static ber_tlv_tag_t asn_DEF_pci_arfcn_r10_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_pci_arfcn_r10_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r10 at 2346 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* carrierFreq-r10 at 2348 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r10 at 2142 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* carrierFreq-r10 at 2144 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_pci_arfcn_r10_specs_15 = {
 	sizeof(struct RLF_Report_r9__ext1__failedPCellId_r10__pci_arfcn_r10),
@@ -664,8 +664,8 @@ static asn_TYPE_member_t asn_MBR_failedPCellId_r10_13[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_failedPCellId_r10_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellGlobalId-r10 at 2344 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* pci-arfcn-r10 at 2346 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellGlobalId-r10 at 2140 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* pci-arfcn-r10 at 2142 */
 };
 static asn_CHOICE_specifics_t asn_SPC_failedPCellId_r10_specs_13 = {
 	sizeof(struct RLF_Report_r9__ext1__failedPCellId_r10),
@@ -815,12 +815,12 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* locationInfo-r10 at 2342 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* failedPCellId-r10 at 2344 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* reestablishmentCellId-r10 at 2350 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* timeConnFailure-r10 at 2351 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* connectionFailureType-r10 at 2352 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* previousPCellId-r10 at 2353 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* locationInfo-r10 at 2138 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* failedPCellId-r10 at 2140 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* reestablishmentCellId-r10 at 2146 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* timeConnFailure-r10 at 2147 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* connectionFailureType-r10 at 2148 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* previousPCellId-r10 at 2149 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_11 = {
 	sizeof(struct RLF_Report_r9__ext1),
@@ -877,7 +877,7 @@ static ber_tlv_tag_t asn_DEF_failedPCellId_v1090_tags_25[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_failedPCellId_v1090_tag2el_25[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* carrierFreq-v1090 at 2357 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* carrierFreq-v1090 at 2153 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_failedPCellId_v1090_specs_25 = {
 	sizeof(struct RLF_Report_r9__ext2__failedPCellId_v1090),
@@ -934,7 +934,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_24[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_24[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* failedPCellId-v1090 at 2357 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* failedPCellId-v1090 at 2153 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_24 = {
 	sizeof(struct RLF_Report_r9__ext2),
@@ -1062,9 +1062,9 @@ static ber_tlv_tag_t asn_DEF_basicFields_r11_tags_28[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_basicFields_r11_tag2el_28[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c-RNTI-r11 at 2360 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rlf-Cause-r11 at 2362 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* timeSinceFailure-r11 at 2365 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c-RNTI-r11 at 2156 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rlf-Cause-r11 at 2158 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* timeSinceFailure-r11 at 2161 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_basicFields_r11_specs_28 = {
 	sizeof(struct RLF_Report_r9__ext3__basicFields_r11),
@@ -1125,8 +1125,8 @@ static asn_TYPE_member_t asn_MBR_physCellId_r11_38[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_physCellId_r11_tag2el_38[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fdd-r11 at 2369 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd-r11 at 2371 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fdd-r11 at 2165 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd-r11 at 2167 */
 };
 static asn_CHOICE_specifics_t asn_SPC_physCellId_r11_specs_38 = {
 	sizeof(struct RLF_Report_r9__ext3__previousUTRA_CellId_r11__physCellId_r11),
@@ -1200,9 +1200,9 @@ static ber_tlv_tag_t asn_DEF_previousUTRA_CellId_r11_tags_36[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_previousUTRA_CellId_r11_tag2el_36[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq-r11 at 2367 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* physCellId-r11 at 2369 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* cellGlobalId-r11 at 2372 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq-r11 at 2163 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* physCellId-r11 at 2165 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* cellGlobalId-r11 at 2168 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_previousUTRA_CellId_r11_specs_36 = {
 	sizeof(struct RLF_Report_r9__ext3__previousUTRA_CellId_r11),
@@ -1264,8 +1264,8 @@ static asn_TYPE_member_t asn_MBR_physCellId_r11_44[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_physCellId_r11_tag2el_44[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fdd-r11 at 2377 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd-r11 at 2379 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fdd-r11 at 2173 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd-r11 at 2175 */
 };
 static asn_CHOICE_specifics_t asn_SPC_physCellId_r11_specs_44 = {
 	sizeof(struct RLF_Report_r9__ext3__selectedUTRA_CellId_r11__physCellId_r11),
@@ -1329,8 +1329,8 @@ static ber_tlv_tag_t asn_DEF_selectedUTRA_CellId_r11_tags_42[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_selectedUTRA_CellId_r11_tag2el_42[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq-r11 at 2375 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* physCellId-r11 at 2377 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq-r11 at 2171 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* physCellId-r11 at 2173 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_selectedUTRA_CellId_r11_specs_42 = {
 	sizeof(struct RLF_Report_r9__ext3__selectedUTRA_CellId_r11),
@@ -1405,9 +1405,9 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_27[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_27[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* basicFields-r11 at 2360 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* previousUTRA-CellId-r11 at 2367 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* selectedUTRA-CellId-r11 at 2375 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* basicFields-r11 at 2156 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* previousUTRA-CellId-r11 at 2163 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* selectedUTRA-CellId-r11 at 2171 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_27 = {
 	sizeof(struct RLF_Report_r9__ext3),
@@ -1464,7 +1464,7 @@ static ber_tlv_tag_t asn_DEF_failedPCellId_v1250_tags_48[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_failedPCellId_v1250_tag2el_48[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* tac-FailedPCell-r12 at 2384 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* tac-FailedPCell-r12 at 2180 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_failedPCellId_v1250_specs_48 = {
 	sizeof(struct RLF_Report_r9__ext4__failedPCellId_v1250),
@@ -1548,10 +1548,10 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_47[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_47[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* failedPCellId-v1250 at 2384 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultLastServCell-v1250 at 2385 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* lastServCellRSRQ-Type-r12 at 2386 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measResultListEUTRA-v1250 at 2387 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* failedPCellId-v1250 at 2180 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultLastServCell-v1250 at 2181 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* lastServCellRSRQ-Type-r12 at 2182 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measResultListEUTRA-v1250 at 2183 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_47 = {
 	sizeof(struct RLF_Report_r9__ext4),
@@ -1656,7 +1656,7 @@ static ber_tlv_tag_t asn_DEF_ext5_tags_53[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_53[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* drb-EstablishedWithQCI-1-r13 at 2389 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* drb-EstablishedWithQCI-1-r13 at 2185 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_53 = {
 	sizeof(struct RLF_Report_r9__ext5),
@@ -1697,64 +1697,6 @@ asn_TYPE_descriptor_t asn_DEF_ext5_53 = {
 	&asn_SPC_ext5_specs_53	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext6_56[] = {
-	{ ATF_POINTER, 1, offsetof(struct RLF_Report_r9__ext6, measResultLastServCell_v1360),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_RSRP_Range_v1360,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"measResultLastServCell-v1360"
-		},
-};
-static int asn_MAP_ext6_oms_56[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext6_tags_56[] = {
-	(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext6_tag2el_56[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* measResultLastServCell-v1360 at 2391 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext6_specs_56 = {
-	sizeof(struct RLF_Report_r9__ext6),
-	offsetof(struct RLF_Report_r9__ext6, _asn_ctx),
-	asn_MAP_ext6_tag2el_56,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext6_oms_56,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext6_56 = {
-	"ext6",
-	"ext6",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext6_tags_56,
-	sizeof(asn_DEF_ext6_tags_56)
-		/sizeof(asn_DEF_ext6_tags_56[0]) - 1, /* 1 */
-	asn_DEF_ext6_tags_56,	/* Same as above */
-	sizeof(asn_DEF_ext6_tags_56)
-		/sizeof(asn_DEF_ext6_tags_56[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext6_56,
-	1,	/* Elements count */
-	&asn_SPC_ext6_specs_56	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_RLF_Report_r9_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct RLF_Report_r9, measResultLastServCell_r9),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -1765,7 +1707,7 @@ static asn_TYPE_member_t asn_MBR_RLF_Report_r9_1[] = {
 		0,
 		"measResultLastServCell-r9"
 		},
-	{ ATF_POINTER, 7, offsetof(struct RLF_Report_r9, measResultNeighCells_r9),
+	{ ATF_POINTER, 6, offsetof(struct RLF_Report_r9, measResultNeighCells_r9),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		0,
 		&asn_DEF_measResultNeighCells_r9_5,
@@ -1774,7 +1716,7 @@ static asn_TYPE_member_t asn_MBR_RLF_Report_r9_1[] = {
 		0,
 		"measResultNeighCells-r9"
 		},
-	{ ATF_POINTER, 6, offsetof(struct RLF_Report_r9, ext1),
+	{ ATF_POINTER, 5, offsetof(struct RLF_Report_r9, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		0,
 		&asn_DEF_ext1_11,
@@ -1783,7 +1725,7 @@ static asn_TYPE_member_t asn_MBR_RLF_Report_r9_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 5, offsetof(struct RLF_Report_r9, ext2),
+	{ ATF_POINTER, 4, offsetof(struct RLF_Report_r9, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		0,
 		&asn_DEF_ext2_24,
@@ -1792,7 +1734,7 @@ static asn_TYPE_member_t asn_MBR_RLF_Report_r9_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 4, offsetof(struct RLF_Report_r9, ext3),
+	{ ATF_POINTER, 3, offsetof(struct RLF_Report_r9, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		0,
 		&asn_DEF_ext3_27,
@@ -1801,7 +1743,7 @@ static asn_TYPE_member_t asn_MBR_RLF_Report_r9_1[] = {
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 3, offsetof(struct RLF_Report_r9, ext4),
+	{ ATF_POINTER, 2, offsetof(struct RLF_Report_r9, ext4),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		0,
 		&asn_DEF_ext4_47,
@@ -1810,7 +1752,7 @@ static asn_TYPE_member_t asn_MBR_RLF_Report_r9_1[] = {
 		0,
 		"ext4"
 		},
-	{ ATF_POINTER, 2, offsetof(struct RLF_Report_r9, ext5),
+	{ ATF_POINTER, 1, offsetof(struct RLF_Report_r9, ext5),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		0,
 		&asn_DEF_ext5_53,
@@ -1819,39 +1761,29 @@ static asn_TYPE_member_t asn_MBR_RLF_Report_r9_1[] = {
 		0,
 		"ext5"
 		},
-	{ ATF_POINTER, 1, offsetof(struct RLF_Report_r9, ext6),
-		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-		0,
-		&asn_DEF_ext6_56,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext6"
-		},
 };
-static int asn_MAP_RLF_Report_r9_oms_1[] = { 1, 2, 3, 4, 5, 6, 7 };
+static int asn_MAP_RLF_Report_r9_oms_1[] = { 1, 2, 3, 4, 5, 6 };
 static ber_tlv_tag_t asn_DEF_RLF_Report_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RLF_Report_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measResultLastServCell-r9 at 2332 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultNeighCells-r9 at 2336 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext1 at 2342 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext2 at 2357 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext3 at 2365 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext4 at 2384 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext5 at 2389 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext6 at 2391 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measResultLastServCell-r9 at 2128 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultNeighCells-r9 at 2132 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext1 at 2138 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext2 at 2153 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext3 at 2161 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext4 at 2180 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext5 at 2185 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RLF_Report_r9_specs_1 = {
 	sizeof(struct RLF_Report_r9),
 	offsetof(struct RLF_Report_r9, _asn_ctx),
 	asn_MAP_RLF_Report_r9_tag2el_1,
-	8,	/* Count of tags in the map */
+	7,	/* Count of tags in the map */
 	asn_MAP_RLF_Report_r9_oms_1,	/* Optional members */
-	1, 6,	/* Root/Additions */
+	1, 5,	/* Root/Additions */
 	1,	/* Start extensions */
-	9	/* Stop extensions */
+	8	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_RLF_Report_r9 = {
 	"RLF-Report-r9",
@@ -1877,7 +1809,7 @@ asn_TYPE_descriptor_t asn_DEF_RLF_Report_r9 = {
 		/sizeof(asn_DEF_RLF_Report_r9_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_RLF_Report_r9_1,
-	8,	/* Elements count */
+	7,	/* Elements count */
 	&asn_SPC_RLF_Report_r9_specs_1	/* Additional specs */
 };
 

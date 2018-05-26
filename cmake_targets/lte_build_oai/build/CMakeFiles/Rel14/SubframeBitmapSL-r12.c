@@ -330,13 +330,13 @@ static asn_TYPE_member_t asn_MBR_SubframeBitmapSL_r12_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SubframeBitmapSL_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bs4-r12 at 10713 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* bs8-r12 at 10714 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* bs12-r12 at 10715 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* bs16-r12 at 10716 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* bs30-r12 at 10717 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* bs40-r12 at 10718 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* bs42-r12 at 10719 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bs4-r12 at 9493 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* bs8-r12 at 9494 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* bs12-r12 at 9495 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* bs16-r12 at 9496 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* bs30-r12 at 9497 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* bs40-r12 at 9498 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* bs42-r12 at 9499 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SubframeBitmapSL_r12_specs_1 = {
 	sizeof(struct SubframeBitmapSL_r12),

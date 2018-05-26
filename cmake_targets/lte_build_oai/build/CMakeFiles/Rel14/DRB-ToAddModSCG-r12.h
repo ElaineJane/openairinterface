@@ -34,7 +34,7 @@ struct RLC_Config;
 struct RLC_Config_v1250;
 struct LogicalChannelConfig;
 struct PDCP_Config;
-struct RLC_Config_v1430;
+struct RLC_Config_v14xy;
 
 /* DRB-ToAddModSCG-r12 */
 typedef struct DRB_ToAddModSCG_r12 {
@@ -64,7 +64,7 @@ typedef struct DRB_ToAddModSCG_r12 {
 	 * possible extensions are below.
 	 */
 	struct DRB_ToAddModSCG_r12__ext1 {
-		struct RLC_Config_v1430	*rlc_Config_v1430	/* OPTIONAL */;
+		struct RLC_Config_v14xy	*rlc_Config_v14xy	/* OPTIONAL */;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
@@ -86,7 +86,7 @@ extern asn_TYPE_descriptor_t asn_DEF_DRB_ToAddModSCG_r12;
 #include "RLC-Config-v1250.h"
 #include "LogicalChannelConfig.h"
 #include "PDCP-Config.h"
-#include "RLC-Config-v1430.h"
+#include "RLC-Config-v14xy.h"
 
 #endif	/* _DRB_ToAddModSCG_r12_H_ */
 #include <asn_internal.h>

@@ -15,7 +15,6 @@
 #include "InterFreqCarrierFreqList-NB-r13.h"
 #include "T-Reselection-NB-r13.h"
 #include <OCTET_STRING.h>
-#include <NativeInteger.h>
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -31,12 +30,6 @@ typedef struct SystemInformationBlockType5_NB_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct SystemInformationBlockType5_NB_r13__ext1 {
-		long	*scptm_FreqOffset_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

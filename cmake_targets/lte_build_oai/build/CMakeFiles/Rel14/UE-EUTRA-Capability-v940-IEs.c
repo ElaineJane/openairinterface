@@ -57,8 +57,8 @@ static ber_tlv_tag_t asn_DEF_UE_EUTRA_Capability_v940_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UE_EUTRA_Capability_v940_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* lateNonCriticalExtension at 8489 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 8491 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* lateNonCriticalExtension at 7698 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 7700 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UE_EUTRA_Capability_v940_IEs_specs_1 = {
 	sizeof(struct UE_EUTRA_Capability_v940_IEs),

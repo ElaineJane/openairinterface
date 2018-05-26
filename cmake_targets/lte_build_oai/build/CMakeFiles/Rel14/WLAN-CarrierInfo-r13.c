@@ -249,9 +249,9 @@ static ber_tlv_tag_t asn_DEF_WLAN_CarrierInfo_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_WLAN_CarrierInfo_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* operatingClass-r13 at 8187 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* countryCode-r13 at 8188 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* channelNumbers-r13 at 8189 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* operatingClass-r13 at 7438 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* countryCode-r13 at 7439 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* channelNumbers-r13 at 7440 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_WLAN_CarrierInfo_r13_specs_1 = {
 	sizeof(struct WLAN_CarrierInfo_r13),

@@ -128,8 +128,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_8[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-ConfigApDCI-Format0-v1310 at 6396 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* srs-ConfigApDCI-Format1a2b2c-v1310 at 6397 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-ConfigApDCI-Format0-v1310 at 5806 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* srs-ConfigApDCI-Format1a2b2c-v1310 at 5807 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_8 = {
 	sizeof(struct SoundingRS_UL_ConfigDedicatedAperiodic_v1310__setup__srs_ActivateAp_v1310__setup),
@@ -191,8 +191,8 @@ static asn_TYPE_member_t asn_MBR_srs_ActivateAp_v1310_6[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_srs_ActivateAp_v1310_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6394 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6396 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5804 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5806 */
 };
 static asn_CHOICE_specifics_t asn_SPC_srs_ActivateAp_v1310_specs_6 = {
 	sizeof(struct SoundingRS_UL_ConfigDedicatedAperiodic_v1310__setup__srs_ActivateAp_v1310),
@@ -257,8 +257,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-ConfigApDCI-Format4-v1310 at 6392 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* srs-ActivateAp-v1310 at 6394 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-ConfigApDCI-Format4-v1310 at 5802 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* srs-ActivateAp-v1310 at 5804 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct SoundingRS_UL_ConfigDedicatedAperiodic_v1310__setup),
@@ -320,8 +320,8 @@ static asn_TYPE_member_t asn_MBR_SoundingRS_UL_ConfigDedicatedAperiodic_v1310_1[
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SoundingRS_UL_ConfigDedicatedAperiodic_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6390 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6392 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5800 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5802 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SoundingRS_UL_ConfigDedicatedAperiodic_v1310_specs_1 = {
 	sizeof(struct SoundingRS_UL_ConfigDedicatedAperiodic_v1310),

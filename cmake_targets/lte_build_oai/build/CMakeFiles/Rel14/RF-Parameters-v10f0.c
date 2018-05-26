@@ -59,7 +59,7 @@ static ber_tlv_tag_t asn_DEF_RF_Parameters_v10f0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RF_Parameters_v10f0_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* modifiedMPR-Behavior-r10 at 9017 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* modifiedMPR-Behavior-r10 at 8121 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RF_Parameters_v10f0_specs_1 = {
 	sizeof(struct RF_Parameters_v10f0),

@@ -20,7 +20,6 @@
 #include "RSRP-RangeSL-r12.h"
 #include <BIT_STRING.h>
 #include <NativeEnumerated.h>
-#include "SL-OffsetIndicatorSync-v1430.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -34,9 +33,6 @@ typedef enum SL_SyncConfigNFreq_r13__rxParameters_r13__discSyncWindow_r13 {
 	SL_SyncConfigNFreq_r13__rxParameters_r13__discSyncWindow_r13_w1	= 0,
 	SL_SyncConfigNFreq_r13__rxParameters_r13__discSyncWindow_r13_w2	= 1
 } e_SL_SyncConfigNFreq_r13__rxParameters_r13__discSyncWindow_r13;
-typedef enum SL_SyncConfigNFreq_r13__ext1__gnss_Sync_r14 {
-	SL_SyncConfigNFreq_r13__ext1__gnss_Sync_r14_true	= 0
-} e_SL_SyncConfigNFreq_r13__ext1__gnss_Sync_r14;
 
 /* SL-SyncConfigNFreq-r13 */
 typedef struct SL_SyncConfigNFreq_r13 {
@@ -67,13 +63,6 @@ typedef struct SL_SyncConfigNFreq_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct SL_SyncConfigNFreq_r13__ext1 {
-		SL_OffsetIndicatorSync_v1430_t	*syncOffsetIndicator_v1430	/* OPTIONAL */;
-		long	*gnss_Sync_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -82,7 +71,6 @@ typedef struct SL_SyncConfigNFreq_r13 {
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_syncTxPeriodic_r13_10;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_discSyncWindow_r13_13;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_gnss_Sync_r14_19;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_SL_SyncConfigNFreq_r13;
 
 #ifdef __cplusplus

@@ -901,14 +901,14 @@ static ber_tlv_tag_t asn_DEF_CSI_RS_ConfigNonPrecoded_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CSI_RS_ConfigNonPrecoded_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p-C-AndCBSRList-r13 at 4133 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* codebookConfigN1-r13 at 4134 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* codebookConfigN2-r13 at 4135 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* codebookOverSamplingRateConfig-O1-r13 at 4136 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* codebookOverSamplingRateConfig-O2-r13 at 4137 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* codebookConfig-r13 at 4138 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* csi-IM-ConfigIdList-r13 at 4139 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* csi-RS-ConfigNZP-EMIMO-r13 at 4140 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p-C-AndCBSRList-r13 at 3756 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* codebookConfigN1-r13 at 3757 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* codebookConfigN2-r13 at 3758 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* codebookOverSamplingRateConfig-O1-r13 at 3759 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* codebookOverSamplingRateConfig-O2-r13 at 3760 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* codebookConfig-r13 at 3761 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* csi-IM-ConfigIdList-r13 at 3762 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* csi-RS-ConfigNZP-EMIMO-r13 at 3763 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CSI_RS_ConfigNonPrecoded_r13_specs_1 = {
 	sizeof(struct CSI_RS_ConfigNonPrecoded_r13),

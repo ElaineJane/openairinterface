@@ -130,9 +130,9 @@ static ber_tlv_tag_t asn_DEF_MeasResultSSTD_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasResultSSTD_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sfn-OffsetResult-r13 at 7859 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* frameBoundaryOffsetResult-r13 at 7860 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* subframeBoundaryOffsetResult-r13 at 7861 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sfn-OffsetResult-r13 at 7124 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* frameBoundaryOffsetResult-r13 at 7125 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* subframeBoundaryOffsetResult-r13 at 7126 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasResultSSTD_r13_specs_1 = {
 	sizeof(struct MeasResultSSTD_r13),

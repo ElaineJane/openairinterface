@@ -202,9 +202,9 @@ static asn_TYPE_member_t asn_MBR_dmtc_PeriodOffset_r12_4[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_dmtc_PeriodOffset_r12_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ms40-r12 at 7290 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ms80-r12 at 7291 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ms160-r12 at 7292 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ms40-r12 at 6621 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ms80-r12 at 6622 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ms160-r12 at 6623 */
 };
 static asn_CHOICE_specifics_t asn_SPC_dmtc_PeriodOffset_r12_specs_4 = {
 	sizeof(struct MeasDS_Config_r12__setup__dmtc_PeriodOffset_r12),
@@ -264,8 +264,8 @@ static asn_TYPE_member_t asn_MBR_ds_OccasionDuration_r12_9[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_ds_OccasionDuration_r12_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* durationFDD-r12 at 7296 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* durationTDD-r12 at 7297 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* durationFDD-r12 at 6627 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* durationTDD-r12 at 6628 */
 };
 static asn_CHOICE_specifics_t asn_SPC_ds_OccasionDuration_r12_specs_9 = {
 	sizeof(struct MeasDS_Config_r12__setup__ds_OccasionDuration_r12),
@@ -348,10 +348,10 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dmtc-PeriodOffset-r12 at 7290 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ds-OccasionDuration-r12 at 7296 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measCSI-RS-ToRemoveList-r12 at 7299 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measCSI-RS-ToAddModList-r12 at 7300 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dmtc-PeriodOffset-r12 at 6621 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ds-OccasionDuration-r12 at 6627 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measCSI-RS-ToRemoveList-r12 at 6630 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measCSI-RS-ToAddModList-r12 at 6631 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct MeasDS_Config_r12__setup),
@@ -413,8 +413,8 @@ static asn_TYPE_member_t asn_MBR_MeasDS_Config_r12_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasDS_Config_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7287 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7294 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6618 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6625 */
 };
 static asn_CHOICE_specifics_t asn_SPC_MeasDS_Config_r12_specs_1 = {
 	sizeof(struct MeasDS_Config_r12),

@@ -41,9 +41,9 @@ static ber_tlv_tag_t asn_DEF_CSFBParametersResponseCDMA2000_r8_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CSFBParametersResponseCDMA2000_r8_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rand at 290 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mobilityParameters at 291 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 292 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rand at 264 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mobilityParameters at 265 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 266 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CSFBParametersResponseCDMA2000_r8_IEs_specs_1 = {
 	sizeof(struct CSFBParametersResponseCDMA2000_r8_IEs),

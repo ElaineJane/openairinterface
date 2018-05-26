@@ -83,7 +83,7 @@ memb_c2_Offset_r12_constraint_24(asn_TYPE_descriptor_t *td, const void *sptr,
 }
 
 static int
-purpose_35_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+purpose_31_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -95,7 +95,7 @@ purpose_35_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
  * so here we adjust the DEF accordingly.
  */
 static void
-purpose_35_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+purpose_31_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -115,93 +115,93 @@ purpose_35_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 }
 
 static void
-purpose_35_free(asn_TYPE_descriptor_t *td,
+purpose_31_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	purpose_35_inherit_TYPE_descriptor(td);
+	purpose_31_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-purpose_35_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+purpose_31_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	purpose_35_inherit_TYPE_descriptor(td);
+	purpose_31_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-purpose_35_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+purpose_31_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	purpose_35_inherit_TYPE_descriptor(td);
+	purpose_31_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-purpose_35_encode_der(asn_TYPE_descriptor_t *td,
+purpose_31_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	purpose_35_inherit_TYPE_descriptor(td);
+	purpose_31_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-purpose_35_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+purpose_31_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	purpose_35_inherit_TYPE_descriptor(td);
+	purpose_31_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-purpose_35_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+purpose_31_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	purpose_35_inherit_TYPE_descriptor(td);
+	purpose_31_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-purpose_35_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+purpose_31_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	purpose_35_inherit_TYPE_descriptor(td);
+	purpose_31_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-purpose_35_encode_uper(asn_TYPE_descriptor_t *td,
+purpose_31_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	purpose_35_inherit_TYPE_descriptor(td);
+	purpose_31_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-purpose_35_encode_aper(asn_TYPE_descriptor_t *td,
+purpose_31_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	purpose_35_inherit_TYPE_descriptor(td);
+	purpose_31_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-purpose_35_compare(asn_TYPE_descriptor_t *td1,
+purpose_31_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	purpose_35_inherit_TYPE_descriptor(td1);
-	purpose_35_inherit_TYPE_descriptor(td2);
+	purpose_31_inherit_TYPE_descriptor(td1);
+	purpose_31_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-purpose_35_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+purpose_31_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	purpose_35_inherit_TYPE_descriptor(td);
+	purpose_31_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-triggerQuantity_38_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+triggerQuantity_34_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -213,7 +213,7 @@ triggerQuantity_38_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
  * so here we adjust the DEF accordingly.
  */
 static void
-triggerQuantity_38_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+triggerQuantity_34_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -233,93 +233,93 @@ triggerQuantity_38_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 }
 
 static void
-triggerQuantity_38_free(asn_TYPE_descriptor_t *td,
+triggerQuantity_34_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	triggerQuantity_38_inherit_TYPE_descriptor(td);
+	triggerQuantity_34_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-triggerQuantity_38_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+triggerQuantity_34_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	triggerQuantity_38_inherit_TYPE_descriptor(td);
+	triggerQuantity_34_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-triggerQuantity_38_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+triggerQuantity_34_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	triggerQuantity_38_inherit_TYPE_descriptor(td);
+	triggerQuantity_34_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-triggerQuantity_38_encode_der(asn_TYPE_descriptor_t *td,
+triggerQuantity_34_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	triggerQuantity_38_inherit_TYPE_descriptor(td);
+	triggerQuantity_34_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-triggerQuantity_38_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+triggerQuantity_34_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	triggerQuantity_38_inherit_TYPE_descriptor(td);
+	triggerQuantity_34_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-triggerQuantity_38_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+triggerQuantity_34_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	triggerQuantity_38_inherit_TYPE_descriptor(td);
+	triggerQuantity_34_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-triggerQuantity_38_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+triggerQuantity_34_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	triggerQuantity_38_inherit_TYPE_descriptor(td);
+	triggerQuantity_34_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-triggerQuantity_38_encode_uper(asn_TYPE_descriptor_t *td,
+triggerQuantity_34_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	triggerQuantity_38_inherit_TYPE_descriptor(td);
+	triggerQuantity_34_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-triggerQuantity_38_encode_aper(asn_TYPE_descriptor_t *td,
+triggerQuantity_34_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	triggerQuantity_38_inherit_TYPE_descriptor(td);
+	triggerQuantity_34_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-triggerQuantity_38_compare(asn_TYPE_descriptor_t *td1,
+triggerQuantity_34_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	triggerQuantity_38_inherit_TYPE_descriptor(td1);
-	triggerQuantity_38_inherit_TYPE_descriptor(td2);
+	triggerQuantity_34_inherit_TYPE_descriptor(td1);
+	triggerQuantity_34_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-triggerQuantity_38_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+triggerQuantity_34_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	triggerQuantity_38_inherit_TYPE_descriptor(td);
+	triggerQuantity_34_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-reportQuantity_41_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+reportQuantity_37_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -331,7 +331,7 @@ reportQuantity_41_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
  * so here we adjust the DEF accordingly.
  */
 static void
-reportQuantity_41_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+reportQuantity_37_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -351,93 +351,93 @@ reportQuantity_41_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 }
 
 static void
-reportQuantity_41_free(asn_TYPE_descriptor_t *td,
+reportQuantity_37_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	reportQuantity_41_inherit_TYPE_descriptor(td);
+	reportQuantity_37_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-reportQuantity_41_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+reportQuantity_37_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	reportQuantity_41_inherit_TYPE_descriptor(td);
+	reportQuantity_37_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportQuantity_41_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportQuantity_37_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	reportQuantity_41_inherit_TYPE_descriptor(td);
+	reportQuantity_37_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-reportQuantity_41_encode_der(asn_TYPE_descriptor_t *td,
+reportQuantity_37_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	reportQuantity_41_inherit_TYPE_descriptor(td);
+	reportQuantity_37_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportQuantity_41_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportQuantity_37_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	reportQuantity_41_inherit_TYPE_descriptor(td);
+	reportQuantity_37_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-reportQuantity_41_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+reportQuantity_37_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	reportQuantity_41_inherit_TYPE_descriptor(td);
+	reportQuantity_37_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportQuantity_41_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportQuantity_37_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	reportQuantity_41_inherit_TYPE_descriptor(td);
+	reportQuantity_37_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-reportQuantity_41_encode_uper(asn_TYPE_descriptor_t *td,
+reportQuantity_37_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	reportQuantity_41_inherit_TYPE_descriptor(td);
+	reportQuantity_37_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-reportQuantity_41_encode_aper(asn_TYPE_descriptor_t *td,
+reportQuantity_37_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	reportQuantity_41_inherit_TYPE_descriptor(td);
+	reportQuantity_37_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-reportQuantity_41_compare(asn_TYPE_descriptor_t *td1,
+reportQuantity_37_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	reportQuantity_41_inherit_TYPE_descriptor(td1);
-	reportQuantity_41_inherit_TYPE_descriptor(td2);
+	reportQuantity_37_inherit_TYPE_descriptor(td1);
+	reportQuantity_37_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-reportQuantity_41_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportQuantity_37_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	reportQuantity_41_inherit_TYPE_descriptor(td);
+	reportQuantity_37_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-reportAmount_46_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+reportAmount_42_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -449,7 +449,7 @@ reportAmount_46_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
  * so here we adjust the DEF accordingly.
  */
 static void
-reportAmount_46_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+reportAmount_42_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -469,93 +469,93 @@ reportAmount_46_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 }
 
 static void
-reportAmount_46_free(asn_TYPE_descriptor_t *td,
+reportAmount_42_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	reportAmount_46_inherit_TYPE_descriptor(td);
+	reportAmount_42_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-reportAmount_46_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+reportAmount_42_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	reportAmount_46_inherit_TYPE_descriptor(td);
+	reportAmount_42_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportAmount_46_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportAmount_42_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	reportAmount_46_inherit_TYPE_descriptor(td);
+	reportAmount_42_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-reportAmount_46_encode_der(asn_TYPE_descriptor_t *td,
+reportAmount_42_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	reportAmount_46_inherit_TYPE_descriptor(td);
+	reportAmount_42_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportAmount_46_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportAmount_42_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	reportAmount_46_inherit_TYPE_descriptor(td);
+	reportAmount_42_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-reportAmount_46_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+reportAmount_42_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	reportAmount_46_inherit_TYPE_descriptor(td);
+	reportAmount_42_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportAmount_46_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportAmount_42_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	reportAmount_46_inherit_TYPE_descriptor(td);
+	reportAmount_42_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-reportAmount_46_encode_uper(asn_TYPE_descriptor_t *td,
+reportAmount_42_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	reportAmount_46_inherit_TYPE_descriptor(td);
+	reportAmount_42_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-reportAmount_46_encode_aper(asn_TYPE_descriptor_t *td,
+reportAmount_42_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	reportAmount_46_inherit_TYPE_descriptor(td);
+	reportAmount_42_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-reportAmount_46_compare(asn_TYPE_descriptor_t *td1,
+reportAmount_42_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	reportAmount_46_inherit_TYPE_descriptor(td1);
-	reportAmount_46_inherit_TYPE_descriptor(td2);
+	reportAmount_42_inherit_TYPE_descriptor(td1);
+	reportAmount_42_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-reportAmount_46_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportAmount_42_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	reportAmount_46_inherit_TYPE_descriptor(td);
+	reportAmount_42_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-si_RequestForHO_r9_57_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+si_RequestForHO_r9_53_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -567,7 +567,7 @@ si_RequestForHO_r9_57_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
  * so here we adjust the DEF accordingly.
  */
 static void
-si_RequestForHO_r9_57_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+si_RequestForHO_r9_53_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -587,93 +587,93 @@ si_RequestForHO_r9_57_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 }
 
 static void
-si_RequestForHO_r9_57_free(asn_TYPE_descriptor_t *td,
+si_RequestForHO_r9_53_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-si_RequestForHO_r9_57_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+si_RequestForHO_r9_53_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-si_RequestForHO_r9_57_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+si_RequestForHO_r9_53_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-si_RequestForHO_r9_57_encode_der(asn_TYPE_descriptor_t *td,
+si_RequestForHO_r9_53_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-si_RequestForHO_r9_57_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+si_RequestForHO_r9_53_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-si_RequestForHO_r9_57_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+si_RequestForHO_r9_53_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-si_RequestForHO_r9_57_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+si_RequestForHO_r9_53_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-si_RequestForHO_r9_57_encode_uper(asn_TYPE_descriptor_t *td,
+si_RequestForHO_r9_53_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-si_RequestForHO_r9_57_encode_aper(asn_TYPE_descriptor_t *td,
+si_RequestForHO_r9_53_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-si_RequestForHO_r9_57_compare(asn_TYPE_descriptor_t *td1,
+si_RequestForHO_r9_53_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td1);
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td2);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td1);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-si_RequestForHO_r9_57_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+si_RequestForHO_r9_53_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	si_RequestForHO_r9_57_inherit_TYPE_descriptor(td);
+	si_RequestForHO_r9_53_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-ue_RxTxTimeDiffPeriodical_r9_59_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+ue_RxTxTimeDiffPeriodical_r9_55_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -685,7 +685,7 @@ ue_RxTxTimeDiffPeriodical_r9_59_constraint(asn_TYPE_descriptor_t *td, const void
  * so here we adjust the DEF accordingly.
  */
 static void
-ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -705,93 +705,93 @@ ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *t
 }
 
 static void
-ue_RxTxTimeDiffPeriodical_r9_59_free(asn_TYPE_descriptor_t *td,
+ue_RxTxTimeDiffPeriodical_r9_55_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-ue_RxTxTimeDiffPeriodical_r9_59_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+ue_RxTxTimeDiffPeriodical_r9_55_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-ue_RxTxTimeDiffPeriodical_r9_59_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+ue_RxTxTimeDiffPeriodical_r9_55_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-ue_RxTxTimeDiffPeriodical_r9_59_encode_der(asn_TYPE_descriptor_t *td,
+ue_RxTxTimeDiffPeriodical_r9_55_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-ue_RxTxTimeDiffPeriodical_r9_59_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+ue_RxTxTimeDiffPeriodical_r9_55_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-ue_RxTxTimeDiffPeriodical_r9_59_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+ue_RxTxTimeDiffPeriodical_r9_55_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-ue_RxTxTimeDiffPeriodical_r9_59_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+ue_RxTxTimeDiffPeriodical_r9_55_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-ue_RxTxTimeDiffPeriodical_r9_59_encode_uper(asn_TYPE_descriptor_t *td,
+ue_RxTxTimeDiffPeriodical_r9_55_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-ue_RxTxTimeDiffPeriodical_r9_59_encode_aper(asn_TYPE_descriptor_t *td,
+ue_RxTxTimeDiffPeriodical_r9_55_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-ue_RxTxTimeDiffPeriodical_r9_59_compare(asn_TYPE_descriptor_t *td1,
+ue_RxTxTimeDiffPeriodical_r9_55_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td1);
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td2);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td1);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-ue_RxTxTimeDiffPeriodical_r9_59_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+ue_RxTxTimeDiffPeriodical_r9_55_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	ue_RxTxTimeDiffPeriodical_r9_59_inherit_TYPE_descriptor(td);
+	ue_RxTxTimeDiffPeriodical_r9_55_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-includeLocationInfo_r10_62_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+includeLocationInfo_r10_58_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -803,7 +803,7 @@ includeLocationInfo_r10_62_constraint(asn_TYPE_descriptor_t *td, const void *spt
  * so here we adjust the DEF accordingly.
  */
 static void
-includeLocationInfo_r10_62_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+includeLocationInfo_r10_58_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -823,93 +823,93 @@ includeLocationInfo_r10_62_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 }
 
 static void
-includeLocationInfo_r10_62_free(asn_TYPE_descriptor_t *td,
+includeLocationInfo_r10_58_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-includeLocationInfo_r10_62_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+includeLocationInfo_r10_58_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-includeLocationInfo_r10_62_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+includeLocationInfo_r10_58_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-includeLocationInfo_r10_62_encode_der(asn_TYPE_descriptor_t *td,
+includeLocationInfo_r10_58_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-includeLocationInfo_r10_62_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+includeLocationInfo_r10_58_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-includeLocationInfo_r10_62_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+includeLocationInfo_r10_58_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-includeLocationInfo_r10_62_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+includeLocationInfo_r10_58_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-includeLocationInfo_r10_62_encode_uper(asn_TYPE_descriptor_t *td,
+includeLocationInfo_r10_58_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-includeLocationInfo_r10_62_encode_aper(asn_TYPE_descriptor_t *td,
+includeLocationInfo_r10_58_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-includeLocationInfo_r10_62_compare(asn_TYPE_descriptor_t *td1,
+includeLocationInfo_r10_58_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td1);
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td2);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td1);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-includeLocationInfo_r10_62_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+includeLocationInfo_r10_58_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	includeLocationInfo_r10_62_inherit_TYPE_descriptor(td);
+	includeLocationInfo_r10_58_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-reportAddNeighMeas_r10_64_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+reportAddNeighMeas_r10_60_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -921,7 +921,7 @@ reportAddNeighMeas_r10_64_constraint(asn_TYPE_descriptor_t *td, const void *sptr
  * so here we adjust the DEF accordingly.
  */
 static void
-reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -941,93 +941,93 @@ reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 }
 
 static void
-reportAddNeighMeas_r10_64_free(asn_TYPE_descriptor_t *td,
+reportAddNeighMeas_r10_60_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-reportAddNeighMeas_r10_64_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+reportAddNeighMeas_r10_60_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportAddNeighMeas_r10_64_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportAddNeighMeas_r10_60_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-reportAddNeighMeas_r10_64_encode_der(asn_TYPE_descriptor_t *td,
+reportAddNeighMeas_r10_60_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportAddNeighMeas_r10_64_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportAddNeighMeas_r10_60_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-reportAddNeighMeas_r10_64_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+reportAddNeighMeas_r10_60_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportAddNeighMeas_r10_64_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportAddNeighMeas_r10_60_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-reportAddNeighMeas_r10_64_encode_uper(asn_TYPE_descriptor_t *td,
+reportAddNeighMeas_r10_60_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-reportAddNeighMeas_r10_64_encode_aper(asn_TYPE_descriptor_t *td,
+reportAddNeighMeas_r10_60_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-reportAddNeighMeas_r10_64_compare(asn_TYPE_descriptor_t *td1,
+reportAddNeighMeas_r10_60_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td1);
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td2);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td1);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-reportAddNeighMeas_r10_64_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportAddNeighMeas_r10_60_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	reportAddNeighMeas_r10_64_inherit_TYPE_descriptor(td);
+	reportAddNeighMeas_r10_60_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-triggerQuantity_v1310_82_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+triggerQuantity_v1310_78_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -1039,7 +1039,7 @@ triggerQuantity_v1310_82_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
  * so here we adjust the DEF accordingly.
  */
 static void
-triggerQuantity_v1310_82_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+triggerQuantity_v1310_78_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -1059,93 +1059,93 @@ triggerQuantity_v1310_82_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 }
 
 static void
-triggerQuantity_v1310_82_free(asn_TYPE_descriptor_t *td,
+triggerQuantity_v1310_78_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-triggerQuantity_v1310_82_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+triggerQuantity_v1310_78_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-triggerQuantity_v1310_82_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+triggerQuantity_v1310_78_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-triggerQuantity_v1310_82_encode_der(asn_TYPE_descriptor_t *td,
+triggerQuantity_v1310_78_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-triggerQuantity_v1310_82_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+triggerQuantity_v1310_78_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-triggerQuantity_v1310_82_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+triggerQuantity_v1310_78_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-triggerQuantity_v1310_82_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+triggerQuantity_v1310_78_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-triggerQuantity_v1310_82_encode_uper(asn_TYPE_descriptor_t *td,
+triggerQuantity_v1310_78_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-triggerQuantity_v1310_82_encode_aper(asn_TYPE_descriptor_t *td,
+triggerQuantity_v1310_78_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-triggerQuantity_v1310_82_compare(asn_TYPE_descriptor_t *td1,
+triggerQuantity_v1310_78_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td1);
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td2);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td1);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-triggerQuantity_v1310_82_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+triggerQuantity_v1310_78_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	triggerQuantity_v1310_82_inherit_TYPE_descriptor(td);
+	triggerQuantity_v1310_78_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-reportQuantity_v1310_86_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+reportQuantity_v1310_82_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -1157,7 +1157,7 @@ reportQuantity_v1310_86_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
  * so here we adjust the DEF accordingly.
  */
 static void
-reportQuantity_v1310_86_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+reportQuantity_v1310_82_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -1177,93 +1177,93 @@ reportQuantity_v1310_86_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 }
 
 static void
-reportQuantity_v1310_86_free(asn_TYPE_descriptor_t *td,
+reportQuantity_v1310_82_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-reportQuantity_v1310_86_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+reportQuantity_v1310_82_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportQuantity_v1310_86_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportQuantity_v1310_82_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-reportQuantity_v1310_86_encode_der(asn_TYPE_descriptor_t *td,
+reportQuantity_v1310_82_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportQuantity_v1310_86_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportQuantity_v1310_82_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-reportQuantity_v1310_86_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+reportQuantity_v1310_82_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-reportQuantity_v1310_86_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportQuantity_v1310_82_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-reportQuantity_v1310_86_encode_uper(asn_TYPE_descriptor_t *td,
+reportQuantity_v1310_82_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-reportQuantity_v1310_86_encode_aper(asn_TYPE_descriptor_t *td,
+reportQuantity_v1310_82_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-reportQuantity_v1310_86_compare(asn_TYPE_descriptor_t *td1,
+reportQuantity_v1310_82_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td1);
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td2);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td1);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-reportQuantity_v1310_86_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+reportQuantity_v1310_82_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	reportQuantity_v1310_86_inherit_TYPE_descriptor(td);
+	reportQuantity_v1310_82_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-includeMultiBandInfo_r13_92_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+includeMultiBandInfo_r13_88_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -1275,7 +1275,7 @@ includeMultiBandInfo_r13_92_constraint(asn_TYPE_descriptor_t *td, const void *sp
  * so here we adjust the DEF accordingly.
  */
 static void
-includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -1295,206 +1295,88 @@ includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 }
 
 static void
-includeMultiBandInfo_r13_92_free(asn_TYPE_descriptor_t *td,
+includeMultiBandInfo_r13_88_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-includeMultiBandInfo_r13_92_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+includeMultiBandInfo_r13_88_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-includeMultiBandInfo_r13_92_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+includeMultiBandInfo_r13_88_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-includeMultiBandInfo_r13_92_encode_der(asn_TYPE_descriptor_t *td,
+includeMultiBandInfo_r13_88_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-includeMultiBandInfo_r13_92_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+includeMultiBandInfo_r13_88_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-includeMultiBandInfo_r13_92_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+includeMultiBandInfo_r13_88_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-includeMultiBandInfo_r13_92_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+includeMultiBandInfo_r13_88_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-includeMultiBandInfo_r13_92_encode_uper(asn_TYPE_descriptor_t *td,
+includeMultiBandInfo_r13_88_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-includeMultiBandInfo_r13_92_encode_aper(asn_TYPE_descriptor_t *td,
+includeMultiBandInfo_r13_88_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-includeMultiBandInfo_r13_92_compare(asn_TYPE_descriptor_t *td1,
+includeMultiBandInfo_r13_88_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td1);
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td2);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td1);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-includeMultiBandInfo_r13_92_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+includeMultiBandInfo_r13_88_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	includeMultiBandInfo_r13_92_inherit_TYPE_descriptor(td);
-	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static int
-purpose_v1430_98_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	/* Replace with underlying type checker */
-	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
-	return td->check_constraints(td, sptr, ctfailcb, app_key);
-}
-
-/*
- * This type is implemented using NativeEnumerated,
- * so here we adjust the DEF accordingly.
- */
-static void
-purpose_v1430_98_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
-	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
-	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
-	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
-	td->der_encoder    = asn_DEF_NativeEnumerated.der_encoder;
-	td->xer_decoder    = asn_DEF_NativeEnumerated.xer_decoder;
-	td->xer_encoder    = asn_DEF_NativeEnumerated.xer_encoder;
-	td->uper_decoder   = asn_DEF_NativeEnumerated.uper_decoder;
-	td->uper_encoder   = asn_DEF_NativeEnumerated.uper_encoder;
-	td->aper_decoder   = asn_DEF_NativeEnumerated.aper_decoder;
-	td->aper_encoder   = asn_DEF_NativeEnumerated.aper_encoder;
-	td->compare        = asn_DEF_NativeEnumerated.compare;
-	if(!td->per_constraints)
-		td->per_constraints = asn_DEF_NativeEnumerated.per_constraints;
-	td->elements       = asn_DEF_NativeEnumerated.elements;
-	td->elements_count = asn_DEF_NativeEnumerated.elements_count;
-     /* td->specifics      = asn_DEF_NativeEnumerated.specifics;	// Defined explicitly */
-}
-
-static void
-purpose_v1430_98_free(asn_TYPE_descriptor_t *td,
-		void *struct_ptr, int contents_only) {
-	purpose_v1430_98_inherit_TYPE_descriptor(td);
-	td->free_struct(td, struct_ptr, contents_only);
-}
-
-static int
-purpose_v1430_98_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
-		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	purpose_v1430_98_inherit_TYPE_descriptor(td);
-	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
-}
-
-static asn_dec_rval_t
-purpose_v1430_98_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	purpose_v1430_98_inherit_TYPE_descriptor(td);
-	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
-}
-
-static asn_enc_rval_t
-purpose_v1430_98_encode_der(asn_TYPE_descriptor_t *td,
-		void *structure, int tag_mode, ber_tlv_tag_t tag,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	purpose_v1430_98_inherit_TYPE_descriptor(td);
-	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
-}
-
-static asn_dec_rval_t
-purpose_v1430_98_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	purpose_v1430_98_inherit_TYPE_descriptor(td);
-	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
-}
-
-static asn_enc_rval_t
-purpose_v1430_98_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
-		int ilevel, enum xer_encoder_flags_e flags,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	purpose_v1430_98_inherit_TYPE_descriptor(td);
-	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
-}
-
-static asn_dec_rval_t
-purpose_v1430_98_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	purpose_v1430_98_inherit_TYPE_descriptor(td);
-	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static asn_enc_rval_t
-purpose_v1430_98_encode_uper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	purpose_v1430_98_inherit_TYPE_descriptor(td);
-	return td->uper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_enc_rval_t
-purpose_v1430_98_encode_aper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	purpose_v1430_98_inherit_TYPE_descriptor(td);
-	return td->aper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_comp_rval_t * 
-purpose_v1430_98_compare(asn_TYPE_descriptor_t *td1,
-		const void *structure1,
-		asn_TYPE_descriptor_t *td2,
-		const void *structure2) {
-	asn_comp_rval_t * res  = NULL;
-	purpose_v1430_98_inherit_TYPE_descriptor(td1);
-	purpose_v1430_98_inherit_TYPE_descriptor(td2);
-	res = td1->compare(td1, structure1, td2, structure2);
-	return res;
-}
-
-static asn_dec_rval_t
-purpose_v1430_98_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	purpose_v1430_98_inherit_TYPE_descriptor(td);
+	includeMultiBandInfo_r13_88_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
@@ -1543,7 +1425,7 @@ static asn_per_constraints_t asn_PER_type_eventId_constr_4 GCC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_purpose_constr_35 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_purpose_constr_31 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
@@ -1553,72 +1435,67 @@ static asn_per_constraints_t asn_PER_type_triggerType_constr_2 GCC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_triggerQuantity_constr_38 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_triggerQuantity_constr_34 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_reportQuantity_constr_41 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_reportQuantity_constr_37 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_reportAmount_constr_46 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_reportAmount_constr_42 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 3,  3,  0,  7 }	/* (0..7) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_si_RequestForHO_r9_constr_57 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_si_RequestForHO_r9_constr_53 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_ue_RxTxTimeDiffPeriodical_r9_constr_59 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_ue_RxTxTimeDiffPeriodical_r9_constr_55 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_includeLocationInfo_r10_constr_62 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_includeLocationInfo_r10_constr_58 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_reportAddNeighMeas_r10_constr_64 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_reportAddNeighMeas_r10_constr_60 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_alternativeTimeToTrigger_r12_constr_67 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_alternativeTimeToTrigger_r12_constr_63 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_triggerQuantity_v1310_constr_82 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_triggerQuantity_v1310_constr_78 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_reportQuantity_v1310_constr_86 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_reportQuantity_v1310_constr_82 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_rs_sinr_Config_r13_constr_79 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_rs_sinr_Config_r13_constr_75 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_includeMultiBandInfo_r13_constr_92 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_includeMultiBandInfo_r13_constr_88 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_purpose_v1430_constr_98 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 2,  2,  0,  3 }	/* (0..3) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_maxReportCells_constr_44 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_memb_maxReportCells_constr_40 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 3,  3,  1,  8 }	/* (1..8) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
@@ -1639,7 +1516,7 @@ static ber_tlv_tag_t asn_DEF_eventA1_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventA1_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* a1-Threshold at 7927 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* a1-Threshold at 7192 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventA1_specs_5 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId__eventA1),
@@ -1695,7 +1572,7 @@ static ber_tlv_tag_t asn_DEF_eventA2_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventA2_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* a2-Threshold at 7930 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* a2-Threshold at 7195 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventA2_specs_7 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId__eventA2),
@@ -1760,8 +1637,8 @@ static ber_tlv_tag_t asn_DEF_eventA3_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventA3_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* a3-Offset at 7932 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* reportOnLeave at 7933 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* a3-Offset at 7197 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* reportOnLeave at 7198 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventA3_specs_9 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId__eventA3),
@@ -1817,7 +1694,7 @@ static ber_tlv_tag_t asn_DEF_eventA4_tags_12[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventA4_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* a4-Threshold at 7937 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* a4-Threshold at 7202 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventA4_specs_12 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId__eventA4),
@@ -1882,8 +1759,8 @@ static ber_tlv_tag_t asn_DEF_eventA5_tags_14[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventA5_tag2el_14[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* a5-Threshold1 at 7939 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* a5-Threshold2 at 7941 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* a5-Threshold1 at 7204 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* a5-Threshold2 at 7206 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventA5_specs_14 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId__eventA5),
@@ -1948,8 +1825,8 @@ static ber_tlv_tag_t asn_DEF_eventA6_r10_tags_18[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventA6_r10_tag2el_18[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* a6-Offset-r10 at 7944 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* a6-ReportOnLeave-r10 at 7945 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* a6-Offset-r10 at 7209 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* a6-ReportOnLeave-r10 at 7210 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventA6_r10_specs_18 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId__eventA6_r10),
@@ -2014,8 +1891,8 @@ static ber_tlv_tag_t asn_DEF_eventC1_r12_tags_21[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventC1_r12_tag2el_21[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1-Threshold-r12 at 7948 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* c1-ReportOnLeave-r12 at 7949 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1-Threshold-r12 at 7213 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* c1-ReportOnLeave-r12 at 7214 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventC1_r12_specs_21 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId__eventC1_r12),
@@ -2089,9 +1966,9 @@ static ber_tlv_tag_t asn_DEF_eventC2_r12_tags_24[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventC2_r12_tag2el_24[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c2-RefCSI-RS-r12 at 7952 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* c2-Offset-r12 at 7953 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* c2-ReportOnLeave-r12 at 7954 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c2-RefCSI-RS-r12 at 7217 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* c2-Offset-r12 at 7218 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* c2-ReportOnLeave-r12 at 7219 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventC2_r12_specs_24 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId__eventC2_r12),
@@ -2129,118 +2006,6 @@ asn_TYPE_descriptor_t asn_DEF_eventC2_r12_24 = {
 	asn_MBR_eventC2_r12_24,
 	3,	/* Elements count */
 	&asn_SPC_eventC2_r12_specs_24	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_eventV1_r14_28[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA__triggerType__event__eventId__eventV1_r14, v1_Threshold_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SL_CBR_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"v1-Threshold-r14"
-		},
-};
-static ber_tlv_tag_t asn_DEF_eventV1_r14_tags_28[] = {
-	(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_eventV1_r14_tag2el_28[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* v1-Threshold-r14 at 7958 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_eventV1_r14_specs_28 = {
-	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId__eventV1_r14),
-	offsetof(struct ReportConfigEUTRA__triggerType__event__eventId__eventV1_r14, _asn_ctx),
-	asn_MAP_eventV1_r14_tag2el_28,
-	1,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_eventV1_r14_28 = {
-	"eventV1-r14",
-	"eventV1-r14",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_eventV1_r14_tags_28,
-	sizeof(asn_DEF_eventV1_r14_tags_28)
-		/sizeof(asn_DEF_eventV1_r14_tags_28[0]) - 1, /* 1 */
-	asn_DEF_eventV1_r14_tags_28,	/* Same as above */
-	sizeof(asn_DEF_eventV1_r14_tags_28)
-		/sizeof(asn_DEF_eventV1_r14_tags_28[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_eventV1_r14_28,
-	1,	/* Elements count */
-	&asn_SPC_eventV1_r14_specs_28	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_eventV2_r14_30[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA__triggerType__event__eventId__eventV2_r14, v2_Threshold_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SL_CBR_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"v2-Threshold-r14"
-		},
-};
-static ber_tlv_tag_t asn_DEF_eventV2_r14_tags_30[] = {
-	(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_eventV2_r14_tag2el_30[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* v2-Threshold-r14 at 7961 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_eventV2_r14_specs_30 = {
-	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId__eventV2_r14),
-	offsetof(struct ReportConfigEUTRA__triggerType__event__eventId__eventV2_r14, _asn_ctx),
-	asn_MAP_eventV2_r14_tag2el_30,
-	1,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_eventV2_r14_30 = {
-	"eventV2-r14",
-	"eventV2-r14",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_eventV2_r14_tags_30,
-	sizeof(asn_DEF_eventV2_r14_tags_30)
-		/sizeof(asn_DEF_eventV2_r14_tags_30[0]) - 1, /* 1 */
-	asn_DEF_eventV2_r14_tags_30,	/* Same as above */
-	sizeof(asn_DEF_eventV2_r14_tags_30)
-		/sizeof(asn_DEF_eventV2_r14_tags_30[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_eventV2_r14_30,
-	1,	/* Elements count */
-	&asn_SPC_eventV2_r14_specs_30	/* Additional specs */
 };
 
 static asn_TYPE_member_t asn_MBR_eventId_4[] = {
@@ -2316,36 +2081,16 @@ static asn_TYPE_member_t asn_MBR_eventId_4[] = {
 		0,
 		"eventC2-r12"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA__triggerType__event__eventId, choice.eventV1_r14),
-		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-		0,
-		&asn_DEF_eventV1_r14_28,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"eventV1-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA__triggerType__event__eventId, choice.eventV2_r14),
-		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
-		0,
-		&asn_DEF_eventV2_r14_30,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"eventV2-r14"
-		},
 };
 static asn_TYPE_tag2member_t asn_MAP_eventId_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eventA1 at 7927 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eventA2 at 7930 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* eventA3 at 7932 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* eventA4 at 7937 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* eventA5 at 7939 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* eventA6-r10 at 7944 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* eventC1-r12 at 7948 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* eventC2-r12 at 7952 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* eventV1-r14 at 7958 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* eventV2-r14 at 7961 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eventA1 at 7192 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eventA2 at 7195 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* eventA3 at 7197 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* eventA4 at 7202 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* eventA5 at 7204 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* eventA6-r10 at 7209 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* eventC1-r12 at 7213 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* eventC2-r12 at 7217 */
 };
 static asn_CHOICE_specifics_t asn_SPC_eventId_specs_4 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__event__eventId),
@@ -2353,7 +2098,7 @@ static asn_CHOICE_specifics_t asn_SPC_eventId_specs_4 = {
 	offsetof(struct ReportConfigEUTRA__triggerType__event__eventId, present),
 	sizeof(((struct ReportConfigEUTRA__triggerType__event__eventId *)0)->present),
 	asn_MAP_eventId_tag2el_4,
-	10,	/* Count of tags in the map */
+	8,	/* Count of tags in the map */
 	0,
 	5	/* Extensions start */
 };
@@ -2380,7 +2125,7 @@ asn_TYPE_descriptor_t asn_DEF_eventId_4 = {
 	0,	/* No tags (count) */
 	&asn_PER_type_eventId_constr_4,
 	asn_MBR_eventId_4,
-	10,	/* Elements count */
+	8,	/* Elements count */
 	&asn_SPC_eventId_specs_4	/* Additional specs */
 };
 
@@ -2418,9 +2163,9 @@ static ber_tlv_tag_t asn_DEF_event_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_event_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eventId at 7927 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* hysteresis at 7963 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* timeToTrigger at 7965 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eventId at 7192 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* hysteresis at 7222 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* timeToTrigger at 7224 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_event_specs_3 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__event),
@@ -2460,84 +2205,84 @@ asn_TYPE_descriptor_t asn_DEF_event_3 = {
 	&asn_SPC_event_specs_3	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_purpose_value2enum_35[] = {
+static asn_INTEGER_enum_map_t asn_MAP_purpose_value2enum_31[] = {
 	{ 0,	20,	"reportStrongestCells" },
 	{ 1,	9,	"reportCGI" }
 };
-static unsigned int asn_MAP_purpose_enum2value_35[] = {
+static unsigned int asn_MAP_purpose_enum2value_31[] = {
 	1,	/* reportCGI(1) */
 	0	/* reportStrongestCells(0) */
 };
-static asn_INTEGER_specifics_t asn_SPC_purpose_specs_35 = {
-	asn_MAP_purpose_value2enum_35,	/* "tag" => N; sorted by tag */
-	asn_MAP_purpose_enum2value_35,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_purpose_specs_31 = {
+	asn_MAP_purpose_value2enum_31,	/* "tag" => N; sorted by tag */
+	asn_MAP_purpose_enum2value_31,	/* N => "tag"; sorted by N */
 	2,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_purpose_tags_35[] = {
+static ber_tlv_tag_t asn_DEF_purpose_tags_31[] = {
 	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_purpose_35 = {
+asn_TYPE_descriptor_t asn_DEF_purpose_31 = {
 	"purpose",
 	"purpose",
-	purpose_35_free,
-	purpose_35_print,
-	purpose_35_constraint,
-	purpose_35_decode_ber,
-	purpose_35_encode_der,
-	purpose_35_decode_xer,
-	purpose_35_encode_xer,
-	purpose_35_decode_uper,
-	purpose_35_encode_uper,
-	purpose_35_decode_aper,
-	purpose_35_encode_aper,
-	purpose_35_compare,
+	purpose_31_free,
+	purpose_31_print,
+	purpose_31_constraint,
+	purpose_31_decode_ber,
+	purpose_31_encode_der,
+	purpose_31_decode_xer,
+	purpose_31_encode_xer,
+	purpose_31_decode_uper,
+	purpose_31_encode_uper,
+	purpose_31_decode_aper,
+	purpose_31_encode_aper,
+	purpose_31_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_purpose_tags_35,
-	sizeof(asn_DEF_purpose_tags_35)
-		/sizeof(asn_DEF_purpose_tags_35[0]) - 1, /* 1 */
-	asn_DEF_purpose_tags_35,	/* Same as above */
-	sizeof(asn_DEF_purpose_tags_35)
-		/sizeof(asn_DEF_purpose_tags_35[0]), /* 2 */
-	&asn_PER_type_purpose_constr_35,
+	asn_DEF_purpose_tags_31,
+	sizeof(asn_DEF_purpose_tags_31)
+		/sizeof(asn_DEF_purpose_tags_31[0]) - 1, /* 1 */
+	asn_DEF_purpose_tags_31,	/* Same as above */
+	sizeof(asn_DEF_purpose_tags_31)
+		/sizeof(asn_DEF_purpose_tags_31[0]), /* 2 */
+	&asn_PER_type_purpose_constr_31,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_purpose_specs_35	/* Additional specs */
+	&asn_SPC_purpose_specs_31	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_periodical_34[] = {
+static asn_TYPE_member_t asn_MBR_periodical_30[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA__triggerType__periodical, purpose),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_purpose_35,
+		&asn_DEF_purpose_31,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"purpose"
 		},
 };
-static ber_tlv_tag_t asn_DEF_periodical_tags_34[] = {
+static ber_tlv_tag_t asn_DEF_periodical_tags_30[] = {
 	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static asn_TYPE_tag2member_t asn_MAP_periodical_tag2el_34[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* purpose at 7968 */
+static asn_TYPE_tag2member_t asn_MAP_periodical_tag2el_30[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* purpose at 7227 */
 };
-static asn_SEQUENCE_specifics_t asn_SPC_periodical_specs_34 = {
+static asn_SEQUENCE_specifics_t asn_SPC_periodical_specs_30 = {
 	sizeof(struct ReportConfigEUTRA__triggerType__periodical),
 	offsetof(struct ReportConfigEUTRA__triggerType__periodical, _asn_ctx),
-	asn_MAP_periodical_tag2el_34,
+	asn_MAP_periodical_tag2el_30,
 	1,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_periodical_34 = {
+asn_TYPE_descriptor_t asn_DEF_periodical_30 = {
 	"periodical",
 	"periodical",
 	SEQUENCE_free,
@@ -2553,16 +2298,16 @@ asn_TYPE_descriptor_t asn_DEF_periodical_34 = {
 	SEQUENCE_encode_aper,
 	SEQUENCE_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_periodical_tags_34,
-	sizeof(asn_DEF_periodical_tags_34)
-		/sizeof(asn_DEF_periodical_tags_34[0]) - 1, /* 1 */
-	asn_DEF_periodical_tags_34,	/* Same as above */
-	sizeof(asn_DEF_periodical_tags_34)
-		/sizeof(asn_DEF_periodical_tags_34[0]), /* 2 */
+	asn_DEF_periodical_tags_30,
+	sizeof(asn_DEF_periodical_tags_30)
+		/sizeof(asn_DEF_periodical_tags_30[0]) - 1, /* 1 */
+	asn_DEF_periodical_tags_30,	/* Same as above */
+	sizeof(asn_DEF_periodical_tags_30)
+		/sizeof(asn_DEF_periodical_tags_30[0]), /* 2 */
 	0,	/* No PER visible constraints */
-	asn_MBR_periodical_34,
+	asn_MBR_periodical_30,
 	1,	/* Elements count */
-	&asn_SPC_periodical_specs_34	/* Additional specs */
+	&asn_SPC_periodical_specs_30	/* Additional specs */
 };
 
 static asn_TYPE_member_t asn_MBR_triggerType_2[] = {
@@ -2578,7 +2323,7 @@ static asn_TYPE_member_t asn_MBR_triggerType_2[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA__triggerType, choice.periodical),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		0,
-		&asn_DEF_periodical_34,
+		&asn_DEF_periodical_30,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -2586,8 +2331,8 @@ static asn_TYPE_member_t asn_MBR_triggerType_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_triggerType_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* event at 7962 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* periodical at 7969 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* event at 7221 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* periodical at 7228 */
 };
 static asn_CHOICE_specifics_t asn_SPC_triggerType_specs_2 = {
 	sizeof(struct ReportConfigEUTRA__triggerType),
@@ -2626,105 +2371,105 @@ asn_TYPE_descriptor_t asn_DEF_triggerType_2 = {
 	&asn_SPC_triggerType_specs_2	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_triggerQuantity_value2enum_38[] = {
+static asn_INTEGER_enum_map_t asn_MAP_triggerQuantity_value2enum_34[] = {
 	{ 0,	4,	"rsrp" },
 	{ 1,	4,	"rsrq" }
 };
-static unsigned int asn_MAP_triggerQuantity_enum2value_38[] = {
+static unsigned int asn_MAP_triggerQuantity_enum2value_34[] = {
 	0,	/* rsrp(0) */
 	1	/* rsrq(1) */
 };
-static asn_INTEGER_specifics_t asn_SPC_triggerQuantity_specs_38 = {
-	asn_MAP_triggerQuantity_value2enum_38,	/* "tag" => N; sorted by tag */
-	asn_MAP_triggerQuantity_enum2value_38,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_triggerQuantity_specs_34 = {
+	asn_MAP_triggerQuantity_value2enum_34,	/* "tag" => N; sorted by tag */
+	asn_MAP_triggerQuantity_enum2value_34,	/* N => "tag"; sorted by N */
 	2,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_triggerQuantity_tags_38[] = {
+static ber_tlv_tag_t asn_DEF_triggerQuantity_tags_34[] = {
 	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_triggerQuantity_38 = {
+asn_TYPE_descriptor_t asn_DEF_triggerQuantity_34 = {
 	"triggerQuantity",
 	"triggerQuantity",
-	triggerQuantity_38_free,
-	triggerQuantity_38_print,
-	triggerQuantity_38_constraint,
-	triggerQuantity_38_decode_ber,
-	triggerQuantity_38_encode_der,
-	triggerQuantity_38_decode_xer,
-	triggerQuantity_38_encode_xer,
-	triggerQuantity_38_decode_uper,
-	triggerQuantity_38_encode_uper,
-	triggerQuantity_38_decode_aper,
-	triggerQuantity_38_encode_aper,
-	triggerQuantity_38_compare,
+	triggerQuantity_34_free,
+	triggerQuantity_34_print,
+	triggerQuantity_34_constraint,
+	triggerQuantity_34_decode_ber,
+	triggerQuantity_34_encode_der,
+	triggerQuantity_34_decode_xer,
+	triggerQuantity_34_encode_xer,
+	triggerQuantity_34_decode_uper,
+	triggerQuantity_34_encode_uper,
+	triggerQuantity_34_decode_aper,
+	triggerQuantity_34_encode_aper,
+	triggerQuantity_34_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_triggerQuantity_tags_38,
-	sizeof(asn_DEF_triggerQuantity_tags_38)
-		/sizeof(asn_DEF_triggerQuantity_tags_38[0]) - 1, /* 1 */
-	asn_DEF_triggerQuantity_tags_38,	/* Same as above */
-	sizeof(asn_DEF_triggerQuantity_tags_38)
-		/sizeof(asn_DEF_triggerQuantity_tags_38[0]), /* 2 */
-	&asn_PER_type_triggerQuantity_constr_38,
+	asn_DEF_triggerQuantity_tags_34,
+	sizeof(asn_DEF_triggerQuantity_tags_34)
+		/sizeof(asn_DEF_triggerQuantity_tags_34[0]) - 1, /* 1 */
+	asn_DEF_triggerQuantity_tags_34,	/* Same as above */
+	sizeof(asn_DEF_triggerQuantity_tags_34)
+		/sizeof(asn_DEF_triggerQuantity_tags_34[0]), /* 2 */
+	&asn_PER_type_triggerQuantity_constr_34,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_triggerQuantity_specs_38	/* Additional specs */
+	&asn_SPC_triggerQuantity_specs_34	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_reportQuantity_value2enum_41[] = {
+static asn_INTEGER_enum_map_t asn_MAP_reportQuantity_value2enum_37[] = {
 	{ 0,	21,	"sameAsTriggerQuantity" },
 	{ 1,	4,	"both" }
 };
-static unsigned int asn_MAP_reportQuantity_enum2value_41[] = {
+static unsigned int asn_MAP_reportQuantity_enum2value_37[] = {
 	1,	/* both(1) */
 	0	/* sameAsTriggerQuantity(0) */
 };
-static asn_INTEGER_specifics_t asn_SPC_reportQuantity_specs_41 = {
-	asn_MAP_reportQuantity_value2enum_41,	/* "tag" => N; sorted by tag */
-	asn_MAP_reportQuantity_enum2value_41,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_reportQuantity_specs_37 = {
+	asn_MAP_reportQuantity_value2enum_37,	/* "tag" => N; sorted by tag */
+	asn_MAP_reportQuantity_enum2value_37,	/* N => "tag"; sorted by N */
 	2,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_reportQuantity_tags_41[] = {
+static ber_tlv_tag_t asn_DEF_reportQuantity_tags_37[] = {
 	(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_reportQuantity_41 = {
+asn_TYPE_descriptor_t asn_DEF_reportQuantity_37 = {
 	"reportQuantity",
 	"reportQuantity",
-	reportQuantity_41_free,
-	reportQuantity_41_print,
-	reportQuantity_41_constraint,
-	reportQuantity_41_decode_ber,
-	reportQuantity_41_encode_der,
-	reportQuantity_41_decode_xer,
-	reportQuantity_41_encode_xer,
-	reportQuantity_41_decode_uper,
-	reportQuantity_41_encode_uper,
-	reportQuantity_41_decode_aper,
-	reportQuantity_41_encode_aper,
-	reportQuantity_41_compare,
+	reportQuantity_37_free,
+	reportQuantity_37_print,
+	reportQuantity_37_constraint,
+	reportQuantity_37_decode_ber,
+	reportQuantity_37_encode_der,
+	reportQuantity_37_decode_xer,
+	reportQuantity_37_encode_xer,
+	reportQuantity_37_decode_uper,
+	reportQuantity_37_encode_uper,
+	reportQuantity_37_decode_aper,
+	reportQuantity_37_encode_aper,
+	reportQuantity_37_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_reportQuantity_tags_41,
-	sizeof(asn_DEF_reportQuantity_tags_41)
-		/sizeof(asn_DEF_reportQuantity_tags_41[0]) - 1, /* 1 */
-	asn_DEF_reportQuantity_tags_41,	/* Same as above */
-	sizeof(asn_DEF_reportQuantity_tags_41)
-		/sizeof(asn_DEF_reportQuantity_tags_41[0]), /* 2 */
-	&asn_PER_type_reportQuantity_constr_41,
+	asn_DEF_reportQuantity_tags_37,
+	sizeof(asn_DEF_reportQuantity_tags_37)
+		/sizeof(asn_DEF_reportQuantity_tags_37[0]) - 1, /* 1 */
+	asn_DEF_reportQuantity_tags_37,	/* Same as above */
+	sizeof(asn_DEF_reportQuantity_tags_37)
+		/sizeof(asn_DEF_reportQuantity_tags_37[0]), /* 2 */
+	&asn_PER_type_reportQuantity_constr_37,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_reportQuantity_specs_41	/* Additional specs */
+	&asn_SPC_reportQuantity_specs_37	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_reportAmount_value2enum_46[] = {
+static asn_INTEGER_enum_map_t asn_MAP_reportAmount_value2enum_42[] = {
 	{ 0,	2,	"r1" },
 	{ 1,	2,	"r2" },
 	{ 2,	2,	"r4" },
@@ -2734,7 +2479,7 @@ static asn_INTEGER_enum_map_t asn_MAP_reportAmount_value2enum_46[] = {
 	{ 6,	3,	"r64" },
 	{ 7,	8,	"infinity" }
 };
-static unsigned int asn_MAP_reportAmount_enum2value_46[] = {
+static unsigned int asn_MAP_reportAmount_enum2value_42[] = {
 	7,	/* infinity(7) */
 	0,	/* r1(0) */
 	4,	/* r16(4) */
@@ -2744,146 +2489,146 @@ static unsigned int asn_MAP_reportAmount_enum2value_46[] = {
 	6,	/* r64(6) */
 	3	/* r8(3) */
 };
-static asn_INTEGER_specifics_t asn_SPC_reportAmount_specs_46 = {
-	asn_MAP_reportAmount_value2enum_46,	/* "tag" => N; sorted by tag */
-	asn_MAP_reportAmount_enum2value_46,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_reportAmount_specs_42 = {
+	asn_MAP_reportAmount_value2enum_42,	/* "tag" => N; sorted by tag */
+	asn_MAP_reportAmount_enum2value_42,	/* N => "tag"; sorted by N */
 	8,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_reportAmount_tags_46[] = {
+static ber_tlv_tag_t asn_DEF_reportAmount_tags_42[] = {
 	(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_reportAmount_46 = {
+asn_TYPE_descriptor_t asn_DEF_reportAmount_42 = {
 	"reportAmount",
 	"reportAmount",
-	reportAmount_46_free,
-	reportAmount_46_print,
-	reportAmount_46_constraint,
-	reportAmount_46_decode_ber,
-	reportAmount_46_encode_der,
-	reportAmount_46_decode_xer,
-	reportAmount_46_encode_xer,
-	reportAmount_46_decode_uper,
-	reportAmount_46_encode_uper,
-	reportAmount_46_decode_aper,
-	reportAmount_46_encode_aper,
-	reportAmount_46_compare,
+	reportAmount_42_free,
+	reportAmount_42_print,
+	reportAmount_42_constraint,
+	reportAmount_42_decode_ber,
+	reportAmount_42_encode_der,
+	reportAmount_42_decode_xer,
+	reportAmount_42_encode_xer,
+	reportAmount_42_decode_uper,
+	reportAmount_42_encode_uper,
+	reportAmount_42_decode_aper,
+	reportAmount_42_encode_aper,
+	reportAmount_42_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_reportAmount_tags_46,
-	sizeof(asn_DEF_reportAmount_tags_46)
-		/sizeof(asn_DEF_reportAmount_tags_46[0]) - 1, /* 1 */
-	asn_DEF_reportAmount_tags_46,	/* Same as above */
-	sizeof(asn_DEF_reportAmount_tags_46)
-		/sizeof(asn_DEF_reportAmount_tags_46[0]), /* 2 */
-	&asn_PER_type_reportAmount_constr_46,
+	asn_DEF_reportAmount_tags_42,
+	sizeof(asn_DEF_reportAmount_tags_42)
+		/sizeof(asn_DEF_reportAmount_tags_42[0]) - 1, /* 1 */
+	asn_DEF_reportAmount_tags_42,	/* Same as above */
+	sizeof(asn_DEF_reportAmount_tags_42)
+		/sizeof(asn_DEF_reportAmount_tags_42[0]), /* 2 */
+	&asn_PER_type_reportAmount_constr_42,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_reportAmount_specs_46	/* Additional specs */
+	&asn_SPC_reportAmount_specs_42	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_si_RequestForHO_r9_value2enum_57[] = {
+static asn_INTEGER_enum_map_t asn_MAP_si_RequestForHO_r9_value2enum_53[] = {
 	{ 0,	5,	"setup" }
 };
-static unsigned int asn_MAP_si_RequestForHO_r9_enum2value_57[] = {
+static unsigned int asn_MAP_si_RequestForHO_r9_enum2value_53[] = {
 	0	/* setup(0) */
 };
-static asn_INTEGER_specifics_t asn_SPC_si_RequestForHO_r9_specs_57 = {
-	asn_MAP_si_RequestForHO_r9_value2enum_57,	/* "tag" => N; sorted by tag */
-	asn_MAP_si_RequestForHO_r9_enum2value_57,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_si_RequestForHO_r9_specs_53 = {
+	asn_MAP_si_RequestForHO_r9_value2enum_53,	/* "tag" => N; sorted by tag */
+	asn_MAP_si_RequestForHO_r9_enum2value_53,	/* N => "tag"; sorted by N */
 	1,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_si_RequestForHO_r9_tags_57[] = {
+static ber_tlv_tag_t asn_DEF_si_RequestForHO_r9_tags_53[] = {
 	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_si_RequestForHO_r9_57 = {
+asn_TYPE_descriptor_t asn_DEF_si_RequestForHO_r9_53 = {
 	"si-RequestForHO-r9",
 	"si-RequestForHO-r9",
-	si_RequestForHO_r9_57_free,
-	si_RequestForHO_r9_57_print,
-	si_RequestForHO_r9_57_constraint,
-	si_RequestForHO_r9_57_decode_ber,
-	si_RequestForHO_r9_57_encode_der,
-	si_RequestForHO_r9_57_decode_xer,
-	si_RequestForHO_r9_57_encode_xer,
-	si_RequestForHO_r9_57_decode_uper,
-	si_RequestForHO_r9_57_encode_uper,
-	si_RequestForHO_r9_57_decode_aper,
-	si_RequestForHO_r9_57_encode_aper,
-	si_RequestForHO_r9_57_compare,
+	si_RequestForHO_r9_53_free,
+	si_RequestForHO_r9_53_print,
+	si_RequestForHO_r9_53_constraint,
+	si_RequestForHO_r9_53_decode_ber,
+	si_RequestForHO_r9_53_encode_der,
+	si_RequestForHO_r9_53_decode_xer,
+	si_RequestForHO_r9_53_encode_xer,
+	si_RequestForHO_r9_53_decode_uper,
+	si_RequestForHO_r9_53_encode_uper,
+	si_RequestForHO_r9_53_decode_aper,
+	si_RequestForHO_r9_53_encode_aper,
+	si_RequestForHO_r9_53_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_si_RequestForHO_r9_tags_57,
-	sizeof(asn_DEF_si_RequestForHO_r9_tags_57)
-		/sizeof(asn_DEF_si_RequestForHO_r9_tags_57[0]) - 1, /* 1 */
-	asn_DEF_si_RequestForHO_r9_tags_57,	/* Same as above */
-	sizeof(asn_DEF_si_RequestForHO_r9_tags_57)
-		/sizeof(asn_DEF_si_RequestForHO_r9_tags_57[0]), /* 2 */
-	&asn_PER_type_si_RequestForHO_r9_constr_57,
+	asn_DEF_si_RequestForHO_r9_tags_53,
+	sizeof(asn_DEF_si_RequestForHO_r9_tags_53)
+		/sizeof(asn_DEF_si_RequestForHO_r9_tags_53[0]) - 1, /* 1 */
+	asn_DEF_si_RequestForHO_r9_tags_53,	/* Same as above */
+	sizeof(asn_DEF_si_RequestForHO_r9_tags_53)
+		/sizeof(asn_DEF_si_RequestForHO_r9_tags_53[0]), /* 2 */
+	&asn_PER_type_si_RequestForHO_r9_constr_53,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_si_RequestForHO_r9_specs_57	/* Additional specs */
+	&asn_SPC_si_RequestForHO_r9_specs_53	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_ue_RxTxTimeDiffPeriodical_r9_value2enum_59[] = {
+static asn_INTEGER_enum_map_t asn_MAP_ue_RxTxTimeDiffPeriodical_r9_value2enum_55[] = {
 	{ 0,	5,	"setup" }
 };
-static unsigned int asn_MAP_ue_RxTxTimeDiffPeriodical_r9_enum2value_59[] = {
+static unsigned int asn_MAP_ue_RxTxTimeDiffPeriodical_r9_enum2value_55[] = {
 	0	/* setup(0) */
 };
-static asn_INTEGER_specifics_t asn_SPC_ue_RxTxTimeDiffPeriodical_r9_specs_59 = {
-	asn_MAP_ue_RxTxTimeDiffPeriodical_r9_value2enum_59,	/* "tag" => N; sorted by tag */
-	asn_MAP_ue_RxTxTimeDiffPeriodical_r9_enum2value_59,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_ue_RxTxTimeDiffPeriodical_r9_specs_55 = {
+	asn_MAP_ue_RxTxTimeDiffPeriodical_r9_value2enum_55,	/* "tag" => N; sorted by tag */
+	asn_MAP_ue_RxTxTimeDiffPeriodical_r9_enum2value_55,	/* N => "tag"; sorted by N */
 	1,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_59[] = {
+static ber_tlv_tag_t asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_55[] = {
 	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ue_RxTxTimeDiffPeriodical_r9_59 = {
+asn_TYPE_descriptor_t asn_DEF_ue_RxTxTimeDiffPeriodical_r9_55 = {
 	"ue-RxTxTimeDiffPeriodical-r9",
 	"ue-RxTxTimeDiffPeriodical-r9",
-	ue_RxTxTimeDiffPeriodical_r9_59_free,
-	ue_RxTxTimeDiffPeriodical_r9_59_print,
-	ue_RxTxTimeDiffPeriodical_r9_59_constraint,
-	ue_RxTxTimeDiffPeriodical_r9_59_decode_ber,
-	ue_RxTxTimeDiffPeriodical_r9_59_encode_der,
-	ue_RxTxTimeDiffPeriodical_r9_59_decode_xer,
-	ue_RxTxTimeDiffPeriodical_r9_59_encode_xer,
-	ue_RxTxTimeDiffPeriodical_r9_59_decode_uper,
-	ue_RxTxTimeDiffPeriodical_r9_59_encode_uper,
-	ue_RxTxTimeDiffPeriodical_r9_59_decode_aper,
-	ue_RxTxTimeDiffPeriodical_r9_59_encode_aper,
-	ue_RxTxTimeDiffPeriodical_r9_59_compare,
+	ue_RxTxTimeDiffPeriodical_r9_55_free,
+	ue_RxTxTimeDiffPeriodical_r9_55_print,
+	ue_RxTxTimeDiffPeriodical_r9_55_constraint,
+	ue_RxTxTimeDiffPeriodical_r9_55_decode_ber,
+	ue_RxTxTimeDiffPeriodical_r9_55_encode_der,
+	ue_RxTxTimeDiffPeriodical_r9_55_decode_xer,
+	ue_RxTxTimeDiffPeriodical_r9_55_encode_xer,
+	ue_RxTxTimeDiffPeriodical_r9_55_decode_uper,
+	ue_RxTxTimeDiffPeriodical_r9_55_encode_uper,
+	ue_RxTxTimeDiffPeriodical_r9_55_decode_aper,
+	ue_RxTxTimeDiffPeriodical_r9_55_encode_aper,
+	ue_RxTxTimeDiffPeriodical_r9_55_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_59,
-	sizeof(asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_59)
-		/sizeof(asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_59[0]) - 1, /* 1 */
-	asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_59,	/* Same as above */
-	sizeof(asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_59)
-		/sizeof(asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_59[0]), /* 2 */
-	&asn_PER_type_ue_RxTxTimeDiffPeriodical_r9_constr_59,
+	asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_55,
+	sizeof(asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_55)
+		/sizeof(asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_55[0]) - 1, /* 1 */
+	asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_55,	/* Same as above */
+	sizeof(asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_55)
+		/sizeof(asn_DEF_ue_RxTxTimeDiffPeriodical_r9_tags_55[0]), /* 2 */
+	&asn_PER_type_ue_RxTxTimeDiffPeriodical_r9_constr_55,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_ue_RxTxTimeDiffPeriodical_r9_specs_59	/* Additional specs */
+	&asn_SPC_ue_RxTxTimeDiffPeriodical_r9_specs_55	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext1_56[] = {
+static asn_TYPE_member_t asn_MBR_ext1_52[] = {
 	{ ATF_POINTER, 2, offsetof(struct ReportConfigEUTRA__ext1, si_RequestForHO_r9),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_si_RequestForHO_r9_57,
+		&asn_DEF_si_RequestForHO_r9_53,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -2892,34 +2637,34 @@ static asn_TYPE_member_t asn_MBR_ext1_56[] = {
 	{ ATF_POINTER, 1, offsetof(struct ReportConfigEUTRA__ext1, ue_RxTxTimeDiffPeriodical_r9),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ue_RxTxTimeDiffPeriodical_r9_59,
+		&asn_DEF_ue_RxTxTimeDiffPeriodical_r9_55,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"ue-RxTxTimeDiffPeriodical-r9"
 		},
 };
-static int asn_MAP_ext1_oms_56[] = { 0, 1 };
-static ber_tlv_tag_t asn_DEF_ext1_tags_56[] = {
+static int asn_MAP_ext1_oms_52[] = { 0, 1 };
+static ber_tlv_tag_t asn_DEF_ext1_tags_52[] = {
 	(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_56[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* si-RequestForHO-r9 at 7977 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-RxTxTimeDiffPeriodical-r9 at 7978 */
+static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_52[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* si-RequestForHO-r9 at 7236 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-RxTxTimeDiffPeriodical-r9 at 7237 */
 };
-static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_56 = {
+static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_52 = {
 	sizeof(struct ReportConfigEUTRA__ext1),
 	offsetof(struct ReportConfigEUTRA__ext1, _asn_ctx),
-	asn_MAP_ext1_tag2el_56,
+	asn_MAP_ext1_tag2el_52,
 	2,	/* Count of tags in the map */
-	asn_MAP_ext1_oms_56,	/* Optional members */
+	asn_MAP_ext1_oms_52,	/* Optional members */
 	2, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext1_56 = {
+asn_TYPE_descriptor_t asn_DEF_ext1_52 = {
 	"ext1",
 	"ext1",
 	SEQUENCE_free,
@@ -2935,117 +2680,117 @@ asn_TYPE_descriptor_t asn_DEF_ext1_56 = {
 	SEQUENCE_encode_aper,
 	SEQUENCE_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext1_tags_56,
-	sizeof(asn_DEF_ext1_tags_56)
-		/sizeof(asn_DEF_ext1_tags_56[0]) - 1, /* 1 */
-	asn_DEF_ext1_tags_56,	/* Same as above */
-	sizeof(asn_DEF_ext1_tags_56)
-		/sizeof(asn_DEF_ext1_tags_56[0]), /* 2 */
+	asn_DEF_ext1_tags_52,
+	sizeof(asn_DEF_ext1_tags_52)
+		/sizeof(asn_DEF_ext1_tags_52[0]) - 1, /* 1 */
+	asn_DEF_ext1_tags_52,	/* Same as above */
+	sizeof(asn_DEF_ext1_tags_52)
+		/sizeof(asn_DEF_ext1_tags_52[0]), /* 2 */
 	0,	/* No PER visible constraints */
-	asn_MBR_ext1_56,
+	asn_MBR_ext1_52,
 	2,	/* Elements count */
-	&asn_SPC_ext1_specs_56	/* Additional specs */
+	&asn_SPC_ext1_specs_52	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_includeLocationInfo_r10_value2enum_62[] = {
+static asn_INTEGER_enum_map_t asn_MAP_includeLocationInfo_r10_value2enum_58[] = {
 	{ 0,	4,	"true" }
 };
-static unsigned int asn_MAP_includeLocationInfo_r10_enum2value_62[] = {
+static unsigned int asn_MAP_includeLocationInfo_r10_enum2value_58[] = {
 	0	/* true(0) */
 };
-static asn_INTEGER_specifics_t asn_SPC_includeLocationInfo_r10_specs_62 = {
-	asn_MAP_includeLocationInfo_r10_value2enum_62,	/* "tag" => N; sorted by tag */
-	asn_MAP_includeLocationInfo_r10_enum2value_62,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_includeLocationInfo_r10_specs_58 = {
+	asn_MAP_includeLocationInfo_r10_value2enum_58,	/* "tag" => N; sorted by tag */
+	asn_MAP_includeLocationInfo_r10_enum2value_58,	/* N => "tag"; sorted by N */
 	1,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_includeLocationInfo_r10_tags_62[] = {
+static ber_tlv_tag_t asn_DEF_includeLocationInfo_r10_tags_58[] = {
 	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_includeLocationInfo_r10_62 = {
+asn_TYPE_descriptor_t asn_DEF_includeLocationInfo_r10_58 = {
 	"includeLocationInfo-r10",
 	"includeLocationInfo-r10",
-	includeLocationInfo_r10_62_free,
-	includeLocationInfo_r10_62_print,
-	includeLocationInfo_r10_62_constraint,
-	includeLocationInfo_r10_62_decode_ber,
-	includeLocationInfo_r10_62_encode_der,
-	includeLocationInfo_r10_62_decode_xer,
-	includeLocationInfo_r10_62_encode_xer,
-	includeLocationInfo_r10_62_decode_uper,
-	includeLocationInfo_r10_62_encode_uper,
-	includeLocationInfo_r10_62_decode_aper,
-	includeLocationInfo_r10_62_encode_aper,
-	includeLocationInfo_r10_62_compare,
+	includeLocationInfo_r10_58_free,
+	includeLocationInfo_r10_58_print,
+	includeLocationInfo_r10_58_constraint,
+	includeLocationInfo_r10_58_decode_ber,
+	includeLocationInfo_r10_58_encode_der,
+	includeLocationInfo_r10_58_decode_xer,
+	includeLocationInfo_r10_58_encode_xer,
+	includeLocationInfo_r10_58_decode_uper,
+	includeLocationInfo_r10_58_encode_uper,
+	includeLocationInfo_r10_58_decode_aper,
+	includeLocationInfo_r10_58_encode_aper,
+	includeLocationInfo_r10_58_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_includeLocationInfo_r10_tags_62,
-	sizeof(asn_DEF_includeLocationInfo_r10_tags_62)
-		/sizeof(asn_DEF_includeLocationInfo_r10_tags_62[0]) - 1, /* 1 */
-	asn_DEF_includeLocationInfo_r10_tags_62,	/* Same as above */
-	sizeof(asn_DEF_includeLocationInfo_r10_tags_62)
-		/sizeof(asn_DEF_includeLocationInfo_r10_tags_62[0]), /* 2 */
-	&asn_PER_type_includeLocationInfo_r10_constr_62,
+	asn_DEF_includeLocationInfo_r10_tags_58,
+	sizeof(asn_DEF_includeLocationInfo_r10_tags_58)
+		/sizeof(asn_DEF_includeLocationInfo_r10_tags_58[0]) - 1, /* 1 */
+	asn_DEF_includeLocationInfo_r10_tags_58,	/* Same as above */
+	sizeof(asn_DEF_includeLocationInfo_r10_tags_58)
+		/sizeof(asn_DEF_includeLocationInfo_r10_tags_58[0]), /* 2 */
+	&asn_PER_type_includeLocationInfo_r10_constr_58,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_includeLocationInfo_r10_specs_62	/* Additional specs */
+	&asn_SPC_includeLocationInfo_r10_specs_58	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_reportAddNeighMeas_r10_value2enum_64[] = {
+static asn_INTEGER_enum_map_t asn_MAP_reportAddNeighMeas_r10_value2enum_60[] = {
 	{ 0,	5,	"setup" }
 };
-static unsigned int asn_MAP_reportAddNeighMeas_r10_enum2value_64[] = {
+static unsigned int asn_MAP_reportAddNeighMeas_r10_enum2value_60[] = {
 	0	/* setup(0) */
 };
-static asn_INTEGER_specifics_t asn_SPC_reportAddNeighMeas_r10_specs_64 = {
-	asn_MAP_reportAddNeighMeas_r10_value2enum_64,	/* "tag" => N; sorted by tag */
-	asn_MAP_reportAddNeighMeas_r10_enum2value_64,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_reportAddNeighMeas_r10_specs_60 = {
+	asn_MAP_reportAddNeighMeas_r10_value2enum_60,	/* "tag" => N; sorted by tag */
+	asn_MAP_reportAddNeighMeas_r10_enum2value_60,	/* N => "tag"; sorted by N */
 	1,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_reportAddNeighMeas_r10_tags_64[] = {
+static ber_tlv_tag_t asn_DEF_reportAddNeighMeas_r10_tags_60[] = {
 	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_reportAddNeighMeas_r10_64 = {
+asn_TYPE_descriptor_t asn_DEF_reportAddNeighMeas_r10_60 = {
 	"reportAddNeighMeas-r10",
 	"reportAddNeighMeas-r10",
-	reportAddNeighMeas_r10_64_free,
-	reportAddNeighMeas_r10_64_print,
-	reportAddNeighMeas_r10_64_constraint,
-	reportAddNeighMeas_r10_64_decode_ber,
-	reportAddNeighMeas_r10_64_encode_der,
-	reportAddNeighMeas_r10_64_decode_xer,
-	reportAddNeighMeas_r10_64_encode_xer,
-	reportAddNeighMeas_r10_64_decode_uper,
-	reportAddNeighMeas_r10_64_encode_uper,
-	reportAddNeighMeas_r10_64_decode_aper,
-	reportAddNeighMeas_r10_64_encode_aper,
-	reportAddNeighMeas_r10_64_compare,
+	reportAddNeighMeas_r10_60_free,
+	reportAddNeighMeas_r10_60_print,
+	reportAddNeighMeas_r10_60_constraint,
+	reportAddNeighMeas_r10_60_decode_ber,
+	reportAddNeighMeas_r10_60_encode_der,
+	reportAddNeighMeas_r10_60_decode_xer,
+	reportAddNeighMeas_r10_60_encode_xer,
+	reportAddNeighMeas_r10_60_decode_uper,
+	reportAddNeighMeas_r10_60_encode_uper,
+	reportAddNeighMeas_r10_60_decode_aper,
+	reportAddNeighMeas_r10_60_encode_aper,
+	reportAddNeighMeas_r10_60_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_reportAddNeighMeas_r10_tags_64,
-	sizeof(asn_DEF_reportAddNeighMeas_r10_tags_64)
-		/sizeof(asn_DEF_reportAddNeighMeas_r10_tags_64[0]) - 1, /* 1 */
-	asn_DEF_reportAddNeighMeas_r10_tags_64,	/* Same as above */
-	sizeof(asn_DEF_reportAddNeighMeas_r10_tags_64)
-		/sizeof(asn_DEF_reportAddNeighMeas_r10_tags_64[0]), /* 2 */
-	&asn_PER_type_reportAddNeighMeas_r10_constr_64,
+	asn_DEF_reportAddNeighMeas_r10_tags_60,
+	sizeof(asn_DEF_reportAddNeighMeas_r10_tags_60)
+		/sizeof(asn_DEF_reportAddNeighMeas_r10_tags_60[0]) - 1, /* 1 */
+	asn_DEF_reportAddNeighMeas_r10_tags_60,	/* Same as above */
+	sizeof(asn_DEF_reportAddNeighMeas_r10_tags_60)
+		/sizeof(asn_DEF_reportAddNeighMeas_r10_tags_60[0]), /* 2 */
+	&asn_PER_type_reportAddNeighMeas_r10_constr_60,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_reportAddNeighMeas_r10_specs_64	/* Additional specs */
+	&asn_SPC_reportAddNeighMeas_r10_specs_60	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext2_61[] = {
+static asn_TYPE_member_t asn_MBR_ext2_57[] = {
 	{ ATF_POINTER, 2, offsetof(struct ReportConfigEUTRA__ext2, includeLocationInfo_r10),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_includeLocationInfo_r10_62,
+		&asn_DEF_includeLocationInfo_r10_58,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -3054,34 +2799,34 @@ static asn_TYPE_member_t asn_MBR_ext2_61[] = {
 	{ ATF_POINTER, 1, offsetof(struct ReportConfigEUTRA__ext2, reportAddNeighMeas_r10),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_reportAddNeighMeas_r10_64,
+		&asn_DEF_reportAddNeighMeas_r10_60,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"reportAddNeighMeas-r10"
 		},
 };
-static int asn_MAP_ext2_oms_61[] = { 0, 1 };
-static ber_tlv_tag_t asn_DEF_ext2_tags_61[] = {
+static int asn_MAP_ext2_oms_57[] = { 0, 1 };
+static ber_tlv_tag_t asn_DEF_ext2_tags_57[] = {
 	(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_61[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* includeLocationInfo-r10 at 7980 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* reportAddNeighMeas-r10 at 7981 */
+static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_57[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* includeLocationInfo-r10 at 7239 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* reportAddNeighMeas-r10 at 7240 */
 };
-static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_61 = {
+static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_57 = {
 	sizeof(struct ReportConfigEUTRA__ext2),
 	offsetof(struct ReportConfigEUTRA__ext2, _asn_ctx),
-	asn_MAP_ext2_tag2el_61,
+	asn_MAP_ext2_tag2el_57,
 	2,	/* Count of tags in the map */
-	asn_MAP_ext2_oms_61,	/* Optional members */
+	asn_MAP_ext2_oms_57,	/* Optional members */
 	2, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext2_61 = {
+asn_TYPE_descriptor_t asn_DEF_ext2_57 = {
 	"ext2",
 	"ext2",
 	SEQUENCE_free,
@@ -3097,19 +2842,19 @@ asn_TYPE_descriptor_t asn_DEF_ext2_61 = {
 	SEQUENCE_encode_aper,
 	SEQUENCE_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext2_tags_61,
-	sizeof(asn_DEF_ext2_tags_61)
-		/sizeof(asn_DEF_ext2_tags_61[0]) - 1, /* 1 */
-	asn_DEF_ext2_tags_61,	/* Same as above */
-	sizeof(asn_DEF_ext2_tags_61)
-		/sizeof(asn_DEF_ext2_tags_61[0]), /* 2 */
+	asn_DEF_ext2_tags_57,
+	sizeof(asn_DEF_ext2_tags_57)
+		/sizeof(asn_DEF_ext2_tags_57[0]) - 1, /* 1 */
+	asn_DEF_ext2_tags_57,	/* Same as above */
+	sizeof(asn_DEF_ext2_tags_57)
+		/sizeof(asn_DEF_ext2_tags_57[0]), /* 2 */
 	0,	/* No PER visible constraints */
-	asn_MBR_ext2_61,
+	asn_MBR_ext2_57,
 	2,	/* Elements count */
-	&asn_SPC_ext2_specs_61	/* Additional specs */
+	&asn_SPC_ext2_specs_57	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_alternativeTimeToTrigger_r12_67[] = {
+static asn_TYPE_member_t asn_MBR_alternativeTimeToTrigger_r12_63[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA__ext3__alternativeTimeToTrigger_r12, choice.release),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
@@ -3129,22 +2874,22 @@ static asn_TYPE_member_t asn_MBR_alternativeTimeToTrigger_r12_67[] = {
 		"setup"
 		},
 };
-static asn_TYPE_tag2member_t asn_MAP_alternativeTimeToTrigger_r12_tag2el_67[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7984 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7986 */
+static asn_TYPE_tag2member_t asn_MAP_alternativeTimeToTrigger_r12_tag2el_63[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7243 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7245 */
 };
-static asn_CHOICE_specifics_t asn_SPC_alternativeTimeToTrigger_r12_specs_67 = {
+static asn_CHOICE_specifics_t asn_SPC_alternativeTimeToTrigger_r12_specs_63 = {
 	sizeof(struct ReportConfigEUTRA__ext3__alternativeTimeToTrigger_r12),
 	offsetof(struct ReportConfigEUTRA__ext3__alternativeTimeToTrigger_r12, _asn_ctx),
 	offsetof(struct ReportConfigEUTRA__ext3__alternativeTimeToTrigger_r12, present),
 	sizeof(((struct ReportConfigEUTRA__ext3__alternativeTimeToTrigger_r12 *)0)->present),
-	asn_MAP_alternativeTimeToTrigger_r12_tag2el_67,
+	asn_MAP_alternativeTimeToTrigger_r12_tag2el_63,
 	2,	/* Count of tags in the map */
 	0,
 	-1	/* Extensions start */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_alternativeTimeToTrigger_r12_67 = {
+asn_TYPE_descriptor_t asn_DEF_alternativeTimeToTrigger_r12_63 = {
 	"alternativeTimeToTrigger-r12",
 	"alternativeTimeToTrigger-r12",
 	CHOICE_free,
@@ -3164,17 +2909,17 @@ asn_TYPE_descriptor_t asn_DEF_alternativeTimeToTrigger_r12_67 = {
 	0,	/* No effective tags (count) */
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
-	&asn_PER_type_alternativeTimeToTrigger_r12_constr_67,
-	asn_MBR_alternativeTimeToTrigger_r12_67,
+	&asn_PER_type_alternativeTimeToTrigger_r12_constr_63,
+	asn_MBR_alternativeTimeToTrigger_r12_63,
 	2,	/* Elements count */
-	&asn_SPC_alternativeTimeToTrigger_r12_specs_67	/* Additional specs */
+	&asn_SPC_alternativeTimeToTrigger_r12_specs_63	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext3_66[] = {
+static asn_TYPE_member_t asn_MBR_ext3_62[] = {
 	{ ATF_POINTER, 8, offsetof(struct ReportConfigEUTRA__ext3, alternativeTimeToTrigger_r12),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_alternativeTimeToTrigger_r12_67,
+		&asn_DEF_alternativeTimeToTrigger_r12_63,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -3244,33 +2989,33 @@ static asn_TYPE_member_t asn_MBR_ext3_66[] = {
 		"triggerQuantityCSI-RS-r12"
 		},
 };
-static int asn_MAP_ext3_oms_66[] = { 0, 1, 2, 3, 4, 5, 6, 7 };
-static ber_tlv_tag_t asn_DEF_ext3_tags_66[] = {
+static int asn_MAP_ext3_oms_62[] = { 0, 1, 2, 3, 4, 5, 6, 7 };
+static ber_tlv_tag_t asn_DEF_ext3_tags_62[] = {
 	(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_66[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* alternativeTimeToTrigger-r12 at 7984 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* useT312-r12 at 7987 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* usePSCell-r12 at 7988 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* aN-Threshold1-v1250 at 7989 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* a5-Threshold2-v1250 at 7990 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* reportStrongestCSI-RSs-r12 at 7991 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* reportCRS-Meas-r12 at 7992 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* triggerQuantityCSI-RS-r12 at 7993 */
+static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_62[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* alternativeTimeToTrigger-r12 at 7243 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* useT312-r12 at 7246 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* usePSCell-r12 at 7247 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* aN-Threshold1-v1250 at 7248 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* a5-Threshold2-v1250 at 7249 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* reportStrongestCSI-RSs-r12 at 7250 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* reportCRS-Meas-r12 at 7251 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* triggerQuantityCSI-RS-r12 at 7252 */
 };
-static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_66 = {
+static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_62 = {
 	sizeof(struct ReportConfigEUTRA__ext3),
 	offsetof(struct ReportConfigEUTRA__ext3, _asn_ctx),
-	asn_MAP_ext3_tag2el_66,
+	asn_MAP_ext3_tag2el_62,
 	8,	/* Count of tags in the map */
-	asn_MAP_ext3_oms_66,	/* Optional members */
+	asn_MAP_ext3_oms_62,	/* Optional members */
 	8, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext3_66 = {
+asn_TYPE_descriptor_t asn_DEF_ext3_62 = {
 	"ext3",
 	"ext3",
 	SEQUENCE_free,
@@ -3286,121 +3031,121 @@ asn_TYPE_descriptor_t asn_DEF_ext3_66 = {
 	SEQUENCE_encode_aper,
 	SEQUENCE_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext3_tags_66,
-	sizeof(asn_DEF_ext3_tags_66)
-		/sizeof(asn_DEF_ext3_tags_66[0]) - 1, /* 1 */
-	asn_DEF_ext3_tags_66,	/* Same as above */
-	sizeof(asn_DEF_ext3_tags_66)
-		/sizeof(asn_DEF_ext3_tags_66[0]), /* 2 */
+	asn_DEF_ext3_tags_62,
+	sizeof(asn_DEF_ext3_tags_62)
+		/sizeof(asn_DEF_ext3_tags_62[0]) - 1, /* 1 */
+	asn_DEF_ext3_tags_62,	/* Same as above */
+	sizeof(asn_DEF_ext3_tags_62)
+		/sizeof(asn_DEF_ext3_tags_62[0]), /* 2 */
 	0,	/* No PER visible constraints */
-	asn_MBR_ext3_66,
+	asn_MBR_ext3_62,
 	8,	/* Elements count */
-	&asn_SPC_ext3_specs_66	/* Additional specs */
+	&asn_SPC_ext3_specs_62	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_triggerQuantity_v1310_value2enum_82[] = {
+static asn_INTEGER_enum_map_t asn_MAP_triggerQuantity_v1310_value2enum_78[] = {
 	{ 0,	4,	"sinr" }
 };
-static unsigned int asn_MAP_triggerQuantity_v1310_enum2value_82[] = {
+static unsigned int asn_MAP_triggerQuantity_v1310_enum2value_78[] = {
 	0	/* sinr(0) */
 };
-static asn_INTEGER_specifics_t asn_SPC_triggerQuantity_v1310_specs_82 = {
-	asn_MAP_triggerQuantity_v1310_value2enum_82,	/* "tag" => N; sorted by tag */
-	asn_MAP_triggerQuantity_v1310_enum2value_82,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_triggerQuantity_v1310_specs_78 = {
+	asn_MAP_triggerQuantity_v1310_value2enum_78,	/* "tag" => N; sorted by tag */
+	asn_MAP_triggerQuantity_v1310_enum2value_78,	/* N => "tag"; sorted by N */
 	1,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_triggerQuantity_v1310_tags_82[] = {
+static ber_tlv_tag_t asn_DEF_triggerQuantity_v1310_tags_78[] = {
 	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_triggerQuantity_v1310_82 = {
+asn_TYPE_descriptor_t asn_DEF_triggerQuantity_v1310_78 = {
 	"triggerQuantity-v1310",
 	"triggerQuantity-v1310",
-	triggerQuantity_v1310_82_free,
-	triggerQuantity_v1310_82_print,
-	triggerQuantity_v1310_82_constraint,
-	triggerQuantity_v1310_82_decode_ber,
-	triggerQuantity_v1310_82_encode_der,
-	triggerQuantity_v1310_82_decode_xer,
-	triggerQuantity_v1310_82_encode_xer,
-	triggerQuantity_v1310_82_decode_uper,
-	triggerQuantity_v1310_82_encode_uper,
-	triggerQuantity_v1310_82_decode_aper,
-	triggerQuantity_v1310_82_encode_aper,
-	triggerQuantity_v1310_82_compare,
+	triggerQuantity_v1310_78_free,
+	triggerQuantity_v1310_78_print,
+	triggerQuantity_v1310_78_constraint,
+	triggerQuantity_v1310_78_decode_ber,
+	triggerQuantity_v1310_78_encode_der,
+	triggerQuantity_v1310_78_decode_xer,
+	triggerQuantity_v1310_78_encode_xer,
+	triggerQuantity_v1310_78_decode_uper,
+	triggerQuantity_v1310_78_encode_uper,
+	triggerQuantity_v1310_78_decode_aper,
+	triggerQuantity_v1310_78_encode_aper,
+	triggerQuantity_v1310_78_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_triggerQuantity_v1310_tags_82,
-	sizeof(asn_DEF_triggerQuantity_v1310_tags_82)
-		/sizeof(asn_DEF_triggerQuantity_v1310_tags_82[0]) - 1, /* 1 */
-	asn_DEF_triggerQuantity_v1310_tags_82,	/* Same as above */
-	sizeof(asn_DEF_triggerQuantity_v1310_tags_82)
-		/sizeof(asn_DEF_triggerQuantity_v1310_tags_82[0]), /* 2 */
-	&asn_PER_type_triggerQuantity_v1310_constr_82,
+	asn_DEF_triggerQuantity_v1310_tags_78,
+	sizeof(asn_DEF_triggerQuantity_v1310_tags_78)
+		/sizeof(asn_DEF_triggerQuantity_v1310_tags_78[0]) - 1, /* 1 */
+	asn_DEF_triggerQuantity_v1310_tags_78,	/* Same as above */
+	sizeof(asn_DEF_triggerQuantity_v1310_tags_78)
+		/sizeof(asn_DEF_triggerQuantity_v1310_tags_78[0]), /* 2 */
+	&asn_PER_type_triggerQuantity_v1310_constr_78,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_triggerQuantity_v1310_specs_82	/* Additional specs */
+	&asn_SPC_triggerQuantity_v1310_specs_78	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_reportQuantity_v1310_value2enum_86[] = {
+static asn_INTEGER_enum_map_t asn_MAP_reportQuantity_v1310_value2enum_82[] = {
 	{ 0,	11,	"rsrpANDsinr" },
 	{ 1,	11,	"rsrqANDsinr" },
 	{ 2,	3,	"all" }
 };
-static unsigned int asn_MAP_reportQuantity_v1310_enum2value_86[] = {
+static unsigned int asn_MAP_reportQuantity_v1310_enum2value_82[] = {
 	2,	/* all(2) */
 	0,	/* rsrpANDsinr(0) */
 	1	/* rsrqANDsinr(1) */
 };
-static asn_INTEGER_specifics_t asn_SPC_reportQuantity_v1310_specs_86 = {
-	asn_MAP_reportQuantity_v1310_value2enum_86,	/* "tag" => N; sorted by tag */
-	asn_MAP_reportQuantity_v1310_enum2value_86,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_reportQuantity_v1310_specs_82 = {
+	asn_MAP_reportQuantity_v1310_value2enum_82,	/* "tag" => N; sorted by tag */
+	asn_MAP_reportQuantity_v1310_enum2value_82,	/* N => "tag"; sorted by N */
 	3,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_reportQuantity_v1310_tags_86[] = {
+static ber_tlv_tag_t asn_DEF_reportQuantity_v1310_tags_82[] = {
 	(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_reportQuantity_v1310_86 = {
+asn_TYPE_descriptor_t asn_DEF_reportQuantity_v1310_82 = {
 	"reportQuantity-v1310",
 	"reportQuantity-v1310",
-	reportQuantity_v1310_86_free,
-	reportQuantity_v1310_86_print,
-	reportQuantity_v1310_86_constraint,
-	reportQuantity_v1310_86_decode_ber,
-	reportQuantity_v1310_86_encode_der,
-	reportQuantity_v1310_86_decode_xer,
-	reportQuantity_v1310_86_encode_xer,
-	reportQuantity_v1310_86_decode_uper,
-	reportQuantity_v1310_86_encode_uper,
-	reportQuantity_v1310_86_decode_aper,
-	reportQuantity_v1310_86_encode_aper,
-	reportQuantity_v1310_86_compare,
+	reportQuantity_v1310_82_free,
+	reportQuantity_v1310_82_print,
+	reportQuantity_v1310_82_constraint,
+	reportQuantity_v1310_82_decode_ber,
+	reportQuantity_v1310_82_encode_der,
+	reportQuantity_v1310_82_decode_xer,
+	reportQuantity_v1310_82_encode_xer,
+	reportQuantity_v1310_82_decode_uper,
+	reportQuantity_v1310_82_encode_uper,
+	reportQuantity_v1310_82_decode_aper,
+	reportQuantity_v1310_82_encode_aper,
+	reportQuantity_v1310_82_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_reportQuantity_v1310_tags_86,
-	sizeof(asn_DEF_reportQuantity_v1310_tags_86)
-		/sizeof(asn_DEF_reportQuantity_v1310_tags_86[0]) - 1, /* 1 */
-	asn_DEF_reportQuantity_v1310_tags_86,	/* Same as above */
-	sizeof(asn_DEF_reportQuantity_v1310_tags_86)
-		/sizeof(asn_DEF_reportQuantity_v1310_tags_86[0]), /* 2 */
-	&asn_PER_type_reportQuantity_v1310_constr_86,
+	asn_DEF_reportQuantity_v1310_tags_82,
+	sizeof(asn_DEF_reportQuantity_v1310_tags_82)
+		/sizeof(asn_DEF_reportQuantity_v1310_tags_82[0]) - 1, /* 1 */
+	asn_DEF_reportQuantity_v1310_tags_82,	/* Same as above */
+	sizeof(asn_DEF_reportQuantity_v1310_tags_82)
+		/sizeof(asn_DEF_reportQuantity_v1310_tags_82[0]), /* 2 */
+	&asn_PER_type_reportQuantity_v1310_constr_82,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_reportQuantity_v1310_specs_86	/* Additional specs */
+	&asn_SPC_reportQuantity_v1310_specs_82	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_setup_81[] = {
+static asn_TYPE_member_t asn_MBR_setup_77[] = {
 	{ ATF_POINTER, 3, offsetof(struct ReportConfigEUTRA__ext4__rs_sinr_Config_r13__setup, triggerQuantity_v1310),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_triggerQuantity_v1310_82,
+		&asn_DEF_triggerQuantity_v1310_78,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -3427,36 +3172,36 @@ static asn_TYPE_member_t asn_MBR_setup_81[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA__ext4__rs_sinr_Config_r13__setup, reportQuantity_v1310),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_reportQuantity_v1310_86,
+		&asn_DEF_reportQuantity_v1310_82,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"reportQuantity-v1310"
 		},
 };
-static int asn_MAP_setup_oms_81[] = { 0, 1, 2 };
-static ber_tlv_tag_t asn_DEF_setup_tags_81[] = {
+static int asn_MAP_setup_oms_77[] = { 0, 1, 2 };
+static ber_tlv_tag_t asn_DEF_setup_tags_77[] = {
 	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_81[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* triggerQuantity-v1310 at 7999 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* aN-Threshold1-r13 at 8000 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* a5-Threshold2-r13 at 8001 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* reportQuantity-v1310 at 8002 */
+static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_77[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* triggerQuantity-v1310 at 7258 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* aN-Threshold1-r13 at 7259 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* a5-Threshold2-r13 at 7260 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* reportQuantity-v1310 at 7261 */
 };
-static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_81 = {
+static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_77 = {
 	sizeof(struct ReportConfigEUTRA__ext4__rs_sinr_Config_r13__setup),
 	offsetof(struct ReportConfigEUTRA__ext4__rs_sinr_Config_r13__setup, _asn_ctx),
-	asn_MAP_setup_tag2el_81,
+	asn_MAP_setup_tag2el_77,
 	4,	/* Count of tags in the map */
-	asn_MAP_setup_oms_81,	/* Optional members */
+	asn_MAP_setup_oms_77,	/* Optional members */
 	3, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_setup_81 = {
+asn_TYPE_descriptor_t asn_DEF_setup_77 = {
 	"setup",
 	"setup",
 	SEQUENCE_free,
@@ -3472,19 +3217,19 @@ asn_TYPE_descriptor_t asn_DEF_setup_81 = {
 	SEQUENCE_encode_aper,
 	SEQUENCE_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_setup_tags_81,
-	sizeof(asn_DEF_setup_tags_81)
-		/sizeof(asn_DEF_setup_tags_81[0]) - 1, /* 1 */
-	asn_DEF_setup_tags_81,	/* Same as above */
-	sizeof(asn_DEF_setup_tags_81)
-		/sizeof(asn_DEF_setup_tags_81[0]), /* 2 */
+	asn_DEF_setup_tags_77,
+	sizeof(asn_DEF_setup_tags_77)
+		/sizeof(asn_DEF_setup_tags_77[0]) - 1, /* 1 */
+	asn_DEF_setup_tags_77,	/* Same as above */
+	sizeof(asn_DEF_setup_tags_77)
+		/sizeof(asn_DEF_setup_tags_77[0]), /* 2 */
 	0,	/* No PER visible constraints */
-	asn_MBR_setup_81,
+	asn_MBR_setup_77,
 	4,	/* Elements count */
-	&asn_SPC_setup_specs_81	/* Additional specs */
+	&asn_SPC_setup_specs_77	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_rs_sinr_Config_r13_79[] = {
+static asn_TYPE_member_t asn_MBR_rs_sinr_Config_r13_75[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA__ext4__rs_sinr_Config_r13, choice.release),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
@@ -3497,29 +3242,29 @@ static asn_TYPE_member_t asn_MBR_rs_sinr_Config_r13_79[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA__ext4__rs_sinr_Config_r13, choice.setup),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		0,
-		&asn_DEF_setup_81,
+		&asn_DEF_setup_77,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"setup"
 		},
 };
-static asn_TYPE_tag2member_t asn_MAP_rs_sinr_Config_r13_tag2el_79[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7997 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7999 */
+static asn_TYPE_tag2member_t asn_MAP_rs_sinr_Config_r13_tag2el_75[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7256 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7258 */
 };
-static asn_CHOICE_specifics_t asn_SPC_rs_sinr_Config_r13_specs_79 = {
+static asn_CHOICE_specifics_t asn_SPC_rs_sinr_Config_r13_specs_75 = {
 	sizeof(struct ReportConfigEUTRA__ext4__rs_sinr_Config_r13),
 	offsetof(struct ReportConfigEUTRA__ext4__rs_sinr_Config_r13, _asn_ctx),
 	offsetof(struct ReportConfigEUTRA__ext4__rs_sinr_Config_r13, present),
 	sizeof(((struct ReportConfigEUTRA__ext4__rs_sinr_Config_r13 *)0)->present),
-	asn_MAP_rs_sinr_Config_r13_tag2el_79,
+	asn_MAP_rs_sinr_Config_r13_tag2el_75,
 	2,	/* Count of tags in the map */
 	0,
 	-1	/* Extensions start */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_rs_sinr_Config_r13_79 = {
+asn_TYPE_descriptor_t asn_DEF_rs_sinr_Config_r13_75 = {
 	"rs-sinr-Config-r13",
 	"rs-sinr-Config-r13",
 	CHOICE_free,
@@ -3539,60 +3284,60 @@ asn_TYPE_descriptor_t asn_DEF_rs_sinr_Config_r13_79 = {
 	0,	/* No effective tags (count) */
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
-	&asn_PER_type_rs_sinr_Config_r13_constr_79,
-	asn_MBR_rs_sinr_Config_r13_79,
+	&asn_PER_type_rs_sinr_Config_r13_constr_75,
+	asn_MBR_rs_sinr_Config_r13_75,
 	2,	/* Elements count */
-	&asn_SPC_rs_sinr_Config_r13_specs_79	/* Additional specs */
+	&asn_SPC_rs_sinr_Config_r13_specs_75	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_includeMultiBandInfo_r13_value2enum_92[] = {
+static asn_INTEGER_enum_map_t asn_MAP_includeMultiBandInfo_r13_value2enum_88[] = {
 	{ 0,	4,	"true" }
 };
-static unsigned int asn_MAP_includeMultiBandInfo_r13_enum2value_92[] = {
+static unsigned int asn_MAP_includeMultiBandInfo_r13_enum2value_88[] = {
 	0	/* true(0) */
 };
-static asn_INTEGER_specifics_t asn_SPC_includeMultiBandInfo_r13_specs_92 = {
-	asn_MAP_includeMultiBandInfo_r13_value2enum_92,	/* "tag" => N; sorted by tag */
-	asn_MAP_includeMultiBandInfo_r13_enum2value_92,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_includeMultiBandInfo_r13_specs_88 = {
+	asn_MAP_includeMultiBandInfo_r13_value2enum_88,	/* "tag" => N; sorted by tag */
+	asn_MAP_includeMultiBandInfo_r13_enum2value_88,	/* N => "tag"; sorted by N */
 	1,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_includeMultiBandInfo_r13_tags_92[] = {
+static ber_tlv_tag_t asn_DEF_includeMultiBandInfo_r13_tags_88[] = {
 	(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_includeMultiBandInfo_r13_92 = {
+asn_TYPE_descriptor_t asn_DEF_includeMultiBandInfo_r13_88 = {
 	"includeMultiBandInfo-r13",
 	"includeMultiBandInfo-r13",
-	includeMultiBandInfo_r13_92_free,
-	includeMultiBandInfo_r13_92_print,
-	includeMultiBandInfo_r13_92_constraint,
-	includeMultiBandInfo_r13_92_decode_ber,
-	includeMultiBandInfo_r13_92_encode_der,
-	includeMultiBandInfo_r13_92_decode_xer,
-	includeMultiBandInfo_r13_92_encode_xer,
-	includeMultiBandInfo_r13_92_decode_uper,
-	includeMultiBandInfo_r13_92_encode_uper,
-	includeMultiBandInfo_r13_92_decode_aper,
-	includeMultiBandInfo_r13_92_encode_aper,
-	includeMultiBandInfo_r13_92_compare,
+	includeMultiBandInfo_r13_88_free,
+	includeMultiBandInfo_r13_88_print,
+	includeMultiBandInfo_r13_88_constraint,
+	includeMultiBandInfo_r13_88_decode_ber,
+	includeMultiBandInfo_r13_88_encode_der,
+	includeMultiBandInfo_r13_88_decode_xer,
+	includeMultiBandInfo_r13_88_encode_xer,
+	includeMultiBandInfo_r13_88_decode_uper,
+	includeMultiBandInfo_r13_88_encode_uper,
+	includeMultiBandInfo_r13_88_decode_aper,
+	includeMultiBandInfo_r13_88_encode_aper,
+	includeMultiBandInfo_r13_88_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_includeMultiBandInfo_r13_tags_92,
-	sizeof(asn_DEF_includeMultiBandInfo_r13_tags_92)
-		/sizeof(asn_DEF_includeMultiBandInfo_r13_tags_92[0]) - 1, /* 1 */
-	asn_DEF_includeMultiBandInfo_r13_tags_92,	/* Same as above */
-	sizeof(asn_DEF_includeMultiBandInfo_r13_tags_92)
-		/sizeof(asn_DEF_includeMultiBandInfo_r13_tags_92[0]), /* 2 */
-	&asn_PER_type_includeMultiBandInfo_r13_constr_92,
+	asn_DEF_includeMultiBandInfo_r13_tags_88,
+	sizeof(asn_DEF_includeMultiBandInfo_r13_tags_88)
+		/sizeof(asn_DEF_includeMultiBandInfo_r13_tags_88[0]) - 1, /* 1 */
+	asn_DEF_includeMultiBandInfo_r13_tags_88,	/* Same as above */
+	sizeof(asn_DEF_includeMultiBandInfo_r13_tags_88)
+		/sizeof(asn_DEF_includeMultiBandInfo_r13_tags_88[0]), /* 2 */
+	&asn_PER_type_includeMultiBandInfo_r13_constr_88,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_includeMultiBandInfo_r13_specs_92	/* Additional specs */
+	&asn_SPC_includeMultiBandInfo_r13_specs_88	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext4_77[] = {
+static asn_TYPE_member_t asn_MBR_ext4_73[] = {
 	{ ATF_POINTER, 6, offsetof(struct ReportConfigEUTRA__ext4, reportSSTD_Meas_r13),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
@@ -3605,7 +3350,7 @@ static asn_TYPE_member_t asn_MBR_ext4_77[] = {
 	{ ATF_POINTER, 5, offsetof(struct ReportConfigEUTRA__ext4, rs_sinr_Config_r13),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_rs_sinr_Config_r13_79,
+		&asn_DEF_rs_sinr_Config_r13_75,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -3632,7 +3377,7 @@ static asn_TYPE_member_t asn_MBR_ext4_77[] = {
 	{ ATF_POINTER, 2, offsetof(struct ReportConfigEUTRA__ext4, includeMultiBandInfo_r13),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_includeMultiBandInfo_r13_92,
+		&asn_DEF_includeMultiBandInfo_r13_88,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -3648,31 +3393,31 @@ static asn_TYPE_member_t asn_MBR_ext4_77[] = {
 		"ul-DelayConfig-r13"
 		},
 };
-static int asn_MAP_ext4_oms_77[] = { 0, 1, 2, 3, 4, 5 };
-static ber_tlv_tag_t asn_DEF_ext4_tags_77[] = {
+static int asn_MAP_ext4_oms_73[] = { 0, 1, 2, 3, 4, 5 };
+static ber_tlv_tag_t asn_DEF_ext4_tags_73[] = {
 	(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_77[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* reportSSTD-Meas-r13 at 7995 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rs-sinr-Config-r13 at 7997 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* useWhiteCellList-r13 at 8005 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* measRSSI-ReportConfig-r13 at 8006 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* includeMultiBandInfo-r13 at 8007 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* ul-DelayConfig-r13 at 8008 */
+static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_73[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* reportSSTD-Meas-r13 at 7254 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rs-sinr-Config-r13 at 7256 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* useWhiteCellList-r13 at 7264 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* measRSSI-ReportConfig-r13 at 7265 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* includeMultiBandInfo-r13 at 7266 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* ul-DelayConfig-r13 at 7267 */
 };
-static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_77 = {
+static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_73 = {
 	sizeof(struct ReportConfigEUTRA__ext4),
 	offsetof(struct ReportConfigEUTRA__ext4, _asn_ctx),
-	asn_MAP_ext4_tag2el_77,
+	asn_MAP_ext4_tag2el_73,
 	6,	/* Count of tags in the map */
-	asn_MAP_ext4_oms_77,	/* Optional members */
+	asn_MAP_ext4_oms_73,	/* Optional members */
 	6, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext4_77 = {
+asn_TYPE_descriptor_t asn_DEF_ext4_73 = {
 	"ext4",
 	"ext4",
 	SEQUENCE_free,
@@ -3688,19 +3433,19 @@ asn_TYPE_descriptor_t asn_DEF_ext4_77 = {
 	SEQUENCE_encode_aper,
 	SEQUENCE_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext4_tags_77,
-	sizeof(asn_DEF_ext4_tags_77)
-		/sizeof(asn_DEF_ext4_tags_77[0]) - 1, /* 1 */
-	asn_DEF_ext4_tags_77,	/* Same as above */
-	sizeof(asn_DEF_ext4_tags_77)
-		/sizeof(asn_DEF_ext4_tags_77[0]), /* 2 */
+	asn_DEF_ext4_tags_73,
+	sizeof(asn_DEF_ext4_tags_73)
+		/sizeof(asn_DEF_ext4_tags_73[0]) - 1, /* 1 */
+	asn_DEF_ext4_tags_73,	/* Same as above */
+	sizeof(asn_DEF_ext4_tags_73)
+		/sizeof(asn_DEF_ext4_tags_73[0]), /* 2 */
 	0,	/* No PER visible constraints */
-	asn_MBR_ext4_77,
+	asn_MBR_ext4_73,
 	6,	/* Elements count */
-	&asn_SPC_ext4_specs_77	/* Additional specs */
+	&asn_SPC_ext4_specs_73	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext5_95[] = {
+static asn_TYPE_member_t asn_MBR_ext5_91[] = {
 	{ ATF_POINTER, 1, offsetof(struct ReportConfigEUTRA__ext5, ue_RxTxTimeDiffPeriodicalTDD_r13),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
@@ -3711,26 +3456,26 @@ static asn_TYPE_member_t asn_MBR_ext5_95[] = {
 		"ue-RxTxTimeDiffPeriodicalTDD-r13"
 		},
 };
-static int asn_MAP_ext5_oms_95[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext5_tags_95[] = {
+static int asn_MAP_ext5_oms_91[] = { 0 };
+static ber_tlv_tag_t asn_DEF_ext5_tags_91[] = {
 	(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_95[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* ue-RxTxTimeDiffPeriodicalTDD-r13 at 8010 */
+static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_91[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* ue-RxTxTimeDiffPeriodicalTDD-r13 at 7269 */
 };
-static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_95 = {
+static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_91 = {
 	sizeof(struct ReportConfigEUTRA__ext5),
 	offsetof(struct ReportConfigEUTRA__ext5, _asn_ctx),
-	asn_MAP_ext5_tag2el_95,
+	asn_MAP_ext5_tag2el_91,
 	1,	/* Count of tags in the map */
-	asn_MAP_ext5_oms_95,	/* Optional members */
+	asn_MAP_ext5_oms_91,	/* Optional members */
 	1, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext5_95 = {
+asn_TYPE_descriptor_t asn_DEF_ext5_91 = {
 	"ext5",
 	"ext5",
 	SEQUENCE_free,
@@ -3746,127 +3491,16 @@ asn_TYPE_descriptor_t asn_DEF_ext5_95 = {
 	SEQUENCE_encode_aper,
 	SEQUENCE_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext5_tags_95,
-	sizeof(asn_DEF_ext5_tags_95)
-		/sizeof(asn_DEF_ext5_tags_95[0]) - 1, /* 1 */
-	asn_DEF_ext5_tags_95,	/* Same as above */
-	sizeof(asn_DEF_ext5_tags_95)
-		/sizeof(asn_DEF_ext5_tags_95[0]), /* 2 */
+	asn_DEF_ext5_tags_91,
+	sizeof(asn_DEF_ext5_tags_91)
+		/sizeof(asn_DEF_ext5_tags_91[0]) - 1, /* 1 */
+	asn_DEF_ext5_tags_91,	/* Same as above */
+	sizeof(asn_DEF_ext5_tags_91)
+		/sizeof(asn_DEF_ext5_tags_91[0]), /* 2 */
 	0,	/* No PER visible constraints */
-	asn_MBR_ext5_95,
+	asn_MBR_ext5_91,
 	1,	/* Elements count */
-	&asn_SPC_ext5_specs_95	/* Additional specs */
-};
-
-static asn_INTEGER_enum_map_t asn_MAP_purpose_v1430_value2enum_98[] = {
-	{ 0,	14,	"reportLocation" },
-	{ 1,	8,	"sidelink" },
-	{ 2,	6,	"spare2" },
-	{ 3,	6,	"spare1" }
-};
-static unsigned int asn_MAP_purpose_v1430_enum2value_98[] = {
-	0,	/* reportLocation(0) */
-	1,	/* sidelink(1) */
-	3,	/* spare1(3) */
-	2	/* spare2(2) */
-};
-static asn_INTEGER_specifics_t asn_SPC_purpose_v1430_specs_98 = {
-	asn_MAP_purpose_v1430_value2enum_98,	/* "tag" => N; sorted by tag */
-	asn_MAP_purpose_v1430_enum2value_98,	/* N => "tag"; sorted by N */
-	4,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_purpose_v1430_tags_98[] = {
-	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_purpose_v1430_98 = {
-	"purpose-v1430",
-	"purpose-v1430",
-	purpose_v1430_98_free,
-	purpose_v1430_98_print,
-	purpose_v1430_98_constraint,
-	purpose_v1430_98_decode_ber,
-	purpose_v1430_98_encode_der,
-	purpose_v1430_98_decode_xer,
-	purpose_v1430_98_encode_xer,
-	purpose_v1430_98_decode_uper,
-	purpose_v1430_98_encode_uper,
-	purpose_v1430_98_decode_aper,
-	purpose_v1430_98_encode_aper,
-	purpose_v1430_98_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_purpose_v1430_tags_98,
-	sizeof(asn_DEF_purpose_v1430_tags_98)
-		/sizeof(asn_DEF_purpose_v1430_tags_98[0]) - 1, /* 1 */
-	asn_DEF_purpose_v1430_tags_98,	/* Same as above */
-	sizeof(asn_DEF_purpose_v1430_tags_98)
-		/sizeof(asn_DEF_purpose_v1430_tags_98[0]), /* 2 */
-	&asn_PER_type_purpose_v1430_constr_98,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_purpose_v1430_specs_98	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext6_97[] = {
-	{ ATF_POINTER, 1, offsetof(struct ReportConfigEUTRA__ext6, purpose_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_purpose_v1430_98,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"purpose-v1430"
-		},
-};
-static int asn_MAP_ext6_oms_97[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext6_tags_97[] = {
-	(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext6_tag2el_97[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* purpose-v1430 at 8013 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext6_specs_97 = {
-	sizeof(struct ReportConfigEUTRA__ext6),
-	offsetof(struct ReportConfigEUTRA__ext6, _asn_ctx),
-	asn_MAP_ext6_tag2el_97,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext6_oms_97,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext6_97 = {
-	"ext6",
-	"ext6",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext6_tags_97,
-	sizeof(asn_DEF_ext6_tags_97)
-		/sizeof(asn_DEF_ext6_tags_97[0]) - 1, /* 1 */
-	asn_DEF_ext6_tags_97,	/* Same as above */
-	sizeof(asn_DEF_ext6_tags_97)
-		/sizeof(asn_DEF_ext6_tags_97[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext6_97,
-	1,	/* Elements count */
-	&asn_SPC_ext6_specs_97	/* Additional specs */
+	&asn_SPC_ext5_specs_91	/* Additional specs */
 };
 
 static asn_TYPE_member_t asn_MBR_ReportConfigEUTRA_1[] = {
@@ -3882,7 +3516,7 @@ static asn_TYPE_member_t asn_MBR_ReportConfigEUTRA_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA, triggerQuantity),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_triggerQuantity_38,
+		&asn_DEF_triggerQuantity_34,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -3891,7 +3525,7 @@ static asn_TYPE_member_t asn_MBR_ReportConfigEUTRA_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA, reportQuantity),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_reportQuantity_41,
+		&asn_DEF_reportQuantity_37,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -3902,7 +3536,7 @@ static asn_TYPE_member_t asn_MBR_ReportConfigEUTRA_1[] = {
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
 		memb_maxReportCells_constraint_1,
-		&asn_PER_memb_maxReportCells_constr_44,
+		&asn_PER_memb_maxReportCells_constr_40,
 		0,
 		"maxReportCells"
 		},
@@ -3918,94 +3552,84 @@ static asn_TYPE_member_t asn_MBR_ReportConfigEUTRA_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigEUTRA, reportAmount),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_reportAmount_46,
+		&asn_DEF_reportAmount_42,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"reportAmount"
 		},
-	{ ATF_POINTER, 6, offsetof(struct ReportConfigEUTRA, ext1),
+	{ ATF_POINTER, 5, offsetof(struct ReportConfigEUTRA, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		0,
-		&asn_DEF_ext1_56,
+		&asn_DEF_ext1_52,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 5, offsetof(struct ReportConfigEUTRA, ext2),
+	{ ATF_POINTER, 4, offsetof(struct ReportConfigEUTRA, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		0,
-		&asn_DEF_ext2_61,
+		&asn_DEF_ext2_57,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 4, offsetof(struct ReportConfigEUTRA, ext3),
+	{ ATF_POINTER, 3, offsetof(struct ReportConfigEUTRA, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		0,
-		&asn_DEF_ext3_66,
+		&asn_DEF_ext3_62,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 3, offsetof(struct ReportConfigEUTRA, ext4),
+	{ ATF_POINTER, 2, offsetof(struct ReportConfigEUTRA, ext4),
 		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 		0,
-		&asn_DEF_ext4_77,
+		&asn_DEF_ext4_73,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"ext4"
 		},
-	{ ATF_POINTER, 2, offsetof(struct ReportConfigEUTRA, ext5),
+	{ ATF_POINTER, 1, offsetof(struct ReportConfigEUTRA, ext5),
 		(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
 		0,
-		&asn_DEF_ext5_95,
+		&asn_DEF_ext5_91,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"ext5"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ReportConfigEUTRA, ext6),
-		(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
-		0,
-		&asn_DEF_ext6_97,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext6"
-		},
 };
-static int asn_MAP_ReportConfigEUTRA_oms_1[] = { 6, 7, 8, 9, 10, 11 };
+static int asn_MAP_ReportConfigEUTRA_oms_1[] = { 6, 7, 8, 9, 10 };
 static ber_tlv_tag_t asn_DEF_ReportConfigEUTRA_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ReportConfigEUTRA_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* triggerType at 7965 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* triggerQuantity at 7971 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* reportQuantity at 7972 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* maxReportCells at 7973 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* reportInterval at 7974 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* reportAmount at 7975 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext1 at 7977 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext2 at 7980 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext3 at 7986 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* ext4 at 7995 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* ext5 at 8010 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 } /* ext6 at 8014 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* triggerType at 7224 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* triggerQuantity at 7230 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* reportQuantity at 7231 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* maxReportCells at 7232 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* reportInterval at 7233 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* reportAmount at 7234 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext1 at 7236 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext2 at 7239 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext3 at 7245 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* ext4 at 7254 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 } /* ext5 at 7269 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ReportConfigEUTRA_specs_1 = {
 	sizeof(struct ReportConfigEUTRA),
 	offsetof(struct ReportConfigEUTRA, _asn_ctx),
 	asn_MAP_ReportConfigEUTRA_tag2el_1,
-	12,	/* Count of tags in the map */
+	11,	/* Count of tags in the map */
 	asn_MAP_ReportConfigEUTRA_oms_1,	/* Optional members */
-	0, 6,	/* Root/Additions */
+	0, 5,	/* Root/Additions */
 	5,	/* Start extensions */
-	13	/* Stop extensions */
+	12	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_ReportConfigEUTRA = {
 	"ReportConfigEUTRA",
@@ -4031,7 +3655,7 @@ asn_TYPE_descriptor_t asn_DEF_ReportConfigEUTRA = {
 		/sizeof(asn_DEF_ReportConfigEUTRA_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_ReportConfigEUTRA_1,
-	12,	/* Elements count */
+	11,	/* Elements count */
 	&asn_SPC_ReportConfigEUTRA_specs_1	/* Additional specs */
 };
 

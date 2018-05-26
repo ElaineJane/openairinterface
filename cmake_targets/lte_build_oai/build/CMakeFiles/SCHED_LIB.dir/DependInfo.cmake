@@ -4,16 +4,12 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o"
   "/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c.o"
   "/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c.o"
-  "/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o"
   "/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb.c.o"
-  "/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o"
   "/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c.o"
   "/home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c.o"
   "/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.o"
-  "/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o"
   "/home/momo/openairinterface5g/openair1/SCHED/srs_pc.c" "/home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/srs_pc.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
@@ -44,7 +40,6 @@ SET(CMAKE_TARGET_DEFINITIONS
   "NB_ANTENNAS_RX=2"
   "NB_ANTENNAS_TX=4"
   "NB_ANTENNAS_TXRX=2"
-  "NB_IOT"
   "NETTLE_VERSION_MAJOR=2"
   "NETTLE_VERSION_MINOR=7"
   "NEW_FFT"
@@ -57,7 +52,7 @@ SET(CMAKE_TARGET_DEFINITIONS
   "OPENAIR_LTE"
   "PACKAGE_BUGREPORT=\"openair4g-devel@lists.eurecom.fr\""
   "PACKAGE_NAME=\"lte-softmodem\""
-  "PACKAGE_VERSION=\"Branch: develop-nb-iot Abrev. Hash: 90fb259 Date: Mon Apr 23 11:02:35 2018 +0800\""
+  "PACKAGE_VERSION=\"Branch: master Abrev. Hash: f31c2c6 Date: Mon Apr 23 16:02:21 2018 +0800\""
   "PC_DSP"
   "PC_TARGET"
   "PHYSIM"

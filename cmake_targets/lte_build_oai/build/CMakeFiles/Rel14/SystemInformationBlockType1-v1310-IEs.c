@@ -983,8 +983,8 @@ static asn_TYPE_member_t asn_MBR_fdd_DownlinkOrTddSubframeBitmapBR_r13_22[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_fdd_DownlinkOrTddSubframeBitmapBR_r13_tag2el_22[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframePattern10-r13 at 1969 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* subframePattern40-r13 at 1970 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframePattern10-r13 at 1873 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* subframePattern40-r13 at 1874 */
 };
 static asn_CHOICE_specifics_t asn_SPC_fdd_DownlinkOrTddSubframeBitmapBR_r13_specs_22 = {
 	sizeof(struct SystemInformationBlockType1_v1310_IEs__bandwidthReducedAccessRelatedInfo_r13__fdd_DownlinkOrTddSubframeBitmapBR_r13),
@@ -1208,15 +1208,15 @@ static ber_tlv_tag_t asn_DEF_bandwidthReducedAccessRelatedInfo_r13_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_bandwidthReducedAccessRelatedInfo_r13_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* si-WindowLength-BR-r13 at 1963 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* si-RepetitionPattern-r13 at 1965 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* schedulingInfoList-BR-r13 at 1967 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* fdd-DownlinkOrTddSubframeBitmapBR-r13 at 1969 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* fdd-UplinkSubframeBitmapBR-r13 at 1972 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* startSymbolBR-r13 at 1973 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* si-HoppingConfigCommon-r13 at 1974 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* si-ValidityTime-r13 at 1975 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* systemInfoValueTagList-r13 at 1976 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* si-WindowLength-BR-r13 at 1867 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* si-RepetitionPattern-r13 at 1869 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* schedulingInfoList-BR-r13 at 1871 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* fdd-DownlinkOrTddSubframeBitmapBR-r13 at 1873 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* fdd-UplinkSubframeBitmapBR-r13 at 1876 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* startSymbolBR-r13 at 1877 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* si-HoppingConfigCommon-r13 at 1878 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* si-ValidityTime-r13 at 1879 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* systemInfoValueTagList-r13 at 1880 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_bandwidthReducedAccessRelatedInfo_r13_specs_6 = {
 	sizeof(struct SystemInformationBlockType1_v1310_IEs__bandwidthReducedAccessRelatedInfo_r13),
@@ -1309,11 +1309,11 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType1_v1310_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType1_v1310_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* hyperSFN-r13 at 1958 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eDRX-Allowed-r13 at 1959 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellSelectionInfoCE-r13 at 1960 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* bandwidthReducedAccessRelatedInfo-r13 at 1964 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* nonCriticalExtension at 1978 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* hyperSFN-r13 at 1862 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eDRX-Allowed-r13 at 1863 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellSelectionInfoCE-r13 at 1864 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* bandwidthReducedAccessRelatedInfo-r13 at 1868 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* nonCriticalExtension at 1882 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType1_v1310_IEs_specs_1 = {
 	sizeof(struct SystemInformationBlockType1_v1310_IEs),

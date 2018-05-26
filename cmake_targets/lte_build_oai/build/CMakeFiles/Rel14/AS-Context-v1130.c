@@ -124,7 +124,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sidelinkUEInformation-r12 at 13604 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sidelinkUEInformation-r12 at 11807 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_6 = {
 	sizeof(struct AS_Context_v1130__ext1),
@@ -208,10 +208,10 @@ static ber_tlv_tag_t asn_DEF_AS_Context_v1130_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_AS_Context_v1130_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* idc-Indication-r11 at 13597 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mbmsInterestIndication-r11 at 13599 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* powerPrefIndication-r11 at 13601 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 13605 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* idc-Indication-r11 at 11800 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mbmsInterestIndication-r11 at 11802 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* powerPrefIndication-r11 at 11804 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 11808 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_AS_Context_v1130_specs_1 = {
 	sizeof(struct AS_Context_v1130),

@@ -178,7 +178,7 @@ asn_TYPE_descriptor_t asn_DEF_successReportRequested_3 = {
 };
 
 static asn_TYPE_member_t asn_MBR_VarWLAN_MobilityConfig_1[] = {
-	{ ATF_POINTER, 3, offsetof(struct VarWLAN_MobilityConfig, wlan_MobilitySet_r13),
+	{ ATF_POINTER, 2, offsetof(struct VarWLAN_MobilityConfig, wlan_MobilitySet_r13),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_WLAN_Id_List_r13,
@@ -187,7 +187,7 @@ static asn_TYPE_member_t asn_MBR_VarWLAN_MobilityConfig_1[] = {
 		0,
 		"wlan-MobilitySet-r13"
 		},
-	{ ATF_POINTER, 2, offsetof(struct VarWLAN_MobilityConfig, successReportRequested),
+	{ ATF_POINTER, 1, offsetof(struct VarWLAN_MobilityConfig, successReportRequested),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_successReportRequested_3,
@@ -196,32 +196,22 @@ static asn_TYPE_member_t asn_MBR_VarWLAN_MobilityConfig_1[] = {
 		0,
 		"successReportRequested"
 		},
-	{ ATF_POINTER, 1, offsetof(struct VarWLAN_MobilityConfig, wlan_SuspendConfig_r14),
-		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_WLAN_SuspendConfig_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"wlan-SuspendConfig-r14"
-		},
 };
-static int asn_MAP_VarWLAN_MobilityConfig_oms_1[] = { 0, 1, 2 };
+static int asn_MAP_VarWLAN_MobilityConfig_oms_1[] = { 0, 1 };
 static ber_tlv_tag_t asn_DEF_VarWLAN_MobilityConfig_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_VarWLAN_MobilityConfig_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* wlan-MobilitySet-r13 at 12914 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* successReportRequested at 12915 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* wlan-SuspendConfig-r14 at 12916 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* wlan-MobilitySet-r13 at 11190 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* successReportRequested at 11191 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_VarWLAN_MobilityConfig_specs_1 = {
 	sizeof(struct VarWLAN_MobilityConfig),
 	offsetof(struct VarWLAN_MobilityConfig, _asn_ctx),
 	asn_MAP_VarWLAN_MobilityConfig_tag2el_1,
-	3,	/* Count of tags in the map */
+	2,	/* Count of tags in the map */
 	asn_MAP_VarWLAN_MobilityConfig_oms_1,	/* Optional members */
-	3, 0,	/* Root/Additions */
+	2, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
@@ -249,7 +239,7 @@ asn_TYPE_descriptor_t asn_DEF_VarWLAN_MobilityConfig = {
 		/sizeof(asn_DEF_VarWLAN_MobilityConfig_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_VarWLAN_MobilityConfig_1,
-	3,	/* Elements count */
+	2,	/* Elements count */
 	&asn_SPC_VarWLAN_MobilityConfig_specs_1	/* Additional specs */
 };
 

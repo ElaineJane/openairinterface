@@ -173,8 +173,8 @@ static ber_tlv_tag_t asn_DEF_threshX_Q_r12_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_threshX_Q_r12_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threshX-HighQ-r12 at 2954 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* threshX-LowQ-r12 at 2956 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threshX-HighQ-r12 at 2715 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* threshX-LowQ-r12 at 2717 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_threshX_Q_r12_specs_17 = {
 	sizeof(struct InterFreqCarrierFreqInfo_r12__threshX_Q_r12),
@@ -448,26 +448,26 @@ static ber_tlv_tag_t asn_DEF_InterFreqCarrierFreqInfo_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_InterFreqCarrierFreqInfo_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-CarrierFreq-r12 at 2938 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* q-RxLevMin-r12 at 2939 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* p-Max-r12 at 2940 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* t-ReselectionEUTRA-r12 at 2941 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* t-ReselectionEUTRA-SF-r12 at 2942 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* threshX-High-r12 at 2943 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* threshX-Low-r12 at 2944 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* allowedMeasBandwidth-r12 at 2945 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* presenceAntennaPort1-r12 at 2946 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* cellReselectionPriority-r12 at 2947 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* neighCellConfig-r12 at 2948 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* q-OffsetFreq-r12 at 2949 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* interFreqNeighCellList-r12 at 2950 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* interFreqBlackCellList-r12 at 2951 */
-    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* q-QualMin-r12 at 2952 */
-    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 }, /* threshX-Q-r12 at 2954 */
-    { (ASN_TAG_CLASS_CONTEXT | (16 << 2)), 16, 0, 0 }, /* q-QualMinWB-r12 at 2957 */
-    { (ASN_TAG_CLASS_CONTEXT | (17 << 2)), 17, 0, 0 }, /* multiBandInfoList-r12 at 2958 */
-    { (ASN_TAG_CLASS_CONTEXT | (18 << 2)), 18, 0, 0 }, /* reducedMeasPerformance-r12 at 2959 */
-    { (ASN_TAG_CLASS_CONTEXT | (19 << 2)), 19, 0, 0 } /* q-QualMinRSRQ-OnAllSymbols-r12 at 2960 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-CarrierFreq-r12 at 2699 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* q-RxLevMin-r12 at 2700 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* p-Max-r12 at 2701 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* t-ReselectionEUTRA-r12 at 2702 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* t-ReselectionEUTRA-SF-r12 at 2703 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* threshX-High-r12 at 2704 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* threshX-Low-r12 at 2705 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* allowedMeasBandwidth-r12 at 2706 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* presenceAntennaPort1-r12 at 2707 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* cellReselectionPriority-r12 at 2708 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* neighCellConfig-r12 at 2709 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* q-OffsetFreq-r12 at 2710 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* interFreqNeighCellList-r12 at 2711 */
+    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* interFreqBlackCellList-r12 at 2712 */
+    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* q-QualMin-r12 at 2713 */
+    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 }, /* threshX-Q-r12 at 2715 */
+    { (ASN_TAG_CLASS_CONTEXT | (16 << 2)), 16, 0, 0 }, /* q-QualMinWB-r12 at 2718 */
+    { (ASN_TAG_CLASS_CONTEXT | (17 << 2)), 17, 0, 0 }, /* multiBandInfoList-r12 at 2719 */
+    { (ASN_TAG_CLASS_CONTEXT | (18 << 2)), 18, 0, 0 }, /* reducedMeasPerformance-r12 at 2720 */
+    { (ASN_TAG_CLASS_CONTEXT | (19 << 2)), 19, 0, 0 } /* q-QualMinRSRQ-OnAllSymbols-r12 at 2721 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_InterFreqCarrierFreqInfo_r12_specs_1 = {
 	sizeof(struct InterFreqCarrierFreqInfo_r12),

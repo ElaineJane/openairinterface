@@ -432,9 +432,9 @@ static ber_tlv_tag_t asn_DEF_txFailParams_r12_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_txFailParams_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* connEstFailCount-r12 at 5625 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* connEstFailOffsetValidity-r12 at 5626 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* connEstFailOffset-r12 at 5628 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* connEstFailCount-r12 at 5048 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* connEstFailOffsetValidity-r12 at 5049 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* connEstFailOffset-r12 at 5051 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_txFailParams_r12_specs_2 = {
 	sizeof(struct RACH_ConfigCommon_v1250__txFailParams_r12),
@@ -490,7 +490,7 @@ static ber_tlv_tag_t asn_DEF_RACH_ConfigCommon_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RACH_ConfigCommon_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* txFailParams-r12 at 5625 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* txFailParams-r12 at 5048 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RACH_ConfigCommon_v1250_specs_1 = {
 	sizeof(struct RACH_ConfigCommon_v1250),

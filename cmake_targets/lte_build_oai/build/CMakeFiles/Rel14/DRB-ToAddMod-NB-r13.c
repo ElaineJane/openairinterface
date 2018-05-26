@@ -67,64 +67,6 @@ static asn_per_constraints_t asn_PER_memb_logicalChannelIdentity_r13_constr_6 GC
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_TYPE_member_t asn_MBR_ext1_9[] = {
-	{ ATF_POINTER, 1, offsetof(struct DRB_ToAddMod_NB_r13__ext1, rlc_Config_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_RLC_Config_NB_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"rlc-Config-v1430"
-		},
-};
-static int asn_MAP_ext1_oms_9[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext1_tags_9[] = {
-	(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rlc-Config-v1430 at 12446 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_9 = {
-	sizeof(struct DRB_ToAddMod_NB_r13__ext1),
-	offsetof(struct DRB_ToAddMod_NB_r13__ext1, _asn_ctx),
-	asn_MAP_ext1_tag2el_9,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext1_oms_9,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext1_9 = {
-	"ext1",
-	"ext1",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext1_tags_9,
-	sizeof(asn_DEF_ext1_tags_9)
-		/sizeof(asn_DEF_ext1_tags_9[0]) - 1, /* 1 */
-	asn_DEF_ext1_tags_9,	/* Same as above */
-	sizeof(asn_DEF_ext1_tags_9)
-		/sizeof(asn_DEF_ext1_tags_9[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext1_9,
-	1,	/* Elements count */
-	&asn_SPC_ext1_specs_9	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_DRB_ToAddMod_NB_r13_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct DRB_ToAddMod_NB_r13, eps_BearerIdentity_r13),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -144,7 +86,7 @@ static asn_TYPE_member_t asn_MBR_DRB_ToAddMod_NB_r13_1[] = {
 		0,
 		"drb-Identity-r13"
 		},
-	{ ATF_POINTER, 5, offsetof(struct DRB_ToAddMod_NB_r13, pdcp_Config_r13),
+	{ ATF_POINTER, 4, offsetof(struct DRB_ToAddMod_NB_r13, pdcp_Config_r13),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDCP_Config_NB_r13,
@@ -153,7 +95,7 @@ static asn_TYPE_member_t asn_MBR_DRB_ToAddMod_NB_r13_1[] = {
 		0,
 		"pdcp-Config-r13"
 		},
-	{ ATF_POINTER, 4, offsetof(struct DRB_ToAddMod_NB_r13, rlc_Config_r13),
+	{ ATF_POINTER, 3, offsetof(struct DRB_ToAddMod_NB_r13, rlc_Config_r13),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_RLC_Config_NB_r13,
@@ -162,7 +104,7 @@ static asn_TYPE_member_t asn_MBR_DRB_ToAddMod_NB_r13_1[] = {
 		0,
 		"rlc-Config-r13"
 		},
-	{ ATF_POINTER, 3, offsetof(struct DRB_ToAddMod_NB_r13, logicalChannelIdentity_r13),
+	{ ATF_POINTER, 2, offsetof(struct DRB_ToAddMod_NB_r13, logicalChannelIdentity_r13),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -171,7 +113,7 @@ static asn_TYPE_member_t asn_MBR_DRB_ToAddMod_NB_r13_1[] = {
 		0,
 		"logicalChannelIdentity-r13"
 		},
-	{ ATF_POINTER, 2, offsetof(struct DRB_ToAddMod_NB_r13, logicalChannelConfig_r13),
+	{ ATF_POINTER, 1, offsetof(struct DRB_ToAddMod_NB_r13, logicalChannelConfig_r13),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_LogicalChannelConfig_NB_r13,
@@ -180,38 +122,28 @@ static asn_TYPE_member_t asn_MBR_DRB_ToAddMod_NB_r13_1[] = {
 		0,
 		"logicalChannelConfig-r13"
 		},
-	{ ATF_POINTER, 1, offsetof(struct DRB_ToAddMod_NB_r13, ext1),
-		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
-		0,
-		&asn_DEF_ext1_9,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext1"
-		},
 };
-static int asn_MAP_DRB_ToAddMod_NB_r13_oms_1[] = { 0, 2, 3, 4, 5, 6 };
+static int asn_MAP_DRB_ToAddMod_NB_r13_oms_1[] = { 0, 2, 3, 4, 5 };
 static ber_tlv_tag_t asn_DEF_DRB_ToAddMod_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_DRB_ToAddMod_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eps-BearerIdentity-r13 at 12439 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* drb-Identity-r13 at 12440 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pdcp-Config-r13 at 12441 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* rlc-Config-r13 at 12442 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* logicalChannelIdentity-r13 at 12443 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* logicalChannelConfig-r13 at 12444 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext1 at 12446 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eps-BearerIdentity-r13 at 10824 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* drb-Identity-r13 at 10825 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pdcp-Config-r13 at 10826 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* rlc-Config-r13 at 10827 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* logicalChannelIdentity-r13 at 10828 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* logicalChannelConfig-r13 at 10829 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_DRB_ToAddMod_NB_r13_specs_1 = {
 	sizeof(struct DRB_ToAddMod_NB_r13),
 	offsetof(struct DRB_ToAddMod_NB_r13, _asn_ctx),
 	asn_MAP_DRB_ToAddMod_NB_r13_tag2el_1,
-	7,	/* Count of tags in the map */
+	6,	/* Count of tags in the map */
 	asn_MAP_DRB_ToAddMod_NB_r13_oms_1,	/* Optional members */
-	5, 1,	/* Root/Additions */
+	5, 0,	/* Root/Additions */
 	5,	/* Start extensions */
-	8	/* Stop extensions */
+	7	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_DRB_ToAddMod_NB_r13 = {
 	"DRB-ToAddMod-NB-r13",
@@ -237,7 +169,7 @@ asn_TYPE_descriptor_t asn_DEF_DRB_ToAddMod_NB_r13 = {
 		/sizeof(asn_DEF_DRB_ToAddMod_NB_r13_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_DRB_ToAddMod_NB_r13_1,
-	7,	/* Elements count */
+	6,	/* Elements count */
 	&asn_SPC_DRB_ToAddMod_NB_r13_specs_1	/* Additional specs */
 };
 

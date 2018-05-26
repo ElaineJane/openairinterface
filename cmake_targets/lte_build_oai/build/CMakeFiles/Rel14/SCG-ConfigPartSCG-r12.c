@@ -33,8 +33,8 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_8[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellToReleaseListSCG-Ext-r13 at 1053 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* sCellToAddModListSCG-Ext-r13 at 1054 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellToReleaseListSCG-Ext-r13 at 1003 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* sCellToAddModListSCG-Ext-r13 at 1004 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_8 = {
 	sizeof(struct SCG_ConfigPartSCG_r12__ext1),
@@ -136,12 +136,12 @@ static ber_tlv_tag_t asn_DEF_SCG_ConfigPartSCG_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SCG_ConfigPartSCG_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* radioResourceConfigDedicatedSCG-r12 at 1046 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sCellToReleaseListSCG-r12 at 1047 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pSCellToAddMod-r12 at 1048 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sCellToAddModListSCG-r12 at 1049 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* mobilityControlInfoSCG-r12 at 1050 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* ext1 at 1053 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* radioResourceConfigDedicatedSCG-r12 at 996 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sCellToReleaseListSCG-r12 at 997 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pSCellToAddMod-r12 at 998 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sCellToAddModListSCG-r12 at 999 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* mobilityControlInfoSCG-r12 at 1000 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* ext1 at 1003 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SCG_ConfigPartSCG_r12_specs_1 = {
 	sizeof(struct SCG_ConfigPartSCG_r12),

@@ -26,7 +26,7 @@ typedef enum AccessStratumRelease {
 	AccessStratumRelease_rel11	= 3,
 	AccessStratumRelease_rel12	= 4,
 	AccessStratumRelease_rel13	= 5,
-	AccessStratumRelease_rel14	= 6,
+	AccessStratumRelease_spare2	= 6,
 	AccessStratumRelease_spare1	= 7
 	/*
 	 * Enumeration is extensible

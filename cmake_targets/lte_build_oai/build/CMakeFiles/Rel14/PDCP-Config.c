@@ -1330,149 +1330,6 @@ statusPDU_Periodicity_Offset_r13_146_decode_aper(asn_codec_ctx_t *opt_codec_ctx,
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
-static int
-ul_LWA_DataSplitThreshold_r14_164_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	/* Replace with underlying type checker */
-	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
-	return td->check_constraints(td, sptr, ctfailcb, app_key);
-}
-
-/*
- * This type is implemented using NativeEnumerated,
- * so here we adjust the DEF accordingly.
- */
-static void
-ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
-	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
-	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
-	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
-	td->der_encoder    = asn_DEF_NativeEnumerated.der_encoder;
-	td->xer_decoder    = asn_DEF_NativeEnumerated.xer_decoder;
-	td->xer_encoder    = asn_DEF_NativeEnumerated.xer_encoder;
-	td->uper_decoder   = asn_DEF_NativeEnumerated.uper_decoder;
-	td->uper_encoder   = asn_DEF_NativeEnumerated.uper_encoder;
-	td->aper_decoder   = asn_DEF_NativeEnumerated.aper_decoder;
-	td->aper_encoder   = asn_DEF_NativeEnumerated.aper_encoder;
-	td->compare        = asn_DEF_NativeEnumerated.compare;
-	if(!td->per_constraints)
-		td->per_constraints = asn_DEF_NativeEnumerated.per_constraints;
-	td->elements       = asn_DEF_NativeEnumerated.elements;
-	td->elements_count = asn_DEF_NativeEnumerated.elements_count;
-     /* td->specifics      = asn_DEF_NativeEnumerated.specifics;	// Defined explicitly */
-}
-
-static void
-ul_LWA_DataSplitThreshold_r14_164_free(asn_TYPE_descriptor_t *td,
-		void *struct_ptr, int contents_only) {
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td);
-	td->free_struct(td, struct_ptr, contents_only);
-}
-
-static int
-ul_LWA_DataSplitThreshold_r14_164_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
-		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td);
-	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
-}
-
-static asn_dec_rval_t
-ul_LWA_DataSplitThreshold_r14_164_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td);
-	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
-}
-
-static asn_enc_rval_t
-ul_LWA_DataSplitThreshold_r14_164_encode_der(asn_TYPE_descriptor_t *td,
-		void *structure, int tag_mode, ber_tlv_tag_t tag,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td);
-	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
-}
-
-static asn_dec_rval_t
-ul_LWA_DataSplitThreshold_r14_164_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td);
-	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
-}
-
-static asn_enc_rval_t
-ul_LWA_DataSplitThreshold_r14_164_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
-		int ilevel, enum xer_encoder_flags_e flags,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td);
-	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
-}
-
-static asn_dec_rval_t
-ul_LWA_DataSplitThreshold_r14_164_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td);
-	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static asn_enc_rval_t
-ul_LWA_DataSplitThreshold_r14_164_encode_uper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td);
-	return td->uper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_enc_rval_t
-ul_LWA_DataSplitThreshold_r14_164_encode_aper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td);
-	return td->aper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_comp_rval_t * 
-ul_LWA_DataSplitThreshold_r14_164_compare(asn_TYPE_descriptor_t *td1,
-		const void *structure1,
-		asn_TYPE_descriptor_t *td2,
-		const void *structure2) {
-	asn_comp_rval_t * res  = NULL;
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td1);
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td2);
-	res = td1->compare(td1, structure1, td2, structure2);
-	return res;
-}
-
-static asn_dec_rval_t
-ul_LWA_DataSplitThreshold_r14_164_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	ul_LWA_DataSplitThreshold_r14_164_inherit_TYPE_descriptor(td);
-	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static int
-memb_maxCID_r14_constraint_182(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 1 && value <= 16383)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
 static asn_per_constraints_t asn_PER_type_discardTimer_constr_2 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 3,  3,  0,  7 }	/* (0..7) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
@@ -1544,26 +1401,6 @@ static asn_per_constraints_t asn_PER_type_statusPDU_Periodicity_Offset_r13_const
 	0, 0	/* No PER value map */
 };
 static asn_per_constraints_t asn_PER_type_statusFeedback_r13_constr_96 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_type_ul_LWA_DataSplitThreshold_r14_constr_164 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 4,  4,  0,  14 }	/* (0..14) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_type_ul_LWA_Config_r14_constr_160 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_maxCID_r14_constr_183 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 14,  14,  1,  16383 }	/* (1..16383) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_type_uplinkOnlyHeaderCompression_r14_constr_180 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
@@ -1645,7 +1482,7 @@ static ber_tlv_tag_t asn_DEF_rlc_AM_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_rlc_AM_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* statusReportRequired at 4695 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* statusReportRequired at 4248 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_rlc_AM_specs_11 = {
 	sizeof(struct PDCP_Config__rlc_AM),
@@ -1750,7 +1587,7 @@ static ber_tlv_tag_t asn_DEF_rlc_UM_tags_13[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_rlc_UM_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pdcp-SN-Size at 4698 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pdcp-SN-Size at 4251 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_rlc_UM_specs_13 = {
 	sizeof(struct PDCP_Config__rlc_UM),
@@ -1896,15 +1733,15 @@ static ber_tlv_tag_t asn_DEF_profiles_tags_21[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_profiles_tag2el_21[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* profile0x0001 at 4705 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* profile0x0002 at 4706 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* profile0x0003 at 4707 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* profile0x0004 at 4708 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* profile0x0006 at 4709 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* profile0x0101 at 4710 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* profile0x0102 at 4711 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* profile0x0103 at 4712 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* profile0x0104 at 4713 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* profile0x0001 at 4258 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* profile0x0002 at 4259 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* profile0x0003 at 4260 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* profile0x0004 at 4261 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* profile0x0006 at 4262 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* profile0x0101 at 4263 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* profile0x0102 at 4264 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* profile0x0103 at 4265 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* profile0x0104 at 4266 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_profiles_specs_21 = {
 	sizeof(struct PDCP_Config__headerCompression__rohc__profiles),
@@ -1970,8 +1807,8 @@ static ber_tlv_tag_t asn_DEF_rohc_tags_19[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_rohc_tag2el_19[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxCID at 4703 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* profiles at 4705 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxCID at 4256 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* profiles at 4258 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_rohc_specs_19 = {
 	sizeof(struct PDCP_Config__headerCompression__rohc),
@@ -2033,8 +1870,8 @@ static asn_TYPE_member_t asn_MBR_headerCompression_17[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_headerCompression_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* notUsed at 4701 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rohc at 4703 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* notUsed at 4254 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rohc at 4256 */
 };
 static asn_CHOICE_specifics_t asn_SPC_headerCompression_specs_17 = {
 	sizeof(struct PDCP_Config__headerCompression),
@@ -2137,7 +1974,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_33[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_33[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rn-IntegrityProtection-r10 at 4719 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rn-IntegrityProtection-r10 at 4272 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_33 = {
 	sizeof(struct PDCP_Config__ext1),
@@ -2242,7 +2079,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_36[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_36[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pdcp-SN-Size-v1130 at 4721 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pdcp-SN-Size-v1130 at 4274 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_36 = {
 	sizeof(struct PDCP_Config__ext2),
@@ -2418,8 +2255,8 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_39[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_39[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-DataSplitDRB-ViaSCG-r12 at 4723 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* t-Reordering-r12 at 4725 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-DataSplitDRB-ViaSCG-r12 at 4276 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* t-Reordering-r12 at 4278 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_39 = {
 	sizeof(struct PDCP_Config__ext3),
@@ -2558,8 +2395,8 @@ static asn_TYPE_member_t asn_MBR_ul_DataSplitThreshold_r13_75[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_ul_DataSplitThreshold_r13_tag2el_75[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4732 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4734 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4285 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4287 */
 };
 static asn_CHOICE_specifics_t asn_SPC_ul_DataSplitThreshold_r13_specs_75 = {
 	sizeof(struct PDCP_Config__ext4__ul_DataSplitThreshold_r13),
@@ -2981,10 +2818,10 @@ static ber_tlv_tag_t asn_DEF_setup_tags_98[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_98[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* statusPDU-TypeForPolling-r13 at 4742 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* statusPDU-Periodicity-Type1-r13 at 4744 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* statusPDU-Periodicity-Type2-r13 at 4748 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* statusPDU-Periodicity-Offset-r13 at 4752 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* statusPDU-TypeForPolling-r13 at 4295 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* statusPDU-Periodicity-Type1-r13 at 4297 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* statusPDU-Periodicity-Type2-r13 at 4301 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* statusPDU-Periodicity-Offset-r13 at 4305 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_98 = {
 	sizeof(struct PDCP_Config__ext4__statusFeedback_r13__setup),
@@ -3046,8 +2883,8 @@ static asn_TYPE_member_t asn_MBR_statusFeedback_r13_96[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_statusFeedback_r13_tag2el_96[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4740 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4742 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4293 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4295 */
 };
 static asn_CHOICE_specifics_t asn_SPC_statusFeedback_r13_specs_96 = {
 	sizeof(struct PDCP_Config__ext4__statusFeedback_r13),
@@ -3121,9 +2958,9 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_74[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_74[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-DataSplitThreshold-r13 at 4732 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pdcp-SN-Size-v1310 at 4738 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* statusFeedback-r13 at 4740 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-DataSplitThreshold-r13 at 4285 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pdcp-SN-Size-v1310 at 4291 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* statusFeedback-r13 at 4293 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_74 = {
 	sizeof(struct PDCP_Config__ext4),
@@ -3164,481 +3001,6 @@ asn_TYPE_descriptor_t asn_DEF_ext4_74 = {
 	&asn_SPC_ext4_specs_74	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_ul_LWA_DataSplitThreshold_r14_value2enum_164[] = {
-	{ 0,	2,	"b0" },
-	{ 1,	4,	"b100" },
-	{ 2,	4,	"b200" },
-	{ 3,	4,	"b400" },
-	{ 4,	4,	"b800" },
-	{ 5,	5,	"b1600" },
-	{ 6,	5,	"b3200" },
-	{ 7,	5,	"b6400" },
-	{ 8,	6,	"b12800" },
-	{ 9,	6,	"b25600" },
-	{ 10,	6,	"b51200" },
-	{ 11,	7,	"b102400" },
-	{ 12,	7,	"b204800" },
-	{ 13,	7,	"b409600" },
-	{ 14,	7,	"b819200" }
-};
-static unsigned int asn_MAP_ul_LWA_DataSplitThreshold_r14_enum2value_164[] = {
-	0,	/* b0(0) */
-	1,	/* b100(1) */
-	11,	/* b102400(11) */
-	8,	/* b12800(8) */
-	5,	/* b1600(5) */
-	2,	/* b200(2) */
-	12,	/* b204800(12) */
-	9,	/* b25600(9) */
-	6,	/* b3200(6) */
-	3,	/* b400(3) */
-	13,	/* b409600(13) */
-	10,	/* b51200(10) */
-	7,	/* b6400(7) */
-	4,	/* b800(4) */
-	14	/* b819200(14) */
-};
-static asn_INTEGER_specifics_t asn_SPC_ul_LWA_DataSplitThreshold_r14_specs_164 = {
-	asn_MAP_ul_LWA_DataSplitThreshold_r14_value2enum_164,	/* "tag" => N; sorted by tag */
-	asn_MAP_ul_LWA_DataSplitThreshold_r14_enum2value_164,	/* N => "tag"; sorted by N */
-	15,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_ul_LWA_DataSplitThreshold_r14_tags_164[] = {
-	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ul_LWA_DataSplitThreshold_r14_164 = {
-	"ul-LWA-DataSplitThreshold-r14",
-	"ul-LWA-DataSplitThreshold-r14",
-	ul_LWA_DataSplitThreshold_r14_164_free,
-	ul_LWA_DataSplitThreshold_r14_164_print,
-	ul_LWA_DataSplitThreshold_r14_164_constraint,
-	ul_LWA_DataSplitThreshold_r14_164_decode_ber,
-	ul_LWA_DataSplitThreshold_r14_164_encode_der,
-	ul_LWA_DataSplitThreshold_r14_164_decode_xer,
-	ul_LWA_DataSplitThreshold_r14_164_encode_xer,
-	ul_LWA_DataSplitThreshold_r14_164_decode_uper,
-	ul_LWA_DataSplitThreshold_r14_164_encode_uper,
-	ul_LWA_DataSplitThreshold_r14_164_decode_aper,
-	ul_LWA_DataSplitThreshold_r14_164_encode_aper,
-	ul_LWA_DataSplitThreshold_r14_164_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ul_LWA_DataSplitThreshold_r14_tags_164,
-	sizeof(asn_DEF_ul_LWA_DataSplitThreshold_r14_tags_164)
-		/sizeof(asn_DEF_ul_LWA_DataSplitThreshold_r14_tags_164[0]) - 1, /* 1 */
-	asn_DEF_ul_LWA_DataSplitThreshold_r14_tags_164,	/* Same as above */
-	sizeof(asn_DEF_ul_LWA_DataSplitThreshold_r14_tags_164)
-		/sizeof(asn_DEF_ul_LWA_DataSplitThreshold_r14_tags_164[0]), /* 2 */
-	&asn_PER_type_ul_LWA_DataSplitThreshold_r14_constr_164,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_ul_LWA_DataSplitThreshold_r14_specs_164	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_setup_162[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PDCP_Config__ext5__ul_LWA_Config_r14__setup, ul_LWA_DRB_ViaWLAN_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_BOOLEAN,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ul-LWA-DRB-ViaWLAN-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct PDCP_Config__ext5__ul_LWA_Config_r14__setup, ul_LWA_DataSplitThreshold_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ul_LWA_DataSplitThreshold_r14_164,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ul-LWA-DataSplitThreshold-r14"
-		},
-};
-static int asn_MAP_setup_oms_162[] = { 1 };
-static ber_tlv_tag_t asn_DEF_setup_tags_162[] = {
-	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_162[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-LWA-DRB-ViaWLAN-r14 at 4760 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ul-LWA-DataSplitThreshold-r14 at 4762 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_162 = {
-	sizeof(struct PDCP_Config__ext5__ul_LWA_Config_r14__setup),
-	offsetof(struct PDCP_Config__ext5__ul_LWA_Config_r14__setup, _asn_ctx),
-	asn_MAP_setup_tag2el_162,
-	2,	/* Count of tags in the map */
-	asn_MAP_setup_oms_162,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_setup_162 = {
-	"setup",
-	"setup",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_setup_tags_162,
-	sizeof(asn_DEF_setup_tags_162)
-		/sizeof(asn_DEF_setup_tags_162[0]) - 1, /* 1 */
-	asn_DEF_setup_tags_162,	/* Same as above */
-	sizeof(asn_DEF_setup_tags_162)
-		/sizeof(asn_DEF_setup_tags_162[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_setup_162,
-	2,	/* Elements count */
-	&asn_SPC_setup_specs_162	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ul_LWA_Config_r14_160[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PDCP_Config__ext5__ul_LWA_Config_r14, choice.release),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NULL,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"release"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct PDCP_Config__ext5__ul_LWA_Config_r14, choice.setup),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		0,
-		&asn_DEF_setup_162,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"setup"
-		},
-};
-static asn_TYPE_tag2member_t asn_MAP_ul_LWA_Config_r14_tag2el_160[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4758 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4760 */
-};
-static asn_CHOICE_specifics_t asn_SPC_ul_LWA_Config_r14_specs_160 = {
-	sizeof(struct PDCP_Config__ext5__ul_LWA_Config_r14),
-	offsetof(struct PDCP_Config__ext5__ul_LWA_Config_r14, _asn_ctx),
-	offsetof(struct PDCP_Config__ext5__ul_LWA_Config_r14, present),
-	sizeof(((struct PDCP_Config__ext5__ul_LWA_Config_r14 *)0)->present),
-	asn_MAP_ul_LWA_Config_r14_tag2el_160,
-	2,	/* Count of tags in the map */
-	0,
-	-1	/* Extensions start */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ul_LWA_Config_r14_160 = {
-	"ul-LWA-Config-r14",
-	"ul-LWA-Config-r14",
-	CHOICE_free,
-	CHOICE_print,
-	CHOICE_constraint,
-	CHOICE_decode_ber,
-	CHOICE_encode_der,
-	CHOICE_decode_xer,
-	CHOICE_encode_xer,
-	CHOICE_decode_uper,
-	CHOICE_encode_uper,
-	CHOICE_decode_aper,
-	CHOICE_encode_aper,
-	CHOICE_compare,
-	CHOICE_outmost_tag,
-	0,	/* No effective tags (pointer) */
-	0,	/* No effective tags (count) */
-	0,	/* No tags (pointer) */
-	0,	/* No tags (count) */
-	&asn_PER_type_ul_LWA_Config_r14_constr_160,
-	asn_MBR_ul_LWA_Config_r14_160,
-	2,	/* Elements count */
-	&asn_SPC_ul_LWA_Config_r14_specs_160	/* Additional specs */
-};
-
-static int asn_DFL_183_set_15(int set_value, void **sptr) {
-	long *st = *sptr;
-	
-	if(!st) {
-		if(!set_value) return -1;	/* Not a default value */
-		st = (*sptr = CALLOC(1, sizeof(*st)));
-		if(!st) return -1;
-	}
-	
-	if(set_value) {
-		/* Install default value 15 */
-		*st = 15;
-		return 0;
-	} else {
-		/* Test default value 15 */
-		return (*st == 15);
-	}
-}
-static asn_TYPE_member_t asn_MBR_profiles_r14_184[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14__rohc_r14__profiles_r14, profile0x0006_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_BOOLEAN,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"profile0x0006-r14"
-		},
-};
-static ber_tlv_tag_t asn_DEF_profiles_r14_tags_184[] = {
-	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_profiles_r14_tag2el_184[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* profile0x0006-r14 at 4772 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_profiles_r14_specs_184 = {
-	sizeof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14__rohc_r14__profiles_r14),
-	offsetof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14__rohc_r14__profiles_r14, _asn_ctx),
-	asn_MAP_profiles_r14_tag2el_184,
-	1,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_profiles_r14_184 = {
-	"profiles-r14",
-	"profiles-r14",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_profiles_r14_tags_184,
-	sizeof(asn_DEF_profiles_r14_tags_184)
-		/sizeof(asn_DEF_profiles_r14_tags_184[0]) - 1, /* 1 */
-	asn_DEF_profiles_r14_tags_184,	/* Same as above */
-	sizeof(asn_DEF_profiles_r14_tags_184)
-		/sizeof(asn_DEF_profiles_r14_tags_184[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_profiles_r14_184,
-	1,	/* Elements count */
-	&asn_SPC_profiles_r14_specs_184	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_rohc_r14_182[] = {
-	{ ATF_POINTER, 1, offsetof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14__rohc_r14, maxCID_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_maxCID_r14_constraint_182,
-		&asn_PER_memb_maxCID_r14_constr_183,
-		asn_DFL_183_set_15,	/* DEFAULT 15 */
-		"maxCID-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14__rohc_r14, profiles_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		0,
-		&asn_DEF_profiles_r14_184,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"profiles-r14"
-		},
-};
-static int asn_MAP_rohc_r14_oms_182[] = { 0 };
-static ber_tlv_tag_t asn_DEF_rohc_r14_tags_182[] = {
-	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_rohc_r14_tag2el_182[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxCID-r14 at 4770 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* profiles-r14 at 4773 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_rohc_r14_specs_182 = {
-	sizeof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14__rohc_r14),
-	offsetof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14__rohc_r14, _asn_ctx),
-	asn_MAP_rohc_r14_tag2el_182,
-	2,	/* Count of tags in the map */
-	asn_MAP_rohc_r14_oms_182,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	1,	/* Start extensions */
-	3	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_rohc_r14_182 = {
-	"rohc-r14",
-	"rohc-r14",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_rohc_r14_tags_182,
-	sizeof(asn_DEF_rohc_r14_tags_182)
-		/sizeof(asn_DEF_rohc_r14_tags_182[0]) - 1, /* 1 */
-	asn_DEF_rohc_r14_tags_182,	/* Same as above */
-	sizeof(asn_DEF_rohc_r14_tags_182)
-		/sizeof(asn_DEF_rohc_r14_tags_182[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_rohc_r14_182,
-	2,	/* Elements count */
-	&asn_SPC_rohc_r14_specs_182	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_uplinkOnlyHeaderCompression_r14_180[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14, choice.notUsed_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NULL,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"notUsed-r14"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14, choice.rohc_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		0,
-		&asn_DEF_rohc_r14_182,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"rohc-r14"
-		},
-};
-static asn_TYPE_tag2member_t asn_MAP_uplinkOnlyHeaderCompression_r14_tag2el_180[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* notUsed-r14 at 4768 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rohc-r14 at 4770 */
-};
-static asn_CHOICE_specifics_t asn_SPC_uplinkOnlyHeaderCompression_r14_specs_180 = {
-	sizeof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14),
-	offsetof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14, _asn_ctx),
-	offsetof(struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14, present),
-	sizeof(((struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14 *)0)->present),
-	asn_MAP_uplinkOnlyHeaderCompression_r14_tag2el_180,
-	2,	/* Count of tags in the map */
-	0,
-	-1	/* Extensions start */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_uplinkOnlyHeaderCompression_r14_180 = {
-	"uplinkOnlyHeaderCompression-r14",
-	"uplinkOnlyHeaderCompression-r14",
-	CHOICE_free,
-	CHOICE_print,
-	CHOICE_constraint,
-	CHOICE_decode_ber,
-	CHOICE_encode_der,
-	CHOICE_decode_xer,
-	CHOICE_encode_xer,
-	CHOICE_decode_uper,
-	CHOICE_encode_uper,
-	CHOICE_decode_aper,
-	CHOICE_encode_aper,
-	CHOICE_compare,
-	CHOICE_outmost_tag,
-	0,	/* No effective tags (pointer) */
-	0,	/* No effective tags (count) */
-	0,	/* No tags (pointer) */
-	0,	/* No tags (count) */
-	&asn_PER_type_uplinkOnlyHeaderCompression_r14_constr_180,
-	asn_MBR_uplinkOnlyHeaderCompression_r14_180,
-	2,	/* Elements count */
-	&asn_SPC_uplinkOnlyHeaderCompression_r14_specs_180	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext5_159[] = {
-	{ ATF_POINTER, 2, offsetof(struct PDCP_Config__ext5, ul_LWA_Config_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_ul_LWA_Config_r14_160,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ul-LWA-Config-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct PDCP_Config__ext5, uplinkOnlyHeaderCompression_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_uplinkOnlyHeaderCompression_r14_180,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"uplinkOnlyHeaderCompression-r14"
-		},
-};
-static int asn_MAP_ext5_oms_159[] = { 0, 1 };
-static ber_tlv_tag_t asn_DEF_ext5_tags_159[] = {
-	(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_159[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-LWA-Config-r14 at 4758 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* uplinkOnlyHeaderCompression-r14 at 4768 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_159 = {
-	sizeof(struct PDCP_Config__ext5),
-	offsetof(struct PDCP_Config__ext5, _asn_ctx),
-	asn_MAP_ext5_tag2el_159,
-	2,	/* Count of tags in the map */
-	asn_MAP_ext5_oms_159,	/* Optional members */
-	2, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext5_159 = {
-	"ext5",
-	"ext5",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext5_tags_159,
-	sizeof(asn_DEF_ext5_tags_159)
-		/sizeof(asn_DEF_ext5_tags_159[0]) - 1, /* 1 */
-	asn_DEF_ext5_tags_159,	/* Same as above */
-	sizeof(asn_DEF_ext5_tags_159)
-		/sizeof(asn_DEF_ext5_tags_159[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext5_159,
-	2,	/* Elements count */
-	&asn_SPC_ext5_specs_159	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_PDCP_Config_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct PDCP_Config, discardTimer),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -3676,7 +3038,7 @@ static asn_TYPE_member_t asn_MBR_PDCP_Config_1[] = {
 		0,
 		"headerCompression"
 		},
-	{ ATF_POINTER, 5, offsetof(struct PDCP_Config, ext1),
+	{ ATF_POINTER, 4, offsetof(struct PDCP_Config, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		0,
 		&asn_DEF_ext1_33,
@@ -3685,7 +3047,7 @@ static asn_TYPE_member_t asn_MBR_PDCP_Config_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 4, offsetof(struct PDCP_Config, ext2),
+	{ ATF_POINTER, 3, offsetof(struct PDCP_Config, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		0,
 		&asn_DEF_ext2_36,
@@ -3694,7 +3056,7 @@ static asn_TYPE_member_t asn_MBR_PDCP_Config_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 3, offsetof(struct PDCP_Config, ext3),
+	{ ATF_POINTER, 2, offsetof(struct PDCP_Config, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		0,
 		&asn_DEF_ext3_39,
@@ -3703,7 +3065,7 @@ static asn_TYPE_member_t asn_MBR_PDCP_Config_1[] = {
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 2, offsetof(struct PDCP_Config, ext4),
+	{ ATF_POINTER, 1, offsetof(struct PDCP_Config, ext4),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		0,
 		&asn_DEF_ext4_74,
@@ -3712,40 +3074,30 @@ static asn_TYPE_member_t asn_MBR_PDCP_Config_1[] = {
 		0,
 		"ext4"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDCP_Config, ext5),
-		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-		0,
-		&asn_DEF_ext5_159,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext5"
-		},
 };
-static int asn_MAP_PDCP_Config_oms_1[] = { 0, 1, 2, 4, 5, 6, 7, 8 };
+static int asn_MAP_PDCP_Config_oms_1[] = { 0, 1, 2, 4, 5, 6, 7 };
 static ber_tlv_tag_t asn_DEF_PDCP_Config_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PDCP_Config_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discardTimer at 4691 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rlc-AM at 4696 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rlc-UM at 4699 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* headerCompression at 4701 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 4719 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 4721 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext3 at 4723 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext4 at 4737 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* ext5 at 4766 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discardTimer at 4244 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rlc-AM at 4249 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rlc-UM at 4252 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* headerCompression at 4254 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 4272 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 4274 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext3 at 4276 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext4 at 4290 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PDCP_Config_specs_1 = {
 	sizeof(struct PDCP_Config),
 	offsetof(struct PDCP_Config, _asn_ctx),
 	asn_MAP_PDCP_Config_tag2el_1,
-	9,	/* Count of tags in the map */
+	8,	/* Count of tags in the map */
 	asn_MAP_PDCP_Config_oms_1,	/* Optional members */
-	3, 5,	/* Root/Additions */
+	3, 4,	/* Root/Additions */
 	3,	/* Start extensions */
-	10	/* Stop extensions */
+	9	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_PDCP_Config = {
 	"PDCP-Config",
@@ -3771,7 +3123,7 @@ asn_TYPE_descriptor_t asn_DEF_PDCP_Config = {
 		/sizeof(asn_DEF_PDCP_Config_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_PDCP_Config_1,
-	9,	/* Elements count */
+	8,	/* Elements count */
 	&asn_SPC_PDCP_Config_specs_1	/* Additional specs */
 };
 

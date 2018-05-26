@@ -52,10 +52,10 @@ include CMakeFiles/PHY.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/PHY.dir/flags.make
 
-CMakeFiles/Rel14/asn1_constants.h: /home/momo/openairinterface5g/openair2/RRC/LITE/MESSAGES/asn1c/ASN1_files/RRC-e30.asn
+CMakeFiles/Rel14/asn1_constants.h: /home/momo/openairinterface5g/openair2/RRC/LITE/MESSAGES/asn1c/ASN1_files/RRC-e10.asn
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating CMakeFiles/Rel14/asn1_constants.h"
-	/home/momo/openairinterface5g/cmake_targets/tools/generate_asn1 /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/Rel14 /home/momo/openairinterface5g/openair2/RRC/LITE/MESSAGES/asn1c/ASN1_files/RRC-e30.asn
+	/home/momo/openairinterface5g/cmake_targets/tools/generate_asn1 /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/Rel14 /home/momo/openairinterface5g/openair2/RRC/LITE/MESSAGES/asn1c/ASN1_files/RRC-e10.asn
 	/home/momo/openairinterface5g/cmake_targets/tools/fix_asn1 /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/Rel14 RRC Rel14
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pss.c.o: CMakeFiles/PHY.dir/flags.make
@@ -81,32 +81,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pss.c
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pss.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pss.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c
 
@@ -127,32 +104,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c
 
@@ -173,32 +127,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilot
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_mbsfn.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_mbsfn.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_mbsfn.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_mbsfn.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_mbsfn.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_mbsfn.c
 
@@ -221,7 +152,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilot
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c
 
@@ -242,32 +173,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c
 
@@ -288,32 +196,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c
 
@@ -334,32 +219,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation.c
 
@@ -382,7 +244,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/power_control.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/power_control.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/power_control.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/power_control.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/power_control.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/power_control.c
 
@@ -405,7 +267,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/power
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c
 
@@ -428,7 +290,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c
 
@@ -449,32 +311,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_19)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c
 
@@ -495,32 +334,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_t
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_21)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c
 
@@ -541,32 +357,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_t
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_23)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c
 
@@ -587,55 +380,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_m
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_25)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_26)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c
 
@@ -656,32 +403,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_28)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c
 
@@ -702,32 +426,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_30)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/phich.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/phich.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/phich.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/phich.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/phich.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/phich.c
 
@@ -750,7 +451,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/phich
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pcfich.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pcfich.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pcfich.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pcfich.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pcfich.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pcfich.c
 
@@ -773,7 +474,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pcfic
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pucch.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pucch.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pucch.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pucch.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pucch.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pucch.c
 
@@ -796,7 +497,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pucch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c
 
@@ -817,32 +518,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_35)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pmch.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pmch.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pmch.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pmch.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pmch.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pmch.c
 
@@ -865,7 +543,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pmch.
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pch.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pch.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pch.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pch.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pch.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pch.c
 
@@ -888,7 +566,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pch.c
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c
 
@@ -909,32 +587,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_39)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/srs_modulation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/srs_modulation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/srs_modulation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/srs_modulation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/srs_modulation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/srs_modulation.c
 
@@ -957,7 +612,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/srs_m
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/drs_modulation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/drs_modulation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/drs_modulation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/drs_modulation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/drs_modulation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/drs_modulation.c
 
@@ -980,7 +635,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/drs_m
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_modulation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_modulation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_modulation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_modulation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_modulation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_modulation.c
 
@@ -1003,7 +658,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c
 
@@ -1024,32 +679,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_44)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_coding.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_coding.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_coding.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_coding.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_coding.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_coding.c
 
@@ -1072,7 +704,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c
 
@@ -1093,32 +725,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_47)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/rar_tools.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/rar_tools.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/rar_tools.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/rar_tools.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/rar_tools.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/rar_tools.c
 
@@ -1141,7 +750,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/rar_t
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/print_stats.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/print_stats.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/print_stats.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/print_stats.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/print_stats.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/print_stats.c
 
@@ -1164,7 +773,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/print
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/initial_sync.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/initial_sync.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/initial_sync.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_50)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/initial_sync.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/initial_sync.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/initial_sync.c
 
@@ -1187,7 +796,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/initi
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if4_tools.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if4_tools.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if4_tools.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if4_tools.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if4_tools.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if4_tools.c
 
@@ -1210,7 +819,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if4_t
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if5_tools.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if5_tools.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if5_tools.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if5_tools.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if5_tools.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if5_tools.c
 
@@ -1233,7 +842,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/if5_t
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/ofdm_mod.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/ofdm_mod.c.o: /home/momo/openairinterface5g/openair1/PHY/MODULATION/ofdm_mod.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/ofdm_mod.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/ofdm_mod.c.o   -c /home/momo/openairinterface5g/openair1/PHY/MODULATION/ofdm_mod.c
 
@@ -1256,7 +865,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/ofdm_mod
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep.c.o: /home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep.c.o   -c /home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep.c
 
@@ -1279,7 +888,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_mbsfn.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_mbsfn.c.o: /home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_mbsfn.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_mbsfn.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_mbsfn.c.o   -c /home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_mbsfn.c
 
@@ -1302,7 +911,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_ul.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_ul.c.o: /home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_ul.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_ul.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_ul.c.o   -c /home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep_ul.c
 
@@ -1325,7 +934,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/slot_fep
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/ul_7_5_kHz.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/ul_7_5_kHz.c.o: /home/momo/openairinterface5g/openair1/PHY/MODULATION/ul_7_5_kHz.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/ul_7_5_kHz.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/ul_7_5_kHz.c.o   -c /home/momo/openairinterface5g/openair1/PHY/MODULATION/ul_7_5_kHz.c
 
@@ -1348,7 +957,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/ul_7_5_k
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/beamforming.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/beamforming.c.o: /home/momo/openairinterface5g/openair1/PHY/MODULATION/beamforming.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/beamforming.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/beamforming.c.o   -c /home/momo/openairinterface5g/openair1/PHY/MODULATION/beamforming.c
 
@@ -1371,7 +980,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/beamform
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_bf_weights.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_bf_weights.c.o: /home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_bf_weights.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_bf_weights.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_bf_weights.c.o   -c /home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_bf_weights.c
 
@@ -1394,7 +1003,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_60)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c
 
@@ -1415,32 +1024,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_61)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_62)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c
 
@@ -1461,32 +1047,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_63)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c
 
@@ -1507,32 +1070,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_65)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_66)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c
 
@@ -1553,32 +1093,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_67)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_channel_estimation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_channel_estimation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_channel_estimation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_68)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_channel_estimation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_channel_estimation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_channel_estimation.c
 
@@ -1601,7 +1118,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_bf_channel_estimation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_bf_channel_estimation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_bf_channel_estimation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_69)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_bf_channel_estimation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_bf_channel_estimation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_bf_channel_estimation.c
 
@@ -1624,7 +1141,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_mbsfn_channel_estimation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_mbsfn_channel_estimation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_mbsfn_channel_estimation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_70)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_mbsfn_channel_estimation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_mbsfn_channel_estimation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_mbsfn_channel_estimation.c
 
@@ -1647,7 +1164,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_71)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c
 
@@ -1668,32 +1185,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_72)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_est_freq_offset.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_est_freq_offset.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_est_freq_offset.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_73)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_est_freq_offset.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_est_freq_offset.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_est_freq_offset.c
 
@@ -1716,7 +1210,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ue_measurements.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ue_measurements.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ue_measurements.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_74)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ue_measurements.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ue_measurements.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ue_measurements.c
 
@@ -1739,7 +1233,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_eNB_measurements.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_eNB_measurements.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_eNB_measurements.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_75)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_eNB_measurements.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_eNB_measurements.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_eNB_measurements.c
 
@@ -1762,7 +1256,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/adjust_gain.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/adjust_gain.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/adjust_gain.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_76)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/adjust_gain.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/adjust_gain.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/adjust_gain.c
 
@@ -1785,7 +1279,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/adju
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_77)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c
 
@@ -1806,32 +1300,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_c
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_78)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_uespec.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_uespec.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_uespec.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_79)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_uespec.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_uespec.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_uespec.c
 
@@ -1854,7 +1325,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_u
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_80)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c
 
@@ -1875,32 +1346,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_81)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_mbsfn.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_mbsfn.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_mbsfn.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_82)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_mbsfn.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_mbsfn.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_mbsfn.c
 
@@ -1923,7 +1371,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_mbsfn.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_mbsfn.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_mbsfn.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_83)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_mbsfn.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_mbsfn.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_mbsfn.c
 
@@ -1946,7 +1394,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_m
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_84)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c
 
@@ -1967,32 +1415,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_r
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_85)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_86)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c
 
@@ -2013,32 +1438,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmenta
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_87)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_88)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c
 
@@ -2059,32 +1461,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_89)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_lte.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_lte.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_lte.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_90)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_lte.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_lte.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_lte.c
 
@@ -2107,7 +1486,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_sse.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_sse.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_sse.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_91)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_sse.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_sse.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_sse.c
 
@@ -2130,7 +1509,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_sse.
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_92)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c
 
@@ -2151,32 +1530,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c.o
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_93)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_8bit.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_8bit.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_8bit.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_94)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_8bit.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_8bit.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_8bit.c
 
@@ -2199,7 +1555,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turb
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_16bit.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_16bit.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_16bit.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_95)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_16bit.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_16bit.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_16bit.c
 
@@ -2222,7 +1578,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turb
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_avx2_16bit.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_avx2_16bit.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_avx2_16bit.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_96)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_avx2_16bit.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_avx2_16bit.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_avx2_16bit.c
 
@@ -2245,7 +1601,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turb
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_97)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c
 
@@ -2266,32 +1622,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_mat
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_98)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/rate_matching.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/rate_matching.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/rate_matching.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_99)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/rate_matching.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/rate_matching.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/rate_matching.c
 
@@ -2314,7 +1647,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/rate_matchin
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_100)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c
 
@@ -2337,7 +1670,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c.o.
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_101)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c
 
@@ -2358,32 +1691,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_102)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c.o: /home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_103)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c.o   -c /home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c
 
@@ -2404,32 +1714,9 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c.o.p
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c.o
 
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o: CMakeFiles/PHY.dir/flags.make
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_104)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c > CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.i
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.s
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o.requires
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o.provides: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/PHY.dir/build.make CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o.provides
-
-CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o.provides.build: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o
-
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_parms.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_parms.c.o: /home/momo/openairinterface5g/openair1/PHY/INIT/lte_parms.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_105)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_parms.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_parms.c.o   -c /home/momo/openairinterface5g/openair1/PHY/INIT/lte_parms.c
 
@@ -2452,7 +1739,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_parms.c.o.
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_param_init.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_param_init.c.o: /home/momo/openairinterface5g/openair1/PHY/INIT/lte_param_init.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_106)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_param_init.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_param_init.c.o   -c /home/momo/openairinterface5g/openair1/PHY/INIT/lte_param_init.c
 
@@ -2475,7 +1762,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_param_init
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_107)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c
 
@@ -2498,7 +1785,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cadd_vv.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cadd_vv.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/cadd_vv.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_108)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cadd_vv.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cadd_vv.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/cadd_vv.c
 
@@ -2521,7 +1808,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cadd_vv.c.o.p
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/lte_dfts.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/lte_dfts.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/lte_dfts.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_109)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/lte_dfts.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/lte_dfts.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/lte_dfts.c
 
@@ -2544,7 +1831,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/lte_dfts.c.o.
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/log2_approx.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/log2_approx.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/log2_approx.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_110)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/log2_approx.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/log2_approx.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/log2_approx.c
 
@@ -2567,7 +1854,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/log2_approx.c
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_sv.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_sv.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_sv.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_111)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_80)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_sv.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_sv.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_sv.c
 
@@ -2590,7 +1877,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_sv.c.o.
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_vv.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_vv.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_vv.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_112)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_vv.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_vv.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_vv.c
 
@@ -2613,7 +1900,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cmult_vv.c.o.
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cdot_prod.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cdot_prod.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/cdot_prod.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_113)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cdot_prod.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cdot_prod.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/cdot_prod.c
 
@@ -2636,7 +1923,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/cdot_prod.c.o
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/signal_energy.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/signal_energy.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/signal_energy.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_114)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/signal_energy.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/signal_energy.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/signal_energy.c
 
@@ -2659,7 +1946,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/signal_energy
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/dB_routines.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/dB_routines.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/dB_routines.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_115)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/dB_routines.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/dB_routines.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/dB_routines.c
 
@@ -2682,7 +1969,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/dB_routines.c
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/sqrt.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/sqrt.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/sqrt.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_116)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/sqrt.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/sqrt.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/sqrt.c
 
@@ -2705,7 +1992,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/sqrt.c.o.prov
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/time_meas.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/time_meas.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/time_meas.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_117)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_86)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/time_meas.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/time_meas.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/time_meas.c
 
@@ -2728,7 +2015,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/time_meas.c.o
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/lut.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/lut.c.o: /home/momo/openairinterface5g/openair1/PHY/TOOLS/lut.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_118)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_87)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/lut.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/lut.c.o   -c /home/momo/openairinterface5g/openair1/PHY/TOOLS/lut.c
 
@@ -2751,7 +2038,7 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/lut.c.o.provi
 
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation_avx2.c.o: CMakeFiles/PHY.dir/flags.make
 CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation_avx2.c.o: /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation_avx2.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_119)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_88)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation_avx2.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation_avx2.c.o   -c /home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation_avx2.c
 
@@ -2775,51 +2062,34 @@ CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch
 # Object files for target PHY
 PHY_OBJECTS = \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pss.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_mbsfn.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/power_control.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/phich.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pcfich.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pucch.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pmch.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pch.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/srs_modulation.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/drs_modulation.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_modulation.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_coding.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/rar_tools.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/print_stats.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/initial_sync.c.o" \
@@ -2833,50 +2103,36 @@ PHY_OBJECTS = \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/beamforming.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_bf_weights.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_channel_estimation.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_bf_channel_estimation.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_mbsfn_channel_estimation.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_est_freq_offset.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ue_measurements.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_eNB_measurements.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/adjust_gain.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_uespec.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_mbsfn.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_mbsfn.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_lte.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_sse.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_8bit.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_16bit.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_avx2_16bit.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/rate_matching.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c.o" \
-"CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_parms.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_param_init.c.o" \
 "CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c.o" \
@@ -2897,51 +2153,34 @@ PHY_OBJECTS = \
 PHY_EXTERNAL_OBJECTS =
 
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pss.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_mbsfn.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/power_control.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/phich.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pcfich.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pucch.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pmch.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pch.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/srs_modulation.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/drs_modulation.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_modulation.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_coding.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/rar_tools.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/print_stats.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/initial_sync.c.o
@@ -2955,50 +2194,36 @@ libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATIO
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/beamforming.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_bf_weights.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_channel_estimation.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_bf_channel_estimation.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_mbsfn_channel_estimation.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_est_freq_offset.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ue_measurements.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_eNB_measurements.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/adjust_gain.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_uespec.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_mbsfn.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_mbsfn.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_lte.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_sse.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_8bit.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_16bit.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_avx2_16bit.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/rate_matching.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c.o
-libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_parms.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_param_init.c.o
 libPHY.a: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c.o
@@ -3025,51 +2250,34 @@ CMakeFiles/PHY.dir/build: libPHY.a
 .PHONY : CMakeFiles/PHY.dir/build
 
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pss.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npss_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/sss.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nsss_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pilots_mbsfn.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_coding_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_modulation_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_demodulation_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_llr_computation.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/power_control.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_decoding.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dlsch_scrambling_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_tools_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/uci_tools_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_mcs_NB_IoT.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/lte_Isc_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pbch.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/npbch_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/dci_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/phich.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pcfich.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pucch.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/prach.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/nprach_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pmch.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/pch.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/group_hopping_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/srs_modulation.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/drs_modulation.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_modulation.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_demodulation_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_coding.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/ulsch_decoding_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/rar_tools.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/print_stats.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_TRANSPORT/initial_sync.c.o.requires
@@ -3083,50 +2291,36 @@ CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/ope
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/beamforming.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/MODULATION/compute_bf_weights.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/freq_equalization_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_time_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_sync_timefreq_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_adjust_sync_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_channel_estimation.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_bf_channel_estimation.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_dl_mbsfn_channel_estimation.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ul_channel_estimation_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_est_freq_offset.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_ue_measurements.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/lte_eNB_measurements.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_ESTIMATION/adjust_gain.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_cell_spec_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_uespec.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_gold_mbsfn.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_dl_mbsfn.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/LTE_REFSIG/lte_ul_ref_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_segmentation_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/ccoding_byte_lte.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_sse.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/crc_byte_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_8bit.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_sse_16bit.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/3gpplte_turbo_decoder_avx2_16bit.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/lte_rate_matching_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/rate_matching.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/CODING/viterbi_lte_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init.c.o.requires
-CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_init_NB_IoT.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_parms.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/INIT/lte_param_init.c.o.requires
 CMakeFiles/PHY.dir/requires: CMakeFiles/PHY.dir/home/momo/openairinterface5g/openair1/PHY/TOOLS/file_output.c.o.requires

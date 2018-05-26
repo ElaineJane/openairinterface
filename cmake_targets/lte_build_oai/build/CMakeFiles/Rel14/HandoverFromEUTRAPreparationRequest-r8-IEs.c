@@ -50,10 +50,10 @@ static ber_tlv_tag_t asn_DEF_HandoverFromEUTRAPreparationRequest_r8_IEs_tags_1[]
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_HandoverFromEUTRAPreparationRequest_r8_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cdma2000-Type at 340 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rand at 341 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* mobilityParameters at 342 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* nonCriticalExtension at 343 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cdma2000-Type at 314 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rand at 315 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* mobilityParameters at 316 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* nonCriticalExtension at 317 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_HandoverFromEUTRAPreparationRequest_r8_IEs_specs_1 = {
 	sizeof(struct HandoverFromEUTRAPreparationRequest_r8_IEs),

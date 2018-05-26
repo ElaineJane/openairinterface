@@ -730,10 +730,10 @@ static ber_tlv_tag_t asn_DEF_MIMO_NonPrecodedCapabilities_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MIMO_NonPrecodedCapabilities_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* config1-r13 at 8972 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* config2-r13 at 8973 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* config3-r13 at 8974 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* config4-r13 at 8975 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* config1-r13 at 8076 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* config2-r13 at 8077 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* config3-r13 at 8078 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* config4-r13 at 8079 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MIMO_NonPrecodedCapabilities_r13_specs_1 = {
 	sizeof(struct MIMO_NonPrecodedCapabilities_r13),

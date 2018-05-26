@@ -730,10 +730,10 @@ static ber_tlv_tag_t asn_DEF_SCPTM_Parameters_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SCPTM_Parameters_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scptm-ParallelReception-r13 at 9617 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* scptm-SCell-r13 at 9618 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* scptm-NonServingCell-r13 at 9619 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* scptm-AsyncDC-r13 at 9620 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scptm-ParallelReception-r13 at 8633 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* scptm-SCell-r13 at 8634 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* scptm-NonServingCell-r13 at 8635 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* scptm-AsyncDC-r13 at 8636 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SCPTM_Parameters_r13_specs_1 = {
 	sizeof(struct SCPTM_Parameters_r13),

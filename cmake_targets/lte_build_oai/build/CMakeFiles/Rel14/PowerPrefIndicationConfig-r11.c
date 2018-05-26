@@ -228,7 +228,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* powerPrefIndicationTimer-r11 at 8339 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* powerPrefIndicationTimer-r11 at 7548 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct PowerPrefIndicationConfig_r11__setup),
@@ -289,8 +289,8 @@ static asn_TYPE_member_t asn_MBR_PowerPrefIndicationConfig_r11_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_PowerPrefIndicationConfig_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 8337 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 8342 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7546 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7551 */
 };
 static asn_CHOICE_specifics_t asn_SPC_PowerPrefIndicationConfig_r11_specs_1 = {
 	sizeof(struct PowerPrefIndicationConfig_r11),

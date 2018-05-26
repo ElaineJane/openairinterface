@@ -78,13 +78,13 @@ static asn_TYPE_member_t asn_MBR_RedirectedCarrierInfo_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_RedirectedCarrierInfo_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eutra at 1319 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* geran at 1320 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* utra-FDD at 1321 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* utra-TDD at 1322 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* cdma2000-HRPD at 1323 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* cdma2000-1xRTT at 1324 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* utra-TDD-r10 at 1327 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eutra at 1262 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* geran at 1263 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* utra-FDD at 1264 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* utra-TDD at 1265 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* cdma2000-HRPD at 1266 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* cdma2000-1xRTT at 1267 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* utra-TDD-r10 at 1270 */
 };
 static asn_CHOICE_specifics_t asn_SPC_RedirectedCarrierInfo_specs_1 = {
 	sizeof(struct RedirectedCarrierInfo),

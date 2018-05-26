@@ -17,7 +17,7 @@ static asn_TYPE_member_t asn_MBR_VarMeasReport_1[] = {
 		0,
 		"measId"
 		},
-	{ ATF_POINTER, 4, offsetof(struct VarMeasReport, measId_v1250),
+	{ ATF_POINTER, 3, offsetof(struct VarMeasReport, measId_v1250),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_MeasId_v1250,
@@ -26,7 +26,7 @@ static asn_TYPE_member_t asn_MBR_VarMeasReport_1[] = {
 		0,
 		"measId-v1250"
 		},
-	{ ATF_POINTER, 3, offsetof(struct VarMeasReport, cellsTriggeredList),
+	{ ATF_POINTER, 2, offsetof(struct VarMeasReport, cellsTriggeredList),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_CellsTriggeredList,
@@ -35,7 +35,7 @@ static asn_TYPE_member_t asn_MBR_VarMeasReport_1[] = {
 		0,
 		"cellsTriggeredList"
 		},
-	{ ATF_POINTER, 2, offsetof(struct VarMeasReport, csi_RS_TriggeredList_r12),
+	{ ATF_POINTER, 1, offsetof(struct VarMeasReport, csi_RS_TriggeredList_r12),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_CSI_RS_TriggeredList_r12,
@@ -44,17 +44,8 @@ static asn_TYPE_member_t asn_MBR_VarMeasReport_1[] = {
 		0,
 		"csi-RS-TriggeredList-r12"
 		},
-	{ ATF_POINTER, 1, offsetof(struct VarMeasReport, poolsTriggeredList_r14),
-		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Tx_ResourcePoolMeasList_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"poolsTriggeredList-r14"
-		},
 	{ ATF_NOFLAGS, 0, offsetof(struct VarMeasReport, numberOfReportsSent),
-		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
+		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
 		0,	/* Defer constraints checking to the member type */
@@ -63,25 +54,24 @@ static asn_TYPE_member_t asn_MBR_VarMeasReport_1[] = {
 		"numberOfReportsSent"
 		},
 };
-static int asn_MAP_VarMeasReport_oms_1[] = { 1, 2, 3, 4 };
+static int asn_MAP_VarMeasReport_oms_1[] = { 1, 2, 3 };
 static ber_tlv_tag_t asn_DEF_VarMeasReport_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_VarMeasReport_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measId at 12860 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measId-v1250 at 12861 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellsTriggeredList at 12862 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* csi-RS-TriggeredList-r12 at 12863 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* poolsTriggeredList-r14 at 12864 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* numberOfReportsSent at 12866 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measId at 11138 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measId-v1250 at 11139 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellsTriggeredList at 11140 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* csi-RS-TriggeredList-r12 at 11141 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* numberOfReportsSent at 11143 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_VarMeasReport_specs_1 = {
 	sizeof(struct VarMeasReport),
 	offsetof(struct VarMeasReport, _asn_ctx),
 	asn_MAP_VarMeasReport_tag2el_1,
-	6,	/* Count of tags in the map */
+	5,	/* Count of tags in the map */
 	asn_MAP_VarMeasReport_oms_1,	/* Optional members */
-	4, 0,	/* Root/Additions */
+	3, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
@@ -109,7 +99,7 @@ asn_TYPE_descriptor_t asn_DEF_VarMeasReport = {
 		/sizeof(asn_DEF_VarMeasReport_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_VarMeasReport_1,
-	6,	/* Elements count */
+	5,	/* Elements count */
 	&asn_SPC_VarMeasReport_specs_1	/* Additional specs */
 };
 

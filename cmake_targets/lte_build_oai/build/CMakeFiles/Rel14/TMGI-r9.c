@@ -94,8 +94,8 @@ static asn_TYPE_member_t asn_MBR_plmn_Id_r9_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_plmn_Id_r9_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-Index-r9 at 9989 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* explicitValue-r9 at 9991 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-Index-r9 at 8925 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* explicitValue-r9 at 8927 */
 };
 static asn_CHOICE_specifics_t asn_SPC_plmn_Id_r9_specs_2 = {
 	sizeof(struct TMGI_r9__plmn_Id_r9),
@@ -158,8 +158,8 @@ static ber_tlv_tag_t asn_DEF_TMGI_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_TMGI_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-Id-r9 at 9989 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* serviceId-r9 at 9992 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-Id-r9 at 8925 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* serviceId-r9 at 8928 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_TMGI_r9_specs_1 = {
 	sizeof(struct TMGI_r9),

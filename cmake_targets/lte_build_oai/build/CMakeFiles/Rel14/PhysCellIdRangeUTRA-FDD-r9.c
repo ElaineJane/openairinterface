@@ -62,8 +62,8 @@ static ber_tlv_tag_t asn_DEF_PhysCellIdRangeUTRA_FDD_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PhysCellIdRangeUTRA_FDD_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* start-r9 at 7094 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* range-r9 at 7095 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* start-r9 at 6428 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* range-r9 at 6429 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PhysCellIdRangeUTRA_FDD_r9_specs_1 = {
 	sizeof(struct PhysCellIdRangeUTRA_FDD_r9),

@@ -228,7 +228,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* delayThreshold-r13 at 8180 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* delayThreshold-r13 at 7431 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct UL_DelayConfig_r13__setup),
@@ -289,8 +289,8 @@ static asn_TYPE_member_t asn_MBR_UL_DelayConfig_r13_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_UL_DelayConfig_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 8177 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 8182 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7428 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7433 */
 };
 static asn_CHOICE_specifics_t asn_SPC_UL_DelayConfig_r13_specs_1 = {
 	sizeof(struct UL_DelayConfig_r13),

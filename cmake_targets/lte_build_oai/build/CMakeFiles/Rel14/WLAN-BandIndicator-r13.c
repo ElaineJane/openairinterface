@@ -133,7 +133,7 @@ static asn_per_constraints_t asn_PER_type_WLAN_BandIndicator_r13_constr_1 GCC_NO
 static asn_INTEGER_enum_map_t asn_MAP_WLAN_BandIndicator_r13_value2enum_1[] = {
 	{ 0,	9,	"band2dot4" },
 	{ 1,	5,	"band5" },
-	{ 2,	12,	"band60-v1430" },
+	{ 2,	6,	"spare6" },
 	{ 3,	6,	"spare5" },
 	{ 4,	6,	"spare4" },
 	{ 5,	6,	"spare3" },
@@ -144,12 +144,12 @@ static asn_INTEGER_enum_map_t asn_MAP_WLAN_BandIndicator_r13_value2enum_1[] = {
 static unsigned int asn_MAP_WLAN_BandIndicator_r13_enum2value_1[] = {
 	0,	/* band2dot4(0) */
 	1,	/* band5(1) */
-	2,	/* band60-v1430(2) */
 	7,	/* spare1(7) */
 	6,	/* spare2(6) */
 	5,	/* spare3(5) */
 	4,	/* spare4(4) */
-	3	/* spare5(3) */
+	3,	/* spare5(3) */
+	2	/* spare6(2) */
 	/* This list is extensible */
 };
 static asn_INTEGER_specifics_t asn_SPC_WLAN_BandIndicator_r13_specs_1 = {

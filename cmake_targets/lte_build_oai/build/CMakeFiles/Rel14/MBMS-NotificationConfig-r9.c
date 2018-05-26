@@ -272,9 +272,9 @@ static ber_tlv_tag_t asn_DEF_MBMS_NotificationConfig_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MBMS_NotificationConfig_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* notificationRepetitionCoeff-r9 at 9879 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* notificationOffset-r9 at 9880 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* notificationSF-Index-r9 at 9881 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* notificationRepetitionCoeff-r9 at 8837 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* notificationOffset-r9 at 8838 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* notificationSF-Index-r9 at 8839 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MBMS_NotificationConfig_r9_specs_1 = {
 	sizeof(struct MBMS_NotificationConfig_r9),

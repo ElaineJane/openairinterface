@@ -85,10 +85,10 @@ static ber_tlv_tag_t asn_DEF_VarShortResumeMAC_Input_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_VarShortResumeMAC_Input_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellIdentity-r13 at 12906 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* physCellId-r13 at 12907 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* c-RNTI-r13 at 12908 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* resumeDiscriminator-r13 at 12909 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellIdentity-r13 at 11182 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* physCellId-r13 at 11183 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* c-RNTI-r13 at 11184 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* resumeDiscriminator-r13 at 11185 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_VarShortResumeMAC_Input_r13_specs_1 = {
 	sizeof(struct VarShortResumeMAC_Input_r13),

@@ -57,8 +57,8 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionReconfiguration_v1130_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionReconfiguration_v1130_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* systemInformationBlockType1Dedicated-r11 at 928 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 929 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* systemInformationBlockType1Dedicated-r11 at 881 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 882 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionReconfiguration_v1130_IEs_specs_1 = {
 	sizeof(struct RRCConnectionReconfiguration_v1130_IEs),

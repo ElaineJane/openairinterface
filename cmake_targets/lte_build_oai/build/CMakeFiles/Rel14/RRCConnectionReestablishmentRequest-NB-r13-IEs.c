@@ -76,9 +76,9 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionReestablishmentRequest_NB_r13_IEs_tags
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionReestablishmentRequest_NB_r13_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-Identity-r13 at 11425 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* reestablishmentCause-r13 at 11426 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* spare at 11427 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-Identity-r13 at 10106 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* reestablishmentCause-r13 at 10107 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* spare at 10108 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionReestablishmentRequest_NB_r13_IEs_specs_1 = {
 	sizeof(struct RRCConnectionReestablishmentRequest_NB_r13_IEs),

@@ -748,12 +748,12 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionSetupComplete_v1320_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionSetupComplete_v1320_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ce-ModeB-r13 at 1614 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* s-TMSI-r13 at 1615 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* attachWithoutPDN-Connectivity-r13 at 1616 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* up-CIoT-EPS-Optimisation-r13 at 1617 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* cp-CIoT-EPS-Optimisation-r13 at 1618 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* nonCriticalExtension at 1619 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ce-ModeB-r13 at 1552 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* s-TMSI-r13 at 1553 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* attachWithoutPDN-Connectivity-r13 at 1554 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* up-CIoT-EPS-Optimisation-r13 at 1555 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* cp-CIoT-EPS-Optimisation-r13 at 1556 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* nonCriticalExtension at 1557 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionSetupComplete_v1320_IEs_specs_1 = {
 	sizeof(struct RRCConnectionSetupComplete_v1320_IEs),

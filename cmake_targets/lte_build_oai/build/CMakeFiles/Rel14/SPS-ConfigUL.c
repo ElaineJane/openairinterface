@@ -604,124 +604,6 @@ fixedRV_NonAdaptive_r14_41_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
-static int
-semiPersistSchedIntervalUL_v1430_44_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	/* Replace with underlying type checker */
-	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
-	return td->check_constraints(td, sptr, ctfailcb, app_key);
-}
-
-/*
- * This type is implemented using NativeEnumerated,
- * so here we adjust the DEF accordingly.
- */
-static void
-semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
-	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
-	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
-	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
-	td->der_encoder    = asn_DEF_NativeEnumerated.der_encoder;
-	td->xer_decoder    = asn_DEF_NativeEnumerated.xer_decoder;
-	td->xer_encoder    = asn_DEF_NativeEnumerated.xer_encoder;
-	td->uper_decoder   = asn_DEF_NativeEnumerated.uper_decoder;
-	td->uper_encoder   = asn_DEF_NativeEnumerated.uper_encoder;
-	td->aper_decoder   = asn_DEF_NativeEnumerated.aper_decoder;
-	td->aper_encoder   = asn_DEF_NativeEnumerated.aper_encoder;
-	td->compare        = asn_DEF_NativeEnumerated.compare;
-	if(!td->per_constraints)
-		td->per_constraints = asn_DEF_NativeEnumerated.per_constraints;
-	td->elements       = asn_DEF_NativeEnumerated.elements;
-	td->elements_count = asn_DEF_NativeEnumerated.elements_count;
-     /* td->specifics      = asn_DEF_NativeEnumerated.specifics;	// Defined explicitly */
-}
-
-static void
-semiPersistSchedIntervalUL_v1430_44_free(asn_TYPE_descriptor_t *td,
-		void *struct_ptr, int contents_only) {
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td);
-	td->free_struct(td, struct_ptr, contents_only);
-}
-
-static int
-semiPersistSchedIntervalUL_v1430_44_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
-		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td);
-	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
-}
-
-static asn_dec_rval_t
-semiPersistSchedIntervalUL_v1430_44_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td);
-	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
-}
-
-static asn_enc_rval_t
-semiPersistSchedIntervalUL_v1430_44_encode_der(asn_TYPE_descriptor_t *td,
-		void *structure, int tag_mode, ber_tlv_tag_t tag,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td);
-	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
-}
-
-static asn_dec_rval_t
-semiPersistSchedIntervalUL_v1430_44_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td);
-	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
-}
-
-static asn_enc_rval_t
-semiPersistSchedIntervalUL_v1430_44_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
-		int ilevel, enum xer_encoder_flags_e flags,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td);
-	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
-}
-
-static asn_dec_rval_t
-semiPersistSchedIntervalUL_v1430_44_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td);
-	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static asn_enc_rval_t
-semiPersistSchedIntervalUL_v1430_44_encode_uper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td);
-	return td->uper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_enc_rval_t
-semiPersistSchedIntervalUL_v1430_44_encode_aper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td);
-	return td->aper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_comp_rval_t * 
-semiPersistSchedIntervalUL_v1430_44_compare(asn_TYPE_descriptor_t *td1,
-		const void *structure1,
-		asn_TYPE_descriptor_t *td2,
-		const void *structure2) {
-	asn_comp_rval_t * res  = NULL;
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td1);
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td2);
-	res = td1->compare(td1, structure1, td2, structure2);
-	return res;
-}
-
-static asn_dec_rval_t
-semiPersistSchedIntervalUL_v1430_44_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	semiPersistSchedIntervalUL_v1430_44_inherit_TYPE_descriptor(td);
-	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
 static asn_per_constraints_t asn_PER_type_semiPersistSchedIntervalUL_constr_4 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 4,  4,  0,  15 }	/* (0..15) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
@@ -772,11 +654,6 @@ static asn_per_constraints_t asn_PER_type_fixedRV_NonAdaptive_r14_constr_41 GCC_
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_semiPersistSchedIntervalUL_v1430_constr_44 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 4,  4,  0,  15 }	/* (0..15) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
 static asn_per_constraints_t asn_PER_type_SPS_ConfigUL_constr_1 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
@@ -793,26 +670,26 @@ static asn_INTEGER_enum_map_t asn_MAP_semiPersistSchedIntervalUL_value2enum_4[] 
 	{ 7,	5,	"sf160" },
 	{ 8,	5,	"sf320" },
 	{ 9,	5,	"sf640" },
-	{ 10,	9,	"sf1-v1430" },
-	{ 11,	9,	"sf2-v1430" },
-	{ 12,	9,	"sf3-v1430" },
-	{ 13,	9,	"sf4-v1430" },
-	{ 14,	9,	"sf5-v1430" },
+	{ 10,	9,	"sf1-v14xy" },
+	{ 11,	9,	"sf2-v14xy" },
+	{ 12,	9,	"sf3-v14xy" },
+	{ 13,	9,	"sf4-v14xy" },
+	{ 14,	9,	"sf5-v14xy" },
 	{ 15,	6,	"spare1" }
 };
 static unsigned int asn_MAP_semiPersistSchedIntervalUL_enum2value_4[] = {
-	10,	/* sf1-v1430(10) */
+	10,	/* sf1-v14xy(10) */
 	0,	/* sf10(0) */
 	6,	/* sf128(6) */
 	7,	/* sf160(7) */
-	11,	/* sf2-v1430(11) */
+	11,	/* sf2-v14xy(11) */
 	1,	/* sf20(1) */
-	12,	/* sf3-v1430(12) */
+	12,	/* sf3-v14xy(12) */
 	2,	/* sf32(2) */
 	8,	/* sf320(8) */
-	13,	/* sf4-v1430(13) */
+	13,	/* sf4-v14xy(13) */
 	3,	/* sf40(3) */
-	14,	/* sf5-v1430(14) */
+	14,	/* sf5-v14xy(14) */
 	4,	/* sf64(4) */
 	9,	/* sf640(9) */
 	5,	/* sf80(5) */
@@ -937,8 +814,8 @@ static ber_tlv_tag_t asn_DEF_p0_Persistent_tags_26[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_p0_Persistent_tag2el_26[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p0-NominalPUSCH-Persistent at 6507 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* p0-UE-PUSCH-Persistent at 6508 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p0-NominalPUSCH-Persistent at 5900 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* p0-UE-PUSCH-Persistent at 5901 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_p0_Persistent_specs_26 = {
 	sizeof(struct SPS_ConfigUL__setup__p0_Persistent),
@@ -1050,8 +927,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_35[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_35[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p0-NominalPUSCH-PersistentSubframeSet2-r12 at 6515 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* p0-UE-PUSCH-PersistentSubframeSet2-r12 at 6516 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p0-NominalPUSCH-PersistentSubframeSet2-r12 at 5908 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* p0-UE-PUSCH-PersistentSubframeSet2-r12 at 5909 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_35 = {
 	sizeof(struct SPS_ConfigUL__setup__ext1__p0_PersistentSubframeSet2_r12__setup),
@@ -1112,8 +989,8 @@ static asn_TYPE_member_t asn_MBR_p0_PersistentSubframeSet2_r12_33[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_p0_PersistentSubframeSet2_r12_tag2el_33[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6513 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6515 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5906 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5908 */
 };
 static asn_CHOICE_specifics_t asn_SPC_p0_PersistentSubframeSet2_r12_specs_33 = {
 	sizeof(struct SPS_ConfigUL__setup__ext1__p0_PersistentSubframeSet2_r12),
@@ -1169,7 +1046,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_32[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_32[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* p0-PersistentSubframeSet2-r12 at 6513 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* p0-PersistentSubframeSet2-r12 at 5906 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_32 = {
 	sizeof(struct SPS_ConfigUL__setup__ext1),
@@ -1227,7 +1104,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_38[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_38[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* numberOfConfUlSPS-Processes-r13 at 6520 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* numberOfConfUlSPS-Processes-r13 at 5913 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_38 = {
 	sizeof(struct SPS_ConfigUL__setup__ext2),
@@ -1315,85 +1192,8 @@ asn_TYPE_descriptor_t asn_DEF_fixedRV_NonAdaptive_r14_41 = {
 	&asn_SPC_fixedRV_NonAdaptive_r14_specs_41	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_semiPersistSchedIntervalUL_v1430_value2enum_44[] = {
-	{ 0,	4,	"sf50" },
-	{ 1,	5,	"sf100" },
-	{ 2,	5,	"sf200" },
-	{ 3,	5,	"sf300" },
-	{ 4,	5,	"sf400" },
-	{ 5,	5,	"sf500" },
-	{ 6,	5,	"sf600" },
-	{ 7,	5,	"sf700" },
-	{ 8,	5,	"sf800" },
-	{ 9,	5,	"sf900" },
-	{ 10,	6,	"sf1000" },
-	{ 11,	6,	"spare5" },
-	{ 12,	6,	"spare4" },
-	{ 13,	6,	"spare3" },
-	{ 14,	6,	"spare2" },
-	{ 15,	6,	"spare1" }
-};
-static unsigned int asn_MAP_semiPersistSchedIntervalUL_v1430_enum2value_44[] = {
-	1,	/* sf100(1) */
-	10,	/* sf1000(10) */
-	2,	/* sf200(2) */
-	3,	/* sf300(3) */
-	4,	/* sf400(4) */
-	0,	/* sf50(0) */
-	5,	/* sf500(5) */
-	6,	/* sf600(6) */
-	7,	/* sf700(7) */
-	8,	/* sf800(8) */
-	9,	/* sf900(9) */
-	15,	/* spare1(15) */
-	14,	/* spare2(14) */
-	13,	/* spare3(13) */
-	12,	/* spare4(12) */
-	11	/* spare5(11) */
-};
-static asn_INTEGER_specifics_t asn_SPC_semiPersistSchedIntervalUL_v1430_specs_44 = {
-	asn_MAP_semiPersistSchedIntervalUL_v1430_value2enum_44,	/* "tag" => N; sorted by tag */
-	asn_MAP_semiPersistSchedIntervalUL_v1430_enum2value_44,	/* N => "tag"; sorted by N */
-	16,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_semiPersistSchedIntervalUL_v1430_tags_44[] = {
-	(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_semiPersistSchedIntervalUL_v1430_44 = {
-	"semiPersistSchedIntervalUL-v1430",
-	"semiPersistSchedIntervalUL-v1430",
-	semiPersistSchedIntervalUL_v1430_44_free,
-	semiPersistSchedIntervalUL_v1430_44_print,
-	semiPersistSchedIntervalUL_v1430_44_constraint,
-	semiPersistSchedIntervalUL_v1430_44_decode_ber,
-	semiPersistSchedIntervalUL_v1430_44_encode_der,
-	semiPersistSchedIntervalUL_v1430_44_decode_xer,
-	semiPersistSchedIntervalUL_v1430_44_encode_xer,
-	semiPersistSchedIntervalUL_v1430_44_decode_uper,
-	semiPersistSchedIntervalUL_v1430_44_encode_uper,
-	semiPersistSchedIntervalUL_v1430_44_decode_aper,
-	semiPersistSchedIntervalUL_v1430_44_encode_aper,
-	semiPersistSchedIntervalUL_v1430_44_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_semiPersistSchedIntervalUL_v1430_tags_44,
-	sizeof(asn_DEF_semiPersistSchedIntervalUL_v1430_tags_44)
-		/sizeof(asn_DEF_semiPersistSchedIntervalUL_v1430_tags_44[0]) - 1, /* 1 */
-	asn_DEF_semiPersistSchedIntervalUL_v1430_tags_44,	/* Same as above */
-	sizeof(asn_DEF_semiPersistSchedIntervalUL_v1430_tags_44)
-		/sizeof(asn_DEF_semiPersistSchedIntervalUL_v1430_tags_44[0]), /* 2 */
-	&asn_PER_type_semiPersistSchedIntervalUL_v1430_constr_44,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_semiPersistSchedIntervalUL_v1430_specs_44	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_ext3_40[] = {
-	{ ATF_POINTER, 3, offsetof(struct SPS_ConfigUL__setup__ext3, fixedRV_NonAdaptive_r14),
+	{ ATF_POINTER, 1, offsetof(struct SPS_ConfigUL__setup__ext3, fixedRV_NonAdaptive_r14),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_fixedRV_NonAdaptive_r14_41,
@@ -1402,42 +1202,22 @@ static asn_TYPE_member_t asn_MBR_ext3_40[] = {
 		0,
 		"fixedRV-NonAdaptive-r14"
 		},
-	{ ATF_POINTER, 2, offsetof(struct SPS_ConfigUL__setup__ext3, sps_ConfigIndex_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SPS_ConfigIndex_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"sps-ConfigIndex-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct SPS_ConfigUL__setup__ext3, semiPersistSchedIntervalUL_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_semiPersistSchedIntervalUL_v1430_44,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"semiPersistSchedIntervalUL-v1430"
-		},
 };
-static int asn_MAP_ext3_oms_40[] = { 0, 1, 2 };
+static int asn_MAP_ext3_oms_40[] = { 0 };
 static ber_tlv_tag_t asn_DEF_ext3_tags_40[] = {
 	(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_40[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fixedRV-NonAdaptive-r14 at 6522 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sps-ConfigIndex-r14 at 6523 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* semiPersistSchedIntervalUL-v1430 at 6525 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* fixedRV-NonAdaptive-r14 at 5915 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_40 = {
 	sizeof(struct SPS_ConfigUL__setup__ext3),
 	offsetof(struct SPS_ConfigUL__setup__ext3, _asn_ctx),
 	asn_MAP_ext3_tag2el_40,
-	3,	/* Count of tags in the map */
+	1,	/* Count of tags in the map */
 	asn_MAP_ext3_oms_40,	/* Optional members */
-	3, 0,	/* Root/Additions */
+	1, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
@@ -1466,7 +1246,7 @@ asn_TYPE_descriptor_t asn_DEF_ext3_40 = {
 		/sizeof(asn_DEF_ext3_tags_40[0]), /* 2 */
 	0,	/* No PER visible constraints */
 	asn_MBR_ext3_40,
-	3,	/* Elements count */
+	1,	/* Elements count */
 	&asn_SPC_ext3_specs_40	/* Additional specs */
 };
 
@@ -1541,13 +1321,13 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* semiPersistSchedIntervalUL at 6501 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* implicitReleaseAfter at 6505 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* p0-Persistent at 6507 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* twoIntervalsConfig at 6510 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 6518 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 6520 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext3 at 6522 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* semiPersistSchedIntervalUL at 5894 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* implicitReleaseAfter at 5898 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* p0-Persistent at 5900 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* twoIntervalsConfig at 5903 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 5911 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 5913 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext3 at 5915 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct SPS_ConfigUL__setup),
@@ -1609,8 +1389,8 @@ static asn_TYPE_member_t asn_MBR_SPS_ConfigUL_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SPS_ConfigUL_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6498 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6504 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5891 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5897 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SPS_ConfigUL_specs_1 = {
 	sizeof(struct SPS_ConfigUL),

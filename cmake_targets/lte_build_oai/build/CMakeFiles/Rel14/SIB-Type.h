@@ -41,7 +41,7 @@ typedef enum SIB_Type {
 	 */
 	SIB_Type_sibType19_v1250	= 16,
 	SIB_Type_sibType20_v1310	= 17,
-	SIB_Type_sibType21_v1430	= 18
+	SIB_Type_sibType21_v14x0	= 18
 } e_SIB_Type;
 
 /* SIB-Type */

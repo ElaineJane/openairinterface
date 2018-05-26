@@ -20,16 +20,10 @@
 #include <constr_SEQUENCE.h>
 #include <asn_SEQUENCE_OF.h>
 #include <constr_SEQUENCE_OF.h>
-#include <NativeEnumerated.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-/* Dependencies */
-typedef enum SystemInformationBlockType2_NB_r13__ext1__cp_Reestablishment_r14 {
-	SystemInformationBlockType2_NB_r13__ext1__cp_Reestablishment_r14_true	= 0
-} e_SystemInformationBlockType2_NB_r13__ext1__cp_Reestablishment_r14;
 
 /* Forward declarations */
 struct CarrierFreq_NB_r13;
@@ -57,19 +51,12 @@ typedef struct SystemInformationBlockType2_NB_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct SystemInformationBlockType2_NB_r13__ext1 {
-		long	*cp_Reestablishment_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
 } SystemInformationBlockType2_NB_r13_t;
 
 /* Implementation */
-/* extern asn_TYPE_descriptor_t asn_DEF_cp_Reestablishment_r14_13;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType2_NB_r13;
 
 #ifdef __cplusplus

@@ -191,9 +191,9 @@ static asn_TYPE_member_t asn_MBR_subframePatternTDD_r11_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_subframePatternTDD_r11_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframeConfig0-r11 at 437 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* subframeConfig1-5-r11 at 438 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* subframeConfig6-r11 at 439 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframeConfig0-r11 at 406 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* subframeConfig1-5-r11 at 407 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* subframeConfig6-r11 at 408 */
 };
 static asn_CHOICE_specifics_t asn_SPC_subframePatternTDD_r11_specs_3 = {
 	sizeof(struct IDC_SubframePattern_r11__subframePatternTDD_r11),
@@ -253,8 +253,8 @@ static asn_TYPE_member_t asn_MBR_IDC_SubframePattern_r11_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_IDC_SubframePattern_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframePatternFDD-r11 at 435 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* subframePatternTDD-r11 at 437 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframePatternFDD-r11 at 404 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* subframePatternTDD-r11 at 406 */
 };
 static asn_CHOICE_specifics_t asn_SPC_IDC_SubframePattern_r11_specs_1 = {
 	sizeof(struct IDC_SubframePattern_r11),

@@ -259,7 +259,7 @@ static ber_tlv_tag_t asn_DEF_cellReselectionInfoCommon_r13_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cellReselectionInfoCommon_r13_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* q-Hyst-r13 at 11797 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* q-Hyst-r13 at 10415 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cellReselectionInfoCommon_r13_specs_2 = {
 	sizeof(struct SystemInformationBlockType3_NB_r13__cellReselectionInfoCommon_r13),
@@ -315,7 +315,7 @@ static ber_tlv_tag_t asn_DEF_cellReselectionServingFreqInfo_r13_tags_20[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cellReselectionServingFreqInfo_r13_tag2el_20[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* s-NonIntraSearch-r13 at 11803 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* s-NonIntraSearch-r13 at 10421 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cellReselectionServingFreqInfo_r13_specs_20 = {
 	sizeof(struct SystemInformationBlockType3_NB_r13__cellReselectionServingFreqInfo_r13),
@@ -408,11 +408,11 @@ static ber_tlv_tag_t asn_DEF_intraFreqCellReselectionInfo_r13_tags_22[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_intraFreqCellReselectionInfo_r13_tag2el_22[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-RxLevMin-r13 at 11805 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* q-QualMin-r13 at 11806 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* p-Max-r13 at 11807 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* s-IntraSearchP-r13 at 11808 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* t-Reselection-r13 at 11810 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-RxLevMin-r13 at 10423 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* q-QualMin-r13 at 10424 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* p-Max-r13 at 10425 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* s-IntraSearchP-r13 at 10426 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* t-Reselection-r13 at 10428 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_intraFreqCellReselectionInfo_r13_specs_22 = {
 	sizeof(struct SystemInformationBlockType3_NB_r13__intraFreqCellReselectionInfo_r13),
@@ -502,180 +502,6 @@ asn_TYPE_descriptor_t asn_DEF_multiBandInfoList_r13_29 = {
 	&asn_SPC_multiBandInfoList_r13_specs_29	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext1_33[] = {
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType3_NB_r13__ext1, intraFreqCellReselectionInfo_v1350),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_IntraFreqCellReselectionInfo_NB_v1350,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"intraFreqCellReselectionInfo-v1350"
-		},
-};
-static int asn_MAP_ext1_oms_33[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext1_tags_33[] = {
-	(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_33[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* intraFreqCellReselectionInfo-v1350 at 11816 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_33 = {
-	sizeof(struct SystemInformationBlockType3_NB_r13__ext1),
-	offsetof(struct SystemInformationBlockType3_NB_r13__ext1, _asn_ctx),
-	asn_MAP_ext1_tag2el_33,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext1_oms_33,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext1_33 = {
-	"ext1",
-	"ext1",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext1_tags_33,
-	sizeof(asn_DEF_ext1_tags_33)
-		/sizeof(asn_DEF_ext1_tags_33[0]) - 1, /* 1 */
-	asn_DEF_ext1_tags_33,	/* Same as above */
-	sizeof(asn_DEF_ext1_tags_33)
-		/sizeof(asn_DEF_ext1_tags_33[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext1_33,
-	1,	/* Elements count */
-	&asn_SPC_ext1_specs_33	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext2_35[] = {
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType3_NB_r13__ext2, intraFreqCellReselectionInfo_v1360),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_IntraFreqCellReselectionInfo_NB_v1360,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"intraFreqCellReselectionInfo-v1360"
-		},
-};
-static int asn_MAP_ext2_oms_35[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext2_tags_35[] = {
-	(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_35[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* intraFreqCellReselectionInfo-v1360 at 11818 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_35 = {
-	sizeof(struct SystemInformationBlockType3_NB_r13__ext2),
-	offsetof(struct SystemInformationBlockType3_NB_r13__ext2, _asn_ctx),
-	asn_MAP_ext2_tag2el_35,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext2_oms_35,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext2_35 = {
-	"ext2",
-	"ext2",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext2_tags_35,
-	sizeof(asn_DEF_ext2_tags_35)
-		/sizeof(asn_DEF_ext2_tags_35[0]) - 1, /* 1 */
-	asn_DEF_ext2_tags_35,	/* Same as above */
-	sizeof(asn_DEF_ext2_tags_35)
-		/sizeof(asn_DEF_ext2_tags_35[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext2_35,
-	1,	/* Elements count */
-	&asn_SPC_ext2_specs_35	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext3_37[] = {
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType3_NB_r13__ext3, intraFreqCellReselectionInfo_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_IntraFreqCellReselectionInfo_NB_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"intraFreqCellReselectionInfo-v1430"
-		},
-};
-static int asn_MAP_ext3_oms_37[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext3_tags_37[] = {
-	(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_37[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* intraFreqCellReselectionInfo-v1430 at 11820 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_37 = {
-	sizeof(struct SystemInformationBlockType3_NB_r13__ext3),
-	offsetof(struct SystemInformationBlockType3_NB_r13__ext3, _asn_ctx),
-	asn_MAP_ext3_tag2el_37,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext3_oms_37,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext3_37 = {
-	"ext3",
-	"ext3",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext3_tags_37,
-	sizeof(asn_DEF_ext3_tags_37)
-		/sizeof(asn_DEF_ext3_tags_37[0]) - 1, /* 1 */
-	asn_DEF_ext3_tags_37,	/* Same as above */
-	sizeof(asn_DEF_ext3_tags_37)
-		/sizeof(asn_DEF_ext3_tags_37[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext3_37,
-	1,	/* Elements count */
-	&asn_SPC_ext3_specs_37	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_NB_r13_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct SystemInformationBlockType3_NB_r13, cellReselectionInfoCommon_r13),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -704,7 +530,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_NB_r13_1[] = {
 		0,
 		"intraFreqCellReselectionInfo-r13"
 		},
-	{ ATF_POINTER, 6, offsetof(struct SystemInformationBlockType3_NB_r13, freqBandInfo_r13),
+	{ ATF_POINTER, 3, offsetof(struct SystemInformationBlockType3_NB_r13, freqBandInfo_r13),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NS_PmaxList_NB_r13,
@@ -713,7 +539,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_NB_r13_1[] = {
 		0,
 		"freqBandInfo-r13"
 		},
-	{ ATF_POINTER, 5, offsetof(struct SystemInformationBlockType3_NB_r13, multiBandInfoList_r13),
+	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType3_NB_r13, multiBandInfoList_r13),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		0,
 		&asn_DEF_multiBandInfoList_r13_29,
@@ -722,7 +548,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_NB_r13_1[] = {
 		0,
 		"multiBandInfoList-r13"
 		},
-	{ ATF_POINTER, 4, offsetof(struct SystemInformationBlockType3_NB_r13, lateNonCriticalExtension),
+	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType3_NB_r13, lateNonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -731,58 +557,28 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_NB_r13_1[] = {
 		0,
 		"lateNonCriticalExtension"
 		},
-	{ ATF_POINTER, 3, offsetof(struct SystemInformationBlockType3_NB_r13, ext1),
-		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
-		0,
-		&asn_DEF_ext1_33,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext1"
-		},
-	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType3_NB_r13, ext2),
-		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-		0,
-		&asn_DEF_ext2_35,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext2"
-		},
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType3_NB_r13, ext3),
-		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-		0,
-		&asn_DEF_ext3_37,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext3"
-		},
 };
-static int asn_MAP_SystemInformationBlockType3_NB_r13_oms_1[] = { 3, 4, 5, 6, 7, 8 };
+static int asn_MAP_SystemInformationBlockType3_NB_r13_oms_1[] = { 3, 4, 5 };
 static ber_tlv_tag_t asn_DEF_SystemInformationBlockType3_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType3_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellReselectionInfoCommon-r13 at 11800 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellReselectionServingFreqInfo-r13 at 11803 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* intraFreqCellReselectionInfo-r13 at 11805 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* freqBandInfo-r13 at 11811 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* multiBandInfoList-r13 at 11813 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* lateNonCriticalExtension at 11814 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext1 at 11816 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext2 at 11818 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* ext3 at 11820 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellReselectionInfoCommon-r13 at 10418 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellReselectionServingFreqInfo-r13 at 10421 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* intraFreqCellReselectionInfo-r13 at 10423 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* freqBandInfo-r13 at 10429 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* multiBandInfoList-r13 at 10431 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* lateNonCriticalExtension at 10432 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType3_NB_r13_specs_1 = {
 	sizeof(struct SystemInformationBlockType3_NB_r13),
 	offsetof(struct SystemInformationBlockType3_NB_r13, _asn_ctx),
 	asn_MAP_SystemInformationBlockType3_NB_r13_tag2el_1,
-	9,	/* Count of tags in the map */
+	6,	/* Count of tags in the map */
 	asn_MAP_SystemInformationBlockType3_NB_r13_oms_1,	/* Optional members */
-	3, 3,	/* Root/Additions */
+	3, 0,	/* Root/Additions */
 	5,	/* Start extensions */
-	10	/* Stop extensions */
+	7	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType3_NB_r13 = {
 	"SystemInformationBlockType3-NB-r13",
@@ -808,7 +604,7 @@ asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType3_NB_r13 = {
 		/sizeof(asn_DEF_SystemInformationBlockType3_NB_r13_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_SystemInformationBlockType3_NB_r13_1,
-	9,	/* Elements count */
+	6,	/* Elements count */
 	&asn_SPC_SystemInformationBlockType3_NB_r13_specs_1	/* Additional specs */
 };
 

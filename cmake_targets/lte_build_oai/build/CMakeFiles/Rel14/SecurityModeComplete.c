@@ -74,8 +74,8 @@ static asn_TYPE_member_t asn_MBR_criticalExtensions_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_criticalExtensions_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* securityModeComplete-r8 at 1734 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 1735 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* securityModeComplete-r8 at 1648 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 1649 */
 };
 static asn_CHOICE_specifics_t asn_SPC_criticalExtensions_specs_3 = {
 	sizeof(struct SecurityModeComplete__criticalExtensions),
@@ -138,8 +138,8 @@ static ber_tlv_tag_t asn_DEF_SecurityModeComplete_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SecurityModeComplete_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrc-TransactionIdentifier at 1732 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensions at 1734 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrc-TransactionIdentifier at 1646 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensions at 1648 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SecurityModeComplete_specs_1 = {
 	sizeof(struct SecurityModeComplete),

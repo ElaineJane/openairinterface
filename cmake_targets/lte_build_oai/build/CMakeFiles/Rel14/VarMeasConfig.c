@@ -67,8 +67,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mobilityStateParameters at 12847 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* timeToTrigger-SF at 12849 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mobilityStateParameters at 11125 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* timeToTrigger-SF at 11127 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_15 = {
 	sizeof(struct VarMeasConfig__speedStatePars__setup),
@@ -129,8 +129,8 @@ static asn_TYPE_member_t asn_MBR_speedStatePars_13[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_speedStatePars_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 12845 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 12847 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 11123 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 11125 */
 };
 static asn_CHOICE_specifics_t asn_SPC_speedStatePars_specs_13 = {
 	sizeof(struct VarMeasConfig__speedStatePars),
@@ -293,19 +293,19 @@ static ber_tlv_tag_t asn_DEF_VarMeasConfig_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_VarMeasConfig_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measIdList at 12830 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measIdListExt-r12 at 12831 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measIdList-v1310 at 12832 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* measIdListExt-v1310 at 12833 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* measObjectList at 12835 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* measObjectListExt-r13 at 12836 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* measObjectList-v9i0 at 12837 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* reportConfigList at 12839 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* quantityConfig at 12841 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* measScaleFactor-r12 at 12842 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* s-Measure at 12843 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* speedStatePars at 12845 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 } /* allowInterruptions-r11 at 12851 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measIdList at 11108 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measIdListExt-r12 at 11109 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measIdList-v1310 at 11110 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* measIdListExt-v1310 at 11111 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* measObjectList at 11113 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* measObjectListExt-r13 at 11114 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* measObjectList-v9i0 at 11115 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* reportConfigList at 11117 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* quantityConfig at 11119 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* measScaleFactor-r12 at 11120 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* s-Measure at 11121 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* speedStatePars at 11123 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 } /* allowInterruptions-r11 at 11129 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_VarMeasConfig_specs_1 = {
 	sizeof(struct VarMeasConfig),

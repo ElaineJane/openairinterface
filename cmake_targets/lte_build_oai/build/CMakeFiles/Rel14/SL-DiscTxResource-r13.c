@@ -38,8 +38,8 @@ static asn_TYPE_member_t asn_MBR_setup_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scheduled-r13 at 10373 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-Selected-r13 at 10375 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scheduled-r13 at 9195 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-Selected-r13 at 9197 */
 };
 static asn_CHOICE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct SL_DiscTxResource_r13__setup),
@@ -99,8 +99,8 @@ static asn_TYPE_member_t asn_MBR_SL_DiscTxResource_r13_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_DiscTxResource_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 10371 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 10373 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 9193 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 9195 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SL_DiscTxResource_r13_specs_1 = {
 	sizeof(struct SL_DiscTxResource_r13),

@@ -28,17 +28,13 @@ typedef enum SL_PSSCH_TxParameters_r14__allowedRetxNumberPSSCH_r14 {
 	SL_PSSCH_TxParameters_r14__allowedRetxNumberPSSCH_r14_spare1	= 3
 } e_SL_PSSCH_TxParameters_r14__allowedRetxNumberPSSCH_r14;
 
-/* Forward declarations */
-struct SL_TxPower_r14;
-
 /* SL-PSSCH-TxParameters-r14 */
 typedef struct SL_PSSCH_TxParameters_r14 {
 	long	 minMCS_PSSCH_r14;
 	long	 maxMCS_PSSCH_r14;
-	long	 minSubChannel_NumberPSSCH_r14;
-	long	 maxSubchannel_NumberPSSCH_r14;
+	long	 minRB_NumberPSSCH_r14;
+	long	 maxRB_NumberPSSCH_r14;
 	long	 allowedRetxNumberPSSCH_r14;
-	struct SL_TxPower_r14	*maxTxPower_r14	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -51,9 +47,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SL_PSSCH_TxParameters_r14;
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "SL-TxPower-r14.h"
 
 #endif	/* _SL_PSSCH_TxParameters_r14_H_ */
 #include <asn_internal.h>

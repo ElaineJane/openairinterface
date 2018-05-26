@@ -42,9 +42,9 @@ static asn_TYPE_member_t asn_MBR_purpose_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_purpose_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* handover at 700 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellChangeOrder at 701 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* e-CSFB-r9 at 702 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* handover at 653 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellChangeOrder at 654 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* e-CSFB-r9 at 655 */
 };
 static asn_CHOICE_specifics_t asn_SPC_purpose_specs_3 = {
 	sizeof(struct MobilityFromEUTRACommand_r9_IEs__purpose),
@@ -117,9 +117,9 @@ static ber_tlv_tag_t asn_DEF_MobilityFromEUTRACommand_r9_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MobilityFromEUTRACommand_r9_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cs-FallbackIndicator at 698 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* purpose at 700 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 705 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cs-FallbackIndicator at 651 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* purpose at 653 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 658 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MobilityFromEUTRACommand_r9_IEs_specs_1 = {
 	sizeof(struct MobilityFromEUTRACommand_r9_IEs),

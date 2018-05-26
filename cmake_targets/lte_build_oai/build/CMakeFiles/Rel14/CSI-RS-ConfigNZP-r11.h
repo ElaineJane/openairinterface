@@ -20,9 +20,6 @@
 #include <constr_SEQUENCE.h>
 #include <constr_CHOICE.h>
 #include "CSI-RS-ConfigNZPId-v1310.h"
-#include "NZP-TransmissionComb-r14.h"
-#include "NZP-FrequencyDensity-r14.h"
-#include "MBSFN-SubframeConfigList-v1430.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -46,11 +43,6 @@ typedef enum CSI_RS_ConfigNZP_r11__qcl_CRS_Info_r11__mbsfn_SubframeConfigList_r1
 	CSI_RS_ConfigNZP_r11__qcl_CRS_Info_r11__mbsfn_SubframeConfigList_r11_PR_release,
 	CSI_RS_ConfigNZP_r11__qcl_CRS_Info_r11__mbsfn_SubframeConfigList_r11_PR_setup
 } CSI_RS_ConfigNZP_r11__qcl_CRS_Info_r11__mbsfn_SubframeConfigList_r11_PR;
-typedef enum CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430_PR {
-	CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430_PR_NOTHING,	/* No components present */
-	CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430_PR_release,
-	CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430_PR_setup
-} CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430_PR;
 
 /* CSI-RS-ConfigNZP-r11 */
 typedef struct CSI_RS_ConfigNZP_r11 {
@@ -91,33 +83,6 @@ typedef struct CSI_RS_ConfigNZP_r11 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext1;
-	struct CSI_RS_ConfigNZP_r11__ext2 {
-		NZP_TransmissionComb_r14_t	*transmissionComb_r14	/* OPTIONAL */;
-		NZP_FrequencyDensity_r14_t	*frequencyDensity_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext2;
-	struct CSI_RS_ConfigNZP_r11__ext3 {
-		struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430 {
-			CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430_PR present;
-			union CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430_u {
-				NULL_t	 release;
-				struct CSI_RS_ConfigNZP_r11__ext3__mbsfn_SubframeConfigList_v1430__setup {
-					MBSFN_SubframeConfigList_v1430_t	 subframeConfigList_v1430;
-					
-					/* Context for parsing across buffer boundaries */
-					asn_struct_ctx_t _asn_ctx;
-				} setup;
-			} choice;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *mbsfn_SubframeConfigList_v1430;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext3;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

@@ -602,7 +602,7 @@ static ber_tlv_tag_t asn_DEF_widebandCQI_r11_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_widebandCQI_r11_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* csi-ReportMode-r11 at 3802 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* csi-ReportMode-r11 at 3478 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_widebandCQI_r11_specs_5 = {
 	sizeof(struct CQI_ReportPeriodicProcExt_r11__cqi_FormatIndicatorPeriodic_r11__widebandCQI_r11),
@@ -717,8 +717,8 @@ static ber_tlv_tag_t asn_DEF_subbandCQI_r11_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_subbandCQI_r11_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* k at 3805 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* periodicityFactor-r11 at 3806 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* k at 3481 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* periodicityFactor-r11 at 3482 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_subbandCQI_r11_specs_9 = {
 	sizeof(struct CQI_ReportPeriodicProcExt_r11__cqi_FormatIndicatorPeriodic_r11__subbandCQI_r11),
@@ -779,8 +779,8 @@ static asn_TYPE_member_t asn_MBR_cqi_FormatIndicatorPeriodic_r11_4[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_cqi_FormatIndicatorPeriodic_r11_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* widebandCQI-r11 at 3802 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* subbandCQI-r11 at 3805 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* widebandCQI-r11 at 3478 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* subbandCQI-r11 at 3481 */
 };
 static asn_CHOICE_specifics_t asn_SPC_cqi_FormatIndicatorPeriodic_r11_specs_4 = {
 	sizeof(struct CQI_ReportPeriodicProcExt_r11__cqi_FormatIndicatorPeriodic_r11),
@@ -845,8 +845,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cqi-pmi-ConfigIndex2-r11 at 3813 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ri-ConfigIndex2-r11 at 3814 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cqi-pmi-ConfigIndex2-r11 at 3489 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ri-ConfigIndex2-r11 at 3490 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_17 = {
 	sizeof(struct CQI_ReportPeriodicProcExt_r11__csi_ConfigIndex_r11__setup),
@@ -908,8 +908,8 @@ static asn_TYPE_member_t asn_MBR_csi_ConfigIndex_r11_15[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_csi_ConfigIndex_r11_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3811 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3813 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3487 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3489 */
 };
 static asn_CHOICE_specifics_t asn_SPC_csi_ConfigIndex_r11_specs_15 = {
 	sizeof(struct CQI_ReportPeriodicProcExt_r11__csi_ConfigIndex_r11),
@@ -965,7 +965,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_21[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_21[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cri-ReportConfig-r13 at 3818 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cri-ReportConfig-r13 at 3494 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_21 = {
 	sizeof(struct CQI_ReportPeriodicProcExt_r11__ext1),
@@ -1072,7 +1072,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_23[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_23[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* periodicityFactorWB-r13 at 3820 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* periodicityFactorWB-r13 at 3496 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_23 = {
 	sizeof(struct CQI_ReportPeriodicProcExt_r11__ext2),
@@ -1183,13 +1183,13 @@ static ber_tlv_tag_t asn_DEF_CQI_ReportPeriodicProcExt_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CQI_ReportPeriodicProcExt_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cqi-ReportPeriodicProcExtId-r11 at 3798 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cqi-pmi-ConfigIndex-r11 at 3799 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cqi-FormatIndicatorPeriodic-r11 at 3803 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ri-ConfigIndex-r11 at 3809 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* csi-ConfigIndex-r11 at 3811 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext1 at 3818 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext2 at 3820 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cqi-ReportPeriodicProcExtId-r11 at 3474 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cqi-pmi-ConfigIndex-r11 at 3475 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cqi-FormatIndicatorPeriodic-r11 at 3479 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ri-ConfigIndex-r11 at 3485 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* csi-ConfigIndex-r11 at 3487 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext1 at 3494 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext2 at 3496 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CQI_ReportPeriodicProcExt_r11_specs_1 = {
 	sizeof(struct CQI_ReportPeriodicProcExt_r11),

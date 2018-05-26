@@ -222,10 +222,10 @@ static ber_tlv_tag_t asn_DEF_PDSCH_ConfigDedicated_v1130_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PDSCH_ConfigDedicated_v1130_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dmrs-ConfigPDSCH-r11 at 4801 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* qcl-Operation at 4802 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* re-MappingQCLConfigToReleaseList-r11 at 4803 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* re-MappingQCLConfigToAddModList-r11 at 4804 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dmrs-ConfigPDSCH-r11 at 4334 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* qcl-Operation at 4335 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* re-MappingQCLConfigToReleaseList-r11 at 4336 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* re-MappingQCLConfigToAddModList-r11 at 4337 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PDSCH_ConfigDedicated_v1130_specs_1 = {
 	sizeof(struct PDSCH_ConfigDedicated_v1130),

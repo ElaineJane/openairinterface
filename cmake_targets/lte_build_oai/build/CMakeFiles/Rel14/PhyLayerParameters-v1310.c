@@ -1903,9 +1903,9 @@ static ber_tlv_tag_t asn_DEF_supportedBlindDecoding_r13_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_supportedBlindDecoding_r13_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxNumberDecoding-r13 at 8872 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pdcch-CandidateReductions-r13 at 8873 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* skipMonitoringDCI-Format0-1A-r13 at 8874 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxNumberDecoding-r13 at 8028 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pdcch-CandidateReductions-r13 at 8029 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* skipMonitoringDCI-Format0-1A-r13 at 8030 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_supportedBlindDecoding_r13_specs_17 = {
 	sizeof(struct PhyLayerParameters_v1310__supportedBlindDecoding_r13),
@@ -2211,19 +2211,19 @@ static ber_tlv_tag_t asn_DEF_PhyLayerParameters_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PhyLayerParameters_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* aperiodicCSI-Reporting-r13 at 8862 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* codebook-HARQ-ACK-r13 at 8863 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* crossCarrierScheduling-B5C-r13 at 8864 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* fdd-HARQ-TimingTDD-r13 at 8865 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* maxNumberUpdatedCSI-Proc-r13 at 8866 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pucch-Format4-r13 at 8867 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* pucch-Format5-r13 at 8868 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* pucch-SCell-r13 at 8869 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* spatialBundling-HARQ-ACK-r13 at 8870 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* supportedBlindDecoding-r13 at 8872 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* uci-PUSCH-Ext-r13 at 8876 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* crs-InterfMitigationTM10-r13 at 8877 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 } /* pdsch-CollisionHandling-r13 at 8878 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* aperiodicCSI-Reporting-r13 at 8019 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* codebook-HARQ-ACK-r13 at 8020 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* crossCarrierScheduling-B5C-r13 at 8021 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* fdd-HARQ-TimingTDD-r13 at 8022 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* maxNumberUpdatedCSI-Proc-r13 at 8022 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pucch-Format4-r13 at 8023 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* pucch-Format5-r13 at 8024 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* pucch-SCell-r13 at 8025 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* spatialBundling-HARQ-ACK-r13 at 8026 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* supportedBlindDecoding-r13 at 8028 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* uci-PUSCH-Ext-r13 at 8032 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* crs-InterfMitigationTM10-r13 at 8033 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 } /* pdsch-CollisionHandling-r13 at 8034 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PhyLayerParameters_v1310_specs_1 = {
 	sizeof(struct PhyLayerParameters_v1310),

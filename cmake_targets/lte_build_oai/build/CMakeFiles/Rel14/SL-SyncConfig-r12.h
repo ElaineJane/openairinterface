@@ -21,7 +21,7 @@
 #include <constr_SEQUENCE.h>
 #include "PhysCellId.h"
 #include <NativeEnumerated.h>
-#include "SL-OffsetIndicatorSync-v1430.h"
+#include "SL-OffsetIndicatorSync-v14xy.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -35,9 +35,6 @@ typedef enum SL_SyncConfig_r12__rxParamsNCell_r12__discSyncWindow_r12 {
 typedef enum SL_SyncConfig_r12__ext1__syncTxPeriodic_r13 {
 	SL_SyncConfig_r12__ext1__syncTxPeriodic_r13_true	= 0
 } e_SL_SyncConfig_r12__ext1__syncTxPeriodic_r13;
-typedef enum SL_SyncConfig_r12__ext2__gnss_Sync_r14 {
-	SL_SyncConfig_r12__ext2__gnss_Sync_r14_true	= 0
-} e_SL_SyncConfig_r12__ext2__gnss_Sync_r14;
 
 /* SL-SyncConfig-r12 */
 typedef struct SL_SyncConfig_r12 {
@@ -70,8 +67,7 @@ typedef struct SL_SyncConfig_r12 {
 		asn_struct_ctx_t _asn_ctx;
 	} *ext1;
 	struct SL_SyncConfig_r12__ext2 {
-		SL_OffsetIndicatorSync_v1430_t	*syncOffsetIndicator_v1430	/* OPTIONAL */;
-		long	*gnss_Sync_r14	/* OPTIONAL */;
+		SL_OffsetIndicatorSync_v14xy_t	*syncOffsetIndicator_v14xy	/* OPTIONAL */;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
@@ -84,7 +80,6 @@ typedef struct SL_SyncConfig_r12 {
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_discSyncWindow_r12_11;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_syncTxPeriodic_r13_16;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_gnss_Sync_r14_20;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_SL_SyncConfig_r12;
 
 #ifdef __cplusplus

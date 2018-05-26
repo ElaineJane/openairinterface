@@ -74,8 +74,8 @@ static asn_TYPE_member_t asn_MBR_criticalExtensions_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_criticalExtensions_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* counterCheckResponse-r8 at 240 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 241 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* counterCheckResponse-r8 at 214 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 215 */
 };
 static asn_CHOICE_specifics_t asn_SPC_criticalExtensions_specs_3 = {
 	sizeof(struct CounterCheckResponse__criticalExtensions),
@@ -138,8 +138,8 @@ static ber_tlv_tag_t asn_DEF_CounterCheckResponse_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CounterCheckResponse_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrc-TransactionIdentifier at 238 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensions at 240 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrc-TransactionIdentifier at 212 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensions at 214 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CounterCheckResponse_specs_1 = {
 	sizeof(struct CounterCheckResponse),

@@ -93,8 +93,8 @@ static ber_tlv_tag_t asn_DEF_measResult_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResult_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pilotPnPhase at 7799 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* pilotStrength at 7800 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pilotPnPhase at 7074 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* pilotStrength at 7075 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResult_specs_4 = {
 	sizeof(struct MeasResultCDMA2000__measResult),
@@ -169,9 +169,9 @@ static ber_tlv_tag_t asn_DEF_MeasResultCDMA2000_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasResultCDMA2000_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId at 7796 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cgi-Info at 7797 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* measResult at 7799 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId at 7071 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cgi-Info at 7072 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* measResult at 7074 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasResultCDMA2000_specs_1 = {
 	sizeof(struct MeasResultCDMA2000),

@@ -24,13 +24,14 @@ typedef enum RRCConnectionSetupComplete_v1330_IEs__ue_CE_NeedULGaps_r13 {
 	RRCConnectionSetupComplete_v1330_IEs__ue_CE_NeedULGaps_r13_true	= 0
 } e_RRCConnectionSetupComplete_v1330_IEs__ue_CE_NeedULGaps_r13;
 
-/* Forward declarations */
-struct RRCConnectionSetupComplete_v1430_IEs;
-
 /* RRCConnectionSetupComplete-v1330-IEs */
 typedef struct RRCConnectionSetupComplete_v1330_IEs {
 	long	*ue_CE_NeedULGaps_r13	/* OPTIONAL */;
-	struct RRCConnectionSetupComplete_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct RRCConnectionSetupComplete_v1330_IEs__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -43,9 +44,6 @@ extern asn_TYPE_descriptor_t asn_DEF_RRCConnectionSetupComplete_v1330_IEs;
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "RRCConnectionSetupComplete-v1430-IEs.h"
 
 #endif	/* _RRCConnectionSetupComplete_v1330_IEs_H_ */
 #include <asn_internal.h>

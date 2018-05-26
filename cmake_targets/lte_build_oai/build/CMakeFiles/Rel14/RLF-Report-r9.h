@@ -29,7 +29,6 @@
 #include "PhysCellIdUTRA-TDD.h"
 #include "RSRQ-Range-v1250.h"
 #include "TrackingAreaCode.h"
-#include "RSRP-Range-v1360.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -201,12 +200,6 @@ typedef struct RLF_Report_r9 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext5;
-	struct RLF_Report_r9__ext6 {
-		RSRP_Range_v1360_t	*measResultLastServCell_v1360	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext6;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

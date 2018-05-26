@@ -77,9 +77,8 @@ struct PUSCH_ConfigCommon_v1270;
 struct PUCCH_ConfigCommon;
 struct UplinkPowerControlCommonSCell_v1310;
 struct HighSpeedConfigSCell_r14;
-struct PRACH_Config_v1430;
-struct UplinkPowerControlCommonPUSCH_LessCell_v1430;
-struct MBSFN_SubframeConfigList_v1430;
+struct PRACH_Config_v14xy;
+struct UplinkPowerControlCommonPUSCH_LessCell_v14xy;
 
 /* RadioResourceConfigCommonSCell-r10 */
 typedef struct RadioResourceConfigCommonSCell_r10 {
@@ -147,7 +146,7 @@ typedef struct RadioResourceConfigCommonSCell_r10 {
 	} *ext4;
 	struct RadioResourceConfigCommonSCell_r10__ext5 {
 		struct HighSpeedConfigSCell_r14	*highSpeedConfigSCell_r14	/* OPTIONAL */;
-		struct PRACH_Config_v1430	*prach_Config_v1430	/* OPTIONAL */;
+		struct PRACH_Config_v14xy	*prach_Config_v14xy	/* OPTIONAL */;
 		struct RadioResourceConfigCommonSCell_r10__ext5__ul_Configuration_r14 {
 			struct RadioResourceConfigCommonSCell_r10__ext5__ul_Configuration_r14__ul_FreqInfo_r14 {
 				ARFCN_ValueEUTRA_r9_t	*ul_CarrierFreq_r14	/* OPTIONAL */;
@@ -161,7 +160,7 @@ typedef struct RadioResourceConfigCommonSCell_r10 {
 			SoundingRS_UL_ConfigCommon_t	 soundingRS_UL_ConfigCommon_r14;
 			UL_CyclicPrefixLength_t	 ul_CyclicPrefixLength_r14;
 			struct PRACH_ConfigSCell_r10	*prach_ConfigSCell_r14	/* OPTIONAL */;
-			struct UplinkPowerControlCommonPUSCH_LessCell_v1430	*uplinkPowerControlCommonPUSCH_LessCell_v1430	/* OPTIONAL */;
+			struct UplinkPowerControlCommonPUSCH_LessCell_v14xy	*uplinkPowerControlCommonPUSCH_LessCell_v14xy	/* OPTIONAL */;
 			
 			/* Context for parsing across buffer boundaries */
 			asn_struct_ctx_t _asn_ctx;
@@ -172,12 +171,6 @@ typedef struct RadioResourceConfigCommonSCell_r10 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext5;
-	struct RadioResourceConfigCommonSCell_r10__ext6 {
-		struct MBSFN_SubframeConfigList_v1430	*mbsfn_SubframeConfigList_v1430	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext6;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -207,9 +200,8 @@ extern asn_TYPE_descriptor_t asn_DEF_RadioResourceConfigCommonSCell_r10;
 #include "PUCCH-ConfigCommon.h"
 #include "UplinkPowerControlCommonSCell-v1310.h"
 #include "HighSpeedConfigSCell-r14.h"
-#include "PRACH-Config-v1430.h"
-#include "UplinkPowerControlCommonPUSCH-LessCell-v1430.h"
-#include "MBSFN-SubframeConfigList-v1430.h"
+#include "PRACH-Config-v14xy.h"
+#include "UplinkPowerControlCommonPUSCH-LessCell-v14xy.h"
 
 #endif	/* _RadioResourceConfigCommonSCell_r10_H_ */
 #include <asn_internal.h>

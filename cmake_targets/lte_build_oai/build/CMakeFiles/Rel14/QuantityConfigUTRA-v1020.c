@@ -41,7 +41,7 @@ static ber_tlv_tag_t asn_DEF_QuantityConfigUTRA_v1020_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_QuantityConfigUTRA_v1020_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* filterCoefficient2-FDD-r10 at 7903 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* filterCoefficient2-FDD-r10 at 7168 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_QuantityConfigUTRA_v1020_specs_1 = {
 	sizeof(struct QuantityConfigUTRA_v1020),

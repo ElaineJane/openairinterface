@@ -58,7 +58,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* nkaPUCCH-AN-r12 at 5321 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* nkaPUCCH-AN-r12 at 4795 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1250__nkaPUCCH_Param_r12__setup),
@@ -119,8 +119,8 @@ static asn_TYPE_member_t asn_MBR_nkaPUCCH_Param_r12_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_nkaPUCCH_Param_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5319 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5322 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4793 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4796 */
 };
 static asn_CHOICE_specifics_t asn_SPC_nkaPUCCH_Param_r12_specs_2 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1250__nkaPUCCH_Param_r12),
@@ -174,7 +174,7 @@ static ber_tlv_tag_t asn_DEF_PUCCH_ConfigDedicated_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PUCCH_ConfigDedicated_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* nkaPUCCH-Param-r12 at 5319 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* nkaPUCCH-Param-r12 at 4793 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PUCCH_ConfigDedicated_v1250_specs_1 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1250),

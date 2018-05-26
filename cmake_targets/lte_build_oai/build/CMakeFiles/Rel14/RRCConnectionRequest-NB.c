@@ -74,8 +74,8 @@ static asn_TYPE_member_t asn_MBR_criticalExtensions_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_criticalExtensions_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrcConnectionRequest-r13 at 11507 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 11508 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrcConnectionRequest-r13 at 10163 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 10164 */
 };
 static asn_CHOICE_specifics_t asn_SPC_criticalExtensions_specs_2 = {
 	sizeof(struct RRCConnectionRequest_NB__criticalExtensions),
@@ -129,7 +129,7 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionRequest_NB_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionRequest_NB_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* criticalExtensions at 11507 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* criticalExtensions at 10163 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionRequest_NB_specs_1 = {
 	sizeof(struct RRCConnectionRequest_NB),

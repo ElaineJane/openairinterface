@@ -1485,11 +1485,6 @@ static asn_per_constraints_t asn_PER_type_skipUplinkTx_r14_constr_106 GCC_NOTUSE
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_dataInactivityTimerConfig_r14_constr_113 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
 static asn_INTEGER_enum_map_t asn_MAP_maxHARQ_Tx_value2enum_3[] = {
 	{ 0,	2,	"n1" },
 	{ 1,	2,	"n2" },
@@ -1611,10 +1606,10 @@ static ber_tlv_tag_t asn_DEF_ul_SCH_Config_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ul_SCH_Config_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxHARQ-Tx at 4435 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* periodicBSR-Timer at 4438 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* retxBSR-Timer at 4439 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ttiBundling at 4440 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxHARQ-Tx at 3984 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* periodicBSR-Timer at 3987 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* retxBSR-Timer at 3988 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ttiBundling at 3989 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ul_SCH_Config_specs_2 = {
 	sizeof(struct MAC_MainConfig__ul_SCH_Config),
@@ -1864,9 +1859,9 @@ static ber_tlv_tag_t asn_DEF_setup_tags_27[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_27[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* periodicPHR-Timer at 4447 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prohibitPHR-Timer at 4449 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* dl-PathlossChange at 4451 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* periodicPHR-Timer at 3996 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prohibitPHR-Timer at 3998 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* dl-PathlossChange at 4000 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_27 = {
 	sizeof(struct MAC_MainConfig__phr_Config__setup),
@@ -1927,8 +1922,8 @@ static asn_TYPE_member_t asn_MBR_phr_Config_25[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_phr_Config_tag2el_25[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4445 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4448 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3994 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3997 */
 };
 static asn_CHOICE_specifics_t asn_SPC_phr_Config_specs_25 = {
 	sizeof(struct MAC_MainConfig__phr_Config),
@@ -1984,7 +1979,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_52[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_52[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sr-ProhibitTimer-r9 at 4455 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sr-ProhibitTimer-r9 at 4004 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_52 = {
 	sizeof(struct MAC_MainConfig__ext1),
@@ -2215,9 +2210,9 @@ static ber_tlv_tag_t asn_DEF_mac_MainConfig_v1020_tags_55[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_mac_MainConfig_v1020_tag2el_55[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellDeactivationTimer-r10 at 4459 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* extendedBSR-Sizes-r10 at 4461 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* extendedPHR-r10 at 4462 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellDeactivationTimer-r10 at 4008 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* extendedBSR-Sizes-r10 at 4010 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* extendedPHR-r10 at 4011 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_mac_MainConfig_v1020_specs_55 = {
 	sizeof(struct MAC_MainConfig__ext2__mac_MainConfig_v1020),
@@ -2275,7 +2270,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_54[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_54[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mac-MainConfig-v1020 at 4460 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mac-MainConfig-v1020 at 4009 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_54 = {
 	sizeof(struct MAC_MainConfig__ext2),
@@ -2351,9 +2346,9 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_69[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_69[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* stag-ToReleaseList-r11 at 4465 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* stag-ToAddModList-r11 at 4466 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* drx-Config-v1130 at 4467 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* stag-ToReleaseList-r11 at 4014 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* stag-ToAddModList-r11 at 4015 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* drx-Config-v1130 at 4016 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_69 = {
 	sizeof(struct MAC_MainConfig__ext3),
@@ -2459,7 +2454,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_77[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_77[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* phr-ModeOtherCG-r12 at 4473 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* phr-ModeOtherCG-r12 at 4022 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_77 = {
 	sizeof(struct MAC_MainConfig__ext4__dualConnectivityPHR__setup),
@@ -2520,8 +2515,8 @@ static asn_TYPE_member_t asn_MBR_dualConnectivityPHR_75[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_dualConnectivityPHR_tag2el_75[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4471 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4474 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4020 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4023 */
 };
 static asn_CHOICE_specifics_t asn_SPC_dualConnectivityPHR_specs_75 = {
 	sizeof(struct MAC_MainConfig__ext4__dualConnectivityPHR),
@@ -2637,7 +2632,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_83[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_83[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* logicalChannelSR-ProhibitTimer-r12 at 4479 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* logicalChannelSR-ProhibitTimer-r12 at 4028 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_83 = {
 	sizeof(struct MAC_MainConfig__ext4__logicalChannelSR_Config_r12__setup),
@@ -2698,8 +2693,8 @@ static asn_TYPE_member_t asn_MBR_logicalChannelSR_Config_r12_81[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_logicalChannelSR_Config_r12_tag2el_81[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4477 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4480 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4026 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4029 */
 };
 static asn_CHOICE_specifics_t asn_SPC_logicalChannelSR_Config_r12_specs_81 = {
 	sizeof(struct MAC_MainConfig__ext4__logicalChannelSR_Config_r12),
@@ -2773,9 +2768,9 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_73[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_73[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* e-HARQ-Pattern-r12 at 4469 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* dualConnectivityPHR at 4471 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* logicalChannelSR-Config-r12 at 4477 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* e-HARQ-Pattern-r12 at 4018 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* dualConnectivityPHR at 4020 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* logicalChannelSR-Config-r12 at 4026 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_73 = {
 	sizeof(struct MAC_MainConfig__ext4),
@@ -2837,8 +2832,8 @@ static asn_TYPE_member_t asn_MBR_setup_98[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_98[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sf5120 at 4489 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* sf10240 at 4490 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sf5120 at 4038 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* sf10240 at 4039 */
 };
 static asn_CHOICE_specifics_t asn_SPC_setup_specs_98 = {
 	sizeof(struct MAC_MainConfig__ext5__eDRX_Config_CycleStartOffset_r13__setup),
@@ -2898,8 +2893,8 @@ static asn_TYPE_member_t asn_MBR_eDRX_Config_CycleStartOffset_r13_96[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_eDRX_Config_CycleStartOffset_r13_tag2el_96[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4486 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4489 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4035 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4038 */
 };
 static asn_CHOICE_specifics_t asn_SPC_eDRX_Config_CycleStartOffset_r13_specs_96 = {
 	sizeof(struct MAC_MainConfig__ext5__eDRX_Config_CycleStartOffset_r13),
@@ -2973,9 +2968,9 @@ static ber_tlv_tag_t asn_DEF_ext5_tags_93[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_93[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* drx-Config-v1310 at 4483 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* extendedPHR2-r13 at 4484 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* eDRX-Config-CycleStartOffset-r13 at 4486 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* drx-Config-v1310 at 4032 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* extendedPHR2-r13 at 4033 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* eDRX-Config-CycleStartOffset-r13 at 4035 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_93 = {
 	sizeof(struct MAC_MainConfig__ext5),
@@ -3037,8 +3032,8 @@ static asn_TYPE_member_t asn_MBR_drx_Config_r13_102[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_drx_Config_r13_tag2el_102[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4495 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4497 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4044 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4046 */
 };
 static asn_CHOICE_specifics_t asn_SPC_drx_Config_r13_specs_102 = {
 	sizeof(struct MAC_MainConfig__ext6__drx_Config_r13),
@@ -3094,7 +3089,7 @@ static ber_tlv_tag_t asn_DEF_ext6_tags_101[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext6_tag2el_101[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* drx-Config-r13 at 4495 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* drx-Config-r13 at 4044 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext6_specs_101 = {
 	sizeof(struct MAC_MainConfig__ext6),
@@ -3255,8 +3250,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_108[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_108[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* skipUplinkTxSPS-r14 at 4502 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* skipUplinkTxDynamic-r14 at 4503 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* skipUplinkTxSPS-r14 at 4051 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* skipUplinkTxDynamic-r14 at 4052 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_108 = {
 	sizeof(struct MAC_MainConfig__ext7__skipUplinkTx_r14__setup),
@@ -3318,8 +3313,8 @@ static asn_TYPE_member_t asn_MBR_skipUplinkTx_r14_106[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_skipUplinkTx_r14_tag2el_106[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4500 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4502 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4049 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4051 */
 };
 static asn_CHOICE_specifics_t asn_SPC_skipUplinkTx_r14_specs_106 = {
 	sizeof(struct MAC_MainConfig__ext7__skipUplinkTx_r14),
@@ -3358,125 +3353,8 @@ asn_TYPE_descriptor_t asn_DEF_skipUplinkTx_r14_106 = {
 	&asn_SPC_skipUplinkTx_r14_specs_106	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_setup_115[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14__setup, dataInactivityTimer_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_DataInactivityTimer_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"dataInactivityTimer-r14"
-		},
-};
-static ber_tlv_tag_t asn_DEF_setup_tags_115[] = {
-	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_115[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* dataInactivityTimer-r14 at 4510 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_115 = {
-	sizeof(struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14__setup),
-	offsetof(struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14__setup, _asn_ctx),
-	asn_MAP_setup_tag2el_115,
-	1,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_setup_115 = {
-	"setup",
-	"setup",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_setup_tags_115,
-	sizeof(asn_DEF_setup_tags_115)
-		/sizeof(asn_DEF_setup_tags_115[0]) - 1, /* 1 */
-	asn_DEF_setup_tags_115,	/* Same as above */
-	sizeof(asn_DEF_setup_tags_115)
-		/sizeof(asn_DEF_setup_tags_115[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_setup_115,
-	1,	/* Elements count */
-	&asn_SPC_setup_specs_115	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_dataInactivityTimerConfig_r14_113[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14, choice.release),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NULL,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"release"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14, choice.setup),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		0,
-		&asn_DEF_setup_115,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"setup"
-		},
-};
-static asn_TYPE_tag2member_t asn_MAP_dataInactivityTimerConfig_r14_tag2el_113[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4507 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4510 */
-};
-static asn_CHOICE_specifics_t asn_SPC_dataInactivityTimerConfig_r14_specs_113 = {
-	sizeof(struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14),
-	offsetof(struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14, _asn_ctx),
-	offsetof(struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14, present),
-	sizeof(((struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14 *)0)->present),
-	asn_MAP_dataInactivityTimerConfig_r14_tag2el_113,
-	2,	/* Count of tags in the map */
-	0,
-	-1	/* Extensions start */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_dataInactivityTimerConfig_r14_113 = {
-	"dataInactivityTimerConfig-r14",
-	"dataInactivityTimerConfig-r14",
-	CHOICE_free,
-	CHOICE_print,
-	CHOICE_constraint,
-	CHOICE_decode_ber,
-	CHOICE_encode_der,
-	CHOICE_decode_xer,
-	CHOICE_encode_xer,
-	CHOICE_decode_uper,
-	CHOICE_encode_uper,
-	CHOICE_decode_aper,
-	CHOICE_encode_aper,
-	CHOICE_compare,
-	CHOICE_outmost_tag,
-	0,	/* No effective tags (pointer) */
-	0,	/* No effective tags (count) */
-	0,	/* No tags (pointer) */
-	0,	/* No tags (count) */
-	&asn_PER_type_dataInactivityTimerConfig_r14_constr_113,
-	asn_MBR_dataInactivityTimerConfig_r14_113,
-	2,	/* Elements count */
-	&asn_SPC_dataInactivityTimerConfig_r14_specs_113	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_ext7_105[] = {
-	{ ATF_POINTER, 2, offsetof(struct MAC_MainConfig__ext7, skipUplinkTx_r14),
+	{ ATF_POINTER, 1, offsetof(struct MAC_MainConfig__ext7, skipUplinkTx_r14),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_skipUplinkTx_r14_106,
@@ -3485,32 +3363,22 @@ static asn_TYPE_member_t asn_MBR_ext7_105[] = {
 		0,
 		"skipUplinkTx-r14"
 		},
-	{ ATF_POINTER, 1, offsetof(struct MAC_MainConfig__ext7, dataInactivityTimerConfig_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_dataInactivityTimerConfig_r14_113,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"dataInactivityTimerConfig-r14"
-		},
 };
-static int asn_MAP_ext7_oms_105[] = { 0, 1 };
+static int asn_MAP_ext7_oms_105[] = { 0 };
 static ber_tlv_tag_t asn_DEF_ext7_tags_105[] = {
 	(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext7_tag2el_105[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* skipUplinkTx-r14 at 4500 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dataInactivityTimerConfig-r14 at 4507 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* skipUplinkTx-r14 at 4049 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext7_specs_105 = {
 	sizeof(struct MAC_MainConfig__ext7),
 	offsetof(struct MAC_MainConfig__ext7, _asn_ctx),
 	asn_MAP_ext7_tag2el_105,
-	2,	/* Count of tags in the map */
+	1,	/* Count of tags in the map */
 	asn_MAP_ext7_oms_105,	/* Optional members */
-	2, 0,	/* Root/Additions */
+	1, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
@@ -3539,7 +3407,7 @@ asn_TYPE_descriptor_t asn_DEF_ext7_105 = {
 		/sizeof(asn_DEF_ext7_tags_105[0]), /* 2 */
 	0,	/* No PER visible constraints */
 	asn_MBR_ext7_105,
-	2,	/* Elements count */
+	1,	/* Elements count */
 	&asn_SPC_ext7_specs_105	/* Additional specs */
 };
 
@@ -3649,17 +3517,17 @@ static ber_tlv_tag_t asn_DEF_MAC_MainConfig_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MAC_MainConfig_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-SCH-Config at 4437 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* drx-Config at 4442 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* timeAlignmentTimerDedicated at 4443 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* phr-Config at 4445 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 4455 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 4463 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext3 at 4465 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext4 at 4469 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext5 at 4483 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* ext6 at 4497 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 } /* ext7 at 4505 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-SCH-Config at 3986 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* drx-Config at 3991 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* timeAlignmentTimerDedicated at 3992 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* phr-Config at 3994 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 4004 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 4012 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext3 at 4014 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext4 at 4018 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext5 at 4032 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* ext6 at 4046 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 } /* ext7 at 4054 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MAC_MainConfig_specs_1 = {
 	sizeof(struct MAC_MainConfig),

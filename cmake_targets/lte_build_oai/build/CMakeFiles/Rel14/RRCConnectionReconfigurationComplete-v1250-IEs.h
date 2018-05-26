@@ -24,13 +24,14 @@ typedef enum RRCConnectionReconfigurationComplete_v1250_IEs__logMeasAvailableMBS
 	RRCConnectionReconfigurationComplete_v1250_IEs__logMeasAvailableMBSFN_r12_true	= 0
 } e_RRCConnectionReconfigurationComplete_v1250_IEs__logMeasAvailableMBSFN_r12;
 
-/* Forward declarations */
-struct RRCConnectionReconfigurationComplete_v1430_IEs;
-
 /* RRCConnectionReconfigurationComplete-v1250-IEs */
 typedef struct RRCConnectionReconfigurationComplete_v1250_IEs {
 	long	*logMeasAvailableMBSFN_r12	/* OPTIONAL */;
-	struct RRCConnectionReconfigurationComplete_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct RRCConnectionReconfigurationComplete_v1250_IEs__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -43,9 +44,6 @@ extern asn_TYPE_descriptor_t asn_DEF_RRCConnectionReconfigurationComplete_v1250_
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "RRCConnectionReconfigurationComplete-v1430-IEs.h"
 
 #endif	/* _RRCConnectionReconfigurationComplete_v1250_IEs_H_ */
 #include <asn_internal.h>

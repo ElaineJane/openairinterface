@@ -42,9 +42,9 @@ static asn_TYPE_member_t asn_MBR_dedicatedInfoType_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_dedicatedInfoType_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dedicatedInfoNAS at 2574 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* dedicatedInfoCDMA2000-1XRTT at 2575 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* dedicatedInfoCDMA2000-HRPD at 2577 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dedicatedInfoNAS at 2364 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* dedicatedInfoCDMA2000-1XRTT at 2365 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* dedicatedInfoCDMA2000-HRPD at 2367 */
 };
 static asn_CHOICE_specifics_t asn_SPC_dedicatedInfoType_specs_2 = {
 	sizeof(struct ULInformationTransfer_r8_IEs__dedicatedInfoType),
@@ -108,8 +108,8 @@ static ber_tlv_tag_t asn_DEF_ULInformationTransfer_r8_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ULInformationTransfer_r8_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dedicatedInfoType at 2574 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 2578 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dedicatedInfoType at 2364 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 2368 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ULInformationTransfer_r8_IEs_specs_1 = {
 	sizeof(struct ULInformationTransfer_r8_IEs),

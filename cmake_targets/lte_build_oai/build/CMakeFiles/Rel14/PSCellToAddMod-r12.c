@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_cellIdentification_r12_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cellIdentification_r12_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r12 at 972 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dl-CarrierFreq-r12 at 974 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r12 at 923 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dl-CarrierFreq-r12 at 925 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cellIdentification_r12_specs_3 = {
 	sizeof(struct PSCellToAddMod_r12__cellIdentification_r12),
@@ -90,7 +90,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* antennaInfoDedicatedPSCell-v1280 at 978 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* antennaInfoDedicatedPSCell-v1280 at 929 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_9 = {
 	sizeof(struct PSCellToAddMod_r12__ext1),
@@ -148,7 +148,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sCellIndex-r13 at 980 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sCellIndex-r13 at 931 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_11 = {
 	sizeof(struct PSCellToAddMod_r12__ext2),
@@ -250,12 +250,12 @@ static ber_tlv_tag_t asn_DEF_PSCellToAddMod_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PSCellToAddMod_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellIndex-r12 at 970 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellIdentification-r12 at 972 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* radioResourceConfigCommonPSCell-r12 at 975 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* radioResourceConfigDedicatedPSCell-r12 at 976 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 978 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* ext2 at 980 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellIndex-r12 at 921 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellIdentification-r12 at 923 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* radioResourceConfigCommonPSCell-r12 at 926 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* radioResourceConfigDedicatedPSCell-r12 at 927 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 929 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* ext2 at 931 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PSCellToAddMod_r12_specs_1 = {
 	sizeof(struct PSCellToAddMod_r12),

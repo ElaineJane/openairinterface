@@ -320,7 +320,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_68[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_68[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* candidateCellInfoList-r10 at 13645 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* candidateCellInfoList-r10 at 11848 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_68 = {
 	sizeof(struct RRM_Config__ext1),
@@ -386,8 +386,8 @@ static ber_tlv_tag_t asn_DEF_RRM_Config_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRM_Config_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-InactiveTime at 13635 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ext1 at 13645 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-InactiveTime at 11838 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ext1 at 11848 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRM_Config_specs_1 = {
 	sizeof(struct RRM_Config),

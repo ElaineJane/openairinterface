@@ -32,16 +32,7 @@ typedef enum MeasGapConfig__setup__gapOffset_PR {
 	MeasGapConfig__setup__gapOffset_PR_gp0,
 	MeasGapConfig__setup__gapOffset_PR_gp1,
 	/* Extensions may appear below */
-	MeasGapConfig__setup__gapOffset_PR_gp2_r14,
-	MeasGapConfig__setup__gapOffset_PR_gp3_r14,
-	MeasGapConfig__setup__gapOffset_PR_gp_ncsg1_r14,
-	MeasGapConfig__setup__gapOffset_PR_gp_ncsg2_r14,
-	MeasGapConfig__setup__gapOffset_PR_gp_ncsg3_r14,
-	MeasGapConfig__setup__gapOffset_PR_gp_ncsg4_r14,
-	MeasGapConfig__setup__gapOffset_PR_gp_nonUniform1_r14,
-	MeasGapConfig__setup__gapOffset_PR_gp_nonUniform2_r14,
-	MeasGapConfig__setup__gapOffset_PR_gp_nonUniform3_r14,
-	MeasGapConfig__setup__gapOffset_PR_gp_nonUniform4_r14
+	
 } MeasGapConfig__setup__gapOffset_PR;
 
 /* MeasGapConfig */
@@ -59,16 +50,6 @@ typedef struct MeasGapConfig {
 					 * This type is extensible,
 					 * possible extensions are below.
 					 */
-					long	 gp2_r14;
-					long	 gp3_r14;
-					long	 gp_ncsg1_r14;
-					long	 gp_ncsg2_r14;
-					long	 gp_ncsg3_r14;
-					long	 gp_ncsg4_r14;
-					long	 gp_nonUniform1_r14;
-					long	 gp_nonUniform2_r14;
-					long	 gp_nonUniform3_r14;
-					long	 gp_nonUniform4_r14;
 				} choice;
 				
 				/* Context for parsing across buffer boundaries */

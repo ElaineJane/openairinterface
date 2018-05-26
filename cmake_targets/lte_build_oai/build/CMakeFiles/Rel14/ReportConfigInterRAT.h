@@ -222,12 +222,6 @@ typedef struct ReportConfigInterRAT {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext5;
-	struct ReportConfigInterRAT__ext6 {
-		BOOLEAN_t	*reportAnyWLAN_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext6;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

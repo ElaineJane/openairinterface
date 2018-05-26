@@ -137,7 +137,7 @@ static asn_INTEGER_enum_map_t asn_MAP_AccessStratumRelease_value2enum_1[] = {
 	{ 3,	5,	"rel11" },
 	{ 4,	5,	"rel12" },
 	{ 5,	5,	"rel13" },
-	{ 6,	5,	"rel14" },
+	{ 6,	6,	"spare2" },
 	{ 7,	6,	"spare1" }
 	/* This list is extensible */
 };
@@ -146,10 +146,10 @@ static unsigned int asn_MAP_AccessStratumRelease_enum2value_1[] = {
 	3,	/* rel11(3) */
 	4,	/* rel12(4) */
 	5,	/* rel13(5) */
-	6,	/* rel14(6) */
 	0,	/* rel8(0) */
 	1,	/* rel9(1) */
-	7	/* spare1(7) */
+	7,	/* spare1(7) */
+	6	/* spare2(6) */
 	/* This list is extensible */
 };
 static asn_INTEGER_specifics_t asn_SPC_AccessStratumRelease_specs_1 = {

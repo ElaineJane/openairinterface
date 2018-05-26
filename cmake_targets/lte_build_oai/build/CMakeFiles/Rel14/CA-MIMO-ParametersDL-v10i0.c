@@ -193,7 +193,7 @@ static ber_tlv_tag_t asn_DEF_CA_MIMO_ParametersDL_v10i0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CA_MIMO_ParametersDL_v10i0_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* fourLayerTM3-TM4-r10 at 9299 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* fourLayerTM3-TM4-r10 at 8350 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CA_MIMO_ParametersDL_v10i0_specs_1 = {
 	sizeof(struct CA_MIMO_ParametersDL_v10i0),

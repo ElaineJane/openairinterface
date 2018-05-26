@@ -41,9 +41,9 @@ static ber_tlv_tag_t asn_DEF_SL_CarrierFreqInfo_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_CarrierFreqInfo_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discResourcesNonPS-r13 at 3480 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discResourcesPS-r13 at 3481 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* discConfigOther-r13 at 3482 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discResourcesNonPS-r13 at 3220 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discResourcesPS-r13 at 3221 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* discConfigOther-r13 at 3222 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_CarrierFreqInfo_v1310_specs_1 = {
 	sizeof(struct SL_CarrierFreqInfo_v1310),

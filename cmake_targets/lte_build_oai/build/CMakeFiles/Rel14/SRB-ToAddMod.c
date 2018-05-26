@@ -68,8 +68,8 @@ static asn_TYPE_member_t asn_MBR_rlc_Config_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_rlc_Config_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue at 5942 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue at 5943 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue at 5357 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue at 5358 */
 };
 static asn_CHOICE_specifics_t asn_SPC_rlc_Config_specs_3 = {
 	sizeof(struct SRB_ToAddMod__rlc_Config),
@@ -129,8 +129,8 @@ static asn_TYPE_member_t asn_MBR_logicalChannelConfig_6[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_logicalChannelConfig_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue at 5946 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue at 5947 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue at 5361 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue at 5362 */
 };
 static asn_CHOICE_specifics_t asn_SPC_logicalChannelConfig_specs_6 = {
 	sizeof(struct SRB_ToAddMod__logicalChannelConfig),
@@ -203,9 +203,9 @@ static ber_tlv_tag_t asn_DEF_SRB_ToAddMod_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SRB_ToAddMod_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srb-Identity at 5940 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rlc-Config at 5942 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* logicalChannelConfig at 5946 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srb-Identity at 5355 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rlc-Config at 5357 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* logicalChannelConfig at 5361 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SRB_ToAddMod_specs_1 = {
 	sizeof(struct SRB_ToAddMod),

@@ -28,11 +28,10 @@ typedef enum HandoverPreparationInformation_v920_IEs__ue_ConfigRelease_r9 {
 	HandoverPreparationInformation_v920_IEs__ue_ConfigRelease_r9_v10j0	= 4,
 	HandoverPreparationInformation_v920_IEs__ue_ConfigRelease_r9_v11e0	= 5,
 	HandoverPreparationInformation_v920_IEs__ue_ConfigRelease_r9_v1280	= 6,
-	HandoverPreparationInformation_v920_IEs__ue_ConfigRelease_r9_rel13	= 7,
+	HandoverPreparationInformation_v920_IEs__ue_ConfigRelease_r9_rel13	= 7
 	/*
 	 * Enumeration is extensible
 	 */
-	HandoverPreparationInformation_v920_IEs__ue_ConfigRelease_r9_rel14	= 8
 } e_HandoverPreparationInformation_v920_IEs__ue_ConfigRelease_r9;
 
 /* Forward declarations */

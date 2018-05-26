@@ -56,10 +56,10 @@ static asn_TYPE_member_t asn_MBR_c1_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_c1_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interestIndication-r11 at 595 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* spare3 at 596 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* spare2 at 596 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* spare1 at 596 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interestIndication-r11 at 555 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* spare3 at 556 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* spare2 at 556 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* spare1 at 556 */
 };
 static asn_CHOICE_specifics_t asn_SPC_c1_specs_3 = {
 	sizeof(struct MBMSInterestIndication_r11__criticalExtensions__c1),
@@ -160,8 +160,8 @@ static asn_TYPE_member_t asn_MBR_criticalExtensions_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_criticalExtensions_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 595 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 598 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 555 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 558 */
 };
 static asn_CHOICE_specifics_t asn_SPC_criticalExtensions_specs_2 = {
 	sizeof(struct MBMSInterestIndication_r11__criticalExtensions),
@@ -215,7 +215,7 @@ static ber_tlv_tag_t asn_DEF_MBMSInterestIndication_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MBMSInterestIndication_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* criticalExtensions at 597 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* criticalExtensions at 557 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MBMSInterestIndication_r11_specs_1 = {
 	sizeof(struct MBMSInterestIndication_r11),

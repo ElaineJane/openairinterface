@@ -21,13 +21,13 @@ extern "C" {
 /* Forward declarations */
 struct AS_Config_v1320;
 struct AS_Context_v1320;
-struct HandoverPreparationInformation_v1430_IEs;
+struct HandoverPreparationInformation_v14x0_IEs;
 
 /* HandoverPreparationInformation-v1320-IEs */
 typedef struct HandoverPreparationInformation_v1320_IEs {
 	struct AS_Config_v1320	*as_Config_v1320	/* OPTIONAL */;
 	struct AS_Context_v1320	*as_Context_v1320	/* OPTIONAL */;
-	struct HandoverPreparationInformation_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct HandoverPreparationInformation_v14x0_IEs	*nonCriticalExtension	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -43,7 +43,7 @@ extern asn_TYPE_descriptor_t asn_DEF_HandoverPreparationInformation_v1320_IEs;
 /* Referred external types */
 #include "AS-Config-v1320.h"
 #include "AS-Context-v1320.h"
-#include "HandoverPreparationInformation-v1430-IEs.h"
+#include "HandoverPreparationInformation-v14x0-IEs.h"
 
 #endif	/* _HandoverPreparationInformation_v1320_IEs_H_ */
 #include <asn_internal.h>

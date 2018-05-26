@@ -97,8 +97,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scramblingIdentity-r11 at 4278 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* scramblingIdentity2-r11 at 4279 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scramblingIdentity-r11 at 3832 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* scramblingIdentity2-r11 at 3833 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct DMRS_Config_r11__setup),
@@ -159,8 +159,8 @@ static asn_TYPE_member_t asn_MBR_DMRS_Config_r11_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_DMRS_Config_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4276 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4278 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3830 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3832 */
 };
 static asn_CHOICE_specifics_t asn_SPC_DMRS_Config_r11_specs_1 = {
 	sizeof(struct DMRS_Config_r11),

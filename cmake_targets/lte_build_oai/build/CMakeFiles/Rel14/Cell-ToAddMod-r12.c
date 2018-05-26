@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_cellIdentification_r12_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cellIdentification_r12_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r12 at 13434 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dl-CarrierFreq-r12 at 13436 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r12 at 11639 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dl-CarrierFreq-r12 at 11641 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cellIdentification_r12_specs_3 = {
 	sizeof(struct Cell_ToAddMod_r12__cellIdentification_r12),
@@ -98,8 +98,8 @@ static ber_tlv_tag_t asn_DEF_measResultCellToAdd_r12_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResultCellToAdd_r12_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrpResult-r12 at 13438 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rsrqResult-r12 at 13440 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrpResult-r12 at 11643 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rsrqResult-r12 at 11645 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResultCellToAdd_r12_specs_6 = {
 	sizeof(struct Cell_ToAddMod_r12__measResultCellToAdd_r12),
@@ -155,7 +155,7 @@ static ber_tlv_tag_t asn_DEF_measResultCellToAdd_v1310_tags_12[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResultCellToAdd_v1310_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rs-sinr-Result-r13 at 13445 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rs-sinr-Result-r13 at 11650 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResultCellToAdd_v1310_specs_12 = {
 	sizeof(struct Cell_ToAddMod_r12__ext1__measResultCellToAdd_v1310),
@@ -221,8 +221,8 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_10[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellIndex-r13 at 13442 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measResultCellToAdd-v1310 at 13445 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellIndex-r13 at 11647 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measResultCellToAdd-v1310 at 11650 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_10 = {
 	sizeof(struct Cell_ToAddMod_r12__ext1),
@@ -306,10 +306,10 @@ static ber_tlv_tag_t asn_DEF_Cell_ToAddMod_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_Cell_ToAddMod_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellIndex-r12 at 13432 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellIdentification-r12 at 13434 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measResultCellToAdd-r12 at 13438 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 13442 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sCellIndex-r12 at 11637 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellIdentification-r12 at 11639 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measResultCellToAdd-r12 at 11643 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 11647 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_Cell_ToAddMod_r12_specs_1 = {
 	sizeof(struct Cell_ToAddMod_r12),

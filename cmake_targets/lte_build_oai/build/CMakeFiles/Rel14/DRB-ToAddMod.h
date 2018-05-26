@@ -32,12 +32,6 @@ typedef enum DRB_ToAddMod__ext2__drb_TypeLWIP_r13 {
 	DRB_ToAddMod__ext2__drb_TypeLWIP_r13_lwip_UL_only	= 2,
 	DRB_ToAddMod__ext2__drb_TypeLWIP_r13_eutran	= 3
 } e_DRB_ToAddMod__ext2__drb_TypeLWIP_r13;
-typedef enum DRB_ToAddMod__ext3__lwa_WLAN_AC_r14 {
-	DRB_ToAddMod__ext3__lwa_WLAN_AC_r14_ac_bk	= 0,
-	DRB_ToAddMod__ext3__lwa_WLAN_AC_r14_ac_be	= 1,
-	DRB_ToAddMod__ext3__lwa_WLAN_AC_r14_ac_vi	= 2,
-	DRB_ToAddMod__ext3__lwa_WLAN_AC_r14_ac_vo	= 3
-} e_DRB_ToAddMod__ext3__lwa_WLAN_AC_r14;
 
 /* Forward declarations */
 struct PDCP_Config;
@@ -45,7 +39,7 @@ struct RLC_Config;
 struct LogicalChannelConfig;
 struct RLC_Config_v1250;
 struct RLC_Config_v1310;
-struct RLC_Config_v1430;
+struct RLC_Config_v14xy;
 
 /* DRB-ToAddMod */
 typedef struct DRB_ToAddMod {
@@ -75,10 +69,9 @@ typedef struct DRB_ToAddMod {
 		asn_struct_ctx_t _asn_ctx;
 	} *ext2;
 	struct DRB_ToAddMod__ext3 {
-		struct RLC_Config_v1430	*rlc_Config_v1430	/* OPTIONAL */;
+		struct RLC_Config_v14xy	*rlc_Config_v14xy	/* OPTIONAL */;
 		BOOLEAN_t	*lwip_UL_Aggregation_r14	/* OPTIONAL */;
 		BOOLEAN_t	*lwip_DL_Aggregation_r14	/* OPTIONAL */;
-		long	*lwa_WLAN_AC_r14	/* OPTIONAL */;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
@@ -91,7 +84,6 @@ typedef struct DRB_ToAddMod {
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_drb_TypeChange_r12_10;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_drb_TypeLWIP_r13_16;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_lwa_WLAN_AC_r14_25;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_DRB_ToAddMod;
 
 #ifdef __cplusplus
@@ -104,7 +96,7 @@ extern asn_TYPE_descriptor_t asn_DEF_DRB_ToAddMod;
 #include "LogicalChannelConfig.h"
 #include "RLC-Config-v1250.h"
 #include "RLC-Config-v1310.h"
-#include "RLC-Config-v1430.h"
+#include "RLC-Config-v14xy.h"
 
 #endif	/* _DRB_ToAddMod_H_ */
 #include <asn_internal.h>

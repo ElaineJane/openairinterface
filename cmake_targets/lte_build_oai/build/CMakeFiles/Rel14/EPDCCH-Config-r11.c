@@ -63,7 +63,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* subframePattern-r11 at 4298 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* subframePattern-r11 at 3852 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_7 = {
 	sizeof(struct EPDCCH_Config_r11__config_r11__setup__subframePatternConfig_r11__setup),
@@ -124,8 +124,8 @@ static asn_TYPE_member_t asn_MBR_subframePatternConfig_r11_5[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_subframePatternConfig_r11_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4295 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4298 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3849 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3852 */
 };
 static asn_CHOICE_specifics_t asn_SPC_subframePatternConfig_r11_specs_5 = {
 	sizeof(struct EPDCCH_Config_r11__config_r11__setup__subframePatternConfig_r11),
@@ -208,10 +208,10 @@ static ber_tlv_tag_t asn_DEF_setup_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframePatternConfig-r11 at 4295 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* startSymbol-r11 at 4300 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* setConfigToReleaseList-r11 at 4301 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* setConfigToAddModList-r11 at 4302 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframePatternConfig-r11 at 3849 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* startSymbol-r11 at 3854 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* setConfigToReleaseList-r11 at 3855 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* setConfigToAddModList-r11 at 3856 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct EPDCCH_Config_r11__config_r11__setup),
@@ -273,8 +273,8 @@ static asn_TYPE_member_t asn_MBR_config_r11_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_config_r11_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4292 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4299 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3846 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3853 */
 };
 static asn_CHOICE_specifics_t asn_SPC_config_r11_specs_2 = {
 	sizeof(struct EPDCCH_Config_r11__config_r11),
@@ -328,7 +328,7 @@ static ber_tlv_tag_t asn_DEF_EPDCCH_Config_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_EPDCCH_Config_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* config-r11 at 4292 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* config-r11 at 3846 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_EPDCCH_Config_r11_specs_1 = {
 	sizeof(struct EPDCCH_Config_r11),

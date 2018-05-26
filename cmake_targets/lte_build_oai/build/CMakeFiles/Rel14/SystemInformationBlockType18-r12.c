@@ -297,10 +297,10 @@ static ber_tlv_tag_t asn_DEF_commConfig_r12_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_commConfig_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commRxPool-r12 at 3409 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commTxPoolNormalCommon-r12 at 3410 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* commTxPoolExceptional-r12 at 3411 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* commSyncConfig-r12 at 3412 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commRxPool-r12 at 3149 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commTxPoolNormalCommon-r12 at 3150 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* commTxPoolExceptional-r12 at 3151 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* commSyncConfig-r12 at 3152 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_commConfig_r12_specs_2 = {
 	sizeof(struct SystemInformationBlockType18_r12__commConfig_r12),
@@ -470,9 +470,9 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxPoolNormalCommonExt-r13 at 3416 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commTxResourceUC-ReqAllowed-r13 at 3417 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* commTxAllowRelayCommon-r13 at 3418 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxPoolNormalCommonExt-r13 at 3156 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commTxResourceUC-ReqAllowed-r13 at 3157 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* commTxAllowRelayCommon-r13 at 3158 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_9 = {
 	sizeof(struct SystemInformationBlockType18_r12__ext1),
@@ -547,9 +547,9 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType18_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType18_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commConfig-r12 at 3409 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* lateNonCriticalExtension at 3414 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ext1 at 3416 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commConfig-r12 at 3149 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* lateNonCriticalExtension at 3154 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ext1 at 3156 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType18_r12_specs_1 = {
 	sizeof(struct SystemInformationBlockType18_r12),

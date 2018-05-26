@@ -56,10 +56,10 @@ static asn_TYPE_member_t asn_MBR_c1_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_c1_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interFreqRSTDMeasurementIndication-r10 at 457 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* spare3 at 458 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* spare2 at 458 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* spare1 at 458 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interFreqRSTDMeasurementIndication-r10 at 426 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* spare3 at 427 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* spare2 at 427 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* spare1 at 427 */
 };
 static asn_CHOICE_specifics_t asn_SPC_c1_specs_3 = {
 	sizeof(struct InterFreqRSTDMeasurementIndication_r10__criticalExtensions__c1),
@@ -160,8 +160,8 @@ static asn_TYPE_member_t asn_MBR_criticalExtensions_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_criticalExtensions_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 457 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 460 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 426 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 429 */
 };
 static asn_CHOICE_specifics_t asn_SPC_criticalExtensions_specs_2 = {
 	sizeof(struct InterFreqRSTDMeasurementIndication_r10__criticalExtensions),
@@ -215,7 +215,7 @@ static ber_tlv_tag_t asn_DEF_InterFreqRSTDMeasurementIndication_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_InterFreqRSTDMeasurementIndication_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* criticalExtensions at 459 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* criticalExtensions at 428 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_InterFreqRSTDMeasurementIndication_r10_specs_1 = {
 	sizeof(struct InterFreqRSTDMeasurementIndication_r10),

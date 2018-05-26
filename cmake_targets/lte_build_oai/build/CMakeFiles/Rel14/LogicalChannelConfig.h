@@ -53,16 +53,6 @@ typedef enum LogicalChannelConfig__ul_SpecificParameters__bucketSizeDuration {
 typedef enum LogicalChannelConfig__ext1__logicalChannelSR_Mask_r9 {
 	LogicalChannelConfig__ext1__logicalChannelSR_Mask_r9_setup	= 0
 } e_LogicalChannelConfig__ext1__logicalChannelSR_Mask_r9;
-typedef enum LogicalChannelConfig__ext3__bitRateQueryProhibitTimer_r14 {
-	LogicalChannelConfig__ext3__bitRateQueryProhibitTimer_r14_s0	= 0,
-	LogicalChannelConfig__ext3__bitRateQueryProhibitTimer_r14_s0dot4	= 1,
-	LogicalChannelConfig__ext3__bitRateQueryProhibitTimer_r14_s0dot8	= 2,
-	LogicalChannelConfig__ext3__bitRateQueryProhibitTimer_r14_s1dot6	= 3,
-	LogicalChannelConfig__ext3__bitRateQueryProhibitTimer_r14_s3	= 4,
-	LogicalChannelConfig__ext3__bitRateQueryProhibitTimer_r14_s6	= 5,
-	LogicalChannelConfig__ext3__bitRateQueryProhibitTimer_r14_s12	= 6,
-	LogicalChannelConfig__ext3__bitRateQueryProhibitTimer_r14_s30	= 7
-} e_LogicalChannelConfig__ext3__bitRateQueryProhibitTimer_r14;
 
 /* LogicalChannelConfig */
 typedef struct LogicalChannelConfig {
@@ -92,8 +82,7 @@ typedef struct LogicalChannelConfig {
 		asn_struct_ctx_t _asn_ctx;
 	} *ext2;
 	struct LogicalChannelConfig__ext3 {
-		BOOLEAN_t	*laa_UL_Allowed_r14	/* OPTIONAL */;
-		long	*bitRateQueryProhibitTimer_r14	/* OPTIONAL */;
+		BOOLEAN_t	*laa_Allowed_r14	/* OPTIONAL */;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
@@ -107,7 +96,6 @@ typedef struct LogicalChannelConfig {
 /* extern asn_TYPE_descriptor_t asn_DEF_prioritisedBitRate_4;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_bucketSizeDuration_21;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_logicalChannelSR_Mask_r9_33;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_bitRateQueryProhibitTimer_r14_39;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_LogicalChannelConfig;
 
 #ifdef __cplusplus

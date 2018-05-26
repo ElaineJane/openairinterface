@@ -226,9 +226,9 @@ static ber_tlv_tag_t asn_DEF_betaOffsetMC_r12_tags_8[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_betaOffsetMC_r12_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* betaOffset-ACK-Index-MC-SubframeSet2-r12 at 5483 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* betaOffset-RI-Index-MC-SubframeSet2-r12 at 5484 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* betaOffset-CQI-Index-MC-SubframeSet2-r12 at 5485 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* betaOffset-ACK-Index-MC-SubframeSet2-r12 at 4953 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* betaOffset-RI-Index-MC-SubframeSet2-r12 at 4954 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* betaOffset-CQI-Index-MC-SubframeSet2-r12 at 4955 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_betaOffsetMC_r12_specs_8 = {
 	sizeof(struct PUSCH_ConfigDedicated_v1250__uciOnPUSCH__setup__betaOffsetMC_r12),
@@ -312,10 +312,10 @@ static ber_tlv_tag_t asn_DEF_setup_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* betaOffset-ACK-Index-SubframeSet2-r12 at 5479 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* betaOffset-RI-Index-SubframeSet2-r12 at 5480 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* betaOffset-CQI-Index-SubframeSet2-r12 at 5481 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* betaOffsetMC-r12 at 5483 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* betaOffset-ACK-Index-SubframeSet2-r12 at 4949 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* betaOffset-RI-Index-SubframeSet2-r12 at 4950 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* betaOffset-CQI-Index-SubframeSet2-r12 at 4951 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* betaOffsetMC-r12 at 4953 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct PUSCH_ConfigDedicated_v1250__uciOnPUSCH__setup),
@@ -377,8 +377,8 @@ static asn_TYPE_member_t asn_MBR_uciOnPUSCH_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_uciOnPUSCH_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5477 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5479 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4947 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4949 */
 };
 static asn_CHOICE_specifics_t asn_SPC_uciOnPUSCH_specs_2 = {
 	sizeof(struct PUSCH_ConfigDedicated_v1250__uciOnPUSCH),
@@ -432,7 +432,7 @@ static ber_tlv_tag_t asn_DEF_PUSCH_ConfigDedicated_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PUSCH_ConfigDedicated_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* uciOnPUSCH at 5477 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* uciOnPUSCH at 4947 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PUSCH_ConfigDedicated_v1250_specs_1 = {
 	sizeof(struct PUSCH_ConfigDedicated_v1250),

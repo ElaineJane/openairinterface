@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_AreaConfiguration_r10_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_AreaConfiguration_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellGlobalIdList-r10 at 8216 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* trackingAreaCodeList-r10 at 8218 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellGlobalIdList-r10 at 7459 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* trackingAreaCodeList-r10 at 7461 */
 };
 static asn_CHOICE_specifics_t asn_SPC_AreaConfiguration_r10_specs_1 = {
 	sizeof(struct AreaConfiguration_r10),

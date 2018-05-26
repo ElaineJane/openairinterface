@@ -450,10 +450,10 @@ static ber_tlv_tag_t asn_DEF_PhyLayerParameters_v1330_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PhyLayerParameters_v1330_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cch-InterfMitigation-RefRecTypeA-r13 at 8886 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cch-InterfMitigation-RefRecTypeB-r13 at 8887 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cch-InterfMitigation-MaxNumCCs-r13 at 8888 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* crs-InterfMitigationTM1toTM9-r13 at 8889 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cch-InterfMitigation-RefRecTypeA-r13 at 8042 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cch-InterfMitigation-RefRecTypeB-r13 at 8043 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cch-InterfMitigation-MaxNumCCs-r13 at 8044 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* crs-InterfMitigationTM1toTM9-r13 at 8045 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PhyLayerParameters_v1330_specs_1 = {
 	sizeof(struct PhyLayerParameters_v1330),

@@ -372,8 +372,8 @@ static ber_tlv_tag_t asn_DEF_SupportedBandEUTRA_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SupportedBandEUTRA_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-256QAM-r12 at 9347 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ul-64QAM-r12 at 9348 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-256QAM-r12 at 8396 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ul-64QAM-r12 at 8397 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SupportedBandEUTRA_v1250_specs_1 = {
 	sizeof(struct SupportedBandEUTRA_v1250),

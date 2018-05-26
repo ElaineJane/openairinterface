@@ -29,7 +29,7 @@ static asn_TYPE_member_t asn_MBR_c1_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_c1_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* paging-r13 at 11178 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* paging-r13 at 9881 */
 };
 static asn_CHOICE_specifics_t asn_SPC_c1_specs_2 = {
 	sizeof(struct PCCH_MessageType_NB__c1),
@@ -130,8 +130,8 @@ static asn_TYPE_member_t asn_MBR_PCCH_MessageType_NB_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_PCCH_MessageType_NB_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 11178 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* messageClassExtension at 11179 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 9881 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* messageClassExtension at 9882 */
 };
 static asn_CHOICE_specifics_t asn_SPC_PCCH_MessageType_NB_specs_1 = {
 	sizeof(struct PCCH_MessageType_NB),

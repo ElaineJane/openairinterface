@@ -51,10 +51,10 @@ static asn_TYPE_member_t asn_MBR_cellInfoList_r9_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_cellInfoList_r9_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* geran-r9 at 1296 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* utra-FDD-r9 at 1297 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* utra-TDD-r9 at 1298 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* utra-TDD-r10 at 1301 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* geran-r9 at 1239 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* utra-FDD-r9 at 1240 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* utra-TDD-r9 at 1241 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* utra-TDD-r10 at 1244 */
 };
 static asn_CHOICE_specifics_t asn_SPC_cellInfoList_r9_specs_2 = {
 	sizeof(struct RRCConnectionRelease_v920_IEs__cellInfoList_r9),
@@ -118,8 +118,8 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionRelease_v920_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionRelease_v920_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellInfoList-r9 at 1296 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1302 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellInfoList-r9 at 1239 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1245 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionRelease_v920_IEs_specs_1 = {
 	sizeof(struct RRCConnectionRelease_v920_IEs),

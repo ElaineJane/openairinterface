@@ -315,8 +315,8 @@ static asn_TYPE_member_t asn_MBR_subframeAllocation_10[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_subframeAllocation_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* oneFrame at 9928 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* fourFrames at 9929 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* oneFrame at 8874 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* fourFrames at 8875 */
 };
 static asn_CHOICE_specifics_t asn_SPC_subframeAllocation_specs_10 = {
 	sizeof(struct MBSFN_SubframeConfig__subframeAllocation),
@@ -388,9 +388,9 @@ static ber_tlv_tag_t asn_DEF_MBSFN_SubframeConfig_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MBSFN_SubframeConfig_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* radioframeAllocationPeriod at 9925 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* radioframeAllocationOffset at 9926 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* subframeAllocation at 9928 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* radioframeAllocationPeriod at 8871 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* radioframeAllocationOffset at 8872 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* subframeAllocation at 8874 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MBSFN_SubframeConfig_specs_1 = {
 	sizeof(struct MBSFN_SubframeConfig),

@@ -28,7 +28,7 @@ static ber_tlv_tag_t asn_DEF_start_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_start_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rstd-InterFreqInfoList-r10 at 468 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rstd-InterFreqInfoList-r10 at 437 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_start_specs_3 = {
 	sizeof(struct InterFreqRSTDMeasurementIndication_r10_IEs__rstd_InterFreqIndication_r10__start),
@@ -89,8 +89,8 @@ static asn_TYPE_member_t asn_MBR_rstd_InterFreqIndication_r10_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_rstd_InterFreqIndication_r10_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* start at 468 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* stop at 469 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* start at 437 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* stop at 438 */
 };
 static asn_CHOICE_specifics_t asn_SPC_rstd_InterFreqIndication_r10_specs_2 = {
 	sizeof(struct InterFreqRSTDMeasurementIndication_r10_IEs__rstd_InterFreqIndication_r10),
@@ -204,9 +204,9 @@ static ber_tlv_tag_t asn_DEF_InterFreqRSTDMeasurementIndication_r10_IEs_tags_1[]
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_InterFreqRSTDMeasurementIndication_r10_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rstd-InterFreqIndication-r10 at 468 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* lateNonCriticalExtension at 471 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 472 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rstd-InterFreqIndication-r10 at 437 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* lateNonCriticalExtension at 440 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 441 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_InterFreqRSTDMeasurementIndication_r10_IEs_specs_1 = {
 	sizeof(struct InterFreqRSTDMeasurementIndication_r10_IEs),

@@ -78,7 +78,6 @@ struct NS_PmaxList_NB_r13;
 struct MultiBandInfoList_NB_r13;
 struct DL_Bitmap_NB_r13;
 struct SystemInfoValueTagList_NB_r13;
-struct SystemInformationBlockType1_NB_v1350;
 
 /* SystemInformationBlockType1-NB */
 typedef struct SystemInformationBlockType1_NB {
@@ -112,7 +111,11 @@ typedef struct SystemInformationBlockType1_NB {
 	long	*si_RadioFrameOffset_r13	/* OPTIONAL */;
 	struct SystemInfoValueTagList_NB_r13	*systemInfoValueTagList_r13	/* OPTIONAL */;
 	OCTET_STRING_t	*lateNonCriticalExtension	/* OPTIONAL */;
-	struct SystemInformationBlockType1_NB_v1350	*nonCriticalExtension	/* OPTIONAL */;
+	struct SystemInformationBlockType1_NB__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -135,7 +138,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType1_NB;
 #include "MultiBandInfoList-NB-r13.h"
 #include "DL-Bitmap-NB-r13.h"
 #include "SystemInfoValueTagList-NB-r13.h"
-#include "SystemInformationBlockType1-NB-v1350.h"
 
 #endif	/* _SystemInformationBlockType1_NB_H_ */
 #include <asn_internal.h>

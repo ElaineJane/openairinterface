@@ -552,7 +552,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_22[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_22[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* syncTxPeriodic-r13 at 13052 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* syncTxPeriodic-r13 at 11312 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_22 = {
 	sizeof(struct SL_PreconfigSync_r12__ext1),
@@ -591,6 +591,74 @@ asn_TYPE_descriptor_t asn_DEF_ext1_22 = {
 	asn_MBR_ext1_22,
 	1,	/* Elements count */
 	&asn_SPC_ext1_specs_22	/* Additional specs */
+};
+
+static asn_TYPE_member_t asn_MBR_ext2_25[] = {
+	{ ATF_POINTER, 2, offsetof(struct SL_PreconfigSync_r12__ext2, syncOffsetIndicator1_v14xy),
+		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
+		-1,	/* IMPLICIT tag at current level */
+		&asn_DEF_SL_OffsetIndicatorSync_v14xy,
+		0,	/* Defer constraints checking to the member type */
+		0,	/* No PER visible constraints */
+		0,
+		"syncOffsetIndicator1-v14xy"
+		},
+	{ ATF_POINTER, 1, offsetof(struct SL_PreconfigSync_r12__ext2, syncOffsetIndicator2_v14xy),
+		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
+		-1,	/* IMPLICIT tag at current level */
+		&asn_DEF_SL_OffsetIndicatorSync_v14xy,
+		0,	/* Defer constraints checking to the member type */
+		0,	/* No PER visible constraints */
+		0,
+		"syncOffsetIndicator2-v14xy"
+		},
+};
+static int asn_MAP_ext2_oms_25[] = { 0, 1 };
+static ber_tlv_tag_t asn_DEF_ext2_tags_25[] = {
+	(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_25[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* syncOffsetIndicator1-v14xy at 11314 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* syncOffsetIndicator2-v14xy at 11315 */
+};
+static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_25 = {
+	sizeof(struct SL_PreconfigSync_r12__ext2),
+	offsetof(struct SL_PreconfigSync_r12__ext2, _asn_ctx),
+	asn_MAP_ext2_tag2el_25,
+	2,	/* Count of tags in the map */
+	asn_MAP_ext2_oms_25,	/* Optional members */
+	2, 0,	/* Root/Additions */
+	-1,	/* Start extensions */
+	-1	/* Stop extensions */
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_ext2_25 = {
+	"ext2",
+	"ext2",
+	SEQUENCE_free,
+	SEQUENCE_print,
+	SEQUENCE_constraint,
+	SEQUENCE_decode_ber,
+	SEQUENCE_encode_der,
+	SEQUENCE_decode_xer,
+	SEQUENCE_encode_xer,
+	SEQUENCE_decode_uper,
+	SEQUENCE_encode_uper,
+	SEQUENCE_decode_aper,
+	SEQUENCE_encode_aper,
+	SEQUENCE_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_ext2_tags_25,
+	sizeof(asn_DEF_ext2_tags_25)
+		/sizeof(asn_DEF_ext2_tags_25[0]) - 1, /* 1 */
+	asn_DEF_ext2_tags_25,	/* Same as above */
+	sizeof(asn_DEF_ext2_tags_25)
+		/sizeof(asn_DEF_ext2_tags_25[0]), /* 2 */
+	0,	/* No PER visible constraints */
+	asn_MBR_ext2_25,
+	2,	/* Elements count */
+	&asn_SPC_ext2_specs_25	/* Additional specs */
 };
 
 static asn_TYPE_member_t asn_MBR_SL_PreconfigSync_r12_1[] = {
@@ -666,7 +734,7 @@ static asn_TYPE_member_t asn_MBR_SL_PreconfigSync_r12_1[] = {
 		0,
 		"syncRefDiffHyst-r12"
 		},
-	{ ATF_POINTER, 1, offsetof(struct SL_PreconfigSync_r12, ext1),
+	{ ATF_POINTER, 2, offsetof(struct SL_PreconfigSync_r12, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		0,
 		&asn_DEF_ext1_22,
@@ -675,31 +743,41 @@ static asn_TYPE_member_t asn_MBR_SL_PreconfigSync_r12_1[] = {
 		0,
 		"ext1"
 		},
+	{ ATF_POINTER, 1, offsetof(struct SL_PreconfigSync_r12, ext2),
+		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
+		0,
+		&asn_DEF_ext2_25,
+		0,	/* Defer constraints checking to the member type */
+		0,	/* No PER visible constraints */
+		0,
+		"ext2"
+		},
 };
-static int asn_MAP_SL_PreconfigSync_r12_oms_1[] = { 8 };
+static int asn_MAP_SL_PreconfigSync_r12_oms_1[] = { 8, 9 };
 static ber_tlv_tag_t asn_DEF_SL_PreconfigSync_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_PreconfigSync_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* syncCP-Len-r12 at 13043 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* syncOffsetIndicator1-r12 at 13044 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* syncOffsetIndicator2-r12 at 13045 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* syncTxParameters-r12 at 13046 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* syncTxThreshOoC-r12 at 13047 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* filterCoefficient-r12 at 13048 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* syncRefMinHyst-r12 at 13049 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* syncRefDiffHyst-r12 at 13050 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* ext1 at 13052 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* syncCP-Len-r12 at 11303 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* syncOffsetIndicator1-r12 at 11304 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* syncOffsetIndicator2-r12 at 11305 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* syncTxParameters-r12 at 11306 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* syncTxThreshOoC-r12 at 11307 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* filterCoefficient-r12 at 11308 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* syncRefMinHyst-r12 at 11309 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* syncRefDiffHyst-r12 at 11310 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext1 at 11312 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* ext2 at 11314 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_PreconfigSync_r12_specs_1 = {
 	sizeof(struct SL_PreconfigSync_r12),
 	offsetof(struct SL_PreconfigSync_r12, _asn_ctx),
 	asn_MAP_SL_PreconfigSync_r12_tag2el_1,
-	9,	/* Count of tags in the map */
+	10,	/* Count of tags in the map */
 	asn_MAP_SL_PreconfigSync_r12_oms_1,	/* Optional members */
-	0, 1,	/* Root/Additions */
+	0, 2,	/* Root/Additions */
 	7,	/* Start extensions */
-	10	/* Stop extensions */
+	11	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_SL_PreconfigSync_r12 = {
 	"SL-PreconfigSync-r12",
@@ -725,7 +803,7 @@ asn_TYPE_descriptor_t asn_DEF_SL_PreconfigSync_r12 = {
 		/sizeof(asn_DEF_SL_PreconfigSync_r12_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_SL_PreconfigSync_r12_1,
-	9,	/* Elements count */
+	10,	/* Elements count */
 	&asn_SPC_SL_PreconfigSync_r12_specs_1	/* Additional specs */
 };
 

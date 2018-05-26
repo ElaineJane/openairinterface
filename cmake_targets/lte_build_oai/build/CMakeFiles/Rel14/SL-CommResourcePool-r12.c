@@ -63,8 +63,8 @@ static ber_tlv_tag_t asn_DEF_ue_SelectedResourceConfig_r12_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ue_SelectedResourceConfig_r12_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* data-TF-ResourceConfig-r12 at 10226 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* trpt-Subset-r12 at 10227 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* data-TF-ResourceConfig-r12 at 9072 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* trpt-Subset-r12 at 9073 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ue_SelectedResourceConfig_r12_specs_7 = {
 	sizeof(struct SL_CommResourcePool_r12__ue_SelectedResourceConfig_r12),
@@ -131,8 +131,8 @@ static ber_tlv_tag_t asn_DEF_rxParametersNCell_r12_tags_10[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_rxParametersNCell_r12_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tdd-Config-r12 at 10230 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* syncConfigIndex-r12 at 10231 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tdd-Config-r12 at 9076 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* syncConfigIndex-r12 at 9077 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_rxParametersNCell_r12_specs_10 = {
 	sizeof(struct SL_CommResourcePool_r12__rxParametersNCell_r12),
@@ -198,8 +198,8 @@ static ber_tlv_tag_t asn_DEF_txParameters_r12_tags_13[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_txParameters_r12_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sc-TxParameters-r12 at 10234 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dataTxParameters-r12 at 10236 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sc-TxParameters-r12 at 9080 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dataTxParameters-r12 at 9082 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_txParameters_r12_specs_13 = {
 	sizeof(struct SL_CommResourcePool_r12__txParameters_r12),
@@ -256,7 +256,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* priorityList-r13 at 10238 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* priorityList-r13 at 9084 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_17 = {
 	sizeof(struct SL_CommResourcePool_r12__ext1),
@@ -385,15 +385,15 @@ static ber_tlv_tag_t asn_DEF_SL_CommResourcePool_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_CommResourcePool_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sc-CP-Len-r12 at 10220 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sc-Period-r12 at 10221 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sc-TF-ResourceConfig-r12 at 10222 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* data-CP-Len-r12 at 10223 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* dataHoppingConfig-r12 at 10224 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ue-SelectedResourceConfig-r12 at 10226 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* rxParametersNCell-r12 at 10230 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* txParameters-r12 at 10234 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* ext1 at 10238 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sc-CP-Len-r12 at 9066 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sc-Period-r12 at 9067 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sc-TF-ResourceConfig-r12 at 9068 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* data-CP-Len-r12 at 9069 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* dataHoppingConfig-r12 at 9070 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ue-SelectedResourceConfig-r12 at 9072 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* rxParametersNCell-r12 at 9076 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* txParameters-r12 at 9080 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* ext1 at 9084 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_CommResourcePool_r12_specs_1 = {
 	sizeof(struct SL_CommResourcePool_r12),

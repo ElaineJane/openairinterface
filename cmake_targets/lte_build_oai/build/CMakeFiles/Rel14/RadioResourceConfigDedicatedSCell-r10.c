@@ -24,7 +24,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mac-MainConfigSCell-r11 at 5929 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mac-MainConfigSCell-r11 at 5343 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_4 = {
 	sizeof(struct RadioResourceConfigDedicatedSCell_r10__ext1),
@@ -82,7 +82,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* naics-Info-r12 at 5931 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* naics-Info-r12 at 5345 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_6 = {
 	sizeof(struct RadioResourceConfigDedicatedSCell_r10__ext2),
@@ -140,7 +140,7 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_8[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* neighCellsCRS-InfoSCell-r13 at 5933 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* neighCellsCRS-InfoSCell-r13 at 5347 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_8 = {
 	sizeof(struct RadioResourceConfigDedicatedSCell_r10__ext3),
@@ -224,10 +224,10 @@ static ber_tlv_tag_t asn_DEF_RadioResourceConfigDedicatedSCell_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RadioResourceConfigDedicatedSCell_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physicalConfigDedicatedSCell-r10 at 5927 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ext1 at 5929 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext2 at 5931 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext3 at 5933 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physicalConfigDedicatedSCell-r10 at 5341 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ext1 at 5343 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext2 at 5345 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext3 at 5347 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RadioResourceConfigDedicatedSCell_r10_specs_1 = {
 	sizeof(struct RadioResourceConfigDedicatedSCell_r10),

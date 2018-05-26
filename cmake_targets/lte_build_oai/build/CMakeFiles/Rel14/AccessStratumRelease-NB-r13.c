@@ -132,7 +132,7 @@ static asn_per_constraints_t asn_PER_type_AccessStratumRelease_NB_r13_constr_1 G
 };
 static asn_INTEGER_enum_map_t asn_MAP_AccessStratumRelease_NB_r13_value2enum_1[] = {
 	{ 0,	5,	"rel13" },
-	{ 1,	5,	"rel14" },
+	{ 1,	6,	"spare7" },
 	{ 2,	6,	"spare6" },
 	{ 3,	6,	"spare5" },
 	{ 4,	6,	"spare4" },
@@ -143,13 +143,13 @@ static asn_INTEGER_enum_map_t asn_MAP_AccessStratumRelease_NB_r13_value2enum_1[]
 };
 static unsigned int asn_MAP_AccessStratumRelease_NB_r13_enum2value_1[] = {
 	0,	/* rel13(0) */
-	1,	/* rel14(1) */
 	7,	/* spare1(7) */
 	6,	/* spare2(6) */
 	5,	/* spare3(5) */
 	4,	/* spare4(4) */
 	3,	/* spare5(3) */
-	2	/* spare6(2) */
+	2,	/* spare6(2) */
+	1	/* spare7(1) */
 	/* This list is extensible */
 };
 static asn_INTEGER_specifics_t asn_SPC_AccessStratumRelease_NB_r13_specs_1 = {

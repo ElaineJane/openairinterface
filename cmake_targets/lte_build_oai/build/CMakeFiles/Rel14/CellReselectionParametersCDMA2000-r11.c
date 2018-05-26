@@ -135,10 +135,10 @@ static ber_tlv_tag_t asn_DEF_CellReselectionParametersCDMA2000_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CellReselectionParametersCDMA2000_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandClassList at 3157 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* neighCellList-r11 at 3158 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* t-ReselectionCDMA2000 at 3159 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* t-ReselectionCDMA2000-SF at 3160 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandClassList at 2910 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* neighCellList-r11 at 2911 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* t-ReselectionCDMA2000 at 2912 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* t-ReselectionCDMA2000-SF at 2913 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CellReselectionParametersCDMA2000_r11_specs_1 = {
 	sizeof(struct CellReselectionParametersCDMA2000_r11),

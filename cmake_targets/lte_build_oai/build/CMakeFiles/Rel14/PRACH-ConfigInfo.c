@@ -139,10 +139,10 @@ static ber_tlv_tag_t asn_DEF_PRACH_ConfigInfo_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PRACH_ConfigInfo_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* prach-ConfigIndex at 5217 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* highSpeedFlag at 5218 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* zeroCorrelationZoneConfig at 5219 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* prach-FreqOffset at 5220 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* prach-ConfigIndex at 4695 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* highSpeedFlag at 4696 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* zeroCorrelationZoneConfig at 4697 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* prach-FreqOffset at 4698 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PRACH_ConfigInfo_specs_1 = {
 	sizeof(struct PRACH_ConfigInfo),

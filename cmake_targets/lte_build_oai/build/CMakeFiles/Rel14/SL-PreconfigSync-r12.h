@@ -19,6 +19,7 @@
 #include "FilterCoefficient.h"
 #include <NativeEnumerated.h>
 #include <constr_SEQUENCE.h>
+#include "SL-OffsetIndicatorSync-v14xy.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -64,6 +65,13 @@ typedef struct SL_PreconfigSync_r12 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext1;
+	struct SL_PreconfigSync_r12__ext2 {
+		SL_OffsetIndicatorSync_v14xy_t	*syncOffsetIndicator1_v14xy	/* OPTIONAL */;
+		SL_OffsetIndicatorSync_v14xy_t	*syncOffsetIndicator2_v14xy	/* OPTIONAL */;
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *ext2;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

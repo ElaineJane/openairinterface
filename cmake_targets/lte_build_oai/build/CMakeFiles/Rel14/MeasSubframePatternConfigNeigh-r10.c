@@ -38,8 +38,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measSubframePatternNeigh-r10 at 7488 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measSubframeCellList-r10 at 7489 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measSubframePatternNeigh-r10 at 6776 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measSubframeCellList-r10 at 6777 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct MeasSubframePatternConfigNeigh_r10__setup),
@@ -101,8 +101,8 @@ static asn_TYPE_member_t asn_MBR_MeasSubframePatternConfigNeigh_r10_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasSubframePatternConfigNeigh_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7486 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7488 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6774 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6776 */
 };
 static asn_CHOICE_specifics_t asn_SPC_MeasSubframePatternConfigNeigh_r10_specs_1 = {
 	sizeof(struct MeasSubframePatternConfigNeigh_r10),

@@ -37,16 +37,6 @@ typedef enum MobilityControlInfo__t304 {
 typedef enum MobilityControlInfo__ext2__drb_ContinueROHC_r11 {
 	MobilityControlInfo__ext2__drb_ContinueROHC_r11_true	= 0
 } e_MobilityControlInfo__ext2__drb_ContinueROHC_r11;
-typedef enum MobilityControlInfo__ext3__handoverWithoutWT_Change_r14 {
-	MobilityControlInfo__ext3__handoverWithoutWT_Change_r14_keepLWA_Config	= 0,
-	MobilityControlInfo__ext3__handoverWithoutWT_Change_r14_sendEndMarker	= 1
-} e_MobilityControlInfo__ext3__handoverWithoutWT_Change_r14;
-typedef enum MobilityControlInfo__ext3__makeBeforeBreak_r14 {
-	MobilityControlInfo__ext3__makeBeforeBreak_r14_true	= 0
-} e_MobilityControlInfo__ext3__makeBeforeBreak_r14;
-typedef enum MobilityControlInfo__ext3__sameSFN_Indication_r14 {
-	MobilityControlInfo__ext3__sameSFN_Indication_r14_true	= 0
-} e_MobilityControlInfo__ext3__sameSFN_Indication_r14;
 
 /* Forward declarations */
 struct CarrierFreqEUTRA;
@@ -54,7 +44,6 @@ struct CarrierBandwidthEUTRA;
 struct RACH_ConfigDedicated;
 struct CarrierFreqEUTRA_v9e0;
 struct MobilityControlInfoV2X_r14;
-struct RACH_Skip_r14;
 
 /* MobilityControlInfo */
 typedef struct MobilityControlInfo {
@@ -84,10 +73,6 @@ typedef struct MobilityControlInfo {
 	} *ext2;
 	struct MobilityControlInfo__ext3 {
 		struct MobilityControlInfoV2X_r14	*mobilityControlInfoV2X_r14	/* OPTIONAL */;
-		long	*handoverWithoutWT_Change_r14	/* OPTIONAL */;
-		long	*makeBeforeBreak_r14	/* OPTIONAL */;
-		struct RACH_Skip_r14	*rach_Skip_r14	/* OPTIONAL */;
-		long	*sameSFN_Indication_r14	/* OPTIONAL */;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
@@ -100,9 +85,6 @@ typedef struct MobilityControlInfo {
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_t304_6;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_drb_ContinueROHC_r11_22;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_handoverWithoutWT_Change_r14_26;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_makeBeforeBreak_r14_29;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_sameSFN_Indication_r14_32;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_MobilityControlInfo;
 
 #ifdef __cplusplus
@@ -115,7 +97,6 @@ extern asn_TYPE_descriptor_t asn_DEF_MobilityControlInfo;
 #include "RACH-ConfigDedicated.h"
 #include "CarrierFreqEUTRA-v9e0.h"
 #include "MobilityControlInfoV2X-r14.h"
-#include "RACH-Skip-r14.h"
 
 #endif	/* _MobilityControlInfo_H_ */
 #include <asn_internal.h>

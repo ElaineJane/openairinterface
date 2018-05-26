@@ -22,13 +22,8 @@ extern "C" {
 /* Dependencies */
 typedef enum SubframeBitmapSL_r14_PR {
 	SubframeBitmapSL_r14_PR_NOTHING,	/* No components present */
-	SubframeBitmapSL_r14_PR_bs10_r14,
 	SubframeBitmapSL_r14_PR_bs16_r14,
 	SubframeBitmapSL_r14_PR_bs20_r14,
-	SubframeBitmapSL_r14_PR_bs30_r14,
-	SubframeBitmapSL_r14_PR_bs40_r14,
-	SubframeBitmapSL_r14_PR_bs50_r14,
-	SubframeBitmapSL_r14_PR_bs60_r14,
 	SubframeBitmapSL_r14_PR_bs100_r14
 } SubframeBitmapSL_r14_PR;
 
@@ -36,13 +31,8 @@ typedef enum SubframeBitmapSL_r14_PR {
 typedef struct SubframeBitmapSL_r14 {
 	SubframeBitmapSL_r14_PR present;
 	union SubframeBitmapSL_r14_u {
-		BIT_STRING_t	 bs10_r14;
 		BIT_STRING_t	 bs16_r14;
 		BIT_STRING_t	 bs20_r14;
-		BIT_STRING_t	 bs30_r14;
-		BIT_STRING_t	 bs40_r14;
-		BIT_STRING_t	 bs50_r14;
-		BIT_STRING_t	 bs60_r14;
 		BIT_STRING_t	 bs100_r14;
 	} choice;
 	

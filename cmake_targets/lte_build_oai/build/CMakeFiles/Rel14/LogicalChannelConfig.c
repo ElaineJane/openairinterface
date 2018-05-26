@@ -411,124 +411,6 @@ logicalChannelSR_Mask_r9_33_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
-static int
-bitRateQueryProhibitTimer_r14_39_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	/* Replace with underlying type checker */
-	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
-	return td->check_constraints(td, sptr, ctfailcb, app_key);
-}
-
-/*
- * This type is implemented using NativeEnumerated,
- * so here we adjust the DEF accordingly.
- */
-static void
-bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
-	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
-	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
-	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
-	td->der_encoder    = asn_DEF_NativeEnumerated.der_encoder;
-	td->xer_decoder    = asn_DEF_NativeEnumerated.xer_decoder;
-	td->xer_encoder    = asn_DEF_NativeEnumerated.xer_encoder;
-	td->uper_decoder   = asn_DEF_NativeEnumerated.uper_decoder;
-	td->uper_encoder   = asn_DEF_NativeEnumerated.uper_encoder;
-	td->aper_decoder   = asn_DEF_NativeEnumerated.aper_decoder;
-	td->aper_encoder   = asn_DEF_NativeEnumerated.aper_encoder;
-	td->compare        = asn_DEF_NativeEnumerated.compare;
-	if(!td->per_constraints)
-		td->per_constraints = asn_DEF_NativeEnumerated.per_constraints;
-	td->elements       = asn_DEF_NativeEnumerated.elements;
-	td->elements_count = asn_DEF_NativeEnumerated.elements_count;
-     /* td->specifics      = asn_DEF_NativeEnumerated.specifics;	// Defined explicitly */
-}
-
-static void
-bitRateQueryProhibitTimer_r14_39_free(asn_TYPE_descriptor_t *td,
-		void *struct_ptr, int contents_only) {
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td);
-	td->free_struct(td, struct_ptr, contents_only);
-}
-
-static int
-bitRateQueryProhibitTimer_r14_39_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
-		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td);
-	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
-}
-
-static asn_dec_rval_t
-bitRateQueryProhibitTimer_r14_39_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td);
-	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
-}
-
-static asn_enc_rval_t
-bitRateQueryProhibitTimer_r14_39_encode_der(asn_TYPE_descriptor_t *td,
-		void *structure, int tag_mode, ber_tlv_tag_t tag,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td);
-	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
-}
-
-static asn_dec_rval_t
-bitRateQueryProhibitTimer_r14_39_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td);
-	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
-}
-
-static asn_enc_rval_t
-bitRateQueryProhibitTimer_r14_39_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
-		int ilevel, enum xer_encoder_flags_e flags,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td);
-	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
-}
-
-static asn_dec_rval_t
-bitRateQueryProhibitTimer_r14_39_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td);
-	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static asn_enc_rval_t
-bitRateQueryProhibitTimer_r14_39_encode_uper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td);
-	return td->uper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_enc_rval_t
-bitRateQueryProhibitTimer_r14_39_encode_aper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td);
-	return td->aper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_comp_rval_t * 
-bitRateQueryProhibitTimer_r14_39_compare(asn_TYPE_descriptor_t *td1,
-		const void *structure1,
-		asn_TYPE_descriptor_t *td2,
-		const void *structure2) {
-	asn_comp_rval_t * res  = NULL;
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td1);
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td2);
-	res = td1->compare(td1, structure1, td2, structure2);
-	return res;
-}
-
-static asn_dec_rval_t
-bitRateQueryProhibitTimer_r14_39_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	bitRateQueryProhibitTimer_r14_39_inherit_TYPE_descriptor(td);
-	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
 static asn_per_constraints_t asn_PER_type_prioritisedBitRate_constr_4 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 4,  4,  0,  15 }	/* (0..15) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
@@ -551,11 +433,6 @@ static asn_per_constraints_t asn_PER_memb_logicalChannelGroup_constr_30 GCC_NOTU
 };
 static asn_per_constraints_t asn_PER_type_logicalChannelSR_Mask_r9_constr_33 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_type_bitRateQueryProhibitTimer_r14_constr_39 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 3,  3,  0,  7 }	/* (0..7) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
@@ -741,10 +618,10 @@ static ber_tlv_tag_t asn_DEF_ul_SpecificParameters_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ul_SpecificParameters_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* priority at 4378 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prioritisedBitRate at 4380 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* bucketSizeDuration at 4385 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* logicalChannelGroup at 4387 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* priority at 3932 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prioritisedBitRate at 3934 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* bucketSizeDuration at 3939 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* logicalChannelGroup at 3941 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ul_SpecificParameters_specs_2 = {
 	sizeof(struct LogicalChannelConfig__ul_SpecificParameters),
@@ -849,7 +726,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_32[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_32[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* logicalChannelSR-Mask-r9 at 4390 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* logicalChannelSR-Mask-r9 at 3944 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_32 = {
 	sizeof(struct LogicalChannelConfig__ext1),
@@ -907,7 +784,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_35[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_35[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* logicalChannelSR-Prohibit-r12 at 4392 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* logicalChannelSR-Prohibit-r12 at 3946 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_35 = {
 	sizeof(struct LogicalChannelConfig__ext2),
@@ -948,103 +825,32 @@ asn_TYPE_descriptor_t asn_DEF_ext2_35 = {
 	&asn_SPC_ext2_specs_35	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_bitRateQueryProhibitTimer_r14_value2enum_39[] = {
-	{ 0,	2,	"s0" },
-	{ 1,	6,	"s0dot4" },
-	{ 2,	6,	"s0dot8" },
-	{ 3,	6,	"s1dot6" },
-	{ 4,	2,	"s3" },
-	{ 5,	2,	"s6" },
-	{ 6,	3,	"s12" },
-	{ 7,	3,	"s30" }
-};
-static unsigned int asn_MAP_bitRateQueryProhibitTimer_r14_enum2value_39[] = {
-	0,	/* s0(0) */
-	1,	/* s0dot4(1) */
-	2,	/* s0dot8(2) */
-	6,	/* s12(6) */
-	3,	/* s1dot6(3) */
-	4,	/* s3(4) */
-	7,	/* s30(7) */
-	5	/* s6(5) */
-};
-static asn_INTEGER_specifics_t asn_SPC_bitRateQueryProhibitTimer_r14_specs_39 = {
-	asn_MAP_bitRateQueryProhibitTimer_r14_value2enum_39,	/* "tag" => N; sorted by tag */
-	asn_MAP_bitRateQueryProhibitTimer_r14_enum2value_39,	/* N => "tag"; sorted by N */
-	8,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_bitRateQueryProhibitTimer_r14_tags_39[] = {
-	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_bitRateQueryProhibitTimer_r14_39 = {
-	"bitRateQueryProhibitTimer-r14",
-	"bitRateQueryProhibitTimer-r14",
-	bitRateQueryProhibitTimer_r14_39_free,
-	bitRateQueryProhibitTimer_r14_39_print,
-	bitRateQueryProhibitTimer_r14_39_constraint,
-	bitRateQueryProhibitTimer_r14_39_decode_ber,
-	bitRateQueryProhibitTimer_r14_39_encode_der,
-	bitRateQueryProhibitTimer_r14_39_decode_xer,
-	bitRateQueryProhibitTimer_r14_39_encode_xer,
-	bitRateQueryProhibitTimer_r14_39_decode_uper,
-	bitRateQueryProhibitTimer_r14_39_encode_uper,
-	bitRateQueryProhibitTimer_r14_39_decode_aper,
-	bitRateQueryProhibitTimer_r14_39_encode_aper,
-	bitRateQueryProhibitTimer_r14_39_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_bitRateQueryProhibitTimer_r14_tags_39,
-	sizeof(asn_DEF_bitRateQueryProhibitTimer_r14_tags_39)
-		/sizeof(asn_DEF_bitRateQueryProhibitTimer_r14_tags_39[0]) - 1, /* 1 */
-	asn_DEF_bitRateQueryProhibitTimer_r14_tags_39,	/* Same as above */
-	sizeof(asn_DEF_bitRateQueryProhibitTimer_r14_tags_39)
-		/sizeof(asn_DEF_bitRateQueryProhibitTimer_r14_tags_39[0]), /* 2 */
-	&asn_PER_type_bitRateQueryProhibitTimer_r14_constr_39,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_bitRateQueryProhibitTimer_r14_specs_39	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_ext3_37[] = {
-	{ ATF_POINTER, 2, offsetof(struct LogicalChannelConfig__ext3, laa_UL_Allowed_r14),
+	{ ATF_POINTER, 1, offsetof(struct LogicalChannelConfig__ext3, laa_Allowed_r14),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BOOLEAN,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
-		"laa-UL-Allowed-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct LogicalChannelConfig__ext3, bitRateQueryProhibitTimer_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_bitRateQueryProhibitTimer_r14_39,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"bitRateQueryProhibitTimer-r14"
+		"laa-Allowed-r14"
 		},
 };
-static int asn_MAP_ext3_oms_37[] = { 0, 1 };
+static int asn_MAP_ext3_oms_37[] = { 0 };
 static ber_tlv_tag_t asn_DEF_ext3_tags_37[] = {
 	(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_37[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* laa-UL-Allowed-r14 at 4394 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* bitRateQueryProhibitTimer-r14 at 4396 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* laa-Allowed-r14 at 3948 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_37 = {
 	sizeof(struct LogicalChannelConfig__ext3),
 	offsetof(struct LogicalChannelConfig__ext3, _asn_ctx),
 	asn_MAP_ext3_tag2el_37,
-	2,	/* Count of tags in the map */
+	1,	/* Count of tags in the map */
 	asn_MAP_ext3_oms_37,	/* Optional members */
-	2, 0,	/* Root/Additions */
+	1, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
@@ -1073,7 +879,7 @@ asn_TYPE_descriptor_t asn_DEF_ext3_37 = {
 		/sizeof(asn_DEF_ext3_tags_37[0]), /* 2 */
 	0,	/* No PER visible constraints */
 	asn_MBR_ext3_37,
-	2,	/* Elements count */
+	1,	/* Elements count */
 	&asn_SPC_ext3_specs_37	/* Additional specs */
 };
 
@@ -1120,10 +926,10 @@ static ber_tlv_tag_t asn_DEF_LogicalChannelConfig_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_LogicalChannelConfig_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-SpecificParameters at 4378 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ext1 at 4390 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext2 at 4392 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext3 at 4394 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-SpecificParameters at 3932 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ext1 at 3944 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext2 at 3946 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext3 at 3948 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_LogicalChannelConfig_specs_1 = {
 	sizeof(struct LogicalChannelConfig),

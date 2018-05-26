@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_SI_OrPSI_GERAN_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SI_OrPSI_GERAN_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* si at 743 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* psi at 745 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* si at 696 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* psi at 698 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SI_OrPSI_GERAN_specs_1 = {
 	sizeof(struct SI_OrPSI_GERAN),

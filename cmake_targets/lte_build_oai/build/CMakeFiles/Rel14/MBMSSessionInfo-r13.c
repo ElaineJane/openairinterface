@@ -63,8 +63,8 @@ static ber_tlv_tag_t asn_DEF_MBMSSessionInfo_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MBMSSessionInfo_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tmgi-r13 at 10011 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* sessionId-r13 at 10012 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tmgi-r13 at 8948 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* sessionId-r13 at 8949 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MBMSSessionInfo_r13_specs_1 = {
 	sizeof(struct MBMSSessionInfo_r13),

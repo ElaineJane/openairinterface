@@ -183,64 +183,6 @@ asn_TYPE_descriptor_t asn_DEF_antennaPortsCount_r11_3 = {
 	&asn_SPC_antennaPortsCount_r11_specs_3	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext1_10[] = {
-	{ ATF_POINTER, 1, offsetof(struct CRS_AssistanceInfo_r11__ext1, mbsfn_SubframeConfigList_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_MBSFN_SubframeConfigList_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"mbsfn-SubframeConfigList-v1430"
-		},
-};
-static int asn_MAP_ext1_oms_10[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext1_tags_10[] = {
-	(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mbsfn-SubframeConfigList-v1430 at 6016 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_10 = {
-	sizeof(struct CRS_AssistanceInfo_r11__ext1),
-	offsetof(struct CRS_AssistanceInfo_r11__ext1, _asn_ctx),
-	asn_MAP_ext1_tag2el_10,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext1_oms_10,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext1_10 = {
-	"ext1",
-	"ext1",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext1_tags_10,
-	sizeof(asn_DEF_ext1_tags_10)
-		/sizeof(asn_DEF_ext1_tags_10[0]) - 1, /* 1 */
-	asn_DEF_ext1_tags_10,	/* Same as above */
-	sizeof(asn_DEF_ext1_tags_10)
-		/sizeof(asn_DEF_ext1_tags_10[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext1_10,
-	1,	/* Elements count */
-	&asn_SPC_ext1_specs_10	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_CRS_AssistanceInfo_r11_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct CRS_AssistanceInfo_r11, physCellId_r11),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -269,35 +211,23 @@ static asn_TYPE_member_t asn_MBR_CRS_AssistanceInfo_r11_1[] = {
 		0,
 		"mbsfn-SubframeConfigList-r11"
 		},
-	{ ATF_POINTER, 1, offsetof(struct CRS_AssistanceInfo_r11, ext1),
-		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
-		0,
-		&asn_DEF_ext1_10,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext1"
-		},
 };
-static int asn_MAP_CRS_AssistanceInfo_r11_oms_1[] = { 3 };
 static ber_tlv_tag_t asn_DEF_CRS_AssistanceInfo_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CRS_AssistanceInfo_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r11 at 6012 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* antennaPortsCount-r11 at 6013 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* mbsfn-SubframeConfigList-r11 at 6014 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 6016 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r11 at 5426 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* antennaPortsCount-r11 at 5427 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* mbsfn-SubframeConfigList-r11 at 5428 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CRS_AssistanceInfo_r11_specs_1 = {
 	sizeof(struct CRS_AssistanceInfo_r11),
 	offsetof(struct CRS_AssistanceInfo_r11, _asn_ctx),
 	asn_MAP_CRS_AssistanceInfo_r11_tag2el_1,
-	4,	/* Count of tags in the map */
-	asn_MAP_CRS_AssistanceInfo_r11_oms_1,	/* Optional members */
-	0, 1,	/* Root/Additions */
+	3,	/* Count of tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
 	2,	/* Start extensions */
-	5	/* Stop extensions */
+	4	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_CRS_AssistanceInfo_r11 = {
 	"CRS-AssistanceInfo-r11",
@@ -323,7 +253,7 @@ asn_TYPE_descriptor_t asn_DEF_CRS_AssistanceInfo_r11 = {
 		/sizeof(asn_DEF_CRS_AssistanceInfo_r11_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_CRS_AssistanceInfo_r11_1,
-	4,	/* Elements count */
+	3,	/* Elements count */
 	&asn_SPC_CRS_AssistanceInfo_r11_specs_1	/* Additional specs */
 };
 

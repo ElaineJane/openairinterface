@@ -364,16 +364,16 @@ static ber_tlv_tag_t asn_DEF_MeasResultWLAN_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasResultWLAN_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* wlan-Identifiers-r13 at 7810 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* carrierInfoWLAN-r13 at 7811 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* bandWLAN-r13 at 7812 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* rssiWLAN-r13 at 7813 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* availableAdmissionCapacityWLAN-r13 at 7814 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* backhaulDL-BandwidthWLAN-r13 at 7815 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* backhaulUL-BandwidthWLAN-r13 at 7816 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* channelUtilizationWLAN-r13 at 7817 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* stationCountWLAN-r13 at 7818 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* connectedWLAN-r13 at 7819 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* wlan-Identifiers-r13 at 7083 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* carrierInfoWLAN-r13 at 7084 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* bandWLAN-r13 at 7085 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* rssiWLAN-r13 at 7086 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* availableAdmissionCapacityWLAN-r13 at 7087 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* backhaulDL-BandwidthWLAN-r13 at 7088 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* backhaulUL-BandwidthWLAN-r13 at 7089 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* channelUtilizationWLAN-r13 at 7090 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* stationCountWLAN-r13 at 7091 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* connectedWLAN-r13 at 7092 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasResultWLAN_r13_specs_1 = {
 	sizeof(struct MeasResultWLAN_r13),

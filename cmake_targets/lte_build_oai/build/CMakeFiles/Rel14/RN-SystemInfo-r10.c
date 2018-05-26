@@ -57,8 +57,8 @@ static ber_tlv_tag_t asn_DEF_RN_SystemInfo_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RN_SystemInfo_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* systemInformationBlockType1-r10 at 850 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* systemInformationBlockType2-r10 at 851 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* systemInformationBlockType1-r10 at 803 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* systemInformationBlockType2-r10 at 804 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RN_SystemInfo_r10_specs_1 = {
 	sizeof(struct RN_SystemInfo_r10),

@@ -26,13 +26,11 @@ typedef enum VarWLAN_MobilityConfig__successReportRequested {
 
 /* Forward declarations */
 struct WLAN_Id_List_r13;
-struct WLAN_SuspendConfig_r14;
 
 /* VarWLAN-MobilityConfig */
 typedef struct VarWLAN_MobilityConfig {
 	struct WLAN_Id_List_r13	*wlan_MobilitySet_r13	/* OPTIONAL */;
 	long	*successReportRequested	/* OPTIONAL */;
-	struct WLAN_SuspendConfig_r14	*wlan_SuspendConfig_r14	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -48,7 +46,6 @@ extern asn_TYPE_descriptor_t asn_DEF_VarWLAN_MobilityConfig;
 
 /* Referred external types */
 #include "WLAN-Id-List-r13.h"
-#include "WLAN-SuspendConfig-r14.h"
 
 #endif	/* _VarWLAN_MobilityConfig_H_ */
 #include <asn_internal.h>

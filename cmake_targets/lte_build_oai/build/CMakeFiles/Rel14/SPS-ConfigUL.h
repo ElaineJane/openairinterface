@@ -17,7 +17,6 @@
 #include <NativeInteger.h>
 #include <constr_SEQUENCE.h>
 #include <constr_CHOICE.h>
-#include "SPS-ConfigIndex-r14.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -40,11 +39,11 @@ typedef enum SPS_ConfigUL__setup__semiPersistSchedIntervalUL {
 	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf160	= 7,
 	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf320	= 8,
 	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf640	= 9,
-	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf1_v1430	= 10,
-	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf2_v1430	= 11,
-	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf3_v1430	= 12,
-	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf4_v1430	= 13,
-	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf5_v1430	= 14,
+	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf1_v14xy	= 10,
+	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf2_v14xy	= 11,
+	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf3_v14xy	= 12,
+	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf4_v14xy	= 13,
+	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_sf5_v14xy	= 14,
 	SPS_ConfigUL__setup__semiPersistSchedIntervalUL_spare1	= 15
 } e_SPS_ConfigUL__setup__semiPersistSchedIntervalUL;
 typedef enum SPS_ConfigUL__setup__implicitReleaseAfter {
@@ -64,24 +63,6 @@ typedef enum SPS_ConfigUL__setup__ext1__p0_PersistentSubframeSet2_r12_PR {
 typedef enum SPS_ConfigUL__setup__ext3__fixedRV_NonAdaptive_r14 {
 	SPS_ConfigUL__setup__ext3__fixedRV_NonAdaptive_r14_true	= 0
 } e_SPS_ConfigUL__setup__ext3__fixedRV_NonAdaptive_r14;
-typedef enum SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430 {
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf50	= 0,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf100	= 1,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf200	= 2,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf300	= 3,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf400	= 4,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf500	= 5,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf600	= 6,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf700	= 7,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf800	= 8,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf900	= 9,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_sf1000	= 10,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_spare5	= 11,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_spare4	= 12,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_spare3	= 13,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_spare2	= 14,
-	SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430_spare1	= 15
-} e_SPS_ConfigUL__setup__ext3__semiPersistSchedIntervalUL_v1430;
 
 /* SPS-ConfigUL */
 typedef struct SPS_ConfigUL {
@@ -132,8 +113,6 @@ typedef struct SPS_ConfigUL {
 			} *ext2;
 			struct SPS_ConfigUL__setup__ext3 {
 				long	*fixedRV_NonAdaptive_r14	/* OPTIONAL */;
-				SPS_ConfigIndex_r14_t	*sps_ConfigIndex_r14	/* OPTIONAL */;
-				long	*semiPersistSchedIntervalUL_v1430	/* OPTIONAL */;
 				
 				/* Context for parsing across buffer boundaries */
 				asn_struct_ctx_t _asn_ctx;
@@ -153,7 +132,6 @@ typedef struct SPS_ConfigUL {
 /* extern asn_TYPE_descriptor_t asn_DEF_implicitReleaseAfter_21;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_twoIntervalsConfig_29;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_fixedRV_NonAdaptive_r14_41;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_semiPersistSchedIntervalUL_v1430_44;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_SPS_ConfigUL;
 
 #ifdef __cplusplus

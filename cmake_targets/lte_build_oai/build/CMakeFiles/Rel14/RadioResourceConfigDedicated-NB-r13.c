@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_mac_MainConfig_r13_5[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_mac_MainConfig_r13_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue-r13 at 12412 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue-r13 at 12413 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue-r13 at 10799 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue-r13 at 10800 */
 };
 static asn_CHOICE_specifics_t asn_SPC_mac_MainConfig_r13_specs_5 = {
 	sizeof(struct RadioResourceConfigDedicated_NB_r13__mac_MainConfig_r13),
@@ -134,12 +134,12 @@ static ber_tlv_tag_t asn_DEF_RadioResourceConfigDedicated_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RadioResourceConfigDedicated_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srb-ToAddModList-r13 at 12408 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* drb-ToAddModList-r13 at 12409 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* drb-ToReleaseList-r13 at 12410 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* mac-MainConfig-r13 at 12412 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* physicalConfigDedicated-r13 at 12415 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* rlf-TimersAndConstants-r13 at 12416 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srb-ToAddModList-r13 at 10795 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* drb-ToAddModList-r13 at 10796 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* drb-ToReleaseList-r13 at 10797 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* mac-MainConfig-r13 at 10799 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* physicalConfigDedicated-r13 at 10802 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* rlf-TimersAndConstants-r13 at 10803 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RadioResourceConfigDedicated_NB_r13_specs_1 = {
 	sizeof(struct RadioResourceConfigDedicated_NB_r13),

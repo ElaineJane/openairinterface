@@ -21,9 +21,6 @@
 extern "C" {
 #endif
 
-/* Forward declarations */
-struct MBMS_NotificationConfig_v1430;
-
 /* SystemInformationBlockType13-r9 */
 typedef struct SystemInformationBlockType13_r9 {
 	MBSFN_AreaInfoList_r9_t	 mbsfn_AreaInfoList_r9;
@@ -33,12 +30,6 @@ typedef struct SystemInformationBlockType13_r9 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct SystemInformationBlockType13_r9__ext1 {
-		struct MBMS_NotificationConfig_v1430	*notificationConfig_v1430	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -50,9 +41,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType13_r9;
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "MBMS-NotificationConfig-v1430.h"
 
 #endif	/* _SystemInformationBlockType13_r9_H_ */
 #include <asn_internal.h>

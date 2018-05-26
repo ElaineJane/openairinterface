@@ -15,7 +15,6 @@
 #include "InterFreqCarrierFreqList.h"
 #include <OCTET_STRING.h>
 #include <constr_SEQUENCE.h>
-#include <NativeInteger.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -27,9 +26,6 @@ struct InterFreqCarrierFreqListExt_r12;
 struct InterFreqCarrierFreqListExt_v1280;
 struct InterFreqCarrierFreqList_v1310;
 struct InterFreqCarrierFreqListExt_v1310;
-struct InterFreqCarrierFreqList_v1350;
-struct InterFreqCarrierFreqListExt_v1350;
-struct InterFreqCarrierFreqListExt_v1360;
 
 /* SystemInformationBlockType5 */
 typedef struct SystemInformationBlockType5 {
@@ -59,25 +55,6 @@ typedef struct SystemInformationBlockType5 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext3;
-	struct SystemInformationBlockType5__ext4 {
-		struct InterFreqCarrierFreqList_v1350	*interFreqCarrierFreqList_v1350	/* OPTIONAL */;
-		struct InterFreqCarrierFreqListExt_v1350	*interFreqCarrierFreqListExt_v1350	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext4;
-	struct SystemInformationBlockType5__ext5 {
-		struct InterFreqCarrierFreqListExt_v1360	*interFreqCarrierFreqListExt_v1360	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext5;
-	struct SystemInformationBlockType5__ext6 {
-		long	*scptm_FreqOffset_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext6;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -96,9 +73,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType5;
 #include "InterFreqCarrierFreqListExt-v1280.h"
 #include "InterFreqCarrierFreqList-v1310.h"
 #include "InterFreqCarrierFreqListExt-v1310.h"
-#include "InterFreqCarrierFreqList-v1350.h"
-#include "InterFreqCarrierFreqListExt-v1350.h"
-#include "InterFreqCarrierFreqListExt-v1360.h"
 
 #endif	/* _SystemInformationBlockType5_H_ */
 #include <asn_internal.h>

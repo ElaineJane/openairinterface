@@ -40,7 +40,6 @@ struct NeighCellsCRS_Info_r11;
 struct NAICS_AssistanceInfo_r12;
 struct NeighCellsCRS_Info_r13;
 struct RLF_TimersAndConstants_r13;
-struct SPS_Config_v1430;
 
 /* RadioResourceConfigDedicated */
 typedef struct RadioResourceConfigDedicated {
@@ -94,12 +93,6 @@ typedef struct RadioResourceConfigDedicated {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext5;
-	struct RadioResourceConfigDedicated__ext6 {
-		struct SPS_Config_v1430	*sps_Config_v1430	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext6;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -124,7 +117,6 @@ extern asn_TYPE_descriptor_t asn_DEF_RadioResourceConfigDedicated;
 #include "NAICS-AssistanceInfo-r12.h"
 #include "NeighCellsCRS-Info-r13.h"
 #include "RLF-TimersAndConstants-r13.h"
-#include "SPS-Config-v1430.h"
 
 #endif	/* _RadioResourceConfigDedicated_H_ */
 #include <asn_internal.h>

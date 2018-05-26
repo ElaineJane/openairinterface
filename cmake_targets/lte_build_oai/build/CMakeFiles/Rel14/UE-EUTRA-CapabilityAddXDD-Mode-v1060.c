@@ -60,7 +60,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* otdoa-PositioningCapabilities-r10 at 8682 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* otdoa-PositioningCapabilities-r10 at 7861 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_7 = {
 	sizeof(struct UE_EUTRA_CapabilityAddXDD_Mode_v1060__ext1),
@@ -153,11 +153,11 @@ static ber_tlv_tag_t asn_DEF_UE_EUTRA_CapabilityAddXDD_Mode_v1060_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UE_EUTRA_CapabilityAddXDD_Mode_v1060_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* phyLayerParameters-v1060 at 8677 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* featureGroupIndRel10-v1060 at 8678 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* interRAT-ParametersCDMA2000-v1060 at 8679 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* interRAT-ParametersUTRA-TDD-v1060 at 8680 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 8682 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* phyLayerParameters-v1060 at 7856 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* featureGroupIndRel10-v1060 at 7857 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* interRAT-ParametersCDMA2000-v1060 at 7858 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* interRAT-ParametersUTRA-TDD-v1060 at 7859 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 7861 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UE_EUTRA_CapabilityAddXDD_Mode_v1060_specs_1 = {
 	sizeof(struct UE_EUTRA_CapabilityAddXDD_Mode_v1060),

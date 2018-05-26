@@ -7,45 +7,57 @@
 
 #include "SL-TxPoolToAddModListV2X-r14.h"
 
-static asn_per_constraints_t asn_PER_type_SL_TxPoolToAddModListV2X_r14_constr_1 GCC_NOTUSED = {
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	{ APC_CONSTRAINED,	 3,  3,  1,  8 }	/* (SIZE(1..8)) */,
-	0, 0	/* No PER value map */
-};
 static asn_TYPE_member_t asn_MBR_SL_TxPoolToAddModListV2X_r14_1[] = {
-	{ ATF_POINTER, 0, 0,
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_SL_TxPoolToAddMod_r14,
+	{ ATF_NOFLAGS, 0, offsetof(struct SL_TxPoolToAddModListV2X_r14, poolIdentity_r14),
+		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
+		-1,	/* IMPLICIT tag at current level */
+		&asn_DEF_SL_V2X_TxPoolIdentity_r14,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
-		""
+		"poolIdentity-r14"
+		},
+	{ ATF_NOFLAGS, 0, offsetof(struct SL_TxPoolToAddModListV2X_r14, pool_r14),
+		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
+		-1,	/* IMPLICIT tag at current level */
+		&asn_DEF_SL_CommResourcePoolV2X_r14,
+		0,	/* Defer constraints checking to the member type */
+		0,	/* No PER visible constraints */
+		0,
+		"pool-r14"
 		},
 };
 static ber_tlv_tag_t asn_DEF_SL_TxPoolToAddModListV2X_r14_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static asn_SET_OF_specifics_t asn_SPC_SL_TxPoolToAddModListV2X_r14_specs_1 = {
+static asn_TYPE_tag2member_t asn_MAP_SL_TxPoolToAddModListV2X_r14_tag2el_1[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolIdentity-r14 at 9561 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* pool-r14 at 9563 */
+};
+static asn_SEQUENCE_specifics_t asn_SPC_SL_TxPoolToAddModListV2X_r14_specs_1 = {
 	sizeof(struct SL_TxPoolToAddModListV2X_r14),
 	offsetof(struct SL_TxPoolToAddModListV2X_r14, _asn_ctx),
-	0,	/* XER encoding is XMLDelimitedItemList */
+	asn_MAP_SL_TxPoolToAddModListV2X_r14_tag2el_1,
+	2,	/* Count of tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* Start extensions */
+	-1	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_SL_TxPoolToAddModListV2X_r14 = {
 	"SL-TxPoolToAddModListV2X-r14",
 	"SL-TxPoolToAddModListV2X-r14",
-	SEQUENCE_OF_free,
-	SEQUENCE_OF_print,
-	SEQUENCE_OF_constraint,
-	SEQUENCE_OF_decode_ber,
-	SEQUENCE_OF_encode_der,
-	SEQUENCE_OF_decode_xer,
-	SEQUENCE_OF_encode_xer,
-	SEQUENCE_OF_decode_uper,
-	SEQUENCE_OF_encode_uper,
-	SEQUENCE_OF_decode_aper,
-	SEQUENCE_OF_encode_aper,
-	SEQUENCE_OF_compare,
+	SEQUENCE_free,
+	SEQUENCE_print,
+	SEQUENCE_constraint,
+	SEQUENCE_decode_ber,
+	SEQUENCE_encode_der,
+	SEQUENCE_decode_xer,
+	SEQUENCE_encode_xer,
+	SEQUENCE_decode_uper,
+	SEQUENCE_encode_uper,
+	SEQUENCE_decode_aper,
+	SEQUENCE_encode_aper,
+	SEQUENCE_compare,
 	0,	/* Use generic outmost tag fetcher */
 	asn_DEF_SL_TxPoolToAddModListV2X_r14_tags_1,
 	sizeof(asn_DEF_SL_TxPoolToAddModListV2X_r14_tags_1)
@@ -53,9 +65,9 @@ asn_TYPE_descriptor_t asn_DEF_SL_TxPoolToAddModListV2X_r14 = {
 	asn_DEF_SL_TxPoolToAddModListV2X_r14_tags_1,	/* Same as above */
 	sizeof(asn_DEF_SL_TxPoolToAddModListV2X_r14_tags_1)
 		/sizeof(asn_DEF_SL_TxPoolToAddModListV2X_r14_tags_1[0]), /* 1 */
-	&asn_PER_type_SL_TxPoolToAddModListV2X_r14_constr_1,
+	0,	/* No PER visible constraints */
 	asn_MBR_SL_TxPoolToAddModListV2X_r14_1,
-	1,	/* Single element */
+	2,	/* Elements count */
 	&asn_SPC_SL_TxPoolToAddModListV2X_r14_specs_1	/* Additional specs */
 };
 

@@ -24,7 +24,6 @@
 #include "MeasId-v1250.h"
 #include "RSRQ-Range-v1250.h"
 #include "RS-SINR-Range-r13.h"
-#include "RSRP-Range-v1360.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -51,8 +50,6 @@ struct MeasResultServFreqListExt_r13;
 struct MeasResultSSTD_r13;
 struct UL_PDCP_DelayResultList_r13;
 struct MeasResultListWLAN_r13;
-struct MeasResultListCBR_r14;
-struct MeasResultListWLAN_r14;
 
 /* MeasResults */
 typedef struct MeasResults {
@@ -121,19 +118,6 @@ typedef struct MeasResults {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext4;
-	struct MeasResults__ext5 {
-		RSRP_Range_v1360_t	*measResultPCell_v1360	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext5;
-	struct MeasResults__ext6 {
-		struct MeasResultListCBR_r14	*measResultListCBR_r14	/* OPTIONAL */;
-		struct MeasResultListWLAN_r14	*measResultListWLAN_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext6;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -156,8 +140,6 @@ extern asn_TYPE_descriptor_t asn_DEF_MeasResults;
 #include "MeasResultSSTD-r13.h"
 #include "UL-PDCP-DelayResultList-r13.h"
 #include "MeasResultListWLAN-r13.h"
-#include "MeasResultListCBR-r14.h"
-#include "MeasResultListWLAN-r14.h"
 
 #endif	/* _MeasResults_H_ */
 #include <asn_internal.h>

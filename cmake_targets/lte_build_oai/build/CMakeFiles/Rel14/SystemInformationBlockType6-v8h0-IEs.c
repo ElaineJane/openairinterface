@@ -158,8 +158,8 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType6_v8h0_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType6_v8h0_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreqListUTRA-FDD-v8h0 at 3020 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 3021 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreqListUTRA-FDD-v8h0 at 2773 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 2774 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType6_v8h0_IEs_specs_1 = {
 	sizeof(struct SystemInformationBlockType6_v8h0_IEs),

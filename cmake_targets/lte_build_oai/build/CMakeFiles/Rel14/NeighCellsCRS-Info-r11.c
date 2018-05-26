@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_NeighCellsCRS_Info_r11_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_NeighCellsCRS_Info_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6005 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6007 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5419 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5421 */
 };
 static asn_CHOICE_specifics_t asn_SPC_NeighCellsCRS_Info_r11_specs_1 = {
 	sizeof(struct NeighCellsCRS_Info_r11),

@@ -431,8 +431,8 @@ static asn_TYPE_member_t asn_MBR_mpdcch_startSF_CSS_RA_r13_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_mpdcch_startSF_CSS_RA_r13_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fdd-r13 at 5180 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd-r13 at 5182 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fdd-r13 at 4660 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd-r13 at 4662 */
 };
 static asn_CHOICE_specifics_t asn_SPC_mpdcch_startSF_CSS_RA_r13_specs_3 = {
 	sizeof(struct PRACH_ConfigSIB_v1310__mpdcch_startSF_CSS_RA_r13),
@@ -514,10 +514,10 @@ static ber_tlv_tag_t asn_DEF_PRACH_ConfigSIB_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PRACH_ConfigSIB_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrp-ThresholdsPrachInfoList-r13 at 5178 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mpdcch-startSF-CSS-RA-r13 at 5181 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* prach-HoppingOffset-r13 at 5184 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* prach-ParametersListCE-r13 at 5186 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrp-ThresholdsPrachInfoList-r13 at 4658 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mpdcch-startSF-CSS-RA-r13 at 4661 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* prach-HoppingOffset-r13 at 4664 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* prach-ParametersListCE-r13 at 4666 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PRACH_ConfigSIB_v1310_specs_1 = {
 	sizeof(struct PRACH_ConfigSIB_v1310),

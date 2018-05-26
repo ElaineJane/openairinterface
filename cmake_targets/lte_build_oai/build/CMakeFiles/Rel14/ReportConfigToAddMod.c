@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_reportConfig_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_reportConfig_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* reportConfigEUTRA at 8126 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* reportConfigInterRAT at 8128 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* reportConfigEUTRA at 7379 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* reportConfigInterRAT at 7381 */
 };
 static asn_CHOICE_specifics_t asn_SPC_reportConfig_specs_3 = {
 	sizeof(struct ReportConfigToAddMod__reportConfig),
@@ -97,8 +97,8 @@ static ber_tlv_tag_t asn_DEF_ReportConfigToAddMod_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ReportConfigToAddMod_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* reportConfigId at 8124 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* reportConfig at 8126 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* reportConfigId at 7377 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* reportConfig at 7379 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ReportConfigToAddMod_specs_1 = {
 	sizeof(struct ReportConfigToAddMod),

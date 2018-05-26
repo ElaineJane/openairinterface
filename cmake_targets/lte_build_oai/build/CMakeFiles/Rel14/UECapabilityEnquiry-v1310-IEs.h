@@ -31,9 +31,6 @@ typedef enum UECapabilityEnquiry_v1310_IEs__requestReducedIntNonContComb_r13 {
 	UECapabilityEnquiry_v1310_IEs__requestReducedIntNonContComb_r13_true	= 0
 } e_UECapabilityEnquiry_v1310_IEs__requestReducedIntNonContComb_r13;
 
-/* Forward declarations */
-struct UECapabilityEnquiry_v1430_IEs;
-
 /* UECapabilityEnquiry-v1310-IEs */
 typedef struct UECapabilityEnquiry_v1310_IEs {
 	long	*requestReducedFormat_r13	/* OPTIONAL */;
@@ -41,7 +38,11 @@ typedef struct UECapabilityEnquiry_v1310_IEs {
 	long	*requestedMaxCCsDL_r13	/* OPTIONAL */;
 	long	*requestedMaxCCsUL_r13	/* OPTIONAL */;
 	long	*requestReducedIntNonContComb_r13	/* OPTIONAL */;
-	struct UECapabilityEnquiry_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct UECapabilityEnquiry_v1310_IEs__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -56,9 +57,6 @@ extern asn_TYPE_descriptor_t asn_DEF_UECapabilityEnquiry_v1310_IEs;
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "UECapabilityEnquiry-v1430-IEs.h"
 
 #endif	/* _UECapabilityEnquiry_v1310_IEs_H_ */
 #include <asn_internal.h>

@@ -20,12 +20,15 @@ extern "C" {
 
 /* Forward declarations */
 struct PMCH_InfoListExt_r12;
-struct MBSFNAreaConfiguration_v1430_IEs;
 
 /* MBSFNAreaConfiguration-v1250-IEs */
 typedef struct MBSFNAreaConfiguration_v1250_IEs {
 	struct PMCH_InfoListExt_r12	*pmch_InfoListExt_r12	/* OPTIONAL */;
-	struct MBSFNAreaConfiguration_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct MBSFNAreaConfiguration_v1250_IEs__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -40,7 +43,6 @@ extern asn_TYPE_descriptor_t asn_DEF_MBSFNAreaConfiguration_v1250_IEs;
 
 /* Referred external types */
 #include "PMCH-InfoListExt-r12.h"
-#include "MBSFNAreaConfiguration-v1430-IEs.h"
 
 #endif	/* _MBSFNAreaConfiguration_v1250_IEs_H_ */
 #include <asn_internal.h>

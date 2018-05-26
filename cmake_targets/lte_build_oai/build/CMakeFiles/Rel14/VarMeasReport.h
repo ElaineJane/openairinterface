@@ -24,7 +24,6 @@ extern "C" {
 /* Forward declarations */
 struct CellsTriggeredList;
 struct CSI_RS_TriggeredList_r12;
-struct Tx_ResourcePoolMeasList_r14;
 
 /* VarMeasReport */
 typedef struct VarMeasReport {
@@ -32,7 +31,6 @@ typedef struct VarMeasReport {
 	MeasId_v1250_t	*measId_v1250	/* OPTIONAL */;
 	struct CellsTriggeredList	*cellsTriggeredList	/* OPTIONAL */;
 	struct CSI_RS_TriggeredList_r12	*csi_RS_TriggeredList_r12	/* OPTIONAL */;
-	struct Tx_ResourcePoolMeasList_r14	*poolsTriggeredList_r14	/* OPTIONAL */;
 	long	 numberOfReportsSent;
 	
 	/* Context for parsing across buffer boundaries */
@@ -49,7 +47,6 @@ extern asn_TYPE_descriptor_t asn_DEF_VarMeasReport;
 /* Referred external types */
 #include "CellsTriggeredList.h"
 #include "CSI-RS-TriggeredList-r12.h"
-#include "Tx-ResourcePoolMeasList-r14.h"
 
 #endif	/* _VarMeasReport_H_ */
 #include <asn_internal.h>

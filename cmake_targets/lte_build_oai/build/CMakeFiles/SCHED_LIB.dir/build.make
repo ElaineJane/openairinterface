@@ -75,32 +75,9 @@ CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedu
 
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb.c.o.provides.build: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb.c.o
 
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o: CMakeFiles/SCHED_LIB.dir/flags.make
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c > CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.i
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.s
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o.requires
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o.provides: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/SCHED_LIB.dir/build.make CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o.provides
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o.provides.build: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o
-
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c.o: CMakeFiles/SCHED_LIB.dir/flags.make
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c.o: /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c.o   -c /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c
 
@@ -123,7 +100,7 @@ CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedu
 
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c.o: CMakeFiles/SCHED_LIB.dir/flags.make
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c.o: /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c.o   -c /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c
 
@@ -144,32 +121,9 @@ CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedu
 
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c.o.provides.build: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c.o
 
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o: CMakeFiles/SCHED_LIB.dir/flags.make
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c > CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.i
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.s
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o.requires
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o.provides: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/SCHED_LIB.dir/build.make CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o.provides
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o.provides.build: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o
-
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c.o: CMakeFiles/SCHED_LIB.dir/flags.make
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c.o: /home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c.o   -c /home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c
 
@@ -190,32 +144,9 @@ CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stu
 
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c.o.provides.build: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c.o
 
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o: CMakeFiles/SCHED_LIB.dir/flags.make
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c > CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.i
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.s
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o.requires
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o.provides: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/SCHED_LIB.dir/build.make CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o.provides
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o.provides.build: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o
-
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c.o: CMakeFiles/SCHED_LIB.dir/flags.make
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c.o: /home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c.o   -c /home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c
 
@@ -238,7 +169,7 @@ CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c.
 
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.o: CMakeFiles/SCHED_LIB.dir/flags.make
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.o: /home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.o   -c /home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c
 
@@ -259,32 +190,9 @@ CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.
 
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.o.provides.build: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.o
 
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o: CMakeFiles/SCHED_LIB.dir/flags.make
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o: /home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c > CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.i
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.s
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o.requires
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o.provides: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/SCHED_LIB.dir/build.make CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o.provides
-
-CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o.provides.build: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o
-
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/srs_pc.c.o: CMakeFiles/SCHED_LIB.dir/flags.make
 CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/srs_pc.c.o: /home/momo/openairinterface5g/openair1/SCHED/srs_pc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/srs_pc.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/srs_pc.c.o   -c /home/momo/openairinterface5g/openair1/SCHED/srs_pc.c
 
@@ -308,30 +216,22 @@ CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/srs_pc.c.o.
 # Object files for target SCHED_LIB
 SCHED_LIB_OBJECTS = \
 "CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb.c.o" \
-"CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o" \
 "CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c.o" \
 "CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c.o" \
-"CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o" \
 "CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c.o" \
-"CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o" \
 "CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c.o" \
 "CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.o" \
-"CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o" \
 "CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/srs_pc.c.o"
 
 # External object files for target SCHED_LIB
 SCHED_LIB_EXTERNAL_OBJECTS =
 
 libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb.c.o
-libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o
 libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c.o
 libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c.o
-libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o
 libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c.o
-libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o
 libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c.o
 libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.o
-libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o
 libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/srs_pc.c.o
 libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/build.make
 libSCHED_LIB.a: CMakeFiles/SCHED_LIB.dir/link.txt
@@ -344,15 +244,11 @@ CMakeFiles/SCHED_LIB.dir/build: libSCHED_LIB.a
 .PHONY : CMakeFiles/SCHED_LIB.dir/build
 
 CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb.c.o.requires
-CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_eNb_NB_IoT.c.o.requires
 CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_ue.c.o.requires
 CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common.c.o.requires
-CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_procedures_lte_common_NB_IoT.c.o.requires
 CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/phy_mac_stub.c.o.requires
-CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/IF_Module_L1_primitives_NB_IoT.c.o.requires
 CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pucch_pc.c.o.requires
 CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc.c.o.requires
-CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/pusch_pc_NB_IoT.c.o.requires
 CMakeFiles/SCHED_LIB.dir/requires: CMakeFiles/SCHED_LIB.dir/home/momo/openairinterface5g/openair1/SCHED/srs_pc.c.o.requires
 .PHONY : CMakeFiles/SCHED_LIB.dir/requires
 

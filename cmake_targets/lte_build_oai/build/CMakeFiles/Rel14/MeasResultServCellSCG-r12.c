@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_measResultSCell_r12_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResultSCell_r12_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrpResultSCell-r12 at 13456 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rsrqResultSCell-r12 at 13458 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrpResultSCell-r12 at 11661 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rsrqResultSCell-r12 at 11663 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResultSCell_r12_specs_3 = {
 	sizeof(struct MeasResultServCellSCG_r12__measResultSCell_r12),
@@ -89,7 +89,7 @@ static ber_tlv_tag_t asn_DEF_measResultSCell_v1310_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResultSCell_v1310_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rs-sinr-ResultSCell-r13 at 13463 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rs-sinr-ResultSCell-r13 at 11668 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResultSCell_v1310_specs_9 = {
 	sizeof(struct MeasResultServCellSCG_r12__ext1__measResultSCell_v1310),
@@ -155,8 +155,8 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* servCellId-r13 at 13460 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measResultSCell-v1310 at 13463 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* servCellId-r13 at 11665 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measResultSCell-v1310 at 11668 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_7 = {
 	sizeof(struct MeasResultServCellSCG_r12__ext1),
@@ -231,9 +231,9 @@ static ber_tlv_tag_t asn_DEF_MeasResultServCellSCG_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasResultServCellSCG_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* servCellId-r12 at 13454 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultSCell-r12 at 13456 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ext1 at 13460 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* servCellId-r12 at 11659 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultSCell-r12 at 11661 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ext1 at 11665 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasResultServCellSCG_r12_specs_1 = {
 	sizeof(struct MeasResultServCellSCG_r12),

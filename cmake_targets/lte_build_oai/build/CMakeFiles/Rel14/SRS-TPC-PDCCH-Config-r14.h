@@ -15,6 +15,7 @@
 #include <NULL.h>
 #include <BIT_STRING.h>
 #include <NativeInteger.h>
+#include "SrsCcGroupIndex.h"
 #include <asn_SEQUENCE_OF.h>
 #include <constr_SEQUENCE_OF.h>
 #include <constr_SEQUENCE.h>
@@ -31,9 +32,6 @@ typedef enum SRS_TPC_PDCCH_Config_r14_PR {
 	SRS_TPC_PDCCH_Config_r14_PR_setup
 } SRS_TPC_PDCCH_Config_r14_PR;
 
-/* Forward declarations */
-struct SRS_CC_SetIndex_r14;
-
 /* SRS-TPC-PDCCH-Config-r14 */
 typedef struct SRS_TPC_PDCCH_Config_r14 {
 	SRS_TPC_PDCCH_Config_r14_PR present;
@@ -43,12 +41,12 @@ typedef struct SRS_TPC_PDCCH_Config_r14 {
 			BIT_STRING_t	 srs_TPC_RNTI_r14;
 			long	 startingBitOfFormat3B_r14;
 			long	 fieldTypeFormat3B_r14;
-			struct SRS_TPC_PDCCH_Config_r14__setup__srs_CC_SetIndexlist_r14 {
-				A_SEQUENCE_OF(struct SRS_CC_SetIndex_r14) list;
+			struct SRS_TPC_PDCCH_Config_r14__setup__srsCcGroupIndexlist {
+				A_SEQUENCE_OF(SrsCcGroupIndex_t) list;
 				
 				/* Context for parsing across buffer boundaries */
 				asn_struct_ctx_t _asn_ctx;
-			} *srs_CC_SetIndexlist_r14;
+			} *srsCcGroupIndexlist;
 			
 			/* Context for parsing across buffer boundaries */
 			asn_struct_ctx_t _asn_ctx;
@@ -65,9 +63,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SRS_TPC_PDCCH_Config_r14;
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "SRS-CC-SetIndex-r14.h"
 
 #endif	/* _SRS_TPC_PDCCH_Config_r14_H_ */
 #include <asn_internal.h>

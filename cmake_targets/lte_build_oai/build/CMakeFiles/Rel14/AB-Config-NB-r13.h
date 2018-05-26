@@ -26,15 +26,15 @@ typedef enum AB_Config_NB_r13__ab_Category_r13 {
 	AB_Config_NB_r13__ab_Category_r13_b	= 1,
 	AB_Config_NB_r13__ab_Category_r13_c	= 2
 } e_AB_Config_NB_r13__ab_Category_r13;
-typedef enum AB_Config_NB_r13__ab_BarringForExceptionData_r13 {
-	AB_Config_NB_r13__ab_BarringForExceptionData_r13_true	= 0
-} e_AB_Config_NB_r13__ab_BarringForExceptionData_r13;
+typedef enum AB_Config_NB_r13__ab_BarringExceptionData_r13 {
+	AB_Config_NB_r13__ab_BarringExceptionData_r13_true	= 0
+} e_AB_Config_NB_r13__ab_BarringExceptionData_r13;
 
 /* AB-Config-NB-r13 */
 typedef struct AB_Config_NB_r13 {
 	long	 ab_Category_r13;
 	BIT_STRING_t	 ab_BarringBitmap_r13;
-	long	*ab_BarringForExceptionData_r13	/* OPTIONAL */;
+	long	*ab_BarringExceptionData_r13	/* OPTIONAL */;
 	BIT_STRING_t	 ab_BarringForSpecialAC_r13;
 	
 	/* Context for parsing across buffer boundaries */
@@ -43,7 +43,7 @@ typedef struct AB_Config_NB_r13 {
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_ab_Category_r13_2;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_ab_BarringForExceptionData_r13_7;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_ab_BarringExceptionData_r13_7;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_AB_Config_NB_r13;
 
 #ifdef __cplusplus

@@ -1088,12 +1088,12 @@ static ber_tlv_tag_t asn_DEF_IRAT_ParametersUTRA_v9c0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_IRAT_ParametersUTRA_v9c0_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* voiceOverPS-HS-UTRA-FDD-r9 at 9435 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* voiceOverPS-HS-UTRA-TDD128-r9 at 9436 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* srvcc-FromUTRA-FDD-ToUTRA-FDD-r9 at 9437 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* srvcc-FromUTRA-FDD-ToGERAN-r9 at 9438 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* srvcc-FromUTRA-TDD128-ToUTRA-TDD128-r9 at 9439 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* srvcc-FromUTRA-TDD128-ToGERAN-r9 at 9440 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* voiceOverPS-HS-UTRA-FDD-r9 at 8476 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* voiceOverPS-HS-UTRA-TDD128-r9 at 8477 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* srvcc-FromUTRA-FDD-ToUTRA-FDD-r9 at 8478 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* srvcc-FromUTRA-FDD-ToGERAN-r9 at 8479 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* srvcc-FromUTRA-TDD128-ToUTRA-TDD128-r9 at 8480 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* srvcc-FromUTRA-TDD128-ToGERAN-r9 at 8481 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_IRAT_ParametersUTRA_v9c0_specs_1 = {
 	sizeof(struct IRAT_ParametersUTRA_v9c0),

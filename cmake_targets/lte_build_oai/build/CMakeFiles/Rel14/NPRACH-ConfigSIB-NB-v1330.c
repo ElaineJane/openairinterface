@@ -22,7 +22,7 @@ static ber_tlv_tag_t asn_DEF_NPRACH_ConfigSIB_NB_v1330_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_NPRACH_ConfigSIB_NB_v1330_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* nprach-ParametersList-v1330 at 12257 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* nprach-ParametersList-v1330 at 10645 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_NPRACH_ConfigSIB_NB_v1330_specs_1 = {
 	sizeof(struct NPRACH_ConfigSIB_NB_v1330),

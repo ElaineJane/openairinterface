@@ -1267,13 +1267,13 @@ static ber_tlv_tag_t asn_DEF_PhyLayerParameters_v1130_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PhyLayerParameters_v1130_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* crs-InterfHandl-r11 at 8830 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ePDCCH-r11 at 8831 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* multiACK-CSI-Reporting-r11 at 8832 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ss-CCH-InterfHandl-r11 at 8833 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* tdd-SpecialSubframe-r11 at 8834 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* txDiv-PUCCH1b-ChSelect-r11 at 8835 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ul-CoMP-r11 at 8836 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* crs-InterfHandl-r11 at 7987 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ePDCCH-r11 at 7988 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* multiACK-CSI-Reporting-r11 at 7989 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ss-CCH-InterfHandl-r11 at 7990 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* tdd-SpecialSubframe-r11 at 7991 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* txDiv-PUCCH1b-ChSelect-r11 at 7992 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ul-CoMP-r11 at 7993 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PhyLayerParameters_v1130_specs_1 = {
 	sizeof(struct PhyLayerParameters_v1130),

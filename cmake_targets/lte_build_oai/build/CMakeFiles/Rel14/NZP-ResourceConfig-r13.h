@@ -13,8 +13,6 @@
 
 /* Including external dependencies */
 #include "ResourceConfig-r13.h"
-#include "NZP-TransmissionComb-r14.h"
-#include "NZP-FrequencyDensity-r14.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -28,13 +26,6 @@ typedef struct NZP_ResourceConfig_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct NZP_ResourceConfig_r13__ext1 {
-		NZP_TransmissionComb_r14_t	*transmissionComb_r14	/* OPTIONAL */;
-		NZP_FrequencyDensity_r14_t	*frequencyDensity_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

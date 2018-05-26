@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_rach_Report_r9_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_rach_Report_r9_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* numberOfPreamblesSent-r9 at 2296 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* contentionDetected-r9 at 2297 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* numberOfPreamblesSent-r9 at 2092 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* contentionDetected-r9 at 2093 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_rach_Report_r9_specs_2 = {
 	sizeof(struct UEInformationResponse_r9_IEs__rach_Report_r9),
@@ -107,9 +107,9 @@ static ber_tlv_tag_t asn_DEF_UEInformationResponse_r9_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UEInformationResponse_r9_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rach-Report-r9 at 2296 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rlf-Report-r9 at 2299 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 2300 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rach-Report-r9 at 2092 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rlf-Report-r9 at 2095 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 2096 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UEInformationResponse_r9_IEs_specs_1 = {
 	sizeof(struct UEInformationResponse_r9_IEs),

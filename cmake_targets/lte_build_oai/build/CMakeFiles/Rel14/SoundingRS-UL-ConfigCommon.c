@@ -610,10 +610,10 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-BandwidthConfig at 6321 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* srs-SubframeConfig at 6323 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ackNackSRS-SimultaneousTransmission at 6325 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* srs-MaxUpPts at 6326 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-BandwidthConfig at 5731 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* srs-SubframeConfig at 5733 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ackNackSRS-SimultaneousTransmission at 5735 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* srs-MaxUpPts at 5736 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct SoundingRS_UL_ConfigCommon__setup),
@@ -675,8 +675,8 @@ static asn_TYPE_member_t asn_MBR_SoundingRS_UL_ConfigCommon_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SoundingRS_UL_ConfigCommon_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6319 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6321 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5729 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5731 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SoundingRS_UL_ConfigCommon_specs_1 = {
 	sizeof(struct SoundingRS_UL_ConfigCommon),

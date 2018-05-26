@@ -208,7 +208,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* n1PUCCH-AN-CS-ListP1-r11 at 5305 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* n1PUCCH-AN-CS-ListP1-r11 at 4779 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1130__n1PUCCH_AN_CS_v1130__setup),
@@ -269,8 +269,8 @@ static asn_TYPE_member_t asn_MBR_n1PUCCH_AN_CS_v1130_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_n1PUCCH_AN_CS_v1130_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5303 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5306 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4777 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4780 */
 };
 static asn_CHOICE_specifics_t asn_SPC_n1PUCCH_AN_CS_v1130_specs_2 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1130__n1PUCCH_AN_CS_v1130),
@@ -334,8 +334,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nPUCCH-Identity-r11 at 5311 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* n1PUCCH-AN-r11 at 5312 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nPUCCH-Identity-r11 at 4785 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* n1PUCCH-AN-r11 at 4786 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_9 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1130__nPUCCH_Param_r11__setup),
@@ -396,8 +396,8 @@ static asn_TYPE_member_t asn_MBR_nPUCCH_Param_r11_7[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_nPUCCH_Param_r11_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5309 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5311 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4783 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4785 */
 };
 static asn_CHOICE_specifics_t asn_SPC_nPUCCH_Param_r11_specs_7 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1130__nPUCCH_Param_r11),
@@ -461,8 +461,8 @@ static ber_tlv_tag_t asn_DEF_PUCCH_ConfigDedicated_v1130_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PUCCH_ConfigDedicated_v1130_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* n1PUCCH-AN-CS-v1130 at 5303 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nPUCCH-Param-r11 at 5309 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* n1PUCCH-AN-CS-v1130 at 4777 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nPUCCH-Param-r11 at 4783 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PUCCH_ConfigDedicated_v1130_specs_1 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1130),

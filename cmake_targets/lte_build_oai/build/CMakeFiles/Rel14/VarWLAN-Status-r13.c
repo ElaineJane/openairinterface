@@ -17,31 +17,19 @@ static asn_TYPE_member_t asn_MBR_VarWLAN_Status_r13_1[] = {
 		0,
 		"status-r13"
 		},
-	{ ATF_POINTER, 1, offsetof(struct VarWLAN_Status_r13, status_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_WLAN_Status_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"status-r14"
-		},
 };
-static int asn_MAP_VarWLAN_Status_r13_oms_1[] = { 1 };
 static ber_tlv_tag_t asn_DEF_VarWLAN_Status_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_VarWLAN_Status_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* status-r13 at 12921 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* status-r14 at 12922 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* status-r13 at 11197 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_VarWLAN_Status_r13_specs_1 = {
 	sizeof(struct VarWLAN_Status_r13),
 	offsetof(struct VarWLAN_Status_r13, _asn_ctx),
 	asn_MAP_VarWLAN_Status_r13_tag2el_1,
-	2,	/* Count of tags in the map */
-	asn_MAP_VarWLAN_Status_r13_oms_1,	/* Optional members */
-	1, 0,	/* Root/Additions */
+	1,	/* Count of tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
@@ -69,7 +57,7 @@ asn_TYPE_descriptor_t asn_DEF_VarWLAN_Status_r13 = {
 		/sizeof(asn_DEF_VarWLAN_Status_r13_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_VarWLAN_Status_r13_1,
-	2,	/* Elements count */
+	1,	/* Elements count */
 	&asn_SPC_VarWLAN_Status_r13_specs_1	/* Additional specs */
 };
 

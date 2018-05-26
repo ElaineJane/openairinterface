@@ -716,242 +716,6 @@ useFullResumeID_r13_45_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_desc
 }
 
 static int
-unicastFreqHoppingInd_r13_48_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	/* Replace with underlying type checker */
-	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
-	return td->check_constraints(td, sptr, ctfailcb, app_key);
-}
-
-/*
- * This type is implemented using NativeEnumerated,
- * so here we adjust the DEF accordingly.
- */
-static void
-unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
-	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
-	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
-	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
-	td->der_encoder    = asn_DEF_NativeEnumerated.der_encoder;
-	td->xer_decoder    = asn_DEF_NativeEnumerated.xer_decoder;
-	td->xer_encoder    = asn_DEF_NativeEnumerated.xer_encoder;
-	td->uper_decoder   = asn_DEF_NativeEnumerated.uper_decoder;
-	td->uper_encoder   = asn_DEF_NativeEnumerated.uper_encoder;
-	td->aper_decoder   = asn_DEF_NativeEnumerated.aper_decoder;
-	td->aper_encoder   = asn_DEF_NativeEnumerated.aper_encoder;
-	td->compare        = asn_DEF_NativeEnumerated.compare;
-	if(!td->per_constraints)
-		td->per_constraints = asn_DEF_NativeEnumerated.per_constraints;
-	td->elements       = asn_DEF_NativeEnumerated.elements;
-	td->elements_count = asn_DEF_NativeEnumerated.elements_count;
-     /* td->specifics      = asn_DEF_NativeEnumerated.specifics;	// Defined explicitly */
-}
-
-static void
-unicastFreqHoppingInd_r13_48_free(asn_TYPE_descriptor_t *td,
-		void *struct_ptr, int contents_only) {
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td);
-	td->free_struct(td, struct_ptr, contents_only);
-}
-
-static int
-unicastFreqHoppingInd_r13_48_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
-		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td);
-	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
-}
-
-static asn_dec_rval_t
-unicastFreqHoppingInd_r13_48_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td);
-	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
-}
-
-static asn_enc_rval_t
-unicastFreqHoppingInd_r13_48_encode_der(asn_TYPE_descriptor_t *td,
-		void *structure, int tag_mode, ber_tlv_tag_t tag,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td);
-	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
-}
-
-static asn_dec_rval_t
-unicastFreqHoppingInd_r13_48_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td);
-	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
-}
-
-static asn_enc_rval_t
-unicastFreqHoppingInd_r13_48_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
-		int ilevel, enum xer_encoder_flags_e flags,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td);
-	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
-}
-
-static asn_dec_rval_t
-unicastFreqHoppingInd_r13_48_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td);
-	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static asn_enc_rval_t
-unicastFreqHoppingInd_r13_48_encode_uper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td);
-	return td->uper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_enc_rval_t
-unicastFreqHoppingInd_r13_48_encode_aper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td);
-	return td->aper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_comp_rval_t * 
-unicastFreqHoppingInd_r13_48_compare(asn_TYPE_descriptor_t *td1,
-		const void *structure1,
-		asn_TYPE_descriptor_t *td2,
-		const void *structure2) {
-	asn_comp_rval_t * res  = NULL;
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td1);
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td2);
-	res = td1->compare(td1, structure1, td2, structure2);
-	return res;
-}
-
-static asn_dec_rval_t
-unicastFreqHoppingInd_r13_48_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	unicastFreqHoppingInd_r13_48_inherit_TYPE_descriptor(td);
-	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static int
-videoServiceCauseIndication_r14_52_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	/* Replace with underlying type checker */
-	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
-	return td->check_constraints(td, sptr, ctfailcb, app_key);
-}
-
-/*
- * This type is implemented using NativeEnumerated,
- * so here we adjust the DEF accordingly.
- */
-static void
-videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
-	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
-	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
-	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
-	td->der_encoder    = asn_DEF_NativeEnumerated.der_encoder;
-	td->xer_decoder    = asn_DEF_NativeEnumerated.xer_decoder;
-	td->xer_encoder    = asn_DEF_NativeEnumerated.xer_encoder;
-	td->uper_decoder   = asn_DEF_NativeEnumerated.uper_decoder;
-	td->uper_encoder   = asn_DEF_NativeEnumerated.uper_encoder;
-	td->aper_decoder   = asn_DEF_NativeEnumerated.aper_decoder;
-	td->aper_encoder   = asn_DEF_NativeEnumerated.aper_encoder;
-	td->compare        = asn_DEF_NativeEnumerated.compare;
-	if(!td->per_constraints)
-		td->per_constraints = asn_DEF_NativeEnumerated.per_constraints;
-	td->elements       = asn_DEF_NativeEnumerated.elements;
-	td->elements_count = asn_DEF_NativeEnumerated.elements_count;
-     /* td->specifics      = asn_DEF_NativeEnumerated.specifics;	// Defined explicitly */
-}
-
-static void
-videoServiceCauseIndication_r14_52_free(asn_TYPE_descriptor_t *td,
-		void *struct_ptr, int contents_only) {
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td);
-	td->free_struct(td, struct_ptr, contents_only);
-}
-
-static int
-videoServiceCauseIndication_r14_52_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
-		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td);
-	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
-}
-
-static asn_dec_rval_t
-videoServiceCauseIndication_r14_52_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td);
-	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
-}
-
-static asn_enc_rval_t
-videoServiceCauseIndication_r14_52_encode_der(asn_TYPE_descriptor_t *td,
-		void *structure, int tag_mode, ber_tlv_tag_t tag,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td);
-	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
-}
-
-static asn_dec_rval_t
-videoServiceCauseIndication_r14_52_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td);
-	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
-}
-
-static asn_enc_rval_t
-videoServiceCauseIndication_r14_52_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
-		int ilevel, enum xer_encoder_flags_e flags,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td);
-	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
-}
-
-static asn_dec_rval_t
-videoServiceCauseIndication_r14_52_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td);
-	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static asn_enc_rval_t
-videoServiceCauseIndication_r14_52_encode_uper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td);
-	return td->uper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_enc_rval_t
-videoServiceCauseIndication_r14_52_encode_aper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td);
-	return td->aper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_comp_rval_t * 
-videoServiceCauseIndication_r14_52_compare(asn_TYPE_descriptor_t *td1,
-		const void *structure1,
-		asn_TYPE_descriptor_t *td2,
-		const void *structure2) {
-	asn_comp_rval_t * res  = NULL;
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td1);
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td2);
-	res = td1->compare(td1, structure1, td2, structure2);
-	return res;
-}
-
-static asn_dec_rval_t
-videoServiceCauseIndication_r14_52_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	videoServiceCauseIndication_r14_52_inherit_TYPE_descriptor(td);
-	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static int
 memb_lateNonCriticalExtension_constraint_1(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	const OCTET_STRING_t *st = (const OCTET_STRING_t *)sptr;
@@ -1001,16 +765,6 @@ static asn_per_constraints_t asn_PER_type_useFullResumeID_r13_constr_45 GCC_NOTU
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_unicastFreqHoppingInd_r13_constr_48 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_type_videoServiceCauseIndication_r14_constr_52 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
 static asn_per_constraints_t asn_PER_memb_lateNonCriticalExtension_constr_21 GCC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_SEMI_CONSTRAINED,	-1, -1,  0,  0 }	/* (SIZE(0..MAX)) */,
@@ -1051,9 +805,9 @@ static ber_tlv_tag_t asn_DEF_ac_BarringInfo_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ac_BarringInfo_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ac-BarringForEmergency at 2611 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ac-BarringForMO-Signalling at 2612 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ac-BarringForMO-Data at 2613 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ac-BarringForEmergency at 2396 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ac-BarringForMO-Signalling at 2397 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ac-BarringForMO-Data at 2398 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ac_BarringInfo_specs_2 = {
 	sizeof(struct SystemInformationBlockType2__ac_BarringInfo),
@@ -1186,9 +940,9 @@ static ber_tlv_tag_t asn_DEF_freqInfo_tags_8[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_freqInfo_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq at 2618 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Bandwidth at 2619 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* additionalSpectrumEmission at 2622 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq at 2403 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Bandwidth at 2404 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* additionalSpectrumEmission at 2407 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_freqInfo_specs_8 = {
 	sizeof(struct SystemInformationBlockType2__freqInfo),
@@ -1255,8 +1009,8 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_22[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_22[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ssac-BarringForMMTEL-Voice-r9 at 2627 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ssac-BarringForMMTEL-Video-r9 at 2628 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ssac-BarringForMMTEL-Voice-r9 at 2412 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ssac-BarringForMMTEL-Video-r9 at 2413 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_22 = {
 	sizeof(struct SystemInformationBlockType2__ext1),
@@ -1314,7 +1068,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_25[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_25[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* ac-BarringForCSFB-r10 at 2630 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* ac-BarringForCSFB-r10 at 2415 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_25 = {
 	sizeof(struct SystemInformationBlockType2__ext2),
@@ -1540,10 +1294,10 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_27[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_27[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ac-BarringSkipForMMTELVoice-r12 at 2632 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ac-BarringSkipForMMTELVideo-r12 at 2633 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ac-BarringSkipForSMS-r12 at 2634 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ac-BarringPerPLMN-List-r12 at 2635 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ac-BarringSkipForMMTELVoice-r12 at 2417 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ac-BarringSkipForMMTELVideo-r12 at 2418 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ac-BarringSkipForSMS-r12 at 2419 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ac-BarringPerPLMN-List-r12 at 2420 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_27 = {
 	sizeof(struct SystemInformationBlockType2__ext3),
@@ -1648,7 +1402,7 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_35[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_35[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* voiceServiceCauseIndication-r12 at 2637 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* voiceServiceCauseIndication-r12 at 2422 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_35 = {
 	sizeof(struct SystemInformationBlockType2__ext4),
@@ -1715,8 +1469,8 @@ static ber_tlv_tag_t asn_DEF_ext5_tags_38[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_38[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* acdc-BarringForCommon-r13 at 2639 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* acdc-BarringPerPLMN-List-r13 at 2640 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* acdc-BarringForCommon-r13 at 2424 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* acdc-BarringPerPLMN-List-r13 at 2425 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_38 = {
 	sizeof(struct SystemInformationBlockType2__ext5),
@@ -1848,10 +1602,10 @@ static ber_tlv_tag_t asn_DEF_ext6_tags_41[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext6_tag2el_41[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* udt-RestrictingForCommon-r13 at 2643 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* udt-RestrictingPerPLMN-List-r13 at 2644 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cIoT-EPS-OptimisationInfo-r13 at 2645 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* useFullResumeID-r13 at 2646 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* udt-RestrictingForCommon-r13 at 2428 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* udt-RestrictingPerPLMN-List-r13 at 2429 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cIoT-EPS-OptimisationInfo-r13 at 2430 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* useFullResumeID-r13 at 2431 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext6_specs_41 = {
 	sizeof(struct SystemInformationBlockType2__ext6),
@@ -1890,226 +1644,6 @@ asn_TYPE_descriptor_t asn_DEF_ext6_41 = {
 	asn_MBR_ext6_41,
 	4,	/* Elements count */
 	&asn_SPC_ext6_specs_41	/* Additional specs */
-};
-
-static asn_INTEGER_enum_map_t asn_MAP_unicastFreqHoppingInd_r13_value2enum_48[] = {
-	{ 0,	4,	"true" }
-};
-static unsigned int asn_MAP_unicastFreqHoppingInd_r13_enum2value_48[] = {
-	0	/* true(0) */
-};
-static asn_INTEGER_specifics_t asn_SPC_unicastFreqHoppingInd_r13_specs_48 = {
-	asn_MAP_unicastFreqHoppingInd_r13_value2enum_48,	/* "tag" => N; sorted by tag */
-	asn_MAP_unicastFreqHoppingInd_r13_enum2value_48,	/* N => "tag"; sorted by N */
-	1,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_unicastFreqHoppingInd_r13_tags_48[] = {
-	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_unicastFreqHoppingInd_r13_48 = {
-	"unicastFreqHoppingInd-r13",
-	"unicastFreqHoppingInd-r13",
-	unicastFreqHoppingInd_r13_48_free,
-	unicastFreqHoppingInd_r13_48_print,
-	unicastFreqHoppingInd_r13_48_constraint,
-	unicastFreqHoppingInd_r13_48_decode_ber,
-	unicastFreqHoppingInd_r13_48_encode_der,
-	unicastFreqHoppingInd_r13_48_decode_xer,
-	unicastFreqHoppingInd_r13_48_encode_xer,
-	unicastFreqHoppingInd_r13_48_decode_uper,
-	unicastFreqHoppingInd_r13_48_encode_uper,
-	unicastFreqHoppingInd_r13_48_decode_aper,
-	unicastFreqHoppingInd_r13_48_encode_aper,
-	unicastFreqHoppingInd_r13_48_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_unicastFreqHoppingInd_r13_tags_48,
-	sizeof(asn_DEF_unicastFreqHoppingInd_r13_tags_48)
-		/sizeof(asn_DEF_unicastFreqHoppingInd_r13_tags_48[0]) - 1, /* 1 */
-	asn_DEF_unicastFreqHoppingInd_r13_tags_48,	/* Same as above */
-	sizeof(asn_DEF_unicastFreqHoppingInd_r13_tags_48)
-		/sizeof(asn_DEF_unicastFreqHoppingInd_r13_tags_48[0]), /* 2 */
-	&asn_PER_type_unicastFreqHoppingInd_r13_constr_48,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_unicastFreqHoppingInd_r13_specs_48	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext7_47[] = {
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType2__ext7, unicastFreqHoppingInd_r13),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_unicastFreqHoppingInd_r13_48,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"unicastFreqHoppingInd-r13"
-		},
-};
-static int asn_MAP_ext7_oms_47[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext7_tags_47[] = {
-	(ASN_TAG_CLASS_CONTEXT | (13 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext7_tag2el_47[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* unicastFreqHoppingInd-r13 at 2648 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext7_specs_47 = {
-	sizeof(struct SystemInformationBlockType2__ext7),
-	offsetof(struct SystemInformationBlockType2__ext7, _asn_ctx),
-	asn_MAP_ext7_tag2el_47,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext7_oms_47,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext7_47 = {
-	"ext7",
-	"ext7",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext7_tags_47,
-	sizeof(asn_DEF_ext7_tags_47)
-		/sizeof(asn_DEF_ext7_tags_47[0]) - 1, /* 1 */
-	asn_DEF_ext7_tags_47,	/* Same as above */
-	sizeof(asn_DEF_ext7_tags_47)
-		/sizeof(asn_DEF_ext7_tags_47[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext7_47,
-	1,	/* Elements count */
-	&asn_SPC_ext7_specs_47	/* Additional specs */
-};
-
-static asn_INTEGER_enum_map_t asn_MAP_videoServiceCauseIndication_r14_value2enum_52[] = {
-	{ 0,	4,	"true" }
-};
-static unsigned int asn_MAP_videoServiceCauseIndication_r14_enum2value_52[] = {
-	0	/* true(0) */
-};
-static asn_INTEGER_specifics_t asn_SPC_videoServiceCauseIndication_r14_specs_52 = {
-	asn_MAP_videoServiceCauseIndication_r14_value2enum_52,	/* "tag" => N; sorted by tag */
-	asn_MAP_videoServiceCauseIndication_r14_enum2value_52,	/* N => "tag"; sorted by N */
-	1,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_videoServiceCauseIndication_r14_tags_52[] = {
-	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_videoServiceCauseIndication_r14_52 = {
-	"videoServiceCauseIndication-r14",
-	"videoServiceCauseIndication-r14",
-	videoServiceCauseIndication_r14_52_free,
-	videoServiceCauseIndication_r14_52_print,
-	videoServiceCauseIndication_r14_52_constraint,
-	videoServiceCauseIndication_r14_52_decode_ber,
-	videoServiceCauseIndication_r14_52_encode_der,
-	videoServiceCauseIndication_r14_52_decode_xer,
-	videoServiceCauseIndication_r14_52_encode_xer,
-	videoServiceCauseIndication_r14_52_decode_uper,
-	videoServiceCauseIndication_r14_52_encode_uper,
-	videoServiceCauseIndication_r14_52_decode_aper,
-	videoServiceCauseIndication_r14_52_encode_aper,
-	videoServiceCauseIndication_r14_52_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_videoServiceCauseIndication_r14_tags_52,
-	sizeof(asn_DEF_videoServiceCauseIndication_r14_tags_52)
-		/sizeof(asn_DEF_videoServiceCauseIndication_r14_tags_52[0]) - 1, /* 1 */
-	asn_DEF_videoServiceCauseIndication_r14_tags_52,	/* Same as above */
-	sizeof(asn_DEF_videoServiceCauseIndication_r14_tags_52)
-		/sizeof(asn_DEF_videoServiceCauseIndication_r14_tags_52[0]), /* 2 */
-	&asn_PER_type_videoServiceCauseIndication_r14_constr_52,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_videoServiceCauseIndication_r14_specs_52	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext8_50[] = {
-	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType2__ext8, mbsfn_SubframeConfigList_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_MBSFN_SubframeConfigList_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"mbsfn-SubframeConfigList-v1430"
-		},
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType2__ext8, videoServiceCauseIndication_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_videoServiceCauseIndication_r14_52,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"videoServiceCauseIndication-r14"
-		},
-};
-static int asn_MAP_ext8_oms_50[] = { 0, 1 };
-static ber_tlv_tag_t asn_DEF_ext8_tags_50[] = {
-	(ASN_TAG_CLASS_CONTEXT | (14 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext8_tag2el_50[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbsfn-SubframeConfigList-v1430 at 2650 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* videoServiceCauseIndication-r14 at 2651 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext8_specs_50 = {
-	sizeof(struct SystemInformationBlockType2__ext8),
-	offsetof(struct SystemInformationBlockType2__ext8, _asn_ctx),
-	asn_MAP_ext8_tag2el_50,
-	2,	/* Count of tags in the map */
-	asn_MAP_ext8_oms_50,	/* Optional members */
-	2, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext8_50 = {
-	"ext8",
-	"ext8",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext8_tags_50,
-	sizeof(asn_DEF_ext8_tags_50)
-		/sizeof(asn_DEF_ext8_tags_50[0]) - 1, /* 1 */
-	asn_DEF_ext8_tags_50,	/* Same as above */
-	sizeof(asn_DEF_ext8_tags_50)
-		/sizeof(asn_DEF_ext8_tags_50[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext8_50,
-	2,	/* Elements count */
-	&asn_SPC_ext8_specs_50	/* Additional specs */
 };
 
 static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_1[] = {
@@ -2167,7 +1701,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_1[] = {
 		0,
 		"timeAlignmentTimerCommon"
 		},
-	{ ATF_POINTER, 9, offsetof(struct SystemInformationBlockType2, lateNonCriticalExtension),
+	{ ATF_POINTER, 7, offsetof(struct SystemInformationBlockType2, lateNonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -2176,7 +1710,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_1[] = {
 		0,
 		"lateNonCriticalExtension"
 		},
-	{ ATF_POINTER, 8, offsetof(struct SystemInformationBlockType2, ext1),
+	{ ATF_POINTER, 6, offsetof(struct SystemInformationBlockType2, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		0,
 		&asn_DEF_ext1_22,
@@ -2185,7 +1719,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 7, offsetof(struct SystemInformationBlockType2, ext2),
+	{ ATF_POINTER, 5, offsetof(struct SystemInformationBlockType2, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		0,
 		&asn_DEF_ext2_25,
@@ -2194,7 +1728,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 6, offsetof(struct SystemInformationBlockType2, ext3),
+	{ ATF_POINTER, 4, offsetof(struct SystemInformationBlockType2, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 		0,
 		&asn_DEF_ext3_27,
@@ -2203,7 +1737,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_1[] = {
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 5, offsetof(struct SystemInformationBlockType2, ext4),
+	{ ATF_POINTER, 3, offsetof(struct SystemInformationBlockType2, ext4),
 		(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
 		0,
 		&asn_DEF_ext4_35,
@@ -2212,7 +1746,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_1[] = {
 		0,
 		"ext4"
 		},
-	{ ATF_POINTER, 4, offsetof(struct SystemInformationBlockType2, ext5),
+	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType2, ext5),
 		(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
 		0,
 		&asn_DEF_ext5_38,
@@ -2221,7 +1755,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_1[] = {
 		0,
 		"ext5"
 		},
-	{ ATF_POINTER, 3, offsetof(struct SystemInformationBlockType2, ext6),
+	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType2, ext6),
 		(ASN_TAG_CLASS_CONTEXT | (12 << 2)),
 		0,
 		&asn_DEF_ext6_41,
@@ -2230,55 +1764,35 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_1[] = {
 		0,
 		"ext6"
 		},
-	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType2, ext7),
-		(ASN_TAG_CLASS_CONTEXT | (13 << 2)),
-		0,
-		&asn_DEF_ext7_47,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext7"
-		},
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType2, ext8),
-		(ASN_TAG_CLASS_CONTEXT | (14 << 2)),
-		0,
-		&asn_DEF_ext8_50,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext8"
-		},
 };
-static int asn_MAP_SystemInformationBlockType2_oms_1[] = { 0, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14 };
+static int asn_MAP_SystemInformationBlockType2_oms_1[] = { 0, 4, 6, 7, 8, 9, 10, 11, 12 };
 static ber_tlv_tag_t asn_DEF_SystemInformationBlockType2_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType2_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ac-BarringInfo at 2611 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* radioResourceConfigCommon at 2615 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ue-TimersAndConstants at 2616 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* freqInfo at 2618 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* mbsfn-SubframeConfigList at 2623 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* timeAlignmentTimerCommon at 2624 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* lateNonCriticalExtension at 2626 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext1 at 2627 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext2 at 2630 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* ext3 at 2632 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* ext4 at 2637 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* ext5 at 2639 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* ext6 at 2643 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* ext7 at 2648 */
-    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 } /* ext8 at 2650 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ac-BarringInfo at 2396 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* radioResourceConfigCommon at 2400 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ue-TimersAndConstants at 2401 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* freqInfo at 2403 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* mbsfn-SubframeConfigList at 2408 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* timeAlignmentTimerCommon at 2409 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* lateNonCriticalExtension at 2411 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext1 at 2412 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext2 at 2415 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* ext3 at 2417 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* ext4 at 2422 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* ext5 at 2424 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 } /* ext6 at 2428 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType2_specs_1 = {
 	sizeof(struct SystemInformationBlockType2),
 	offsetof(struct SystemInformationBlockType2, _asn_ctx),
 	asn_MAP_SystemInformationBlockType2_tag2el_1,
-	15,	/* Count of tags in the map */
+	13,	/* Count of tags in the map */
 	asn_MAP_SystemInformationBlockType2_oms_1,	/* Optional members */
-	2, 9,	/* Root/Additions */
+	2, 7,	/* Root/Additions */
 	5,	/* Start extensions */
-	16	/* Stop extensions */
+	14	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType2 = {
 	"SystemInformationBlockType2",
@@ -2304,7 +1818,7 @@ asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType2 = {
 		/sizeof(asn_DEF_SystemInformationBlockType2_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_SystemInformationBlockType2_1,
-	15,	/* Elements count */
+	13,	/* Elements count */
 	&asn_SPC_SystemInformationBlockType2_specs_1	/* Additional specs */
 };
 

@@ -582,9 +582,9 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-CategoryDL-v1310 at 9776 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ce-ModeA-r13 at 9777 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ce-ModeB-r13 at 9778 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-CategoryDL-v1310 at 8734 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ce-ModeA-r13 at 8735 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ce-ModeB-r13 at 8736 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_4 = {
 	sizeof(struct UE_RadioPagingInfo_r12__ext1),
@@ -650,8 +650,8 @@ static ber_tlv_tag_t asn_DEF_UE_RadioPagingInfo_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UE_RadioPagingInfo_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-Category-v1250 at 9774 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ext1 at 9776 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-Category-v1250 at 8732 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ext1 at 8734 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UE_RadioPagingInfo_r12_specs_1 = {
 	sizeof(struct UE_RadioPagingInfo_r12),

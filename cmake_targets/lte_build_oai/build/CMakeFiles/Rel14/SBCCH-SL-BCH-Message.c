@@ -22,7 +22,7 @@ static ber_tlv_tag_t asn_DEF_SBCCH_SL_BCH_Message_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SBCCH_SL_BCH_Message_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* message at 11050 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* message at 9780 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SBCCH_SL_BCH_Message_specs_1 = {
 	sizeof(struct SBCCH_SL_BCH_Message),

@@ -49,10 +49,10 @@ static ber_tlv_tag_t asn_DEF_CQI_ReportAperiodicProc_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CQI_ReportAperiodicProc_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cqi-ReportModeAperiodic-r11 at 3872 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* trigger01-r11 at 3873 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* trigger10-r11 at 3874 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* trigger11-r11 at 3875 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cqi-ReportModeAperiodic-r11 at 3548 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* trigger01-r11 at 3549 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* trigger10-r11 at 3550 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* trigger11-r11 at 3551 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CQI_ReportAperiodicProc_r11_specs_1 = {
 	sizeof(struct CQI_ReportAperiodicProc_r11),

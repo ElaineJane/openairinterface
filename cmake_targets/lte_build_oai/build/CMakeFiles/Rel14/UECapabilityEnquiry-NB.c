@@ -38,8 +38,8 @@ static asn_TYPE_member_t asn_MBR_c1_4[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_c1_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ueCapabilityEnquiry-r13 at 11735 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* spare1 at 11736 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ueCapabilityEnquiry-r13 at 10355 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* spare1 at 10356 */
 };
 static asn_CHOICE_specifics_t asn_SPC_c1_specs_4 = {
 	sizeof(struct UECapabilityEnquiry_NB__criticalExtensions__c1),
@@ -140,8 +140,8 @@ static asn_TYPE_member_t asn_MBR_criticalExtensions_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_criticalExtensions_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 11735 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 11738 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* c1 at 10355 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensionsFuture at 10358 */
 };
 static asn_CHOICE_specifics_t asn_SPC_criticalExtensions_specs_3 = {
 	sizeof(struct UECapabilityEnquiry_NB__criticalExtensions),
@@ -204,8 +204,8 @@ static ber_tlv_tag_t asn_DEF_UECapabilityEnquiry_NB_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UECapabilityEnquiry_NB_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrc-TransactionIdentifier at 11732 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensions at 11737 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rrc-TransactionIdentifier at 10352 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* criticalExtensions at 10357 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UECapabilityEnquiry_NB_specs_1 = {
 	sizeof(struct UECapabilityEnquiry_NB),

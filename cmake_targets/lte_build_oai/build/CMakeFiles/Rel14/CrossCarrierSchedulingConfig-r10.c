@@ -58,7 +58,7 @@ static ber_tlv_tag_t asn_DEF_own_r10_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_own_r10_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cif-Presence-r10 at 3966 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cif-Presence-r10 at 3620 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_own_r10_specs_3 = {
 	sizeof(struct CrossCarrierSchedulingConfig_r10__schedulingCellInfo_r10__own_r10),
@@ -123,8 +123,8 @@ static ber_tlv_tag_t asn_DEF_other_r10_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_other_r10_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* schedulingCellId-r10 at 3969 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* pdsch-Start-r10 at 3970 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* schedulingCellId-r10 at 3623 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* pdsch-Start-r10 at 3624 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_other_r10_specs_5 = {
 	sizeof(struct CrossCarrierSchedulingConfig_r10__schedulingCellInfo_r10__other_r10),
@@ -185,8 +185,8 @@ static asn_TYPE_member_t asn_MBR_schedulingCellInfo_r10_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_schedulingCellInfo_r10_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* own-r10 at 3967 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* other-r10 at 3969 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* own-r10 at 3621 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* other-r10 at 3623 */
 };
 static asn_CHOICE_specifics_t asn_SPC_schedulingCellInfo_r10_specs_2 = {
 	sizeof(struct CrossCarrierSchedulingConfig_r10__schedulingCellInfo_r10),
@@ -240,7 +240,7 @@ static ber_tlv_tag_t asn_DEF_CrossCarrierSchedulingConfig_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CrossCarrierSchedulingConfig_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* schedulingCellInfo-r10 at 3967 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* schedulingCellInfo-r10 at 3621 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CrossCarrierSchedulingConfig_r10_specs_1 = {
 	sizeof(struct CrossCarrierSchedulingConfig_r10),

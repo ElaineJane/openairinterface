@@ -551,9 +551,9 @@ static ber_tlv_tag_t asn_DEF_CSG_ProximityIndicationParameters_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CSG_ProximityIndicationParameters_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* intraFreqProximityIndication-r9 at 9543 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* interFreqProximityIndication-r9 at 9544 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* utran-ProximityIndication-r9 at 9545 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* intraFreqProximityIndication-r9 at 8584 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* interFreqProximityIndication-r9 at 8585 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* utran-ProximityIndication-r9 at 8586 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CSG_ProximityIndicationParameters_r9_specs_1 = {
 	sizeof(struct CSG_ProximityIndicationParameters_r9),

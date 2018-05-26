@@ -105,8 +105,8 @@ static asn_TYPE_member_t asn_MBR_IP_Address_r13_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_IP_Address_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ipv4-r13 at 6622 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ipv6-r13 at 6623 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ipv4-r13 at 5991 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ipv6-r13 at 5992 */
 };
 static asn_CHOICE_specifics_t asn_SPC_IP_Address_r13_specs_1 = {
 	sizeof(struct IP_Address_r13),

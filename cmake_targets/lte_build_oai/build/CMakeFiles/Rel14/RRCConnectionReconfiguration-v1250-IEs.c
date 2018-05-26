@@ -222,8 +222,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* wlan-OffloadConfigDedicated-r12 at 936 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* t350-r12 at 937 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* wlan-OffloadConfigDedicated-r12 at 889 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* t350-r12 at 890 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct RRCConnectionReconfiguration_v1250_IEs__wlan_OffloadInfo_r12__setup),
@@ -285,8 +285,8 @@ static asn_TYPE_member_t asn_MBR_wlan_OffloadInfo_r12_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_wlan_OffloadInfo_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 934 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 936 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 887 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 889 */
 };
 static asn_CHOICE_specifics_t asn_SPC_wlan_OffloadInfo_r12_specs_2 = {
 	sizeof(struct RRCConnectionReconfiguration_v1250_IEs__wlan_OffloadInfo_r12),
@@ -386,12 +386,12 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionReconfiguration_v1250_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionReconfiguration_v1250_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* wlan-OffloadInfo-r12 at 934 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* scg-Configuration-r12 at 941 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sl-SyncTxControl-r12 at 942 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sl-DiscConfig-r12 at 943 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* sl-CommConfig-r12 at 944 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* nonCriticalExtension at 945 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* wlan-OffloadInfo-r12 at 887 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* scg-Configuration-r12 at 894 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sl-SyncTxControl-r12 at 895 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sl-DiscConfig-r12 at 896 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* sl-CommConfig-r12 at 897 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* nonCriticalExtension at 898 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionReconfiguration_v1250_IEs_specs_1 = {
 	sizeof(struct RRCConnectionReconfiguration_v1250_IEs),

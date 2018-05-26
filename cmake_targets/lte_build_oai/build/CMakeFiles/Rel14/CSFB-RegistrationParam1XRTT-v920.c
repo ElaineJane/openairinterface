@@ -192,7 +192,7 @@ static ber_tlv_tag_t asn_DEF_CSFB_RegistrationParam1XRTT_v920_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CSFB_RegistrationParam1XRTT_v920_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* powerDownReg-r9 at 6911 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* powerDownReg-r9 at 6269 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CSFB_RegistrationParam1XRTT_v920_specs_1 = {
 	sizeof(struct CSFB_RegistrationParam1XRTT_v920),

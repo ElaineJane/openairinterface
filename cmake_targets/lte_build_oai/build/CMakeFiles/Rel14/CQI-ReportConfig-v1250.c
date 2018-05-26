@@ -187,7 +187,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* csi-MeasSubframeSets-r12 at 3702 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* csi-MeasSubframeSets-r12 at 3382 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct CQI_ReportConfig_v1250__csi_SubframePatternConfig_r12__setup),
@@ -248,8 +248,8 @@ static asn_TYPE_member_t asn_MBR_csi_SubframePatternConfig_r12_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_csi_SubframePatternConfig_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3700 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3703 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3380 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3383 */
 };
 static asn_CHOICE_specifics_t asn_SPC_csi_SubframePatternConfig_r12_specs_2 = {
 	sizeof(struct CQI_ReportConfig_v1250__csi_SubframePatternConfig_r12),
@@ -384,10 +384,10 @@ static ber_tlv_tag_t asn_DEF_CQI_ReportConfig_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CQI_ReportConfig_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-SubframePatternConfig-r12 at 3700 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cqi-ReportBoth-v1250 at 3705 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cqi-ReportAperiodic-v1250 at 3706 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* altCQI-Table-r12 at 3708 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-SubframePatternConfig-r12 at 3380 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cqi-ReportBoth-v1250 at 3385 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cqi-ReportAperiodic-v1250 at 3386 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* altCQI-Table-r12 at 3388 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CQI_ReportConfig_v1250_specs_1 = {
 	sizeof(struct CQI_ReportConfig_v1250),

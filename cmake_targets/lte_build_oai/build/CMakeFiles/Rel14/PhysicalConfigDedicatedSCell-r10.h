@@ -16,7 +16,6 @@
 #include <NativeEnumerated.h>
 #include <NULL.h>
 #include <constr_CHOICE.h>
-#include <BOOLEAN.h>
 #include <asn_SEQUENCE_OF.h>
 #include <constr_SEQUENCE_OF.h>
 
@@ -98,16 +97,11 @@ struct TPC_PDCCH_ConfigSCell_r13;
 struct PUSCH_ConfigDedicated_r13;
 struct UplinkPowerControlDedicatedSCell_v1310;
 struct CQI_ReportConfig_v1320;
-struct LAA_SCellConfiguration_v1430;
+struct LAA_SCellConfiguration_v14xy;
 struct SRS_TPC_PDCCH_Config_r14;
-struct UplinkPUSCH_LessPowerControlDedicated_v1430;
-struct PUSCH_ConfigDedicatedSCell_v1430;
-struct CSI_RS_Config_v1430;
-struct CSI_RS_ConfigZP_ApList_r14;
-struct CQI_ReportConfig_v1430;
-struct PDSCH_ConfigDedicatedSCell_v1430;
-struct SoundingRS_AperiodicSet_r14;
-struct SoundingRS_AperiodicSetUpPTsExt_r14;
+struct UplinkPUSCH_LessPowerControlDedicated_v14xy;
+struct SoundingRSAperiodicGroup_r14;
+struct SoundingRSAperiodicGroupUpPTsExt_r14;
 
 /* PhysicalConfigDedicatedSCell-r10 */
 typedef struct PhysicalConfigDedicatedSCell_r10 {
@@ -210,9 +204,9 @@ typedef struct PhysicalConfigDedicatedSCell_r10 {
 		asn_struct_ctx_t _asn_ctx;
 	} *ext5;
 	struct PhysicalConfigDedicatedSCell_r10__ext6 {
-		struct LAA_SCellConfiguration_v1430	*laa_SCellConfiguration_v1430	/* OPTIONAL */;
+		struct LAA_SCellConfiguration_v14xy	*laa_SCellConfiguration_v14xy	/* OPTIONAL */;
 		struct SRS_TPC_PDCCH_Config_r14	*typeB_SRS_TPC_PDCCH_Config_r14	/* OPTIONAL */;
-		struct UplinkPUSCH_LessPowerControlDedicated_v1430	*uplinkPUSCH_LessPowerControlDedicated_v1430	/* OPTIONAL */;
+		struct UplinkPUSCH_LessPowerControlDedicated_v14xy	*uplinkPUSCH_LessPowerControlDedicated_v14xy	/* OPTIONAL */;
 		struct PhysicalConfigDedicatedSCell_r10__ext6__soundingRS_UL_PeriodicConfigDedicatedList_r14 {
 			A_SEQUENCE_OF(struct SoundingRS_UL_ConfigDedicated) list;
 			
@@ -226,17 +220,17 @@ typedef struct PhysicalConfigDedicatedSCell_r10 {
 			asn_struct_ctx_t _asn_ctx;
 		} *soundingRS_UL_PeriodicConfigDedicatedUpPTsExtList_r14;
 		struct PhysicalConfigDedicatedSCell_r10__ext6__soundingRS_UL_AperiodicConfigDedicatedList_r14 {
-			A_SEQUENCE_OF(struct SoundingRS_AperiodicSet_r14) list;
+			A_SEQUENCE_OF(struct SoundingRSAperiodicGroup_r14) list;
 			
 			/* Context for parsing across buffer boundaries */
 			asn_struct_ctx_t _asn_ctx;
 		} *soundingRS_UL_AperiodicConfigDedicatedList_r14;
-		struct PhysicalConfigDedicatedSCell_r10__ext6__soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14 {
-			A_SEQUENCE_OF(struct SoundingRS_AperiodicSetUpPTsExt_r14) list;
+		struct PhysicalConfigDedicatedSCell_r10__ext6__soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14 {
+			A_SEQUENCE_OF(struct SoundingRSAperiodicGroupUpPTsExt_r14) list;
 			
 			/* Context for parsing across buffer boundaries */
 			asn_struct_ctx_t _asn_ctx;
-		} *soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14;
+		} *soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14;
 		struct PhysicalConfigDedicatedSCell_r10__ext6__must_Config_r14 {
 			PhysicalConfigDedicatedSCell_r10__ext6__must_Config_r14_PR present;
 			union PhysicalConfigDedicatedSCell_r10__ext6__must_Config_r14_u {
@@ -253,12 +247,6 @@ typedef struct PhysicalConfigDedicatedSCell_r10 {
 			/* Context for parsing across buffer boundaries */
 			asn_struct_ctx_t _asn_ctx;
 		} *must_Config_r14;
-		struct PUSCH_ConfigDedicatedSCell_v1430	*pusch_ConfigDedicated_v1430	/* OPTIONAL */;
-		struct CSI_RS_Config_v1430	*csi_RS_Config_v1430	/* OPTIONAL */;
-		struct CSI_RS_ConfigZP_ApList_r14	*csi_RS_ConfigZP_ApList_r14	/* OPTIONAL */;
-		struct CQI_ReportConfig_v1430	*cqi_ReportConfig_v1430	/* OPTIONAL */;
-		BOOLEAN_t	*semiOpenLoop_r14	/* OPTIONAL */;
-		struct PDSCH_ConfigDedicatedSCell_v1430	*pdsch_ConfigDedicatedSCell_v1430	/* OPTIONAL */;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
@@ -323,16 +311,11 @@ extern asn_TYPE_descriptor_t asn_DEF_PhysicalConfigDedicatedSCell_r10;
 #include "PUSCH-ConfigDedicated-r13.h"
 #include "UplinkPowerControlDedicatedSCell-v1310.h"
 #include "CQI-ReportConfig-v1320.h"
-#include "LAA-SCellConfiguration-v1430.h"
+#include "LAA-SCellConfiguration-v14xy.h"
 #include "SRS-TPC-PDCCH-Config-r14.h"
-#include "UplinkPUSCH-LessPowerControlDedicated-v1430.h"
-#include "PUSCH-ConfigDedicatedSCell-v1430.h"
-#include "CSI-RS-Config-v1430.h"
-#include "CSI-RS-ConfigZP-ApList-r14.h"
-#include "CQI-ReportConfig-v1430.h"
-#include "PDSCH-ConfigDedicatedSCell-v1430.h"
-#include "SoundingRS-AperiodicSet-r14.h"
-#include "SoundingRS-AperiodicSetUpPTsExt-r14.h"
+#include "UplinkPUSCH-LessPowerControlDedicated-v14xy.h"
+#include "SoundingRSAperiodicGroup-r14.h"
+#include "SoundingRSAperiodicGroupUpPTsExt-r14.h"
 
 #endif	/* _PhysicalConfigDedicatedSCell_r10_H_ */
 #include <asn_internal.h>

@@ -33,8 +33,8 @@ static ber_tlv_tag_t asn_DEF_ul_CA_AssistanceInfo_r11_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ul_CA_AssistanceInfo_r11_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* affectedCarrierFreqCombList-r11 at 382 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* victimSystemType-r11 at 384 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* affectedCarrierFreqCombList-r11 at 356 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* victimSystemType-r11 at 358 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ul_CA_AssistanceInfo_r11_specs_2 = {
 	sizeof(struct InDeviceCoexIndication_v11d0_IEs__ul_CA_AssistanceInfo_r11),
@@ -100,8 +100,8 @@ static ber_tlv_tag_t asn_DEF_InDeviceCoexIndication_v11d0_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_InDeviceCoexIndication_v11d0_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CA-AssistanceInfo-r11 at 382 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 385 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CA-AssistanceInfo-r11 at 356 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 359 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_InDeviceCoexIndication_v11d0_IEs_specs_1 = {
 	sizeof(struct InDeviceCoexIndication_v11d0_IEs),

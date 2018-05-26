@@ -78,13 +78,13 @@ static asn_TYPE_member_t asn_MBR_locationCoordinates_r10_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_locationCoordinates_r10_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ellipsoid-Point-r10 at 7212 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ellipsoidPointWithAltitude-r10 at 7213 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ellipsoidPointWithUncertaintyCircle-r11 at 7215 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ellipsoidPointWithUncertaintyEllipse-r11 at 7216 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ellipsoidPointWithAltitudeAndUncertaintyEllipsoid-r11 at 7217 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ellipsoidArc-r11 at 7218 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* polygon-r11 at 7219 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ellipsoid-Point-r10 at 6546 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ellipsoidPointWithAltitude-r10 at 6547 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ellipsoidPointWithUncertaintyCircle-r11 at 6549 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ellipsoidPointWithUncertaintyEllipse-r11 at 6550 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ellipsoidPointWithAltitudeAndUncertaintyEllipsoid-r11 at 6551 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ellipsoidArc-r11 at 6552 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* polygon-r11 at 6553 */
 };
 static asn_CHOICE_specifics_t asn_SPC_locationCoordinates_r10_specs_2 = {
 	sizeof(struct LocationInfo_r10__locationCoordinates_r10),
@@ -157,9 +157,9 @@ static ber_tlv_tag_t asn_DEF_LocationInfo_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_LocationInfo_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* locationCoordinates-r10 at 7212 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* horizontalVelocity-r10 at 7221 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* gnss-TOD-msec-r10 at 7222 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* locationCoordinates-r10 at 6546 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* horizontalVelocity-r10 at 6555 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* gnss-TOD-msec-r10 at 6556 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_LocationInfo_r10_specs_1 = {
 	sizeof(struct LocationInfo_r10),

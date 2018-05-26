@@ -13,75 +13,10 @@
 
 /* Including external dependencies */
 #include <constr_SEQUENCE.h>
-#include <NativeEnumerated.h>
-#include <BOOLEAN.h>
-#include <NULL.h>
-#include <constr_CHOICE.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-/* Dependencies */
-typedef enum OtherConfig_r9__ext2__powerPrefIndicationTimer_r11 {
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s0	= 0,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s0dot5	= 1,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s1	= 2,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s2	= 3,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s5	= 4,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s10	= 5,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s20	= 6,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s30	= 7,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s60	= 8,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s90	= 9,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s120	= 10,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s300	= 11,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_s600	= 12,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_spare3	= 13,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_spare2	= 14,
-	OtherConfig_r9__ext2__powerPrefIndicationTimer_r11_spare1	= 15
-} e_OtherConfig_r9__ext2__powerPrefIndicationTimer_r11;
-typedef enum OtherConfig_r9__ext2__delayBudgetReportingConfig_r14_PR {
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14_PR_NOTHING,	/* No components present */
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14_PR_release,
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14_PR_setup
-} OtherConfig_r9__ext2__delayBudgetReportingConfig_r14_PR;
-typedef enum OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup__delayBudgetReportingProhibitTimer_r14 {
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup__delayBudgetReportingProhibitTimer_r14_s0	= 0,
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup__delayBudgetReportingProhibitTimer_r14_s0dot4	= 1,
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup__delayBudgetReportingProhibitTimer_r14_s0dot8	= 2,
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup__delayBudgetReportingProhibitTimer_r14_s1dot6	= 3,
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup__delayBudgetReportingProhibitTimer_r14_s3	= 4,
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup__delayBudgetReportingProhibitTimer_r14_s6	= 5,
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup__delayBudgetReportingProhibitTimer_r14_s12	= 6,
-	OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup__delayBudgetReportingProhibitTimer_r14_s30	= 7
-} e_OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup__delayBudgetReportingProhibitTimer_r14;
-typedef enum OtherConfig_r9__ext2__rlm_ReportConfig_r14_PR {
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14_PR_NOTHING,	/* No components present */
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14_PR_release,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14_PR_setup
-} OtherConfig_r9__ext2__rlm_ReportConfig_r14_PR;
-typedef enum OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14 {
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s0	= 0,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s0dot5	= 1,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s1	= 2,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s2	= 3,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s5	= 4,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s10	= 5,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s20	= 6,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s30	= 7,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s60	= 8,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s90	= 9,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s120	= 10,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s300	= 11,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_s600	= 12,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_spare3	= 13,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_spare2	= 14,
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14_spare1	= 15
-} e_OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportTimer_r14;
-typedef enum OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportRep_MPDCCH_r14 {
-	OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportRep_MPDCCH_r14_setup	= 0
-} e_OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup__rlmReportRep_MPDCCH_r14;
 
 /* Forward declarations */
 struct ReportProximityConfig_r9;
@@ -104,54 +39,12 @@ typedef struct OtherConfig_r9 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext1;
-	struct OtherConfig_r9__ext2 {
-		long	*powerPrefIndicationTimer_r11	/* OPTIONAL */;
-		BOOLEAN_t	*sps_AssistanceInfoReport_r14	/* OPTIONAL */;
-		struct OtherConfig_r9__ext2__delayBudgetReportingConfig_r14 {
-			OtherConfig_r9__ext2__delayBudgetReportingConfig_r14_PR present;
-			union OtherConfig_r9__ext2__delayBudgetReportingConfig_r14_u {
-				NULL_t	 release;
-				struct OtherConfig_r9__ext2__delayBudgetReportingConfig_r14__setup {
-					long	 delayBudgetReportingProhibitTimer_r14;
-					
-					/* Context for parsing across buffer boundaries */
-					asn_struct_ctx_t _asn_ctx;
-				} setup;
-			} choice;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *delayBudgetReportingConfig_r14;
-		struct OtherConfig_r9__ext2__rlm_ReportConfig_r14 {
-			OtherConfig_r9__ext2__rlm_ReportConfig_r14_PR present;
-			union OtherConfig_r9__ext2__rlm_ReportConfig_r14_u {
-				NULL_t	 release;
-				struct OtherConfig_r9__ext2__rlm_ReportConfig_r14__setup {
-					long	 rlmReportTimer_r14;
-					long	*rlmReportRep_MPDCCH_r14	/* OPTIONAL */;
-					
-					/* Context for parsing across buffer boundaries */
-					asn_struct_ctx_t _asn_ctx;
-				} setup;
-			} choice;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *rlm_ReportConfig_r14;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext2;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
 } OtherConfig_r9_t;
 
 /* Implementation */
-/* extern asn_TYPE_descriptor_t asn_DEF_powerPrefIndicationTimer_r11_9;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_delayBudgetReportingProhibitTimer_r14_30;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_rlmReportTimer_r14_42;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_rlmReportRep_MPDCCH_r14_59;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_OtherConfig_r9;
 
 #ifdef __cplusplus

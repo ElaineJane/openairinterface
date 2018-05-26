@@ -28,7 +28,7 @@ static ber_tlv_tag_t asn_DEF_steerToWLAN_r13_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_steerToWLAN_r13_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mobilityConfig-r13 at 6074 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* mobilityConfig-r13 at 5484 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_steerToWLAN_r13_specs_3 = {
 	sizeof(struct RCLWI_Config_r13__command__steerToWLAN_r13),
@@ -89,8 +89,8 @@ static asn_TYPE_member_t asn_MBR_command_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_command_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* steerToWLAN-r13 at 6074 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* steerToLTE-r13 at 6075 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* steerToWLAN-r13 at 5484 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* steerToLTE-r13 at 5485 */
 };
 static asn_CHOICE_specifics_t asn_SPC_command_specs_2 = {
 	sizeof(struct RCLWI_Config_r13__command),
@@ -144,7 +144,7 @@ static ber_tlv_tag_t asn_DEF_RCLWI_Config_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RCLWI_Config_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* command at 6074 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* command at 5484 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RCLWI_Config_r13_specs_1 = {
 	sizeof(struct RCLWI_Config_r13),

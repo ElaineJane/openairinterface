@@ -14,8 +14,6 @@
 /* Including external dependencies */
 #include "SCPTMConfiguration-r13.h"
 #include <constr_CHOICE.h>
-#include "SCPTMConfiguration-BR-r14.h"
-#include <NULL.h>
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -32,16 +30,6 @@ typedef enum SC_MCCH_MessageType_r13__c1_PR {
 	SC_MCCH_MessageType_r13__c1_PR_NOTHING,	/* No components present */
 	SC_MCCH_MessageType_r13__c1_PR_scptmConfiguration_r13
 } SC_MCCH_MessageType_r13__c1_PR;
-typedef enum SC_MCCH_MessageType_r13__messageClassExtension_PR {
-	SC_MCCH_MessageType_r13__messageClassExtension_PR_NOTHING,	/* No components present */
-	SC_MCCH_MessageType_r13__messageClassExtension_PR_c2,
-	SC_MCCH_MessageType_r13__messageClassExtension_PR_messageClassExtensionFuture_r14
-} SC_MCCH_MessageType_r13__messageClassExtension_PR;
-typedef enum SC_MCCH_MessageType_r13__messageClassExtension__c2_PR {
-	SC_MCCH_MessageType_r13__messageClassExtension__c2_PR_NOTHING,	/* No components present */
-	SC_MCCH_MessageType_r13__messageClassExtension__c2_PR_scptmConfiguration_BR_r14,
-	SC_MCCH_MessageType_r13__messageClassExtension__c2_PR_spare
-} SC_MCCH_MessageType_r13__messageClassExtension__c2_PR;
 
 /* SC-MCCH-MessageType-r13 */
 typedef struct SC_MCCH_MessageType_r13 {
@@ -57,24 +45,6 @@ typedef struct SC_MCCH_MessageType_r13 {
 			asn_struct_ctx_t _asn_ctx;
 		} c1;
 		struct SC_MCCH_MessageType_r13__messageClassExtension {
-			SC_MCCH_MessageType_r13__messageClassExtension_PR present;
-			union SC_MCCH_MessageType_r13__messageClassExtension_u {
-				struct SC_MCCH_MessageType_r13__messageClassExtension__c2 {
-					SC_MCCH_MessageType_r13__messageClassExtension__c2_PR present;
-					union SC_MCCH_MessageType_r13__messageClassExtension__c2_u {
-						SCPTMConfiguration_BR_r14_t	 scptmConfiguration_BR_r14;
-						NULL_t	 spare;
-					} choice;
-					
-					/* Context for parsing across buffer boundaries */
-					asn_struct_ctx_t _asn_ctx;
-				} c2;
-				struct SC_MCCH_MessageType_r13__messageClassExtension__messageClassExtensionFuture_r14 {
-					
-					/* Context for parsing across buffer boundaries */
-					asn_struct_ctx_t _asn_ctx;
-				} messageClassExtensionFuture_r14;
-			} choice;
 			
 			/* Context for parsing across buffer boundaries */
 			asn_struct_ctx_t _asn_ctx;

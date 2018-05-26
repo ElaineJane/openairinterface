@@ -372,8 +372,8 @@ static ber_tlv_tag_t asn_DEF_MBMS_Parameters_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MBMS_Parameters_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbms-SCell-r11 at 9596 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* mbms-NonServingCell-r11 at 9597 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbms-SCell-r11 at 8624 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* mbms-NonServingCell-r11 at 8625 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MBMS_Parameters_r11_specs_1 = {
 	sizeof(struct MBMS_Parameters_r11),

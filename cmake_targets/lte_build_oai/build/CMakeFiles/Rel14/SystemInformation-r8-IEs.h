@@ -64,7 +64,7 @@ typedef enum SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR {
 	SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib18_v1250,
 	SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib19_v1250,
 	SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib20_v1310,
-	SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib21_v1430
+	SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib21_v14x0
 } SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR;
 
 /* Forward declarations */
@@ -94,7 +94,7 @@ struct SystemInformation_v8a0_IEs;
 				SystemInformationBlockType18_r12_t	 sib18_v1250;
 				SystemInformationBlockType19_r12_t	 sib19_v1250;
 				SystemInformationBlockType20_r13_t	 sib20_v1310;
-				SystemInformationBlockType21_r14_t	 sib21_v1430;
+				SystemInformationBlockType21_r14_t	 sib21_v14x0;
 			};
 
 		struct SystemInformation_r8_IEs__sib_TypeAndInfo__Member {

@@ -8,124 +8,6 @@
 #include "SystemInformationBlockType2-NB-r13.h"
 
 static int
-cp_Reestablishment_r14_13_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	/* Replace with underlying type checker */
-	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
-	return td->check_constraints(td, sptr, ctfailcb, app_key);
-}
-
-/*
- * This type is implemented using NativeEnumerated,
- * so here we adjust the DEF accordingly.
- */
-static void
-cp_Reestablishment_r14_13_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
-	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
-	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
-	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
-	td->der_encoder    = asn_DEF_NativeEnumerated.der_encoder;
-	td->xer_decoder    = asn_DEF_NativeEnumerated.xer_decoder;
-	td->xer_encoder    = asn_DEF_NativeEnumerated.xer_encoder;
-	td->uper_decoder   = asn_DEF_NativeEnumerated.uper_decoder;
-	td->uper_encoder   = asn_DEF_NativeEnumerated.uper_encoder;
-	td->aper_decoder   = asn_DEF_NativeEnumerated.aper_decoder;
-	td->aper_encoder   = asn_DEF_NativeEnumerated.aper_encoder;
-	td->compare        = asn_DEF_NativeEnumerated.compare;
-	if(!td->per_constraints)
-		td->per_constraints = asn_DEF_NativeEnumerated.per_constraints;
-	td->elements       = asn_DEF_NativeEnumerated.elements;
-	td->elements_count = asn_DEF_NativeEnumerated.elements_count;
-     /* td->specifics      = asn_DEF_NativeEnumerated.specifics;	// Defined explicitly */
-}
-
-static void
-cp_Reestablishment_r14_13_free(asn_TYPE_descriptor_t *td,
-		void *struct_ptr, int contents_only) {
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td);
-	td->free_struct(td, struct_ptr, contents_only);
-}
-
-static int
-cp_Reestablishment_r14_13_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
-		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td);
-	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
-}
-
-static asn_dec_rval_t
-cp_Reestablishment_r14_13_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td);
-	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
-}
-
-static asn_enc_rval_t
-cp_Reestablishment_r14_13_encode_der(asn_TYPE_descriptor_t *td,
-		void *structure, int tag_mode, ber_tlv_tag_t tag,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td);
-	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
-}
-
-static asn_dec_rval_t
-cp_Reestablishment_r14_13_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td);
-	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
-}
-
-static asn_enc_rval_t
-cp_Reestablishment_r14_13_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
-		int ilevel, enum xer_encoder_flags_e flags,
-		asn_app_consume_bytes_f *cb, void *app_key) {
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td);
-	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
-}
-
-static asn_dec_rval_t
-cp_Reestablishment_r14_13_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td);
-	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static asn_enc_rval_t
-cp_Reestablishment_r14_13_encode_uper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td);
-	return td->uper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_enc_rval_t
-cp_Reestablishment_r14_13_encode_aper(asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints,
-		void *structure, asn_per_outp_t *per_out) {
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td);
-	return td->aper_encoder(td, constraints, structure, per_out);
-}
-
-static asn_comp_rval_t * 
-cp_Reestablishment_r14_13_compare(asn_TYPE_descriptor_t *td1,
-		const void *structure1,
-		asn_TYPE_descriptor_t *td2,
-		const void *structure2) {
-	asn_comp_rval_t * res  = NULL;
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td1);
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td2);
-	res = td1->compare(td1, structure1, td2, structure2);
-	return res;
-}
-
-static asn_dec_rval_t
-cp_Reestablishment_r14_13_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
-		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	cp_Reestablishment_r14_13_inherit_TYPE_descriptor(td);
-	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
-}
-
-static int
 memb_multiBandInfoList_r13_constraint_1(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	size_t size;
@@ -154,11 +36,6 @@ memb_multiBandInfoList_r13_constraint_1(asn_TYPE_descriptor_t *td, const void *s
 static asn_per_constraints_t asn_PER_type_multiBandInfoList_r13_constr_8 GCC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 3,  3,  1,  8 }	/* (SIZE(1..8)) */,
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_type_cp_Reestablishment_r14_constr_13 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
 static asn_per_constraints_t asn_PER_memb_multiBandInfoList_r13_constr_8 GCC_NOTUSED = {
@@ -192,8 +69,8 @@ static ber_tlv_tag_t asn_DEF_freqInfo_r13_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_freqInfo_r13_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq-r13 at 11782 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* additionalSpectrumEmission-r13 at 11784 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq-r13 at 10402 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* additionalSpectrumEmission-r13 at 10404 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_freqInfo_r13_specs_4 = {
 	sizeof(struct SystemInformationBlockType2_NB_r13__freqInfo_r13),
@@ -283,111 +160,6 @@ asn_TYPE_descriptor_t asn_DEF_multiBandInfoList_r13_8 = {
 	&asn_SPC_multiBandInfoList_r13_specs_8	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_cp_Reestablishment_r14_value2enum_13[] = {
-	{ 0,	4,	"true" }
-};
-static unsigned int asn_MAP_cp_Reestablishment_r14_enum2value_13[] = {
-	0	/* true(0) */
-};
-static asn_INTEGER_specifics_t asn_SPC_cp_Reestablishment_r14_specs_13 = {
-	asn_MAP_cp_Reestablishment_r14_value2enum_13,	/* "tag" => N; sorted by tag */
-	asn_MAP_cp_Reestablishment_r14_enum2value_13,	/* N => "tag"; sorted by N */
-	1,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_cp_Reestablishment_r14_tags_13[] = {
-	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_cp_Reestablishment_r14_13 = {
-	"cp-Reestablishment-r14",
-	"cp-Reestablishment-r14",
-	cp_Reestablishment_r14_13_free,
-	cp_Reestablishment_r14_13_print,
-	cp_Reestablishment_r14_13_constraint,
-	cp_Reestablishment_r14_13_decode_ber,
-	cp_Reestablishment_r14_13_encode_der,
-	cp_Reestablishment_r14_13_decode_xer,
-	cp_Reestablishment_r14_13_encode_xer,
-	cp_Reestablishment_r14_13_decode_uper,
-	cp_Reestablishment_r14_13_encode_uper,
-	cp_Reestablishment_r14_13_decode_aper,
-	cp_Reestablishment_r14_13_encode_aper,
-	cp_Reestablishment_r14_13_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_cp_Reestablishment_r14_tags_13,
-	sizeof(asn_DEF_cp_Reestablishment_r14_tags_13)
-		/sizeof(asn_DEF_cp_Reestablishment_r14_tags_13[0]) - 1, /* 1 */
-	asn_DEF_cp_Reestablishment_r14_tags_13,	/* Same as above */
-	sizeof(asn_DEF_cp_Reestablishment_r14_tags_13)
-		/sizeof(asn_DEF_cp_Reestablishment_r14_tags_13[0]), /* 2 */
-	&asn_PER_type_cp_Reestablishment_r14_constr_13,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_cp_Reestablishment_r14_specs_13	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext1_12[] = {
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType2_NB_r13__ext1, cp_Reestablishment_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_cp_Reestablishment_r14_13,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"cp-Reestablishment-r14"
-		},
-};
-static int asn_MAP_ext1_oms_12[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext1_tags_12[] = {
-	(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cp-Reestablishment-r14 at 11789 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_12 = {
-	sizeof(struct SystemInformationBlockType2_NB_r13__ext1),
-	offsetof(struct SystemInformationBlockType2_NB_r13__ext1, _asn_ctx),
-	asn_MAP_ext1_tag2el_12,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext1_oms_12,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext1_12 = {
-	"ext1",
-	"ext1",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext1_tags_12,
-	sizeof(asn_DEF_ext1_tags_12)
-		/sizeof(asn_DEF_ext1_tags_12[0]) - 1, /* 1 */
-	asn_DEF_ext1_tags_12,	/* Same as above */
-	sizeof(asn_DEF_ext1_tags_12)
-		/sizeof(asn_DEF_ext1_tags_12[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext1_12,
-	1,	/* Elements count */
-	&asn_SPC_ext1_specs_12	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_NB_r13_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct SystemInformationBlockType2_NB_r13, radioResourceConfigCommon_r13),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -425,7 +197,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_NB_r13_1[] = {
 		0,
 		"timeAlignmentTimerCommon-r13"
 		},
-	{ ATF_POINTER, 3, offsetof(struct SystemInformationBlockType2_NB_r13, multiBandInfoList_r13),
+	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType2_NB_r13, multiBandInfoList_r13),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		0,
 		&asn_DEF_multiBandInfoList_r13_8,
@@ -434,7 +206,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_NB_r13_1[] = {
 		0,
 		"multiBandInfoList-r13"
 		},
-	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType2_NB_r13, lateNonCriticalExtension),
+	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType2_NB_r13, lateNonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -443,38 +215,28 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType2_NB_r13_1[] = {
 		0,
 		"lateNonCriticalExtension"
 		},
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType2_NB_r13, ext1),
-		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
-		0,
-		&asn_DEF_ext1_12,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext1"
-		},
 };
-static int asn_MAP_SystemInformationBlockType2_NB_r13_oms_1[] = { 4, 5, 6 };
+static int asn_MAP_SystemInformationBlockType2_NB_r13_oms_1[] = { 4, 5 };
 static ber_tlv_tag_t asn_DEF_SystemInformationBlockType2_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType2_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* radioResourceConfigCommon-r13 at 11779 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ue-TimersAndConstants-r13 at 11780 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* freqInfo-r13 at 11782 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* timeAlignmentTimerCommon-r13 at 11785 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* multiBandInfoList-r13 at 11786 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* lateNonCriticalExtension at 11787 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext1 at 11789 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* radioResourceConfigCommon-r13 at 10399 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ue-TimersAndConstants-r13 at 10400 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* freqInfo-r13 at 10402 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* timeAlignmentTimerCommon-r13 at 10405 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* multiBandInfoList-r13 at 10406 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* lateNonCriticalExtension at 10407 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType2_NB_r13_specs_1 = {
 	sizeof(struct SystemInformationBlockType2_NB_r13),
 	offsetof(struct SystemInformationBlockType2_NB_r13, _asn_ctx),
 	asn_MAP_SystemInformationBlockType2_NB_r13_tag2el_1,
-	7,	/* Count of tags in the map */
+	6,	/* Count of tags in the map */
 	asn_MAP_SystemInformationBlockType2_NB_r13_oms_1,	/* Optional members */
-	2, 1,	/* Root/Additions */
+	2, 0,	/* Root/Additions */
 	5,	/* Start extensions */
-	8	/* Stop extensions */
+	7	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType2_NB_r13 = {
 	"SystemInformationBlockType2-NB-r13",
@@ -500,7 +262,7 @@ asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType2_NB_r13 = {
 		/sizeof(asn_DEF_SystemInformationBlockType2_NB_r13_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_SystemInformationBlockType2_NB_r13_1,
-	7,	/* Elements count */
+	6,	/* Elements count */
 	&asn_SPC_SystemInformationBlockType2_NB_r13_specs_1	/* Additional specs */
 };
 

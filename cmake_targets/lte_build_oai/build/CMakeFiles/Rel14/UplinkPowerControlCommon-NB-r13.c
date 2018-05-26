@@ -284,9 +284,9 @@ static ber_tlv_tag_t asn_DEF_UplinkPowerControlCommon_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UplinkPowerControlCommon_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p0-NominalNPUSCH-r13 at 12508 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* alpha-r13 at 12509 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* deltaPreambleMsg3-r13 at 12510 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p0-NominalNPUSCH-r13 at 10884 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* alpha-r13 at 10885 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* deltaPreambleMsg3-r13 at 10886 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UplinkPowerControlCommon_NB_r13_specs_1 = {
 	sizeof(struct UplinkPowerControlCommon_NB_r13),

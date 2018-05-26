@@ -385,9 +385,9 @@ static ber_tlv_tag_t asn_DEF_IntraBandContiguousCC_Info_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_IntraBandContiguousCC_Info_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fourLayerTM3-TM4-perCC-r12 at 9314 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedMIMO-CapabilityDL-r12 at 9315 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* supportedCSI-Proc-r12 at 9316 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fourLayerTM3-TM4-perCC-r12 at 8365 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedMIMO-CapabilityDL-r12 at 8366 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* supportedCSI-Proc-r12 at 8367 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_IntraBandContiguousCC_Info_r12_specs_1 = {
 	sizeof(struct IntraBandContiguousCC_Info_r12),

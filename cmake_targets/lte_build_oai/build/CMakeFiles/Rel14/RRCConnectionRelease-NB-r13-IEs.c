@@ -37,6 +37,47 @@ static asn_per_constraints_t asn_PER_memb_extendedWaitTime_r13_constr_4 GCC_NOTU
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
+static ber_tlv_tag_t asn_DEF_nonCriticalExtension_tags_7[] = {
+	(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static asn_SEQUENCE_specifics_t asn_SPC_nonCriticalExtension_specs_7 = {
+	sizeof(struct RRCConnectionRelease_NB_r13_IEs__nonCriticalExtension),
+	offsetof(struct RRCConnectionRelease_NB_r13_IEs__nonCriticalExtension, _asn_ctx),
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* Start extensions */
+	-1	/* Stop extensions */
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_nonCriticalExtension_7 = {
+	"nonCriticalExtension",
+	"nonCriticalExtension",
+	SEQUENCE_free,
+	SEQUENCE_print,
+	SEQUENCE_constraint,
+	SEQUENCE_decode_ber,
+	SEQUENCE_encode_der,
+	SEQUENCE_decode_xer,
+	SEQUENCE_encode_xer,
+	SEQUENCE_decode_uper,
+	SEQUENCE_encode_uper,
+	SEQUENCE_decode_aper,
+	SEQUENCE_encode_aper,
+	SEQUENCE_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_nonCriticalExtension_tags_7,
+	sizeof(asn_DEF_nonCriticalExtension_tags_7)
+		/sizeof(asn_DEF_nonCriticalExtension_tags_7[0]) - 1, /* 1 */
+	asn_DEF_nonCriticalExtension_tags_7,	/* Same as above */
+	sizeof(asn_DEF_nonCriticalExtension_tags_7)
+		/sizeof(asn_DEF_nonCriticalExtension_tags_7[0]), /* 2 */
+	0,	/* No PER visible constraints */
+	0, 0,	/* No members */
+	&asn_SPC_nonCriticalExtension_specs_7	/* Additional specs */
+};
+
 static asn_TYPE_member_t asn_MBR_RRCConnectionRelease_NB_r13_IEs_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct RRCConnectionRelease_NB_r13_IEs, releaseCause_r13),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -85,8 +126,8 @@ static asn_TYPE_member_t asn_MBR_RRCConnectionRelease_NB_r13_IEs_1[] = {
 		},
 	{ ATF_POINTER, 1, offsetof(struct RRCConnectionRelease_NB_r13_IEs, nonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_RRCConnectionRelease_NB_v1430_IEs,
+		0,
+		&asn_DEF_nonCriticalExtension_7,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -98,12 +139,12 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionRelease_NB_r13_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionRelease_NB_r13_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* releaseCause-r13 at 11477 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* resumeIdentity-r13 at 11478 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* extendedWaitTime-r13 at 11479 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* redirectedCarrierInfo-r13 at 11480 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* lateNonCriticalExtension at 11481 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* nonCriticalExtension at 11482 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* releaseCause-r13 at 10147 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* resumeIdentity-r13 at 10148 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* extendedWaitTime-r13 at 10149 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* redirectedCarrierInfo-r13 at 10150 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* lateNonCriticalExtension at 10151 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* nonCriticalExtension at 10152 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionRelease_NB_r13_IEs_specs_1 = {
 	sizeof(struct RRCConnectionRelease_NB_r13_IEs),

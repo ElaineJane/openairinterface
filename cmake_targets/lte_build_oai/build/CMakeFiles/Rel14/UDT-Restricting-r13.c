@@ -386,8 +386,8 @@ static ber_tlv_tag_t asn_DEF_UDT_Restricting_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UDT_Restricting_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* udt-Restricting-r13 at 2721 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* udt-RestrictingTime-r13 at 2722 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* udt-Restricting-r13 at 2499 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* udt-RestrictingTime-r13 at 2500 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UDT_Restricting_r13_specs_1 = {
 	sizeof(struct UDT_Restricting_r13),

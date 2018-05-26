@@ -40,9 +40,9 @@ static ber_tlv_tag_t asn_DEF_AdditionalReestabInfo_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_AdditionalReestabInfo_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellIdentity at 13625 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* key-eNodeB-Star at 13626 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* shortMAC-I at 13628 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellIdentity at 11828 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* key-eNodeB-Star at 11829 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* shortMAC-I at 11831 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_AdditionalReestabInfo_specs_1 = {
 	sizeof(struct AdditionalReestabInfo),

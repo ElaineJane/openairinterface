@@ -248,9 +248,9 @@ static ber_tlv_tag_t asn_DEF_Inband_DifferentPCI_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_Inband_DifferentPCI_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eutra-NumCRS-Ports-r13 at 11313 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rasterOffset-r13 at 11314 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* spare at 11315 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eutra-NumCRS-Ports-r13 at 10003 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rasterOffset-r13 at 10004 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* spare at 10005 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_Inband_DifferentPCI_NB_r13_specs_1 = {
 	sizeof(struct Inband_DifferentPCI_NB_r13),

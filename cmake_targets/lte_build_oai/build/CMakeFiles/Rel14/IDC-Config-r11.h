@@ -46,9 +46,6 @@ typedef enum IDC_Config_r11__autonomousDenialParameters_r11__autonomousDenialVal
 typedef enum IDC_Config_r11__ext1__idc_Indication_UL_CA_r11 {
 	IDC_Config_r11__ext1__idc_Indication_UL_CA_r11_setup	= 0
 } e_IDC_Config_r11__ext1__idc_Indication_UL_CA_r11;
-typedef enum IDC_Config_r11__ext2__idc_HardwareSharingIndication_r13 {
-	IDC_Config_r11__ext2__idc_HardwareSharingIndication_r13_setup	= 0
-} e_IDC_Config_r11__ext2__idc_HardwareSharingIndication_r13;
 
 /* IDC-Config-r11 */
 typedef struct IDC_Config_r11 {
@@ -70,12 +67,6 @@ typedef struct IDC_Config_r11 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext1;
-	struct IDC_Config_r11__ext2 {
-		long	*idc_HardwareSharingIndication_r13	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext2;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -86,7 +77,6 @@ typedef struct IDC_Config_r11 {
 /* extern asn_TYPE_descriptor_t asn_DEF_autonomousDenialSubframes_r11_5;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_autonomousDenialValidity_r11_14;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_idc_Indication_UL_CA_r11_25;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_idc_HardwareSharingIndication_r13_28;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_IDC_Config_r11;
 
 #ifdef __cplusplus

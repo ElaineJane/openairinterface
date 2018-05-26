@@ -20,7 +20,6 @@
 #include "RSRQ-Range.h"
 #include <constr_SEQUENCE.h>
 #include "RSRQ-Range-v1250.h"
-#include "RSRP-Range-v1360.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -73,12 +72,6 @@ typedef struct ConnEstFailReport_r11 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext1;
-	struct ConnEstFailReport_r11__ext2 {
-		RSRP_Range_v1360_t	*measResultFailedCell_v1360	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext2;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

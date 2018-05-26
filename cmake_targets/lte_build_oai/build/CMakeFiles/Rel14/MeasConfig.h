@@ -54,8 +54,6 @@ struct MeasObjectToRemoveListExt_r13;
 struct MeasObjectToAddModListExt_r13;
 struct MeasIdToAddModList_v1310;
 struct MeasIdToAddModListExt_v1310;
-struct MeasGapConfigPerCC_List_r14;
-struct MeasGapSharingConfig_r14;
 
 /* MeasConfig */
 typedef struct MeasConfig {
@@ -128,13 +126,6 @@ typedef struct MeasConfig {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext4;
-	struct MeasConfig__ext5 {
-		struct MeasGapConfigPerCC_List_r14	*measGapConfigPerCC_List_r14	/* OPTIONAL */;
-		struct MeasGapSharingConfig_r14	*measGapSharingConfig_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext5;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -164,8 +155,6 @@ extern asn_TYPE_descriptor_t asn_DEF_MeasConfig;
 #include "MeasObjectToAddModListExt-r13.h"
 #include "MeasIdToAddModList-v1310.h"
 #include "MeasIdToAddModListExt-v1310.h"
-#include "MeasGapConfigPerCC-List-r14.h"
-#include "MeasGapSharingConfig-r14.h"
 
 #endif	/* _MeasConfig_H_ */
 #include <asn_internal.h>

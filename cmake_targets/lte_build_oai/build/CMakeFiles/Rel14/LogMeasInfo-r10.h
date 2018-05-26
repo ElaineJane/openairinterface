@@ -19,7 +19,6 @@
 #include <constr_SEQUENCE.h>
 #include "RSRQ-Range-v1250.h"
 #include <NativeEnumerated.h>
-#include "RSRP-Range-v1360.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -87,12 +86,6 @@ typedef struct LogMeasInfo_r10 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext3;
-	struct LogMeasInfo_r10__ext4 {
-		RSRP_Range_v1360_t	*measResultServCell_v1360	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext4;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

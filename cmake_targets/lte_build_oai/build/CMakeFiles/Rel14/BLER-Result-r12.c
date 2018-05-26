@@ -104,8 +104,8 @@ static ber_tlv_tag_t asn_DEF_blocksReceived_r12_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_blocksReceived_r12_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* n-r12 at 2496 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* m-r12 at 2497 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* n-r12 at 2288 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* m-r12 at 2289 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_blocksReceived_r12_specs_3 = {
 	sizeof(struct BLER_Result_r12__blocksReceived_r12),
@@ -169,8 +169,8 @@ static ber_tlv_tag_t asn_DEF_BLER_Result_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_BLER_Result_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bler-r12 at 2494 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* blocksReceived-r12 at 2496 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bler-r12 at 2286 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* blocksReceived-r12 at 2288 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_BLER_Result_r12_specs_1 = {
 	sizeof(struct BLER_Result_r12),

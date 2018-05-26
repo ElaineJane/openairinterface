@@ -63,8 +63,8 @@ static asn_TYPE_member_t asn_MBR_PLMN_IdentityInfo2_r12_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_PLMN_IdentityInfo2_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-Index-r12 at 3489 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* plmnIdentity-r12 at 3491 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-Index-r12 at 3229 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* plmnIdentity-r12 at 3231 */
 };
 static asn_CHOICE_specifics_t asn_SPC_PLMN_IdentityInfo2_r12_specs_1 = {
 	sizeof(struct PLMN_IdentityInfo2_r12),

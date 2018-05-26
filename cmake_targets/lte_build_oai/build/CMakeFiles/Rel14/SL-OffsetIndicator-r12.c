@@ -93,8 +93,8 @@ static asn_TYPE_member_t asn_MBR_SL_OffsetIndicator_r12_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_OffsetIndicator_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* small-r12 at 10590 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* large-r12 at 10591 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* small-r12 at 9360 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* large-r12 at 9361 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SL_OffsetIndicator_r12_specs_1 = {
 	sizeof(struct SL_OffsetIndicator_r12),

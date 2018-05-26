@@ -105,8 +105,8 @@ static asn_TYPE_member_t asn_MBR_DL_Bitmap_NB_r13_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_DL_Bitmap_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframePattern10-r13 at 12124 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* subframePattern40-r13 at 12125 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframePattern10-r13 at 10553 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* subframePattern40-r13 at 10554 */
 };
 static asn_CHOICE_specifics_t asn_SPC_DL_Bitmap_NB_r13_specs_1 = {
 	sizeof(struct DL_Bitmap_NB_r13),

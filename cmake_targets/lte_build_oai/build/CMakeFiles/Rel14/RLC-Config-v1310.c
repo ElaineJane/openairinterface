@@ -41,9 +41,9 @@ static ber_tlv_tag_t asn_DEF_RLC_Config_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RLC_Config_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-extended-RLC-AM-SN-r13 at 6105 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* dl-extended-RLC-AM-SN-r13 at 6106 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* pollPDU-v1310 at 6107 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-extended-RLC-AM-SN-r13 at 5515 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* dl-extended-RLC-AM-SN-r13 at 5516 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* pollPDU-v1310 at 5517 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RLC_Config_v1310_specs_1 = {
 	sizeof(struct RLC_Config_v1310),

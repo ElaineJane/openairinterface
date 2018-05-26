@@ -295,8 +295,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nzp-resourceConfigList-r13 at 4224 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cdmType-r13 at 4225 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nzp-resourceConfigList-r13 at 3800 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cdmType-r13 at 3801 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct CSI_RS_ConfigNZP_EMIMO_r13__setup),
@@ -358,8 +358,8 @@ static asn_TYPE_member_t asn_MBR_CSI_RS_ConfigNZP_EMIMO_r13_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_CSI_RS_ConfigNZP_EMIMO_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4222 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4224 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3798 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3800 */
 };
 static asn_CHOICE_specifics_t asn_SPC_CSI_RS_ConfigNZP_EMIMO_r13_specs_1 = {
 	sizeof(struct CSI_RS_ConfigNZP_EMIMO_r13),

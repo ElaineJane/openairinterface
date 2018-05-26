@@ -372,8 +372,8 @@ static ber_tlv_tag_t asn_DEF_PDCP_Parameters_v1130_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PDCP_Parameters_v1130_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pdcp-SN-Extension-r11 at 8786 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* supportRohcContextContinue-r11 at 8787 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pdcp-SN-Extension-r11 at 7953 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* supportRohcContextContinue-r11 at 7954 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PDCP_Parameters_v1130_specs_1 = {
 	sizeof(struct PDCP_Parameters_v1130),

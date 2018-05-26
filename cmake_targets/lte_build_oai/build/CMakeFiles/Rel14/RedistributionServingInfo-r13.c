@@ -604,10 +604,10 @@ static ber_tlv_tag_t asn_DEF_RedistributionServingInfo_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RedistributionServingInfo_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* redistributionFactorServing-r13 at 2800 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* redistributionFactorCell-r13 at 2801 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* t360-r13 at 2802 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* redistrOnPagingOnly-r13 at 2804 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* redistributionFactorServing-r13 at 2574 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* redistributionFactorCell-r13 at 2575 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* t360-r13 at 2576 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* redistrOnPagingOnly-r13 at 2578 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RedistributionServingInfo_r13_specs_1 = {
 	sizeof(struct RedistributionServingInfo_r13),

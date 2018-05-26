@@ -222,10 +222,10 @@ static ber_tlv_tag_t asn_DEF_E_CSFB_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_E_CSFB_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* messageContCDMA2000-1XRTT-r9 at 748 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mobilityCDMA2000-HRPD-r9 at 750 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* messageContCDMA2000-HRPD-r9 at 752 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* redirectCarrierCDMA2000-HRPD-r9 at 753 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* messageContCDMA2000-1XRTT-r9 at 701 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mobilityCDMA2000-HRPD-r9 at 703 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* messageContCDMA2000-HRPD-r9 at 705 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* redirectCarrierCDMA2000-HRPD-r9 at 706 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_E_CSFB_r9_specs_1 = {
 	sizeof(struct E_CSFB_r9),

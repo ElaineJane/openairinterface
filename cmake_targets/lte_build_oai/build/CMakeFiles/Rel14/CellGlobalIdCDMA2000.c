@@ -105,8 +105,8 @@ static asn_TYPE_member_t asn_MBR_CellGlobalIdCDMA2000_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_CellGlobalIdCDMA2000_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellGlobalId1XRTT at 6935 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cellGlobalIdHRPD at 6936 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellGlobalId1XRTT at 6293 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cellGlobalIdHRPD at 6294 */
 };
 static asn_CHOICE_specifics_t asn_SPC_CellGlobalIdCDMA2000_specs_1 = {
 	sizeof(struct CellGlobalIdCDMA2000),

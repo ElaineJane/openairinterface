@@ -440,7 +440,7 @@ memb_soundingRS_UL_AperiodicConfigDedicatedList_r14_constraint_59(asn_TYPE_descr
 }
 
 static int
-memb_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_constraint_59(asn_TYPE_descriptor_t *td, const void *sptr,
+memb_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_constraint_59(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	size_t size;
 	
@@ -490,7 +490,7 @@ static asn_per_constraints_t asn_PER_type_soundingRS_UL_AperiodicConfigDedicated
 	{ APC_CONSTRAINED,	 1,  1,  1,  2 }	/* (SIZE(1..2)) */,
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_constr_69 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_constr_69 GCC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 2,  2,  1,  4 }	/* (SIZE(1..4)) */,
 	0, 0	/* No PER value map */
@@ -525,7 +525,7 @@ static asn_per_constraints_t asn_PER_memb_soundingRS_UL_AperiodicConfigDedicated
 	{ APC_CONSTRAINED,	 1,  1,  1,  2 }	/* (SIZE(1..2)) */,
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_memb_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_constr_69 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_memb_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_constr_69 GCC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 2,  2,  1,  4 }	/* (SIZE(1..4)) */,
 	0, 0	/* No PER value map */
@@ -574,10 +574,10 @@ static ber_tlv_tag_t asn_DEF_nonUL_Configuration_r10_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_nonUL_Configuration_r10_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* antennaInfo-r10 at 5003 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* crossCarrierSchedulingConfig-r10 at 5005 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* csi-RS-Config-r10 at 5006 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* pdsch-ConfigDedicated-r10 at 5007 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* antennaInfo-r10 at 4494 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* crossCarrierSchedulingConfig-r10 at 4496 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* csi-RS-Config-r10 at 4497 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* pdsch-ConfigDedicated-r10 at 4498 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_nonUL_Configuration_r10_specs_2 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__nonUL_Configuration_r10),
@@ -689,13 +689,13 @@ static ber_tlv_tag_t asn_DEF_ul_Configuration_r10_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ul_Configuration_r10_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* antennaInfoUL-r10 at 5011 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pusch-ConfigDedicatedSCell-r10 at 5013 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* uplinkPowerControlDedicatedSCell-r10 at 5015 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* cqi-ReportConfigSCell-r10 at 5016 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* soundingRS-UL-ConfigDedicated-r10 at 5018 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* soundingRS-UL-ConfigDedicated-v1020 at 5020 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* soundingRS-UL-ConfigDedicatedAperiodic-r10 at 5022 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* antennaInfoUL-r10 at 4502 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pusch-ConfigDedicatedSCell-r10 at 4504 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* uplinkPowerControlDedicatedSCell-r10 at 4506 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* cqi-ReportConfigSCell-r10 at 4507 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* soundingRS-UL-ConfigDedicated-r10 at 4509 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* soundingRS-UL-ConfigDedicated-v1020 at 4511 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* soundingRS-UL-ConfigDedicatedAperiodic-r10 at 4513 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ul_Configuration_r10_specs_7 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ul_Configuration_r10),
@@ -825,15 +825,15 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_16[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_16[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-RS-ConfigNZPToReleaseList-r11 at 5027 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-RS-ConfigNZPToAddModList-r11 at 5029 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* csi-RS-ConfigZPToReleaseList-r11 at 5031 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* csi-RS-ConfigZPToAddModList-r11 at 5033 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* epdcch-Config-r11 at 5034 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pdsch-ConfigDedicated-v1130 at 5035 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* cqi-ReportConfig-v1130 at 5037 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* pusch-ConfigDedicated-v1130 at 5039 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* uplinkPowerControlDedicatedSCell-v1130 at 5041 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-RS-ConfigNZPToReleaseList-r11 at 4518 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-RS-ConfigNZPToAddModList-r11 at 4520 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* csi-RS-ConfigZPToReleaseList-r11 at 4522 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* csi-RS-ConfigZPToAddModList-r11 at 4524 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* epdcch-Config-r11 at 4525 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pdsch-ConfigDedicated-v1130 at 4526 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* cqi-ReportConfig-v1130 at 4528 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* pusch-ConfigDedicated-v1130 at 4530 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* uplinkPowerControlDedicatedSCell-v1130 at 4532 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_16 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext1),
@@ -927,11 +927,11 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_26[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_26[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* antennaInfo-v1250 at 5043 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eimta-MainConfigSCell-r12 at 5045 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cqi-ReportConfigSCell-v1250 at 5046 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* uplinkPowerControlDedicatedSCell-v1250 at 5048 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* csi-RS-Config-v1250 at 5049 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* antennaInfo-v1250 at 4534 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eimta-MainConfigSCell-r12 at 4536 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cqi-ReportConfigSCell-v1250 at 4537 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* uplinkPowerControlDedicatedSCell-v1250 at 4539 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* csi-RS-Config-v1250 at 4540 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_26 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext2),
@@ -989,7 +989,7 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_32[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_32[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pdsch-ConfigDedicated-v1280 at 5051 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pdsch-ConfigDedicated-v1280 at 4542 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_32 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext3),
@@ -1130,11 +1130,11 @@ static ber_tlv_tag_t asn_DEF_setup_tags_39[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_39[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pucch-ConfigDedicated-r13 at 5058 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* schedulingRequestConfig-r13 at 5060 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* tpc-PDCCH-ConfigPUCCH-SCell-r13 at 5062 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* pusch-ConfigDedicated-r13 at 5064 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* uplinkPowerControlDedicated-r13 at 5066 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pucch-ConfigDedicated-r13 at 4549 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* schedulingRequestConfig-r13 at 4551 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* tpc-PDCCH-ConfigPUCCH-SCell-r13 at 4553 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* pusch-ConfigDedicated-r13 at 4555 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* uplinkPowerControlDedicated-r13 at 4557 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_39 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext4__pucch_SCell__setup),
@@ -1196,8 +1196,8 @@ static asn_TYPE_member_t asn_MBR_pucch_SCell_37[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_pucch_SCell_tag2el_37[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5055 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5058 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4546 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4549 */
 };
 static asn_CHOICE_specifics_t asn_SPC_pucch_SCell_specs_37 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext4__pucch_SCell),
@@ -1370,20 +1370,20 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_34[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_34[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pucch-Cell-r13 at 5053 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pucch-SCell at 5055 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* crossCarrierSchedulingConfig-r13 at 5070 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* pdcch-ConfigSCell-r13 at 5071 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* cqi-ReportConfig-v1310 at 5072 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pdsch-ConfigDedicated-v1310 at 5073 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* soundingRS-UL-ConfigDedicated-v1310 at 5075 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* soundingRS-UL-ConfigDedicatedUpPTsExt-r13 at 5077 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* soundingRS-UL-ConfigDedicatedAperiodic-v1310 at 5079 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* soundingRS-UL-ConfigDedicatedAperiodicUpPTsExt-r13 at 5081 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* csi-RS-Config-v1310 at 5082 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* laa-SCellConfiguration-r13 at 5083 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* csi-RS-ConfigNZPToAddModListExt-r13 at 5084 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 } /* csi-RS-ConfigNZPToReleaseListExt-r13 at 5085 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pucch-Cell-r13 at 4544 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pucch-SCell at 4546 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* crossCarrierSchedulingConfig-r13 at 4561 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* pdcch-ConfigSCell-r13 at 4562 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* cqi-ReportConfig-v1310 at 4563 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pdsch-ConfigDedicated-v1310 at 4564 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* soundingRS-UL-ConfigDedicated-v1310 at 4566 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* soundingRS-UL-ConfigDedicatedUpPTsExt-r13 at 4568 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* soundingRS-UL-ConfigDedicatedAperiodic-v1310 at 4570 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* soundingRS-UL-ConfigDedicatedAperiodicUpPTsExt-r13 at 4572 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* csi-RS-Config-v1310 at 4573 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* laa-SCellConfiguration-r13 at 4574 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* csi-RS-ConfigNZPToAddModListExt-r13 at 4575 */
+    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 } /* csi-RS-ConfigNZPToReleaseListExt-r13 at 4576 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_34 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext4),
@@ -1441,7 +1441,7 @@ static ber_tlv_tag_t asn_DEF_ext5_tags_57[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_57[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cqi-ReportConfig-v1320 at 5087 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cqi-ReportConfig-v1320 at 4578 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_57 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext5),
@@ -1584,7 +1584,7 @@ static asn_TYPE_member_t asn_MBR_soundingRS_UL_AperiodicConfigDedicatedList_r14_
 	{ ATF_POINTER, 0, 0,
 		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
 		0,
-		&asn_DEF_SoundingRS_AperiodicSet_r14,
+		&asn_DEF_SoundingRSAperiodicGroup_r14,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -1629,30 +1629,30 @@ asn_TYPE_descriptor_t asn_DEF_soundingRS_UL_AperiodicConfigDedicatedList_r14_67 
 	&asn_SPC_soundingRS_UL_AperiodicConfigDedicatedList_r14_specs_67	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_69[] = {
+static asn_TYPE_member_t asn_MBR_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_69[] = {
 	{ ATF_POINTER, 0, 0,
 		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
 		0,
-		&asn_DEF_SoundingRS_AperiodicSetUpPTsExt_r14,
+		&asn_DEF_SoundingRSAperiodicGroupUpPTsExt_r14,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		""
 		},
 };
-static ber_tlv_tag_t asn_DEF_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_tags_69[] = {
+static ber_tlv_tag_t asn_DEF_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_tags_69[] = {
 	(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static asn_SET_OF_specifics_t asn_SPC_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_specs_69 = {
-	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext6__soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14),
-	offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6__soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14, _asn_ctx),
+static asn_SET_OF_specifics_t asn_SPC_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_specs_69 = {
+	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext6__soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14),
+	offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6__soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_69 = {
-	"soundingRS-UL-ConfigDedicatedApUpPTsExtList-r14",
-	"soundingRS-UL-ConfigDedicatedApUpPTsExtList-r14",
+asn_TYPE_descriptor_t asn_DEF_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_69 = {
+	"soundingRS-UL-AperiodicConfigDedicatedUpPTsExtList-r14",
+	"soundingRS-UL-AperiodicConfigDedicatedUpPTsExtList-r14",
 	SEQUENCE_OF_free,
 	SEQUENCE_OF_print,
 	SEQUENCE_OF_constraint,
@@ -1666,16 +1666,16 @@ asn_TYPE_descriptor_t asn_DEF_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_69
 	SEQUENCE_OF_encode_aper,
 	SEQUENCE_OF_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_tags_69,
-	sizeof(asn_DEF_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_tags_69)
-		/sizeof(asn_DEF_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_tags_69[0]) - 1, /* 1 */
-	asn_DEF_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_tags_69,	/* Same as above */
-	sizeof(asn_DEF_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_tags_69)
-		/sizeof(asn_DEF_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_tags_69[0]), /* 2 */
-	&asn_PER_type_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_constr_69,
-	asn_MBR_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_69,
+	asn_DEF_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_tags_69,
+	sizeof(asn_DEF_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_tags_69)
+		/sizeof(asn_DEF_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_tags_69[0]) - 1, /* 1 */
+	asn_DEF_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_tags_69,	/* Same as above */
+	sizeof(asn_DEF_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_tags_69)
+		/sizeof(asn_DEF_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_tags_69[0]), /* 2 */
+	&asn_PER_type_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_constr_69,
+	asn_MBR_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_69,
 	1,	/* Single element */
-	&asn_SPC_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_specs_69	/* Additional specs */
+	&asn_SPC_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_specs_69	/* Additional specs */
 };
 
 static asn_INTEGER_enum_map_t asn_MAP_k_max_r14_value2enum_74[] = {
@@ -1814,8 +1814,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_73[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_73[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* k-max-r14 at 5101 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* p-a-must-r14 at 5103 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* k-max-r14 at 4593 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* p-a-must-r14 at 4595 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_73 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext6__must_Config_r14__setup),
@@ -1877,8 +1877,8 @@ static asn_TYPE_member_t asn_MBR_must_Config_r14_71[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_must_Config_r14_tag2el_71[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5099 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5101 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4591 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4593 */
 };
 static asn_CHOICE_specifics_t asn_SPC_must_Config_r14_specs_71 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext6__must_Config_r14),
@@ -1918,16 +1918,16 @@ asn_TYPE_descriptor_t asn_DEF_must_Config_r14_71 = {
 };
 
 static asn_TYPE_member_t asn_MBR_ext6_59[] = {
-	{ ATF_POINTER, 14, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, laa_SCellConfiguration_v1430),
+	{ ATF_POINTER, 8, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, laa_SCellConfiguration_v14xy),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_LAA_SCellConfiguration_v1430,
+		&asn_DEF_LAA_SCellConfiguration_v14xy,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
-		"laa-SCellConfiguration-v1430"
+		"laa-SCellConfiguration-v14xy"
 		},
-	{ ATF_POINTER, 13, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, typeB_SRS_TPC_PDCCH_Config_r14),
+	{ ATF_POINTER, 7, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, typeB_SRS_TPC_PDCCH_Config_r14),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_SRS_TPC_PDCCH_Config_r14,
@@ -1936,16 +1936,16 @@ static asn_TYPE_member_t asn_MBR_ext6_59[] = {
 		0,
 		"typeB-SRS-TPC-PDCCH-Config-r14"
 		},
-	{ ATF_POINTER, 12, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, uplinkPUSCH_LessPowerControlDedicated_v1430),
+	{ ATF_POINTER, 6, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, uplinkPUSCH_LessPowerControlDedicated_v14xy),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_UplinkPUSCH_LessPowerControlDedicated_v1430,
+		&asn_DEF_UplinkPUSCH_LessPowerControlDedicated_v14xy,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
-		"uplinkPUSCH-LessPowerControlDedicated-v1430"
+		"uplinkPUSCH-LessPowerControlDedicated-v14xy"
 		},
-	{ ATF_POINTER, 11, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, soundingRS_UL_PeriodicConfigDedicatedList_r14),
+	{ ATF_POINTER, 5, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, soundingRS_UL_PeriodicConfigDedicatedList_r14),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		0,
 		&asn_DEF_soundingRS_UL_PeriodicConfigDedicatedList_r14_63,
@@ -1954,7 +1954,7 @@ static asn_TYPE_member_t asn_MBR_ext6_59[] = {
 		0,
 		"soundingRS-UL-PeriodicConfigDedicatedList-r14"
 		},
-	{ ATF_POINTER, 10, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, soundingRS_UL_PeriodicConfigDedicatedUpPTsExtList_r14),
+	{ ATF_POINTER, 4, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, soundingRS_UL_PeriodicConfigDedicatedUpPTsExtList_r14),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		0,
 		&asn_DEF_soundingRS_UL_PeriodicConfigDedicatedUpPTsExtList_r14_65,
@@ -1963,7 +1963,7 @@ static asn_TYPE_member_t asn_MBR_ext6_59[] = {
 		0,
 		"soundingRS-UL-PeriodicConfigDedicatedUpPTsExtList-r14"
 		},
-	{ ATF_POINTER, 9, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, soundingRS_UL_AperiodicConfigDedicatedList_r14),
+	{ ATF_POINTER, 3, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, soundingRS_UL_AperiodicConfigDedicatedList_r14),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		0,
 		&asn_DEF_soundingRS_UL_AperiodicConfigDedicatedList_r14_67,
@@ -1972,16 +1972,16 @@ static asn_TYPE_member_t asn_MBR_ext6_59[] = {
 		0,
 		"soundingRS-UL-AperiodicConfigDedicatedList-r14"
 		},
-	{ ATF_POINTER, 8, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14),
+	{ ATF_POINTER, 2, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		0,
-		&asn_DEF_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_69,
-		memb_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_constraint_59,
-		&asn_PER_memb_soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14_constr_69,
+		&asn_DEF_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_69,
+		memb_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_constraint_59,
+		&asn_PER_memb_soundingRS_UL_AperiodicConfigDedicatedUpPTsExtList_r14_constr_69,
 		0,
-		"soundingRS-UL-ConfigDedicatedApUpPTsExtList-r14"
+		"soundingRS-UL-AperiodicConfigDedicatedUpPTsExtList-r14"
 		},
-	{ ATF_POINTER, 7, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, must_Config_r14),
+	{ ATF_POINTER, 1, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, must_Config_r14),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_must_Config_r14_71,
@@ -1990,89 +1990,29 @@ static asn_TYPE_member_t asn_MBR_ext6_59[] = {
 		0,
 		"must-Config-r14"
 		},
-	{ ATF_POINTER, 6, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, pusch_ConfigDedicated_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_PUSCH_ConfigDedicatedSCell_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"pusch-ConfigDedicated-v1430"
-		},
-	{ ATF_POINTER, 5, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, csi_RS_Config_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_CSI_RS_Config_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"csi-RS-Config-v1430"
-		},
-	{ ATF_POINTER, 4, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, csi_RS_ConfigZP_ApList_r14),
-		(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_CSI_RS_ConfigZP_ApList_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"csi-RS-ConfigZP-ApList-r14"
-		},
-	{ ATF_POINTER, 3, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, cqi_ReportConfig_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_CQI_ReportConfig_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"cqi-ReportConfig-v1430"
-		},
-	{ ATF_POINTER, 2, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, semiOpenLoop_r14),
-		(ASN_TAG_CLASS_CONTEXT | (12 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_BOOLEAN,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"semiOpenLoop-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, pdsch_ConfigDedicatedSCell_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (13 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_PDSCH_ConfigDedicatedSCell_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"pdsch-ConfigDedicatedSCell-v1430"
-		},
 };
-static int asn_MAP_ext6_oms_59[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
+static int asn_MAP_ext6_oms_59[] = { 0, 1, 2, 3, 4, 5, 6, 7 };
 static ber_tlv_tag_t asn_DEF_ext6_tags_59[] = {
 	(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext6_tag2el_59[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* laa-SCellConfiguration-v1430 at 5090 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* typeB-SRS-TPC-PDCCH-Config-r14 at 5091 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* uplinkPUSCH-LessPowerControlDedicated-v1430 at 5093 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* soundingRS-UL-PeriodicConfigDedicatedList-r14 at 5094 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* soundingRS-UL-PeriodicConfigDedicatedUpPTsExtList-r14 at 5095 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* soundingRS-UL-AperiodicConfigDedicatedList-r14 at 5096 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* soundingRS-UL-ConfigDedicatedApUpPTsExtList-r14 at 5097 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* must-Config-r14 at 5099 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* pusch-ConfigDedicated-v1430 at 5107 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* csi-RS-Config-v1430 at 5108 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* csi-RS-ConfigZP-ApList-r14 at 5109 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* cqi-ReportConfig-v1430 at 5110 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* semiOpenLoop-r14 at 5111 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 } /* pdsch-ConfigDedicatedSCell-v1430 at 5112 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* laa-SCellConfiguration-v14xy at 4580 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* typeB-SRS-TPC-PDCCH-Config-r14 at 4581 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* uplinkPUSCH-LessPowerControlDedicated-v14xy at 4583 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* soundingRS-UL-PeriodicConfigDedicatedList-r14 at 4584 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* soundingRS-UL-PeriodicConfigDedicatedUpPTsExtList-r14 at 4585 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* soundingRS-UL-AperiodicConfigDedicatedList-r14 at 4587 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* soundingRS-UL-AperiodicConfigDedicatedUpPTsExtList-r14 at 4588 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* must-Config-r14 at 4591 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext6_specs_59 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10__ext6),
 	offsetof(struct PhysicalConfigDedicatedSCell_r10__ext6, _asn_ctx),
 	asn_MAP_ext6_tag2el_59,
-	14,	/* Count of tags in the map */
+	8,	/* Count of tags in the map */
 	asn_MAP_ext6_oms_59,	/* Optional members */
-	14, 0,	/* Root/Additions */
+	8, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
@@ -2101,7 +2041,7 @@ asn_TYPE_descriptor_t asn_DEF_ext6_59 = {
 		/sizeof(asn_DEF_ext6_tags_59[0]), /* 2 */
 	0,	/* No PER visible constraints */
 	asn_MBR_ext6_59,
-	14,	/* Elements count */
+	8,	/* Elements count */
 	&asn_SPC_ext6_specs_59	/* Additional specs */
 };
 
@@ -2184,14 +2124,14 @@ static ber_tlv_tag_t asn_DEF_PhysicalConfigDedicatedSCell_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PhysicalConfigDedicatedSCell_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nonUL-Configuration-r10 at 5003 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Configuration-r10 at 5011 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext1 at 5027 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext2 at 5043 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext3 at 5051 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext4 at 5053 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext5 at 5087 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext6 at 5090 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nonUL-Configuration-r10 at 4494 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Configuration-r10 at 4502 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext1 at 4518 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext2 at 4534 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext3 at 4542 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext4 at 4544 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext5 at 4578 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext6 at 4580 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PhysicalConfigDedicatedSCell_r10_specs_1 = {
 	sizeof(struct PhysicalConfigDedicatedSCell_r10),

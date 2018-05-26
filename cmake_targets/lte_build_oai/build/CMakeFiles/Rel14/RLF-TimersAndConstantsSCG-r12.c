@@ -596,9 +596,9 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* t313-r12 at 6228 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* n313-r12 at 6230 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* n314-r12 at 6232 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* t313-r12 at 5638 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* n313-r12 at 5640 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* n314-r12 at 5642 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct RLF_TimersAndConstantsSCG_r12__setup),
@@ -659,8 +659,8 @@ static asn_TYPE_member_t asn_MBR_RLF_TimersAndConstantsSCG_r12_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_RLF_TimersAndConstantsSCG_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6225 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6228 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5635 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5638 */
 };
 static asn_CHOICE_specifics_t asn_SPC_RLF_TimersAndConstantsSCG_r12_specs_1 = {
 	sizeof(struct RLF_TimersAndConstantsSCG_r12),

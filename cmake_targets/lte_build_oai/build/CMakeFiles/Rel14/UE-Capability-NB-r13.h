@@ -32,7 +32,6 @@ typedef enum UE_Capability_NB_r13__multipleDRB_r13 {
 
 /* Forward declarations */
 struct PDCP_Parameters_NB_r13;
-struct UE_Capability_NB_v1430_IEs;
 
 /* UE-Capability-NB-r13 */
 typedef struct UE_Capability_NB_r13 {
@@ -42,7 +41,11 @@ typedef struct UE_Capability_NB_r13 {
 	struct PDCP_Parameters_NB_r13	*pdcp_Parameters_r13	/* OPTIONAL */;
 	PhyLayerParameters_NB_r13_t	 phyLayerParameters_r13;
 	RF_Parameters_NB_r13_t	 rf_Parameters_r13;
-	struct UE_Capability_NB_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct UE_Capability_NB_r13__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -59,7 +62,6 @@ extern asn_TYPE_descriptor_t asn_DEF_UE_Capability_NB_r13;
 
 /* Referred external types */
 #include "PDCP-Parameters-NB-r13.h"
-#include "UE-Capability-NB-v1430-IEs.h"
 
 #endif	/* _UE_Capability_NB_r13_H_ */
 #include <asn_internal.h>

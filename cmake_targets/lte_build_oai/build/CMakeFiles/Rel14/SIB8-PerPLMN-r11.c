@@ -63,8 +63,8 @@ static asn_TYPE_member_t asn_MBR_parametersCDMA2000_r11_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_parametersCDMA2000_r11_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue at 3235 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue at 3236 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue at 2988 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue at 2989 */
 };
 static asn_CHOICE_specifics_t asn_SPC_parametersCDMA2000_r11_specs_3 = {
 	sizeof(struct SIB8_PerPLMN_r11__parametersCDMA2000_r11),
@@ -127,8 +127,8 @@ static ber_tlv_tag_t asn_DEF_SIB8_PerPLMN_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SIB8_PerPLMN_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-Identity-r11 at 3233 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* parametersCDMA2000-r11 at 3235 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-Identity-r11 at 2986 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* parametersCDMA2000-r11 at 2988 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SIB8_PerPLMN_r11_specs_1 = {
 	sizeof(struct SIB8_PerPLMN_r11),

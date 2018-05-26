@@ -343,31 +343,6 @@ memb_zoneID_r14_constraint_1(asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static int
-memb_threshS_RSSI_CBR_r14_constraint_1(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 45)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
 static asn_per_constraints_t asn_PER_type_sizeSubchannel_r14_constr_5 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 5,  5,  0,  31 }	/* (0..31) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
@@ -395,11 +370,6 @@ static asn_per_constraints_t asn_PER_memb_startRB_PSCCH_Pool_r14_constr_48 GCC_N
 };
 static asn_per_constraints_t asn_PER_memb_zoneID_r14_constr_53 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 3,  3,  0,  7 }	/* (0..7) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_per_constraints_t asn_PER_memb_threshS_RSSI_CBR_r14_constr_54 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 6,  6,  0,  45 }	/* (0..45) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
@@ -516,21 +486,21 @@ static asn_INTEGER_enum_map_t asn_MAP_numSubchannel_r14_value2enum_38[] = {
 	{ 0,	2,	"n1" },
 	{ 1,	2,	"n3" },
 	{ 2,	2,	"n5" },
-	{ 3,	2,	"n8" },
-	{ 4,	3,	"n10" },
-	{ 5,	3,	"n15" },
-	{ 6,	3,	"n20" },
+	{ 3,	3,	"n10" },
+	{ 4,	3,	"n15" },
+	{ 5,	3,	"n20" },
+	{ 6,	6,	"spare2" },
 	{ 7,	6,	"spare1" }
 };
 static unsigned int asn_MAP_numSubchannel_r14_enum2value_38[] = {
 	0,	/* n1(0) */
-	4,	/* n10(4) */
-	5,	/* n15(5) */
-	6,	/* n20(6) */
+	3,	/* n10(3) */
+	4,	/* n15(4) */
+	5,	/* n20(5) */
 	1,	/* n3(1) */
 	2,	/* n5(2) */
-	3,	/* n8(3) */
-	7	/* spare1(7) */
+	7,	/* spare1(7) */
+	6	/* spare2(6) */
 };
 static asn_INTEGER_specifics_t asn_SPC_numSubchannel_r14_specs_38 = {
 	asn_MAP_numSubchannel_r14_value2enum_38,	/* "tag" => N; sorted by tag */
@@ -599,8 +569,8 @@ static ber_tlv_tag_t asn_DEF_rxParametersNCell_r14_tags_49[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_rxParametersNCell_r14_tag2el_49[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tdd-Config-r14 at 10256 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* syncConfigIndex-r14 at 10257 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tdd-Config-r14 at 9102 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* syncConfigIndex-r14 at 9103 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_rxParametersNCell_r14_specs_49 = {
 	sizeof(struct SL_CommResourcePoolV2X_r14__rxParametersNCell_r14),
@@ -696,7 +666,7 @@ static asn_TYPE_member_t asn_MBR_SL_CommResourcePoolV2X_r14_1[] = {
 		0,
 		"startRB-Subchannel-r14"
 		},
-	{ ATF_POINTER, 10, offsetof(struct SL_CommResourcePoolV2X_r14, startRB_PSCCH_Pool_r14),
+	{ ATF_POINTER, 4, offsetof(struct SL_CommResourcePoolV2X_r14, startRB_PSCCH_Pool_r14),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -705,7 +675,7 @@ static asn_TYPE_member_t asn_MBR_SL_CommResourcePoolV2X_r14_1[] = {
 		0,
 		"startRB-PSCCH-Pool-r14"
 		},
-	{ ATF_POINTER, 9, offsetof(struct SL_CommResourcePoolV2X_r14, rxParametersNCell_r14),
+	{ ATF_POINTER, 3, offsetof(struct SL_CommResourcePoolV2X_r14, rxParametersNCell_r14),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		0,
 		&asn_DEF_rxParametersNCell_r14_49,
@@ -714,7 +684,7 @@ static asn_TYPE_member_t asn_MBR_SL_CommResourcePoolV2X_r14_1[] = {
 		0,
 		"rxParametersNCell-r14"
 		},
-	{ ATF_POINTER, 8, offsetof(struct SL_CommResourcePoolV2X_r14, dataTxParameters_r14),
+	{ ATF_POINTER, 2, offsetof(struct SL_CommResourcePoolV2X_r14, dataTxParameters_r14),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SL_TxParameters_r12,
@@ -723,7 +693,7 @@ static asn_TYPE_member_t asn_MBR_SL_CommResourcePoolV2X_r14_1[] = {
 		0,
 		"dataTxParameters-r14"
 		},
-	{ ATF_POINTER, 7, offsetof(struct SL_CommResourcePoolV2X_r14, zoneID_r14),
+	{ ATF_POINTER, 1, offsetof(struct SL_CommResourcePoolV2X_r14, zoneID_r14),
 		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -732,92 +702,32 @@ static asn_TYPE_member_t asn_MBR_SL_CommResourcePoolV2X_r14_1[] = {
 		0,
 		"zoneID-r14"
 		},
-	{ ATF_POINTER, 6, offsetof(struct SL_CommResourcePoolV2X_r14, threshS_RSSI_CBR_r14),
-		(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_threshS_RSSI_CBR_r14_constraint_1,
-		&asn_PER_memb_threshS_RSSI_CBR_r14_constr_54,
-		0,
-		"threshS-RSSI-CBR-r14"
-		},
-	{ ATF_POINTER, 5, offsetof(struct SL_CommResourcePoolV2X_r14, poolReportId_r14),
-		(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SL_V2X_TxPoolReportIdentity_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"poolReportId-r14"
-		},
-	{ ATF_POINTER, 4, offsetof(struct SL_CommResourcePoolV2X_r14, cbr_pssch_TxConfigList_r14),
-		(ASN_TAG_CLASS_CONTEXT | (12 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SL_CBR_PPPP_TxConfigList_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"cbr-pssch-TxConfigList-r14"
-		},
-	{ ATF_POINTER, 3, offsetof(struct SL_CommResourcePoolV2X_r14, resourceSelectionConfigP2X_r14),
-		(ASN_TAG_CLASS_CONTEXT | (13 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SL_P2X_ResourceSelectionConfig_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"resourceSelectionConfigP2X-r14"
-		},
-	{ ATF_POINTER, 2, offsetof(struct SL_CommResourcePoolV2X_r14, syncAllowed_r14),
-		(ASN_TAG_CLASS_CONTEXT | (14 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SL_SyncAllowed_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"syncAllowed-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct SL_CommResourcePoolV2X_r14, restrictResourceReservationPeriod_r14),
-		(ASN_TAG_CLASS_CONTEXT | (15 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SL_RestrictResourceReservationPeriodList_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"restrictResourceReservationPeriod-r14"
-		},
 };
-static int asn_MAP_SL_CommResourcePoolV2X_r14_oms_1[] = { 0, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+static int asn_MAP_SL_CommResourcePoolV2X_r14_oms_1[] = { 0, 6, 7, 8, 9 };
 static ber_tlv_tag_t asn_DEF_SL_CommResourcePoolV2X_r14_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_CommResourcePoolV2X_r14_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sl-OffsetIndicator-r14 at 10244 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sl-Subframe-r14 at 10245 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* adjacencyPSCCH-PSSCH-r14 at 10246 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sizeSubchannel-r14 at 10248 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* numSubchannel-r14 at 10252 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* startRB-Subchannel-r14 at 10253 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* startRB-PSCCH-Pool-r14 at 10254 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* rxParametersNCell-r14 at 10256 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* dataTxParameters-r14 at 10259 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* zoneID-r14 at 10260 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* threshS-RSSI-CBR-r14 at 10261 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* poolReportId-r14 at 10262 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* cbr-pssch-TxConfigList-r14 at 10263 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* resourceSelectionConfigP2X-r14 at 10264 */
-    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* syncAllowed-r14 at 10265 */
-    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 } /* restrictResourceReservationPeriod-r14 at 10266 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sl-OffsetIndicator-r14 at 9090 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sl-Subframe-r14 at 9091 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* adjacencyPSCCH-PSSCH-r14 at 9092 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sizeSubchannel-r14 at 9094 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* numSubchannel-r14 at 9098 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* startRB-Subchannel-r14 at 9099 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* startRB-PSCCH-Pool-r14 at 9100 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* rxParametersNCell-r14 at 9102 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* dataTxParameters-r14 at 9105 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* zoneID-r14 at 9106 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_CommResourcePoolV2X_r14_specs_1 = {
 	sizeof(struct SL_CommResourcePoolV2X_r14),
 	offsetof(struct SL_CommResourcePoolV2X_r14, _asn_ctx),
 	asn_MAP_SL_CommResourcePoolV2X_r14_tag2el_1,
-	16,	/* Count of tags in the map */
+	10,	/* Count of tags in the map */
 	asn_MAP_SL_CommResourcePoolV2X_r14_oms_1,	/* Optional members */
-	11, 0,	/* Root/Additions */
-	15,	/* Start extensions */
-	17	/* Stop extensions */
+	5, 0,	/* Root/Additions */
+	9,	/* Start extensions */
+	11	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_SL_CommResourcePoolV2X_r14 = {
 	"SL-CommResourcePoolV2X-r14",
@@ -843,7 +753,7 @@ asn_TYPE_descriptor_t asn_DEF_SL_CommResourcePoolV2X_r14 = {
 		/sizeof(asn_DEF_SL_CommResourcePoolV2X_r14_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_SL_CommResourcePoolV2X_r14_1,
-	16,	/* Elements count */
+	10,	/* Elements count */
 	&asn_SPC_SL_CommResourcePoolV2X_r14_specs_1	/* Additional specs */
 };
 

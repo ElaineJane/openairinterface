@@ -78,12 +78,6 @@ typedef enum UE_TimersAndConstants_NB_r13__n311_r13 {
 	UE_TimersAndConstants_NB_r13__n311_r13_n8	= 6,
 	UE_TimersAndConstants_NB_r13__n311_r13_n10	= 7
 } e_UE_TimersAndConstants_NB_r13__n311_r13;
-typedef enum UE_TimersAndConstants_NB_r13__ext1__t311_v1350 {
-	UE_TimersAndConstants_NB_r13__ext1__t311_v1350_ms40000	= 0,
-	UE_TimersAndConstants_NB_r13__ext1__t311_v1350_ms60000	= 1,
-	UE_TimersAndConstants_NB_r13__ext1__t311_v1350_ms90000	= 2,
-	UE_TimersAndConstants_NB_r13__ext1__t311_v1350_ms120000	= 3
-} e_UE_TimersAndConstants_NB_r13__ext1__t311_v1350;
 
 /* UE-TimersAndConstants-NB-r13 */
 typedef struct UE_TimersAndConstants_NB_r13 {
@@ -97,12 +91,6 @@ typedef struct UE_TimersAndConstants_NB_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct UE_TimersAndConstants_NB_r13__ext1 {
-		long	*t311_v1350	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -115,7 +103,6 @@ typedef struct UE_TimersAndConstants_NB_r13 {
 /* extern asn_TYPE_descriptor_t asn_DEF_n310_r13_28;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_t311_r13_37;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_n311_r13_45;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_t311_v1350_56;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_UE_TimersAndConstants_NB_r13;
 
 #ifdef __cplusplus

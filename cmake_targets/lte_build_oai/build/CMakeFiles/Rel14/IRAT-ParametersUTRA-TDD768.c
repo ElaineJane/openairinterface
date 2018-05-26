@@ -22,7 +22,7 @@ static ber_tlv_tag_t asn_DEF_IRAT_ParametersUTRA_TDD768_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_IRAT_ParametersUTRA_TDD768_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* supportedBandListUTRA-TDD768 at 9480 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* supportedBandListUTRA-TDD768 at 8521 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_IRAT_ParametersUTRA_TDD768_specs_1 = {
 	sizeof(struct IRAT_ParametersUTRA_TDD768),

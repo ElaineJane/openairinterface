@@ -31,8 +31,8 @@ static ber_tlv_tag_t asn_DEF_UE_CapabilityRAT_Container_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UE_CapabilityRAT_Container_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rat-Type at 8380 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ueCapabilityRAT-Container at 8381 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rat-Type at 7589 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ueCapabilityRAT-Container at 7590 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UE_CapabilityRAT_Container_specs_1 = {
 	sizeof(struct UE_CapabilityRAT_Container),

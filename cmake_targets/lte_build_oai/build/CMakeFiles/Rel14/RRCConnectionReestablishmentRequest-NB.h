@@ -13,7 +13,6 @@
 
 /* Including external dependencies */
 #include "RRCConnectionReestablishmentRequest-NB-r13-IEs.h"
-#include "RRCConnectionReestablishmentRequest-NB-r14-IEs.h"
 #include <constr_SEQUENCE.h>
 #include <constr_CHOICE.h>
 
@@ -25,13 +24,8 @@ extern "C" {
 typedef enum RRCConnectionReestablishmentRequest_NB__criticalExtensions_PR {
 	RRCConnectionReestablishmentRequest_NB__criticalExtensions_PR_NOTHING,	/* No components present */
 	RRCConnectionReestablishmentRequest_NB__criticalExtensions_PR_rrcConnectionReestablishmentRequest_r13,
-	RRCConnectionReestablishmentRequest_NB__criticalExtensions_PR_later
+	RRCConnectionReestablishmentRequest_NB__criticalExtensions_PR_criticalExtensionsFuture
 } RRCConnectionReestablishmentRequest_NB__criticalExtensions_PR;
-typedef enum RRCConnectionReestablishmentRequest_NB__criticalExtensions__later_PR {
-	RRCConnectionReestablishmentRequest_NB__criticalExtensions__later_PR_NOTHING,	/* No components present */
-	RRCConnectionReestablishmentRequest_NB__criticalExtensions__later_PR_rrcConnectionReestablishmentRequest_r14,
-	RRCConnectionReestablishmentRequest_NB__criticalExtensions__later_PR_criticalExtensionsFuture
-} RRCConnectionReestablishmentRequest_NB__criticalExtensions__later_PR;
 
 /* RRCConnectionReestablishmentRequest-NB */
 typedef struct RRCConnectionReestablishmentRequest_NB {
@@ -39,20 +33,11 @@ typedef struct RRCConnectionReestablishmentRequest_NB {
 		RRCConnectionReestablishmentRequest_NB__criticalExtensions_PR present;
 		union RRCConnectionReestablishmentRequest_NB__criticalExtensions_u {
 			RRCConnectionReestablishmentRequest_NB_r13_IEs_t	 rrcConnectionReestablishmentRequest_r13;
-			struct RRCConnectionReestablishmentRequest_NB__criticalExtensions__later {
-				RRCConnectionReestablishmentRequest_NB__criticalExtensions__later_PR present;
-				union RRCConnectionReestablishmentRequest_NB__criticalExtensions__later_u {
-					RRCConnectionReestablishmentRequest_NB_r14_IEs_t	 rrcConnectionReestablishmentRequest_r14;
-					struct RRCConnectionReestablishmentRequest_NB__criticalExtensions__later__criticalExtensionsFuture {
-						
-						/* Context for parsing across buffer boundaries */
-						asn_struct_ctx_t _asn_ctx;
-					} criticalExtensionsFuture;
-				} choice;
+			struct RRCConnectionReestablishmentRequest_NB__criticalExtensions__criticalExtensionsFuture {
 				
 				/* Context for parsing across buffer boundaries */
 				asn_struct_ctx_t _asn_ctx;
-			} later;
+			} criticalExtensionsFuture;
 		} choice;
 		
 		/* Context for parsing across buffer boundaries */

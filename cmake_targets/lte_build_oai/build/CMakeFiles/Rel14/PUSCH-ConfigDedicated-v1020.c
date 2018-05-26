@@ -377,9 +377,9 @@ static ber_tlv_tag_t asn_DEF_betaOffsetMC_r10_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_betaOffsetMC_r10_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* betaOffset-ACK-Index-MC-r10 at 5457 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* betaOffset-RI-Index-MC-r10 at 5458 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* betaOffset-CQI-Index-MC-r10 at 5459 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* betaOffset-ACK-Index-MC-r10 at 4927 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* betaOffset-RI-Index-MC-r10 at 4928 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* betaOffset-CQI-Index-MC-r10 at 4929 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_betaOffsetMC_r10_specs_2 = {
 	sizeof(struct PUSCH_ConfigDedicated_v1020__betaOffsetMC_r10),
@@ -547,9 +547,9 @@ static ber_tlv_tag_t asn_DEF_PUSCH_ConfigDedicated_v1020_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PUSCH_ConfigDedicated_v1020_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* betaOffsetMC-r10 at 5457 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* groupHoppingDisabled-r10 at 5461 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* dmrs-WithOCC-Activated-r10 at 5462 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* betaOffsetMC-r10 at 4927 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* groupHoppingDisabled-r10 at 4931 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* dmrs-WithOCC-Activated-r10 at 4932 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PUSCH_ConfigDedicated_v1020_specs_1 = {
 	sizeof(struct PUSCH_ConfigDedicated_v1020),

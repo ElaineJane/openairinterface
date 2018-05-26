@@ -30,7 +30,6 @@ typedef enum RRCConnectionResume_r13_IEs__drb_ContinueROHC_r13 {
 struct RadioResourceConfigDedicated;
 struct MeasConfig;
 struct AntennaInfoDedicated_v10i0;
-struct RRCConnectionResume_v1430_IEs;
 
 /* RRCConnectionResume-r13-IEs */
 typedef struct RRCConnectionResume_r13_IEs {
@@ -40,7 +39,11 @@ typedef struct RRCConnectionResume_r13_IEs {
 	struct AntennaInfoDedicated_v10i0	*antennaInfoDedicatedPCell_r13	/* OPTIONAL */;
 	long	*drb_ContinueROHC_r13	/* OPTIONAL */;
 	OCTET_STRING_t	*lateNonCriticalExtension	/* OPTIONAL */;
-	struct RRCConnectionResume_v1430_IEs	*rrcConnectionResume_v1430_IEs	/* OPTIONAL */;
+	struct RRCConnectionResume_r13_IEs__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -58,7 +61,6 @@ extern asn_TYPE_descriptor_t asn_DEF_RRCConnectionResume_r13_IEs;
 #include "RadioResourceConfigDedicated.h"
 #include "MeasConfig.h"
 #include "AntennaInfoDedicated-v10i0.h"
-#include "RRCConnectionResume-v1430-IEs.h"
 
 #endif	/* _RRCConnectionResume_r13_IEs_H_ */
 #include <asn_internal.h>

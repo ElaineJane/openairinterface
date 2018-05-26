@@ -826,12 +826,12 @@ static ber_tlv_tag_t asn_DEF_UplinkPowerControlCommonSCell_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UplinkPowerControlCommonSCell_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p0-NominalPUCCH at 6669 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* deltaFList-PUCCH at 6670 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* deltaF-PUCCH-Format3-r12 at 6671 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* deltaF-PUCCH-Format1bCS-r12 at 6674 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* deltaF-PUCCH-Format4-r13 at 6676 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* deltaF-PUCCH-Format5-13 at 6679 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p0-NominalPUCCH at 6038 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* deltaFList-PUCCH at 6039 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* deltaF-PUCCH-Format3-r12 at 6040 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* deltaF-PUCCH-Format1bCS-r12 at 6043 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* deltaF-PUCCH-Format4-r13 at 6045 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* deltaF-PUCCH-Format5-13 at 6048 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UplinkPowerControlCommonSCell_v1310_specs_1 = {
 	sizeof(struct UplinkPowerControlCommonSCell_v1310),

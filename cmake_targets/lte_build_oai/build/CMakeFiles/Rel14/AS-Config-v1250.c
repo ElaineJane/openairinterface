@@ -41,9 +41,9 @@ static ber_tlv_tag_t asn_DEF_AS_Config_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_AS_Config_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sourceWlan-OffloadConfig-r12 at 13575 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sourceSL-CommConfig-r12 at 13576 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* sourceSL-DiscConfig-r12 at 13577 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sourceWlan-OffloadConfig-r12 at 11780 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sourceSL-CommConfig-r12 at 11781 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* sourceSL-DiscConfig-r12 at 11782 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_AS_Config_v1250_specs_1 = {
 	sizeof(struct AS_Config_v1250),

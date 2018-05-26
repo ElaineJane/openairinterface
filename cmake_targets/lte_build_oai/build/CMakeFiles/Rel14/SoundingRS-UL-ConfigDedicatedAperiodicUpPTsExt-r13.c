@@ -329,8 +329,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_12[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-ConfigApDCI-Format0-r13 at 6412 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* srs-ConfigApDCI-Format1a2b2c-r13 at 6414 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-ConfigApDCI-Format0-r13 at 5822 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* srs-ConfigApDCI-Format1a2b2c-r13 at 5824 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_12 = {
 	sizeof(struct SoundingRS_UL_ConfigDedicatedAperiodicUpPTsExt_r13__setup__srs_ActivateAp_r13__setup),
@@ -391,8 +391,8 @@ static asn_TYPE_member_t asn_MBR_srs_ActivateAp_r13_10[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_srs_ActivateAp_r13_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6410 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6412 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5820 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5822 */
 };
 static asn_CHOICE_specifics_t asn_SPC_srs_ActivateAp_r13_specs_10 = {
 	sizeof(struct SoundingRS_UL_ConfigDedicatedAperiodicUpPTsExt_r13__setup__srs_ActivateAp_r13),
@@ -475,10 +475,10 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-UpPtsAdd-r13 at 6406 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* srs-ConfigIndexAp-r13 at 6407 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* srs-ConfigApDCI-Format4-r13 at 6408 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* srs-ActivateAp-r13 at 6410 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-UpPtsAdd-r13 at 5816 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* srs-ConfigIndexAp-r13 at 5817 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* srs-ConfigApDCI-Format4-r13 at 5818 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* srs-ActivateAp-r13 at 5820 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct SoundingRS_UL_ConfigDedicatedAperiodicUpPTsExt_r13__setup),
@@ -540,8 +540,8 @@ static asn_TYPE_member_t asn_MBR_SoundingRS_UL_ConfigDedicatedAperiodicUpPTsExt_
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SoundingRS_UL_ConfigDedicatedAperiodicUpPTsExt_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6404 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6406 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5814 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5816 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SoundingRS_UL_ConfigDedicatedAperiodicUpPTsExt_r13_specs_1 = {
 	sizeof(struct SoundingRS_UL_ConfigDedicatedAperiodicUpPTsExt_r13),

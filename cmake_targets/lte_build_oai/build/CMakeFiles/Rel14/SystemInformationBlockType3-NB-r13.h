@@ -49,9 +49,6 @@ typedef enum SystemInformationBlockType3_NB_r13__cellReselectionInfoCommon_r13__
 
 /* Forward declarations */
 struct NS_PmaxList_NB_r13;
-struct IntraFreqCellReselectionInfo_NB_v1350;
-struct IntraFreqCellReselectionInfo_NB_v1360;
-struct IntraFreqCellReselectionInfo_NB_v1430;
 
 /* SystemInformationBlockType3-NB-r13 */
 typedef struct SystemInformationBlockType3_NB_r13 {
@@ -89,24 +86,6 @@ typedef struct SystemInformationBlockType3_NB_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct SystemInformationBlockType3_NB_r13__ext1 {
-		struct IntraFreqCellReselectionInfo_NB_v1350	*intraFreqCellReselectionInfo_v1350	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
-	struct SystemInformationBlockType3_NB_r13__ext2 {
-		struct IntraFreqCellReselectionInfo_NB_v1360	*intraFreqCellReselectionInfo_v1360	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext2;
-	struct SystemInformationBlockType3_NB_r13__ext3 {
-		struct IntraFreqCellReselectionInfo_NB_v1430	*intraFreqCellReselectionInfo_v1430	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext3;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -122,9 +101,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType3_NB_r13;
 
 /* Referred external types */
 #include "NS-PmaxList-NB-r13.h"
-#include "IntraFreqCellReselectionInfo-NB-v1350.h"
-#include "IntraFreqCellReselectionInfo-NB-v1360.h"
-#include "IntraFreqCellReselectionInfo-NB-v1430.h"
 
 #endif	/* _SystemInformationBlockType3_NB_r13_H_ */
 #include <asn_internal.h>

@@ -609,8 +609,8 @@ static ber_tlv_tag_t asn_DEF_q_HystSF_tags_22[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_q_HystSF_tag2el_22[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sf-Medium at 2750 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* sf-High at 2752 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sf-Medium at 2528 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* sf-High at 2530 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_q_HystSF_specs_22 = {
 	sizeof(struct SystemInformationBlockType3__cellReselectionInfoCommon__speedStateReselectionPars__q_HystSF),
@@ -675,8 +675,8 @@ static ber_tlv_tag_t asn_DEF_speedStateReselectionPars_tags_20[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_speedStateReselectionPars_tag2el_20[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mobilityStateParameters at 2747 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* q-HystSF at 2750 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mobilityStateParameters at 2525 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* q-HystSF at 2528 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_speedStateReselectionPars_specs_20 = {
 	sizeof(struct SystemInformationBlockType3__cellReselectionInfoCommon__speedStateReselectionPars),
@@ -742,8 +742,8 @@ static ber_tlv_tag_t asn_DEF_cellReselectionInfoCommon_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cellReselectionInfoCommon_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-Hyst at 2744 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* speedStateReselectionPars at 2747 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-Hyst at 2522 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* speedStateReselectionPars at 2525 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cellReselectionInfoCommon_specs_2 = {
 	sizeof(struct SystemInformationBlockType3__cellReselectionInfoCommon),
@@ -819,9 +819,9 @@ static ber_tlv_tag_t asn_DEF_cellReselectionServingFreqInfo_tags_33[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cellReselectionServingFreqInfo_tag2el_33[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* s-NonIntraSearch at 2757 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* threshServingLow at 2758 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* cellReselectionPriority at 2760 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* s-NonIntraSearch at 2535 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* threshServingLow at 2536 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* cellReselectionPriority at 2538 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cellReselectionServingFreqInfo_specs_33 = {
 	sizeof(struct SystemInformationBlockType3__cellReselectionServingFreqInfo),
@@ -942,14 +942,14 @@ static ber_tlv_tag_t asn_DEF_intraFreqCellReselectionInfo_tags_37[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_intraFreqCellReselectionInfo_tag2el_37[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-RxLevMin at 2762 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p-Max at 2763 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* s-IntraSearch at 2764 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* allowedMeasBandwidth at 2765 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* presenceAntennaPort1 at 2766 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* neighCellConfig at 2767 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* t-ReselectionEUTRA at 2768 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* t-ReselectionEUTRA-SF at 2769 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-RxLevMin at 2540 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p-Max at 2541 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* s-IntraSearch at 2542 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* allowedMeasBandwidth at 2543 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* presenceAntennaPort1 at 2544 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* neighCellConfig at 2545 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* t-ReselectionEUTRA at 2546 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* t-ReselectionEUTRA-SF at 2547 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_intraFreqCellReselectionInfo_specs_37 = {
 	sizeof(struct SystemInformationBlockType3__intraFreqCellReselectionInfo),
@@ -1015,8 +1015,8 @@ static ber_tlv_tag_t asn_DEF_s_IntraSearch_v920_tags_49[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_s_IntraSearch_v920_tag2el_49[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* s-IntraSearchP-r9 at 2774 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* s-IntraSearchQ-r9 at 2776 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* s-IntraSearchP-r9 at 2552 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* s-IntraSearchQ-r9 at 2554 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_s_IntraSearch_v920_specs_49 = {
 	sizeof(struct SystemInformationBlockType3__ext1__s_IntraSearch_v920),
@@ -1081,8 +1081,8 @@ static ber_tlv_tag_t asn_DEF_s_NonIntraSearch_v920_tags_52[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_s_NonIntraSearch_v920_tag2el_52[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* s-NonIntraSearchP-r9 at 2778 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* s-NonIntraSearchQ-r9 at 2780 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* s-NonIntraSearchP-r9 at 2556 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* s-NonIntraSearchQ-r9 at 2558 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_s_NonIntraSearch_v920_specs_52 = {
 	sizeof(struct SystemInformationBlockType3__ext1__s_NonIntraSearch_v920),
@@ -1166,10 +1166,10 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_48[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_48[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* s-IntraSearch-v920 at 2774 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* s-NonIntraSearch-v920 at 2778 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* q-QualMin-r9 at 2781 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* threshServingLowQ-r9 at 2782 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* s-IntraSearch-v920 at 2552 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* s-NonIntraSearch-v920 at 2556 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* q-QualMin-r9 at 2559 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* threshServingLowQ-r9 at 2560 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_48 = {
 	sizeof(struct SystemInformationBlockType3__ext1),
@@ -1227,7 +1227,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_57[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_57[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* q-QualMinWB-r11 at 2784 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* q-QualMinWB-r11 at 2562 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_57 = {
 	sizeof(struct SystemInformationBlockType3__ext2),
@@ -1285,7 +1285,7 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_59[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_59[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* q-QualMinRSRQ-OnAllSymbols-r12 at 2786 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* q-QualMinRSRQ-OnAllSymbols-r12 at 2564 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_59 = {
 	sizeof(struct SystemInformationBlockType3__ext3),
@@ -1370,10 +1370,10 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_61[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_61[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellReselectionServingFreqInfo-v1310 at 2788 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* redistributionServingInfo-r13 at 2789 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellSelectionInfoCE-r13 at 2790 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* t-ReselectionEUTRA-CE-r13 at 2791 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellReselectionServingFreqInfo-v1310 at 2566 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* redistributionServingInfo-r13 at 2567 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellSelectionInfoCE-r13 at 2568 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* t-ReselectionEUTRA-CE-r13 at 2569 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_61 = {
 	sizeof(struct SystemInformationBlockType3__ext4),
@@ -1414,122 +1414,6 @@ asn_TYPE_descriptor_t asn_DEF_ext4_61 = {
 	&asn_SPC_ext4_specs_61	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext5_66[] = {
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType3__ext5, cellSelectionInfoCE1_r13),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_CellSelectionInfoCE1_r13,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"cellSelectionInfoCE1-r13"
-		},
-};
-static int asn_MAP_ext5_oms_66[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext5_tags_66[] = {
-	(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_66[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cellSelectionInfoCE1-r13 at 2793 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_66 = {
-	sizeof(struct SystemInformationBlockType3__ext5),
-	offsetof(struct SystemInformationBlockType3__ext5, _asn_ctx),
-	asn_MAP_ext5_tag2el_66,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext5_oms_66,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext5_66 = {
-	"ext5",
-	"ext5",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext5_tags_66,
-	sizeof(asn_DEF_ext5_tags_66)
-		/sizeof(asn_DEF_ext5_tags_66[0]) - 1, /* 1 */
-	asn_DEF_ext5_tags_66,	/* Same as above */
-	sizeof(asn_DEF_ext5_tags_66)
-		/sizeof(asn_DEF_ext5_tags_66[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext5_66,
-	1,	/* Elements count */
-	&asn_SPC_ext5_specs_66	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext6_68[] = {
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType3__ext6, cellSelectionInfoCE1_v1360),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_CellSelectionInfoCE1_v1360,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"cellSelectionInfoCE1-v1360"
-		},
-};
-static int asn_MAP_ext6_oms_68[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext6_tags_68[] = {
-	(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext6_tag2el_68[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* cellSelectionInfoCE1-v1360 at 2795 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext6_specs_68 = {
-	sizeof(struct SystemInformationBlockType3__ext6),
-	offsetof(struct SystemInformationBlockType3__ext6, _asn_ctx),
-	asn_MAP_ext6_tag2el_68,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext6_oms_68,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext6_68 = {
-	"ext6",
-	"ext6",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext6_tags_68,
-	sizeof(asn_DEF_ext6_tags_68)
-		/sizeof(asn_DEF_ext6_tags_68[0]) - 1, /* 1 */
-	asn_DEF_ext6_tags_68,	/* Same as above */
-	sizeof(asn_DEF_ext6_tags_68)
-		/sizeof(asn_DEF_ext6_tags_68[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext6_68,
-	1,	/* Elements count */
-	&asn_SPC_ext6_specs_68	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct SystemInformationBlockType3, cellReselectionInfoCommon),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -1558,7 +1442,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_1[] = {
 		0,
 		"intraFreqCellReselectionInfo"
 		},
-	{ ATF_POINTER, 7, offsetof(struct SystemInformationBlockType3, lateNonCriticalExtension),
+	{ ATF_POINTER, 5, offsetof(struct SystemInformationBlockType3, lateNonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -1567,7 +1451,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_1[] = {
 		0,
 		"lateNonCriticalExtension"
 		},
-	{ ATF_POINTER, 6, offsetof(struct SystemInformationBlockType3, ext1),
+	{ ATF_POINTER, 4, offsetof(struct SystemInformationBlockType3, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		0,
 		&asn_DEF_ext1_48,
@@ -1576,7 +1460,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 5, offsetof(struct SystemInformationBlockType3, ext2),
+	{ ATF_POINTER, 3, offsetof(struct SystemInformationBlockType3, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		0,
 		&asn_DEF_ext2_57,
@@ -1585,7 +1469,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 4, offsetof(struct SystemInformationBlockType3, ext3),
+	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType3, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		0,
 		&asn_DEF_ext3_59,
@@ -1594,7 +1478,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_1[] = {
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 3, offsetof(struct SystemInformationBlockType3, ext4),
+	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType3, ext4),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		0,
 		&asn_DEF_ext4_61,
@@ -1603,50 +1487,30 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType3_1[] = {
 		0,
 		"ext4"
 		},
-	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType3, ext5),
-		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
-		0,
-		&asn_DEF_ext5_66,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext5"
-		},
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType3, ext6),
-		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
-		0,
-		&asn_DEF_ext6_68,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext6"
-		},
 };
-static int asn_MAP_SystemInformationBlockType3_oms_1[] = { 3, 4, 5, 6, 7, 8, 9 };
+static int asn_MAP_SystemInformationBlockType3_oms_1[] = { 3, 4, 5, 6, 7 };
 static ber_tlv_tag_t asn_DEF_SystemInformationBlockType3_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType3_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellReselectionInfoCommon at 2745 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellReselectionServingFreqInfo at 2757 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* intraFreqCellReselectionInfo at 2762 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* lateNonCriticalExtension at 2772 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 2776 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 2784 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext3 at 2786 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext4 at 2788 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext5 at 2793 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* ext6 at 2795 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellReselectionInfoCommon at 2523 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellReselectionServingFreqInfo at 2535 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* intraFreqCellReselectionInfo at 2540 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* lateNonCriticalExtension at 2550 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 2554 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 2562 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext3 at 2564 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext4 at 2566 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType3_specs_1 = {
 	sizeof(struct SystemInformationBlockType3),
 	offsetof(struct SystemInformationBlockType3, _asn_ctx),
 	asn_MAP_SystemInformationBlockType3_tag2el_1,
-	10,	/* Count of tags in the map */
+	8,	/* Count of tags in the map */
 	asn_MAP_SystemInformationBlockType3_oms_1,	/* Optional members */
-	0, 7,	/* Root/Additions */
+	0, 5,	/* Root/Additions */
 	2,	/* Start extensions */
-	11	/* Stop extensions */
+	9	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType3 = {
 	"SystemInformationBlockType3",
@@ -1672,7 +1536,7 @@ asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType3 = {
 		/sizeof(asn_DEF_SystemInformationBlockType3_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_SystemInformationBlockType3_1,
-	10,	/* Elements count */
+	8,	/* Elements count */
 	&asn_SPC_SystemInformationBlockType3_specs_1	/* Additional specs */
 };
 

@@ -128,8 +128,8 @@ static ber_tlv_tag_t asn_DEF_equallySpacedARFCNs_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_equallySpacedARFCNs_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* arfcn-Spacing at 6849 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* numberOfFollowingARFCNs at 6850 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* arfcn-Spacing at 6216 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* numberOfFollowingARFCNs at 6217 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_equallySpacedARFCNs_specs_6 = {
 	sizeof(struct CarrierFreqsGERAN__followingARFCNs__equallySpacedARFCNs),
@@ -199,9 +199,9 @@ static asn_TYPE_member_t asn_MBR_followingARFCNs_4[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_followingARFCNs_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitListOfARFCNs at 6847 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* equallySpacedARFCNs at 6849 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* variableBitMapOfARFCNs at 6852 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitListOfARFCNs at 6214 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* equallySpacedARFCNs at 6216 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* variableBitMapOfARFCNs at 6219 */
 };
 static asn_CHOICE_specifics_t asn_SPC_followingARFCNs_specs_4 = {
 	sizeof(struct CarrierFreqsGERAN__followingARFCNs),
@@ -273,9 +273,9 @@ static ber_tlv_tag_t asn_DEF_CarrierFreqsGERAN_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CarrierFreqsGERAN_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* startingARFCN at 6844 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* bandIndicator at 6845 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* followingARFCNs at 6847 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* startingARFCN at 6211 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* bandIndicator at 6212 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* followingARFCNs at 6214 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CarrierFreqsGERAN_specs_1 = {
 	sizeof(struct CarrierFreqsGERAN),

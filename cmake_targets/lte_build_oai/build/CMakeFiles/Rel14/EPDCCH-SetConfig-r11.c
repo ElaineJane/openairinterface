@@ -1262,8 +1262,8 @@ static ber_tlv_tag_t asn_DEF_resourceBlockAssignment_r11_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_resourceBlockAssignment_r11_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* numberPRB-Pairs-r11 at 4315 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* resourceBlockAssignment-r11 at 4316 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* numberPRB-Pairs-r11 at 3869 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* resourceBlockAssignment-r11 at 3870 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_resourceBlockAssignment_r11_specs_6 = {
 	sizeof(struct EPDCCH_SetConfig_r11__resourceBlockAssignment_r11),
@@ -1324,8 +1324,8 @@ static asn_TYPE_member_t asn_MBR_csi_RS_ConfigZPId2_r12_17[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_csi_RS_ConfigZPId2_r12_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4323 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4325 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3877 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3879 */
 };
 static asn_CHOICE_specifics_t asn_SPC_csi_RS_ConfigZPId2_r12_specs_17 = {
 	sizeof(struct EPDCCH_SetConfig_r11__ext1__csi_RS_ConfigZPId2_r12),
@@ -1381,7 +1381,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_16[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_16[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* csi-RS-ConfigZPId2-r12 at 4323 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* csi-RS-ConfigZPId2-r12 at 3877 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_16 = {
 	sizeof(struct EPDCCH_SetConfig_r11__ext1),
@@ -1490,8 +1490,8 @@ static asn_TYPE_member_t asn_MBR_numberPRB_Pairs_v1310_21[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_numberPRB_Pairs_v1310_tag2el_21[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4328 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4329 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3882 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3883 */
 };
 static asn_CHOICE_specifics_t asn_SPC_numberPRB_Pairs_v1310_specs_21 = {
 	sizeof(struct EPDCCH_SetConfig_r11__ext2__numberPRB_Pairs_v1310),
@@ -1779,8 +1779,8 @@ static asn_TYPE_member_t asn_MBR_mpdcch_StartSF_UESS_r13_38[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_mpdcch_StartSF_UESS_r13_tag2el_38[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fdd-r13 at 4337 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd-r13 at 4338 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fdd-r13 at 3891 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd-r13 at 3892 */
 };
 static asn_CHOICE_specifics_t asn_SPC_mpdcch_StartSF_UESS_r13_specs_38 = {
 	sizeof(struct EPDCCH_SetConfig_r11__ext2__mpdcch_config_r13__setup__mpdcch_StartSF_UESS_r13),
@@ -1934,11 +1934,11 @@ static ber_tlv_tag_t asn_DEF_setup_tags_27[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_27[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-NumRepetitionCE-r13 at 4334 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mpdcch-pdsch-HoppingConfig-r13 at 4335 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* mpdcch-StartSF-UESS-r13 at 4338 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* mpdcch-NumRepetition-r13 at 4341 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* mpdcch-Narrowband-r13 at 4343 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-NumRepetitionCE-r13 at 3888 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mpdcch-pdsch-HoppingConfig-r13 at 3889 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* mpdcch-StartSF-UESS-r13 at 3892 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* mpdcch-NumRepetition-r13 at 3895 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* mpdcch-Narrowband-r13 at 3897 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_27 = {
 	sizeof(struct EPDCCH_SetConfig_r11__ext2__mpdcch_config_r13__setup),
@@ -1999,8 +1999,8 @@ static asn_TYPE_member_t asn_MBR_mpdcch_config_r13_25[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_mpdcch_config_r13_tag2el_25[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4332 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4334 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3886 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3888 */
 };
 static asn_CHOICE_specifics_t asn_SPC_mpdcch_config_r13_specs_25 = {
 	sizeof(struct EPDCCH_SetConfig_r11__ext2__mpdcch_config_r13),
@@ -2065,8 +2065,8 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_20[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_20[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* numberPRB-Pairs-v1310 at 4328 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* mpdcch-config-r13 at 4332 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* numberPRB-Pairs-v1310 at 3882 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* mpdcch-config-r13 at 3886 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_20 = {
 	sizeof(struct EPDCCH_SetConfig_r11__ext2),
@@ -2186,14 +2186,14 @@ static ber_tlv_tag_t asn_DEF_EPDCCH_SetConfig_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_EPDCCH_SetConfig_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* setConfigId-r11 at 4312 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* transmissionType-r11 at 4313 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* resourceBlockAssignment-r11 at 4315 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* dmrs-ScramblingSequenceInt-r11 at 4318 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* pucch-ResourceStartOffset-r11 at 4319 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* re-MappingQCL-ConfigId-r11 at 4320 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext1 at 4325 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext2 at 4330 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* setConfigId-r11 at 3866 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* transmissionType-r11 at 3867 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* resourceBlockAssignment-r11 at 3869 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* dmrs-ScramblingSequenceInt-r11 at 3872 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* pucch-ResourceStartOffset-r11 at 3873 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* re-MappingQCL-ConfigId-r11 at 3874 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext1 at 3879 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext2 at 3884 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_EPDCCH_SetConfig_r11_specs_1 = {
 	sizeof(struct EPDCCH_SetConfig_r11),

@@ -41,9 +41,9 @@ static ber_tlv_tag_t asn_DEF_SPS_Config_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SPS_Config_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* semiPersistSchedC-RNTI at 6454 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sps-ConfigDL at 6455 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* sps-ConfigUL at 6456 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* semiPersistSchedC-RNTI at 5864 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sps-ConfigDL at 5865 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* sps-ConfigUL at 5866 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SPS_Config_specs_1 = {
 	sizeof(struct SPS_Config),

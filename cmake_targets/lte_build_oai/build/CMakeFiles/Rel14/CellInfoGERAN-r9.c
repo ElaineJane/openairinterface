@@ -40,9 +40,9 @@ static ber_tlv_tag_t asn_DEF_CellInfoGERAN_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CellInfoGERAN_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r9 at 1421 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* carrierFreq-r9 at 1422 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* systemInformation-r9 at 1424 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r9 at 1364 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* carrierFreq-r9 at 1365 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* systemInformation-r9 at 1367 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CellInfoGERAN_r9_specs_1 = {
 	sizeof(struct CellInfoGERAN_r9),

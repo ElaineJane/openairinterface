@@ -1087,16 +1087,16 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-UpPtsAdd-r13 at 6359 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* srs-Bandwidth-r13 at 6360 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* srs-HoppingBandwidth-r13 at 6361 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* freqDomainPosition-r13 at 6362 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* duration-r13 at 6363 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* srs-ConfigIndex-r13 at 6364 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* transmissionComb-r13 at 6365 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* cyclicShift-r13 at 6366 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* srs-AntennaPort-r13 at 6368 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* transmissionCombNum-r13 at 6369 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-UpPtsAdd-r13 at 5769 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* srs-Bandwidth-r13 at 5770 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* srs-HoppingBandwidth-r13 at 5771 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* freqDomainPosition-r13 at 5772 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* duration-r13 at 5773 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* srs-ConfigIndex-r13 at 5774 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* transmissionComb-r13 at 5775 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* cyclicShift-r13 at 5776 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* srs-AntennaPort-r13 at 5778 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* transmissionCombNum-r13 at 5779 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct SoundingRS_UL_ConfigDedicatedUpPTsExt_r13__setup),
@@ -1157,8 +1157,8 @@ static asn_TYPE_member_t asn_MBR_SoundingRS_UL_ConfigDedicatedUpPTsExt_r13_1[] =
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SoundingRS_UL_ConfigDedicatedUpPTsExt_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6357 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6359 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5767 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5769 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SoundingRS_UL_ConfigDedicatedUpPTsExt_r13_specs_1 = {
 	sizeof(struct SoundingRS_UL_ConfigDedicatedUpPTsExt_r13),

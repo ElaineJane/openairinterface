@@ -468,8 +468,8 @@ static ber_tlv_tag_t asn_DEF_txParameters_r13_tags_23[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_txParameters_r13_tag2el_23[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* txParametersGeneral-r13 at 13091 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* txProbability-r13 at 13092 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* txParametersGeneral-r13 at 11354 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* txProbability-r13 at 11355 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_txParameters_r13_specs_23 = {
 	sizeof(struct SL_PreconfigDiscPool_r13__txParameters_r13),
@@ -570,12 +570,12 @@ static ber_tlv_tag_t asn_DEF_SL_PreconfigDiscPool_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_PreconfigDiscPool_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cp-Len-r13 at 13084 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discPeriod-r13 at 13085 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* numRetx-r13 at 13087 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* numRepetition-r13 at 13088 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* tf-ResourceConfig-r13 at 13089 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* txParameters-r13 at 13091 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cp-Len-r13 at 11347 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discPeriod-r13 at 11348 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* numRetx-r13 at 11350 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* numRepetition-r13 at 11351 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* tf-ResourceConfig-r13 at 11352 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* txParameters-r13 at 11354 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_PreconfigDiscPool_r13_specs_1 = {
 	sizeof(struct SL_PreconfigDiscPool_r13),

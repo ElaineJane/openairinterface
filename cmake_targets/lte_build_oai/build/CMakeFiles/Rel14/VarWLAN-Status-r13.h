@@ -13,7 +13,6 @@
 
 /* Including external dependencies */
 #include "WLAN-Status-r13.h"
-#include "WLAN-Status-v1430.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -23,7 +22,6 @@ extern "C" {
 /* VarWLAN-Status-r13 */
 typedef struct VarWLAN_Status_r13 {
 	WLAN_Status_r13_t	 status_r13;
-	WLAN_Status_v1430_t	*status_r14	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

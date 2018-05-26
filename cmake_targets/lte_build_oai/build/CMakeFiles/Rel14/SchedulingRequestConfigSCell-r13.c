@@ -330,10 +330,10 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sr-PUCCH-ResourceIndex-r13 at 6308 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sr-PUCCH-ResourceIndexP1-r13 at 6309 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sr-ConfigIndex-r13 at 6310 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* dsr-TransMax-r13 at 6312 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sr-PUCCH-ResourceIndex-r13 at 5718 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sr-PUCCH-ResourceIndexP1-r13 at 5719 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sr-ConfigIndex-r13 at 5720 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* dsr-TransMax-r13 at 5722 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct SchedulingRequestConfigSCell_r13__setup),
@@ -395,8 +395,8 @@ static asn_TYPE_member_t asn_MBR_SchedulingRequestConfigSCell_r13_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SchedulingRequestConfigSCell_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6306 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6308 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5716 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5718 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SchedulingRequestConfigSCell_r13_specs_1 = {
 	sizeof(struct SchedulingRequestConfigSCell_r13),

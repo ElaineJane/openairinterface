@@ -8,31 +8,6 @@
 #include "SystemInformationBlockType5.h"
 
 static int
-memb_scptm_FreqOffset_r14_constraint_18(asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 1 && value <= 8)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		_ASN_CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
 memb_lateNonCriticalExtension_constraint_1(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	const OCTET_STRING_t *st = (const OCTET_STRING_t *)sptr;
@@ -52,11 +27,6 @@ memb_lateNonCriticalExtension_constraint_1(asn_TYPE_descriptor_t *td, const void
 	return td->check_constraints(td, sptr, ctfailcb, app_key);
 }
 
-static asn_per_constraints_t asn_PER_memb_scptm_FreqOffset_r14_constr_19 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 3,  3,  1,  8 }	/* (1..8) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
 static asn_per_constraints_t asn_PER_memb_lateNonCriticalExtension_constr_4 GCC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_SEMI_CONSTRAINED,	-1, -1,  0,  0 }	/* (SIZE(0..MAX)) */,
@@ -88,8 +58,8 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interFreqCarrierFreqList-v1250 at 2842 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interFreqCarrierFreqListExt-r12 at 2843 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interFreqCarrierFreqList-v1250 at 2616 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interFreqCarrierFreqListExt-r12 at 2617 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_5 = {
 	sizeof(struct SystemInformationBlockType5__ext1),
@@ -147,7 +117,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_8[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* interFreqCarrierFreqListExt-v1280 at 2845 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* interFreqCarrierFreqListExt-v1280 at 2619 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_8 = {
 	sizeof(struct SystemInformationBlockType5__ext2),
@@ -214,8 +184,8 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_10[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interFreqCarrierFreqList-v1310 at 2847 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interFreqCarrierFreqListExt-v1310 at 2848 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interFreqCarrierFreqList-v1310 at 2621 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interFreqCarrierFreqListExt-v1310 at 2622 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_10 = {
 	sizeof(struct SystemInformationBlockType5__ext3),
@@ -256,190 +226,6 @@ asn_TYPE_descriptor_t asn_DEF_ext3_10 = {
 	&asn_SPC_ext3_specs_10	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext4_13[] = {
-	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType5__ext4, interFreqCarrierFreqList_v1350),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_InterFreqCarrierFreqList_v1350,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"interFreqCarrierFreqList-v1350"
-		},
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType5__ext4, interFreqCarrierFreqListExt_v1350),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_InterFreqCarrierFreqListExt_v1350,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"interFreqCarrierFreqListExt-v1350"
-		},
-};
-static int asn_MAP_ext4_oms_13[] = { 0, 1 };
-static ber_tlv_tag_t asn_DEF_ext4_tags_13[] = {
-	(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interFreqCarrierFreqList-v1350 at 2850 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interFreqCarrierFreqListExt-v1350 at 2851 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_13 = {
-	sizeof(struct SystemInformationBlockType5__ext4),
-	offsetof(struct SystemInformationBlockType5__ext4, _asn_ctx),
-	asn_MAP_ext4_tag2el_13,
-	2,	/* Count of tags in the map */
-	asn_MAP_ext4_oms_13,	/* Optional members */
-	2, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext4_13 = {
-	"ext4",
-	"ext4",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext4_tags_13,
-	sizeof(asn_DEF_ext4_tags_13)
-		/sizeof(asn_DEF_ext4_tags_13[0]) - 1, /* 1 */
-	asn_DEF_ext4_tags_13,	/* Same as above */
-	sizeof(asn_DEF_ext4_tags_13)
-		/sizeof(asn_DEF_ext4_tags_13[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext4_13,
-	2,	/* Elements count */
-	&asn_SPC_ext4_specs_13	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext5_16[] = {
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType5__ext5, interFreqCarrierFreqListExt_v1360),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_InterFreqCarrierFreqListExt_v1360,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"interFreqCarrierFreqListExt-v1360"
-		},
-};
-static int asn_MAP_ext5_oms_16[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext5_tags_16[] = {
-	(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_16[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* interFreqCarrierFreqListExt-v1360 at 2853 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_16 = {
-	sizeof(struct SystemInformationBlockType5__ext5),
-	offsetof(struct SystemInformationBlockType5__ext5, _asn_ctx),
-	asn_MAP_ext5_tag2el_16,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext5_oms_16,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext5_16 = {
-	"ext5",
-	"ext5",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext5_tags_16,
-	sizeof(asn_DEF_ext5_tags_16)
-		/sizeof(asn_DEF_ext5_tags_16[0]) - 1, /* 1 */
-	asn_DEF_ext5_tags_16,	/* Same as above */
-	sizeof(asn_DEF_ext5_tags_16)
-		/sizeof(asn_DEF_ext5_tags_16[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext5_16,
-	1,	/* Elements count */
-	&asn_SPC_ext5_specs_16	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_ext6_18[] = {
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType5__ext6, scptm_FreqOffset_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_NativeInteger,
-		memb_scptm_FreqOffset_r14_constraint_18,
-		&asn_PER_memb_scptm_FreqOffset_r14_constr_19,
-		0,
-		"scptm-FreqOffset-r14"
-		},
-};
-static int asn_MAP_ext6_oms_18[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext6_tags_18[] = {
-	(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext6_tag2el_18[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* scptm-FreqOffset-r14 at 2855 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext6_specs_18 = {
-	sizeof(struct SystemInformationBlockType5__ext6),
-	offsetof(struct SystemInformationBlockType5__ext6, _asn_ctx),
-	asn_MAP_ext6_tag2el_18,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext6_oms_18,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext6_18 = {
-	"ext6",
-	"ext6",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext6_tags_18,
-	sizeof(asn_DEF_ext6_tags_18)
-		/sizeof(asn_DEF_ext6_tags_18[0]) - 1, /* 1 */
-	asn_DEF_ext6_tags_18,	/* Same as above */
-	sizeof(asn_DEF_ext6_tags_18)
-		/sizeof(asn_DEF_ext6_tags_18[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext6_18,
-	1,	/* Elements count */
-	&asn_SPC_ext6_specs_18	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_SystemInformationBlockType5_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct SystemInformationBlockType5, interFreqCarrierFreqList),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -450,7 +236,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType5_1[] = {
 		0,
 		"interFreqCarrierFreqList"
 		},
-	{ ATF_POINTER, 7, offsetof(struct SystemInformationBlockType5, lateNonCriticalExtension),
+	{ ATF_POINTER, 4, offsetof(struct SystemInformationBlockType5, lateNonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -459,7 +245,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType5_1[] = {
 		0,
 		"lateNonCriticalExtension"
 		},
-	{ ATF_POINTER, 6, offsetof(struct SystemInformationBlockType5, ext1),
+	{ ATF_POINTER, 3, offsetof(struct SystemInformationBlockType5, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		0,
 		&asn_DEF_ext1_5,
@@ -468,7 +254,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType5_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 5, offsetof(struct SystemInformationBlockType5, ext2),
+	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType5, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		0,
 		&asn_DEF_ext2_8,
@@ -477,7 +263,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType5_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 4, offsetof(struct SystemInformationBlockType5, ext3),
+	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType5, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		0,
 		&asn_DEF_ext3_10,
@@ -486,57 +272,27 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType5_1[] = {
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 3, offsetof(struct SystemInformationBlockType5, ext4),
-		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
-		0,
-		&asn_DEF_ext4_13,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext4"
-		},
-	{ ATF_POINTER, 2, offsetof(struct SystemInformationBlockType5, ext5),
-		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
-		0,
-		&asn_DEF_ext5_16,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext5"
-		},
-	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType5, ext6),
-		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
-		0,
-		&asn_DEF_ext6_18,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext6"
-		},
 };
-static int asn_MAP_SystemInformationBlockType5_oms_1[] = { 1, 2, 3, 4, 5, 6, 7 };
+static int asn_MAP_SystemInformationBlockType5_oms_1[] = { 1, 2, 3, 4 };
 static ber_tlv_tag_t asn_DEF_SystemInformationBlockType5_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType5_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interFreqCarrierFreqList at 2839 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* lateNonCriticalExtension at 2841 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext1 at 2842 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext2 at 2845 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext3 at 2847 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext4 at 2850 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext5 at 2853 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext6 at 2855 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interFreqCarrierFreqList at 2613 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* lateNonCriticalExtension at 2615 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ext1 at 2616 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext2 at 2619 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext3 at 2621 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType5_specs_1 = {
 	sizeof(struct SystemInformationBlockType5),
 	offsetof(struct SystemInformationBlockType5, _asn_ctx),
 	asn_MAP_SystemInformationBlockType5_tag2el_1,
-	8,	/* Count of tags in the map */
+	5,	/* Count of tags in the map */
 	asn_MAP_SystemInformationBlockType5_oms_1,	/* Optional members */
-	0, 7,	/* Root/Additions */
+	0, 4,	/* Root/Additions */
 	0,	/* Start extensions */
-	9	/* Stop extensions */
+	6	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType5 = {
 	"SystemInformationBlockType5",
@@ -562,7 +318,7 @@ asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType5 = {
 		/sizeof(asn_DEF_SystemInformationBlockType5_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_SystemInformationBlockType5_1,
-	8,	/* Elements count */
+	5,	/* Elements count */
 	&asn_SPC_SystemInformationBlockType5_specs_1	/* Additional specs */
 };
 

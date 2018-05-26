@@ -239,8 +239,8 @@ static ber_tlv_tag_t asn_DEF_LAA_SCellConfiguration_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_LAA_SCellConfiguration_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframeStartPosition-r13 at 5117 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* laa-SCellSubframeConfig-r13 at 5118 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* subframeStartPosition-r13 at 4603 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* laa-SCellSubframeConfig-r13 at 4604 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_LAA_SCellConfiguration_r13_specs_1 = {
 	sizeof(struct LAA_SCellConfiguration_r13),

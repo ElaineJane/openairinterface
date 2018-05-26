@@ -97,8 +97,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nPUSCH-Identity-r11 at 5469 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nDMRS-CSH-Identity-r11 at 5470 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nPUSCH-Identity-r11 at 4939 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nDMRS-CSH-Identity-r11 at 4940 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct PUSCH_ConfigDedicated_v1130__pusch_DMRS_r11__setup),
@@ -159,8 +159,8 @@ static asn_TYPE_member_t asn_MBR_pusch_DMRS_r11_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_pusch_DMRS_r11_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5467 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5469 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4937 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4939 */
 };
 static asn_CHOICE_specifics_t asn_SPC_pusch_DMRS_r11_specs_2 = {
 	sizeof(struct PUSCH_ConfigDedicated_v1130__pusch_DMRS_r11),
@@ -214,7 +214,7 @@ static ber_tlv_tag_t asn_DEF_PUSCH_ConfigDedicated_v1130_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PUSCH_ConfigDedicated_v1130_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pusch-DMRS-r11 at 5467 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pusch-DMRS-r11 at 4937 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PUSCH_ConfigDedicated_v1130_specs_1 = {
 	sizeof(struct PUSCH_ConfigDedicated_v1130),

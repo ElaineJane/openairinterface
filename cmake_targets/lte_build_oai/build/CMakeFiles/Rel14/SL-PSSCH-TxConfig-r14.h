@@ -12,7 +12,6 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "SL-TypeTxSync-r14.h"
 #include <NativeEnumerated.h>
 #include "SL-PSSCH-TxParameters-r14.h"
 #include <constr_SEQUENCE.h>
@@ -22,6 +21,12 @@ extern "C" {
 #endif
 
 /* Dependencies */
+typedef enum SL_PSSCH_TxConfig_r14__typeTxSync_r14 {
+	SL_PSSCH_TxConfig_r14__typeTxSync_r14_gnss	= 0,
+	SL_PSSCH_TxConfig_r14__typeTxSync_r14_enb	= 1,
+	SL_PSSCH_TxConfig_r14__typeTxSync_r14_ue	= 2,
+	SL_PSSCH_TxConfig_r14__typeTxSync_r14_spare1	= 3
+} e_SL_PSSCH_TxConfig_r14__typeTxSync_r14;
 typedef enum SL_PSSCH_TxConfig_r14__thresUE_Speed_r14 {
 	SL_PSSCH_TxConfig_r14__thresUE_Speed_r14_kmph60	= 0,
 	SL_PSSCH_TxConfig_r14__thresUE_Speed_r14_kmph80	= 1,
@@ -35,7 +40,7 @@ typedef enum SL_PSSCH_TxConfig_r14__thresUE_Speed_r14 {
 
 /* SL-PSSCH-TxConfig-r14 */
 typedef struct SL_PSSCH_TxConfig_r14 {
-	SL_TypeTxSync_r14_t	*typeTxSync_r14	/* OPTIONAL */;
+	long	*typeTxSync_r14	/* OPTIONAL */;
 	long	 thresUE_Speed_r14;
 	SL_PSSCH_TxParameters_r14_t	 parametersAboveThres_r14;
 	SL_PSSCH_TxParameters_r14_t	 parametersBelowThres_r14;
@@ -49,7 +54,8 @@ typedef struct SL_PSSCH_TxConfig_r14 {
 } SL_PSSCH_TxConfig_r14_t;
 
 /* Implementation */
-/* extern asn_TYPE_descriptor_t asn_DEF_thresUE_Speed_r14_3;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_typeTxSync_r14_2;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_thresUE_Speed_r14_7;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_SL_PSSCH_TxConfig_r14;
 
 #ifdef __cplusplus

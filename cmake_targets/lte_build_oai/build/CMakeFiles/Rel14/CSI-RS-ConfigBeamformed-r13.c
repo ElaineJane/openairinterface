@@ -748,12 +748,12 @@ static ber_tlv_tag_t asn_DEF_CSI_RS_ConfigBeamformed_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CSI_RS_ConfigBeamformed_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-RS-ConfigNZPIdListExt-r13 at 4151 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-IM-ConfigIdList-r13 at 4152 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* p-C-AndCBSR-PerResourceConfigList-r13 at 4153 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ace-For4Tx-PerResourceConfigList-r13 at 4154 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* alternativeCodebookEnabledBeamformed-r13 at 4155 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* channelMeasRestriction-r13 at 4156 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-RS-ConfigNZPIdListExt-r13 at 3767 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-IM-ConfigIdList-r13 at 3768 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* p-C-AndCBSR-PerResourceConfigList-r13 at 3769 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ace-For4Tx-PerResourceConfigList-r13 at 3770 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* alternativeCodebookEnabledBeamformed-r13 at 3771 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* channelMeasRestriction-r13 at 3772 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CSI_RS_ConfigBeamformed_r13_specs_1 = {
 	sizeof(struct CSI_RS_ConfigBeamformed_r13),

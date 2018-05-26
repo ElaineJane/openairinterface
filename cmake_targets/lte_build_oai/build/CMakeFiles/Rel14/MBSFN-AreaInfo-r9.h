@@ -43,29 +43,6 @@ typedef enum MBSFN_AreaInfo_r9__mcch_Config_r9__signallingMCS_r9 {
 	MBSFN_AreaInfo_r9__mcch_Config_r9__signallingMCS_r9_n13	= 2,
 	MBSFN_AreaInfo_r9__mcch_Config_r9__signallingMCS_r9_n19	= 3
 } e_MBSFN_AreaInfo_r9__mcch_Config_r9__signallingMCS_r9;
-typedef enum MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_RepetitionPeriod_v1430 {
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_RepetitionPeriod_v1430_rf1	= 0,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_RepetitionPeriod_v1430_rf2	= 1,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_RepetitionPeriod_v1430_rf4	= 2,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_RepetitionPeriod_v1430_rf8	= 3,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_RepetitionPeriod_v1430_rf16	= 4
-} e_MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_RepetitionPeriod_v1430;
-typedef enum MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430 {
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430_rf1	= 0,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430_rf2	= 1,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430_rf4	= 2,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430_rf8	= 3,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430_rf16	= 4,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430_rf32	= 5,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430_rf64	= 6,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430_rf128	= 7,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430_rf256	= 8,
-	MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430_spare7	= 9
-} e_MBSFN_AreaInfo_r9__ext1__mcch_Config_r14__mcch_ModificationPeriod_v1430;
-typedef enum MBSFN_AreaInfo_r9__ext1__subcarrierSpacingMBMS_r14 {
-	MBSFN_AreaInfo_r9__ext1__subcarrierSpacingMBMS_r14_khz_7dot5	= 0,
-	MBSFN_AreaInfo_r9__ext1__subcarrierSpacingMBMS_r14_khz_1dot25	= 1
-} e_MBSFN_AreaInfo_r9__ext1__subcarrierSpacingMBMS_r14;
 
 /* MBSFN-AreaInfo-r9 */
 typedef struct MBSFN_AreaInfo_r9 {
@@ -86,19 +63,6 @@ typedef struct MBSFN_AreaInfo_r9 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct MBSFN_AreaInfo_r9__ext1 {
-		struct MBSFN_AreaInfo_r9__ext1__mcch_Config_r14 {
-			long	*mcch_RepetitionPeriod_v1430	/* OPTIONAL */;
-			long	*mcch_ModificationPeriod_v1430	/* OPTIONAL */;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *mcch_Config_r14;
-		long	*subcarrierSpacingMBMS_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -109,9 +73,6 @@ typedef struct MBSFN_AreaInfo_r9 {
 /* extern asn_TYPE_descriptor_t asn_DEF_mcch_RepetitionPeriod_r9_8;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_mcch_ModificationPeriod_r9_14;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_signallingMCS_r9_18;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_mcch_RepetitionPeriod_v1430_26;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_mcch_ModificationPeriod_v1430_32;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_subcarrierSpacingMBMS_r14_43;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_MBSFN_AreaInfo_r9;
 
 #ifdef __cplusplus

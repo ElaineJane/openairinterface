@@ -305,10 +305,10 @@ static ber_tlv_tag_t asn_DEF_CA_MIMO_ParametersDL_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CA_MIMO_ParametersDL_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ca-BandwidthClassDL-r13 at 9307 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedMIMO-CapabilityDL-r13 at 9308 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* fourLayerTM3-TM4-r13 at 9309 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* intraBandContiguousCC-InfoList-r13 at 9311 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ca-BandwidthClassDL-r13 at 8358 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedMIMO-CapabilityDL-r13 at 8359 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* fourLayerTM3-TM4-r13 at 8360 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* intraBandContiguousCC-InfoList-r13 at 8362 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CA_MIMO_ParametersDL_r13_specs_1 = {
 	sizeof(struct CA_MIMO_ParametersDL_r13),

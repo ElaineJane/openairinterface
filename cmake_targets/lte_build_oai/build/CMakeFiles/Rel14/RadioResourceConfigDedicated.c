@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_mac_MainConfig_5[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_mac_MainConfig_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue at 5885 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue at 5886 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue at 5303 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue at 5304 */
 };
 static asn_CHOICE_specifics_t asn_SPC_mac_MainConfig_specs_5 = {
 	sizeof(struct RadioResourceConfigDedicated__mac_MainConfig),
@@ -90,7 +90,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rlf-TimersAndConstants-r9 at 5891 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rlf-TimersAndConstants-r9 at 5309 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_11 = {
 	sizeof(struct RadioResourceConfigDedicated__ext1),
@@ -148,7 +148,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_13[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* measSubframePatternPCell-r10 at 5893 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* measSubframePatternPCell-r10 at 5311 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_13 = {
 	sizeof(struct RadioResourceConfigDedicated__ext2),
@@ -206,7 +206,7 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* neighCellsCRS-Info-r11 at 5895 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* neighCellsCRS-Info-r11 at 5313 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_15 = {
 	sizeof(struct RadioResourceConfigDedicated__ext3),
@@ -264,7 +264,7 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* naics-Info-r12 at 5897 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* naics-Info-r12 at 5315 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_17 = {
 	sizeof(struct RadioResourceConfigDedicated__ext4),
@@ -331,8 +331,8 @@ static ber_tlv_tag_t asn_DEF_ext5_tags_19[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_19[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* neighCellsCRS-Info-r13 at 5899 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rlf-TimersAndConstants-r13 at 5900 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* neighCellsCRS-Info-r13 at 5317 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rlf-TimersAndConstants-r13 at 5318 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_19 = {
 	sizeof(struct RadioResourceConfigDedicated__ext5),
@@ -373,66 +373,8 @@ asn_TYPE_descriptor_t asn_DEF_ext5_19 = {
 	&asn_SPC_ext5_specs_19	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext6_22[] = {
-	{ ATF_POINTER, 1, offsetof(struct RadioResourceConfigDedicated__ext6, sps_Config_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SPS_Config_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"sps-Config-v1430"
-		},
-};
-static int asn_MAP_ext6_oms_22[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext6_tags_22[] = {
-	(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext6_tag2el_22[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sps-Config-v1430 at 5902 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext6_specs_22 = {
-	sizeof(struct RadioResourceConfigDedicated__ext6),
-	offsetof(struct RadioResourceConfigDedicated__ext6, _asn_ctx),
-	asn_MAP_ext6_tag2el_22,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext6_oms_22,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext6_22 = {
-	"ext6",
-	"ext6",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext6_tags_22,
-	sizeof(asn_DEF_ext6_tags_22)
-		/sizeof(asn_DEF_ext6_tags_22[0]) - 1, /* 1 */
-	asn_DEF_ext6_tags_22,	/* Same as above */
-	sizeof(asn_DEF_ext6_tags_22)
-		/sizeof(asn_DEF_ext6_tags_22[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext6_22,
-	1,	/* Elements count */
-	&asn_SPC_ext6_specs_22	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
-	{ ATF_POINTER, 12, offsetof(struct RadioResourceConfigDedicated, srb_ToAddModList),
+	{ ATF_POINTER, 11, offsetof(struct RadioResourceConfigDedicated, srb_ToAddModList),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SRB_ToAddModList,
@@ -441,7 +383,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"srb-ToAddModList"
 		},
-	{ ATF_POINTER, 11, offsetof(struct RadioResourceConfigDedicated, drb_ToAddModList),
+	{ ATF_POINTER, 10, offsetof(struct RadioResourceConfigDedicated, drb_ToAddModList),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_ToAddModList,
@@ -450,7 +392,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"drb-ToAddModList"
 		},
-	{ ATF_POINTER, 10, offsetof(struct RadioResourceConfigDedicated, drb_ToReleaseList),
+	{ ATF_POINTER, 9, offsetof(struct RadioResourceConfigDedicated, drb_ToReleaseList),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_ToReleaseList,
@@ -459,7 +401,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"drb-ToReleaseList"
 		},
-	{ ATF_POINTER, 9, offsetof(struct RadioResourceConfigDedicated, mac_MainConfig),
+	{ ATF_POINTER, 8, offsetof(struct RadioResourceConfigDedicated, mac_MainConfig),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_mac_MainConfig_5,
@@ -468,7 +410,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"mac-MainConfig"
 		},
-	{ ATF_POINTER, 8, offsetof(struct RadioResourceConfigDedicated, sps_Config),
+	{ ATF_POINTER, 7, offsetof(struct RadioResourceConfigDedicated, sps_Config),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SPS_Config,
@@ -477,7 +419,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"sps-Config"
 		},
-	{ ATF_POINTER, 7, offsetof(struct RadioResourceConfigDedicated, physicalConfigDedicated),
+	{ ATF_POINTER, 6, offsetof(struct RadioResourceConfigDedicated, physicalConfigDedicated),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PhysicalConfigDedicated,
@@ -486,7 +428,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"physicalConfigDedicated"
 		},
-	{ ATF_POINTER, 6, offsetof(struct RadioResourceConfigDedicated, ext1),
+	{ ATF_POINTER, 5, offsetof(struct RadioResourceConfigDedicated, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		0,
 		&asn_DEF_ext1_11,
@@ -495,7 +437,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 5, offsetof(struct RadioResourceConfigDedicated, ext2),
+	{ ATF_POINTER, 4, offsetof(struct RadioResourceConfigDedicated, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		0,
 		&asn_DEF_ext2_13,
@@ -504,7 +446,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 4, offsetof(struct RadioResourceConfigDedicated, ext3),
+	{ ATF_POINTER, 3, offsetof(struct RadioResourceConfigDedicated, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		0,
 		&asn_DEF_ext3_15,
@@ -513,7 +455,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 3, offsetof(struct RadioResourceConfigDedicated, ext4),
+	{ ATF_POINTER, 2, offsetof(struct RadioResourceConfigDedicated, ext4),
 		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 		0,
 		&asn_DEF_ext4_17,
@@ -522,7 +464,7 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"ext4"
 		},
-	{ ATF_POINTER, 2, offsetof(struct RadioResourceConfigDedicated, ext5),
+	{ ATF_POINTER, 1, offsetof(struct RadioResourceConfigDedicated, ext5),
 		(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
 		0,
 		&asn_DEF_ext5_19,
@@ -531,43 +473,33 @@ static asn_TYPE_member_t asn_MBR_RadioResourceConfigDedicated_1[] = {
 		0,
 		"ext5"
 		},
-	{ ATF_POINTER, 1, offsetof(struct RadioResourceConfigDedicated, ext6),
-		(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
-		0,
-		&asn_DEF_ext6_22,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext6"
-		},
 };
-static int asn_MAP_RadioResourceConfigDedicated_oms_1[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+static int asn_MAP_RadioResourceConfigDedicated_oms_1[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 static ber_tlv_tag_t asn_DEF_RadioResourceConfigDedicated_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RadioResourceConfigDedicated_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srb-ToAddModList at 5881 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* drb-ToAddModList at 5882 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* drb-ToReleaseList at 5883 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* mac-MainConfig at 5885 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* sps-Config at 5888 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* physicalConfigDedicated at 5889 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext1 at 5891 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext2 at 5893 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext3 at 5895 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* ext4 at 5897 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* ext5 at 5899 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 } /* ext6 at 5902 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srb-ToAddModList at 5299 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* drb-ToAddModList at 5300 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* drb-ToReleaseList at 5301 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* mac-MainConfig at 5303 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* sps-Config at 5306 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* physicalConfigDedicated at 5307 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext1 at 5309 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext2 at 5311 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext3 at 5313 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* ext4 at 5315 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 } /* ext5 at 5317 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RadioResourceConfigDedicated_specs_1 = {
 	sizeof(struct RadioResourceConfigDedicated),
 	offsetof(struct RadioResourceConfigDedicated, _asn_ctx),
 	asn_MAP_RadioResourceConfigDedicated_tag2el_1,
-	12,	/* Count of tags in the map */
+	11,	/* Count of tags in the map */
 	asn_MAP_RadioResourceConfigDedicated_oms_1,	/* Optional members */
-	6, 6,	/* Root/Additions */
+	6, 5,	/* Root/Additions */
 	5,	/* Start extensions */
-	13	/* Stop extensions */
+	12	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_RadioResourceConfigDedicated = {
 	"RadioResourceConfigDedicated",
@@ -593,7 +525,7 @@ asn_TYPE_descriptor_t asn_DEF_RadioResourceConfigDedicated = {
 		/sizeof(asn_DEF_RadioResourceConfigDedicated_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_RadioResourceConfigDedicated_1,
-	12,	/* Elements count */
+	11,	/* Elements count */
 	&asn_SPC_RadioResourceConfigDedicated_specs_1	/* Additional specs */
 };
 

@@ -44,10 +44,10 @@ typedef enum SL_ZoneConfig_r14__zoneWidth_r14 {
 
 /* SL-ZoneConfig-r14 */
 typedef struct SL_ZoneConfig_r14 {
-	long	 zoneLength_r14;
-	long	 zoneWidth_r14;
-	long	 zoneIdLongiMod_r14;
-	long	 zoneIdLatiMod_r14;
+	long	*zoneLength_r14	/* OPTIONAL */;
+	long	*zoneWidth_r14	/* OPTIONAL */;
+	long	*zoneIdLongiMod_r14	/* OPTIONAL */;
+	long	*zoneIdLatiMod_r14	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

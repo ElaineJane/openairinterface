@@ -372,8 +372,8 @@ static ber_tlv_tag_t asn_DEF_OTDOA_PositioningCapabilities_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_OTDOA_PositioningCapabilities_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* otdoa-UE-Assisted-r10 at 9572 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interFreqRSTD-Measurement-r10 at 9573 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* otdoa-UE-Assisted-r10 at 8609 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interFreqRSTD-Measurement-r10 at 8610 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_OTDOA_PositioningCapabilities_r10_specs_1 = {
 	sizeof(struct OTDOA_PositioningCapabilities_r10),

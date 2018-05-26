@@ -67,8 +67,8 @@ static ber_tlv_tag_t asn_DEF_pci_arfcn_r12_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_pci_arfcn_r12_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r12 at 9820 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* carrierFreq-r12 at 9822 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r12 at 8778 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* carrierFreq-r12 at 8780 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_pci_arfcn_r12_specs_4 = {
 	sizeof(struct VisitedCellInfo_r12__visitedCellId_r12__pci_arfcn_r12),
@@ -129,8 +129,8 @@ static asn_TYPE_member_t asn_MBR_visitedCellId_r12_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_visitedCellId_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellGlobalId-r12 at 9818 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* pci-arfcn-r12 at 9820 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellGlobalId-r12 at 8776 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* pci-arfcn-r12 at 8778 */
 };
 static asn_CHOICE_specifics_t asn_SPC_visitedCellId_r12_specs_2 = {
 	sizeof(struct VisitedCellInfo_r12__visitedCellId_r12),
@@ -194,8 +194,8 @@ static ber_tlv_tag_t asn_DEF_VisitedCellInfo_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_VisitedCellInfo_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* visitedCellId-r12 at 9818 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* timeSpent-r12 at 9824 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* visitedCellId-r12 at 8776 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* timeSpent-r12 at 8782 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_VisitedCellInfo_r12_specs_1 = {
 	sizeof(struct VisitedCellInfo_r12),

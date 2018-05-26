@@ -929,13 +929,13 @@ static ber_tlv_tag_t asn_DEF_SL_Parameters_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_Parameters_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commSimultaneousTx-r12 at 9708 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commSupportedBands-r12 at 9709 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* discSupportedBands-r12 at 9710 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* discScheduledResourceAlloc-r12 at 9711 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* disc-UE-SelectedResourceAlloc-r12 at 9712 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* disc-SLSS-r12 at 9713 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* discSupportedProc-r12 at 9714 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commSimultaneousTx-r12 at 8705 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commSupportedBands-r12 at 8706 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* discSupportedBands-r12 at 8707 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* discScheduledResourceAlloc-r12 at 8708 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* disc-UE-SelectedResourceAlloc-r12 at 8709 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* disc-SLSS-r12 at 8710 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* discSupportedProc-r12 at 8711 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_Parameters_r12_specs_1 = {
 	sizeof(struct SL_Parameters_r12),

@@ -9,7 +9,7 @@
 
 static asn_per_constraints_t asn_PER_type_SL_ThresPSSCH_RSRP_List_r14_constr_1 GCC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	{ APC_CONSTRAINED,	 0,  0,  64,  64 }	/* (SIZE(64..64)) */,
+	{ APC_CONSTRAINED,	 6,  6,  1,  64 }	/* (SIZE(1..64)) */,
 	0, 0	/* No PER value map */
 };
 static asn_TYPE_member_t asn_MBR_SL_ThresPSSCH_RSRP_List_r14_1[] = {

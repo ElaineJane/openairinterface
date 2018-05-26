@@ -22,7 +22,6 @@
 #include <BOOLEAN.h>
 #include "ThresholdEUTRA-v1250.h"
 #include "MeasCSI-RS-Id-r12.h"
-#include "SL-CBR-r14.h"
 #include <constr_CHOICE.h>
 #include <NULL.h>
 #include "RS-SINR-Range-r13.h"
@@ -47,9 +46,7 @@ typedef enum ReportConfigEUTRA__triggerType__event__eventId_PR {
 	/* Extensions may appear below */
 	ReportConfigEUTRA__triggerType__event__eventId_PR_eventA6_r10,
 	ReportConfigEUTRA__triggerType__event__eventId_PR_eventC1_r12,
-	ReportConfigEUTRA__triggerType__event__eventId_PR_eventC2_r12,
-	ReportConfigEUTRA__triggerType__event__eventId_PR_eventV1_r14,
-	ReportConfigEUTRA__triggerType__event__eventId_PR_eventV2_r14
+	ReportConfigEUTRA__triggerType__event__eventId_PR_eventC2_r12
 } ReportConfigEUTRA__triggerType__event__eventId_PR;
 typedef enum ReportConfigEUTRA__triggerType__periodical__purpose {
 	ReportConfigEUTRA__triggerType__periodical__purpose_reportStrongestCells	= 0,
@@ -106,12 +103,6 @@ typedef enum ReportConfigEUTRA__ext4__rs_sinr_Config_r13__setup__reportQuantity_
 typedef enum ReportConfigEUTRA__ext4__includeMultiBandInfo_r13 {
 	ReportConfigEUTRA__ext4__includeMultiBandInfo_r13_true	= 0
 } e_ReportConfigEUTRA__ext4__includeMultiBandInfo_r13;
-typedef enum ReportConfigEUTRA__ext6__purpose_v1430 {
-	ReportConfigEUTRA__ext6__purpose_v1430_reportLocation	= 0,
-	ReportConfigEUTRA__ext6__purpose_v1430_sidelink	= 1,
-	ReportConfigEUTRA__ext6__purpose_v1430_spare2	= 2,
-	ReportConfigEUTRA__ext6__purpose_v1430_spare1	= 3
-} e_ReportConfigEUTRA__ext6__purpose_v1430;
 
 /* Forward declarations */
 struct RSRQ_RangeConfig_r12;
@@ -185,18 +176,6 @@ typedef struct ReportConfigEUTRA {
 							/* Context for parsing across buffer boundaries */
 							asn_struct_ctx_t _asn_ctx;
 						} eventC2_r12;
-						struct ReportConfigEUTRA__triggerType__event__eventId__eventV1_r14 {
-							SL_CBR_r14_t	 v1_Threshold_r14;
-							
-							/* Context for parsing across buffer boundaries */
-							asn_struct_ctx_t _asn_ctx;
-						} eventV1_r14;
-						struct ReportConfigEUTRA__triggerType__event__eventId__eventV2_r14 {
-							SL_CBR_r14_t	 v2_Threshold_r14;
-							
-							/* Context for parsing across buffer boundaries */
-							asn_struct_ctx_t _asn_ctx;
-						} eventV2_r14;
 					} choice;
 					
 					/* Context for parsing across buffer boundaries */
@@ -298,30 +277,23 @@ typedef struct ReportConfigEUTRA {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext5;
-	struct ReportConfigEUTRA__ext6 {
-		long	*purpose_v1430	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext6;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
 } ReportConfigEUTRA_t;
 
 /* Implementation */
-/* extern asn_TYPE_descriptor_t asn_DEF_purpose_35;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_triggerQuantity_38;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_reportQuantity_41;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_reportAmount_46;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_si_RequestForHO_r9_57;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_ue_RxTxTimeDiffPeriodical_r9_59;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_includeLocationInfo_r10_62;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_reportAddNeighMeas_r10_64;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_triggerQuantity_v1310_82;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_reportQuantity_v1310_86;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_includeMultiBandInfo_r13_92;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_purpose_v1430_98;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_purpose_31;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_triggerQuantity_34;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_reportQuantity_37;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_reportAmount_42;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_si_RequestForHO_r9_53;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_ue_RxTxTimeDiffPeriodical_r9_55;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_includeLocationInfo_r10_58;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_reportAddNeighMeas_r10_60;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_triggerQuantity_v1310_78;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_reportQuantity_v1310_82;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_includeMultiBandInfo_r13_88;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_ReportConfigEUTRA;
 
 #ifdef __cplusplus

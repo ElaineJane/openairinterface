@@ -282,10 +282,10 @@ static ber_tlv_tag_t asn_DEF_pusch_ConfigBasic_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_pusch_ConfigBasic_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* n-SB at 5427 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* hoppingMode at 5428 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pusch-HoppingOffset at 5429 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* enable64QAM at 5430 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* n-SB at 4897 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* hoppingMode at 4898 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pusch-HoppingOffset at 4899 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* enable64QAM at 4900 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_pusch_ConfigBasic_specs_2 = {
 	sizeof(struct PUSCH_ConfigCommon__pusch_ConfigBasic),
@@ -349,8 +349,8 @@ static ber_tlv_tag_t asn_DEF_PUSCH_ConfigCommon_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PUSCH_ConfigCommon_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pusch-ConfigBasic at 5427 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ul-ReferenceSignalsPUSCH at 5433 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pusch-ConfigBasic at 4897 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ul-ReferenceSignalsPUSCH at 4903 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PUSCH_ConfigCommon_specs_1 = {
 	sizeof(struct PUSCH_ConfigCommon),

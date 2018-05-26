@@ -203,8 +203,8 @@ static asn_TYPE_member_t asn_MBR_carrierFreq_r13_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_carrierFreq_r13_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandIndicatorListWLAN-r13 at 7612 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* carrierInfoListWLAN-r13 at 7614 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandIndicatorListWLAN-r13 at 6898 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* carrierInfoListWLAN-r13 at 6900 */
 };
 static asn_CHOICE_specifics_t asn_SPC_carrierFreq_r13_specs_2 = {
 	sizeof(struct MeasObjectWLAN_r13__carrierFreq_r13),
@@ -277,9 +277,9 @@ static ber_tlv_tag_t asn_DEF_MeasObjectWLAN_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasObjectWLAN_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq-r13 at 7612 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* wlan-ToAddModList-r13 at 7615 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* wlan-ToRemoveList-r13 at 7616 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq-r13 at 6898 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* wlan-ToAddModList-r13 at 6901 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* wlan-ToRemoveList-r13 at 6902 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasObjectWLAN_r13_specs_1 = {
 	sizeof(struct MeasObjectWLAN_r13),

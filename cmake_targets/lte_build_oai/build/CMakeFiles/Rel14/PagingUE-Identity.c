@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_PagingUE_Identity_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_PagingUE_Identity_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* s-TMSI at 794 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* imsi at 795 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* s-TMSI at 747 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* imsi at 748 */
 };
 static asn_CHOICE_specifics_t asn_SPC_PagingUE_Identity_specs_1 = {
 	sizeof(struct PagingUE_Identity),

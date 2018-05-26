@@ -237,8 +237,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-MeasSubframeSet1-r10 at 3687 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* csi-MeasSubframeSet2-r10 at 3689 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-MeasSubframeSet1-r10 at 3367 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* csi-MeasSubframeSet2-r10 at 3369 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_9 = {
 	sizeof(struct CQI_ReportConfig_r10__csi_SubframePatternConfig_r10__setup),
@@ -299,8 +299,8 @@ static asn_TYPE_member_t asn_MBR_csi_SubframePatternConfig_r10_7[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_csi_SubframePatternConfig_r10_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3685 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3687 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3365 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3367 */
 };
 static asn_CHOICE_specifics_t asn_SPC_csi_SubframePatternConfig_r10_specs_7 = {
 	sizeof(struct CQI_ReportConfig_r10__csi_SubframePatternConfig_r10),
@@ -391,11 +391,11 @@ static ber_tlv_tag_t asn_DEF_CQI_ReportConfig_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CQI_ReportConfig_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cqi-ReportAperiodic-r10 at 3680 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* nomPDSCH-RS-EPRE-Offset at 3681 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cqi-ReportPeriodic-r10 at 3682 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* pmi-RI-Report-r9 at 3683 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* csi-SubframePatternConfig-r10 at 3685 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cqi-ReportAperiodic-r10 at 3360 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* nomPDSCH-RS-EPRE-Offset at 3361 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cqi-ReportPeriodic-r10 at 3362 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* pmi-RI-Report-r9 at 3363 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* csi-SubframePatternConfig-r10 at 3365 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CQI_ReportConfig_r10_specs_1 = {
 	sizeof(struct CQI_ReportConfig_r10),

@@ -50,10 +50,10 @@ static ber_tlv_tag_t asn_DEF_CQI_ReportBoth_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CQI_ReportBoth_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-IM-ConfigToReleaseList-r11 at 3916 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-IM-ConfigToAddModList-r11 at 3917 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* csi-ProcessToReleaseList-r11 at 3918 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* csi-ProcessToAddModList-r11 at 3919 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-IM-ConfigToReleaseList-r11 at 3570 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-IM-ConfigToAddModList-r11 at 3571 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* csi-ProcessToReleaseList-r11 at 3572 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* csi-ProcessToAddModList-r11 at 3573 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CQI_ReportBoth_r11_specs_1 = {
 	sizeof(struct CQI_ReportBoth_r11),

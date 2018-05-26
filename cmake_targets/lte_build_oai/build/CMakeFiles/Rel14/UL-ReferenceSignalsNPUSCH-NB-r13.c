@@ -61,8 +61,8 @@ static ber_tlv_tag_t asn_DEF_UL_ReferenceSignalsNPUSCH_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UL_ReferenceSignalsNPUSCH_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* groupHoppingEnabled-r13 at 12306 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* groupAssignmentNPUSCH-r13 at 12307 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* groupHoppingEnabled-r13 at 10694 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* groupAssignmentNPUSCH-r13 at 10695 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UL_ReferenceSignalsNPUSCH_NB_r13_specs_1 = {
 	sizeof(struct UL_ReferenceSignalsNPUSCH_NB_r13),

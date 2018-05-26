@@ -50,10 +50,10 @@ static ber_tlv_tag_t asn_DEF_VarLogMeasConfig_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_VarLogMeasConfig_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* areaConfiguration-r10 at 12792 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* areaConfiguration-v1130 at 12793 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* loggingDuration-r10 at 12794 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* loggingInterval-r10 at 12796 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* areaConfiguration-r10 at 11070 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* areaConfiguration-v1130 at 11071 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* loggingDuration-r10 at 11072 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* loggingInterval-r10 at 11074 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_VarLogMeasConfig_r11_specs_1 = {
 	sizeof(struct VarLogMeasConfig_r11),

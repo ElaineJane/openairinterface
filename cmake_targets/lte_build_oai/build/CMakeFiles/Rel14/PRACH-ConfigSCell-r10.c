@@ -52,7 +52,7 @@ static ber_tlv_tag_t asn_DEF_PRACH_ConfigSCell_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PRACH_ConfigSCell_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* prach-ConfigIndex-r10 at 5213 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* prach-ConfigIndex-r10 at 4691 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PRACH_ConfigSCell_r10_specs_1 = {
 	sizeof(struct PRACH_ConfigSCell_r10),

@@ -22,14 +22,12 @@ extern "C" {
 struct SL_CommResourcePoolV2X_r14;
 struct SL_CommRxPoolListV2X_r14;
 struct SL_SyncConfigListV2X_r14;
-struct SL_CBR_CommonTxConfigList_r14;
 
 /* MobilityControlInfoV2X-r14 */
 typedef struct MobilityControlInfoV2X_r14 {
 	struct SL_CommResourcePoolV2X_r14	*v2x_CommTxPoolExceptional_r14	/* OPTIONAL */;
 	struct SL_CommRxPoolListV2X_r14	*v2x_CommRxPool_r14	/* OPTIONAL */;
 	struct SL_SyncConfigListV2X_r14	*v2x_CommSyncConfig_r14	/* OPTIONAL */;
-	struct SL_CBR_CommonTxConfigList_r14	*cbr_MobilityTxConfigList_r14	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -46,7 +44,6 @@ extern asn_TYPE_descriptor_t asn_DEF_MobilityControlInfoV2X_r14;
 #include "SL-CommResourcePoolV2X-r14.h"
 #include "SL-CommRxPoolListV2X-r14.h"
 #include "SL-SyncConfigListV2X-r14.h"
-#include "SL-CBR-CommonTxConfigList-r14.h"
 
 #endif	/* _MobilityControlInfoV2X_r14_H_ */
 #include <asn_internal.h>

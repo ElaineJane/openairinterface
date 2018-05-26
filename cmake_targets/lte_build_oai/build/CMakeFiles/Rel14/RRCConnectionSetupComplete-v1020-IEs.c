@@ -743,11 +743,11 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionSetupComplete_v1020_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionSetupComplete_v1020_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* gummei-Type-r10 at 1594 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rlf-InfoAvailable-r10 at 1595 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* logMeasAvailable-r10 at 1596 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* rn-SubframeConfigReq-r10 at 1597 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* nonCriticalExtension at 1598 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* gummei-Type-r10 at 1532 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rlf-InfoAvailable-r10 at 1533 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* logMeasAvailable-r10 at 1534 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* rn-SubframeConfigReq-r10 at 1535 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* nonCriticalExtension at 1536 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionSetupComplete_v1020_IEs_specs_1 = {
 	sizeof(struct RRCConnectionSetupComplete_v1020_IEs),

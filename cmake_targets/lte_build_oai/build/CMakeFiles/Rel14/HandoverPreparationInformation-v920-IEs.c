@@ -138,8 +138,7 @@ static asn_INTEGER_enum_map_t asn_MAP_ue_ConfigRelease_r9_value2enum_2[] = {
 	{ 4,	5,	"v10j0" },
 	{ 5,	5,	"v11e0" },
 	{ 6,	5,	"v1280" },
-	{ 7,	5,	"rel13" },
-	{ 8,	5,	"rel14" }
+	{ 7,	5,	"rel13" }
 	/* This list is extensible */
 };
 static unsigned int asn_MAP_ue_ConfigRelease_r9_enum2value_2[] = {
@@ -147,7 +146,6 @@ static unsigned int asn_MAP_ue_ConfigRelease_r9_enum2value_2[] = {
 	2,	/* rel11(2) */
 	3,	/* rel12(3) */
 	7,	/* rel13(7) */
-	8,	/* rel14(8) */
 	0,	/* rel9(0) */
 	4,	/* v10j0(4) */
 	5,	/* v11e0(5) */
@@ -157,7 +155,7 @@ static unsigned int asn_MAP_ue_ConfigRelease_r9_enum2value_2[] = {
 static asn_INTEGER_specifics_t asn_SPC_ue_ConfigRelease_r9_specs_2 = {
 	asn_MAP_ue_ConfigRelease_r9_value2enum_2,	/* "tag" => N; sorted by tag */
 	asn_MAP_ue_ConfigRelease_r9_enum2value_2,	/* N => "tag"; sorted by N */
-	9,	/* Number of elements in the maps */
+	8,	/* Number of elements in the maps */
 	9,	/* Extensions before this member */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
@@ -220,8 +218,8 @@ static ber_tlv_tag_t asn_DEF_HandoverPreparationInformation_v920_IEs_tags_1[] = 
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_HandoverPreparationInformation_v920_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-ConfigRelease-r9 at 13297 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 13299 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-ConfigRelease-r9 at 11509 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 11511 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_HandoverPreparationInformation_v920_IEs_specs_1 = {
 	sizeof(struct HandoverPreparationInformation_v920_IEs),

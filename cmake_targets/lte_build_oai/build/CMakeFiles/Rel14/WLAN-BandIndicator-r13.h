@@ -22,7 +22,7 @@ extern "C" {
 typedef enum WLAN_BandIndicator_r13 {
 	WLAN_BandIndicator_r13_band2dot4	= 0,
 	WLAN_BandIndicator_r13_band5	= 1,
-	WLAN_BandIndicator_r13_band60_v1430	= 2,
+	WLAN_BandIndicator_r13_spare6	= 2,
 	WLAN_BandIndicator_r13_spare5	= 3,
 	WLAN_BandIndicator_r13_spare4	= 4,
 	WLAN_BandIndicator_r13_spare3	= 5,

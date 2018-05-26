@@ -52,11 +52,6 @@ typedef enum PhysicalConfigDedicated__ext7__ce_Mode_r13__setup {
 	PhysicalConfigDedicated__ext7__ce_Mode_r13__setup_ce_ModeA	= 0,
 	PhysicalConfigDedicated__ext7__ce_Mode_r13__setup_ce_ModeB	= 1
 } e_PhysicalConfigDedicated__ext7__ce_Mode_r13__setup;
-typedef enum PhysicalConfigDedicated__ext9__typeA_SRS_TPC_PDCCH_Group_r14_PR {
-	PhysicalConfigDedicated__ext9__typeA_SRS_TPC_PDCCH_Group_r14_PR_NOTHING,	/* No components present */
-	PhysicalConfigDedicated__ext9__typeA_SRS_TPC_PDCCH_Group_r14_PR_release,
-	PhysicalConfigDedicated__ext9__typeA_SRS_TPC_PDCCH_Group_r14_PR_setup
-} PhysicalConfigDedicated__ext9__typeA_SRS_TPC_PDCCH_Group_r14_PR;
 typedef enum PhysicalConfigDedicated__ext9__must_Config_r14_PR {
 	PhysicalConfigDedicated__ext9__must_Config_r14_PR_NOTHING,	/* No components present */
 	PhysicalConfigDedicated__ext9__must_Config_r14_PR_release,
@@ -76,9 +71,6 @@ typedef enum PhysicalConfigDedicated__ext9__must_Config_r14__setup__p_a_must_r14
 	PhysicalConfigDedicated__ext9__must_Config_r14__setup__p_a_must_r14_dB2	= 6,
 	PhysicalConfigDedicated__ext9__must_Config_r14__setup__p_a_must_r14_dB3	= 7
 } e_PhysicalConfigDedicated__ext9__must_Config_r14__setup__p_a_must_r14;
-typedef enum PhysicalConfigDedicated__ext9__ce_pdsch_pusch_EnhancementConfig_r14 {
-	PhysicalConfigDedicated__ext9__ce_pdsch_pusch_EnhancementConfig_r14_on	= 0
-} e_PhysicalConfigDedicated__ext9__ce_pdsch_pusch_EnhancementConfig_r14;
 
 /* Forward declarations */
 struct PDSCH_ConfigDedicated;
@@ -132,14 +124,6 @@ struct CSI_RS_Config_v1310;
 struct CSI_RS_ConfigNZPToAddModListExt_r13;
 struct CSI_RS_ConfigNZPToReleaseListExt_r13;
 struct CQI_ReportConfig_v1320;
-struct PUSCH_EnhancementsConfig_r14;
-struct AntennaInfoDedicated_v1430;
-struct PUCCH_ConfigDedicated_v1430;
-struct PDSCH_ConfigDedicated_v1430;
-struct PUSCH_ConfigDedicated_v1430;
-struct CSI_RS_Config_v1430;
-struct CSI_RS_ConfigZP_ApList_r14;
-struct CQI_ReportConfig_v1430;
 struct SRS_TPC_PDCCH_Config_r14;
 
 /* PhysicalConfigDedicated */
@@ -288,16 +272,7 @@ typedef struct PhysicalConfigDedicated {
 	} *ext8;
 	struct PhysicalConfigDedicated__ext9 {
 		struct PhysicalConfigDedicated__ext9__typeA_SRS_TPC_PDCCH_Group_r14 {
-			PhysicalConfigDedicated__ext9__typeA_SRS_TPC_PDCCH_Group_r14_PR present;
-			union PhysicalConfigDedicated__ext9__typeA_SRS_TPC_PDCCH_Group_r14_u {
-				NULL_t	 release;
-				struct PhysicalConfigDedicated__ext9__typeA_SRS_TPC_PDCCH_Group_r14__setup {
-					A_SEQUENCE_OF(struct SRS_TPC_PDCCH_Config_r14) list;
-					
-					/* Context for parsing across buffer boundaries */
-					asn_struct_ctx_t _asn_ctx;
-				} setup;
-			} choice;
+			A_SEQUENCE_OF(struct SRS_TPC_PDCCH_Config_r14) list;
 			
 			/* Context for parsing across buffer boundaries */
 			asn_struct_ctx_t _asn_ctx;
@@ -318,40 +293,6 @@ typedef struct PhysicalConfigDedicated {
 			/* Context for parsing across buffer boundaries */
 			asn_struct_ctx_t _asn_ctx;
 		} *must_Config_r14;
-		struct PUSCH_EnhancementsConfig_r14	*pusch_EnhancementsConfig_r14	/* OPTIONAL */;
-		long	*ce_pdsch_pusch_EnhancementConfig_r14	/* OPTIONAL */;
-		struct AntennaInfoDedicated_v1430	*antennaInfo_v1430	/* OPTIONAL */;
-		struct PUCCH_ConfigDedicated_v1430	*pucch_ConfigDedicated_v1430	/* OPTIONAL */;
-		struct PDSCH_ConfigDedicated_v1430	*pdsch_ConfigDedicated_v1430	/* OPTIONAL */;
-		struct PUSCH_ConfigDedicated_v1430	*pusch_ConfigDedicated_v1430	/* OPTIONAL */;
-		struct PhysicalConfigDedicated__ext9__soundingRS_UL_PeriodicConfigDedicatedList_r14 {
-			A_SEQUENCE_OF(struct SoundingRS_UL_ConfigDedicated) list;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *soundingRS_UL_PeriodicConfigDedicatedList_r14;
-		struct PhysicalConfigDedicated__ext9__soundingRS_UL_PeriodicConfigDedicatedUpPTsExtList_r14 {
-			A_SEQUENCE_OF(struct SoundingRS_UL_ConfigDedicatedUpPTsExt_r13) list;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *soundingRS_UL_PeriodicConfigDedicatedUpPTsExtList_r14;
-		struct PhysicalConfigDedicated__ext9__soundingRS_UL_AperiodicConfigDedicatedList_r14 {
-			A_SEQUENCE_OF(struct SoundingRS_UL_ConfigDedicatedAperiodic_r10) list;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *soundingRS_UL_AperiodicConfigDedicatedList_r14;
-		struct PhysicalConfigDedicated__ext9__soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14 {
-			A_SEQUENCE_OF(struct SoundingRS_UL_ConfigDedicatedAperiodicUpPTsExt_r13) list;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *soundingRS_UL_ConfigDedicatedApUpPTsExtList_r14;
-		struct CSI_RS_Config_v1430	*csi_RS_Config_v1430	/* OPTIONAL */;
-		struct CSI_RS_ConfigZP_ApList_r14	*csi_RS_ConfigZP_ApList_r14	/* OPTIONAL */;
-		struct CQI_ReportConfig_v1430	*cqi_ReportConfig_v1430	/* OPTIONAL */;
-		BOOLEAN_t	*semiOpenLoop_r14	/* OPTIONAL */;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
@@ -363,9 +304,8 @@ typedef struct PhysicalConfigDedicated {
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_setup_72;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_k_max_r14_87;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_p_a_must_r14_90;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_ce_pdsch_pusch_EnhancementConfig_r14_100;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_k_max_r14_85;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_p_a_must_r14_88;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_PhysicalConfigDedicated;
 
 #ifdef __cplusplus
@@ -424,14 +364,6 @@ extern asn_TYPE_descriptor_t asn_DEF_PhysicalConfigDedicated;
 #include "CSI-RS-ConfigNZPToAddModListExt-r13.h"
 #include "CSI-RS-ConfigNZPToReleaseListExt-r13.h"
 #include "CQI-ReportConfig-v1320.h"
-#include "PUSCH-EnhancementsConfig-r14.h"
-#include "AntennaInfoDedicated-v1430.h"
-#include "PUCCH-ConfigDedicated-v1430.h"
-#include "PDSCH-ConfigDedicated-v1430.h"
-#include "PUSCH-ConfigDedicated-v1430.h"
-#include "CSI-RS-Config-v1430.h"
-#include "CSI-RS-ConfigZP-ApList-r14.h"
-#include "CQI-ReportConfig-v1430.h"
 #include "SRS-TPC-PDCCH-Config-r14.h"
 
 #endif	/* _PhysicalConfigDedicated_H_ */

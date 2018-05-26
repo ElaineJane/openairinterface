@@ -67,8 +67,8 @@ static ber_tlv_tag_t asn_DEF_nonPrecoded_r13_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_nonPrecoded_r13_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* codebookSubsetRestriction1-r13 at 4625 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* codebookSubsetRestriction2-r13 at 4627 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* codebookSubsetRestriction1-r13 at 4168 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* codebookSubsetRestriction2-r13 at 4170 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_nonPrecoded_r13_specs_4 = {
 	sizeof(struct P_C_AndCBSR_r13__cbsr_Selection_r13__nonPrecoded_r13),
@@ -124,7 +124,7 @@ static ber_tlv_tag_t asn_DEF_beamformedK1a_r13_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_beamformedK1a_r13_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* codebookSubsetRestriction3-r13 at 4630 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* codebookSubsetRestriction3-r13 at 4173 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_beamformedK1a_r13_specs_7 = {
 	sizeof(struct P_C_AndCBSR_r13__cbsr_Selection_r13__beamformedK1a_r13),
@@ -180,7 +180,7 @@ static ber_tlv_tag_t asn_DEF_beamformedKN_r13_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_beamformedKN_r13_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* codebookSubsetRestriction-r13 at 4633 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* codebookSubsetRestriction-r13 at 4176 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_beamformedKN_r13_specs_9 = {
 	sizeof(struct P_C_AndCBSR_r13__cbsr_Selection_r13__beamformedKN_r13),
@@ -250,9 +250,9 @@ static asn_TYPE_member_t asn_MBR_cbsr_Selection_r13_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_cbsr_Selection_r13_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nonPrecoded-r13 at 4625 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* beamformedK1a-r13 at 4630 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* beamformedKN-r13 at 4633 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nonPrecoded-r13 at 4168 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* beamformedK1a-r13 at 4173 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* beamformedKN-r13 at 4176 */
 };
 static asn_CHOICE_specifics_t asn_SPC_cbsr_Selection_r13_specs_3 = {
 	sizeof(struct P_C_AndCBSR_r13__cbsr_Selection_r13),
@@ -315,8 +315,8 @@ static ber_tlv_tag_t asn_DEF_P_C_AndCBSR_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_P_C_AndCBSR_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p-C-r13 at 4622 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cbsr-Selection-r13 at 4627 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p-C-r13 at 4165 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cbsr-Selection-r13 at 4170 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_P_C_AndCBSR_r13_specs_1 = {
 	sizeof(struct P_C_AndCBSR_r13),

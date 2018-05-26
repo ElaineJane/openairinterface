@@ -179,8 +179,8 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_13[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measCycleSCell-r10 at 7435 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measSubframePatternConfigNeigh-r10 at 7436 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measCycleSCell-r10 at 6728 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measSubframePatternConfigNeigh-r10 at 6729 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_13 = {
 	sizeof(struct MeasObjectEUTRA__ext1),
@@ -238,7 +238,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_16[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_16[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* widebandRSRQ-Meas-r11 at 7438 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* widebandRSRQ-Meas-r11 at 6731 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_16 = {
 	sizeof(struct MeasObjectEUTRA__ext2),
@@ -361,8 +361,8 @@ static asn_TYPE_member_t asn_MBR_t312_r12_21[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_t312_r12_tag2el_21[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7443 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7444 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6736 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6737 */
 };
 static asn_CHOICE_specifics_t asn_SPC_t312_r12_specs_21 = {
 	sizeof(struct MeasObjectEUTRA__ext3__t312_r12),
@@ -454,11 +454,11 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_18[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_18[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* altTTT-CellsToRemoveList-r12 at 7440 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* altTTT-CellsToAddModList-r12 at 7441 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* t312-r12 at 7443 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* reducedMeasPerformance-r12 at 7447 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* measDS-Config-r12 at 7448 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* altTTT-CellsToRemoveList-r12 at 6733 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* altTTT-CellsToAddModList-r12 at 6734 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* t312-r12 at 6736 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* reducedMeasPerformance-r12 at 6740 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* measDS-Config-r12 at 6741 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_18 = {
 	sizeof(struct MeasObjectEUTRA__ext3),
@@ -543,10 +543,10 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_34[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_34[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* whiteCellsToRemoveList-r13 at 7451 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* whiteCellsToAddModList-r13 at 7452 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rmtc-Config-r13 at 7453 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* carrierFreq-r13 at 7454 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* whiteCellsToRemoveList-r13 at 6744 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* whiteCellsToAddModList-r13 at 6745 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rmtc-Config-r13 at 6746 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* carrierFreq-r13 at 6747 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_34 = {
 	sizeof(struct MeasObjectEUTRA__ext4),
@@ -587,84 +587,6 @@ asn_TYPE_descriptor_t asn_DEF_ext4_34 = {
 	&asn_SPC_ext4_specs_34	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext5_39[] = {
-	{ ATF_POINTER, 3, offsetof(struct MeasObjectEUTRA__ext5, tx_ResourcePoolToRemoveList_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Tx_ResourcePoolMeasList_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"tx-ResourcePoolToRemoveList-r14"
-		},
-	{ ATF_POINTER, 2, offsetof(struct MeasObjectEUTRA__ext5, tx_ResourcePoolToAddList_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Tx_ResourcePoolMeasList_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"tx-ResourcePoolToAddList-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct MeasObjectEUTRA__ext5, fembms_MixedCarrier_r14),
-		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_BOOLEAN,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"fembms-MixedCarrier-r14"
-		},
-};
-static int asn_MAP_ext5_oms_39[] = { 0, 1, 2 };
-static ber_tlv_tag_t asn_DEF_ext5_tags_39[] = {
-	(ASN_TAG_CLASS_CONTEXT | (14 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_39[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tx-ResourcePoolToRemoveList-r14 at 7457 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* tx-ResourcePoolToAddList-r14 at 7458 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* fembms-MixedCarrier-r14 at 7459 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_39 = {
-	sizeof(struct MeasObjectEUTRA__ext5),
-	offsetof(struct MeasObjectEUTRA__ext5, _asn_ctx),
-	asn_MAP_ext5_tag2el_39,
-	3,	/* Count of tags in the map */
-	asn_MAP_ext5_oms_39,	/* Optional members */
-	3, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext5_39 = {
-	"ext5",
-	"ext5",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext5_tags_39,
-	sizeof(asn_DEF_ext5_tags_39)
-		/sizeof(asn_DEF_ext5_tags_39[0]) - 1, /* 1 */
-	asn_DEF_ext5_tags_39,	/* Same as above */
-	sizeof(asn_DEF_ext5_tags_39)
-		/sizeof(asn_DEF_ext5_tags_39[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext5_39,
-	3,	/* Elements count */
-	&asn_SPC_ext5_specs_39	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct MeasObjectEUTRA, carrierFreq),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -702,7 +624,7 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		0,
 		"neighCellConfig"
 		},
-	{ ATF_POINTER, 11, offsetof(struct MeasObjectEUTRA, offsetFreq),
+	{ ATF_POINTER, 10, offsetof(struct MeasObjectEUTRA, offsetFreq),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_Q_OffsetRange,
@@ -711,7 +633,7 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		asn_DFL_6_set_15,	/* DEFAULT 15 */
 		"offsetFreq"
 		},
-	{ ATF_POINTER, 10, offsetof(struct MeasObjectEUTRA, cellsToRemoveList),
+	{ ATF_POINTER, 9, offsetof(struct MeasObjectEUTRA, cellsToRemoveList),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_CellIndexList,
@@ -720,7 +642,7 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		0,
 		"cellsToRemoveList"
 		},
-	{ ATF_POINTER, 9, offsetof(struct MeasObjectEUTRA, cellsToAddModList),
+	{ ATF_POINTER, 8, offsetof(struct MeasObjectEUTRA, cellsToAddModList),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_CellsToAddModList,
@@ -729,7 +651,7 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		0,
 		"cellsToAddModList"
 		},
-	{ ATF_POINTER, 8, offsetof(struct MeasObjectEUTRA, blackCellsToRemoveList),
+	{ ATF_POINTER, 7, offsetof(struct MeasObjectEUTRA, blackCellsToRemoveList),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_CellIndexList,
@@ -738,7 +660,7 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		0,
 		"blackCellsToRemoveList"
 		},
-	{ ATF_POINTER, 7, offsetof(struct MeasObjectEUTRA, blackCellsToAddModList),
+	{ ATF_POINTER, 6, offsetof(struct MeasObjectEUTRA, blackCellsToAddModList),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BlackCellsToAddModList,
@@ -747,7 +669,7 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		0,
 		"blackCellsToAddModList"
 		},
-	{ ATF_POINTER, 6, offsetof(struct MeasObjectEUTRA, cellForWhichToReportCGI),
+	{ ATF_POINTER, 5, offsetof(struct MeasObjectEUTRA, cellForWhichToReportCGI),
 		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PhysCellId,
@@ -756,7 +678,7 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		0,
 		"cellForWhichToReportCGI"
 		},
-	{ ATF_POINTER, 5, offsetof(struct MeasObjectEUTRA, ext1),
+	{ ATF_POINTER, 4, offsetof(struct MeasObjectEUTRA, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
 		0,
 		&asn_DEF_ext1_13,
@@ -765,7 +687,7 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 4, offsetof(struct MeasObjectEUTRA, ext2),
+	{ ATF_POINTER, 3, offsetof(struct MeasObjectEUTRA, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
 		0,
 		&asn_DEF_ext2_16,
@@ -774,7 +696,7 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 3, offsetof(struct MeasObjectEUTRA, ext3),
+	{ ATF_POINTER, 2, offsetof(struct MeasObjectEUTRA, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (12 << 2)),
 		0,
 		&asn_DEF_ext3_18,
@@ -783,7 +705,7 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 2, offsetof(struct MeasObjectEUTRA, ext4),
+	{ ATF_POINTER, 1, offsetof(struct MeasObjectEUTRA, ext4),
 		(ASN_TAG_CLASS_CONTEXT | (13 << 2)),
 		0,
 		&asn_DEF_ext4_34,
@@ -792,46 +714,36 @@ static asn_TYPE_member_t asn_MBR_MeasObjectEUTRA_1[] = {
 		0,
 		"ext4"
 		},
-	{ ATF_POINTER, 1, offsetof(struct MeasObjectEUTRA, ext5),
-		(ASN_TAG_CLASS_CONTEXT | (14 << 2)),
-		0,
-		&asn_DEF_ext5_39,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext5"
-		},
 };
-static int asn_MAP_MeasObjectEUTRA_oms_1[] = { 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 };
+static int asn_MAP_MeasObjectEUTRA_oms_1[] = { 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
 static ber_tlv_tag_t asn_DEF_MeasObjectEUTRA_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasObjectEUTRA_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq at 7422 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* allowedMeasBandwidth at 7423 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* presenceAntennaPort1 at 7424 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* neighCellConfig at 7425 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* offsetFreq at 7426 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* cellsToRemoveList at 7428 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* cellsToAddModList at 7429 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* blackCellsToRemoveList at 7431 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* blackCellsToAddModList at 7432 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* cellForWhichToReportCGI at 7433 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* ext1 at 7435 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* ext2 at 7438 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* ext3 at 7440 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* ext4 at 7451 */
-    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 } /* ext5 at 7457 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq at 6715 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* allowedMeasBandwidth at 6716 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* presenceAntennaPort1 at 6717 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* neighCellConfig at 6718 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* offsetFreq at 6719 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* cellsToRemoveList at 6721 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* cellsToAddModList at 6722 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* blackCellsToRemoveList at 6724 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* blackCellsToAddModList at 6725 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* cellForWhichToReportCGI at 6726 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* ext1 at 6728 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* ext2 at 6731 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* ext3 at 6733 */
+    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 } /* ext4 at 6744 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasObjectEUTRA_specs_1 = {
 	sizeof(struct MeasObjectEUTRA),
 	offsetof(struct MeasObjectEUTRA, _asn_ctx),
 	asn_MAP_MeasObjectEUTRA_tag2el_1,
-	15,	/* Count of tags in the map */
+	14,	/* Count of tags in the map */
 	asn_MAP_MeasObjectEUTRA_oms_1,	/* Optional members */
-	6, 5,	/* Root/Additions */
+	6, 4,	/* Root/Additions */
 	9,	/* Start extensions */
-	16	/* Stop extensions */
+	15	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_MeasObjectEUTRA = {
 	"MeasObjectEUTRA",
@@ -857,7 +769,7 @@ asn_TYPE_descriptor_t asn_DEF_MeasObjectEUTRA = {
 		/sizeof(asn_DEF_MeasObjectEUTRA_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_MeasObjectEUTRA_1,
-	15,	/* Elements count */
+	14,	/* Elements count */
 	&asn_SPC_MeasObjectEUTRA_specs_1	/* Additional specs */
 };
 

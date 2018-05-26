@@ -1267,13 +1267,13 @@ static ber_tlv_tag_t asn_DEF_LAA_Parameters_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_LAA_Parameters_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* crossCarrierSchedulingLAA-DL-r13 at 9644 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-RS-DRS-RRM-MeasurementsLAA-r13 at 9645 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* downlinkLAA-r13 at 9646 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* endingDwPTS-r13 at 9647 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* secondSlotStartingPosition-r13 at 9648 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* tm9-LAA-r13 at 9649 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* tm10-LAA-r13 at 9650 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* crossCarrierSchedulingLAA-DL-r13 at 8652 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csi-RS-DRS-RRM-MeasurementsLAA-r13 at 8653 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* downlinkLAA-r13 at 8654 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* endingDwPTS-r13 at 8655 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* secondSlotStartingPosition-r13 at 8656 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* tm9-LAA-r13 at 8657 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* tm10-LAA-r13 at 8658 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_LAA_Parameters_r13_specs_1 = {
 	sizeof(struct LAA_Parameters_r13),

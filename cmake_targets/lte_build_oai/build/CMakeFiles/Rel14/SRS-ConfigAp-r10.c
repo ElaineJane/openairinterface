@@ -478,11 +478,11 @@ static ber_tlv_tag_t asn_DEF_SRS_ConfigAp_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SRS_ConfigAp_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-AntennaPortAp-r10 at 6427 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* srs-BandwidthAp-r10 at 6428 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* freqDomainPositionAp-r10 at 6429 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* transmissionCombAp-r10 at 6430 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* cyclicShiftAp-r10 at 6431 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-AntennaPortAp-r10 at 5837 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* srs-BandwidthAp-r10 at 5838 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* freqDomainPositionAp-r10 at 5839 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* transmissionCombAp-r10 at 5840 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* cyclicShiftAp-r10 at 5841 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SRS_ConfigAp_r10_specs_1 = {
 	sizeof(struct SRS_ConfigAp_r10),

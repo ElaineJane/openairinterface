@@ -43,8 +43,8 @@ static asn_TYPE_member_t asn_MBR_physCellIdUTRA_4[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_physCellIdUTRA_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fdd at 12871 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd at 12873 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* fdd at 11148 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd at 11150 */
 };
 static asn_CHOICE_specifics_t asn_SPC_physCellIdUTRA_specs_4 = {
 	sizeof(struct physCellIdUTRA),
@@ -108,8 +108,8 @@ static ber_tlv_tag_t asn_DEF_physCellIdGERAN_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_physCellIdGERAN_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq at 12875 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* physCellId at 12877 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq at 11152 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* physCellId at 11154 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_physCellIdGERAN_specs_7 = {
 	sizeof(struct physCellIdGERAN),
@@ -197,11 +197,11 @@ static asn_TYPE_member_t asn_MBR_Member_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_Member_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellIdEUTRA at 12869 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* physCellIdUTRA at 12871 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* physCellIdGERAN at 12875 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* physCellIdCDMA2000 at 12878 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* wlan-Identifiers-r13 at 12880 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellIdEUTRA at 11146 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* physCellIdUTRA at 11148 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* physCellIdGERAN at 11152 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* physCellIdCDMA2000 at 11155 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* wlan-Identifiers-r13 at 11157 */
 };
 static asn_CHOICE_specifics_t asn_SPC_Member_specs_2 = {
 	sizeof(struct CellsTriggeredList__Member),

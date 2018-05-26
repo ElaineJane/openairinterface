@@ -63,8 +63,8 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* hnb-Name at 3264 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* lateNonCriticalExtension at 3266 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* hnb-Name at 3017 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* lateNonCriticalExtension at 3019 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType9_specs_1 = {
 	sizeof(struct SystemInformationBlockType9),

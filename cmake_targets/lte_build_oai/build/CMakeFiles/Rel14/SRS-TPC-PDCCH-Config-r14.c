@@ -89,7 +89,7 @@ memb_fieldTypeFormat3B_r14_constraint_3(asn_TYPE_descriptor_t *td, const void *s
 }
 
 static int
-memb_srs_CC_SetIndexlist_r14_constraint_3(asn_TYPE_descriptor_t *td, const void *sptr,
+memb_srsCcGroupIndexlist_constraint_3(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	size_t size;
 	
@@ -114,7 +114,7 @@ memb_srs_CC_SetIndexlist_r14_constraint_3(asn_TYPE_descriptor_t *td, const void 
 	}
 }
 
-static asn_per_constraints_t asn_PER_type_srs_CC_SetIndexlist_r14_constr_7 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_srsCcGroupIndexlist_constr_7 GCC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 2,  2,  1,  4 }	/* (SIZE(1..4)) */,
 	0, 0	/* No PER value map */
@@ -134,7 +134,7 @@ static asn_per_constraints_t asn_PER_memb_fieldTypeFormat3B_r14_constr_6 GCC_NOT
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_memb_srs_CC_SetIndexlist_r14_constr_7 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_memb_srsCcGroupIndexlist_constr_7 GCC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 2,  2,  1,  4 }	/* (SIZE(1..4)) */,
 	0, 0	/* No PER value map */
@@ -144,30 +144,30 @@ static asn_per_constraints_t asn_PER_type_SRS_TPC_PDCCH_Config_r14_constr_1 GCC_
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_TYPE_member_t asn_MBR_srs_CC_SetIndexlist_r14_7[] = {
+static asn_TYPE_member_t asn_MBR_srsCcGroupIndexlist_7[] = {
 	{ ATF_POINTER, 0, 0,
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
+		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
-		&asn_DEF_SRS_CC_SetIndex_r14,
+		&asn_DEF_SrsCcGroupIndex,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		""
 		},
 };
-static ber_tlv_tag_t asn_DEF_srs_CC_SetIndexlist_r14_tags_7[] = {
+static ber_tlv_tag_t asn_DEF_srsCcGroupIndexlist_tags_7[] = {
 	(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static asn_SET_OF_specifics_t asn_SPC_srs_CC_SetIndexlist_r14_specs_7 = {
-	sizeof(struct SRS_TPC_PDCCH_Config_r14__setup__srs_CC_SetIndexlist_r14),
-	offsetof(struct SRS_TPC_PDCCH_Config_r14__setup__srs_CC_SetIndexlist_r14, _asn_ctx),
+static asn_SET_OF_specifics_t asn_SPC_srsCcGroupIndexlist_specs_7 = {
+	sizeof(struct SRS_TPC_PDCCH_Config_r14__setup__srsCcGroupIndexlist),
+	offsetof(struct SRS_TPC_PDCCH_Config_r14__setup__srsCcGroupIndexlist, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_srs_CC_SetIndexlist_r14_7 = {
-	"srs-CC-SetIndexlist-r14",
-	"srs-CC-SetIndexlist-r14",
+asn_TYPE_descriptor_t asn_DEF_srsCcGroupIndexlist_7 = {
+	"srsCcGroupIndexlist",
+	"srsCcGroupIndexlist",
 	SEQUENCE_OF_free,
 	SEQUENCE_OF_print,
 	SEQUENCE_OF_constraint,
@@ -181,16 +181,16 @@ asn_TYPE_descriptor_t asn_DEF_srs_CC_SetIndexlist_r14_7 = {
 	SEQUENCE_OF_encode_aper,
 	SEQUENCE_OF_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_srs_CC_SetIndexlist_r14_tags_7,
-	sizeof(asn_DEF_srs_CC_SetIndexlist_r14_tags_7)
-		/sizeof(asn_DEF_srs_CC_SetIndexlist_r14_tags_7[0]) - 1, /* 1 */
-	asn_DEF_srs_CC_SetIndexlist_r14_tags_7,	/* Same as above */
-	sizeof(asn_DEF_srs_CC_SetIndexlist_r14_tags_7)
-		/sizeof(asn_DEF_srs_CC_SetIndexlist_r14_tags_7[0]), /* 2 */
-	&asn_PER_type_srs_CC_SetIndexlist_r14_constr_7,
-	asn_MBR_srs_CC_SetIndexlist_r14_7,
+	asn_DEF_srsCcGroupIndexlist_tags_7,
+	sizeof(asn_DEF_srsCcGroupIndexlist_tags_7)
+		/sizeof(asn_DEF_srsCcGroupIndexlist_tags_7[0]) - 1, /* 1 */
+	asn_DEF_srsCcGroupIndexlist_tags_7,	/* Same as above */
+	sizeof(asn_DEF_srsCcGroupIndexlist_tags_7)
+		/sizeof(asn_DEF_srsCcGroupIndexlist_tags_7[0]), /* 2 */
+	&asn_PER_type_srsCcGroupIndexlist_constr_7,
+	asn_MBR_srsCcGroupIndexlist_7,
 	1,	/* Single element */
-	&asn_SPC_srs_CC_SetIndexlist_r14_specs_7	/* Additional specs */
+	&asn_SPC_srsCcGroupIndexlist_specs_7	/* Additional specs */
 };
 
 static asn_TYPE_member_t asn_MBR_setup_3[] = {
@@ -221,14 +221,14 @@ static asn_TYPE_member_t asn_MBR_setup_3[] = {
 		0,
 		"fieldTypeFormat3B-r14"
 		},
-	{ ATF_POINTER, 1, offsetof(struct SRS_TPC_PDCCH_Config_r14__setup, srs_CC_SetIndexlist_r14),
+	{ ATF_POINTER, 1, offsetof(struct SRS_TPC_PDCCH_Config_r14__setup, srsCcGroupIndexlist),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		0,
-		&asn_DEF_srs_CC_SetIndexlist_r14_7,
-		memb_srs_CC_SetIndexlist_r14_constraint_3,
-		&asn_PER_memb_srs_CC_SetIndexlist_r14_constr_7,
+		&asn_DEF_srsCcGroupIndexlist_7,
+		memb_srsCcGroupIndexlist_constraint_3,
+		&asn_PER_memb_srsCcGroupIndexlist_constr_7,
 		0,
-		"srs-CC-SetIndexlist-r14"
+		"srsCcGroupIndexlist"
 		},
 };
 static int asn_MAP_setup_oms_3[] = { 3 };
@@ -237,10 +237,10 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-TPC-RNTI-r14 at 6549 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* startingBitOfFormat3B-r14 at 6550 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* fieldTypeFormat3B-r14 at 6550 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* srs-CC-SetIndexlist-r14 at 6551 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* srs-TPC-RNTI-r14 at 5926 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* startingBitOfFormat3B-r14 at 5927 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* fieldTypeFormat3B-r14 at 5927 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* srsCcGroupIndexlist at 5928 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct SRS_TPC_PDCCH_Config_r14__setup),
@@ -302,8 +302,8 @@ static asn_TYPE_member_t asn_MBR_SRS_TPC_PDCCH_Config_r14_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SRS_TPC_PDCCH_Config_r14_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6547 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6549 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5924 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5926 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SRS_TPC_PDCCH_Config_r14_specs_1 = {
 	sizeof(struct SRS_TPC_PDCCH_Config_r14),

@@ -29,9 +29,6 @@ typedef enum CRS_AssistanceInfo_r11__antennaPortsCount_r11 {
 	CRS_AssistanceInfo_r11__antennaPortsCount_r11_spare1	= 3
 } e_CRS_AssistanceInfo_r11__antennaPortsCount_r11;
 
-/* Forward declarations */
-struct MBSFN_SubframeConfigList_v1430;
-
 /* CRS-AssistanceInfo-r11 */
 typedef struct CRS_AssistanceInfo_r11 {
 	PhysCellId_t	 physCellId_r11;
@@ -41,12 +38,6 @@ typedef struct CRS_AssistanceInfo_r11 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct CRS_AssistanceInfo_r11__ext1 {
-		struct MBSFN_SubframeConfigList_v1430	*mbsfn_SubframeConfigList_v1430	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -59,9 +50,6 @@ extern asn_TYPE_descriptor_t asn_DEF_CRS_AssistanceInfo_r11;
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "MBSFN-SubframeConfigList-v1430.h"
 
 #endif	/* _CRS_AssistanceInfo_r11_H_ */
 #include <asn_internal.h>

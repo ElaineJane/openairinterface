@@ -355,66 +355,8 @@ asn_TYPE_descriptor_t asn_DEF_successReportRequested_r13_10 = {
 	&asn_SPC_successReportRequested_r13_specs_10	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext1_13[] = {
-	{ ATF_POINTER, 1, offsetof(struct WLAN_MobilityConfig_r13__ext1, wlan_SuspendConfig_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_WLAN_SuspendConfig_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"wlan-SuspendConfig-r14"
-		},
-};
-static int asn_MAP_ext1_oms_13[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext1_tags_13[] = {
-	(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* wlan-SuspendConfig-r14 at 6778 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_13 = {
-	sizeof(struct WLAN_MobilityConfig_r13__ext1),
-	offsetof(struct WLAN_MobilityConfig_r13__ext1, _asn_ctx),
-	asn_MAP_ext1_tag2el_13,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext1_oms_13,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext1_13 = {
-	"ext1",
-	"ext1",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext1_tags_13,
-	sizeof(asn_DEF_ext1_tags_13)
-		/sizeof(asn_DEF_ext1_tags_13[0]) - 1, /* 1 */
-	asn_DEF_ext1_tags_13,	/* Same as above */
-	sizeof(asn_DEF_ext1_tags_13)
-		/sizeof(asn_DEF_ext1_tags_13[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext1_13,
-	1,	/* Elements count */
-	&asn_SPC_ext1_specs_13	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_WLAN_MobilityConfig_r13_1[] = {
-	{ ATF_POINTER, 5, offsetof(struct WLAN_MobilityConfig_r13, wlan_ToReleaseList_r13),
+	{ ATF_POINTER, 4, offsetof(struct WLAN_MobilityConfig_r13, wlan_ToReleaseList_r13),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_WLAN_Id_List_r13,
@@ -423,7 +365,7 @@ static asn_TYPE_member_t asn_MBR_WLAN_MobilityConfig_r13_1[] = {
 		0,
 		"wlan-ToReleaseList-r13"
 		},
-	{ ATF_POINTER, 4, offsetof(struct WLAN_MobilityConfig_r13, wlan_ToAddList_r13),
+	{ ATF_POINTER, 3, offsetof(struct WLAN_MobilityConfig_r13, wlan_ToAddList_r13),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_WLAN_Id_List_r13,
@@ -432,7 +374,7 @@ static asn_TYPE_member_t asn_MBR_WLAN_MobilityConfig_r13_1[] = {
 		0,
 		"wlan-ToAddList-r13"
 		},
-	{ ATF_POINTER, 3, offsetof(struct WLAN_MobilityConfig_r13, associationTimer_r13),
+	{ ATF_POINTER, 2, offsetof(struct WLAN_MobilityConfig_r13, associationTimer_r13),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_associationTimer_r13_4,
@@ -441,7 +383,7 @@ static asn_TYPE_member_t asn_MBR_WLAN_MobilityConfig_r13_1[] = {
 		0,
 		"associationTimer-r13"
 		},
-	{ ATF_POINTER, 2, offsetof(struct WLAN_MobilityConfig_r13, successReportRequested_r13),
+	{ ATF_POINTER, 1, offsetof(struct WLAN_MobilityConfig_r13, successReportRequested_r13),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_successReportRequested_r13_10,
@@ -450,36 +392,26 @@ static asn_TYPE_member_t asn_MBR_WLAN_MobilityConfig_r13_1[] = {
 		0,
 		"successReportRequested-r13"
 		},
-	{ ATF_POINTER, 1, offsetof(struct WLAN_MobilityConfig_r13, ext1),
-		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
-		0,
-		&asn_DEF_ext1_13,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext1"
-		},
 };
-static int asn_MAP_WLAN_MobilityConfig_r13_oms_1[] = { 0, 1, 2, 3, 4 };
+static int asn_MAP_WLAN_MobilityConfig_r13_oms_1[] = { 0, 1, 2, 3 };
 static ber_tlv_tag_t asn_DEF_WLAN_MobilityConfig_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_WLAN_MobilityConfig_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* wlan-ToReleaseList-r13 at 6772 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* wlan-ToAddList-r13 at 6773 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* associationTimer-r13 at 6774 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* successReportRequested-r13 at 6776 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 6778 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* wlan-ToReleaseList-r13 at 6141 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* wlan-ToAddList-r13 at 6142 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* associationTimer-r13 at 6143 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* successReportRequested-r13 at 6145 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_WLAN_MobilityConfig_r13_specs_1 = {
 	sizeof(struct WLAN_MobilityConfig_r13),
 	offsetof(struct WLAN_MobilityConfig_r13, _asn_ctx),
 	asn_MAP_WLAN_MobilityConfig_r13_tag2el_1,
-	5,	/* Count of tags in the map */
+	4,	/* Count of tags in the map */
 	asn_MAP_WLAN_MobilityConfig_r13_oms_1,	/* Optional members */
-	4, 1,	/* Root/Additions */
+	4, 0,	/* Root/Additions */
 	3,	/* Start extensions */
-	6	/* Stop extensions */
+	5	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_WLAN_MobilityConfig_r13 = {
 	"WLAN-MobilityConfig-r13",
@@ -505,7 +437,7 @@ asn_TYPE_descriptor_t asn_DEF_WLAN_MobilityConfig_r13 = {
 		/sizeof(asn_DEF_WLAN_MobilityConfig_r13_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_WLAN_MobilityConfig_r13_1,
-	5,	/* Elements count */
+	4,	/* Elements count */
 	&asn_SPC_WLAN_MobilityConfig_r13_specs_1	/* Additional specs */
 };
 

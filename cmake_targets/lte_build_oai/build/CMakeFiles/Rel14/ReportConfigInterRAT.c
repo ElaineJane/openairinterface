@@ -584,9 +584,9 @@ static asn_TYPE_member_t asn_MBR_b1_Threshold_6[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_b1_Threshold_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* b1-ThresholdUTRA at 8044 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* b1-ThresholdGERAN at 8045 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* b1-ThresholdCDMA2000 at 8047 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* b1-ThresholdUTRA at 7299 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* b1-ThresholdGERAN at 7300 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* b1-ThresholdCDMA2000 at 7302 */
 };
 static asn_CHOICE_specifics_t asn_SPC_b1_Threshold_specs_6 = {
 	sizeof(struct ReportConfigInterRAT__triggerType__event__eventId__eventB1__b1_Threshold),
@@ -641,7 +641,7 @@ static ber_tlv_tag_t asn_DEF_eventB1_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventB1_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* b1-Threshold at 8044 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* b1-Threshold at 7299 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventB1_specs_5 = {
 	sizeof(struct ReportConfigInterRAT__triggerType__event__eventId__eventB1),
@@ -711,9 +711,9 @@ static asn_TYPE_member_t asn_MBR_b2_Threshold2_12[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_b2_Threshold2_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* b2-Threshold2UTRA at 8052 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* b2-Threshold2GERAN at 8053 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* b2-Threshold2CDMA2000 at 8055 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* b2-Threshold2UTRA at 7307 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* b2-Threshold2GERAN at 7308 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* b2-Threshold2CDMA2000 at 7310 */
 };
 static asn_CHOICE_specifics_t asn_SPC_b2_Threshold2_specs_12 = {
 	sizeof(struct ReportConfigInterRAT__triggerType__event__eventId__eventB2__b2_Threshold2),
@@ -777,8 +777,8 @@ static ber_tlv_tag_t asn_DEF_eventB2_tags_10[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventB2_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* b2-Threshold1 at 8050 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* b2-Threshold2 at 8052 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* b2-Threshold1 at 7305 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* b2-Threshold2 at 7307 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventB2_specs_10 = {
 	sizeof(struct ReportConfigInterRAT__triggerType__event__eventId__eventB2),
@@ -834,7 +834,7 @@ static ber_tlv_tag_t asn_DEF_eventW1_r13_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventW1_r13_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* w1-Threshold-r13 at 8060 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* w1-Threshold-r13 at 7315 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventW1_r13_specs_17 = {
 	sizeof(struct ReportConfigInterRAT__triggerType__event__eventId__eventW1_r13),
@@ -899,8 +899,8 @@ static ber_tlv_tag_t asn_DEF_eventW2_r13_tags_19[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventW2_r13_tag2el_19[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* w2-Threshold1-r13 at 8062 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* w2-Threshold2-r13 at 8064 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* w2-Threshold1-r13 at 7317 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* w2-Threshold2-r13 at 7319 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventW2_r13_specs_19 = {
 	sizeof(struct ReportConfigInterRAT__triggerType__event__eventId__eventW2_r13),
@@ -956,7 +956,7 @@ static ber_tlv_tag_t asn_DEF_eventW3_r13_tags_22[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eventW3_r13_tag2el_22[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* w3-Threshold-r13 at 8067 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* w3-Threshold-r13 at 7322 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eventW3_r13_specs_22 = {
 	sizeof(struct ReportConfigInterRAT__triggerType__event__eventId__eventW3_r13),
@@ -1044,11 +1044,11 @@ static asn_TYPE_member_t asn_MBR_eventId_4[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_eventId_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eventB1 at 8048 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eventB2 at 8050 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* eventW1-r13 at 8060 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* eventW2-r13 at 8062 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* eventW3-r13 at 8067 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eventB1 at 7303 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eventB2 at 7305 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* eventW1-r13 at 7315 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* eventW2-r13 at 7317 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* eventW3-r13 at 7322 */
 };
 static asn_CHOICE_specifics_t asn_SPC_eventId_specs_4 = {
 	sizeof(struct ReportConfigInterRAT__triggerType__event__eventId),
@@ -1121,9 +1121,9 @@ static ber_tlv_tag_t asn_DEF_event_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_event_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eventId at 8048 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* hysteresis at 8069 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* timeToTrigger at 8071 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eventId at 7303 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* hysteresis at 7324 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* timeToTrigger at 7326 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_event_specs_3 = {
 	sizeof(struct ReportConfigInterRAT__triggerType__event),
@@ -1230,7 +1230,7 @@ static ber_tlv_tag_t asn_DEF_periodical_tags_26[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_periodical_tag2el_26[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* purpose at 8074 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* purpose at 7329 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_periodical_specs_26 = {
 	sizeof(struct ReportConfigInterRAT__triggerType__periodical),
@@ -1291,8 +1291,8 @@ static asn_TYPE_member_t asn_MBR_triggerType_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_triggerType_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* event at 8068 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* periodical at 8077 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* event at 7323 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* periodical at 7332 */
 };
 static asn_CHOICE_specifics_t asn_SPC_triggerType_specs_2 = {
 	sizeof(struct ReportConfigInterRAT__triggerType),
@@ -1456,7 +1456,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_43[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_43[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* si-RequestForHO-r9 at 8083 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* si-RequestForHO-r9 at 7338 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_43 = {
 	sizeof(struct ReportConfigInterRAT__ext1),
@@ -1561,7 +1561,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_46[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_46[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* reportQuantityUTRA-FDD-r10 at 8085 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* reportQuantityUTRA-FDD-r10 at 7340 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_46 = {
 	sizeof(struct ReportConfigInterRAT__ext2),
@@ -1619,7 +1619,7 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_49[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_49[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* includeLocationInfo-r11 at 8087 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* includeLocationInfo-r11 at 7342 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_49 = {
 	sizeof(struct ReportConfigInterRAT__ext3),
@@ -1681,8 +1681,8 @@ static asn_TYPE_member_t asn_MBR_b2_Threshold1_v1250_52[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_b2_Threshold1_v1250_tag2el_52[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 8090 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 8092 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7345 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7347 */
 };
 static asn_CHOICE_specifics_t asn_SPC_b2_Threshold1_v1250_specs_52 = {
 	sizeof(struct ReportConfigInterRAT__ext4__b2_Threshold1_v1250),
@@ -1738,7 +1738,7 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_51[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_51[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* b2-Threshold1-v1250 at 8090 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* b2-Threshold1-v1250 at 7345 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_51 = {
 	sizeof(struct ReportConfigInterRAT__ext4),
@@ -1796,7 +1796,7 @@ static ber_tlv_tag_t asn_DEF_ext5_tags_55[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_55[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* reportQuantityWLAN-r13 at 8094 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* reportQuantityWLAN-r13 at 7349 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_55 = {
 	sizeof(struct ReportConfigInterRAT__ext5),
@@ -1837,64 +1837,6 @@ asn_TYPE_descriptor_t asn_DEF_ext5_55 = {
 	&asn_SPC_ext5_specs_55	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext6_57[] = {
-	{ ATF_POINTER, 1, offsetof(struct ReportConfigInterRAT__ext6, reportAnyWLAN_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_BOOLEAN,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"reportAnyWLAN-r14"
-		},
-};
-static int asn_MAP_ext6_oms_57[] = { 0 };
-static ber_tlv_tag_t asn_DEF_ext6_tags_57[] = {
-	(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext6_tag2el_57[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* reportAnyWLAN-r14 at 8096 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext6_specs_57 = {
-	sizeof(struct ReportConfigInterRAT__ext6),
-	offsetof(struct ReportConfigInterRAT__ext6, _asn_ctx),
-	asn_MAP_ext6_tag2el_57,
-	1,	/* Count of tags in the map */
-	asn_MAP_ext6_oms_57,	/* Optional members */
-	1, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext6_57 = {
-	"ext6",
-	"ext6",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext6_tags_57,
-	sizeof(asn_DEF_ext6_tags_57)
-		/sizeof(asn_DEF_ext6_tags_57[0]) - 1, /* 1 */
-	asn_DEF_ext6_tags_57,	/* Same as above */
-	sizeof(asn_DEF_ext6_tags_57)
-		/sizeof(asn_DEF_ext6_tags_57[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext6_57,
-	1,	/* Elements count */
-	&asn_SPC_ext6_specs_57	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_ReportConfigInterRAT_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ReportConfigInterRAT, triggerType),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -1932,7 +1874,7 @@ static asn_TYPE_member_t asn_MBR_ReportConfigInterRAT_1[] = {
 		0,
 		"reportAmount"
 		},
-	{ ATF_POINTER, 6, offsetof(struct ReportConfigInterRAT, ext1),
+	{ ATF_POINTER, 5, offsetof(struct ReportConfigInterRAT, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		0,
 		&asn_DEF_ext1_43,
@@ -1941,7 +1883,7 @@ static asn_TYPE_member_t asn_MBR_ReportConfigInterRAT_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 5, offsetof(struct ReportConfigInterRAT, ext2),
+	{ ATF_POINTER, 4, offsetof(struct ReportConfigInterRAT, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		0,
 		&asn_DEF_ext2_46,
@@ -1950,7 +1892,7 @@ static asn_TYPE_member_t asn_MBR_ReportConfigInterRAT_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 4, offsetof(struct ReportConfigInterRAT, ext3),
+	{ ATF_POINTER, 3, offsetof(struct ReportConfigInterRAT, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		0,
 		&asn_DEF_ext3_49,
@@ -1959,7 +1901,7 @@ static asn_TYPE_member_t asn_MBR_ReportConfigInterRAT_1[] = {
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 3, offsetof(struct ReportConfigInterRAT, ext4),
+	{ ATF_POINTER, 2, offsetof(struct ReportConfigInterRAT, ext4),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		0,
 		&asn_DEF_ext4_51,
@@ -1968,7 +1910,7 @@ static asn_TYPE_member_t asn_MBR_ReportConfigInterRAT_1[] = {
 		0,
 		"ext4"
 		},
-	{ ATF_POINTER, 2, offsetof(struct ReportConfigInterRAT, ext5),
+	{ ATF_POINTER, 1, offsetof(struct ReportConfigInterRAT, ext5),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		0,
 		&asn_DEF_ext5_55,
@@ -1977,41 +1919,31 @@ static asn_TYPE_member_t asn_MBR_ReportConfigInterRAT_1[] = {
 		0,
 		"ext5"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ReportConfigInterRAT, ext6),
-		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
-		0,
-		&asn_DEF_ext6_57,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext6"
-		},
 };
-static int asn_MAP_ReportConfigInterRAT_oms_1[] = { 4, 5, 6, 7, 8, 9 };
+static int asn_MAP_ReportConfigInterRAT_oms_1[] = { 4, 5, 6, 7, 8 };
 static ber_tlv_tag_t asn_DEF_ReportConfigInterRAT_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ReportConfigInterRAT_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* triggerType at 8071 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* maxReportCells at 8079 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* reportInterval at 8080 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* reportAmount at 8081 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 8083 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 8085 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext3 at 8087 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext4 at 8092 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* ext5 at 8094 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* ext6 at 8096 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* triggerType at 7326 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* maxReportCells at 7334 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* reportInterval at 7335 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* reportAmount at 7336 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ext1 at 7338 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext2 at 7340 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ext3 at 7342 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext4 at 7347 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* ext5 at 7349 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ReportConfigInterRAT_specs_1 = {
 	sizeof(struct ReportConfigInterRAT),
 	offsetof(struct ReportConfigInterRAT, _asn_ctx),
 	asn_MAP_ReportConfigInterRAT_tag2el_1,
-	10,	/* Count of tags in the map */
+	9,	/* Count of tags in the map */
 	asn_MAP_ReportConfigInterRAT_oms_1,	/* Optional members */
-	0, 6,	/* Root/Additions */
+	0, 5,	/* Root/Additions */
 	3,	/* Start extensions */
-	11	/* Stop extensions */
+	10	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_ReportConfigInterRAT = {
 	"ReportConfigInterRAT",
@@ -2037,7 +1969,7 @@ asn_TYPE_descriptor_t asn_DEF_ReportConfigInterRAT = {
 		/sizeof(asn_DEF_ReportConfigInterRAT_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_ReportConfigInterRAT_1,
-	10,	/* Elements count */
+	9,	/* Elements count */
 	&asn_SPC_ReportConfigInterRAT_specs_1	/* Additional specs */
 };
 

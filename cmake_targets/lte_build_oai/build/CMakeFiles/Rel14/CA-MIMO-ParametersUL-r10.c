@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_CA_MIMO_ParametersUL_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CA_MIMO_ParametersUL_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ca-BandwidthClassUL-r10 at 9285 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* supportedMIMO-CapabilityUL-r10 at 9286 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ca-BandwidthClassUL-r10 at 8336 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* supportedMIMO-CapabilityUL-r10 at 8337 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CA_MIMO_ParametersUL_r10_specs_1 = {
 	sizeof(struct CA_MIMO_ParametersUL_r10),

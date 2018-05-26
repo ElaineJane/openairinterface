@@ -12,19 +12,18 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include <asn_SEQUENCE_OF.h>
-#include <constr_SEQUENCE_OF.h>
+#include "SL-V2X-TxPoolIdentity-r14.h"
+#include "SL-CommResourcePoolV2X-r14.h"
+#include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/* Forward declarations */
-struct SL_TxPoolToAddMod_r14;
-
 /* SL-TxPoolToAddModListV2X-r14 */
 typedef struct SL_TxPoolToAddModListV2X_r14 {
-	A_SEQUENCE_OF(struct SL_TxPoolToAddMod_r14) list;
+	SL_V2X_TxPoolIdentity_r14_t	 poolIdentity_r14;
+	SL_CommResourcePoolV2X_r14_t	 pool_r14;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -36,9 +35,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SL_TxPoolToAddModListV2X_r14;
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "SL-TxPoolToAddMod-r14.h"
 
 #endif	/* _SL_TxPoolToAddModListV2X_r14_H_ */
 #include <asn_internal.h>

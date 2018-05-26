@@ -49,10 +49,10 @@ static ber_tlv_tag_t asn_DEF_AS_Config_NB_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_AS_Config_NB_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sourceRadioResourceConfig-r13 at 13766 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sourceSecurityAlgorithmConfig-r13 at 13767 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sourceUE-Identity-r13 at 13768 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* sourceDl-CarrierFreq-r13 at 13769 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sourceRadioResourceConfig-r13 at 11969 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sourceSecurityAlgorithmConfig-r13 at 11970 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sourceUE-Identity-r13 at 11971 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* sourceDl-CarrierFreq-r13 at 11972 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_AS_Config_NB_specs_1 = {
 	sizeof(struct AS_Config_NB),

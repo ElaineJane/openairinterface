@@ -445,9 +445,9 @@ static ber_tlv_tag_t asn_DEF_drx_AssistanceInfo_r11_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_drx_AssistanceInfo_r11_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* drx-CycleLength-r11 at 422 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* drx-Offset-r11 at 424 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* drx-ActiveTime-r11 at 425 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* drx-CycleLength-r11 at 391 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* drx-Offset-r11 at 393 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* drx-ActiveTime-r11 at 394 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_drx_AssistanceInfo_r11_specs_2 = {
 	sizeof(struct TDM_AssistanceInfo_r11__drx_AssistanceInfo_r11),
@@ -509,8 +509,8 @@ static asn_TYPE_member_t asn_MBR_TDM_AssistanceInfo_r11_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_TDM_AssistanceInfo_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* drx-AssistanceInfo-r11 at 423 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* idc-SubframePatternList-r11 at 428 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* drx-AssistanceInfo-r11 at 392 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* idc-SubframePatternList-r11 at 397 */
 };
 static asn_CHOICE_specifics_t asn_SPC_TDM_AssistanceInfo_r11_specs_1 = {
 	sizeof(struct TDM_AssistanceInfo_r11),

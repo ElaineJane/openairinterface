@@ -1169,14 +1169,14 @@ static ber_tlv_tag_t asn_DEF_PRACH_ParametersCE_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PRACH_ParametersCE_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* prach-ConfigIndex-r13 at 5226 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prach-FreqOffset-r13 at 5227 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* prach-StartingSubframe-r13 at 5228 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* maxNumPreambleAttemptCE-r13 at 5231 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* numRepetitionPerPreambleAttempt-r13 at 5232 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* mpdcch-NarrowbandsToMonitor-r13 at 5234 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* mpdcch-NumRepetition-RA-r13 at 5235 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* prach-HoppingConfig-r13 at 5237 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* prach-ConfigIndex-r13 at 4704 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prach-FreqOffset-r13 at 4705 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* prach-StartingSubframe-r13 at 4706 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* maxNumPreambleAttemptCE-r13 at 4709 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* numRepetitionPerPreambleAttempt-r13 at 4710 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* mpdcch-NarrowbandsToMonitor-r13 at 4712 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* mpdcch-NumRepetition-RA-r13 at 4713 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* prach-HoppingConfig-r13 at 4715 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PRACH_ParametersCE_r13_specs_1 = {
 	sizeof(struct PRACH_ParametersCE_r13),

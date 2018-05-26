@@ -188,8 +188,8 @@ static ber_tlv_tag_t asn_DEF_thresholdRSRP_r12_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_thresholdRSRP_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRP-Low-r12 at 9831 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdRSRP-High-r12 at 9833 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRP-Low-r12 at 8789 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdRSRP-High-r12 at 8791 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_thresholdRSRP_r12_specs_2 = {
 	sizeof(struct WLAN_OffloadConfig_r12__thresholdRSRP_r12),
@@ -254,8 +254,8 @@ static ber_tlv_tag_t asn_DEF_thresholdRSRQ_r12_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_thresholdRSRQ_r12_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRQ-Low-r12 at 9835 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdRSRQ-High-r12 at 9837 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRQ-Low-r12 at 8793 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdRSRQ-High-r12 at 8795 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_thresholdRSRQ_r12_specs_5 = {
 	sizeof(struct WLAN_OffloadConfig_r12__thresholdRSRQ_r12),
@@ -320,8 +320,8 @@ static ber_tlv_tag_t asn_DEF_thresholdRSRQ_OnAllSymbolsWithWB_r12_tags_8[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_thresholdRSRQ_OnAllSymbolsWithWB_r12_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRQ-OnAllSymbolsWithWB-Low-r12 at 9839 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdRSRQ-OnAllSymbolsWithWB-High-r12 at 9841 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRQ-OnAllSymbolsWithWB-Low-r12 at 8797 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdRSRQ-OnAllSymbolsWithWB-High-r12 at 8799 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_thresholdRSRQ_OnAllSymbolsWithWB_r12_specs_8 = {
 	sizeof(struct WLAN_OffloadConfig_r12__thresholdRSRQ_OnAllSymbolsWithWB_r12),
@@ -386,8 +386,8 @@ static ber_tlv_tag_t asn_DEF_thresholdRSRQ_OnAllSymbols_r12_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_thresholdRSRQ_OnAllSymbols_r12_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRQ-OnAllSymbolsLow-r12 at 9843 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdRSRQ-OnAllSymbolsHigh-r12 at 9845 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRQ-OnAllSymbolsLow-r12 at 8801 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdRSRQ-OnAllSymbolsHigh-r12 at 8803 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_thresholdRSRQ_OnAllSymbols_r12_specs_11 = {
 	sizeof(struct WLAN_OffloadConfig_r12__thresholdRSRQ_OnAllSymbols_r12),
@@ -452,8 +452,8 @@ static ber_tlv_tag_t asn_DEF_thresholdRSRQ_WB_r12_tags_14[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_thresholdRSRQ_WB_r12_tag2el_14[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRQ-WB-Low-r12 at 9847 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdRSRQ-WB-High-r12 at 9849 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRQ-WB-Low-r12 at 8805 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdRSRQ-WB-High-r12 at 8807 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_thresholdRSRQ_WB_r12_specs_14 = {
 	sizeof(struct WLAN_OffloadConfig_r12__thresholdRSRQ_WB_r12),
@@ -518,8 +518,8 @@ static ber_tlv_tag_t asn_DEF_thresholdChannelUtilization_r12_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_thresholdChannelUtilization_r12_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdChannelUtilizationLow-r12 at 9852 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdChannelUtilizationHigh-r12 at 9853 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdChannelUtilizationLow-r12 at 8810 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdChannelUtilizationHigh-r12 at 8811 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_thresholdChannelUtilization_r12_specs_17 = {
 	sizeof(struct WLAN_OffloadConfig_r12__thresholdChannelUtilization_r12),
@@ -602,10 +602,10 @@ static ber_tlv_tag_t asn_DEF_thresholdBackhaul_Bandwidth_r12_tags_20[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_thresholdBackhaul_Bandwidth_r12_tag2el_20[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdBackhaulDL-BandwidthLow-r12 at 9856 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* thresholdBackhaulDL-BandwidthHigh-r12 at 9857 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* thresholdBackhaulUL-BandwidthLow-r12 at 9858 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* thresholdBackhaulUL-BandwidthHigh-r12 at 9860 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdBackhaulDL-BandwidthLow-r12 at 8814 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* thresholdBackhaulDL-BandwidthHigh-r12 at 8815 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* thresholdBackhaulUL-BandwidthLow-r12 at 8816 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* thresholdBackhaulUL-BandwidthHigh-r12 at 8818 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_thresholdBackhaul_Bandwidth_r12_specs_20 = {
 	sizeof(struct WLAN_OffloadConfig_r12__thresholdBackhaul_Bandwidth_r12),
@@ -670,8 +670,8 @@ static ber_tlv_tag_t asn_DEF_thresholdWLAN_RSSI_r12_tags_25[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_thresholdWLAN_RSSI_r12_tag2el_25[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdWLAN-RSSI-Low-r12 at 9862 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdWLAN-RSSI-High-r12 at 9863 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdWLAN-RSSI-Low-r12 at 8820 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* thresholdWLAN-RSSI-High-r12 at 8821 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_thresholdWLAN_RSSI_r12_specs_25 = {
 	sizeof(struct WLAN_OffloadConfig_r12__thresholdWLAN_RSSI_r12),
@@ -808,16 +808,16 @@ static ber_tlv_tag_t asn_DEF_WLAN_OffloadConfig_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_WLAN_OffloadConfig_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRP-r12 at 9831 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* thresholdRSRQ-r12 at 9835 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* thresholdRSRQ-OnAllSymbolsWithWB-r12 at 9839 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* thresholdRSRQ-OnAllSymbols-r12 at 9843 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* thresholdRSRQ-WB-r12 at 9847 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* thresholdChannelUtilization-r12 at 9852 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* thresholdBackhaul-Bandwidth-r12 at 9856 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* thresholdWLAN-RSSI-r12 at 9862 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* offloadPreferenceIndicator-r12 at 9865 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* t-SteeringWLAN-r12 at 9866 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* thresholdRSRP-r12 at 8789 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* thresholdRSRQ-r12 at 8793 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* thresholdRSRQ-OnAllSymbolsWithWB-r12 at 8797 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* thresholdRSRQ-OnAllSymbols-r12 at 8801 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* thresholdRSRQ-WB-r12 at 8805 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* thresholdChannelUtilization-r12 at 8810 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* thresholdBackhaul-Bandwidth-r12 at 8814 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* thresholdWLAN-RSSI-r12 at 8820 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* offloadPreferenceIndicator-r12 at 8823 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* t-SteeringWLAN-r12 at 8824 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_WLAN_OffloadConfig_r12_specs_1 = {
 	sizeof(struct WLAN_OffloadConfig_r12),

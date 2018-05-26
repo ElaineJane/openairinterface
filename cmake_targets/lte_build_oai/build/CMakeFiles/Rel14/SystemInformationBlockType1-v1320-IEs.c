@@ -838,8 +838,8 @@ static asn_TYPE_member_t asn_MBR_interval_DLHoppingConfigCommonModeA_r13_6[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_interval_DLHoppingConfigCommonModeA_r13_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 1985 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 1986 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 1889 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 1890 */
 };
 static asn_CHOICE_specifics_t asn_SPC_interval_DLHoppingConfigCommonModeA_r13_specs_6 = {
 	sizeof(struct SystemInformationBlockType1_v1320_IEs__freqHoppingParametersDL_r13__interval_DLHoppingConfigCommonModeA_r13),
@@ -1005,8 +1005,8 @@ static asn_TYPE_member_t asn_MBR_interval_DLHoppingConfigCommonModeB_r13_17[] = 
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_interval_DLHoppingConfigCommonModeB_r13_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 1989 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 1990 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 1893 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 1894 */
 };
 static asn_CHOICE_specifics_t asn_SPC_interval_DLHoppingConfigCommonModeB_r13_specs_17 = {
 	sizeof(struct SystemInformationBlockType1_v1320_IEs__freqHoppingParametersDL_r13__interval_DLHoppingConfigCommonModeB_r13),
@@ -1089,10 +1089,10 @@ static ber_tlv_tag_t asn_DEF_freqHoppingParametersDL_r13_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_freqHoppingParametersDL_r13_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mpdcch-pdsch-HoppingNB-r13 at 1983 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* interval-DLHoppingConfigCommonModeA-r13 at 1985 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* interval-DLHoppingConfigCommonModeB-r13 at 1989 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* mpdcch-pdsch-HoppingOffset-r13 at 1992 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mpdcch-pdsch-HoppingNB-r13 at 1887 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* interval-DLHoppingConfigCommonModeA-r13 at 1889 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* interval-DLHoppingConfigCommonModeB-r13 at 1893 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* mpdcch-pdsch-HoppingOffset-r13 at 1896 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_freqHoppingParametersDL_r13_specs_2 = {
 	sizeof(struct SystemInformationBlockType1_v1320_IEs__freqHoppingParametersDL_r13),
@@ -1146,7 +1146,7 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType1_v1320_IEs_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType1_v1320_IEs, nonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SystemInformationBlockType1_v1350_IEs,
+		&asn_DEF_SystemInformationBlockType1_v14xy_IEs,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -1158,8 +1158,8 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType1_v1320_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType1_v1320_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* freqHoppingParametersDL-r13 at 1983 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1994 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* freqHoppingParametersDL-r13 at 1887 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1898 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType1_v1320_IEs_specs_1 = {
 	sizeof(struct SystemInformationBlockType1_v1320_IEs),

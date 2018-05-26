@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_MIMO_CA_ParametersPerBoBC_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MIMO_CA_ParametersPerBoBC_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* parametersTM9-r13 at 8951 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* parametersTM10-r13 at 8952 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* parametersTM9-r13 at 8065 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* parametersTM10-r13 at 8066 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MIMO_CA_ParametersPerBoBC_r13_specs_1 = {
 	sizeof(struct MIMO_CA_ParametersPerBoBC_r13),

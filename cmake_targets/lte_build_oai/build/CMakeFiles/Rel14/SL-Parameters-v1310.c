@@ -730,10 +730,10 @@ static ber_tlv_tag_t asn_DEF_SL_Parameters_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_Parameters_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discSysInfoReporting-r13 at 9718 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commMultipleTx-r13 at 9719 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* discInterFreqTx-r13 at 9720 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* discPeriodicSLSS-r13 at 9721 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discSysInfoReporting-r13 at 8715 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commMultipleTx-r13 at 8716 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* discInterFreqTx-r13 at 8717 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* discPeriodicSLSS-r13 at 8718 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_Parameters_v1310_specs_1 = {
 	sizeof(struct SL_Parameters_v1310),

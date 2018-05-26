@@ -148,11 +148,11 @@ static ber_tlv_tag_t asn_DEF_SL_TF_ResourceConfig_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_TF_ResourceConfig_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* prb-Num-r12 at 10705 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prb-Start-r12 at 10706 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* prb-End-r12 at 10707 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* offsetIndicator-r12 at 10708 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* subframeBitmap-r12 at 10710 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* prb-Num-r12 at 9485 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prb-Start-r12 at 9486 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* prb-End-r12 at 9487 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* offsetIndicator-r12 at 9488 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* subframeBitmap-r12 at 9490 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_TF_ResourceConfig_r12_specs_1 = {
 	sizeof(struct SL_TF_ResourceConfig_r12),

@@ -193,7 +193,7 @@ static ber_tlv_tag_t asn_DEF_NonContiguousUL_RA_WithinCC_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_NonContiguousUL_RA_WithinCC_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* nonContiguousUL-RA-WithinCC-Info-r10 at 8993 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* nonContiguousUL-RA-WithinCC-Info-r10 at 8097 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_NonContiguousUL_RA_WithinCC_r10_specs_1 = {
 	sizeof(struct NonContiguousUL_RA_WithinCC_r10),

@@ -391,8 +391,8 @@ static ber_tlv_tag_t asn_DEF_PCCH_Config_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PCCH_Config_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* defaultPagingCycle at 5855 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nB at 5857 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* defaultPagingCycle at 5273 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nB at 5275 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PCCH_Config_specs_1 = {
 	sizeof(struct PCCH_Config),

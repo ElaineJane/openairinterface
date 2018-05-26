@@ -174,10 +174,10 @@ static ber_tlv_tag_t asn_DEF_discConfig_r12_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_discConfig_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discRxPool-r12 at 3425 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discTxPoolCommon-r12 at 3426 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* discTxPowerInfo-r12 at 3427 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* discSyncConfig-r12 at 3428 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discRxPool-r12 at 3165 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discTxPoolCommon-r12 at 3166 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* discTxPowerInfo-r12 at 3167 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* discSyncConfig-r12 at 3168 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_discConfig_r12_specs_2 = {
 	sizeof(struct SystemInformationBlockType19_r12__discConfig_r12),
@@ -291,8 +291,8 @@ static ber_tlv_tag_t asn_DEF_discConfig_v1310_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_discConfig_v1310_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discInterFreqList-v1310 at 3434 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* gapRequestsAllowedCommon at 3435 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discInterFreqList-v1310 at 3174 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* gapRequestsAllowedCommon at 3175 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_discConfig_v1310_specs_11 = {
 	sizeof(struct SystemInformationBlockType19_r12__ext1__discConfig_v1310),
@@ -358,8 +358,8 @@ static ber_tlv_tag_t asn_DEF_discConfigRelay_r13_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_discConfigRelay_r13_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* relayUE-Config-r13 at 3438 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* remoteUE-Config-r13 at 3440 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* relayUE-Config-r13 at 3178 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* remoteUE-Config-r13 at 3180 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_discConfigRelay_r13_specs_15 = {
 	sizeof(struct SystemInformationBlockType19_r12__ext1__discConfigRelay_r13),
@@ -425,8 +425,8 @@ static ber_tlv_tag_t asn_DEF_discConfigPS_13_tags_18[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_discConfigPS_13_tag2el_18[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discRxPoolPS-r13 at 3442 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* discTxPoolPS-Common-r13 at 3443 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discRxPoolPS-r13 at 3182 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* discTxPoolPS-Common-r13 at 3183 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_discConfigPS_13_specs_18 = {
 	sizeof(struct SystemInformationBlockType19_r12__ext1__discConfigPS_13),
@@ -502,9 +502,9 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_10[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discConfig-v1310 at 3434 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discConfigRelay-r13 at 3438 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* discConfigPS-13 at 3442 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discConfig-v1310 at 3174 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discConfigRelay-r13 at 3178 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* discConfigPS-13 at 3182 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_10 = {
 	sizeof(struct SystemInformationBlockType19_r12__ext1),
@@ -588,10 +588,10 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType19_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType19_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discConfig-r12 at 3425 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discInterFreqList-r12 at 3430 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* lateNonCriticalExtension at 3431 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 3436 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discConfig-r12 at 3165 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discInterFreqList-r12 at 3170 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* lateNonCriticalExtension at 3171 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 3176 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType19_r12_specs_1 = {
 	sizeof(struct SystemInformationBlockType19_r12),

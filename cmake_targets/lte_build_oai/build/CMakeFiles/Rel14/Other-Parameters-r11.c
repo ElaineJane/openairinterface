@@ -551,9 +551,9 @@ static ber_tlv_tag_t asn_DEF_Other_Parameters_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_Other_Parameters_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* inDeviceCoexInd-r11 at 9577 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* powerPrefInd-r11 at 9578 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ue-Rx-TxTimeDiffMeasurements-r11 at 9579 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* inDeviceCoexInd-r11 at 8614 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* powerPrefInd-r11 at 8615 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ue-Rx-TxTimeDiffMeasurements-r11 at 8616 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_Other_Parameters_r11_specs_1 = {
 	sizeof(struct Other_Parameters_r11),

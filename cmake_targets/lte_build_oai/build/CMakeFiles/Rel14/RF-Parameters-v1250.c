@@ -220,10 +220,10 @@ static ber_tlv_tag_t asn_DEF_RF_Parameters_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RF_Parameters_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* supportedBandListEUTRA-v1250 at 9043 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedBandCombination-v1250 at 9044 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* supportedBandCombinationAdd-v1250 at 9045 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* freqBandPriorityAdjustment-r12 at 9046 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* supportedBandListEUTRA-v1250 at 8147 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedBandCombination-v1250 at 8148 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* supportedBandCombinationAdd-v1250 at 8149 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* freqBandPriorityAdjustment-r12 at 8150 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RF_Parameters_v1250_specs_1 = {
 	sizeof(struct RF_Parameters_v1250),

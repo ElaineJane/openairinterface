@@ -370,7 +370,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_10[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* failureType-v1290 at 1671 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* failureType-v1290 at 1598 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_10 = {
 	sizeof(struct FailureReportSCG_r12__ext1),
@@ -428,7 +428,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_13[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* measResultServFreqListExt-r13 at 1673 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* measResultServFreqListExt-r13 at 1600 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_13 = {
 	sizeof(struct FailureReportSCG_r12__ext2),
@@ -521,11 +521,11 @@ static ber_tlv_tag_t asn_DEF_FailureReportSCG_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_FailureReportSCG_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* failureType-r12 at 1666 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultServFreqList-r12 at 1668 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measResultNeighCells-r12 at 1669 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext1 at 1671 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext2 at 1673 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* failureType-r12 at 1593 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultServFreqList-r12 at 1595 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measResultNeighCells-r12 at 1596 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext1 at 1598 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext2 at 1600 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_FailureReportSCG_r12_specs_1 = {
 	sizeof(struct FailureReportSCG_r12),

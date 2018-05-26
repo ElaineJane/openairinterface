@@ -1,14 +1,10 @@
 ASN_MODULE_SOURCES=	\
 	BCCH-BCH-Message.c	\
 	BCCH-BCH-MessageType.c	\
-	BCCH-BCH-Message-MBMS.c	\
-	BCCH-BCH-MessageType-MBMS-r14.c	\
 	BCCH-DL-SCH-Message.c	\
 	BCCH-DL-SCH-MessageType.c	\
 	BCCH-DL-SCH-Message-BR.c	\
 	BCCH-DL-SCH-MessageType-BR-r13.c	\
-	BCCH-DL-SCH-Message-MBMS.c	\
-	BCCH-DL-SCH-MessageType-MBMS-r14.c	\
 	MCCH-Message.c	\
 	MCCH-MessageType.c	\
 	PCCH-Message.c	\
@@ -51,7 +47,6 @@ ASN_MODULE_SOURCES=	\
 	InDeviceCoexIndication-r11-IEs.c	\
 	InDeviceCoexIndication-v11d0-IEs.c	\
 	InDeviceCoexIndication-v1310-IEs.c	\
-	InDeviceCoexIndication-v1360-IEs.c	\
 	AffectedCarrierFreqList-r11.c	\
 	AffectedCarrierFreqList-v1310.c	\
 	AffectedCarrierFreq-r11.c	\
@@ -76,7 +71,6 @@ ASN_MODULE_SOURCES=	\
 	TargetMBSFN-AreaList-r12.c	\
 	TargetMBSFN-Area-r12.c	\
 	MasterInformationBlock.c	\
-	MasterInformationBlock-MBMS-r14.c	\
 	MBMSCountingRequest-r10.c	\
 	CountingRequestList-r10.c	\
 	CountingRequestInfo-r10.c	\
@@ -90,9 +84,7 @@ ASN_MODULE_SOURCES=	\
 	MBSFNAreaConfiguration-r9.c	\
 	MBSFNAreaConfiguration-v930-IEs.c	\
 	MBSFNAreaConfiguration-v1250-IEs.c	\
-	MBSFNAreaConfiguration-v1430-IEs.c	\
 	CommonSF-AllocPatternList-r9.c	\
-	CommonSF-AllocPatternList-r14.c	\
 	MeasurementReport.c	\
 	MeasurementReport-r8-IEs.c	\
 	MeasurementReport-v8a0-IEs.c	\
@@ -135,16 +127,16 @@ ASN_MODULE_SOURCES=	\
 	RRCConnectionReconfiguration-v1130-IEs.c	\
 	RRCConnectionReconfiguration-v1250-IEs.c	\
 	RRCConnectionReconfiguration-v1310-IEs.c	\
-	RRCConnectionReconfiguration-v1430-IEs.c	\
+	RRCConnectionReconfiguration-v14x0-IEs.c	\
 	SL-SyncTxControl-r12.c	\
 	PSCellToAddMod-r12.c	\
 	PowerCoordinationInfo-r12.c	\
 	SCellToAddModList-r10.c	\
 	SCellToAddModListExt-r13.c	\
-	SCellToAddModListExt-v1430.c	\
+	SCellToAddModListExt-v14xy.c	\
 	SCellToAddMod-r10.c	\
 	SCellToAddModExt-r13.c	\
-	SCellToAddModExt-v1430.c	\
+	SCellToAddModExt-v14xy.c	\
 	SCellToReleaseList-r10.c	\
 	SCellToReleaseListExt-r13.c	\
 	SCG-Configuration-r12.c	\
@@ -156,7 +148,6 @@ ASN_MODULE_SOURCES=	\
 	RRCConnectionReconfigurationComplete-v1020-IEs.c	\
 	RRCConnectionReconfigurationComplete-v1130-IEs.c	\
 	RRCConnectionReconfigurationComplete-v1250-IEs.c	\
-	RRCConnectionReconfigurationComplete-v1430-IEs.c	\
 	RRCConnectionReestablishment.c	\
 	RRCConnectionReestablishment-r8-IEs.c	\
 	RRCConnectionReestablishment-v8a0-IEs.c	\
@@ -225,7 +216,6 @@ ASN_MODULE_SOURCES=	\
 	EstablishmentCause.c	\
 	RRCConnectionResume-r13.c	\
 	RRCConnectionResume-r13-IEs.c	\
-	RRCConnectionResume-v1430-IEs.c	\
 	RRCConnectionResumeComplete-r13.c	\
 	RRCConnectionResumeComplete-r13-IEs.c	\
 	RRCConnectionResumeRequest-r13.c	\
@@ -242,17 +232,13 @@ ASN_MODULE_SOURCES=	\
 	RRCConnectionSetupComplete-v1250-IEs.c	\
 	RRCConnectionSetupComplete-v1320-IEs.c	\
 	RRCConnectionSetupComplete-v1330-IEs.c	\
-	RRCConnectionSetupComplete-v1430-IEs.c	\
 	RegisteredMME.c	\
 	SCGFailureInformation-r12.c	\
 	SCGFailureInformation-r12-IEs.c	\
 	SCGFailureInformation-v1310-IEs.c	\
-	SCGFailureInformation-v12d0-IEs.c	\
 	FailureReportSCG-r12.c	\
-	FailureReportSCG-v12d0.c	\
 	SCPTMConfiguration-r13.c	\
 	SCPTMConfiguration-v1340.c	\
-	SCPTMConfiguration-BR-r14.c	\
 	SecurityModeCommand.c	\
 	SecurityModeCommand-r8-IEs.c	\
 	SecurityModeCommand-v8a0-IEs.c	\
@@ -266,19 +252,15 @@ ASN_MODULE_SOURCES=	\
 	SidelinkUEInformation-r12.c	\
 	SidelinkUEInformation-r12-IEs.c	\
 	SidelinkUEInformation-v1310-IEs.c	\
-	SidelinkUEInformation-v1430-IEs.c	\
+	SidelinkUEInformation-v14x0-IEs.c	\
 	SL-CommTxResourceReq-r12.c	\
+	V2X-CommTxResourceReq-r14.c	\
 	SL-DiscTxResourceReqPerFreqList-r13.c	\
 	SL-DiscTxResourceReq-r13.c	\
 	SL-DestinationInfoList-r12.c	\
 	SL-DestinationIdentity-r12.c	\
 	SL-DiscSysInfoReportFreqList-r13.c	\
-	SL-V2X-CommFreqList-r14.c	\
-	SL-V2X-CommTxFreqList-r14.c	\
-	SL-V2X-CommTxResourceReq-r14.c	\
-	SL-TypeTxSyncList-r14.c	\
 	SystemInformation-BR-r13.c	\
-	SystemInformation-MBMS-r14.c	\
 	SystemInformation.c	\
 	SystemInformation-r8-IEs.c	\
 	SystemInformation-v8a0-IEs.c	\
@@ -293,9 +275,7 @@ ASN_MODULE_SOURCES=	\
 	SystemInformationBlockType1-v1250-IEs.c	\
 	SystemInformationBlockType1-v1310-IEs.c	\
 	SystemInformationBlockType1-v1320-IEs.c	\
-	SystemInformationBlockType1-v1350-IEs.c	\
-	SystemInformationBlockType1-v1360-IEs.c	\
-	SystemInformationBlockType1-v1430-IEs.c	\
+	SystemInformationBlockType1-v14xy-IEs.c	\
 	PLMN-IdentityList.c	\
 	PLMN-IdentityInfo.c	\
 	SchedulingInfoList.c	\
@@ -309,27 +289,13 @@ ASN_MODULE_SOURCES=	\
 	CellSelectionInfo-v920.c	\
 	CellSelectionInfo-v1130.c	\
 	CellSelectionInfo-v1250.c	\
-	CellAccessRelatedInfo-r14.c	\
-	SystemInformationBlockType1-MBMS-r14.c	\
-	PLMN-IdentityList-MBMS-r14.c	\
-	SchedulingInfoList-MBMS-r14.c	\
-	SchedulingInfo-MBMS-r14.c	\
-	SIB-MappingInfo-MBMS-r14.c	\
-	SIB-Type-MBMS-r14.c	\
-	NonMBSFN-SubframeConfig-r14.c	\
 	UEAssistanceInformation-r11.c	\
 	UEAssistanceInformation-r11-IEs.c	\
-	UEAssistanceInformation-v1430-IEs.c	\
-	BW-Preference-r14.c	\
-	TrafficPatternInfoList-r14.c	\
-	TrafficPatternInfo-r14.c	\
-	DelayBudgetReport-r14.c	\
 	UECapabilityEnquiry.c	\
 	UECapabilityEnquiry-r8-IEs.c	\
 	UECapabilityEnquiry-v8a0-IEs.c	\
 	UECapabilityEnquiry-v1180-IEs.c	\
 	UECapabilityEnquiry-v1310-IEs.c	\
-	UECapabilityEnquiry-v1430-IEs.c	\
 	UE-CapabilityRequest.c	\
 	UECapabilityInformation.c	\
 	UECapabilityInformation-r8-IEs.c	\
@@ -382,13 +348,11 @@ ASN_MODULE_SOURCES=	\
 	ULInformationTransfer-v8a0-IEs.c	\
 	WLANConnectionStatusReport-r13.c	\
 	WLANConnectionStatusReport-r13-IEs.c	\
-	WLANConnectionStatusReport-v1430-IEs.c	\
 	SystemInformationBlockType2.c	\
 	SystemInformationBlockType2-v8h0-IEs.c	\
 	SystemInformationBlockType2-v9e0-IEs.c	\
 	AC-BarringConfig.c	\
 	MBSFN-SubframeConfigList.c	\
-	MBSFN-SubframeConfigList-v1430.c	\
 	AC-BarringPerPLMN-List-r12.c	\
 	AC-BarringPerPLMN-r12.c	\
 	ACDC-BarringForCommon-r13.c	\
@@ -415,13 +379,10 @@ ASN_MODULE_SOURCES=	\
 	SystemInformationBlockType5-v10j0-IEs.c	\
 	InterFreqCarrierFreqList.c	\
 	InterFreqCarrierFreqList-v1250.c	\
-	InterFreqCarrierFreqList-v1310.c	\
-	InterFreqCarrierFreqList-v1350.c	\
 	InterFreqCarrierFreqListExt-r12.c	\
 	InterFreqCarrierFreqListExt-v1280.c	\
+	InterFreqCarrierFreqList-v1310.c	\
 	InterFreqCarrierFreqListExt-v1310.c	\
-	InterFreqCarrierFreqListExt-v1350.c	\
-	InterFreqCarrierFreqListExt-v1360.c	\
 	InterFreqCarrierFreqInfo.c	\
 	InterFreqCarrierFreqInfo-v8h0.c	\
 	InterFreqCarrierFreqInfo-v9e0.c	\
@@ -429,8 +390,6 @@ ASN_MODULE_SOURCES=	\
 	InterFreqCarrierFreqInfo-v1250.c	\
 	InterFreqCarrierFreqInfo-r12.c	\
 	InterFreqCarrierFreqInfo-v1310.c	\
-	InterFreqCarrierFreqInfo-v1350.c	\
-	InterFreqCarrierFreqInfo-v1360.c	\
 	InterFreqNeighCellList.c	\
 	InterFreqNeighCellInfo.c	\
 	InterFreqBlackCellList.c	\
@@ -491,8 +450,6 @@ ASN_MODULE_SOURCES=	\
 	MBMS-SAI-InterFreqList-v1140.c	\
 	MBMS-SAI-InterFreq-r11.c	\
 	MBMS-SAI-InterFreq-v1140.c	\
-	MBMS-InterFreqCarrierTypeList-r14.c	\
-	MBMS-CarrierType-r14.c	\
 	SystemInformationBlockType16-r11.c	\
 	SystemInformationBlockType17-r12.c	\
 	WLAN-OffloadInfoPerPLMN-r12.c	\
@@ -513,16 +470,15 @@ ASN_MODULE_SOURCES=	\
 	SL-DiscConfigOtherInterFreq-r13.c	\
 	SL-ResourcesInterFreq-r13.c	\
 	SystemInformationBlockType20-r13.c	\
-	SC-MCCH-SchedulingInfo-r14.c	\
 	SystemInformationBlockType21-r14.c	\
 	SL-V2X-ConfigCommon-r14.c	\
+	SL-CommTxPoolSensingConfig-r14.c	\
 	AntennaInfoCommon.c	\
 	AntennaInfoDedicated.c	\
 	AntennaInfoDedicated-v920.c	\
 	AntennaInfoDedicated-r10.c	\
 	AntennaInfoDedicated-v10i0.c	\
 	AntennaInfoDedicated-v1250.c	\
-	AntennaInfoDedicated-v1430.c	\
 	AntennaInfoUL-r10.c	\
 	CQI-ReportConfig.c	\
 	CQI-ReportConfig-v920.c	\
@@ -531,7 +487,6 @@ ASN_MODULE_SOURCES=	\
 	CQI-ReportConfig-v1250.c	\
 	CQI-ReportConfig-v1310.c	\
 	CQI-ReportConfig-v1320.c	\
-	CQI-ReportConfig-v1430.c	\
 	CQI-ReportConfigSCell-r10.c	\
 	CQI-ReportPeriodic.c	\
 	CQI-ReportPeriodic-r10.c	\
@@ -546,7 +501,6 @@ ASN_MODULE_SOURCES=	\
 	CQI-ReportAperiodic-v1310.c	\
 	CQI-ReportAperiodicProc-r11.c	\
 	CQI-ReportAperiodicProc-v1310.c	\
-	CQI-ReportAperiodicHybrid-r14.c	\
 	CQI-ReportModeAperiodic.c	\
 	CQI-ReportBoth-r11.c	\
 	CQI-ReportBoth-v1250.c	\
@@ -576,34 +530,20 @@ ASN_MODULE_SOURCES=	\
 	CSI-RS-Config-r10.c	\
 	CSI-RS-Config-v1250.c	\
 	CSI-RS-Config-v1310.c	\
-	CSI-RS-Config-v1430.c	\
 	ZeroTxPowerCSI-RS-Conf-r12.c	\
 	ZeroTxPowerCSI-RS-r12.c	\
 	CSI-RS-ConfigEMIMO-r13.c	\
-	CSI-RS-ConfigEMIMO-v1430.c	\
-	CSI-RS-ConfigEMIMO2-r14.c	\
-	CSI-RS-ConfigEMIMO-Hybrid-r14.c	\
 	CSI-RS-ConfigNonPrecoded-r13.c	\
-	CSI-RS-ConfigNonPrecoded-v1430.c	\
 	CSI-RS-ConfigBeamformed-r13.c	\
-	CSI-RS-ConfigBeamformed-r14.c	\
-	CSI-RS-ConfigBeamformed-v1430.c	\
-	CSI-RS-Config-NZP-v1430.c	\
-	CSI-RS-ConfigNZP-Activation-r14.c	\
 	CSI-RS-ConfigNZP-r11.c	\
 	CSI-RS-ConfigNZP-EMIMO-r13.c	\
-	CSI-RS-ConfigNZP-EMIMO-v1430.c	\
 	NZP-ResourceConfig-r13.c	\
 	ResourceConfig-r13.c	\
-	NZP-TransmissionComb-r14.c	\
-	NZP-FrequencyDensity-r14.c	\
 	CSI-RS-ConfigNZPId-r11.c	\
 	CSI-RS-ConfigNZPId-v1310.c	\
 	CSI-RS-ConfigNZPId-r13.c	\
 	CSI-RS-ConfigZP-r11.c	\
-	CSI-RS-ConfigZP-ApList-r14.c	\
 	CSI-RS-ConfigZPId-r11.c	\
-	DataInactivityTimer-r14.c	\
 	DMRS-Config-r11.c	\
 	DMRS-Config-v1310.c	\
 	DRB-Identity.c	\
@@ -648,19 +588,15 @@ ASN_MODULE_SOURCES=	\
 	PDSCH-ConfigDedicated-v1130.c	\
 	PDSCH-ConfigDedicated-v1280.c	\
 	PDSCH-ConfigDedicated-v1310.c	\
-	PDSCH-ConfigDedicated-v1430.c	\
-	PDSCH-ConfigDedicatedSCell-v1430.c	\
 	RE-MappingQCLConfigToAddModList-r11.c	\
 	RE-MappingQCLConfigToReleaseList-r11.c	\
 	PDSCH-RE-MappingQCL-Config-r11.c	\
 	PDSCH-RE-MappingQCL-ConfigId-r11.c	\
-	PerCC-GapIndicationList-r14.c	\
-	PerCC-GapIndication-r14.c	\
 	PHICH-Config.c	\
 	PhysicalConfigDedicated.c	\
 	PhysicalConfigDedicatedSCell-r10.c	\
 	LAA-SCellConfiguration-r13.c	\
-	LAA-SCellConfiguration-v1430.c	\
+	LAA-SCellConfiguration-v14xy.c	\
 	LBT-Config-r14.c	\
 	CSI-RS-ConfigNZPToAddModList-r11.c	\
 	CSI-RS-ConfigNZPToAddModListExt-r13.c	\
@@ -668,14 +604,14 @@ ASN_MODULE_SOURCES=	\
 	CSI-RS-ConfigNZPToReleaseListExt-r13.c	\
 	CSI-RS-ConfigZPToAddModList-r11.c	\
 	CSI-RS-ConfigZPToReleaseList-r11.c	\
-	SoundingRS-AperiodicSet-r14.c	\
-	SoundingRS-AperiodicSetUpPTsExt-r14.c	\
+	SoundingRSAperiodicGroup-r14.c	\
+	SoundingRSAperiodicGroupUpPTsExt-r14.c	\
 	P-Max.c	\
 	PRACH-ConfigSIB.c	\
 	PRACH-ConfigSIB-v1310.c	\
 	PRACH-Config.c	\
 	PRACH-Config-v1310.c	\
-	PRACH-Config-v1430.c	\
+	PRACH-Config-v14xy.c	\
 	PRACH-ConfigSCell-r10.c	\
 	PRACH-ConfigInfo.c	\
 	PRACH-ParametersListCE-r13.c	\
@@ -684,13 +620,11 @@ ASN_MODULE_SOURCES=	\
 	PresenceAntennaPort1.c	\
 	PUCCH-ConfigCommon.c	\
 	PUCCH-ConfigCommon-v1310.c	\
-	PUCCH-ConfigCommon-v1430.c	\
 	PUCCH-ConfigDedicated.c	\
 	PUCCH-ConfigDedicated-v1020.c	\
 	PUCCH-ConfigDedicated-v1130.c	\
 	PUCCH-ConfigDedicated-v1250.c	\
 	PUCCH-ConfigDedicated-r13.c	\
-	PUCCH-ConfigDedicated-v1430.c	\
 	Format4-resource-r13.c	\
 	Format5-resource-r13.c	\
 	N1PUCCH-AN-CS-r10.c	\
@@ -703,12 +637,7 @@ ASN_MODULE_SOURCES=	\
 	PUSCH-ConfigDedicated-v1130.c	\
 	PUSCH-ConfigDedicated-v1250.c	\
 	PUSCH-ConfigDedicated-r13.c	\
-	PUSCH-ConfigDedicated-v1430.c	\
 	PUSCH-ConfigDedicatedSCell-r10.c	\
-	PUSCH-ConfigDedicatedSCell-v1430.c	\
-	TDD-PUSCH-UpPTS-r14.c	\
-	Enable256QAM-r14.c	\
-	PUSCH-EnhancementsConfig-r14.c	\
 	UL-ReferenceSignalsPUSCH.c	\
 	RACH-ConfigCommon.c	\
 	RACH-ConfigCommon-v1250.c	\
@@ -758,7 +687,7 @@ ASN_MODULE_SOURCES=	\
 	RLC-Config.c	\
 	RLC-Config-v1250.c	\
 	RLC-Config-v1310.c	\
-	RLC-Config-v1430.c	\
+	RLC-Config-v14xy.c	\
 	UL-AM-RLC.c	\
 	DL-AM-RLC.c	\
 	UL-UM-RLC.c	\
@@ -786,27 +715,19 @@ ASN_MODULE_SOURCES=	\
 	SoundingRS-UL-ConfigDedicatedAperiodic-r10.c	\
 	SoundingRS-UL-ConfigDedicatedAperiodic-v1310.c	\
 	SoundingRS-UL-ConfigDedicatedAperiodicUpPTsExt-r13.c	\
-	SoundingRS-UL-ConfigDedicatedAperiodic-v1430.c	\
+	SoundingRS-UL-ConfigDedicatedAperiodic-v14xy.c	\
 	SRS-ConfigAp-r10.c	\
 	SRS-ConfigAp-v1310.c	\
 	SRS-ConfigAp-r13.c	\
 	SRS-AntennaPort.c	\
 	SPS-Config.c	\
-	SPS-Config-v1430.c	\
-	SPS-ConfigUL-ToAddModList-r14.c	\
-	SPS-ConfigUL-ToReleaseList-r14.c	\
-	SPS-ConfigSL-ToAddModList-r14.c	\
-	SPS-ConfigSL-ToReleaseList-r14.c	\
 	SPS-ConfigDL.c	\
 	SPS-ConfigUL.c	\
-	SPS-ConfigSL-r14.c	\
-	SPS-ConfigIndex-r14.c	\
 	N1PUCCH-AN-PersistentList.c	\
 	SRS-TPC-PDCCH-Config-r14.c	\
-	SRS-CC-SetIndex-r14.c	\
+	SrsCcGroupIndex.c	\
 	TDD-Config.c	\
 	TDD-Config-v1130.c	\
-	TDD-Config-v1430.c	\
 	TDD-ConfigSL-r12.c	\
 	TimeAlignmentTimer.c	\
 	TPC-PDCCH-Config.c	\
@@ -822,12 +743,12 @@ ASN_MODULE_SOURCES=	\
 	UplinkPowerControlCommonSCell-r10.c	\
 	UplinkPowerControlCommonSCell-v1130.c	\
 	UplinkPowerControlCommonSCell-v1310.c	\
-	UplinkPowerControlCommonPUSCH-LessCell-v1430.c	\
+	UplinkPowerControlCommonPUSCH-LessCell-v14xy.c	\
 	UplinkPowerControlDedicated.c	\
 	UplinkPowerControlDedicated-v1020.c	\
 	UplinkPowerControlDedicated-v1130.c	\
 	UplinkPowerControlDedicated-v1250.c	\
-	UplinkPUSCH-LessPowerControlDedicated-v1430.c	\
+	UplinkPUSCH-LessPowerControlDedicated-v14xy.c	\
 	UplinkPowerControlDedicatedSCell-r10.c	\
 	UplinkPowerControlDedicatedSCell-v1310.c	\
 	Alpha-r12.c	\
@@ -860,8 +781,6 @@ ASN_MODULE_SOURCES=	\
 	CellIndex.c	\
 	CellReselectionPriority.c	\
 	CellSelectionInfoCE-r13.c	\
-	CellSelectionInfoCE1-r13.c	\
-	CellSelectionInfoCE1-v1360.c	\
 	CellReselectionSubPriority-r13.c	\
 	CSFB-RegistrationParam1XRTT.c	\
 	CSFB-RegistrationParam1XRTT-v920.c	\
@@ -880,7 +799,6 @@ ASN_MODULE_SOURCES=	\
 	CarrierBandwidthEUTRA.c	\
 	CarrierFreqEUTRA.c	\
 	CarrierFreqEUTRA-v9e0.c	\
-	RACH-Skip-r14.c	\
 	MobilityParametersCDMA2000.c	\
 	MobilityStateParameters.c	\
 	MultiBandInfoList.c	\
@@ -939,11 +857,6 @@ ASN_MODULE_SOURCES=	\
 	MeasCSI-RS-Id-r12.c	\
 	MeasCSI-RS-Config-r12.c	\
 	MeasGapConfig.c	\
-	MeasGapConfigPerCC-List-r14.c	\
-	MeasGapConfigToRemoveList-r14.c	\
-	MeasGapConfigToAddModList-r14.c	\
-	MeasGapConfigPerCC-r14.c	\
-	MeasGapSharingConfig-r14.c	\
 	MeasId.c	\
 	MeasId-v1250.c	\
 	MeasIdToAddModList.c	\
@@ -970,7 +883,6 @@ ASN_MODULE_SOURCES=	\
 	WhiteCellsToAddModList-r13.c	\
 	WhiteCellsToAddMod-r13.c	\
 	RMTC-Config-r13.c	\
-	Tx-ResourcePoolMeasList-r14.c	\
 	MeasObjectGERAN.c	\
 	MeasObjectId.c	\
 	MeasObjectId-v1310.c	\
@@ -1006,10 +918,7 @@ ASN_MODULE_SOURCES=	\
 	MeasResultListCDMA2000.c	\
 	MeasResultCDMA2000.c	\
 	MeasResultListWLAN-r13.c	\
-	MeasResultListWLAN-r14.c	\
 	MeasResultWLAN-r13.c	\
-	MeasResultListCBR-r14.c	\
-	MeasResultCBR-r14.c	\
 	MeasResultForECID-r9.c	\
 	PLMN-IdentityList2.c	\
 	AdditionalSI-Info-r9.c	\
@@ -1042,7 +951,6 @@ ASN_MODULE_SOURCES=	\
 	ReportConfigToAddMod.c	\
 	ReportInterval.c	\
 	RSRP-Range.c	\
-	RSRP-Range-v1360.c	\
 	RSRP-RangeSL-r12.c	\
 	RSRP-RangeSL2-r12.c	\
 	RSRP-RangeSL3-r12.c	\
@@ -1060,17 +968,12 @@ ASN_MODULE_SOURCES=	\
 	WLAN-Channel-r13.c	\
 	WLAN-RSSI-Range-r13.c	\
 	WLAN-Status-r13.c	\
-	WLAN-Status-v1430.c	\
-	WLAN-SuspendConfig-r14.c	\
 	AbsoluteTimeInfo-r10.c	\
 	AreaConfiguration-r10.c	\
 	AreaConfiguration-v1130.c	\
 	CellGlobalIdList-r10.c	\
 	TrackingAreaCodeList-r10.c	\
 	TrackingAreaCodeList-v1130.c	\
-	BandCombinationList-r14.c	\
-	BandCombination-r14.c	\
-	BandIndication-r14.c	\
 	C-RNTI.c	\
 	DedicatedInfoCDMA2000.c	\
 	DedicatedInfoNAS.c	\
@@ -1123,9 +1026,7 @@ ASN_MODULE_SOURCES=	\
 	UE-EUTRA-Capability-v1320-IEs.c	\
 	UE-EUTRA-Capability-v1330-IEs.c	\
 	UE-EUTRA-Capability-v1340-IEs.c	\
-	UE-EUTRA-Capability-v1350-IEs.c	\
-	UE-EUTRA-Capability-v1360-IEs.c	\
-	UE-EUTRA-Capability-v1430-IEs.c	\
+	UE-EUTRA-Capability-v14xy-IEs.c	\
 	UE-EUTRA-CapabilityAddXDD-Mode-r9.c	\
 	UE-EUTRA-CapabilityAddXDD-Mode-v1060.c	\
 	UE-EUTRA-CapabilityAddXDD-Mode-v1130.c	\
@@ -1133,21 +1034,18 @@ ASN_MODULE_SOURCES=	\
 	UE-EUTRA-CapabilityAddXDD-Mode-v1250.c	\
 	UE-EUTRA-CapabilityAddXDD-Mode-v1310.c	\
 	UE-EUTRA-CapabilityAddXDD-Mode-v1320.c	\
-	UE-EUTRA-CapabilityAddXDD-Mode-v1430.c	\
 	AccessStratumRelease.c	\
-	MobilityParameters-r14.c	\
 	DC-Parameters-r12.c	\
 	DC-Parameters-v1310.c	\
 	MAC-Parameters-r12.c	\
 	MAC-Parameters-v1310.c	\
-	MAC-Parameters-v1430.c	\
+	MAC-Parameters-v14xy.c	\
 	RLC-Parameters-r12.c	\
 	RLC-Parameters-v1310.c	\
-	RLC-Parameters-v1430.c	\
+	RLC-Parameters-v14xy.c	\
 	PDCP-Parameters.c	\
 	PDCP-Parameters-v1130.c	\
 	PDCP-Parameters-v1310.c	\
-	PDCP-Parameters-v1430.c	\
 	PhyLayerParameters.c	\
 	PhyLayerParameters-v920.c	\
 	PhyLayerParameters-v9d0.c	\
@@ -1159,15 +1057,10 @@ ASN_MODULE_SOURCES=	\
 	PhyLayerParameters-v1310.c	\
 	PhyLayerParameters-v1320.c	\
 	PhyLayerParameters-v1330.c	\
-	PhyLayerParameters-v1430.c	\
 	MIMO-UE-Parameters-r13.c	\
-	MIMO-UE-Parameters-v1430.c	\
 	MIMO-UE-ParametersPerTM-r13.c	\
-	MIMO-UE-ParametersPerTM-v1430.c	\
 	MIMO-CA-ParametersPerBoBC-r13.c	\
-	MIMO-CA-ParametersPerBoBC-v1430.c	\
 	MIMO-CA-ParametersPerBoBCPerTM-r13.c	\
-	MIMO-CA-ParametersPerBoBCPerTM-v1430.c	\
 	MIMO-NonPrecodedCapabilities-r13.c	\
 	MIMO-UE-BeamformedCapabilities-r13.c	\
 	MIMO-BeamformedCapabilityList-r13.c	\
@@ -1190,7 +1083,6 @@ ASN_MODULE_SOURCES=	\
 	RF-Parameters-v1310.c	\
 	RF-Parameters-v1320.c	\
 	RF-Parameters-v12b0.c	\
-	RF-Parameters-v1430.c	\
 	SupportedBandCombination-r10.c	\
 	SupportedBandCombinationExt-r10.c	\
 	SupportedBandCombination-v1090.c	\
@@ -1199,16 +1091,13 @@ ASN_MODULE_SOURCES=	\
 	SupportedBandCombination-v1250.c	\
 	SupportedBandCombination-v1270.c	\
 	SupportedBandCombination-v1320.c	\
-	SupportedBandCombination-v1430.c	\
 	SupportedBandCombinationAdd-r11.c	\
 	SupportedBandCombinationAdd-v11d0.c	\
 	SupportedBandCombinationAdd-v1250.c	\
 	SupportedBandCombinationAdd-v1270.c	\
 	SupportedBandCombinationAdd-v1320.c	\
-	SupportedBandCombinationAdd-v1430.c	\
 	SupportedBandCombinationReduced-r13.c	\
 	SupportedBandCombinationReduced-v1320.c	\
-	SupportedBandCombinationReduced-v1430.c	\
 	BandCombinationParameters-r10.c	\
 	BandCombinationParametersExt-r10.c	\
 	BandCombinationParameters-v1090.c	\
@@ -1219,7 +1108,6 @@ ASN_MODULE_SOURCES=	\
 	BandCombinationParameters-v1270.c	\
 	BandCombinationParameters-r13.c	\
 	BandCombinationParameters-v1320.c	\
-	BandCombinationParameters-v1430.c	\
 	SupportedBandwidthCombinationSet-r10.c	\
 	BandParameters-r10.c	\
 	BandParameters-v1090.c	\
@@ -1229,12 +1117,6 @@ ASN_MODULE_SOURCES=	\
 	BandParameters-v1270.c	\
 	BandParameters-r13.c	\
 	BandParameters-v1320.c	\
-	BandParameters-v1430.c	\
-	V2X-BandParameters-r14.c	\
-	BandParametersTxSL-r14.c	\
-	BandParametersRxSL-r14.c	\
-	V2X-BandwidthClassSL-r14.c	\
-	UL-256QAM-perCC-Info-r14.c	\
 	BandParametersUL-r10.c	\
 	BandParametersUL-r13.c	\
 	CA-MIMO-ParametersUL-r10.c	\
@@ -1246,7 +1128,6 @@ ASN_MODULE_SOURCES=	\
 	CA-MIMO-ParametersDL-r13.c	\
 	IntraBandContiguousCC-Info-r12.c	\
 	CA-BandwidthClass-r10.c	\
-	V2X-BandwidthClass-r14.c	\
 	MIMO-CapabilityUL-r10.c	\
 	MIMO-CapabilityDL-r10.c	\
 	SupportedBandListEUTRA.c	\
@@ -1265,7 +1146,6 @@ ASN_MODULE_SOURCES=	\
 	MeasParameters-v11a0.c	\
 	MeasParameters-v1250.c	\
 	MeasParameters-v1310.c	\
-	MeasParameters-v1430.c	\
 	BandListEUTRA.c	\
 	BandCombinationListEUTRA-r10.c	\
 	BandInfoEUTRA.c	\
@@ -1306,42 +1186,28 @@ ASN_MODULE_SOURCES=	\
 	SON-Parameters-r9.c	\
 	UE-BasedNetwPerfMeasParameters-r10.c	\
 	UE-BasedNetwPerfMeasParameters-v1250.c	\
-	UE-BasedNetwPerfMeasParameters-v1430.c	\
 	OTDOA-PositioningCapabilities-r10.c	\
 	Other-Parameters-r11.c	\
 	Other-Parameters-v11d0.c	\
-	Other-Parameters-v1360.c	\
-	Other-Parameters-v1430.c	\
 	MBMS-Parameters-r11.c	\
 	MBMS-Parameters-v1250.c	\
-	MBMS-Parameters-v1430.c	\
-	FeMBMS-Unicast-Parameters-r14.c	\
 	SCPTM-Parameters-r13.c	\
 	CE-Parameters-r13.c	\
 	CE-Parameters-v1320.c	\
-	CE-Parameters-v1350.c	\
-	CE-Parameters-v1430.c	\
 	LAA-Parameters-r13.c	\
-	LAA-Parameters-v1430.c	\
+	LAA-Parameters-v14xy.c	\
 	WLAN-IW-Parameters-r12.c	\
 	LWA-Parameters-r13.c	\
-	LWA-Parameters-v1430.c	\
 	WLAN-IW-Parameters-v1310.c	\
 	LWIP-Parameters-r13.c	\
-	LWIP-Parameters-v1430.c	\
+	LWIP-Parameters-v14xy.c	\
 	NAICS-Capability-List-r12.c	\
 	NAICS-Capability-Entry-r12.c	\
 	SL-Parameters-r12.c	\
 	SL-Parameters-v1310.c	\
-	SL-Parameters-v1430.c	\
-	V2X-SupportedBandCombination-r14.c	\
-	V2X-BandCombinationParameters-r14.c	\
 	SupportedBandInfoList-r12.c	\
 	SupportedBandInfo-r12.c	\
 	FreqBandIndicatorListEUTRA-r12.c	\
-	MMTEL-Parameters-r14.c	\
-	RetuningTimeInfo-r14.c	\
-	HighSpeedEnhParameters-r14.c	\
 	UE-RadioPagingInfo-r12.c	\
 	UE-TimersAndConstants.c	\
 	VisitedCellInfoList-r12.c	\
@@ -1349,14 +1215,12 @@ ASN_MODULE_SOURCES=	\
 	WLAN-OffloadConfig-r12.c	\
 	WLAN-backhaulRate-r12.c	\
 	MBMS-NotificationConfig-r9.c	\
-	MBMS-NotificationConfig-v1430.c	\
 	MBMS-ServiceList-r13.c	\
 	MBMS-ServiceInfo-r13.c	\
 	MBSFN-AreaId-r12.c	\
 	MBSFN-AreaInfoList-r9.c	\
 	MBSFN-AreaInfo-r9.c	\
 	MBSFN-SubframeConfig.c	\
-	MBSFN-SubframeConfig-v1430.c	\
 	PMCH-InfoList-r9.c	\
 	PMCH-InfoListExt-r12.c	\
 	PMCH-Info-r9.c	\
@@ -1370,19 +1234,8 @@ ASN_MODULE_SOURCES=	\
 	SC-MTCH-Info-r13.c	\
 	MBMSSessionInfo-r13.c	\
 	SC-MTCH-SchedulingInfo-r13.c	\
-	SC-MTCH-InfoList-BR-r14.c	\
-	SC-MTCH-Info-BR-r14.c	\
-	SC-MTCH-SchedulingInfo-BR-r14.c	\
 	SCPTM-NeighbourCellList-r13.c	\
 	PCI-ARFCN-r13.c	\
-	SL-AnchorCarrierFreqList-V2X-r14.c	\
-	SL-CBR-CommonTxConfigList-r14.c	\
-	SL-CBR-Levels-Config-r14.c	\
-	SL-CBR-PSSCH-TxConfig-r14.c	\
-	SL-CBR-r14.c	\
-	SL-CBR-PPPP-TxConfigList-r14.c	\
-	SL-PPPP-TxConfigIndex-r14.c	\
-	Tx-ConfigIndex-r14.c	\
 	SL-CommConfig-r12.c	\
 	LogicalChGroupInfoList-r13.c	\
 	SL-CommTxPoolToAddModList-r12.c	\
@@ -1398,8 +1251,6 @@ ASN_MODULE_SOURCES=	\
 	SL-CommResourcePool-r12.c	\
 	SL-CommResourcePoolV2X-r14.c	\
 	SL-TRPT-Subset-r12.c	\
-	SL-V2X-TxPoolReportIdentity-r14.c	\
-	SL-CommTxPoolSensingConfig-r14.c	\
 	SL-CP-Len-r12.c	\
 	SL-DiscConfig-r12.c	\
 	SL-DiscSysInfoToReportFreqList-r13.c	\
@@ -1420,7 +1271,6 @@ ASN_MODULE_SOURCES=	\
 	SL-DiscResourcePool-r12.c	\
 	PhysCellIdList-r13.c	\
 	SL-PoolSelectionConfig-r12.c	\
-	SL-DiscSysInfoReport-r13.c	\
 	SL-DiscTxPowerInfoList-r12.c	\
 	SL-DiscTxPowerInfo-r12.c	\
 	SL-GapConfig-r13.c	\
@@ -1432,13 +1282,9 @@ ASN_MODULE_SOURCES=	\
 	SL-HoppingConfigDisc-r12.c	\
 	SL-InterFreqInfoListV2X-r14.c	\
 	SL-InterFreqInfoV2X-r14.c	\
-	SL-V2X-UE-ConfigList-r14.c	\
-	SL-V2X-InterFreqUE-Config-r14.c	\
 	SL-OffsetIndicator-r12.c	\
 	SL-OffsetIndicatorSync-r12.c	\
-	SL-OffsetIndicatorSync-v1430.c	\
-	SL-OffsetIndicatorSync-r14.c	\
-	SL-P2X-ResourceSelectionConfig-r14.c	\
+	SL-OffsetIndicatorSync-v14xy.c	\
 	SL-PeriodComm-r12.c	\
 	SL-PriorityList-r13.c	\
 	SL-Priority-r13.c	\
@@ -1448,18 +1294,15 @@ ASN_MODULE_SOURCES=	\
 	SL-RestrictResourceReservationPeriodList-r14.c	\
 	SL-RestrictResourceReservationPeriod-r14.c	\
 	SLSSID-r12.c	\
-	SL-SyncAllowed-r14.c	\
 	SL-SyncConfigList-r12.c	\
 	SL-SyncConfigListV2X-r14.c	\
 	SL-SyncConfig-r12.c	\
 	SL-SyncConfigListNFreq-r13.c	\
-	SL-SyncConfigListNFreqV2X-r14.c	\
 	SL-SyncConfigNFreq-r13.c	\
+	SL-DiscSysInfoReport-r13.c	\
 	SL-TF-ResourceConfig-r12.c	\
 	SubframeBitmapSL-r12.c	\
 	SubframeBitmapSL-r14.c	\
-	SL-TxPower-r14.c	\
-	SL-TypeTxSync-r14.c	\
 	SL-ThresPSSCH-RSRP-List-r14.c	\
 	SL-ThresPSSCH-RSRP-r14.c	\
 	SL-TxParameters-r12.c	\
@@ -1471,15 +1314,11 @@ ASN_MODULE_SOURCES=	\
 	SL-TxPoolToReleaseListExt-r13.c	\
 	SL-V2X-ConfigDedicated-r14.c	\
 	SL-TxPoolToAddModListV2X-r14.c	\
-	SL-TxPoolToAddMod-r14.c	\
 	SL-TxPoolToReleaseListV2X-r14.c	\
 	SL-ZoneConfig-r14.c	\
 	SBCCH-SL-BCH-Message.c	\
 	SBCCH-SL-BCH-MessageType.c	\
-	SBCCH-SL-BCH-Message-V2X-r14.c	\
-	SBCCH-SL-BCH-MessageType-V2X-r14.c	\
 	MasterInformationBlock-SL.c	\
-	MasterInformationBlock-SL-V2X-r14.c	\
 	BCCH-BCH-Message-NB.c	\
 	BCCH-BCH-MessageType-NB.c	\
 	BCCH-DL-SCH-Message-NB.c	\
@@ -1492,8 +1331,6 @@ ASN_MODULE_SOURCES=	\
 	DL-DCCH-MessageType-NB.c	\
 	UL-CCCH-Message-NB.c	\
 	UL-CCCH-MessageType-NB.c	\
-	SC-MCCH-Message-NB.c	\
-	SC-MCCH-MessageType-NB.c	\
 	UL-DCCH-Message-NB.c	\
 	UL-DCCH-MessageType-NB.c	\
 	DLInformationTransfer-NB.c	\
@@ -1513,22 +1350,17 @@ ASN_MODULE_SOURCES=	\
 	RRCConnectionReconfigurationComplete-NB-r13-IEs.c	\
 	RRCConnectionReestablishment-NB.c	\
 	RRCConnectionReestablishment-NB-r13-IEs.c	\
-	RRCConnectionReestablishment-NB-v1430-IEs.c	\
 	RRCConnectionReestablishmentComplete-NB.c	\
 	RRCConnectionReestablishmentComplete-NB-r13-IEs.c	\
 	RRCConnectionReestablishmentRequest-NB.c	\
 	RRCConnectionReestablishmentRequest-NB-r13-IEs.c	\
-	RRCConnectionReestablishmentRequest-NB-r14-IEs.c	\
 	ReestablishmentCause-NB-r13.c	\
-	ReestabUE-Identity-CP-NB-r14.c	\
 	RRCConnectionReject-NB.c	\
 	RRCConnectionReject-NB-r13-IEs.c	\
 	RRCConnectionRelease-NB.c	\
 	RRCConnectionRelease-NB-r13-IEs.c	\
-	RRCConnectionRelease-NB-v1430-IEs.c	\
 	ReleaseCause-NB-r13.c	\
 	RedirectedCarrierInfo-NB-r13.c	\
-	RedirectedCarrierInfo-NB-v1430.c	\
 	RRCConnectionRequest-NB.c	\
 	RRCConnectionRequest-NB-r13-IEs.c	\
 	RRCConnectionResume-NB.c	\
@@ -1541,13 +1373,9 @@ ASN_MODULE_SOURCES=	\
 	RRCConnectionSetup-NB-r13-IEs.c	\
 	RRCConnectionSetupComplete-NB.c	\
 	RRCConnectionSetupComplete-NB-r13-IEs.c	\
-	RRCConnectionSetupComplete-NB-v1430-IEs.c	\
-	SCPTMConfiguration-NB-r14.c	\
 	SystemInformation-NB.c	\
 	SystemInformation-NB-r13-IEs.c	\
 	SystemInformationBlockType1-NB.c	\
-	SystemInformationBlockType1-NB-v1350.c	\
-	SystemInformationBlockType1-NB-v1430.c	\
 	PLMN-IdentityList-NB-r13.c	\
 	PLMN-IdentityInfo-NB-r13.c	\
 	SchedulingInfoList-NB-r13.c	\
@@ -1555,8 +1383,6 @@ ASN_MODULE_SOURCES=	\
 	SystemInfoValueTagList-NB-r13.c	\
 	SIB-MappingInfo-NB-r13.c	\
 	SIB-Type-NB-r13.c	\
-	CellSelectionInfo-NB-v1350.c	\
-	CellSelectionInfo-NB-v1430.c	\
 	UECapabilityEnquiry-NB.c	\
 	UECapabilityEnquiry-NB-r13-IEs.c	\
 	UECapabilityInformation-NB.c	\
@@ -1565,9 +1391,6 @@ ASN_MODULE_SOURCES=	\
 	ULInformationTransfer-NB-r13-IEs.c	\
 	SystemInformationBlockType2-NB-r13.c	\
 	SystemInformationBlockType3-NB-r13.c	\
-	IntraFreqCellReselectionInfo-NB-v1350.c	\
-	IntraFreqCellReselectionInfo-NB-v1360.c	\
-	IntraFreqCellReselectionInfo-NB-v1430.c	\
 	SystemInformationBlockType4-NB-r13.c	\
 	SystemInformationBlockType5-NB-r13.c	\
 	InterFreqCarrierFreqList-NB-r13.c	\
@@ -1577,30 +1400,12 @@ ASN_MODULE_SOURCES=	\
 	SystemInformationBlockType14-NB-r13.c	\
 	AB-ConfigPLMN-NB-r13.c	\
 	AB-Config-NB-r13.c	\
-	SystemInformationBlockType15-NB-r14.c	\
-	MBMS-SAI-InterFreqList-NB-r14.c	\
-	MBMS-SAI-InterFreq-NB-r14.c	\
 	SystemInformationBlockType16-NB-r13.c	\
-	SystemInformationBlockType20-NB-r14.c	\
-	NPDCCH-SC-MCCH-Config-NB-r14.c	\
-	SC-MCCH-SchedulingInfo-NB-r14.c	\
-	SystemInformationBlockType22-NB-r14.c	\
-	DL-ConfigCommonList-NB-r14.c	\
-	UL-ConfigCommonList-NB-r14.c	\
-	DL-ConfigCommon-NB-r14.c	\
-	PCCH-Config-NB-r14.c	\
-	PagingWeight-NB-r14.c	\
-	UL-ConfigCommon-NB-r14.c	\
-	NPRACH-ParametersList-NB-r14.c	\
-	NPRACH-Parameters-NB-r14.c	\
-	NPRACH-ProbabilityAnchorList-NB-r14.c	\
-	NPRACH-ProbabilityAnchor-NB-r14.c	\
 	CarrierConfigDedicated-NB-r13.c	\
 	DL-CarrierConfigDedicated-NB-r13.c	\
 	UL-CarrierConfigDedicated-NB-r13.c	\
 	CarrierFreq-NB-r13.c	\
 	DL-Bitmap-NB-r13.c	\
-	DL-CarrierConfigCommon-NB-r14.c	\
 	DL-GapConfig-NB-r13.c	\
 	LogicalChannelConfig-NB-r13.c	\
 	MAC-MainConfig-NB-r13.c	\
@@ -1635,40 +1440,28 @@ ASN_MODULE_SOURCES=	\
 	DRB-ToAddMod-NB-r13.c	\
 	DRB-ToReleaseList-NB-r13.c	\
 	RLC-Config-NB-r13.c	\
-	RLC-Config-NB-v1430.c	\
 	UL-AM-RLC-NB-r13.c	\
 	DL-AM-RLC-NB-r13.c	\
 	T-PollRetransmit-NB-r13.c	\
 	RLF-TimersAndConstants-NB-r13.c	\
 	UplinkPowerControlCommon-NB-r13.c	\
 	UplinkPowerControlDedicated-NB-r13.c	\
-	AdditionalBandInfoList-NB-r14.c	\
 	FreqBandIndicator-NB-r13.c	\
 	MultiBandInfoList-NB-r13.c	\
 	MultiBandInfo-NB-r13.c	\
 	NS-PmaxList-NB-r13.c	\
 	NS-PmaxValue-NB-r13.c	\
-	ReselectionThreshold-NB-v1360.c	\
 	T-Reselection-NB-r13.c	\
 	EstablishmentCause-NB-r13.c	\
 	UE-Capability-NB-r13.c	\
-	UE-Capability-NB-v1430-IEs.c	\
 	AccessStratumRelease-NB-r13.c	\
 	PDCP-Parameters-NB-r13.c	\
-	MAC-Parameters-NB-r14.c	\
 	PhyLayerParameters-NB-r13.c	\
-	PhyLayerParameters-NB-v1430.c	\
 	RF-Parameters-NB-r13.c	\
-	RF-Parameters-NB-v1430.c	\
 	SupportedBandList-NB-r13.c	\
 	SupportedBand-NB-r13.c	\
 	UE-RadioPagingInfo-NB-r13.c	\
 	UE-TimersAndConstants-NB-r13.c	\
-	SC-MTCH-InfoList-NB-r14.c	\
-	SC-MTCH-Info-NB-r14.c	\
-	SC-MTCH-SchedulingInfo-NB-r14.c	\
-	SCPTM-NeighbourCellList-NB-r14.c	\
-	PCI-ARFCN-NB-r14.c	\
 	VarConnEstFailReport-r11.c	\
 	VarLogMeasConfig-r10.c	\
 	VarLogMeasConfig-r11.c	\
@@ -1703,17 +1496,10 @@ ASN_MODULE_SOURCES=	\
 	SL-PreconfigDiscPool-r13.c	\
 	SL-PreconfigRelay-r13.c	\
 	SL-V2X-Preconfiguration-r14.c	\
-	SL-CBR-PreconfigTxConfigList-r14.c	\
-	SL-V2X-PreconfigFreqList-r14.c	\
 	SL-V2X-PreconfigFreqInfo-r14.c	\
 	SL-PreconfigV2X-RxPoolList-r14.c	\
 	SL-PreconfigV2X-TxPoolList-r14.c	\
 	SL-V2X-PreconfigCommPool-r14.c	\
-	SL-PreconfigV2X-Sync-r14.c	\
-	SL-V2X-SyncOffsetIndicators-r14.c	\
-	SL-CBR-PPPP-TxPreconfigList-r14.c	\
-	SL-PPPP-TxPreconfigIndex-r14.c	\
-	Tx-PreconfigIndex-r14.c	\
 	HandoverCommand.c	\
 	HandoverCommand-r8-IEs.c	\
 	HandoverPreparationInformation.c	\
@@ -1726,14 +1512,13 @@ ASN_MODULE_SOURCES=	\
 	HandoverPreparationInformation-v1130-IEs.c	\
 	HandoverPreparationInformation-v1250-IEs.c	\
 	HandoverPreparationInformation-v1320-IEs.c	\
-	HandoverPreparationInformation-v1430-IEs.c	\
+	HandoverPreparationInformation-v14x0-IEs.c	\
 	SCG-Config-r12.c	\
 	SCG-Config-r12-IEs.c	\
 	SCG-ConfigInfo-r12.c	\
 	SCG-ConfigInfo-r12-IEs.c	\
 	SCG-ConfigInfo-v1310-IEs.c	\
 	SCG-ConfigInfo-v1330-IEs.c	\
-	SCG-ConfigInfo-v1430-IEs.c	\
 	DRB-InfoListSCG-r12.c	\
 	DRB-InfoSCG-r12.c	\
 	SCellToAddModListSCG-r12.c	\
@@ -1757,7 +1542,7 @@ ASN_MODULE_SOURCES=	\
 	AS-Config-v10j0.c	\
 	AS-Config-v1250.c	\
 	AS-Config-v1320.c	\
-	AS-Config-v1430.c	\
+	AS-Config-v14x0.c	\
 	AS-Context.c	\
 	AS-Context-v1130.c	\
 	AS-Context-v1320.c	\
@@ -1784,14 +1569,10 @@ ASN_MODULE_SOURCES=	\
 ASN_MODULE_HEADERS=	\
 	BCCH-BCH-Message.h	\
 	BCCH-BCH-MessageType.h	\
-	BCCH-BCH-Message-MBMS.h	\
-	BCCH-BCH-MessageType-MBMS-r14.h	\
 	BCCH-DL-SCH-Message.h	\
 	BCCH-DL-SCH-MessageType.h	\
 	BCCH-DL-SCH-Message-BR.h	\
 	BCCH-DL-SCH-MessageType-BR-r13.h	\
-	BCCH-DL-SCH-Message-MBMS.h	\
-	BCCH-DL-SCH-MessageType-MBMS-r14.h	\
 	MCCH-Message.h	\
 	MCCH-MessageType.h	\
 	PCCH-Message.h	\
@@ -1834,7 +1615,6 @@ ASN_MODULE_HEADERS=	\
 	InDeviceCoexIndication-r11-IEs.h	\
 	InDeviceCoexIndication-v11d0-IEs.h	\
 	InDeviceCoexIndication-v1310-IEs.h	\
-	InDeviceCoexIndication-v1360-IEs.h	\
 	AffectedCarrierFreqList-r11.h	\
 	AffectedCarrierFreqList-v1310.h	\
 	AffectedCarrierFreq-r11.h	\
@@ -1859,7 +1639,6 @@ ASN_MODULE_HEADERS=	\
 	TargetMBSFN-AreaList-r12.h	\
 	TargetMBSFN-Area-r12.h	\
 	MasterInformationBlock.h	\
-	MasterInformationBlock-MBMS-r14.h	\
 	MBMSCountingRequest-r10.h	\
 	CountingRequestList-r10.h	\
 	CountingRequestInfo-r10.h	\
@@ -1873,9 +1652,7 @@ ASN_MODULE_HEADERS=	\
 	MBSFNAreaConfiguration-r9.h	\
 	MBSFNAreaConfiguration-v930-IEs.h	\
 	MBSFNAreaConfiguration-v1250-IEs.h	\
-	MBSFNAreaConfiguration-v1430-IEs.h	\
 	CommonSF-AllocPatternList-r9.h	\
-	CommonSF-AllocPatternList-r14.h	\
 	MeasurementReport.h	\
 	MeasurementReport-r8-IEs.h	\
 	MeasurementReport-v8a0-IEs.h	\
@@ -1918,16 +1695,16 @@ ASN_MODULE_HEADERS=	\
 	RRCConnectionReconfiguration-v1130-IEs.h	\
 	RRCConnectionReconfiguration-v1250-IEs.h	\
 	RRCConnectionReconfiguration-v1310-IEs.h	\
-	RRCConnectionReconfiguration-v1430-IEs.h	\
+	RRCConnectionReconfiguration-v14x0-IEs.h	\
 	SL-SyncTxControl-r12.h	\
 	PSCellToAddMod-r12.h	\
 	PowerCoordinationInfo-r12.h	\
 	SCellToAddModList-r10.h	\
 	SCellToAddModListExt-r13.h	\
-	SCellToAddModListExt-v1430.h	\
+	SCellToAddModListExt-v14xy.h	\
 	SCellToAddMod-r10.h	\
 	SCellToAddModExt-r13.h	\
-	SCellToAddModExt-v1430.h	\
+	SCellToAddModExt-v14xy.h	\
 	SCellToReleaseList-r10.h	\
 	SCellToReleaseListExt-r13.h	\
 	SCG-Configuration-r12.h	\
@@ -1939,7 +1716,6 @@ ASN_MODULE_HEADERS=	\
 	RRCConnectionReconfigurationComplete-v1020-IEs.h	\
 	RRCConnectionReconfigurationComplete-v1130-IEs.h	\
 	RRCConnectionReconfigurationComplete-v1250-IEs.h	\
-	RRCConnectionReconfigurationComplete-v1430-IEs.h	\
 	RRCConnectionReestablishment.h	\
 	RRCConnectionReestablishment-r8-IEs.h	\
 	RRCConnectionReestablishment-v8a0-IEs.h	\
@@ -2008,7 +1784,6 @@ ASN_MODULE_HEADERS=	\
 	EstablishmentCause.h	\
 	RRCConnectionResume-r13.h	\
 	RRCConnectionResume-r13-IEs.h	\
-	RRCConnectionResume-v1430-IEs.h	\
 	RRCConnectionResumeComplete-r13.h	\
 	RRCConnectionResumeComplete-r13-IEs.h	\
 	RRCConnectionResumeRequest-r13.h	\
@@ -2025,17 +1800,13 @@ ASN_MODULE_HEADERS=	\
 	RRCConnectionSetupComplete-v1250-IEs.h	\
 	RRCConnectionSetupComplete-v1320-IEs.h	\
 	RRCConnectionSetupComplete-v1330-IEs.h	\
-	RRCConnectionSetupComplete-v1430-IEs.h	\
 	RegisteredMME.h	\
 	SCGFailureInformation-r12.h	\
 	SCGFailureInformation-r12-IEs.h	\
 	SCGFailureInformation-v1310-IEs.h	\
-	SCGFailureInformation-v12d0-IEs.h	\
 	FailureReportSCG-r12.h	\
-	FailureReportSCG-v12d0.h	\
 	SCPTMConfiguration-r13.h	\
 	SCPTMConfiguration-v1340.h	\
-	SCPTMConfiguration-BR-r14.h	\
 	SecurityModeCommand.h	\
 	SecurityModeCommand-r8-IEs.h	\
 	SecurityModeCommand-v8a0-IEs.h	\
@@ -2049,19 +1820,15 @@ ASN_MODULE_HEADERS=	\
 	SidelinkUEInformation-r12.h	\
 	SidelinkUEInformation-r12-IEs.h	\
 	SidelinkUEInformation-v1310-IEs.h	\
-	SidelinkUEInformation-v1430-IEs.h	\
+	SidelinkUEInformation-v14x0-IEs.h	\
 	SL-CommTxResourceReq-r12.h	\
+	V2X-CommTxResourceReq-r14.h	\
 	SL-DiscTxResourceReqPerFreqList-r13.h	\
 	SL-DiscTxResourceReq-r13.h	\
 	SL-DestinationInfoList-r12.h	\
 	SL-DestinationIdentity-r12.h	\
 	SL-DiscSysInfoReportFreqList-r13.h	\
-	SL-V2X-CommFreqList-r14.h	\
-	SL-V2X-CommTxFreqList-r14.h	\
-	SL-V2X-CommTxResourceReq-r14.h	\
-	SL-TypeTxSyncList-r14.h	\
 	SystemInformation-BR-r13.h	\
-	SystemInformation-MBMS-r14.h	\
 	SystemInformation.h	\
 	SystemInformation-r8-IEs.h	\
 	SystemInformation-v8a0-IEs.h	\
@@ -2076,9 +1843,7 @@ ASN_MODULE_HEADERS=	\
 	SystemInformationBlockType1-v1250-IEs.h	\
 	SystemInformationBlockType1-v1310-IEs.h	\
 	SystemInformationBlockType1-v1320-IEs.h	\
-	SystemInformationBlockType1-v1350-IEs.h	\
-	SystemInformationBlockType1-v1360-IEs.h	\
-	SystemInformationBlockType1-v1430-IEs.h	\
+	SystemInformationBlockType1-v14xy-IEs.h	\
 	PLMN-IdentityList.h	\
 	PLMN-IdentityInfo.h	\
 	SchedulingInfoList.h	\
@@ -2092,27 +1857,13 @@ ASN_MODULE_HEADERS=	\
 	CellSelectionInfo-v920.h	\
 	CellSelectionInfo-v1130.h	\
 	CellSelectionInfo-v1250.h	\
-	CellAccessRelatedInfo-r14.h	\
-	SystemInformationBlockType1-MBMS-r14.h	\
-	PLMN-IdentityList-MBMS-r14.h	\
-	SchedulingInfoList-MBMS-r14.h	\
-	SchedulingInfo-MBMS-r14.h	\
-	SIB-MappingInfo-MBMS-r14.h	\
-	SIB-Type-MBMS-r14.h	\
-	NonMBSFN-SubframeConfig-r14.h	\
 	UEAssistanceInformation-r11.h	\
 	UEAssistanceInformation-r11-IEs.h	\
-	UEAssistanceInformation-v1430-IEs.h	\
-	BW-Preference-r14.h	\
-	TrafficPatternInfoList-r14.h	\
-	TrafficPatternInfo-r14.h	\
-	DelayBudgetReport-r14.h	\
 	UECapabilityEnquiry.h	\
 	UECapabilityEnquiry-r8-IEs.h	\
 	UECapabilityEnquiry-v8a0-IEs.h	\
 	UECapabilityEnquiry-v1180-IEs.h	\
 	UECapabilityEnquiry-v1310-IEs.h	\
-	UECapabilityEnquiry-v1430-IEs.h	\
 	UE-CapabilityRequest.h	\
 	UECapabilityInformation.h	\
 	UECapabilityInformation-r8-IEs.h	\
@@ -2165,13 +1916,11 @@ ASN_MODULE_HEADERS=	\
 	ULInformationTransfer-v8a0-IEs.h	\
 	WLANConnectionStatusReport-r13.h	\
 	WLANConnectionStatusReport-r13-IEs.h	\
-	WLANConnectionStatusReport-v1430-IEs.h	\
 	SystemInformationBlockType2.h	\
 	SystemInformationBlockType2-v8h0-IEs.h	\
 	SystemInformationBlockType2-v9e0-IEs.h	\
 	AC-BarringConfig.h	\
 	MBSFN-SubframeConfigList.h	\
-	MBSFN-SubframeConfigList-v1430.h	\
 	AC-BarringPerPLMN-List-r12.h	\
 	AC-BarringPerPLMN-r12.h	\
 	ACDC-BarringForCommon-r13.h	\
@@ -2198,13 +1947,10 @@ ASN_MODULE_HEADERS=	\
 	SystemInformationBlockType5-v10j0-IEs.h	\
 	InterFreqCarrierFreqList.h	\
 	InterFreqCarrierFreqList-v1250.h	\
-	InterFreqCarrierFreqList-v1310.h	\
-	InterFreqCarrierFreqList-v1350.h	\
 	InterFreqCarrierFreqListExt-r12.h	\
 	InterFreqCarrierFreqListExt-v1280.h	\
+	InterFreqCarrierFreqList-v1310.h	\
 	InterFreqCarrierFreqListExt-v1310.h	\
-	InterFreqCarrierFreqListExt-v1350.h	\
-	InterFreqCarrierFreqListExt-v1360.h	\
 	InterFreqCarrierFreqInfo.h	\
 	InterFreqCarrierFreqInfo-v8h0.h	\
 	InterFreqCarrierFreqInfo-v9e0.h	\
@@ -2212,8 +1958,6 @@ ASN_MODULE_HEADERS=	\
 	InterFreqCarrierFreqInfo-v1250.h	\
 	InterFreqCarrierFreqInfo-r12.h	\
 	InterFreqCarrierFreqInfo-v1310.h	\
-	InterFreqCarrierFreqInfo-v1350.h	\
-	InterFreqCarrierFreqInfo-v1360.h	\
 	InterFreqNeighCellList.h	\
 	InterFreqNeighCellInfo.h	\
 	InterFreqBlackCellList.h	\
@@ -2274,8 +2018,6 @@ ASN_MODULE_HEADERS=	\
 	MBMS-SAI-InterFreqList-v1140.h	\
 	MBMS-SAI-InterFreq-r11.h	\
 	MBMS-SAI-InterFreq-v1140.h	\
-	MBMS-InterFreqCarrierTypeList-r14.h	\
-	MBMS-CarrierType-r14.h	\
 	SystemInformationBlockType16-r11.h	\
 	SystemInformationBlockType17-r12.h	\
 	WLAN-OffloadInfoPerPLMN-r12.h	\
@@ -2296,16 +2038,15 @@ ASN_MODULE_HEADERS=	\
 	SL-DiscConfigOtherInterFreq-r13.h	\
 	SL-ResourcesInterFreq-r13.h	\
 	SystemInformationBlockType20-r13.h	\
-	SC-MCCH-SchedulingInfo-r14.h	\
 	SystemInformationBlockType21-r14.h	\
 	SL-V2X-ConfigCommon-r14.h	\
+	SL-CommTxPoolSensingConfig-r14.h	\
 	AntennaInfoCommon.h	\
 	AntennaInfoDedicated.h	\
 	AntennaInfoDedicated-v920.h	\
 	AntennaInfoDedicated-r10.h	\
 	AntennaInfoDedicated-v10i0.h	\
 	AntennaInfoDedicated-v1250.h	\
-	AntennaInfoDedicated-v1430.h	\
 	AntennaInfoUL-r10.h	\
 	CQI-ReportConfig.h	\
 	CQI-ReportConfig-v920.h	\
@@ -2314,7 +2055,6 @@ ASN_MODULE_HEADERS=	\
 	CQI-ReportConfig-v1250.h	\
 	CQI-ReportConfig-v1310.h	\
 	CQI-ReportConfig-v1320.h	\
-	CQI-ReportConfig-v1430.h	\
 	CQI-ReportConfigSCell-r10.h	\
 	CQI-ReportPeriodic.h	\
 	CQI-ReportPeriodic-r10.h	\
@@ -2329,7 +2069,6 @@ ASN_MODULE_HEADERS=	\
 	CQI-ReportAperiodic-v1310.h	\
 	CQI-ReportAperiodicProc-r11.h	\
 	CQI-ReportAperiodicProc-v1310.h	\
-	CQI-ReportAperiodicHybrid-r14.h	\
 	CQI-ReportModeAperiodic.h	\
 	CQI-ReportBoth-r11.h	\
 	CQI-ReportBoth-v1250.h	\
@@ -2359,34 +2098,20 @@ ASN_MODULE_HEADERS=	\
 	CSI-RS-Config-r10.h	\
 	CSI-RS-Config-v1250.h	\
 	CSI-RS-Config-v1310.h	\
-	CSI-RS-Config-v1430.h	\
 	ZeroTxPowerCSI-RS-Conf-r12.h	\
 	ZeroTxPowerCSI-RS-r12.h	\
 	CSI-RS-ConfigEMIMO-r13.h	\
-	CSI-RS-ConfigEMIMO-v1430.h	\
-	CSI-RS-ConfigEMIMO2-r14.h	\
-	CSI-RS-ConfigEMIMO-Hybrid-r14.h	\
 	CSI-RS-ConfigNonPrecoded-r13.h	\
-	CSI-RS-ConfigNonPrecoded-v1430.h	\
 	CSI-RS-ConfigBeamformed-r13.h	\
-	CSI-RS-ConfigBeamformed-r14.h	\
-	CSI-RS-ConfigBeamformed-v1430.h	\
-	CSI-RS-Config-NZP-v1430.h	\
-	CSI-RS-ConfigNZP-Activation-r14.h	\
 	CSI-RS-ConfigNZP-r11.h	\
 	CSI-RS-ConfigNZP-EMIMO-r13.h	\
-	CSI-RS-ConfigNZP-EMIMO-v1430.h	\
 	NZP-ResourceConfig-r13.h	\
 	ResourceConfig-r13.h	\
-	NZP-TransmissionComb-r14.h	\
-	NZP-FrequencyDensity-r14.h	\
 	CSI-RS-ConfigNZPId-r11.h	\
 	CSI-RS-ConfigNZPId-v1310.h	\
 	CSI-RS-ConfigNZPId-r13.h	\
 	CSI-RS-ConfigZP-r11.h	\
-	CSI-RS-ConfigZP-ApList-r14.h	\
 	CSI-RS-ConfigZPId-r11.h	\
-	DataInactivityTimer-r14.h	\
 	DMRS-Config-r11.h	\
 	DMRS-Config-v1310.h	\
 	DRB-Identity.h	\
@@ -2431,19 +2156,15 @@ ASN_MODULE_HEADERS=	\
 	PDSCH-ConfigDedicated-v1130.h	\
 	PDSCH-ConfigDedicated-v1280.h	\
 	PDSCH-ConfigDedicated-v1310.h	\
-	PDSCH-ConfigDedicated-v1430.h	\
-	PDSCH-ConfigDedicatedSCell-v1430.h	\
 	RE-MappingQCLConfigToAddModList-r11.h	\
 	RE-MappingQCLConfigToReleaseList-r11.h	\
 	PDSCH-RE-MappingQCL-Config-r11.h	\
 	PDSCH-RE-MappingQCL-ConfigId-r11.h	\
-	PerCC-GapIndicationList-r14.h	\
-	PerCC-GapIndication-r14.h	\
 	PHICH-Config.h	\
 	PhysicalConfigDedicated.h	\
 	PhysicalConfigDedicatedSCell-r10.h	\
 	LAA-SCellConfiguration-r13.h	\
-	LAA-SCellConfiguration-v1430.h	\
+	LAA-SCellConfiguration-v14xy.h	\
 	LBT-Config-r14.h	\
 	CSI-RS-ConfigNZPToAddModList-r11.h	\
 	CSI-RS-ConfigNZPToAddModListExt-r13.h	\
@@ -2451,14 +2172,14 @@ ASN_MODULE_HEADERS=	\
 	CSI-RS-ConfigNZPToReleaseListExt-r13.h	\
 	CSI-RS-ConfigZPToAddModList-r11.h	\
 	CSI-RS-ConfigZPToReleaseList-r11.h	\
-	SoundingRS-AperiodicSet-r14.h	\
-	SoundingRS-AperiodicSetUpPTsExt-r14.h	\
+	SoundingRSAperiodicGroup-r14.h	\
+	SoundingRSAperiodicGroupUpPTsExt-r14.h	\
 	P-Max.h	\
 	PRACH-ConfigSIB.h	\
 	PRACH-ConfigSIB-v1310.h	\
 	PRACH-Config.h	\
 	PRACH-Config-v1310.h	\
-	PRACH-Config-v1430.h	\
+	PRACH-Config-v14xy.h	\
 	PRACH-ConfigSCell-r10.h	\
 	PRACH-ConfigInfo.h	\
 	PRACH-ParametersListCE-r13.h	\
@@ -2467,13 +2188,11 @@ ASN_MODULE_HEADERS=	\
 	PresenceAntennaPort1.h	\
 	PUCCH-ConfigCommon.h	\
 	PUCCH-ConfigCommon-v1310.h	\
-	PUCCH-ConfigCommon-v1430.h	\
 	PUCCH-ConfigDedicated.h	\
 	PUCCH-ConfigDedicated-v1020.h	\
 	PUCCH-ConfigDedicated-v1130.h	\
 	PUCCH-ConfigDedicated-v1250.h	\
 	PUCCH-ConfigDedicated-r13.h	\
-	PUCCH-ConfigDedicated-v1430.h	\
 	Format4-resource-r13.h	\
 	Format5-resource-r13.h	\
 	N1PUCCH-AN-CS-r10.h	\
@@ -2486,12 +2205,7 @@ ASN_MODULE_HEADERS=	\
 	PUSCH-ConfigDedicated-v1130.h	\
 	PUSCH-ConfigDedicated-v1250.h	\
 	PUSCH-ConfigDedicated-r13.h	\
-	PUSCH-ConfigDedicated-v1430.h	\
 	PUSCH-ConfigDedicatedSCell-r10.h	\
-	PUSCH-ConfigDedicatedSCell-v1430.h	\
-	TDD-PUSCH-UpPTS-r14.h	\
-	Enable256QAM-r14.h	\
-	PUSCH-EnhancementsConfig-r14.h	\
 	UL-ReferenceSignalsPUSCH.h	\
 	RACH-ConfigCommon.h	\
 	RACH-ConfigCommon-v1250.h	\
@@ -2541,7 +2255,7 @@ ASN_MODULE_HEADERS=	\
 	RLC-Config.h	\
 	RLC-Config-v1250.h	\
 	RLC-Config-v1310.h	\
-	RLC-Config-v1430.h	\
+	RLC-Config-v14xy.h	\
 	UL-AM-RLC.h	\
 	DL-AM-RLC.h	\
 	UL-UM-RLC.h	\
@@ -2569,27 +2283,19 @@ ASN_MODULE_HEADERS=	\
 	SoundingRS-UL-ConfigDedicatedAperiodic-r10.h	\
 	SoundingRS-UL-ConfigDedicatedAperiodic-v1310.h	\
 	SoundingRS-UL-ConfigDedicatedAperiodicUpPTsExt-r13.h	\
-	SoundingRS-UL-ConfigDedicatedAperiodic-v1430.h	\
+	SoundingRS-UL-ConfigDedicatedAperiodic-v14xy.h	\
 	SRS-ConfigAp-r10.h	\
 	SRS-ConfigAp-v1310.h	\
 	SRS-ConfigAp-r13.h	\
 	SRS-AntennaPort.h	\
 	SPS-Config.h	\
-	SPS-Config-v1430.h	\
-	SPS-ConfigUL-ToAddModList-r14.h	\
-	SPS-ConfigUL-ToReleaseList-r14.h	\
-	SPS-ConfigSL-ToAddModList-r14.h	\
-	SPS-ConfigSL-ToReleaseList-r14.h	\
 	SPS-ConfigDL.h	\
 	SPS-ConfigUL.h	\
-	SPS-ConfigSL-r14.h	\
-	SPS-ConfigIndex-r14.h	\
 	N1PUCCH-AN-PersistentList.h	\
 	SRS-TPC-PDCCH-Config-r14.h	\
-	SRS-CC-SetIndex-r14.h	\
+	SrsCcGroupIndex.h	\
 	TDD-Config.h	\
 	TDD-Config-v1130.h	\
-	TDD-Config-v1430.h	\
 	TDD-ConfigSL-r12.h	\
 	TimeAlignmentTimer.h	\
 	TPC-PDCCH-Config.h	\
@@ -2605,12 +2311,12 @@ ASN_MODULE_HEADERS=	\
 	UplinkPowerControlCommonSCell-r10.h	\
 	UplinkPowerControlCommonSCell-v1130.h	\
 	UplinkPowerControlCommonSCell-v1310.h	\
-	UplinkPowerControlCommonPUSCH-LessCell-v1430.h	\
+	UplinkPowerControlCommonPUSCH-LessCell-v14xy.h	\
 	UplinkPowerControlDedicated.h	\
 	UplinkPowerControlDedicated-v1020.h	\
 	UplinkPowerControlDedicated-v1130.h	\
 	UplinkPowerControlDedicated-v1250.h	\
-	UplinkPUSCH-LessPowerControlDedicated-v1430.h	\
+	UplinkPUSCH-LessPowerControlDedicated-v14xy.h	\
 	UplinkPowerControlDedicatedSCell-r10.h	\
 	UplinkPowerControlDedicatedSCell-v1310.h	\
 	Alpha-r12.h	\
@@ -2643,8 +2349,6 @@ ASN_MODULE_HEADERS=	\
 	CellIndex.h	\
 	CellReselectionPriority.h	\
 	CellSelectionInfoCE-r13.h	\
-	CellSelectionInfoCE1-r13.h	\
-	CellSelectionInfoCE1-v1360.h	\
 	CellReselectionSubPriority-r13.h	\
 	CSFB-RegistrationParam1XRTT.h	\
 	CSFB-RegistrationParam1XRTT-v920.h	\
@@ -2663,7 +2367,6 @@ ASN_MODULE_HEADERS=	\
 	CarrierBandwidthEUTRA.h	\
 	CarrierFreqEUTRA.h	\
 	CarrierFreqEUTRA-v9e0.h	\
-	RACH-Skip-r14.h	\
 	MobilityParametersCDMA2000.h	\
 	MobilityStateParameters.h	\
 	MultiBandInfoList.h	\
@@ -2722,11 +2425,6 @@ ASN_MODULE_HEADERS=	\
 	MeasCSI-RS-Id-r12.h	\
 	MeasCSI-RS-Config-r12.h	\
 	MeasGapConfig.h	\
-	MeasGapConfigPerCC-List-r14.h	\
-	MeasGapConfigToRemoveList-r14.h	\
-	MeasGapConfigToAddModList-r14.h	\
-	MeasGapConfigPerCC-r14.h	\
-	MeasGapSharingConfig-r14.h	\
 	MeasId.h	\
 	MeasId-v1250.h	\
 	MeasIdToAddModList.h	\
@@ -2753,7 +2451,6 @@ ASN_MODULE_HEADERS=	\
 	WhiteCellsToAddModList-r13.h	\
 	WhiteCellsToAddMod-r13.h	\
 	RMTC-Config-r13.h	\
-	Tx-ResourcePoolMeasList-r14.h	\
 	MeasObjectGERAN.h	\
 	MeasObjectId.h	\
 	MeasObjectId-v1310.h	\
@@ -2789,10 +2486,7 @@ ASN_MODULE_HEADERS=	\
 	MeasResultListCDMA2000.h	\
 	MeasResultCDMA2000.h	\
 	MeasResultListWLAN-r13.h	\
-	MeasResultListWLAN-r14.h	\
 	MeasResultWLAN-r13.h	\
-	MeasResultListCBR-r14.h	\
-	MeasResultCBR-r14.h	\
 	MeasResultForECID-r9.h	\
 	PLMN-IdentityList2.h	\
 	AdditionalSI-Info-r9.h	\
@@ -2825,7 +2519,6 @@ ASN_MODULE_HEADERS=	\
 	ReportConfigToAddMod.h	\
 	ReportInterval.h	\
 	RSRP-Range.h	\
-	RSRP-Range-v1360.h	\
 	RSRP-RangeSL-r12.h	\
 	RSRP-RangeSL2-r12.h	\
 	RSRP-RangeSL3-r12.h	\
@@ -2843,17 +2536,12 @@ ASN_MODULE_HEADERS=	\
 	WLAN-Channel-r13.h	\
 	WLAN-RSSI-Range-r13.h	\
 	WLAN-Status-r13.h	\
-	WLAN-Status-v1430.h	\
-	WLAN-SuspendConfig-r14.h	\
 	AbsoluteTimeInfo-r10.h	\
 	AreaConfiguration-r10.h	\
 	AreaConfiguration-v1130.h	\
 	CellGlobalIdList-r10.h	\
 	TrackingAreaCodeList-r10.h	\
 	TrackingAreaCodeList-v1130.h	\
-	BandCombinationList-r14.h	\
-	BandCombination-r14.h	\
-	BandIndication-r14.h	\
 	C-RNTI.h	\
 	DedicatedInfoCDMA2000.h	\
 	DedicatedInfoNAS.h	\
@@ -2906,9 +2594,7 @@ ASN_MODULE_HEADERS=	\
 	UE-EUTRA-Capability-v1320-IEs.h	\
 	UE-EUTRA-Capability-v1330-IEs.h	\
 	UE-EUTRA-Capability-v1340-IEs.h	\
-	UE-EUTRA-Capability-v1350-IEs.h	\
-	UE-EUTRA-Capability-v1360-IEs.h	\
-	UE-EUTRA-Capability-v1430-IEs.h	\
+	UE-EUTRA-Capability-v14xy-IEs.h	\
 	UE-EUTRA-CapabilityAddXDD-Mode-r9.h	\
 	UE-EUTRA-CapabilityAddXDD-Mode-v1060.h	\
 	UE-EUTRA-CapabilityAddXDD-Mode-v1130.h	\
@@ -2916,21 +2602,18 @@ ASN_MODULE_HEADERS=	\
 	UE-EUTRA-CapabilityAddXDD-Mode-v1250.h	\
 	UE-EUTRA-CapabilityAddXDD-Mode-v1310.h	\
 	UE-EUTRA-CapabilityAddXDD-Mode-v1320.h	\
-	UE-EUTRA-CapabilityAddXDD-Mode-v1430.h	\
 	AccessStratumRelease.h	\
-	MobilityParameters-r14.h	\
 	DC-Parameters-r12.h	\
 	DC-Parameters-v1310.h	\
 	MAC-Parameters-r12.h	\
 	MAC-Parameters-v1310.h	\
-	MAC-Parameters-v1430.h	\
+	MAC-Parameters-v14xy.h	\
 	RLC-Parameters-r12.h	\
 	RLC-Parameters-v1310.h	\
-	RLC-Parameters-v1430.h	\
+	RLC-Parameters-v14xy.h	\
 	PDCP-Parameters.h	\
 	PDCP-Parameters-v1130.h	\
 	PDCP-Parameters-v1310.h	\
-	PDCP-Parameters-v1430.h	\
 	PhyLayerParameters.h	\
 	PhyLayerParameters-v920.h	\
 	PhyLayerParameters-v9d0.h	\
@@ -2942,15 +2625,10 @@ ASN_MODULE_HEADERS=	\
 	PhyLayerParameters-v1310.h	\
 	PhyLayerParameters-v1320.h	\
 	PhyLayerParameters-v1330.h	\
-	PhyLayerParameters-v1430.h	\
 	MIMO-UE-Parameters-r13.h	\
-	MIMO-UE-Parameters-v1430.h	\
 	MIMO-UE-ParametersPerTM-r13.h	\
-	MIMO-UE-ParametersPerTM-v1430.h	\
 	MIMO-CA-ParametersPerBoBC-r13.h	\
-	MIMO-CA-ParametersPerBoBC-v1430.h	\
 	MIMO-CA-ParametersPerBoBCPerTM-r13.h	\
-	MIMO-CA-ParametersPerBoBCPerTM-v1430.h	\
 	MIMO-NonPrecodedCapabilities-r13.h	\
 	MIMO-UE-BeamformedCapabilities-r13.h	\
 	MIMO-BeamformedCapabilityList-r13.h	\
@@ -2973,7 +2651,6 @@ ASN_MODULE_HEADERS=	\
 	RF-Parameters-v1310.h	\
 	RF-Parameters-v1320.h	\
 	RF-Parameters-v12b0.h	\
-	RF-Parameters-v1430.h	\
 	SupportedBandCombination-r10.h	\
 	SupportedBandCombinationExt-r10.h	\
 	SupportedBandCombination-v1090.h	\
@@ -2982,16 +2659,13 @@ ASN_MODULE_HEADERS=	\
 	SupportedBandCombination-v1250.h	\
 	SupportedBandCombination-v1270.h	\
 	SupportedBandCombination-v1320.h	\
-	SupportedBandCombination-v1430.h	\
 	SupportedBandCombinationAdd-r11.h	\
 	SupportedBandCombinationAdd-v11d0.h	\
 	SupportedBandCombinationAdd-v1250.h	\
 	SupportedBandCombinationAdd-v1270.h	\
 	SupportedBandCombinationAdd-v1320.h	\
-	SupportedBandCombinationAdd-v1430.h	\
 	SupportedBandCombinationReduced-r13.h	\
 	SupportedBandCombinationReduced-v1320.h	\
-	SupportedBandCombinationReduced-v1430.h	\
 	BandCombinationParameters-r10.h	\
 	BandCombinationParametersExt-r10.h	\
 	BandCombinationParameters-v1090.h	\
@@ -3002,7 +2676,6 @@ ASN_MODULE_HEADERS=	\
 	BandCombinationParameters-v1270.h	\
 	BandCombinationParameters-r13.h	\
 	BandCombinationParameters-v1320.h	\
-	BandCombinationParameters-v1430.h	\
 	SupportedBandwidthCombinationSet-r10.h	\
 	BandParameters-r10.h	\
 	BandParameters-v1090.h	\
@@ -3012,12 +2685,6 @@ ASN_MODULE_HEADERS=	\
 	BandParameters-v1270.h	\
 	BandParameters-r13.h	\
 	BandParameters-v1320.h	\
-	BandParameters-v1430.h	\
-	V2X-BandParameters-r14.h	\
-	BandParametersTxSL-r14.h	\
-	BandParametersRxSL-r14.h	\
-	V2X-BandwidthClassSL-r14.h	\
-	UL-256QAM-perCC-Info-r14.h	\
 	BandParametersUL-r10.h	\
 	BandParametersUL-r13.h	\
 	CA-MIMO-ParametersUL-r10.h	\
@@ -3029,7 +2696,6 @@ ASN_MODULE_HEADERS=	\
 	CA-MIMO-ParametersDL-r13.h	\
 	IntraBandContiguousCC-Info-r12.h	\
 	CA-BandwidthClass-r10.h	\
-	V2X-BandwidthClass-r14.h	\
 	MIMO-CapabilityUL-r10.h	\
 	MIMO-CapabilityDL-r10.h	\
 	SupportedBandListEUTRA.h	\
@@ -3048,7 +2714,6 @@ ASN_MODULE_HEADERS=	\
 	MeasParameters-v11a0.h	\
 	MeasParameters-v1250.h	\
 	MeasParameters-v1310.h	\
-	MeasParameters-v1430.h	\
 	BandListEUTRA.h	\
 	BandCombinationListEUTRA-r10.h	\
 	BandInfoEUTRA.h	\
@@ -3089,42 +2754,28 @@ ASN_MODULE_HEADERS=	\
 	SON-Parameters-r9.h	\
 	UE-BasedNetwPerfMeasParameters-r10.h	\
 	UE-BasedNetwPerfMeasParameters-v1250.h	\
-	UE-BasedNetwPerfMeasParameters-v1430.h	\
 	OTDOA-PositioningCapabilities-r10.h	\
 	Other-Parameters-r11.h	\
 	Other-Parameters-v11d0.h	\
-	Other-Parameters-v1360.h	\
-	Other-Parameters-v1430.h	\
 	MBMS-Parameters-r11.h	\
 	MBMS-Parameters-v1250.h	\
-	MBMS-Parameters-v1430.h	\
-	FeMBMS-Unicast-Parameters-r14.h	\
 	SCPTM-Parameters-r13.h	\
 	CE-Parameters-r13.h	\
 	CE-Parameters-v1320.h	\
-	CE-Parameters-v1350.h	\
-	CE-Parameters-v1430.h	\
 	LAA-Parameters-r13.h	\
-	LAA-Parameters-v1430.h	\
+	LAA-Parameters-v14xy.h	\
 	WLAN-IW-Parameters-r12.h	\
 	LWA-Parameters-r13.h	\
-	LWA-Parameters-v1430.h	\
 	WLAN-IW-Parameters-v1310.h	\
 	LWIP-Parameters-r13.h	\
-	LWIP-Parameters-v1430.h	\
+	LWIP-Parameters-v14xy.h	\
 	NAICS-Capability-List-r12.h	\
 	NAICS-Capability-Entry-r12.h	\
 	SL-Parameters-r12.h	\
 	SL-Parameters-v1310.h	\
-	SL-Parameters-v1430.h	\
-	V2X-SupportedBandCombination-r14.h	\
-	V2X-BandCombinationParameters-r14.h	\
 	SupportedBandInfoList-r12.h	\
 	SupportedBandInfo-r12.h	\
 	FreqBandIndicatorListEUTRA-r12.h	\
-	MMTEL-Parameters-r14.h	\
-	RetuningTimeInfo-r14.h	\
-	HighSpeedEnhParameters-r14.h	\
 	UE-RadioPagingInfo-r12.h	\
 	UE-TimersAndConstants.h	\
 	VisitedCellInfoList-r12.h	\
@@ -3132,14 +2783,12 @@ ASN_MODULE_HEADERS=	\
 	WLAN-OffloadConfig-r12.h	\
 	WLAN-backhaulRate-r12.h	\
 	MBMS-NotificationConfig-r9.h	\
-	MBMS-NotificationConfig-v1430.h	\
 	MBMS-ServiceList-r13.h	\
 	MBMS-ServiceInfo-r13.h	\
 	MBSFN-AreaId-r12.h	\
 	MBSFN-AreaInfoList-r9.h	\
 	MBSFN-AreaInfo-r9.h	\
 	MBSFN-SubframeConfig.h	\
-	MBSFN-SubframeConfig-v1430.h	\
 	PMCH-InfoList-r9.h	\
 	PMCH-InfoListExt-r12.h	\
 	PMCH-Info-r9.h	\
@@ -3153,19 +2802,8 @@ ASN_MODULE_HEADERS=	\
 	SC-MTCH-Info-r13.h	\
 	MBMSSessionInfo-r13.h	\
 	SC-MTCH-SchedulingInfo-r13.h	\
-	SC-MTCH-InfoList-BR-r14.h	\
-	SC-MTCH-Info-BR-r14.h	\
-	SC-MTCH-SchedulingInfo-BR-r14.h	\
 	SCPTM-NeighbourCellList-r13.h	\
 	PCI-ARFCN-r13.h	\
-	SL-AnchorCarrierFreqList-V2X-r14.h	\
-	SL-CBR-CommonTxConfigList-r14.h	\
-	SL-CBR-Levels-Config-r14.h	\
-	SL-CBR-PSSCH-TxConfig-r14.h	\
-	SL-CBR-r14.h	\
-	SL-CBR-PPPP-TxConfigList-r14.h	\
-	SL-PPPP-TxConfigIndex-r14.h	\
-	Tx-ConfigIndex-r14.h	\
 	SL-CommConfig-r12.h	\
 	LogicalChGroupInfoList-r13.h	\
 	SL-CommTxPoolToAddModList-r12.h	\
@@ -3181,8 +2819,6 @@ ASN_MODULE_HEADERS=	\
 	SL-CommResourcePool-r12.h	\
 	SL-CommResourcePoolV2X-r14.h	\
 	SL-TRPT-Subset-r12.h	\
-	SL-V2X-TxPoolReportIdentity-r14.h	\
-	SL-CommTxPoolSensingConfig-r14.h	\
 	SL-CP-Len-r12.h	\
 	SL-DiscConfig-r12.h	\
 	SL-DiscSysInfoToReportFreqList-r13.h	\
@@ -3203,7 +2839,6 @@ ASN_MODULE_HEADERS=	\
 	SL-DiscResourcePool-r12.h	\
 	PhysCellIdList-r13.h	\
 	SL-PoolSelectionConfig-r12.h	\
-	SL-DiscSysInfoReport-r13.h	\
 	SL-DiscTxPowerInfoList-r12.h	\
 	SL-DiscTxPowerInfo-r12.h	\
 	SL-GapConfig-r13.h	\
@@ -3215,13 +2850,9 @@ ASN_MODULE_HEADERS=	\
 	SL-HoppingConfigDisc-r12.h	\
 	SL-InterFreqInfoListV2X-r14.h	\
 	SL-InterFreqInfoV2X-r14.h	\
-	SL-V2X-UE-ConfigList-r14.h	\
-	SL-V2X-InterFreqUE-Config-r14.h	\
 	SL-OffsetIndicator-r12.h	\
 	SL-OffsetIndicatorSync-r12.h	\
-	SL-OffsetIndicatorSync-v1430.h	\
-	SL-OffsetIndicatorSync-r14.h	\
-	SL-P2X-ResourceSelectionConfig-r14.h	\
+	SL-OffsetIndicatorSync-v14xy.h	\
 	SL-PeriodComm-r12.h	\
 	SL-PriorityList-r13.h	\
 	SL-Priority-r13.h	\
@@ -3231,18 +2862,15 @@ ASN_MODULE_HEADERS=	\
 	SL-RestrictResourceReservationPeriodList-r14.h	\
 	SL-RestrictResourceReservationPeriod-r14.h	\
 	SLSSID-r12.h	\
-	SL-SyncAllowed-r14.h	\
 	SL-SyncConfigList-r12.h	\
 	SL-SyncConfigListV2X-r14.h	\
 	SL-SyncConfig-r12.h	\
 	SL-SyncConfigListNFreq-r13.h	\
-	SL-SyncConfigListNFreqV2X-r14.h	\
 	SL-SyncConfigNFreq-r13.h	\
+	SL-DiscSysInfoReport-r13.h	\
 	SL-TF-ResourceConfig-r12.h	\
 	SubframeBitmapSL-r12.h	\
 	SubframeBitmapSL-r14.h	\
-	SL-TxPower-r14.h	\
-	SL-TypeTxSync-r14.h	\
 	SL-ThresPSSCH-RSRP-List-r14.h	\
 	SL-ThresPSSCH-RSRP-r14.h	\
 	SL-TxParameters-r12.h	\
@@ -3254,15 +2882,11 @@ ASN_MODULE_HEADERS=	\
 	SL-TxPoolToReleaseListExt-r13.h	\
 	SL-V2X-ConfigDedicated-r14.h	\
 	SL-TxPoolToAddModListV2X-r14.h	\
-	SL-TxPoolToAddMod-r14.h	\
 	SL-TxPoolToReleaseListV2X-r14.h	\
 	SL-ZoneConfig-r14.h	\
 	SBCCH-SL-BCH-Message.h	\
 	SBCCH-SL-BCH-MessageType.h	\
-	SBCCH-SL-BCH-Message-V2X-r14.h	\
-	SBCCH-SL-BCH-MessageType-V2X-r14.h	\
 	MasterInformationBlock-SL.h	\
-	MasterInformationBlock-SL-V2X-r14.h	\
 	BCCH-BCH-Message-NB.h	\
 	BCCH-BCH-MessageType-NB.h	\
 	BCCH-DL-SCH-Message-NB.h	\
@@ -3275,8 +2899,6 @@ ASN_MODULE_HEADERS=	\
 	DL-DCCH-MessageType-NB.h	\
 	UL-CCCH-Message-NB.h	\
 	UL-CCCH-MessageType-NB.h	\
-	SC-MCCH-Message-NB.h	\
-	SC-MCCH-MessageType-NB.h	\
 	UL-DCCH-Message-NB.h	\
 	UL-DCCH-MessageType-NB.h	\
 	DLInformationTransfer-NB.h	\
@@ -3296,22 +2918,17 @@ ASN_MODULE_HEADERS=	\
 	RRCConnectionReconfigurationComplete-NB-r13-IEs.h	\
 	RRCConnectionReestablishment-NB.h	\
 	RRCConnectionReestablishment-NB-r13-IEs.h	\
-	RRCConnectionReestablishment-NB-v1430-IEs.h	\
 	RRCConnectionReestablishmentComplete-NB.h	\
 	RRCConnectionReestablishmentComplete-NB-r13-IEs.h	\
 	RRCConnectionReestablishmentRequest-NB.h	\
 	RRCConnectionReestablishmentRequest-NB-r13-IEs.h	\
-	RRCConnectionReestablishmentRequest-NB-r14-IEs.h	\
 	ReestablishmentCause-NB-r13.h	\
-	ReestabUE-Identity-CP-NB-r14.h	\
 	RRCConnectionReject-NB.h	\
 	RRCConnectionReject-NB-r13-IEs.h	\
 	RRCConnectionRelease-NB.h	\
 	RRCConnectionRelease-NB-r13-IEs.h	\
-	RRCConnectionRelease-NB-v1430-IEs.h	\
 	ReleaseCause-NB-r13.h	\
 	RedirectedCarrierInfo-NB-r13.h	\
-	RedirectedCarrierInfo-NB-v1430.h	\
 	RRCConnectionRequest-NB.h	\
 	RRCConnectionRequest-NB-r13-IEs.h	\
 	RRCConnectionResume-NB.h	\
@@ -3324,13 +2941,9 @@ ASN_MODULE_HEADERS=	\
 	RRCConnectionSetup-NB-r13-IEs.h	\
 	RRCConnectionSetupComplete-NB.h	\
 	RRCConnectionSetupComplete-NB-r13-IEs.h	\
-	RRCConnectionSetupComplete-NB-v1430-IEs.h	\
-	SCPTMConfiguration-NB-r14.h	\
 	SystemInformation-NB.h	\
 	SystemInformation-NB-r13-IEs.h	\
 	SystemInformationBlockType1-NB.h	\
-	SystemInformationBlockType1-NB-v1350.h	\
-	SystemInformationBlockType1-NB-v1430.h	\
 	PLMN-IdentityList-NB-r13.h	\
 	PLMN-IdentityInfo-NB-r13.h	\
 	SchedulingInfoList-NB-r13.h	\
@@ -3338,8 +2951,6 @@ ASN_MODULE_HEADERS=	\
 	SystemInfoValueTagList-NB-r13.h	\
 	SIB-MappingInfo-NB-r13.h	\
 	SIB-Type-NB-r13.h	\
-	CellSelectionInfo-NB-v1350.h	\
-	CellSelectionInfo-NB-v1430.h	\
 	UECapabilityEnquiry-NB.h	\
 	UECapabilityEnquiry-NB-r13-IEs.h	\
 	UECapabilityInformation-NB.h	\
@@ -3348,9 +2959,6 @@ ASN_MODULE_HEADERS=	\
 	ULInformationTransfer-NB-r13-IEs.h	\
 	SystemInformationBlockType2-NB-r13.h	\
 	SystemInformationBlockType3-NB-r13.h	\
-	IntraFreqCellReselectionInfo-NB-v1350.h	\
-	IntraFreqCellReselectionInfo-NB-v1360.h	\
-	IntraFreqCellReselectionInfo-NB-v1430.h	\
 	SystemInformationBlockType4-NB-r13.h	\
 	SystemInformationBlockType5-NB-r13.h	\
 	InterFreqCarrierFreqList-NB-r13.h	\
@@ -3360,30 +2968,12 @@ ASN_MODULE_HEADERS=	\
 	SystemInformationBlockType14-NB-r13.h	\
 	AB-ConfigPLMN-NB-r13.h	\
 	AB-Config-NB-r13.h	\
-	SystemInformationBlockType15-NB-r14.h	\
-	MBMS-SAI-InterFreqList-NB-r14.h	\
-	MBMS-SAI-InterFreq-NB-r14.h	\
 	SystemInformationBlockType16-NB-r13.h	\
-	SystemInformationBlockType20-NB-r14.h	\
-	NPDCCH-SC-MCCH-Config-NB-r14.h	\
-	SC-MCCH-SchedulingInfo-NB-r14.h	\
-	SystemInformationBlockType22-NB-r14.h	\
-	DL-ConfigCommonList-NB-r14.h	\
-	UL-ConfigCommonList-NB-r14.h	\
-	DL-ConfigCommon-NB-r14.h	\
-	PCCH-Config-NB-r14.h	\
-	PagingWeight-NB-r14.h	\
-	UL-ConfigCommon-NB-r14.h	\
-	NPRACH-ParametersList-NB-r14.h	\
-	NPRACH-Parameters-NB-r14.h	\
-	NPRACH-ProbabilityAnchorList-NB-r14.h	\
-	NPRACH-ProbabilityAnchor-NB-r14.h	\
 	CarrierConfigDedicated-NB-r13.h	\
 	DL-CarrierConfigDedicated-NB-r13.h	\
 	UL-CarrierConfigDedicated-NB-r13.h	\
 	CarrierFreq-NB-r13.h	\
 	DL-Bitmap-NB-r13.h	\
-	DL-CarrierConfigCommon-NB-r14.h	\
 	DL-GapConfig-NB-r13.h	\
 	LogicalChannelConfig-NB-r13.h	\
 	MAC-MainConfig-NB-r13.h	\
@@ -3418,40 +3008,28 @@ ASN_MODULE_HEADERS=	\
 	DRB-ToAddMod-NB-r13.h	\
 	DRB-ToReleaseList-NB-r13.h	\
 	RLC-Config-NB-r13.h	\
-	RLC-Config-NB-v1430.h	\
 	UL-AM-RLC-NB-r13.h	\
 	DL-AM-RLC-NB-r13.h	\
 	T-PollRetransmit-NB-r13.h	\
 	RLF-TimersAndConstants-NB-r13.h	\
 	UplinkPowerControlCommon-NB-r13.h	\
 	UplinkPowerControlDedicated-NB-r13.h	\
-	AdditionalBandInfoList-NB-r14.h	\
 	FreqBandIndicator-NB-r13.h	\
 	MultiBandInfoList-NB-r13.h	\
 	MultiBandInfo-NB-r13.h	\
 	NS-PmaxList-NB-r13.h	\
 	NS-PmaxValue-NB-r13.h	\
-	ReselectionThreshold-NB-v1360.h	\
 	T-Reselection-NB-r13.h	\
 	EstablishmentCause-NB-r13.h	\
 	UE-Capability-NB-r13.h	\
-	UE-Capability-NB-v1430-IEs.h	\
 	AccessStratumRelease-NB-r13.h	\
 	PDCP-Parameters-NB-r13.h	\
-	MAC-Parameters-NB-r14.h	\
 	PhyLayerParameters-NB-r13.h	\
-	PhyLayerParameters-NB-v1430.h	\
 	RF-Parameters-NB-r13.h	\
-	RF-Parameters-NB-v1430.h	\
 	SupportedBandList-NB-r13.h	\
 	SupportedBand-NB-r13.h	\
 	UE-RadioPagingInfo-NB-r13.h	\
 	UE-TimersAndConstants-NB-r13.h	\
-	SC-MTCH-InfoList-NB-r14.h	\
-	SC-MTCH-Info-NB-r14.h	\
-	SC-MTCH-SchedulingInfo-NB-r14.h	\
-	SCPTM-NeighbourCellList-NB-r14.h	\
-	PCI-ARFCN-NB-r14.h	\
 	VarConnEstFailReport-r11.h	\
 	VarLogMeasConfig-r10.h	\
 	VarLogMeasConfig-r11.h	\
@@ -3486,17 +3064,10 @@ ASN_MODULE_HEADERS=	\
 	SL-PreconfigDiscPool-r13.h	\
 	SL-PreconfigRelay-r13.h	\
 	SL-V2X-Preconfiguration-r14.h	\
-	SL-CBR-PreconfigTxConfigList-r14.h	\
-	SL-V2X-PreconfigFreqList-r14.h	\
 	SL-V2X-PreconfigFreqInfo-r14.h	\
 	SL-PreconfigV2X-RxPoolList-r14.h	\
 	SL-PreconfigV2X-TxPoolList-r14.h	\
 	SL-V2X-PreconfigCommPool-r14.h	\
-	SL-PreconfigV2X-Sync-r14.h	\
-	SL-V2X-SyncOffsetIndicators-r14.h	\
-	SL-CBR-PPPP-TxPreconfigList-r14.h	\
-	SL-PPPP-TxPreconfigIndex-r14.h	\
-	Tx-PreconfigIndex-r14.h	\
 	HandoverCommand.h	\
 	HandoverCommand-r8-IEs.h	\
 	HandoverPreparationInformation.h	\
@@ -3509,14 +3080,13 @@ ASN_MODULE_HEADERS=	\
 	HandoverPreparationInformation-v1130-IEs.h	\
 	HandoverPreparationInformation-v1250-IEs.h	\
 	HandoverPreparationInformation-v1320-IEs.h	\
-	HandoverPreparationInformation-v1430-IEs.h	\
+	HandoverPreparationInformation-v14x0-IEs.h	\
 	SCG-Config-r12.h	\
 	SCG-Config-r12-IEs.h	\
 	SCG-ConfigInfo-r12.h	\
 	SCG-ConfigInfo-r12-IEs.h	\
 	SCG-ConfigInfo-v1310-IEs.h	\
 	SCG-ConfigInfo-v1330-IEs.h	\
-	SCG-ConfigInfo-v1430-IEs.h	\
 	DRB-InfoListSCG-r12.h	\
 	DRB-InfoSCG-r12.h	\
 	SCellToAddModListSCG-r12.h	\
@@ -3540,7 +3110,7 @@ ASN_MODULE_HEADERS=	\
 	AS-Config-v10j0.h	\
 	AS-Config-v1250.h	\
 	AS-Config-v1320.h	\
-	AS-Config-v1430.h	\
+	AS-Config-v14x0.h	\
 	AS-Context.h	\
 	AS-Context-v1130.h	\
 	AS-Context-v1320.h	\

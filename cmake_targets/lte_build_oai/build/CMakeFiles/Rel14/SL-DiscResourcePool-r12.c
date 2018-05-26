@@ -751,8 +751,8 @@ static asn_TYPE_member_t asn_MBR_poolSelection_r12_18[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_poolSelection_r12_tag2el_18[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrpBased-r12 at 10432 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* random-r12 at 10433 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrpBased-r12 at 9254 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* random-r12 at 9255 */
 };
 static asn_CHOICE_specifics_t asn_SPC_poolSelection_r12_specs_18 = {
 	sizeof(struct SL_DiscResourcePool_r12__txParameters_r12__ue_SelectedResourceConfig_r12__poolSelection_r12),
@@ -869,8 +869,8 @@ static ber_tlv_tag_t asn_DEF_ue_SelectedResourceConfig_r12_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ue_SelectedResourceConfig_r12_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolSelection-r12 at 10432 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* txProbability-r12 at 10435 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolSelection-r12 at 9254 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* txProbability-r12 at 9257 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ue_SelectedResourceConfig_r12_specs_17 = {
 	sizeof(struct SL_DiscResourcePool_r12__txParameters_r12__ue_SelectedResourceConfig_r12),
@@ -936,8 +936,8 @@ static ber_tlv_tag_t asn_DEF_txParameters_r12_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_txParameters_r12_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* txParametersGeneral-r12 at 10429 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-SelectedResourceConfig-r12 at 10434 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* txParametersGeneral-r12 at 9251 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-SelectedResourceConfig-r12 at 9256 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_txParameters_r12_specs_15 = {
 	sizeof(struct SL_DiscResourcePool_r12__txParameters_r12),
@@ -1004,8 +1004,8 @@ static ber_tlv_tag_t asn_DEF_rxParameters_r12_tags_26[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_rxParameters_r12_tag2el_26[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tdd-Config-r12 at 10439 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* syncConfigIndex-r12 at 10440 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tdd-Config-r12 at 9261 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* syncConfigIndex-r12 at 9262 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_rxParameters_r12_specs_26 = {
 	sizeof(struct SL_DiscResourcePool_r12__rxParameters_r12),
@@ -1128,8 +1128,8 @@ static asn_TYPE_member_t asn_MBR_discPeriod_v1310_31[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_discPeriod_v1310_tag2el_31[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 10444 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 10445 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 9266 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 9267 */
 };
 static asn_CHOICE_specifics_t asn_SPC_discPeriod_v1310_specs_31 = {
 	sizeof(struct SL_DiscResourcePool_r12__ext1__discPeriod_v1310),
@@ -1184,7 +1184,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_44[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_44[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* physCellId-r13 at 10452 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* physCellId-r13 at 9274 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_44 = {
 	sizeof(struct SL_DiscResourcePool_r12__ext1__rxParamsAddNeighFreq_r13__setup),
@@ -1245,8 +1245,8 @@ static asn_TYPE_member_t asn_MBR_rxParamsAddNeighFreq_r13_42[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_rxParamsAddNeighFreq_r13_tag2el_42[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 10449 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 10452 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 9271 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 9274 */
 };
 static asn_CHOICE_specifics_t asn_SPC_rxParamsAddNeighFreq_r13_specs_42 = {
 	sizeof(struct SL_DiscResourcePool_r12__ext1__rxParamsAddNeighFreq_r13),
@@ -1377,9 +1377,9 @@ static ber_tlv_tag_t asn_DEF_freqInfo_tags_53[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_freqInfo_tag2el_53[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq at 10462 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Bandwidth at 10463 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* additionalSpectrumEmission at 10466 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-CarrierFreq at 9284 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ul-Bandwidth at 9285 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* additionalSpectrumEmission at 9288 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_freqInfo_specs_53 = {
 	sizeof(struct SL_DiscResourcePool_r12__ext1__txParamsAddNeighFreq_r13__setup__freqInfo),
@@ -1491,13 +1491,13 @@ static ber_tlv_tag_t asn_DEF_setup_tags_48[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_48[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r13 at 10457 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p-Max at 10458 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* tdd-Config-r13 at 10459 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* tdd-Config-v1130 at 10460 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* freqInfo at 10462 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* referenceSignalPower at 10467 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* syncConfigIndex-r13 at 10468 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r13 at 9279 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p-Max at 9280 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* tdd-Config-r13 at 9281 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* tdd-Config-v1130 at 9282 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* freqInfo at 9284 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* referenceSignalPower at 9289 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* syncConfigIndex-r13 at 9290 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_48 = {
 	sizeof(struct SL_DiscResourcePool_r12__ext1__txParamsAddNeighFreq_r13__setup),
@@ -1559,8 +1559,8 @@ static asn_TYPE_member_t asn_MBR_txParamsAddNeighFreq_r13_46[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_txParamsAddNeighFreq_r13_tag2el_46[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 10455 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 10457 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 9277 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 9279 */
 };
 static asn_CHOICE_specifics_t asn_SPC_txParamsAddNeighFreq_r13_specs_46 = {
 	sizeof(struct SL_DiscResourcePool_r12__ext1__txParamsAddNeighFreq_r13),
@@ -1634,9 +1634,9 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_30[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_30[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discPeriod-v1310 at 10444 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rxParamsAddNeighFreq-r13 at 10449 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* txParamsAddNeighFreq-r13 at 10455 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discPeriod-v1310 at 9266 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rxParamsAddNeighFreq-r13 at 9271 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* txParamsAddNeighFreq-r13 at 9277 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_30 = {
 	sizeof(struct SL_DiscResourcePool_r12__ext1),
@@ -1756,14 +1756,14 @@ static ber_tlv_tag_t asn_DEF_SL_DiscResourcePool_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_DiscResourcePool_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cp-Len-r12 at 10422 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discPeriod-r12 at 10423 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* numRetx-r12 at 10425 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* numRepetition-r12 at 10426 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* tf-ResourceConfig-r12 at 10427 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* txParameters-r12 at 10429 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* rxParameters-r12 at 10439 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext1 at 10447 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cp-Len-r12 at 9244 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discPeriod-r12 at 9245 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* numRetx-r12 at 9247 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* numRepetition-r12 at 9248 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* tf-ResourceConfig-r12 at 9249 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* txParameters-r12 at 9251 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* rxParameters-r12 at 9261 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ext1 at 9269 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_DiscResourcePool_r12_specs_1 = {
 	sizeof(struct SL_DiscResourcePool_r12),

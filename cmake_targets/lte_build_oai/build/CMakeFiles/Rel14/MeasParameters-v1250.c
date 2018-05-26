@@ -1625,15 +1625,15 @@ static ber_tlv_tag_t asn_DEF_MeasParameters_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasParameters_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* timerT312-r12 at 9376 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* alternativeTimeToTrigger-r12 at 9377 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* incMonEUTRA-r12 at 9378 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* incMonUTRA-r12 at 9379 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* extendedMaxMeasId-r12 at 9380 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* extendedRSRQ-LowerRange-r12 at 9381 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* rsrq-OnAllSymbols-r12 at 9382 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* crs-DiscoverySignalsMeas-r12 at 9383 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* csi-RS-DiscoverySignalsMeas-r12 at 9384 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* timerT312-r12 at 8425 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* alternativeTimeToTrigger-r12 at 8426 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* incMonEUTRA-r12 at 8427 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* incMonUTRA-r12 at 8428 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* extendedMaxMeasId-r12 at 8429 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* extendedRSRQ-LowerRange-r12 at 8430 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* rsrq-OnAllSymbols-r12 at 8431 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* crs-DiscoverySignalsMeas-r12 at 8432 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* csi-RS-DiscoverySignalsMeas-r12 at 8433 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasParameters_v1250_specs_1 = {
 	sizeof(struct MeasParameters_v1250),

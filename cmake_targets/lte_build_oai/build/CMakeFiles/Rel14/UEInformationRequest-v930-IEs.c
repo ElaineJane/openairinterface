@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_UEInformationRequest_v930_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UEInformationRequest_v930_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* lateNonCriticalExtension at 2263 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 2264 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* lateNonCriticalExtension at 2059 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 2060 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UEInformationRequest_v930_IEs_specs_1 = {
 	sizeof(struct UEInformationRequest_v930_IEs),

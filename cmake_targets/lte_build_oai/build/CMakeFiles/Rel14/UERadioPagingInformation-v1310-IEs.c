@@ -158,8 +158,8 @@ static ber_tlv_tag_t asn_DEF_UERadioPagingInformation_v1310_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UERadioPagingInformation_v1310_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* supportedBandListEUTRAForPaging-r13 at 13535 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 13536 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* supportedBandListEUTRAForPaging-r13 at 11740 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 11741 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UERadioPagingInformation_v1310_IEs_specs_1 = {
 	sizeof(struct UERadioPagingInformation_v1310_IEs),

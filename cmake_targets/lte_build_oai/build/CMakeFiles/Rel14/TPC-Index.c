@@ -93,8 +93,8 @@ static asn_TYPE_member_t asn_MBR_TPC_Index_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_TPC_Index_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* indexOfFormat3 at 6604 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* indexOfFormat3A at 6605 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* indexOfFormat3 at 5973 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* indexOfFormat3A at 5974 */
 };
 static asn_CHOICE_specifics_t asn_SPC_TPC_Index_specs_1 = {
 	sizeof(struct TPC_Index),

@@ -12,11 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "SL-Priority-r13.h"
-#include "SL-TypeTxSync-r14.h"
 #include <NULL.h>
 #include "C-RNTI.h"
-#include "MAC-MainConfigSL-r12.h"
 #include <NativeInteger.h>
 #include "LogicalChGroupInfoList-r13.h"
 #include <constr_SEQUENCE.h>
@@ -40,7 +37,7 @@ typedef enum SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup_PR {
 
 /* Forward declarations */
 struct SL_InterFreqInfoListV2X_r14;
-struct SL_CBR_CommonTxConfigList_r14;
+struct MAC_MainConfigSL_r12;
 struct SL_CommResourcePoolV2X_r14;
 struct SL_TxPoolToReleaseListV2X_r14;
 struct SL_TxPoolToAddModListV2X_r14;
@@ -56,8 +53,8 @@ typedef struct SL_V2X_ConfigDedicated_r14 {
 				SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup_PR present;
 				union SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup_u {
 					struct SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup__scheduled_r14 {
-						C_RNTI_t	 sl_V_RNTI_r14;
-						MAC_MainConfigSL_r12_t	 mac_MainConfig_r14;
+						C_RNTI_t	 sl_D_RNTI_r14;
+						struct MAC_MainConfigSL_r12	*mac_MainConfig_r14	/* OPTIONAL */;
 						struct SL_CommResourcePoolV2X_r14	*v2x_SchedulingPool_r14	/* OPTIONAL */;
 						long	*mcs_r14	/* OPTIONAL */;
 						LogicalChGroupInfoList_r13_t	 logicalChGroupInfoList_r14;
@@ -89,9 +86,6 @@ typedef struct SL_V2X_ConfigDedicated_r14 {
 		asn_struct_ctx_t _asn_ctx;
 	} *commTxResources_r14;
 	struct SL_InterFreqInfoListV2X_r14	*v2x_InterFreqInfoList_r14	/* OPTIONAL */;
-	SL_Priority_r13_t	*thresSL_TxPrioritization_r14	/* OPTIONAL */;
-	SL_TypeTxSync_r14_t	*typeTxSync_r14	/* OPTIONAL */;
-	struct SL_CBR_CommonTxConfigList_r14	*cbr_DedicatedTxConfigList_r14	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -110,7 +104,7 @@ extern asn_TYPE_descriptor_t asn_DEF_SL_V2X_ConfigDedicated_r14;
 
 /* Referred external types */
 #include "SL-InterFreqInfoListV2X-r14.h"
-#include "SL-CBR-CommonTxConfigList-r14.h"
+#include "MAC-MainConfigSL-r12.h"
 #include "SL-CommResourcePoolV2X-r14.h"
 #include "SL-TxPoolToReleaseListV2X-r14.h"
 #include "SL-TxPoolToAddModListV2X-r14.h"

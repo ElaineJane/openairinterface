@@ -193,7 +193,7 @@ static ber_tlv_tag_t asn_DEF_Other_Parameters_v11d0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_Other_Parameters_v11d0_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* inDeviceCoexInd-UL-CA-r11 at 9583 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* inDeviceCoexInd-UL-CA-r11 at 8620 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_Other_Parameters_v11d0_specs_1 = {
 	sizeof(struct Other_Parameters_v11d0),

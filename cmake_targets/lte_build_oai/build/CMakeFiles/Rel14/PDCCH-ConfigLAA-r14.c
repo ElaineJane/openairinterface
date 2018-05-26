@@ -8,7 +8,7 @@
 #include "PDCCH-ConfigLAA-r14.h"
 
 static int
-maxNumberOfSchedSubframes_Format0B_r14_2_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+maxNumberOfSchedSubframes_Format0B_r14_5_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -20,7 +20,7 @@ maxNumberOfSchedSubframes_Format0B_r14_2_constraint(asn_TYPE_descriptor_t *td, c
  * so here we adjust the DEF accordingly.
  */
 static void
-maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -40,93 +40,93 @@ maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(asn_TYPE_descri
 }
 
 static void
-maxNumberOfSchedSubframes_Format0B_r14_2_free(asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format0B_r14_5_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-maxNumberOfSchedSubframes_Format0B_r14_2_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+maxNumberOfSchedSubframes_Format0B_r14_5_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-maxNumberOfSchedSubframes_Format0B_r14_2_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format0B_r14_5_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-maxNumberOfSchedSubframes_Format0B_r14_2_encode_der(asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format0B_r14_5_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-maxNumberOfSchedSubframes_Format0B_r14_2_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format0B_r14_5_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-maxNumberOfSchedSubframes_Format0B_r14_2_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+maxNumberOfSchedSubframes_Format0B_r14_5_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-maxNumberOfSchedSubframes_Format0B_r14_2_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format0B_r14_5_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-maxNumberOfSchedSubframes_Format0B_r14_2_encode_uper(asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format0B_r14_5_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-maxNumberOfSchedSubframes_Format0B_r14_2_encode_aper(asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format0B_r14_5_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-maxNumberOfSchedSubframes_Format0B_r14_2_compare(asn_TYPE_descriptor_t *td1,
+maxNumberOfSchedSubframes_Format0B_r14_5_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td1);
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td2);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td1);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-maxNumberOfSchedSubframes_Format0B_r14_2_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format0B_r14_5_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	maxNumberOfSchedSubframes_Format0B_r14_2_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format0B_r14_5_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-maxNumberOfSchedSubframes_Format4B_r14_6_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+maxNumberOfSchedSubframes_Format4B_r14_12_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -138,7 +138,7 @@ maxNumberOfSchedSubframes_Format4B_r14_6_constraint(asn_TYPE_descriptor_t *td, c
  * so here we adjust the DEF accordingly.
  */
 static void
-maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -158,93 +158,93 @@ maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(asn_TYPE_descri
 }
 
 static void
-maxNumberOfSchedSubframes_Format4B_r14_6_free(asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format4B_r14_12_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-maxNumberOfSchedSubframes_Format4B_r14_6_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+maxNumberOfSchedSubframes_Format4B_r14_12_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-maxNumberOfSchedSubframes_Format4B_r14_6_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format4B_r14_12_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-maxNumberOfSchedSubframes_Format4B_r14_6_encode_der(asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format4B_r14_12_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-maxNumberOfSchedSubframes_Format4B_r14_6_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format4B_r14_12_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-maxNumberOfSchedSubframes_Format4B_r14_6_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+maxNumberOfSchedSubframes_Format4B_r14_12_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-maxNumberOfSchedSubframes_Format4B_r14_6_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format4B_r14_12_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-maxNumberOfSchedSubframes_Format4B_r14_6_encode_uper(asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format4B_r14_12_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-maxNumberOfSchedSubframes_Format4B_r14_6_encode_aper(asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format4B_r14_12_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-maxNumberOfSchedSubframes_Format4B_r14_6_compare(asn_TYPE_descriptor_t *td1,
+maxNumberOfSchedSubframes_Format4B_r14_12_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td1);
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td2);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td1);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-maxNumberOfSchedSubframes_Format4B_r14_6_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+maxNumberOfSchedSubframes_Format4B_r14_12_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	maxNumberOfSchedSubframes_Format4B_r14_6_inherit_TYPE_descriptor(td);
+	maxNumberOfSchedSubframes_Format4B_r14_12_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-skipMonitoringDCI_Format0A_r14_10_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+skipMonitoringDCI_Format0A_r14_16_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -256,7 +256,7 @@ skipMonitoringDCI_Format0A_r14_10_constraint(asn_TYPE_descriptor_t *td, const vo
  * so here we adjust the DEF accordingly.
  */
 static void
-skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -276,93 +276,93 @@ skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(asn_TYPE_descriptor_t 
 }
 
 static void
-skipMonitoringDCI_Format0A_r14_10_free(asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format0A_r14_16_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-skipMonitoringDCI_Format0A_r14_10_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+skipMonitoringDCI_Format0A_r14_16_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-skipMonitoringDCI_Format0A_r14_10_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format0A_r14_16_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-skipMonitoringDCI_Format0A_r14_10_encode_der(asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format0A_r14_16_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-skipMonitoringDCI_Format0A_r14_10_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format0A_r14_16_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-skipMonitoringDCI_Format0A_r14_10_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+skipMonitoringDCI_Format0A_r14_16_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-skipMonitoringDCI_Format0A_r14_10_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format0A_r14_16_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-skipMonitoringDCI_Format0A_r14_10_encode_uper(asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format0A_r14_16_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-skipMonitoringDCI_Format0A_r14_10_encode_aper(asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format0A_r14_16_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-skipMonitoringDCI_Format0A_r14_10_compare(asn_TYPE_descriptor_t *td1,
+skipMonitoringDCI_Format0A_r14_16_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td1);
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td2);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td1);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-skipMonitoringDCI_Format0A_r14_10_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format0A_r14_16_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	skipMonitoringDCI_Format0A_r14_10_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format0A_r14_16_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static int
-skipMonitoringDCI_Format4A_r14_12_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
+skipMonitoringDCI_Format4A_r14_18_constraint(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	/* Replace with underlying type checker */
 	td->check_constraints = asn_DEF_NativeEnumerated.check_constraints;
@@ -374,7 +374,7 @@ skipMonitoringDCI_Format4A_r14_12_constraint(asn_TYPE_descriptor_t *td, const vo
  * so here we adjust the DEF accordingly.
  */
 static void
-skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
+skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(asn_TYPE_descriptor_t *td) {
 	td->free_struct    = asn_DEF_NativeEnumerated.free_struct;
 	td->print_struct   = asn_DEF_NativeEnumerated.print_struct;
 	td->ber_decoder    = asn_DEF_NativeEnumerated.ber_decoder;
@@ -394,330 +394,574 @@ skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(asn_TYPE_descriptor_t 
 }
 
 static void
-skipMonitoringDCI_Format4A_r14_12_free(asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format4A_r14_18_free(asn_TYPE_descriptor_t *td,
 		void *struct_ptr, int contents_only) {
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td);
 	td->free_struct(td, struct_ptr, contents_only);
 }
 
 static int
-skipMonitoringDCI_Format4A_r14_12_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
+skipMonitoringDCI_Format4A_r14_18_print(asn_TYPE_descriptor_t *td, const void *struct_ptr,
 		int ilevel, asn_app_consume_bytes_f *cb, void *app_key) {
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td);
 	return td->print_struct(td, struct_ptr, ilevel, cb, app_key);
 }
 
 static asn_dec_rval_t
-skipMonitoringDCI_Format4A_r14_12_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format4A_r14_18_decode_ber(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const void *bufptr, size_t size, int tag_mode) {
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td);
 	return td->ber_decoder(opt_codec_ctx, td, structure, bufptr, size, tag_mode);
 }
 
 static asn_enc_rval_t
-skipMonitoringDCI_Format4A_r14_12_encode_der(asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format4A_r14_18_encode_der(asn_TYPE_descriptor_t *td,
 		void *structure, int tag_mode, ber_tlv_tag_t tag,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td);
 	return td->der_encoder(td, structure, tag_mode, tag, cb, app_key);
 }
 
 static asn_dec_rval_t
-skipMonitoringDCI_Format4A_r14_12_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format4A_r14_18_decode_xer(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		void **structure, const char *opt_mname, const void *bufptr, size_t size) {
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td);
 	return td->xer_decoder(opt_codec_ctx, td, structure, opt_mname, bufptr, size);
 }
 
 static asn_enc_rval_t
-skipMonitoringDCI_Format4A_r14_12_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
+skipMonitoringDCI_Format4A_r14_18_encode_xer(asn_TYPE_descriptor_t *td, void *structure,
 		int ilevel, enum xer_encoder_flags_e flags,
 		asn_app_consume_bytes_f *cb, void *app_key) {
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td);
 	return td->xer_encoder(td, structure, ilevel, flags, cb, app_key);
 }
 
 static asn_dec_rval_t
-skipMonitoringDCI_Format4A_r14_12_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format4A_r14_18_decode_uper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td);
 	return td->uper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
 static asn_enc_rval_t
-skipMonitoringDCI_Format4A_r14_12_encode_uper(asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format4A_r14_18_encode_uper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td);
 	return td->uper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_enc_rval_t
-skipMonitoringDCI_Format4A_r14_12_encode_aper(asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format4A_r14_18_encode_aper(asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints,
 		void *structure, asn_per_outp_t *per_out) {
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td);
 	return td->aper_encoder(td, constraints, structure, per_out);
 }
 
 static asn_comp_rval_t * 
-skipMonitoringDCI_Format4A_r14_12_compare(asn_TYPE_descriptor_t *td1,
+skipMonitoringDCI_Format4A_r14_18_compare(asn_TYPE_descriptor_t *td1,
 		const void *structure1,
 		asn_TYPE_descriptor_t *td2,
 		const void *structure2) {
 	asn_comp_rval_t * res  = NULL;
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td1);
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td2);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td1);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td2);
 	res = td1->compare(td1, structure1, td2, structure2);
 	return res;
 }
 
 static asn_dec_rval_t
-skipMonitoringDCI_Format4A_r14_12_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
+skipMonitoringDCI_Format4A_r14_18_decode_aper(asn_codec_ctx_t *opt_codec_ctx, asn_TYPE_descriptor_t *td,
 		asn_per_constraints_t *constraints, void **structure, asn_per_data_t *per_data) {
-	skipMonitoringDCI_Format4A_r14_12_inherit_TYPE_descriptor(td);
+	skipMonitoringDCI_Format4A_r14_18_inherit_TYPE_descriptor(td);
 	return td->aper_decoder(opt_codec_ctx, td, constraints, structure, per_data);
 }
 
-static asn_per_constraints_t asn_PER_type_maxNumberOfSchedSubframes_Format0B_r14_constr_2 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_maxNumberOfSchedSubframes_Format0B_r14_constr_5 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_maxNumberOfSchedSubframes_Format4B_r14_constr_6 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_enableMonitoringDCI_Format0B_r14_constr_2 GCC_NOTUSED = {
+	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
+	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
+	0, 0	/* No PER value map */
+};
+static asn_per_constraints_t asn_PER_type_maxNumberOfSchedSubframes_Format4B_r14_constr_12 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_skipMonitoringDCI_Format0A_r14_constr_10 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_enableMonitoringDCI_Format4B_r14_constr_9 GCC_NOTUSED = {
+	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
+	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
+	0, 0	/* No PER value map */
+};
+static asn_per_constraints_t asn_PER_type_skipMonitoringDCI_Format0A_r14_constr_16 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_type_skipMonitoringDCI_Format4A_r14_constr_12 GCC_NOTUSED = {
+static asn_per_constraints_t asn_PER_type_skipMonitoringDCI_Format4A_r14_constr_18 GCC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  0,  0 }	/* (0..0) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_INTEGER_enum_map_t asn_MAP_maxNumberOfSchedSubframes_Format0B_r14_value2enum_2[] = {
+static asn_INTEGER_enum_map_t asn_MAP_maxNumberOfSchedSubframes_Format0B_r14_value2enum_5[] = {
 	{ 0,	3,	"sf2" },
 	{ 1,	3,	"sf3" },
 	{ 2,	3,	"sf4" }
 };
-static unsigned int asn_MAP_maxNumberOfSchedSubframes_Format0B_r14_enum2value_2[] = {
+static unsigned int asn_MAP_maxNumberOfSchedSubframes_Format0B_r14_enum2value_5[] = {
 	0,	/* sf2(0) */
 	1,	/* sf3(1) */
 	2	/* sf4(2) */
 };
-static asn_INTEGER_specifics_t asn_SPC_maxNumberOfSchedSubframes_Format0B_r14_specs_2 = {
-	asn_MAP_maxNumberOfSchedSubframes_Format0B_r14_value2enum_2,	/* "tag" => N; sorted by tag */
-	asn_MAP_maxNumberOfSchedSubframes_Format0B_r14_enum2value_2,	/* N => "tag"; sorted by N */
+static asn_INTEGER_specifics_t asn_SPC_maxNumberOfSchedSubframes_Format0B_r14_specs_5 = {
+	asn_MAP_maxNumberOfSchedSubframes_Format0B_r14_value2enum_5,	/* "tag" => N; sorted by tag */
+	asn_MAP_maxNumberOfSchedSubframes_Format0B_r14_enum2value_5,	/* N => "tag"; sorted by N */
 	3,	/* Number of elements in the maps */
 	0,	/* Enumeration is not extensible */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static ber_tlv_tag_t asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_2[] = {
+static ber_tlv_tag_t asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_5[] = {
 	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
 static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_2 = {
+asn_TYPE_descriptor_t asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_5 = {
 	"maxNumberOfSchedSubframes-Format0B-r14",
 	"maxNumberOfSchedSubframes-Format0B-r14",
-	maxNumberOfSchedSubframes_Format0B_r14_2_free,
-	maxNumberOfSchedSubframes_Format0B_r14_2_print,
-	maxNumberOfSchedSubframes_Format0B_r14_2_constraint,
-	maxNumberOfSchedSubframes_Format0B_r14_2_decode_ber,
-	maxNumberOfSchedSubframes_Format0B_r14_2_encode_der,
-	maxNumberOfSchedSubframes_Format0B_r14_2_decode_xer,
-	maxNumberOfSchedSubframes_Format0B_r14_2_encode_xer,
-	maxNumberOfSchedSubframes_Format0B_r14_2_decode_uper,
-	maxNumberOfSchedSubframes_Format0B_r14_2_encode_uper,
-	maxNumberOfSchedSubframes_Format0B_r14_2_decode_aper,
-	maxNumberOfSchedSubframes_Format0B_r14_2_encode_aper,
-	maxNumberOfSchedSubframes_Format0B_r14_2_compare,
+	maxNumberOfSchedSubframes_Format0B_r14_5_free,
+	maxNumberOfSchedSubframes_Format0B_r14_5_print,
+	maxNumberOfSchedSubframes_Format0B_r14_5_constraint,
+	maxNumberOfSchedSubframes_Format0B_r14_5_decode_ber,
+	maxNumberOfSchedSubframes_Format0B_r14_5_encode_der,
+	maxNumberOfSchedSubframes_Format0B_r14_5_decode_xer,
+	maxNumberOfSchedSubframes_Format0B_r14_5_encode_xer,
+	maxNumberOfSchedSubframes_Format0B_r14_5_decode_uper,
+	maxNumberOfSchedSubframes_Format0B_r14_5_encode_uper,
+	maxNumberOfSchedSubframes_Format0B_r14_5_decode_aper,
+	maxNumberOfSchedSubframes_Format0B_r14_5_encode_aper,
+	maxNumberOfSchedSubframes_Format0B_r14_5_compare,
 	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_2,
-	sizeof(asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_2)
-		/sizeof(asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_2[0]) - 1, /* 1 */
-	asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_2,	/* Same as above */
-	sizeof(asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_2)
-		/sizeof(asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_2[0]), /* 2 */
-	&asn_PER_type_maxNumberOfSchedSubframes_Format0B_r14_constr_2,
+	asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_5,
+	sizeof(asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_5)
+		/sizeof(asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_5[0]) - 1, /* 1 */
+	asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_5,	/* Same as above */
+	sizeof(asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_5)
+		/sizeof(asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_tags_5[0]), /* 2 */
+	&asn_PER_type_maxNumberOfSchedSubframes_Format0B_r14_constr_5,
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_maxNumberOfSchedSubframes_Format0B_r14_specs_2	/* Additional specs */
+	&asn_SPC_maxNumberOfSchedSubframes_Format0B_r14_specs_5	/* Additional specs */
 };
 
-static asn_INTEGER_enum_map_t asn_MAP_maxNumberOfSchedSubframes_Format4B_r14_value2enum_6[] = {
-	{ 0,	3,	"sf2" },
-	{ 1,	3,	"sf3" },
-	{ 2,	3,	"sf4" }
-};
-static unsigned int asn_MAP_maxNumberOfSchedSubframes_Format4B_r14_enum2value_6[] = {
-	0,	/* sf2(0) */
-	1,	/* sf3(1) */
-	2	/* sf4(2) */
-};
-static asn_INTEGER_specifics_t asn_SPC_maxNumberOfSchedSubframes_Format4B_r14_specs_6 = {
-	asn_MAP_maxNumberOfSchedSubframes_Format4B_r14_value2enum_6,	/* "tag" => N; sorted by tag */
-	asn_MAP_maxNumberOfSchedSubframes_Format4B_r14_enum2value_6,	/* N => "tag"; sorted by N */
-	3,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_6[] = {
-	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_6 = {
-	"maxNumberOfSchedSubframes-Format4B-r14",
-	"maxNumberOfSchedSubframes-Format4B-r14",
-	maxNumberOfSchedSubframes_Format4B_r14_6_free,
-	maxNumberOfSchedSubframes_Format4B_r14_6_print,
-	maxNumberOfSchedSubframes_Format4B_r14_6_constraint,
-	maxNumberOfSchedSubframes_Format4B_r14_6_decode_ber,
-	maxNumberOfSchedSubframes_Format4B_r14_6_encode_der,
-	maxNumberOfSchedSubframes_Format4B_r14_6_decode_xer,
-	maxNumberOfSchedSubframes_Format4B_r14_6_encode_xer,
-	maxNumberOfSchedSubframes_Format4B_r14_6_decode_uper,
-	maxNumberOfSchedSubframes_Format4B_r14_6_encode_uper,
-	maxNumberOfSchedSubframes_Format4B_r14_6_decode_aper,
-	maxNumberOfSchedSubframes_Format4B_r14_6_encode_aper,
-	maxNumberOfSchedSubframes_Format4B_r14_6_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_6,
-	sizeof(asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_6)
-		/sizeof(asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_6[0]) - 1, /* 1 */
-	asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_6,	/* Same as above */
-	sizeof(asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_6)
-		/sizeof(asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_6[0]), /* 2 */
-	&asn_PER_type_maxNumberOfSchedSubframes_Format4B_r14_constr_6,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_maxNumberOfSchedSubframes_Format4B_r14_specs_6	/* Additional specs */
-};
-
-static asn_INTEGER_enum_map_t asn_MAP_skipMonitoringDCI_Format0A_r14_value2enum_10[] = {
-	{ 0,	4,	"true" }
-};
-static unsigned int asn_MAP_skipMonitoringDCI_Format0A_r14_enum2value_10[] = {
-	0	/* true(0) */
-};
-static asn_INTEGER_specifics_t asn_SPC_skipMonitoringDCI_Format0A_r14_specs_10 = {
-	asn_MAP_skipMonitoringDCI_Format0A_r14_value2enum_10,	/* "tag" => N; sorted by tag */
-	asn_MAP_skipMonitoringDCI_Format0A_r14_enum2value_10,	/* N => "tag"; sorted by N */
-	1,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_skipMonitoringDCI_Format0A_r14_tags_10[] = {
-	(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_skipMonitoringDCI_Format0A_r14_10 = {
-	"skipMonitoringDCI-Format0A-r14",
-	"skipMonitoringDCI-Format0A-r14",
-	skipMonitoringDCI_Format0A_r14_10_free,
-	skipMonitoringDCI_Format0A_r14_10_print,
-	skipMonitoringDCI_Format0A_r14_10_constraint,
-	skipMonitoringDCI_Format0A_r14_10_decode_ber,
-	skipMonitoringDCI_Format0A_r14_10_encode_der,
-	skipMonitoringDCI_Format0A_r14_10_decode_xer,
-	skipMonitoringDCI_Format0A_r14_10_encode_xer,
-	skipMonitoringDCI_Format0A_r14_10_decode_uper,
-	skipMonitoringDCI_Format0A_r14_10_encode_uper,
-	skipMonitoringDCI_Format0A_r14_10_decode_aper,
-	skipMonitoringDCI_Format0A_r14_10_encode_aper,
-	skipMonitoringDCI_Format0A_r14_10_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_skipMonitoringDCI_Format0A_r14_tags_10,
-	sizeof(asn_DEF_skipMonitoringDCI_Format0A_r14_tags_10)
-		/sizeof(asn_DEF_skipMonitoringDCI_Format0A_r14_tags_10[0]) - 1, /* 1 */
-	asn_DEF_skipMonitoringDCI_Format0A_r14_tags_10,	/* Same as above */
-	sizeof(asn_DEF_skipMonitoringDCI_Format0A_r14_tags_10)
-		/sizeof(asn_DEF_skipMonitoringDCI_Format0A_r14_tags_10[0]), /* 2 */
-	&asn_PER_type_skipMonitoringDCI_Format0A_r14_constr_10,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_skipMonitoringDCI_Format0A_r14_specs_10	/* Additional specs */
-};
-
-static asn_INTEGER_enum_map_t asn_MAP_skipMonitoringDCI_Format4A_r14_value2enum_12[] = {
-	{ 0,	4,	"true" }
-};
-static unsigned int asn_MAP_skipMonitoringDCI_Format4A_r14_enum2value_12[] = {
-	0	/* true(0) */
-};
-static asn_INTEGER_specifics_t asn_SPC_skipMonitoringDCI_Format4A_r14_specs_12 = {
-	asn_MAP_skipMonitoringDCI_Format4A_r14_value2enum_12,	/* "tag" => N; sorted by tag */
-	asn_MAP_skipMonitoringDCI_Format4A_r14_enum2value_12,	/* N => "tag"; sorted by N */
-	1,	/* Number of elements in the maps */
-	0,	/* Enumeration is not extensible */
-	1,	/* Strict enumeration */
-	0,	/* Native long size */
-	0
-};
-static ber_tlv_tag_t asn_DEF_skipMonitoringDCI_Format4A_r14_tags_12[] = {
-	(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_skipMonitoringDCI_Format4A_r14_12 = {
-	"skipMonitoringDCI-Format4A-r14",
-	"skipMonitoringDCI-Format4A-r14",
-	skipMonitoringDCI_Format4A_r14_12_free,
-	skipMonitoringDCI_Format4A_r14_12_print,
-	skipMonitoringDCI_Format4A_r14_12_constraint,
-	skipMonitoringDCI_Format4A_r14_12_decode_ber,
-	skipMonitoringDCI_Format4A_r14_12_encode_der,
-	skipMonitoringDCI_Format4A_r14_12_decode_xer,
-	skipMonitoringDCI_Format4A_r14_12_encode_xer,
-	skipMonitoringDCI_Format4A_r14_12_decode_uper,
-	skipMonitoringDCI_Format4A_r14_12_encode_uper,
-	skipMonitoringDCI_Format4A_r14_12_decode_aper,
-	skipMonitoringDCI_Format4A_r14_12_encode_aper,
-	skipMonitoringDCI_Format4A_r14_12_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_skipMonitoringDCI_Format4A_r14_tags_12,
-	sizeof(asn_DEF_skipMonitoringDCI_Format4A_r14_tags_12)
-		/sizeof(asn_DEF_skipMonitoringDCI_Format4A_r14_tags_12[0]) - 1, /* 1 */
-	asn_DEF_skipMonitoringDCI_Format4A_r14_tags_12,	/* Same as above */
-	sizeof(asn_DEF_skipMonitoringDCI_Format4A_r14_tags_12)
-		/sizeof(asn_DEF_skipMonitoringDCI_Format4A_r14_tags_12[0]), /* 2 */
-	&asn_PER_type_skipMonitoringDCI_Format4A_r14_constr_12,
-	0, 0,	/* Defined elsewhere */
-	&asn_SPC_skipMonitoringDCI_Format4A_r14_specs_12	/* Additional specs */
-};
-
-static asn_TYPE_member_t asn_MBR_PDCCH_ConfigLAA_r14_1[] = {
-	{ ATF_POINTER, 8, offsetof(struct PDCCH_ConfigLAA_r14, maxNumberOfSchedSubframes_Format0B_r14),
+static asn_TYPE_member_t asn_MBR_setup_4[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format0B_r14__setup, maxNumberOfSchedSubframes_Format0B_r14),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_2,
+		&asn_DEF_maxNumberOfSchedSubframes_Format0B_r14_5,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"maxNumberOfSchedSubframes-Format0B-r14"
 		},
-	{ ATF_POINTER, 7, offsetof(struct PDCCH_ConfigLAA_r14, maxNumberOfSchedSubframes_Format4B_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
+};
+static ber_tlv_tag_t asn_DEF_setup_tags_4[] = {
+	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* maxNumberOfSchedSubframes-Format0B-r14 at 4194 */
+};
+static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_4 = {
+	sizeof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format0B_r14__setup),
+	offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format0B_r14__setup, _asn_ctx),
+	asn_MAP_setup_tag2el_4,
+	1,	/* Count of tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* Start extensions */
+	-1	/* Stop extensions */
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_setup_4 = {
+	"setup",
+	"setup",
+	SEQUENCE_free,
+	SEQUENCE_print,
+	SEQUENCE_constraint,
+	SEQUENCE_decode_ber,
+	SEQUENCE_encode_der,
+	SEQUENCE_decode_xer,
+	SEQUENCE_encode_xer,
+	SEQUENCE_decode_uper,
+	SEQUENCE_encode_uper,
+	SEQUENCE_decode_aper,
+	SEQUENCE_encode_aper,
+	SEQUENCE_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_setup_tags_4,
+	sizeof(asn_DEF_setup_tags_4)
+		/sizeof(asn_DEF_setup_tags_4[0]) - 1, /* 1 */
+	asn_DEF_setup_tags_4,	/* Same as above */
+	sizeof(asn_DEF_setup_tags_4)
+		/sizeof(asn_DEF_setup_tags_4[0]), /* 2 */
+	0,	/* No PER visible constraints */
+	asn_MBR_setup_4,
+	1,	/* Elements count */
+	&asn_SPC_setup_specs_4	/* Additional specs */
+};
+
+static asn_TYPE_member_t asn_MBR_enableMonitoringDCI_Format0B_r14_2[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format0B_r14, choice.release),
+		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_6,
+		&asn_DEF_NULL,
+		0,	/* Defer constraints checking to the member type */
+		0,	/* No PER visible constraints */
+		0,
+		"release"
+		},
+	{ ATF_NOFLAGS, 0, offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format0B_r14, choice.setup),
+		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
+		0,
+		&asn_DEF_setup_4,
+		0,	/* Defer constraints checking to the member type */
+		0,	/* No PER visible constraints */
+		0,
+		"setup"
+		},
+};
+static asn_TYPE_tag2member_t asn_MAP_enableMonitoringDCI_Format0B_r14_tag2el_2[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4192 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4195 */
+};
+static asn_CHOICE_specifics_t asn_SPC_enableMonitoringDCI_Format0B_r14_specs_2 = {
+	sizeof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format0B_r14),
+	offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format0B_r14, _asn_ctx),
+	offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format0B_r14, present),
+	sizeof(((struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format0B_r14 *)0)->present),
+	asn_MAP_enableMonitoringDCI_Format0B_r14_tag2el_2,
+	2,	/* Count of tags in the map */
+	0,
+	-1	/* Extensions start */
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_enableMonitoringDCI_Format0B_r14_2 = {
+	"enableMonitoringDCI-Format0B-r14",
+	"enableMonitoringDCI-Format0B-r14",
+	CHOICE_free,
+	CHOICE_print,
+	CHOICE_constraint,
+	CHOICE_decode_ber,
+	CHOICE_encode_der,
+	CHOICE_decode_xer,
+	CHOICE_encode_xer,
+	CHOICE_decode_uper,
+	CHOICE_encode_uper,
+	CHOICE_decode_aper,
+	CHOICE_encode_aper,
+	CHOICE_compare,
+	CHOICE_outmost_tag,
+	0,	/* No effective tags (pointer) */
+	0,	/* No effective tags (count) */
+	0,	/* No tags (pointer) */
+	0,	/* No tags (count) */
+	&asn_PER_type_enableMonitoringDCI_Format0B_r14_constr_2,
+	asn_MBR_enableMonitoringDCI_Format0B_r14_2,
+	2,	/* Elements count */
+	&asn_SPC_enableMonitoringDCI_Format0B_r14_specs_2	/* Additional specs */
+};
+
+static asn_INTEGER_enum_map_t asn_MAP_maxNumberOfSchedSubframes_Format4B_r14_value2enum_12[] = {
+	{ 0,	3,	"sf2" },
+	{ 1,	3,	"sf3" },
+	{ 2,	3,	"sf4" }
+};
+static unsigned int asn_MAP_maxNumberOfSchedSubframes_Format4B_r14_enum2value_12[] = {
+	0,	/* sf2(0) */
+	1,	/* sf3(1) */
+	2	/* sf4(2) */
+};
+static asn_INTEGER_specifics_t asn_SPC_maxNumberOfSchedSubframes_Format4B_r14_specs_12 = {
+	asn_MAP_maxNumberOfSchedSubframes_Format4B_r14_value2enum_12,	/* "tag" => N; sorted by tag */
+	asn_MAP_maxNumberOfSchedSubframes_Format4B_r14_enum2value_12,	/* N => "tag"; sorted by N */
+	3,	/* Number of elements in the maps */
+	0,	/* Enumeration is not extensible */
+	1,	/* Strict enumeration */
+	0,	/* Native long size */
+	0
+};
+static ber_tlv_tag_t asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_12[] = {
+	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_12 = {
+	"maxNumberOfSchedSubframes-Format4B-r14",
+	"maxNumberOfSchedSubframes-Format4B-r14",
+	maxNumberOfSchedSubframes_Format4B_r14_12_free,
+	maxNumberOfSchedSubframes_Format4B_r14_12_print,
+	maxNumberOfSchedSubframes_Format4B_r14_12_constraint,
+	maxNumberOfSchedSubframes_Format4B_r14_12_decode_ber,
+	maxNumberOfSchedSubframes_Format4B_r14_12_encode_der,
+	maxNumberOfSchedSubframes_Format4B_r14_12_decode_xer,
+	maxNumberOfSchedSubframes_Format4B_r14_12_encode_xer,
+	maxNumberOfSchedSubframes_Format4B_r14_12_decode_uper,
+	maxNumberOfSchedSubframes_Format4B_r14_12_encode_uper,
+	maxNumberOfSchedSubframes_Format4B_r14_12_decode_aper,
+	maxNumberOfSchedSubframes_Format4B_r14_12_encode_aper,
+	maxNumberOfSchedSubframes_Format4B_r14_12_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_12,
+	sizeof(asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_12)
+		/sizeof(asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_12[0]) - 1, /* 1 */
+	asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_12,	/* Same as above */
+	sizeof(asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_12)
+		/sizeof(asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_tags_12[0]), /* 2 */
+	&asn_PER_type_maxNumberOfSchedSubframes_Format4B_r14_constr_12,
+	0, 0,	/* Defined elsewhere */
+	&asn_SPC_maxNumberOfSchedSubframes_Format4B_r14_specs_12	/* Additional specs */
+};
+
+static asn_TYPE_member_t asn_MBR_setup_11[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format4B_r14__setup, maxNumberOfSchedSubframes_Format4B_r14),
+		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
+		-1,	/* IMPLICIT tag at current level */
+		&asn_DEF_maxNumberOfSchedSubframes_Format4B_r14_12,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
 		"maxNumberOfSchedSubframes-Format4B-r14"
 		},
+};
+static ber_tlv_tag_t asn_DEF_setup_tags_11[] = {
+	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_11[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* maxNumberOfSchedSubframes-Format4B-r14 at 4200 */
+};
+static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_11 = {
+	sizeof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format4B_r14__setup),
+	offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format4B_r14__setup, _asn_ctx),
+	asn_MAP_setup_tag2el_11,
+	1,	/* Count of tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* Start extensions */
+	-1	/* Stop extensions */
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_setup_11 = {
+	"setup",
+	"setup",
+	SEQUENCE_free,
+	SEQUENCE_print,
+	SEQUENCE_constraint,
+	SEQUENCE_decode_ber,
+	SEQUENCE_encode_der,
+	SEQUENCE_decode_xer,
+	SEQUENCE_encode_xer,
+	SEQUENCE_decode_uper,
+	SEQUENCE_encode_uper,
+	SEQUENCE_decode_aper,
+	SEQUENCE_encode_aper,
+	SEQUENCE_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_setup_tags_11,
+	sizeof(asn_DEF_setup_tags_11)
+		/sizeof(asn_DEF_setup_tags_11[0]) - 1, /* 1 */
+	asn_DEF_setup_tags_11,	/* Same as above */
+	sizeof(asn_DEF_setup_tags_11)
+		/sizeof(asn_DEF_setup_tags_11[0]), /* 2 */
+	0,	/* No PER visible constraints */
+	asn_MBR_setup_11,
+	1,	/* Elements count */
+	&asn_SPC_setup_specs_11	/* Additional specs */
+};
+
+static asn_TYPE_member_t asn_MBR_enableMonitoringDCI_Format4B_r14_9[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format4B_r14, choice.release),
+		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
+		-1,	/* IMPLICIT tag at current level */
+		&asn_DEF_NULL,
+		0,	/* Defer constraints checking to the member type */
+		0,	/* No PER visible constraints */
+		0,
+		"release"
+		},
+	{ ATF_NOFLAGS, 0, offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format4B_r14, choice.setup),
+		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
+		0,
+		&asn_DEF_setup_11,
+		0,	/* Defer constraints checking to the member type */
+		0,	/* No PER visible constraints */
+		0,
+		"setup"
+		},
+};
+static asn_TYPE_tag2member_t asn_MAP_enableMonitoringDCI_Format4B_r14_tag2el_9[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4198 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4201 */
+};
+static asn_CHOICE_specifics_t asn_SPC_enableMonitoringDCI_Format4B_r14_specs_9 = {
+	sizeof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format4B_r14),
+	offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format4B_r14, _asn_ctx),
+	offsetof(struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format4B_r14, present),
+	sizeof(((struct PDCCH_ConfigLAA_r14__enableMonitoringDCI_Format4B_r14 *)0)->present),
+	asn_MAP_enableMonitoringDCI_Format4B_r14_tag2el_9,
+	2,	/* Count of tags in the map */
+	0,
+	-1	/* Extensions start */
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_enableMonitoringDCI_Format4B_r14_9 = {
+	"enableMonitoringDCI-Format4B-r14",
+	"enableMonitoringDCI-Format4B-r14",
+	CHOICE_free,
+	CHOICE_print,
+	CHOICE_constraint,
+	CHOICE_decode_ber,
+	CHOICE_encode_der,
+	CHOICE_decode_xer,
+	CHOICE_encode_xer,
+	CHOICE_decode_uper,
+	CHOICE_encode_uper,
+	CHOICE_decode_aper,
+	CHOICE_encode_aper,
+	CHOICE_compare,
+	CHOICE_outmost_tag,
+	0,	/* No effective tags (pointer) */
+	0,	/* No effective tags (count) */
+	0,	/* No tags (pointer) */
+	0,	/* No tags (count) */
+	&asn_PER_type_enableMonitoringDCI_Format4B_r14_constr_9,
+	asn_MBR_enableMonitoringDCI_Format4B_r14_9,
+	2,	/* Elements count */
+	&asn_SPC_enableMonitoringDCI_Format4B_r14_specs_9	/* Additional specs */
+};
+
+static asn_INTEGER_enum_map_t asn_MAP_skipMonitoringDCI_Format0A_r14_value2enum_16[] = {
+	{ 0,	4,	"true" }
+};
+static unsigned int asn_MAP_skipMonitoringDCI_Format0A_r14_enum2value_16[] = {
+	0	/* true(0) */
+};
+static asn_INTEGER_specifics_t asn_SPC_skipMonitoringDCI_Format0A_r14_specs_16 = {
+	asn_MAP_skipMonitoringDCI_Format0A_r14_value2enum_16,	/* "tag" => N; sorted by tag */
+	asn_MAP_skipMonitoringDCI_Format0A_r14_enum2value_16,	/* N => "tag"; sorted by N */
+	1,	/* Number of elements in the maps */
+	0,	/* Enumeration is not extensible */
+	1,	/* Strict enumeration */
+	0,	/* Native long size */
+	0
+};
+static ber_tlv_tag_t asn_DEF_skipMonitoringDCI_Format0A_r14_tags_16[] = {
+	(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_skipMonitoringDCI_Format0A_r14_16 = {
+	"skipMonitoringDCI-Format0A-r14",
+	"skipMonitoringDCI-Format0A-r14",
+	skipMonitoringDCI_Format0A_r14_16_free,
+	skipMonitoringDCI_Format0A_r14_16_print,
+	skipMonitoringDCI_Format0A_r14_16_constraint,
+	skipMonitoringDCI_Format0A_r14_16_decode_ber,
+	skipMonitoringDCI_Format0A_r14_16_encode_der,
+	skipMonitoringDCI_Format0A_r14_16_decode_xer,
+	skipMonitoringDCI_Format0A_r14_16_encode_xer,
+	skipMonitoringDCI_Format0A_r14_16_decode_uper,
+	skipMonitoringDCI_Format0A_r14_16_encode_uper,
+	skipMonitoringDCI_Format0A_r14_16_decode_aper,
+	skipMonitoringDCI_Format0A_r14_16_encode_aper,
+	skipMonitoringDCI_Format0A_r14_16_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_skipMonitoringDCI_Format0A_r14_tags_16,
+	sizeof(asn_DEF_skipMonitoringDCI_Format0A_r14_tags_16)
+		/sizeof(asn_DEF_skipMonitoringDCI_Format0A_r14_tags_16[0]) - 1, /* 1 */
+	asn_DEF_skipMonitoringDCI_Format0A_r14_tags_16,	/* Same as above */
+	sizeof(asn_DEF_skipMonitoringDCI_Format0A_r14_tags_16)
+		/sizeof(asn_DEF_skipMonitoringDCI_Format0A_r14_tags_16[0]), /* 2 */
+	&asn_PER_type_skipMonitoringDCI_Format0A_r14_constr_16,
+	0, 0,	/* Defined elsewhere */
+	&asn_SPC_skipMonitoringDCI_Format0A_r14_specs_16	/* Additional specs */
+};
+
+static asn_INTEGER_enum_map_t asn_MAP_skipMonitoringDCI_Format4A_r14_value2enum_18[] = {
+	{ 0,	4,	"true" }
+};
+static unsigned int asn_MAP_skipMonitoringDCI_Format4A_r14_enum2value_18[] = {
+	0	/* true(0) */
+};
+static asn_INTEGER_specifics_t asn_SPC_skipMonitoringDCI_Format4A_r14_specs_18 = {
+	asn_MAP_skipMonitoringDCI_Format4A_r14_value2enum_18,	/* "tag" => N; sorted by tag */
+	asn_MAP_skipMonitoringDCI_Format4A_r14_enum2value_18,	/* N => "tag"; sorted by N */
+	1,	/* Number of elements in the maps */
+	0,	/* Enumeration is not extensible */
+	1,	/* Strict enumeration */
+	0,	/* Native long size */
+	0
+};
+static ber_tlv_tag_t asn_DEF_skipMonitoringDCI_Format4A_r14_tags_18[] = {
+	(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_skipMonitoringDCI_Format4A_r14_18 = {
+	"skipMonitoringDCI-Format4A-r14",
+	"skipMonitoringDCI-Format4A-r14",
+	skipMonitoringDCI_Format4A_r14_18_free,
+	skipMonitoringDCI_Format4A_r14_18_print,
+	skipMonitoringDCI_Format4A_r14_18_constraint,
+	skipMonitoringDCI_Format4A_r14_18_decode_ber,
+	skipMonitoringDCI_Format4A_r14_18_encode_der,
+	skipMonitoringDCI_Format4A_r14_18_decode_xer,
+	skipMonitoringDCI_Format4A_r14_18_encode_xer,
+	skipMonitoringDCI_Format4A_r14_18_decode_uper,
+	skipMonitoringDCI_Format4A_r14_18_encode_uper,
+	skipMonitoringDCI_Format4A_r14_18_decode_aper,
+	skipMonitoringDCI_Format4A_r14_18_encode_aper,
+	skipMonitoringDCI_Format4A_r14_18_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_skipMonitoringDCI_Format4A_r14_tags_18,
+	sizeof(asn_DEF_skipMonitoringDCI_Format4A_r14_tags_18)
+		/sizeof(asn_DEF_skipMonitoringDCI_Format4A_r14_tags_18[0]) - 1, /* 1 */
+	asn_DEF_skipMonitoringDCI_Format4A_r14_tags_18,	/* Same as above */
+	sizeof(asn_DEF_skipMonitoringDCI_Format4A_r14_tags_18)
+		/sizeof(asn_DEF_skipMonitoringDCI_Format4A_r14_tags_18[0]), /* 2 */
+	&asn_PER_type_skipMonitoringDCI_Format4A_r14_constr_18,
+	0, 0,	/* Defined elsewhere */
+	&asn_SPC_skipMonitoringDCI_Format4A_r14_specs_18	/* Additional specs */
+};
+
+static asn_TYPE_member_t asn_MBR_PDCCH_ConfigLAA_r14_1[] = {
+	{ ATF_POINTER, 8, offsetof(struct PDCCH_ConfigLAA_r14, enableMonitoringDCI_Format0B_r14),
+		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
+		+1,	/* EXPLICIT tag at current level */
+		&asn_DEF_enableMonitoringDCI_Format0B_r14_2,
+		0,	/* Defer constraints checking to the member type */
+		0,	/* No PER visible constraints */
+		0,
+		"enableMonitoringDCI-Format0B-r14"
+		},
+	{ ATF_POINTER, 7, offsetof(struct PDCCH_ConfigLAA_r14, enableMonitoringDCI_Format4B_r14),
+		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
+		+1,	/* EXPLICIT tag at current level */
+		&asn_DEF_enableMonitoringDCI_Format4B_r14_9,
+		0,	/* Defer constraints checking to the member type */
+		0,	/* No PER visible constraints */
+		0,
+		"enableMonitoringDCI-Format4B-r14"
+		},
 	{ ATF_POINTER, 6, offsetof(struct PDCCH_ConfigLAA_r14, skipMonitoringDCI_Format0A_r14),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_skipMonitoringDCI_Format0A_r14_10,
+		&asn_DEF_skipMonitoringDCI_Format0A_r14_16,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -726,7 +970,7 @@ static asn_TYPE_member_t asn_MBR_PDCCH_ConfigLAA_r14_1[] = {
 	{ ATF_POINTER, 5, offsetof(struct PDCCH_ConfigLAA_r14, skipMonitoringDCI_Format4A_r14),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_skipMonitoringDCI_Format4A_r14_12,
+		&asn_DEF_skipMonitoringDCI_Format4A_r14_18,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -774,14 +1018,14 @@ static ber_tlv_tag_t asn_DEF_PDCCH_ConfigLAA_r14_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PDCCH_ConfigLAA_r14_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* maxNumberOfSchedSubframes-Format0B-r14 at 4648 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* maxNumberOfSchedSubframes-Format4B-r14 at 4649 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* skipMonitoringDCI-Format0A-r14 at 4650 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* skipMonitoringDCI-Format4A-r14 at 4651 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* pdcch-CandidateReductions-Format0A-r14 at 4653 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pdcch-CandidateReductions-Format4A-r14 at 4655 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* pdcch-CandidateReductions-Format0B-r14 at 4657 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* pdcch-CandidateReductions-Format4B-r14 at 4659 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* enableMonitoringDCI-Format0B-r14 at 4192 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* enableMonitoringDCI-Format4B-r14 at 4198 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* skipMonitoringDCI-Format0A-r14 at 4203 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* skipMonitoringDCI-Format4A-r14 at 4204 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* pdcch-CandidateReductions-Format0A-r14 at 4206 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pdcch-CandidateReductions-Format4A-r14 at 4208 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* pdcch-CandidateReductions-Format0B-r14 at 4210 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* pdcch-CandidateReductions-Format4B-r14 at 4212 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PDCCH_ConfigLAA_r14_specs_1 = {
 	sizeof(struct PDCCH_ConfigLAA_r14),

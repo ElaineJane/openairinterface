@@ -276,10 +276,10 @@ static ber_tlv_tag_t asn_DEF_geran_tags_12[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_geran_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId at 733 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* carrierFreq at 734 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* networkControlOrder at 735 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* systemInformation at 736 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId at 686 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* carrierFreq at 687 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* networkControlOrder at 688 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* systemInformation at 689 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_geran_specs_12 = {
 	sizeof(struct CellChangeOrder__targetRAT_Type__geran),
@@ -332,7 +332,7 @@ static asn_TYPE_member_t asn_MBR_targetRAT_Type_11[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_targetRAT_Type_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* geran at 733 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* geran at 686 */
 };
 static asn_CHOICE_specifics_t asn_SPC_targetRAT_Type_specs_11 = {
 	sizeof(struct CellChangeOrder__targetRAT_Type),
@@ -395,8 +395,8 @@ static ber_tlv_tag_t asn_DEF_CellChangeOrder_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CellChangeOrder_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* t304 at 729 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* targetRAT-Type at 737 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* t304 at 682 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* targetRAT-Type at 690 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CellChangeOrder_specs_1 = {
 	sizeof(struct CellChangeOrder),

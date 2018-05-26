@@ -263,7 +263,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_27[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_27[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* n1PUCCH-AN-PersistentListP1-r10 at 6491 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* n1PUCCH-AN-PersistentListP1-r10 at 5884 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_27 = {
 	sizeof(struct SPS_ConfigDL__setup__ext1__twoAntennaPortActivated_r10__setup),
@@ -324,8 +324,8 @@ static asn_TYPE_member_t asn_MBR_twoAntennaPortActivated_r10_25[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_twoAntennaPortActivated_r10_tag2el_25[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6488 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6491 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5881 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5884 */
 };
 static asn_CHOICE_specifics_t asn_SPC_twoAntennaPortActivated_r10_specs_25 = {
 	sizeof(struct SPS_ConfigDL__setup__ext1__twoAntennaPortActivated_r10),
@@ -381,7 +381,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_24[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_24[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* twoAntennaPortActivated-r10 at 6488 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* twoAntennaPortActivated-r10 at 5881 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_24 = {
 	sizeof(struct SPS_ConfigDL__setup__ext1),
@@ -466,10 +466,10 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* semiPersistSchedIntervalDL at 6480 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* numberOfConfSPS-Processes at 6484 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* n1PUCCH-AN-PersistentList at 6485 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 6492 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* semiPersistSchedIntervalDL at 5873 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* numberOfConfSPS-Processes at 5877 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* n1PUCCH-AN-PersistentList at 5878 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 5885 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct SPS_ConfigDL__setup),
@@ -531,8 +531,8 @@ static asn_TYPE_member_t asn_MBR_SPS_ConfigDL_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SPS_ConfigDL_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6477 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6483 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5870 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5876 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SPS_ConfigDL_specs_1 = {
 	sizeof(struct SPS_ConfigDL),

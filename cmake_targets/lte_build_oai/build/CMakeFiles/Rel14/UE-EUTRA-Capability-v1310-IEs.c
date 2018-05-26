@@ -538,26 +538,26 @@ static ber_tlv_tag_t asn_DEF_UE_EUTRA_Capability_v1310_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UE_EUTRA_Capability_v1310_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-CategoryDL-v1310 at 8584 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ue-CategoryUL-v1310 at 8585 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pdcp-Parameters-v1310 at 8586 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* rlc-Parameters-v1310 at 8587 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* mac-Parameters-v1310 at 8588 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* phyLayerParameters-v1310 at 8589 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* rf-Parameters-v1310 at 8590 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* measParameters-v1310 at 8591 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* dc-Parameters-v1310 at 8592 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* sl-Parameters-v1310 at 8593 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* scptm-Parameters-r13 at 8594 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* ce-Parameters-r13 at 8595 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* interRAT-ParametersWLAN-r13 at 8596 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* laa-Parameters-r13 at 8597 */
-    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* lwa-Parameters-r13 at 8598 */
-    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 }, /* wlan-IW-Parameters-v1310 at 8599 */
-    { (ASN_TAG_CLASS_CONTEXT | (16 << 2)), 16, 0, 0 }, /* lwip-Parameters-r13 at 8600 */
-    { (ASN_TAG_CLASS_CONTEXT | (17 << 2)), 17, 0, 0 }, /* fdd-Add-UE-EUTRA-Capabilities-v1310 at 8601 */
-    { (ASN_TAG_CLASS_CONTEXT | (18 << 2)), 18, 0, 0 }, /* tdd-Add-UE-EUTRA-Capabilities-v1310 at 8602 */
-    { (ASN_TAG_CLASS_CONTEXT | (19 << 2)), 19, 0, 0 } /* nonCriticalExtension at 8603 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ue-CategoryDL-v1310 at 7793 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ue-CategoryUL-v1310 at 7794 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pdcp-Parameters-v1310 at 7795 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* rlc-Parameters-v1310 at 7796 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* mac-Parameters-v1310 at 7797 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* phyLayerParameters-v1310 at 7798 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* rf-Parameters-v1310 at 7799 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* measParameters-v1310 at 7800 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* dc-Parameters-v1310 at 7801 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* sl-Parameters-v1310 at 7802 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* scptm-Parameters-r13 at 7803 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* ce-Parameters-r13 at 7804 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* interRAT-ParametersWLAN-r13 at 7805 */
+    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* laa-Parameters-r13 at 7806 */
+    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* lwa-Parameters-r13 at 7807 */
+    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 }, /* wlan-IW-Parameters-v1310 at 7808 */
+    { (ASN_TAG_CLASS_CONTEXT | (16 << 2)), 16, 0, 0 }, /* lwip-Parameters-r13 at 7809 */
+    { (ASN_TAG_CLASS_CONTEXT | (17 << 2)), 17, 0, 0 }, /* fdd-Add-UE-EUTRA-Capabilities-v1310 at 7810 */
+    { (ASN_TAG_CLASS_CONTEXT | (18 << 2)), 18, 0, 0 }, /* tdd-Add-UE-EUTRA-Capabilities-v1310 at 7811 */
+    { (ASN_TAG_CLASS_CONTEXT | (19 << 2)), 19, 0, 0 } /* nonCriticalExtension at 7812 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UE_EUTRA_Capability_v1310_IEs_specs_1 = {
 	sizeof(struct UE_EUTRA_Capability_v1310_IEs),

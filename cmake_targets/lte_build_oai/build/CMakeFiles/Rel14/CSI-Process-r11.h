@@ -26,7 +26,6 @@
 #include "CQI-ReportAperiodicProc-r11.h"
 #include <constr_SEQUENCE.h>
 #include "CQI-ReportAperiodicProc-v1310.h"
-#include <BOOLEAN.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -61,8 +60,6 @@ typedef enum CSI_Process_r11__ext2__cqi_ReportAperiodicProc2_v1310_PR {
 struct CQI_ReportBothProc_r11;
 struct CQI_ReportAperiodicProc_r11;
 struct CSI_RS_ConfigEMIMO_r13;
-struct CSI_RS_ConfigEMIMO_v1430;
-struct CSI_RS_ConfigEMIMO_Hybrid_r14;
 
 /* CSI-Process-r11 */
 typedef struct CSI_Process_r11 {
@@ -134,14 +131,6 @@ typedef struct CSI_Process_r11 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext2;
-	struct CSI_Process_r11__ext3 {
-		struct CSI_RS_ConfigEMIMO_v1430	*eMIMO_Type_v1430	/* OPTIONAL */;
-		struct CSI_RS_ConfigEMIMO_Hybrid_r14	*eMIMO_Hybrid_r14	/* OPTIONAL */;
-		BOOLEAN_t	*advancedCodebookEnabled_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext3;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -159,8 +148,6 @@ extern asn_TYPE_descriptor_t asn_DEF_CSI_Process_r11;
 #include "CQI-ReportBothProc-r11.h"
 #include "CQI-ReportAperiodicProc-r11.h"
 #include "CSI-RS-ConfigEMIMO-r13.h"
-#include "CSI-RS-ConfigEMIMO-v1430.h"
-#include "CSI-RS-ConfigEMIMO-Hybrid-r14.h"
 
 #endif	/* _CSI_Process_r11_H_ */
 #include <asn_internal.h>

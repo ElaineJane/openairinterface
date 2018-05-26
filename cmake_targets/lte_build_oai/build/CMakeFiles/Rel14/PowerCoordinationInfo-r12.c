@@ -130,9 +130,9 @@ static ber_tlv_tag_t asn_DEF_PowerCoordinationInfo_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PowerCoordinationInfo_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p-MeNB-r12 at 985 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p-SeNB-r12 at 986 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* powerControlMode-r12 at 987 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* p-MeNB-r12 at 936 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p-SeNB-r12 at 937 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* powerControlMode-r12 at 938 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PowerCoordinationInfo_r12_specs_1 = {
 	sizeof(struct PowerCoordinationInfo_r12),

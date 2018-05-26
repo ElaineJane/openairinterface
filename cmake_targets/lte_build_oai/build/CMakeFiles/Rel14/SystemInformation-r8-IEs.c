@@ -220,37 +220,37 @@ static asn_TYPE_member_t asn_MBR_Member_3[] = {
 		0,
 		"sib20-v1310"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct SystemInformation_r8_IEs__sib_TypeAndInfo__Member, choice.sib21_v1430),
+	{ ATF_NOFLAGS, 0, offsetof(struct SystemInformation_r8_IEs__sib_TypeAndInfo__Member, choice.sib21_v14x0),
 		(ASN_TAG_CLASS_CONTEXT | (19 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SystemInformationBlockType21_r14,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
-		"sib21-v1430"
+		"sib21-v14x0"
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_Member_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sib2 at 1854 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sib3 at 1855 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sib4 at 1856 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sib5 at 1857 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* sib6 at 1858 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* sib7 at 1859 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* sib8 at 1860 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* sib9 at 1861 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* sib10 at 1862 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* sib11 at 1863 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* sib12-v920 at 1865 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* sib13-v920 at 1866 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* sib14-v1130 at 1867 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* sib15-v1130 at 1868 */
-    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* sib16-v1130 at 1869 */
-    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 }, /* sib17-v1250 at 1870 */
-    { (ASN_TAG_CLASS_CONTEXT | (16 << 2)), 16, 0, 0 }, /* sib18-v1250 at 1871 */
-    { (ASN_TAG_CLASS_CONTEXT | (17 << 2)), 17, 0, 0 }, /* sib19-v1250 at 1872 */
-    { (ASN_TAG_CLASS_CONTEXT | (18 << 2)), 18, 0, 0 }, /* sib20-v1310 at 1873 */
-    { (ASN_TAG_CLASS_CONTEXT | (19 << 2)), 19, 0, 0 } /* sib21-v1430 at 1875 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sib2 at 1758 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sib3 at 1759 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sib4 at 1760 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sib5 at 1761 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* sib6 at 1762 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* sib7 at 1763 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* sib8 at 1764 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* sib9 at 1765 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* sib10 at 1766 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* sib11 at 1767 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* sib12-v920 at 1769 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* sib13-v920 at 1770 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* sib14-v1130 at 1771 */
+    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* sib15-v1130 at 1772 */
+    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* sib16-v1130 at 1773 */
+    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 }, /* sib17-v1250 at 1774 */
+    { (ASN_TAG_CLASS_CONTEXT | (16 << 2)), 16, 0, 0 }, /* sib18-v1250 at 1775 */
+    { (ASN_TAG_CLASS_CONTEXT | (17 << 2)), 17, 0, 0 }, /* sib19-v1250 at 1776 */
+    { (ASN_TAG_CLASS_CONTEXT | (18 << 2)), 18, 0, 0 }, /* sib20-v1310 at 1777 */
+    { (ASN_TAG_CLASS_CONTEXT | (19 << 2)), 19, 0, 0 } /* sib21-v14x0 at 1779 */
 };
 static asn_CHOICE_specifics_t asn_SPC_Member_specs_3 = {
 	sizeof(struct SystemInformation_r8_IEs__sib_TypeAndInfo__Member),
@@ -363,8 +363,8 @@ static ber_tlv_tag_t asn_DEF_SystemInformation_r8_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformation_r8_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sib-TypeAndInfo at 1875 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1876 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sib-TypeAndInfo at 1779 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1780 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformation_r8_IEs_specs_1 = {
 	sizeof(struct SystemInformation_r8_IEs),

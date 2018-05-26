@@ -52,55 +52,9 @@ include CMakeFiles/L2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/L2.dir/flags.make
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/openair2_proc.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/openair2_proc.c.o: /home/momo/openairinterface5g/openair2/LAYER2/openair2_proc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/openair2_proc.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/openair2_proc.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/openair2_proc.c
 
@@ -123,7 +77,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/openair2_proc.c.o
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp.c.o: /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp.c
 
@@ -146,7 +100,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_fifo.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_fifo.c.o: /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_fifo.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_fifo.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_fifo.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_fifo.c
 
@@ -169,7 +123,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_sequence_manager.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_sequence_manager.c.o: /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_sequence_manager.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_sequence_manager.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_sequence_manager.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_sequence_manager.c
 
@@ -192,7 +146,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_primitives.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_primitives.c.o: /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_primitives.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_primitives.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_primitives.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_primitives.c
 
@@ -215,7 +169,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_util.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_util.c.o: /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_util.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_util.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_util.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_util.c
 
@@ -238,7 +192,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_security.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_security.c.o: /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_security.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_security.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_security.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_security.c
 
@@ -261,7 +215,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_netlink.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_netlink.c.o: /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_netlink.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_netlink.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_netlink.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_netlink.c
 
@@ -284,7 +238,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am.c
 
@@ -307,7 +261,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_init.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_init.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_init.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_init.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_init.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_init.c
 
@@ -330,7 +284,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_poll_retransmit.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_poll_retransmit.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_poll_retransmit.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_poll_retransmit.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_poll_retransmit.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_poll_retransmit.c
 
@@ -353,7 +307,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_reordering.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_reordering.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_reordering.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_reordering.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_reordering.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_reordering.c
 
@@ -376,7 +330,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_status_prohibit.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_status_prohibit.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_status_prohibit.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_status_prohibit.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_status_prohibit.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_timer_status_prohibit.c
 
@@ -399,7 +353,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segment.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segment.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segment.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segment.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segment.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segment.c
 
@@ -422,7 +376,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segments_holes.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segments_holes.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segments_holes.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segments_holes.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segments_holes.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_segments_holes.c
 
@@ -445,7 +399,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_in_sdu.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_in_sdu.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_in_sdu.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_in_sdu.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_in_sdu.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_in_sdu.c
 
@@ -468,7 +422,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_receiver.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_receiver.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_receiver.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_receiver.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_receiver.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_receiver.c
 
@@ -491,7 +445,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_retransmit.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_retransmit.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_retransmit.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_retransmit.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_retransmit.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_retransmit.c
 
@@ -514,7 +468,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_windows.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_windows.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_windows.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_windows.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_windows.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_windows.c
 
@@ -537,7 +491,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_rx_list.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_rx_list.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_rx_list.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_rx_list.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_rx_list.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_rx_list.c
 
@@ -560,7 +514,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_reassembly.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_reassembly.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_reassembly.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_reassembly.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_reassembly.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_reassembly.c
 
@@ -583,7 +537,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_status_report.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_status_report.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_status_report.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_status_report.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_status_report.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc_am_status_report.c
 
@@ -606,7 +560,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/AM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm.c
 
@@ -629,7 +583,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm_init.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm_init.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm_init.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm_init.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm_init.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc_tm_init.c
 
@@ -652,7 +606,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/TM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um.c
 
@@ -675,7 +629,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_fsm.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_fsm.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_fsm.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_fsm.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_fsm.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_fsm.c
 
@@ -698,7 +652,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_control_primitives.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_control_primitives.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_control_primitives.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_control_primitives.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_control_primitives.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_control_primitives.c
 
@@ -721,7 +675,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_segment.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_segment.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_segment.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_segment.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_segment.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_segment.c
 
@@ -744,7 +698,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_reassembly.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_reassembly.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_reassembly.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_reassembly.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_reassembly.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_reassembly.c
 
@@ -767,7 +721,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_receiver.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_receiver.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_receiver.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_receiver.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_receiver.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_receiver.c
 
@@ -790,7 +744,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_dar.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_dar.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_dar.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_dar.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_dar.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc_um_dar.c
 
@@ -813,7 +767,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/UM_v9.3.0/rlc
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mac.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mac.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mac.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mac.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mac.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mac.c
 
@@ -836,7 +790,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mac.c.o.p
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc.c
 
@@ -859,7 +813,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc.c.o.provi
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_rrc.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_rrc.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_rrc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_rrc.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_rrc.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_rrc.c
 
@@ -882,7 +836,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_rrc.c.o.p
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mpls.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mpls.c.o: /home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mpls.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mpls.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mpls.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mpls.c
 
@@ -905,7 +859,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mpls.c.o.
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_UE.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_UE.c.o: /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_UE.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_UE.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_UE.c.o   -c /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_UE.c
 
@@ -928,7 +882,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_UE.c.o.prov
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c.o: /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c.o   -c /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c
 
@@ -949,32 +903,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c.o.pro
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_40)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_S1AP.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_S1AP.c.o: /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_S1AP.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_S1AP.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_S1AP.c.o   -c /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_S1AP.c
 
@@ -997,7 +928,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_S1AP.c.
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c.o: /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c.o   -c /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c
 
@@ -1018,32 +949,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_cont
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_43)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c.o: /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c.o   -c /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c
 
@@ -1064,32 +972,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c.o.
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_45)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c.o: /home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c.o   -c /home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c
 
@@ -1110,32 +995,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c.
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_47)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/lte_transport_init.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/lte_transport_init.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/lte_transport_init.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/lte_transport_init.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/lte_transport_init.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/lte_transport_init.c
 
@@ -1158,7 +1020,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/lte_transport
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c
 
@@ -1179,32 +1041,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c.o.prov
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_50)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ue_procedures.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ue_procedures.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/ue_procedures.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ue_procedures.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ue_procedures.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/ue_procedures.c
 
@@ -1227,7 +1066,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ue_procedures
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ra_procedures.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ra_procedures.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/ra_procedures.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ra_procedures.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ra_procedures.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/ra_procedures.c
 
@@ -1250,7 +1089,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ra_procedures
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/l1_helpers.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/l1_helpers.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/l1_helpers.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/l1_helpers.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/l1_helpers.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/l1_helpers.c
 
@@ -1273,7 +1112,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/l1_helpers.c.
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/rar_tools.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/rar_tools.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/rar_tools.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/rar_tools.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/rar_tools.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/rar_tools.c
 
@@ -1296,7 +1135,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/rar_tools.c.o
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c
 
@@ -1317,32 +1156,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_56)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c
 
@@ -1363,32 +1179,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_58)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c
 
@@ -1409,32 +1202,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_60)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_mch.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_mch.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_mch.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_61)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_mch.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_mch.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_mch.c
 
@@ -1457,7 +1227,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_62)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c
 
@@ -1478,32 +1248,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_63)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c
 
@@ -1524,32 +1271,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_65)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_66)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c
 
@@ -1570,32 +1294,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_67)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/pre_processor.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/pre_processor.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/pre_processor.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_68)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/pre_processor.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/pre_processor.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/pre_processor.c
 
@@ -1618,7 +1319,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/pre_processor
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_69)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c
 
@@ -1639,55 +1340,9 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c.o.pr
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c.o
 
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_70)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o: CMakeFiles/L2.dir/flags.make
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o: /home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_71)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o   -c /home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c > CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.i
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.s
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o.requires:
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o.requires
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o.provides: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o.requires
-	$(MAKE) -f CMakeFiles/L2.dir/build.make CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o.provides.build
-.PHONY : CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o.provides
-
-CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o.provides.build: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o
-
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_app.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_app.c.o: /home/momo/openairinterface5g/openair2/ENB_APP/enb_app.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_72)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_app.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_app.c.o   -c /home/momo/openairinterface5g/openair2/ENB_APP/enb_app.c
 
@@ -1710,7 +1365,7 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_app.c.o.prov
 
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_config.c.o: CMakeFiles/L2.dir/flags.make
 CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_config.c.o: /home/momo/openairinterface5g/openair2/ENB_APP/enb_config.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_73)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_config.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_config.c.o   -c /home/momo/openairinterface5g/openair2/ENB_APP/enb_config.c
 
@@ -1733,8 +1388,6 @@ CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_config.c.o.p
 
 # Object files for target L2
 L2_OBJECTS = \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/openair2_proc.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_fifo.c.o" \
@@ -1772,46 +1425,31 @@ L2_OBJECTS = \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mpls.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_UE.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_S1AP.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/lte_transport_init.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ue_procedures.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ra_procedures.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/l1_helpers.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/rar_tools.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_mch.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/pre_processor.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o" \
-"CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_app.c.o" \
 "CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_config.c.o"
 
 # External object files for target L2
 L2_EXTERNAL_OBJECTS =
 
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/openair2_proc.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_fifo.c.o
@@ -1849,38 +1487,25 @@ libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mpls.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_UE.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_S1AP.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/lte_transport_init.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ue_procedures.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ra_procedures.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/l1_helpers.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/rar_tools.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_mch.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/pre_processor.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o
-libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_app.c.o
 libL2.a: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_config.c.o
 libL2.a: CMakeFiles/L2.dir/build.make
@@ -1893,8 +1518,6 @@ libL2.a: CMakeFiles/L2.dir/link.txt
 CMakeFiles/L2.dir/build: libL2.a
 .PHONY : CMakeFiles/L2.dir/build
 
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_NB_IoT.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/PHY_INTERFACE/IF_Module_L2_primitives_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/openair2_proc.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/PDCP_v10.1.0/pdcp_fifo.c.o.requires
@@ -1932,38 +1555,25 @@ CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/opena
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/RLC/rlc_mpls.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_UE.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_S1AP.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_eNB_UE_context_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/rrc_common_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/RRC/LITE/L2_interface_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/lte_transport_init.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/main_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ue_procedures.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/ra_procedures.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/l1_helpers.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/rar_tools.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_dlsch_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_ulsch_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_mch.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_bch_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_primitives.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/output_handler_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/eNB_scheduler_RA_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/pre_processor.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/config_NB_IoT.c.o.requires
-CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/LAYER2/MAC/schedule_tool_NB_IoT.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_app.c.o.requires
 CMakeFiles/L2.dir/requires: CMakeFiles/L2.dir/home/momo/openairinterface5g/openair2/ENB_APP/enb_config.c.o.requires
 .PHONY : CMakeFiles/L2.dir/requires

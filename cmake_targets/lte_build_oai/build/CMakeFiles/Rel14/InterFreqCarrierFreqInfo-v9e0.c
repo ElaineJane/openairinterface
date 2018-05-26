@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_InterFreqCarrierFreqInfo_v9e0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_InterFreqCarrierFreqInfo_v9e0_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-CarrierFreq-v9e0 at 2923 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* multiBandInfoList-v9e0 at 2924 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-CarrierFreq-v9e0 at 2684 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* multiBandInfoList-v9e0 at 2685 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_InterFreqCarrierFreqInfo_v9e0_specs_1 = {
 	sizeof(struct InterFreqCarrierFreqInfo_v9e0),

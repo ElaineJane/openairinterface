@@ -56,7 +56,6 @@ struct AltTTT_CellsToAddModList_r12;
 struct MeasDS_Config_r12;
 struct WhiteCellsToAddModList_r13;
 struct RMTC_Config_r13;
-struct Tx_ResourcePoolMeasList_r14;
 
 /* MeasObjectEUTRA */
 typedef struct MeasObjectEUTRA {
@@ -115,14 +114,6 @@ typedef struct MeasObjectEUTRA {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext4;
-	struct MeasObjectEUTRA__ext5 {
-		struct Tx_ResourcePoolMeasList_r14	*tx_ResourcePoolToRemoveList_r14	/* OPTIONAL */;
-		struct Tx_ResourcePoolMeasList_r14	*tx_ResourcePoolToAddList_r14	/* OPTIONAL */;
-		BOOLEAN_t	*fembms_MixedCarrier_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext5;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -145,7 +136,6 @@ extern asn_TYPE_descriptor_t asn_DEF_MeasObjectEUTRA;
 #include "MeasDS-Config-r12.h"
 #include "WhiteCellsToAddModList-r13.h"
 #include "RMTC-Config-r13.h"
-#include "Tx-ResourcePoolMeasList-r14.h"
 
 #endif	/* _MeasObjectEUTRA_H_ */
 #include <asn_internal.h>

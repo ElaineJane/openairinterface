@@ -408,10 +408,10 @@ static ber_tlv_tag_t asn_DEF_SL_DiscConfigRelayUE_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_DiscConfigRelayUE_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threshHigh-r13 at 3458 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* threshLow-r13 at 3459 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* hystMax-r13 at 3460 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* hystMin-r13 at 3461 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threshHigh-r13 at 3198 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* threshLow-r13 at 3199 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* hystMax-r13 at 3200 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* hystMin-r13 at 3201 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_DiscConfigRelayUE_r13_specs_1 = {
 	sizeof(struct SL_DiscConfigRelayUE_r13),

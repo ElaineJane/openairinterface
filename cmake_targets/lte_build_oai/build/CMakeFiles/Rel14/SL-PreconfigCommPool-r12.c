@@ -24,7 +24,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_12[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* priorityList-r13 at 13074 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* priorityList-r13 at 11337 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_12 = {
 	sizeof(struct SL_PreconfigCommPool_r12__ext1),
@@ -162,16 +162,16 @@ static ber_tlv_tag_t asn_DEF_SL_PreconfigCommPool_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_PreconfigCommPool_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sc-CP-Len-r12 at 13064 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sc-Period-r12 at 13065 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sc-TF-ResourceConfig-r12 at 13066 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sc-TxParameters-r12 at 13067 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* data-CP-Len-r12 at 13068 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* data-TF-ResourceConfig-r12 at 13069 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* dataHoppingConfig-r12 at 13070 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* dataTxParameters-r12 at 13071 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* trpt-Subset-r12 at 13072 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* ext1 at 13074 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sc-CP-Len-r12 at 11327 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sc-Period-r12 at 11328 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sc-TF-ResourceConfig-r12 at 11329 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sc-TxParameters-r12 at 11330 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* data-CP-Len-r12 at 11331 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* data-TF-ResourceConfig-r12 at 11332 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* dataHoppingConfig-r12 at 11333 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* dataTxParameters-r12 at 11334 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* trpt-Subset-r12 at 11335 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* ext1 at 11337 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_PreconfigCommPool_r12_specs_1 = {
 	sizeof(struct SL_PreconfigCommPool_r12),

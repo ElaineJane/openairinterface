@@ -1267,13 +1267,13 @@ static ber_tlv_tag_t asn_DEF_ReportQuantityWLAN_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ReportQuantityWLAN_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandRequestWLAN-r13 at 8110 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* carrierInfoRequestWLAN-r13 at 8111 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* availableAdmissionCapacityRequestWLAN-r13 at 8112 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* backhaulDL-BandwidthRequestWLAN-r13 at 8113 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* backhaulUL-BandwidthRequestWLAN-r13 at 8114 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* channelUtilizationRequestWLAN-r13 at 8115 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* stationCountRequestWLAN-r13 at 8116 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandRequestWLAN-r13 at 7363 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* carrierInfoRequestWLAN-r13 at 7364 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* availableAdmissionCapacityRequestWLAN-r13 at 7365 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* backhaulDL-BandwidthRequestWLAN-r13 at 7366 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* backhaulUL-BandwidthRequestWLAN-r13 at 7367 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* channelUtilizationRequestWLAN-r13 at 7368 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* stationCountRequestWLAN-r13 at 7369 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ReportQuantityWLAN_r13_specs_1 = {
 	sizeof(struct ReportQuantityWLAN_r13),

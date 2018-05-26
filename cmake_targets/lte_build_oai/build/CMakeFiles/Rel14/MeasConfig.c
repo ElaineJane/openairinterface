@@ -42,8 +42,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_14[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_14[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mobilityStateParameters at 7247 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* timeToTrigger-SF at 7249 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mobilityStateParameters at 6581 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* timeToTrigger-SF at 6583 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_14 = {
 	sizeof(struct MeasConfig__speedStatePars__setup),
@@ -104,8 +104,8 @@ static asn_TYPE_member_t asn_MBR_speedStatePars_12[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_speedStatePars_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7245 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7247 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6579 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6581 */
 };
 static asn_CHOICE_specifics_t asn_SPC_speedStatePars_specs_12 = {
 	sizeof(struct MeasConfig__speedStatePars),
@@ -161,7 +161,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_18[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_18[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* measObjectToAddModList-v9e0 at 7252 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* measObjectToAddModList-v9e0 at 6586 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_18 = {
 	sizeof(struct MeasConfig__ext1),
@@ -219,7 +219,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_20[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_20[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* allowInterruptions-r11 at 7254 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* allowInterruptions-r11 at 6588 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_20 = {
 	sizeof(struct MeasConfig__ext2),
@@ -281,8 +281,8 @@ static asn_TYPE_member_t asn_MBR_measScaleFactor_r12_23[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_measScaleFactor_r12_tag2el_23[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 7257 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 7259 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6591 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6593 */
 };
 static asn_CHOICE_specifics_t asn_SPC_measScaleFactor_r12_specs_23 = {
 	sizeof(struct MeasConfig__ext3__measScaleFactor_r12),
@@ -365,10 +365,10 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_22[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_22[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measScaleFactor-r12 at 7257 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measIdToRemoveListExt-r12 at 7260 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measIdToAddModListExt-r12 at 7261 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measRSRQ-OnAllSymbols-r12 at 7262 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measScaleFactor-r12 at 6591 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measIdToRemoveListExt-r12 at 6594 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measIdToAddModListExt-r12 at 6595 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measRSRQ-OnAllSymbols-r12 at 6596 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_22 = {
 	sizeof(struct MeasConfig__ext3),
@@ -453,10 +453,10 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_29[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_29[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measObjectToRemoveListExt-r13 at 7265 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measObjectToAddModListExt-r13 at 7266 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measIdToAddModList-v1310 at 7267 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measIdToAddModListExt-v1310 at 7268 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measObjectToRemoveListExt-r13 at 6599 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measObjectToAddModListExt-r13 at 6600 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measIdToAddModList-v1310 at 6601 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measIdToAddModListExt-v1310 at 6602 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_29 = {
 	sizeof(struct MeasConfig__ext4),
@@ -497,76 +497,8 @@ asn_TYPE_descriptor_t asn_DEF_ext4_29 = {
 	&asn_SPC_ext4_specs_29	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_ext5_34[] = {
-	{ ATF_POINTER, 2, offsetof(struct MeasConfig__ext5, measGapConfigPerCC_List_r14),
-		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_MeasGapConfigPerCC_List_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"measGapConfigPerCC-List-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct MeasConfig__ext5, measGapSharingConfig_r14),
-		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_MeasGapSharingConfig_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"measGapSharingConfig-r14"
-		},
-};
-static int asn_MAP_ext5_oms_34[] = { 0, 1 };
-static ber_tlv_tag_t asn_DEF_ext5_tags_34[] = {
-	(ASN_TAG_CLASS_CONTEXT | (15 << 2)),
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_34[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measGapConfigPerCC-List-r14 at 7270 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measGapSharingConfig-r14 at 7271 */
-};
-static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_34 = {
-	sizeof(struct MeasConfig__ext5),
-	offsetof(struct MeasConfig__ext5, _asn_ctx),
-	asn_MAP_ext5_tag2el_34,
-	2,	/* Count of tags in the map */
-	asn_MAP_ext5_oms_34,	/* Optional members */
-	2, 0,	/* Root/Additions */
-	-1,	/* Start extensions */
-	-1	/* Stop extensions */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_ext5_34 = {
-	"ext5",
-	"ext5",
-	SEQUENCE_free,
-	SEQUENCE_print,
-	SEQUENCE_constraint,
-	SEQUENCE_decode_ber,
-	SEQUENCE_encode_der,
-	SEQUENCE_decode_xer,
-	SEQUENCE_encode_xer,
-	SEQUENCE_decode_uper,
-	SEQUENCE_encode_uper,
-	SEQUENCE_decode_aper,
-	SEQUENCE_encode_aper,
-	SEQUENCE_compare,
-	0,	/* Use generic outmost tag fetcher */
-	asn_DEF_ext5_tags_34,
-	sizeof(asn_DEF_ext5_tags_34)
-		/sizeof(asn_DEF_ext5_tags_34[0]) - 1, /* 1 */
-	asn_DEF_ext5_tags_34,	/* Same as above */
-	sizeof(asn_DEF_ext5_tags_34)
-		/sizeof(asn_DEF_ext5_tags_34[0]), /* 2 */
-	0,	/* No PER visible constraints */
-	asn_MBR_ext5_34,
-	2,	/* Elements count */
-	&asn_SPC_ext5_specs_34	/* Additional specs */
-};
-
 static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
-	{ ATF_POINTER, 16, offsetof(struct MeasConfig, measObjectToRemoveList),
+	{ ATF_POINTER, 15, offsetof(struct MeasConfig, measObjectToRemoveList),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_MeasObjectToRemoveList,
@@ -575,7 +507,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"measObjectToRemoveList"
 		},
-	{ ATF_POINTER, 15, offsetof(struct MeasConfig, measObjectToAddModList),
+	{ ATF_POINTER, 14, offsetof(struct MeasConfig, measObjectToAddModList),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_MeasObjectToAddModList,
@@ -584,7 +516,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"measObjectToAddModList"
 		},
-	{ ATF_POINTER, 14, offsetof(struct MeasConfig, reportConfigToRemoveList),
+	{ ATF_POINTER, 13, offsetof(struct MeasConfig, reportConfigToRemoveList),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ReportConfigToRemoveList,
@@ -593,7 +525,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"reportConfigToRemoveList"
 		},
-	{ ATF_POINTER, 13, offsetof(struct MeasConfig, reportConfigToAddModList),
+	{ ATF_POINTER, 12, offsetof(struct MeasConfig, reportConfigToAddModList),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ReportConfigToAddModList,
@@ -602,7 +534,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"reportConfigToAddModList"
 		},
-	{ ATF_POINTER, 12, offsetof(struct MeasConfig, measIdToRemoveList),
+	{ ATF_POINTER, 11, offsetof(struct MeasConfig, measIdToRemoveList),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_MeasIdToRemoveList,
@@ -611,7 +543,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"measIdToRemoveList"
 		},
-	{ ATF_POINTER, 11, offsetof(struct MeasConfig, measIdToAddModList),
+	{ ATF_POINTER, 10, offsetof(struct MeasConfig, measIdToAddModList),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_MeasIdToAddModList,
@@ -620,7 +552,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"measIdToAddModList"
 		},
-	{ ATF_POINTER, 10, offsetof(struct MeasConfig, quantityConfig),
+	{ ATF_POINTER, 9, offsetof(struct MeasConfig, quantityConfig),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QuantityConfig,
@@ -629,7 +561,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"quantityConfig"
 		},
-	{ ATF_POINTER, 9, offsetof(struct MeasConfig, measGapConfig),
+	{ ATF_POINTER, 8, offsetof(struct MeasConfig, measGapConfig),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_MeasGapConfig,
@@ -638,7 +570,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"measGapConfig"
 		},
-	{ ATF_POINTER, 8, offsetof(struct MeasConfig, s_Measure),
+	{ ATF_POINTER, 7, offsetof(struct MeasConfig, s_Measure),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RSRP_Range,
@@ -647,7 +579,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"s-Measure"
 		},
-	{ ATF_POINTER, 7, offsetof(struct MeasConfig, preRegistrationInfoHRPD),
+	{ ATF_POINTER, 6, offsetof(struct MeasConfig, preRegistrationInfoHRPD),
 		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PreRegistrationInfoHRPD,
@@ -656,7 +588,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"preRegistrationInfoHRPD"
 		},
-	{ ATF_POINTER, 6, offsetof(struct MeasConfig, speedStatePars),
+	{ ATF_POINTER, 5, offsetof(struct MeasConfig, speedStatePars),
 		(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_speedStatePars_12,
@@ -665,7 +597,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"speedStatePars"
 		},
-	{ ATF_POINTER, 5, offsetof(struct MeasConfig, ext1),
+	{ ATF_POINTER, 4, offsetof(struct MeasConfig, ext1),
 		(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
 		0,
 		&asn_DEF_ext1_18,
@@ -674,7 +606,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"ext1"
 		},
-	{ ATF_POINTER, 4, offsetof(struct MeasConfig, ext2),
+	{ ATF_POINTER, 3, offsetof(struct MeasConfig, ext2),
 		(ASN_TAG_CLASS_CONTEXT | (12 << 2)),
 		0,
 		&asn_DEF_ext2_20,
@@ -683,7 +615,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"ext2"
 		},
-	{ ATF_POINTER, 3, offsetof(struct MeasConfig, ext3),
+	{ ATF_POINTER, 2, offsetof(struct MeasConfig, ext3),
 		(ASN_TAG_CLASS_CONTEXT | (13 << 2)),
 		0,
 		&asn_DEF_ext3_22,
@@ -692,7 +624,7 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"ext3"
 		},
-	{ ATF_POINTER, 2, offsetof(struct MeasConfig, ext4),
+	{ ATF_POINTER, 1, offsetof(struct MeasConfig, ext4),
 		(ASN_TAG_CLASS_CONTEXT | (14 << 2)),
 		0,
 		&asn_DEF_ext4_29,
@@ -701,47 +633,37 @@ static asn_TYPE_member_t asn_MBR_MeasConfig_1[] = {
 		0,
 		"ext4"
 		},
-	{ ATF_POINTER, 1, offsetof(struct MeasConfig, ext5),
-		(ASN_TAG_CLASS_CONTEXT | (15 << 2)),
-		0,
-		&asn_DEF_ext5_34,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"ext5"
-		},
 };
-static int asn_MAP_MeasConfig_oms_1[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+static int asn_MAP_MeasConfig_oms_1[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 };
 static ber_tlv_tag_t asn_DEF_MeasConfig_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasConfig_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measObjectToRemoveList at 7231 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measObjectToAddModList at 7232 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* reportConfigToRemoveList at 7234 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* reportConfigToAddModList at 7235 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* measIdToRemoveList at 7237 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* measIdToAddModList at 7238 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* quantityConfig at 7240 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* measGapConfig at 7241 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* s-Measure at 7242 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* preRegistrationInfoHRPD at 7243 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* speedStatePars at 7245 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* ext1 at 7252 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* ext2 at 7254 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* ext3 at 7259 */
-    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* ext4 at 7265 */
-    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 } /* ext5 at 7270 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measObjectToRemoveList at 6565 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measObjectToAddModList at 6566 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* reportConfigToRemoveList at 6568 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* reportConfigToAddModList at 6569 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* measIdToRemoveList at 6571 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* measIdToAddModList at 6572 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* quantityConfig at 6574 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* measGapConfig at 6575 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* s-Measure at 6576 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* preRegistrationInfoHRPD at 6577 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* speedStatePars at 6579 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* ext1 at 6586 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* ext2 at 6588 */
+    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* ext3 at 6593 */
+    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 } /* ext4 at 6599 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasConfig_specs_1 = {
 	sizeof(struct MeasConfig),
 	offsetof(struct MeasConfig, _asn_ctx),
 	asn_MAP_MeasConfig_tag2el_1,
-	16,	/* Count of tags in the map */
+	15,	/* Count of tags in the map */
 	asn_MAP_MeasConfig_oms_1,	/* Optional members */
-	11, 5,	/* Root/Additions */
+	11, 4,	/* Root/Additions */
 	10,	/* Start extensions */
-	17	/* Stop extensions */
+	16	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_MeasConfig = {
 	"MeasConfig",
@@ -767,7 +689,7 @@ asn_TYPE_descriptor_t asn_DEF_MeasConfig = {
 		/sizeof(asn_DEF_MeasConfig_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_MeasConfig_1,
-	16,	/* Elements count */
+	15,	/* Elements count */
 	&asn_SPC_MeasConfig_specs_1	/* Additional specs */
 };
 

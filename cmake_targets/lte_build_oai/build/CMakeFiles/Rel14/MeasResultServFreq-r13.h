@@ -18,7 +18,6 @@
 #include "RS-SINR-Range-r13.h"
 #include <constr_SEQUENCE.h>
 #include "PhysCellId.h"
-#include "RSRP-Range-v1360.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -48,17 +47,6 @@ typedef struct MeasResultServFreq_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct MeasResultServFreq_r13__ext1 {
-		struct MeasResultServFreq_r13__ext1__measResultBestNeighCell_v1360 {
-			RSRP_Range_v1360_t	 rsrpResultNCell_v1360;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *measResultBestNeighCell_v1360;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

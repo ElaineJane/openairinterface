@@ -187,12 +187,12 @@ static ber_tlv_tag_t asn_DEF_MeasCSI_RS_Config_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasCSI_RS_Config_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measCSI-RS-Id-r12 at 7312 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* physCellId-r12 at 7313 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* scramblingIdentity-r12 at 7314 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* resourceConfig-r12 at 7315 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* subframeOffset-r12 at 7316 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* csi-RS-IndividualOffset-r12 at 7317 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measCSI-RS-Id-r12 at 6643 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* physCellId-r12 at 6644 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* scramblingIdentity-r12 at 6645 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* resourceConfig-r12 at 6646 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* subframeOffset-r12 at 6647 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* csi-RS-IndividualOffset-r12 at 6648 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasCSI_RS_Config_r12_specs_1 = {
 	sizeof(struct MeasCSI_RS_Config_r12),

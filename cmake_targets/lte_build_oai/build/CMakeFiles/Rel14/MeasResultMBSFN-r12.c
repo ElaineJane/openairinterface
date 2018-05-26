@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_mbsfn_Area_r12_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_mbsfn_Area_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbsfn-AreaId-r12 at 2476 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* carrierFreq-r12 at 2478 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbsfn-AreaId-r12 at 2268 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* carrierFreq-r12 at 2270 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_mbsfn_Area_r12_specs_2 = {
 	sizeof(struct MeasResultMBSFN_r12__mbsfn_Area_r12),
@@ -125,11 +125,11 @@ static ber_tlv_tag_t asn_DEF_MeasResultMBSFN_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasResultMBSFN_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbsfn-Area-r12 at 2476 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rsrpResultMBSFN-r12 at 2479 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rsrqResultMBSFN-r12 at 2480 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* signallingBLER-Result-r12 at 2481 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* dataBLER-MCH-ResultList-r12 at 2482 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mbsfn-Area-r12 at 2268 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rsrpResultMBSFN-r12 at 2271 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rsrqResultMBSFN-r12 at 2272 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* signallingBLER-Result-r12 at 2273 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* dataBLER-MCH-ResultList-r12 at 2274 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasResultMBSFN_r12_specs_1 = {
 	sizeof(struct MeasResultMBSFN_r12),

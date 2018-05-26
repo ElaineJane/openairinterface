@@ -23,9 +23,6 @@ extern "C" {
 typedef enum UE_RadioPagingInfo_NB_r13__ue_Category_NB_r13 {
 	UE_RadioPagingInfo_NB_r13__ue_Category_NB_r13_nb1	= 0
 } e_UE_RadioPagingInfo_NB_r13__ue_Category_NB_r13;
-typedef enum UE_RadioPagingInfo_NB_r13__ext1__multiCarrierPaging_r14 {
-	UE_RadioPagingInfo_NB_r13__ext1__multiCarrierPaging_r14_true	= 0
-} e_UE_RadioPagingInfo_NB_r13__ext1__multiCarrierPaging_r14;
 
 /* UE-RadioPagingInfo-NB-r13 */
 typedef struct UE_RadioPagingInfo_NB_r13 {
@@ -34,12 +31,6 @@ typedef struct UE_RadioPagingInfo_NB_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct UE_RadioPagingInfo_NB_r13__ext1 {
-		long	*multiCarrierPaging_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -47,7 +38,6 @@ typedef struct UE_RadioPagingInfo_NB_r13 {
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_ue_Category_NB_r13_2;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_multiCarrierPaging_r14_6;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_UE_RadioPagingInfo_NB_r13;
 
 #ifdef __cplusplus

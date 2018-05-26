@@ -23,8 +23,6 @@ extern "C" {
 struct MBMS_SAI_List_r11;
 struct MBMS_SAI_InterFreqList_r11;
 struct MBMS_SAI_InterFreqList_v1140;
-struct MBMS_CarrierType_r14;
-struct MBMS_InterFreqCarrierTypeList_r14;
 
 /* SystemInformationBlockType15-r11 */
 typedef struct SystemInformationBlockType15_r11 {
@@ -41,13 +39,6 @@ typedef struct SystemInformationBlockType15_r11 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext1;
-	struct SystemInformationBlockType15_r11__ext2 {
-		struct MBMS_CarrierType_r14	*mbms_IntraFreqCarrierType_r14	/* OPTIONAL */;
-		struct MBMS_InterFreqCarrierTypeList_r14	*mbms_InterFreqCarrierTypeList_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext2;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -64,8 +55,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType15_r11;
 #include "MBMS-SAI-List-r11.h"
 #include "MBMS-SAI-InterFreqList-r11.h"
 #include "MBMS-SAI-InterFreqList-v1140.h"
-#include "MBMS-CarrierType-r14.h"
-#include "MBMS-InterFreqCarrierTypeList-r14.h"
 
 #endif	/* _SystemInformationBlockType15_r11_H_ */
 #include <asn_internal.h>

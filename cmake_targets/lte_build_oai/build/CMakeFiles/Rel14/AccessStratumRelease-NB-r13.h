@@ -21,7 +21,7 @@ extern "C" {
 /* Dependencies */
 typedef enum AccessStratumRelease_NB_r13 {
 	AccessStratumRelease_NB_r13_rel13	= 0,
-	AccessStratumRelease_NB_r13_rel14	= 1,
+	AccessStratumRelease_NB_r13_spare7	= 1,
 	AccessStratumRelease_NB_r13_spare6	= 2,
 	AccessStratumRelease_NB_r13_spare5	= 3,
 	AccessStratumRelease_NB_r13_spare4	= 4,

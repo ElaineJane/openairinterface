@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType21_r14_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType21_r14_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sl-V2X-ConfigCommon-r14 at 3582 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* lateNonCriticalExtension at 3583 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sl-V2X-ConfigCommon-r14 at 3266 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* lateNonCriticalExtension at 3267 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType21_r14_specs_1 = {
 	sizeof(struct SystemInformationBlockType21_r14),

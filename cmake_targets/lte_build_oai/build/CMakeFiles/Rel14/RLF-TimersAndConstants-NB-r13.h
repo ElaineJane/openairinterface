@@ -75,12 +75,6 @@ typedef enum RLF_TimersAndConstants_NB_r13__setup__n311_r13 {
 	RLF_TimersAndConstants_NB_r13__setup__n311_r13_n8	= 6,
 	RLF_TimersAndConstants_NB_r13__setup__n311_r13_n10	= 7
 } e_RLF_TimersAndConstants_NB_r13__setup__n311_r13;
-typedef enum RLF_TimersAndConstants_NB_r13__setup__ext1__t311_v1350 {
-	RLF_TimersAndConstants_NB_r13__setup__ext1__t311_v1350_ms40000	= 0,
-	RLF_TimersAndConstants_NB_r13__setup__ext1__t311_v1350_ms60000	= 1,
-	RLF_TimersAndConstants_NB_r13__setup__ext1__t311_v1350_ms90000	= 2,
-	RLF_TimersAndConstants_NB_r13__setup__ext1__t311_v1350_ms120000	= 3
-} e_RLF_TimersAndConstants_NB_r13__setup__ext1__t311_v1350;
 
 /* RLF-TimersAndConstants-NB-r13 */
 typedef struct RLF_TimersAndConstants_NB_r13 {
@@ -97,12 +91,6 @@ typedef struct RLF_TimersAndConstants_NB_r13 {
 			 * This type is extensible,
 			 * possible extensions are below.
 			 */
-			struct RLF_TimersAndConstants_NB_r13__setup__ext1 {
-				long	*t311_v1350	/* OPTIONAL */;
-				
-				/* Context for parsing across buffer boundaries */
-				asn_struct_ctx_t _asn_ctx;
-			} *ext1;
 			
 			/* Context for parsing across buffer boundaries */
 			asn_struct_ctx_t _asn_ctx;
@@ -119,7 +107,6 @@ typedef struct RLF_TimersAndConstants_NB_r13 {
 /* extern asn_TYPE_descriptor_t asn_DEF_n310_r13_21;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_t311_r13_30;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_n311_r13_38;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_t311_v1350_49;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_RLF_TimersAndConstants_NB_r13;
 
 #ifdef __cplusplus

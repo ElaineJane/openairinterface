@@ -1075,9 +1075,9 @@ static ber_tlv_tag_t asn_DEF_preamblesGroupAConfig_tags_20[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_preamblesGroupAConfig_tag2el_20[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sizeOfRA-PreamblesGroupA at 5596 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* messageSizeGroupA at 5599 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* messagePowerOffsetGroupB at 5601 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sizeOfRA-PreamblesGroupA at 5019 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* messageSizeGroupA at 5022 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* messagePowerOffsetGroupB at 5024 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_preamblesGroupAConfig_specs_20 = {
 	sizeof(struct RACH_ConfigCommon__preambleInfo__preamblesGroupAConfig),
@@ -1143,8 +1143,8 @@ static ber_tlv_tag_t asn_DEF_preambleInfo_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_preambleInfo_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* numberOfRA-Preambles at 5591 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* preamblesGroupAConfig at 5598 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* numberOfRA-Preambles at 5014 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* preamblesGroupAConfig at 5021 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_preambleInfo_specs_2 = {
 	sizeof(struct RACH_ConfigCommon__preambleInfo),
@@ -1341,9 +1341,9 @@ static ber_tlv_tag_t asn_DEF_ra_SupervisionInfo_tags_53[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ra_SupervisionInfo_tag2el_53[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preambleTransMax at 5608 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ra-ResponseWindowSize at 5610 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* mac-ContentionResolutionTimer at 5613 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preambleTransMax at 5031 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ra-ResponseWindowSize at 5033 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* mac-ContentionResolutionTimer at 5036 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ra_SupervisionInfo_specs_53 = {
 	sizeof(struct RACH_ConfigCommon__ra_SupervisionInfo),
@@ -1409,8 +1409,8 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_75[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_75[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preambleTransMax-CE-r13 at 5618 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rach-CE-LevelInfoList-r13 at 5619 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preambleTransMax-CE-r13 at 5041 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rach-CE-LevelInfoList-r13 at 5042 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_75 = {
 	sizeof(struct RACH_ConfigCommon__ext1),
@@ -1503,11 +1503,11 @@ static ber_tlv_tag_t asn_DEF_RACH_ConfigCommon_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RACH_ConfigCommon_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preambleInfo at 5593 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* powerRampingParameters at 5606 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ra-SupervisionInfo at 5608 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* maxHARQ-Msg3Tx at 5616 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 5618 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preambleInfo at 5016 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* powerRampingParameters at 5029 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ra-SupervisionInfo at 5031 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* maxHARQ-Msg3Tx at 5039 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 5041 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RACH_ConfigCommon_specs_1 = {
 	sizeof(struct RACH_ConfigCommon),

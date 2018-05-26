@@ -987,9 +987,9 @@ static asn_TYPE_member_t asn_MBR_supportedCellGrouping_r13_15[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_supportedCellGrouping_r13_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threeEntries-r13 at 9184 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* fourEntries-r13 at 9185 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* fiveEntries-r13 at 9186 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threeEntries-r13 at 8272 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* fourEntries-r13 at 8273 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* fiveEntries-r13 at 8274 */
 };
 static asn_CHOICE_specifics_t asn_SPC_supportedCellGrouping_r13_specs_15 = {
 	sizeof(struct BandCombinationParameters_r13__dc_Support_r13__supportedCellGrouping_r13),
@@ -1054,8 +1054,8 @@ static ber_tlv_tag_t asn_DEF_dc_Support_r13_tags_12[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_dc_Support_r13_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* asynchronous-r13 at 9182 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* supportedCellGrouping-r13 at 9184 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* asynchronous-r13 at 8270 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* supportedCellGrouping-r13 at 8272 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_dc_Support_r13_specs_12 = {
 	sizeof(struct BandCombinationParameters_r13__dc_Support_r13),
@@ -1184,15 +1184,15 @@ static ber_tlv_tag_t asn_DEF_BandCombinationParameters_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_BandCombinationParameters_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* differentFallbackSupported-r13 at 9175 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* bandParameterList-r13 at 9176 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* supportedBandwidthCombinationSet-r13 at 9177 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* multipleTimingAdvance-r13 at 9178 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* simultaneousRx-Tx-r13 at 9179 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* bandInfoEUTRA-r13 at 9180 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* dc-Support-r13 at 9182 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* supportedNAICS-2CRS-AP-r13 at 9189 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* commSupportedBandsPerBC-r13 at 9190 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* differentFallbackSupported-r13 at 8263 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* bandParameterList-r13 at 8264 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* supportedBandwidthCombinationSet-r13 at 8265 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* multipleTimingAdvance-r13 at 8266 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* simultaneousRx-Tx-r13 at 8267 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* bandInfoEUTRA-r13 at 8268 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* dc-Support-r13 at 8270 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* supportedNAICS-2CRS-AP-r13 at 8277 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* commSupportedBandsPerBC-r13 at 8278 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_BandCombinationParameters_r13_specs_1 = {
 	sizeof(struct BandCombinationParameters_r13),

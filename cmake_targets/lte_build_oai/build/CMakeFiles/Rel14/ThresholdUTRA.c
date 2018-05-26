@@ -93,8 +93,8 @@ static asn_TYPE_member_t asn_MBR_ThresholdUTRA_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_ThresholdUTRA_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* utra-RSCP at 8101 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* utra-EcN0 at 8102 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* utra-RSCP at 7354 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* utra-EcN0 at 7355 */
 };
 static asn_CHOICE_specifics_t asn_SPC_ThresholdUTRA_specs_1 = {
 	sizeof(struct ThresholdUTRA),

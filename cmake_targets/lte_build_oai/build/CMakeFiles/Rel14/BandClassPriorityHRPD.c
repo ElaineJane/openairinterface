@@ -31,8 +31,8 @@ static ber_tlv_tag_t asn_DEF_BandClassPriorityHRPD_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_BandClassPriorityHRPD_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandClass at 1407 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cellReselectionPriority at 1409 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandClass at 1350 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cellReselectionPriority at 1352 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_BandClassPriorityHRPD_specs_1 = {
 	sizeof(struct BandClassPriorityHRPD),

@@ -61,8 +61,8 @@ static ber_tlv_tag_t asn_DEF_CellsToAddModUTRA_FDD_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CellsToAddModUTRA_FDD_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellIndex at 7595 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* physCellId at 7597 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellIndex at 6881 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* physCellId at 6883 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CellsToAddModUTRA_FDD_specs_1 = {
 	sizeof(struct CellsToAddModUTRA_FDD),

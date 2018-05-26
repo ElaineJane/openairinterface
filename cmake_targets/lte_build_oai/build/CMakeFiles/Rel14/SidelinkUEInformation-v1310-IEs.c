@@ -244,9 +244,9 @@ static ber_tlv_tag_t asn_DEF_commTxResourceInfoReqRelay_r13_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_commTxResourceInfoReqRelay_r13_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxResourceReqRelay-r13 at 1789 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commTxResourceReqRelayUC-r13 at 1790 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ue-Type-r13 at 1791 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxResourceReqRelay-r13 at 1703 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commTxResourceReqRelayUC-r13 at 1704 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ue-Type-r13 at 1705 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_commTxResourceInfoReqRelay_r13_specs_3 = {
 	sizeof(struct SidelinkUEInformation_v1310_IEs__commTxResourceInfoReqRelay_r13),
@@ -313,8 +313,8 @@ static ber_tlv_tag_t asn_DEF_discTxResourceReq_v1310_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_discTxResourceReq_v1310_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreqDiscTx-r13 at 1794 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* discTxResourceReqAddFreq-r13 at 1795 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreqDiscTx-r13 at 1708 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* discTxResourceReqAddFreq-r13 at 1709 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_discTxResourceReq_v1310_specs_9 = {
 	sizeof(struct SidelinkUEInformation_v1310_IEs__discTxResourceReq_v1310),
@@ -422,7 +422,7 @@ static asn_TYPE_member_t asn_MBR_SidelinkUEInformation_v1310_IEs_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct SidelinkUEInformation_v1310_IEs, nonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SidelinkUEInformation_v1430_IEs,
+		&asn_DEF_SidelinkUEInformation_v14x0_IEs,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -434,14 +434,14 @@ static ber_tlv_tag_t asn_DEF_SidelinkUEInformation_v1310_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SidelinkUEInformation_v1310_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxResourceReqUC-r13 at 1787 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commTxResourceInfoReqRelay-r13 at 1789 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* discTxResourceReq-v1310 at 1794 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* discTxResourceReqPS-r13 at 1797 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* discRxGapReq-r13 at 1798 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* discTxGapReq-r13 at 1799 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* discSysInfoReportFreqList-r13 at 1800 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* nonCriticalExtension at 1801 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxResourceReqUC-r13 at 1701 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commTxResourceInfoReqRelay-r13 at 1703 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* discTxResourceReq-v1310 at 1708 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* discTxResourceReqPS-r13 at 1711 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* discRxGapReq-r13 at 1712 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* discTxGapReq-r13 at 1713 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* discSysInfoReportFreqList-r13 at 1714 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* nonCriticalExtension at 1715 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SidelinkUEInformation_v1310_IEs_specs_1 = {
 	sizeof(struct SidelinkUEInformation_v1310_IEs),

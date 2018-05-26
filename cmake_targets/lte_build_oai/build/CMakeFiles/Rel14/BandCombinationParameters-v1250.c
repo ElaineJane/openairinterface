@@ -392,9 +392,9 @@ static asn_TYPE_member_t asn_MBR_supportedCellGrouping_r12_5[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_supportedCellGrouping_r12_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threeEntries-r12 at 9159 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* fourEntries-r12 at 9160 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* fiveEntries-r12 at 9161 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threeEntries-r12 at 8247 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* fourEntries-r12 at 8248 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* fiveEntries-r12 at 8249 */
 };
 static asn_CHOICE_specifics_t asn_SPC_supportedCellGrouping_r12_specs_5 = {
 	sizeof(struct BandCombinationParameters_v1250__dc_Support_r12__supportedCellGrouping_r12),
@@ -459,8 +459,8 @@ static ber_tlv_tag_t asn_DEF_dc_Support_r12_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_dc_Support_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* asynchronous-r12 at 9157 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* supportedCellGrouping-r12 at 9159 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* asynchronous-r12 at 8245 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* supportedCellGrouping-r12 at 8247 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_dc_Support_r12_specs_2 = {
 	sizeof(struct BandCombinationParameters_v1250__dc_Support_r12),
@@ -535,9 +535,9 @@ static ber_tlv_tag_t asn_DEF_BandCombinationParameters_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_BandCombinationParameters_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dc-Support-r12 at 9157 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedNAICS-2CRS-AP-r12 at 9164 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* commSupportedBandsPerBC-r12 at 9165 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dc-Support-r12 at 8245 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedNAICS-2CRS-AP-r12 at 8252 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* commSupportedBandsPerBC-r12 at 8253 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_BandCombinationParameters_v1250_specs_1 = {
 	sizeof(struct BandCombinationParameters_v1250),

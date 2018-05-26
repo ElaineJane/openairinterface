@@ -59,11 +59,11 @@ static ber_tlv_tag_t asn_DEF_SL_DiscTxResourceInfoPerFreq_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_DiscTxResourceInfoPerFreq_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discTxCarrierFreq-r13 at 10362 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discTxResources-r13 at 10363 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* discTxResourcesPS-r13 at 10364 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* discTxRefCarrierDedicated-r13 at 10365 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* discCellSelectionInfo-r13 at 10366 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discTxCarrierFreq-r13 at 9184 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* discTxResources-r13 at 9185 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* discTxResourcesPS-r13 at 9186 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* discTxRefCarrierDedicated-r13 at 9187 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* discCellSelectionInfo-r13 at 9188 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_DiscTxResourceInfoPerFreq_r13_specs_1 = {
 	sizeof(struct SL_DiscTxResourceInfoPerFreq_r13),

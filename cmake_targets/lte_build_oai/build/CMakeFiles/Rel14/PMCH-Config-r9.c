@@ -284,9 +284,9 @@ static ber_tlv_tag_t asn_DEF_PMCH_Config_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PMCH_Config_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sf-AllocEnd-r9 at 9967 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* dataMCS-r9 at 9968 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* mch-SchedulingPeriod-r9 at 9970 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sf-AllocEnd-r9 at 8905 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* dataMCS-r9 at 8906 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* mch-SchedulingPeriod-r9 at 8908 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PMCH_Config_r9_specs_1 = {
 	sizeof(struct PMCH_Config_r9),

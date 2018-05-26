@@ -222,8 +222,8 @@ static asn_TYPE_member_t asn_MBR_systemTimeInfo_r11_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_systemTimeInfo_r11_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue at 3242 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue at 3243 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* explicitValue at 2995 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* defaultValue at 2996 */
 };
 static asn_CHOICE_specifics_t asn_SPC_systemTimeInfo_r11_specs_2 = {
 	sizeof(struct ParametersCDMA2000_r11__systemTimeInfo_r11),
@@ -288,8 +288,8 @@ static ber_tlv_tag_t asn_DEF_parametersHRPD_r11_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_parametersHRPD_r11_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preRegistrationInfoHRPD-r11 at 3247 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cellReselectionParametersHRPD-r11 at 3248 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preRegistrationInfoHRPD-r11 at 3000 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cellReselectionParametersHRPD-r11 at 3001 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_parametersHRPD_r11_specs_6 = {
 	sizeof(struct ParametersCDMA2000_r11__parametersHRPD_r11),
@@ -448,13 +448,13 @@ static ber_tlv_tag_t asn_DEF_parameters1XRTT_r11_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_parameters1XRTT_r11_tag2el_9[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csfb-RegistrationParam1XRTT-r11 at 3251 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csfb-RegistrationParam1XRTT-Ext-r11 at 3252 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* longCodeState1XRTT-r11 at 3253 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* cellReselectionParameters1XRTT-r11 at 3254 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ac-BarringConfig1XRTT-r11 at 3255 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* csfb-SupportForDualRxUEs-r11 at 3256 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* csfb-DualRxTxSupport-r11 at 3257 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csfb-RegistrationParam1XRTT-r11 at 3004 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* csfb-RegistrationParam1XRTT-Ext-r11 at 3005 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* longCodeState1XRTT-r11 at 3006 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* cellReselectionParameters1XRTT-r11 at 3007 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ac-BarringConfig1XRTT-r11 at 3008 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* csfb-SupportForDualRxUEs-r11 at 3009 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* csfb-DualRxTxSupport-r11 at 3010 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_parameters1XRTT_r11_specs_9 = {
 	sizeof(struct ParametersCDMA2000_r11__parameters1XRTT_r11),
@@ -538,10 +538,10 @@ static ber_tlv_tag_t asn_DEF_ParametersCDMA2000_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ParametersCDMA2000_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* systemTimeInfo-r11 at 3242 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* searchWindowSize-r11 at 3245 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* parametersHRPD-r11 at 3247 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* parameters1XRTT-r11 at 3251 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* systemTimeInfo-r11 at 2995 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* searchWindowSize-r11 at 2998 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* parametersHRPD-r11 at 3000 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* parameters1XRTT-r11 at 3004 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ParametersCDMA2000_r11_specs_1 = {
 	sizeof(struct ParametersCDMA2000_r11),

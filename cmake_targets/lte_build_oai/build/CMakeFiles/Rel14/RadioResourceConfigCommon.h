@@ -41,9 +41,7 @@ struct PUCCH_ConfigCommon_v1310;
 struct PUSCH_ConfigCommon_v1310;
 struct UplinkPowerControlCommon_v1310;
 struct HighSpeedConfig_r14;
-struct PRACH_Config_v1430;
-struct PUCCH_ConfigCommon_v1430;
-struct TDD_Config_v1430;
+struct PRACH_Config_v14xy;
 
 /* RadioResourceConfigCommon */
 typedef struct RadioResourceConfigCommon {
@@ -94,9 +92,7 @@ typedef struct RadioResourceConfigCommon {
 	} *ext4;
 	struct RadioResourceConfigCommon__ext5 {
 		struct HighSpeedConfig_r14	*highSpeedConfig_r14	/* OPTIONAL */;
-		struct PRACH_Config_v1430	*prach_Config_v1430	/* OPTIONAL */;
-		struct PUCCH_ConfigCommon_v1430	*pucch_ConfigCommon_v1430	/* OPTIONAL */;
-		struct TDD_Config_v1430	*tdd_Config_v1430	/* OPTIONAL */;
+		struct PRACH_Config_v14xy	*prach_Config_v14xy	/* OPTIONAL */;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
@@ -132,9 +128,7 @@ extern asn_TYPE_descriptor_t asn_DEF_RadioResourceConfigCommon;
 #include "PUSCH-ConfigCommon-v1310.h"
 #include "UplinkPowerControlCommon-v1310.h"
 #include "HighSpeedConfig-r14.h"
-#include "PRACH-Config-v1430.h"
-#include "PUCCH-ConfigCommon-v1430.h"
-#include "TDD-Config-v1430.h"
+#include "PRACH-Config-v14xy.h"
 
 #endif	/* _RadioResourceConfigCommon_H_ */
 #include <asn_internal.h>

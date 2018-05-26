@@ -460,10 +460,10 @@ static asn_TYPE_member_t asn_MBR_downlinkBitmapNonAnchor_r13_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_downlinkBitmapNonAnchor_r13_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* useNoBitmap-r13 at 12079 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* useAnchorBitmap-r13 at 12080 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* explicitBitmapConfiguration-r13 at 12081 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* spare at 12082 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* useNoBitmap-r13 at 10508 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* useAnchorBitmap-r13 at 10509 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* explicitBitmapConfiguration-r13 at 10510 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* spare at 10511 */
 };
 static asn_CHOICE_specifics_t asn_SPC_downlinkBitmapNonAnchor_r13_specs_3 = {
 	sizeof(struct DL_CarrierConfigDedicated_NB_r13__downlinkBitmapNonAnchor_r13),
@@ -541,10 +541,10 @@ static asn_TYPE_member_t asn_MBR_dl_GapNonAnchor_r13_8[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_dl_GapNonAnchor_r13_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* useNoGap-r13 at 12085 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* useAnchorGapConfig-r13 at 12086 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* explicitGapConfiguration-r13 at 12087 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* spare at 12088 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* useNoGap-r13 at 10514 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* useAnchorGapConfig-r13 at 10515 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* explicitGapConfiguration-r13 at 10516 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* spare at 10517 */
 };
 static asn_CHOICE_specifics_t asn_SPC_dl_GapNonAnchor_r13_specs_8 = {
 	sizeof(struct DL_CarrierConfigDedicated_NB_r13__dl_GapNonAnchor_r13),
@@ -599,7 +599,7 @@ static ber_tlv_tag_t asn_DEF_samePCI_r13_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_samePCI_r13_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* indexToMidPRB-r13 at 12093 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* indexToMidPRB-r13 at 10522 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_samePCI_r13_specs_15 = {
 	sizeof(struct DL_CarrierConfigDedicated_NB_r13__inbandCarrierInfo_r13__samePCI_Indicator_r13__samePCI_r13),
@@ -704,7 +704,7 @@ static ber_tlv_tag_t asn_DEF_differentPCI_r13_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_differentPCI_r13_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* eutra-NumCRS-Ports-r13 at 12096 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* eutra-NumCRS-Ports-r13 at 10525 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_differentPCI_r13_specs_17 = {
 	sizeof(struct DL_CarrierConfigDedicated_NB_r13__inbandCarrierInfo_r13__samePCI_Indicator_r13__differentPCI_r13),
@@ -765,8 +765,8 @@ static asn_TYPE_member_t asn_MBR_samePCI_Indicator_r13_14[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_samePCI_Indicator_r13_tag2el_14[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* samePCI-r13 at 12094 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* differentPCI-r13 at 12097 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* samePCI-r13 at 10523 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* differentPCI-r13 at 10526 */
 };
 static asn_CHOICE_specifics_t asn_SPC_samePCI_Indicator_r13_specs_14 = {
 	sizeof(struct DL_CarrierConfigDedicated_NB_r13__inbandCarrierInfo_r13__samePCI_Indicator_r13),
@@ -882,8 +882,8 @@ static ber_tlv_tag_t asn_DEF_inbandCarrierInfo_r13_tags_13[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_inbandCarrierInfo_r13_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* samePCI-Indicator-r13 at 12094 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* eutraControlRegionSize-r13 at 12099 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* samePCI-Indicator-r13 at 10523 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* eutraControlRegionSize-r13 at 10528 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_inbandCarrierInfo_r13_specs_13 = {
 	sizeof(struct DL_CarrierConfigDedicated_NB_r13__inbandCarrierInfo_r13),
@@ -1002,7 +1002,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_26[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_26[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* nrs-PowerOffsetNonAnchor-v1330 at 12102 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* nrs-PowerOffsetNonAnchor-v1330 at 10531 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_26 = {
 	sizeof(struct DL_CarrierConfigDedicated_NB_r13__ext1),
@@ -1095,11 +1095,11 @@ static ber_tlv_tag_t asn_DEF_DL_CarrierConfigDedicated_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_DL_CarrierConfigDedicated_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-CarrierFreq-r13 at 12077 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* downlinkBitmapNonAnchor-r13 at 12079 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* dl-GapNonAnchor-r13 at 12085 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* inbandCarrierInfo-r13 at 12098 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 12104 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* dl-CarrierFreq-r13 at 10506 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* downlinkBitmapNonAnchor-r13 at 10508 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* dl-GapNonAnchor-r13 at 10514 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* inbandCarrierInfo-r13 at 10527 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 10533 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_DL_CarrierConfigDedicated_NB_r13_specs_1 = {
 	sizeof(struct DL_CarrierConfigDedicated_NB_r13),

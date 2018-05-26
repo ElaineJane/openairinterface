@@ -495,11 +495,11 @@ static ber_tlv_tag_t asn_DEF_dmrs_Config_r13_tags_21[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_dmrs_Config_r13_tag2el_21[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threeTone-BaseSequence-r13 at 12296 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* threeTone-CyclicShift-r13 at 12297 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sixTone-BaseSequence-r13 at 12298 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sixTone-CyclicShift-r13 at 12299 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* twelveTone-BaseSequence-r13 at 12300 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* threeTone-BaseSequence-r13 at 10684 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* threeTone-CyclicShift-r13 at 10685 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sixTone-BaseSequence-r13 at 10686 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* sixTone-CyclicShift-r13 at 10687 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* twelveTone-BaseSequence-r13 at 10688 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_dmrs_Config_r13_specs_21 = {
 	sizeof(struct NPUSCH_ConfigCommon_NB_r13__dmrs_Config_r13),
@@ -583,10 +583,10 @@ static ber_tlv_tag_t asn_DEF_NPUSCH_ConfigCommon_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_NPUSCH_ConfigCommon_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ack-NACK-NumRepetitions-Msg4-r13 at 12290 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* srs-SubframeConfig-r13 at 12292 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* dmrs-Config-r13 at 12296 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ul-ReferenceSignalsNPUSCH-r13 at 12303 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ack-NACK-NumRepetitions-Msg4-r13 at 10678 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* srs-SubframeConfig-r13 at 10680 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* dmrs-Config-r13 at 10684 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ul-ReferenceSignalsNPUSCH-r13 at 10691 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_NPUSCH_ConfigCommon_NB_r13_specs_1 = {
 	sizeof(struct NPUSCH_ConfigCommon_NB_r13),

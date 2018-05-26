@@ -56,8 +56,8 @@ static asn_TYPE_member_t asn_MBR_cellsToAddModList_5[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_cellsToAddModList_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellsToAddModListUTRA-FDD at 7578 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cellsToAddModListUTRA-TDD at 7580 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellsToAddModListUTRA-FDD at 6864 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* cellsToAddModListUTRA-TDD at 6866 */
 };
 static asn_CHOICE_specifics_t asn_SPC_cellsToAddModList_specs_5 = {
 	sizeof(struct MeasObjectUTRA__cellsToAddModList),
@@ -117,8 +117,8 @@ static asn_TYPE_member_t asn_MBR_cellForWhichToReportCGI_8[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_cellForWhichToReportCGI_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* utra-FDD at 7582 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* utra-TDD at 7584 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* utra-FDD at 6868 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* utra-TDD at 6870 */
 };
 static asn_CHOICE_specifics_t asn_SPC_cellForWhichToReportCGI_specs_8 = {
 	sizeof(struct MeasObjectUTRA__cellForWhichToReportCGI),
@@ -174,7 +174,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_12[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* csg-allowedReportingCells-v930 at 7586 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* csg-allowedReportingCells-v930 at 6872 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_12 = {
 	sizeof(struct MeasObjectUTRA__ext1),
@@ -232,7 +232,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_14[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_14[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* reducedMeasPerformance-r12 at 7588 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* reducedMeasPerformance-r12 at 6874 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_14 = {
 	sizeof(struct MeasObjectUTRA__ext2),
@@ -343,13 +343,13 @@ static ber_tlv_tag_t asn_DEF_MeasObjectUTRA_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasObjectUTRA_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq at 7574 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* offsetFreq at 7575 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellsToRemoveList at 7576 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* cellsToAddModList at 7578 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* cellForWhichToReportCGI at 7582 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext1 at 7586 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext2 at 7588 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq at 6860 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* offsetFreq at 6861 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellsToRemoveList at 6862 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* cellsToAddModList at 6864 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* cellForWhichToReportCGI at 6868 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ext1 at 6872 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* ext2 at 6874 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasObjectUTRA_specs_1 = {
 	sizeof(struct MeasObjectUTRA),

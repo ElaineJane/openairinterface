@@ -22,7 +22,6 @@
 #include <constr_CHOICE.h>
 #include <NativeInteger.h>
 #include "DRX-Config-r13.h"
-#include "DataInactivityTimer-r14.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -144,11 +143,6 @@ typedef enum MAC_MainConfig__ext7__skipUplinkTx_r14__setup__skipUplinkTxSPS_r14 
 typedef enum MAC_MainConfig__ext7__skipUplinkTx_r14__setup__skipUplinkTxDynamic_r14 {
 	MAC_MainConfig__ext7__skipUplinkTx_r14__setup__skipUplinkTxDynamic_r14_true	= 0
 } e_MAC_MainConfig__ext7__skipUplinkTx_r14__setup__skipUplinkTxDynamic_r14;
-typedef enum MAC_MainConfig__ext7__dataInactivityTimerConfig_r14_PR {
-	MAC_MainConfig__ext7__dataInactivityTimerConfig_r14_PR_NOTHING,	/* No components present */
-	MAC_MainConfig__ext7__dataInactivityTimerConfig_r14_PR_release,
-	MAC_MainConfig__ext7__dataInactivityTimerConfig_r14_PR_setup
-} MAC_MainConfig__ext7__dataInactivityTimerConfig_r14_PR;
 
 /* Forward declarations */
 struct DRX_Config;
@@ -312,21 +306,6 @@ typedef struct MAC_MainConfig {
 			/* Context for parsing across buffer boundaries */
 			asn_struct_ctx_t _asn_ctx;
 		} *skipUplinkTx_r14;
-		struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14 {
-			MAC_MainConfig__ext7__dataInactivityTimerConfig_r14_PR present;
-			union MAC_MainConfig__ext7__dataInactivityTimerConfig_r14_u {
-				NULL_t	 release;
-				struct MAC_MainConfig__ext7__dataInactivityTimerConfig_r14__setup {
-					DataInactivityTimer_r14_t	 dataInactivityTimer_r14;
-					
-					/* Context for parsing across buffer boundaries */
-					asn_struct_ctx_t _asn_ctx;
-				} setup;
-			} choice;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *dataInactivityTimerConfig_r14;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;

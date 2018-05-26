@@ -78,9 +78,9 @@ static ber_tlv_tag_t asn_DEF_intraLTE_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_intraLTE_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* securityAlgorithmConfig at 1061 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* keyChangeIndicator at 1062 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nextHopChainingCount at 1064 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* securityAlgorithmConfig at 1011 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* keyChangeIndicator at 1012 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nextHopChainingCount at 1014 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_intraLTE_specs_3 = {
 	sizeof(struct SecurityConfigHO__handoverType__intraLTE),
@@ -146,8 +146,8 @@ static ber_tlv_tag_t asn_DEF_interRAT_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_interRAT_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* securityAlgorithmConfig at 1066 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nas-SecurityParamToEUTRA at 1067 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* securityAlgorithmConfig at 1016 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nas-SecurityParamToEUTRA at 1017 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_interRAT_specs_7 = {
 	sizeof(struct SecurityConfigHO__handoverType__interRAT),
@@ -208,8 +208,8 @@ static asn_TYPE_member_t asn_MBR_handoverType_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_handoverType_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* intraLTE at 1061 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interRAT at 1066 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* intraLTE at 1011 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interRAT at 1016 */
 };
 static asn_CHOICE_specifics_t asn_SPC_handoverType_specs_2 = {
 	sizeof(struct SecurityConfigHO__handoverType),
@@ -263,7 +263,7 @@ static ber_tlv_tag_t asn_DEF_SecurityConfigHO_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SecurityConfigHO_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* handoverType at 1064 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* handoverType at 1014 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SecurityConfigHO_specs_1 = {
 	sizeof(struct SecurityConfigHO),

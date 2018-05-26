@@ -69,8 +69,6 @@ struct SpeedStateScaleFactors;
 struct CellReselectionServingFreqInfo_v1310;
 struct RedistributionServingInfo_r13;
 struct CellSelectionInfoCE_r13;
-struct CellSelectionInfoCE1_r13;
-struct CellSelectionInfoCE1_v1360;
 
 /* SystemInformationBlockType3 */
 typedef struct SystemInformationBlockType3 {
@@ -161,18 +159,6 @@ typedef struct SystemInformationBlockType3 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext4;
-	struct SystemInformationBlockType3__ext5 {
-		struct CellSelectionInfoCE1_r13	*cellSelectionInfoCE1_r13	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext5;
-	struct SystemInformationBlockType3__ext6 {
-		struct CellSelectionInfoCE1_v1360	*cellSelectionInfoCE1_v1360	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext6;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -193,8 +179,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType3;
 #include "CellReselectionServingFreqInfo-v1310.h"
 #include "RedistributionServingInfo-r13.h"
 #include "CellSelectionInfoCE-r13.h"
-#include "CellSelectionInfoCE1-r13.h"
-#include "CellSelectionInfoCE1-v1360.h"
 
 #endif	/* _SystemInformationBlockType3_H_ */
 #include <asn_internal.h>

@@ -21,15 +21,16 @@
 extern "C" {
 #endif
 
-/* Forward declarations */
-struct RRCConnectionReestablishment_NB_v1430_IEs;
-
 /* RRCConnectionReestablishment-NB-r13-IEs */
 typedef struct RRCConnectionReestablishment_NB_r13_IEs {
 	RadioResourceConfigDedicated_NB_r13_t	 radioResourceConfigDedicated_r13;
 	NextHopChainingCount_t	 nextHopChainingCount_r13;
 	OCTET_STRING_t	*lateNonCriticalExtension	/* OPTIONAL */;
-	struct RRCConnectionReestablishment_NB_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct RRCConnectionReestablishment_NB_r13_IEs__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -41,9 +42,6 @@ extern asn_TYPE_descriptor_t asn_DEF_RRCConnectionReestablishment_NB_r13_IEs;
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "RRCConnectionReestablishment-NB-v1430-IEs.h"
 
 #endif	/* _RRCConnectionReestablishment_NB_r13_IEs_H_ */
 #include <asn_internal.h>

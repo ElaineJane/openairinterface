@@ -53,7 +53,7 @@ static ber_tlv_tag_t asn_DEF_SchedulingRequestConfig_v1020_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SchedulingRequestConfig_v1020_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sr-PUCCH-ResourceIndexP1-r10 at 6302 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* sr-PUCCH-ResourceIndexP1-r10 at 5712 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SchedulingRequestConfig_v1020_specs_1 = {
 	sizeof(struct SchedulingRequestConfig_v1020),

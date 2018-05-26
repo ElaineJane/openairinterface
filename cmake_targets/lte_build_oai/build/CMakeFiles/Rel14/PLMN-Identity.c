@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_PLMN_Identity_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PLMN_Identity_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mcc at 7115 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* mnc at 7117 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mcc at 6449 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* mnc at 6451 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PLMN_Identity_specs_1 = {
 	sizeof(struct PLMN_Identity),

@@ -31,8 +31,8 @@ static ber_tlv_tag_t asn_DEF_MeasResult2EUTRA_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasResult2EUTRA_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq-r9 at 2406 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measResultList-r9 at 2408 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq-r9 at 2200 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measResultList-r9 at 2202 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasResult2EUTRA_r9_specs_1 = {
 	sizeof(struct MeasResult2EUTRA_r9),

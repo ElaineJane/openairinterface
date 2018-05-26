@@ -820,10 +820,10 @@ static ber_tlv_tag_t asn_DEF_eNB_RequestedParameters_r13_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_eNB_RequestedParameters_r13_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* reducedIntNonContCombRequested-r13 at 9056 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* requestedCCsDL-r13 at 9057 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* requestedCCsUL-r13 at 9058 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* skipFallbackCombRequested-r13 at 9059 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* reducedIntNonContCombRequested-r13 at 8160 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* requestedCCsDL-r13 at 8161 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* requestedCCsUL-r13 at 8162 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* skipFallbackCombRequested-r13 at 8163 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_eNB_RequestedParameters_r13_specs_2 = {
 	sizeof(struct RF_Parameters_v1310__eNB_RequestedParameters_r13),
@@ -1066,12 +1066,12 @@ static ber_tlv_tag_t asn_DEF_RF_Parameters_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RF_Parameters_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eNB-RequestedParameters-r13 at 9056 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* maximumCCsRetrieval-r13 at 9061 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* skipFallbackCombinations-r13 at 9062 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* reducedIntNonContComb-r13 at 9063 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* supportedBandListEUTRA-v1310 at 9064 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* supportedBandCombinationReduced-r13 at 9065 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eNB-RequestedParameters-r13 at 8160 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* maximumCCsRetrieval-r13 at 8165 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* skipFallbackCombinations-r13 at 8166 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* reducedIntNonContComb-r13 at 8167 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* supportedBandListEUTRA-v1310 at 8168 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* supportedBandCombinationReduced-r13 at 8169 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RF_Parameters_v1310_specs_1 = {
 	sizeof(struct RF_Parameters_v1310),

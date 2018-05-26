@@ -477,10 +477,10 @@ static ber_tlv_tag_t asn_DEF_MobilityStateParameters_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MobilityStateParameters_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* t-Evaluation at 7050 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* t-HystNormal at 7052 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* n-CellChangeMedium at 7053 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* n-CellChangeHigh at 7054 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* t-Evaluation at 6384 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* t-HystNormal at 6386 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* n-CellChangeMedium at 6387 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* n-CellChangeHigh at 6388 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MobilityStateParameters_specs_1 = {
 	sizeof(struct MobilityStateParameters),

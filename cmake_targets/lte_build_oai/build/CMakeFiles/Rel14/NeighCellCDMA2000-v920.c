@@ -22,7 +22,7 @@ static ber_tlv_tag_t asn_DEF_NeighCellCDMA2000_v920_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_NeighCellCDMA2000_v920_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* neighCellsPerFreqList-v920 at 3195 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* neighCellsPerFreqList-v920 at 2948 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_NeighCellCDMA2000_v920_specs_1 = {
 	sizeof(struct NeighCellCDMA2000_v920),

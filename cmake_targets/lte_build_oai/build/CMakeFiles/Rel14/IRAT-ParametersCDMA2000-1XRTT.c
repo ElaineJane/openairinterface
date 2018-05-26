@@ -384,9 +384,9 @@ static ber_tlv_tag_t asn_DEF_IRAT_ParametersCDMA2000_1XRTT_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_IRAT_ParametersCDMA2000_1XRTT_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* supportedBandList1XRTT at 9518 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* tx-Config1XRTT at 9519 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* rx-Config1XRTT at 9520 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* supportedBandList1XRTT at 8559 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* tx-Config1XRTT at 8560 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* rx-Config1XRTT at 8561 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_IRAT_ParametersCDMA2000_1XRTT_specs_1 = {
 	sizeof(struct IRAT_ParametersCDMA2000_1XRTT),

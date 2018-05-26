@@ -366,8 +366,8 @@ static ber_tlv_tag_t asn_DEF_setup_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* repetitionFactor at 5269 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* n1PUCCH-AN-Rep at 5270 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* repetitionFactor at 4743 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* n1PUCCH-AN-Rep at 4744 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct PUCCH_ConfigDedicated__ackNackRepetition__setup),
@@ -428,8 +428,8 @@ static asn_TYPE_member_t asn_MBR_ackNackRepetition_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_ackNackRepetition_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5267 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5269 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4741 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4743 */
 };
 static asn_CHOICE_specifics_t asn_SPC_ackNackRepetition_specs_2 = {
 	sizeof(struct PUCCH_ConfigDedicated__ackNackRepetition),
@@ -542,8 +542,8 @@ static ber_tlv_tag_t asn_DEF_PUCCH_ConfigDedicated_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PUCCH_ConfigDedicated_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ackNackRepetition at 5267 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd-AckNackFeedbackMode at 5273 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ackNackRepetition at 4741 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* tdd-AckNackFeedbackMode at 4747 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PUCCH_ConfigDedicated_specs_1 = {
 	sizeof(struct PUCCH_ConfigDedicated),

@@ -113,7 +113,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* zeroTxPowerCSI-RS-List-r12 at 4078 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* zeroTxPowerCSI-RS-List-r12 at 3728 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_5 = {
 	sizeof(struct CSI_RS_Config_v1250__ds_ZeroTxPowerCSI_RS_r12__setup),
@@ -174,8 +174,8 @@ static asn_TYPE_member_t asn_MBR_ds_ZeroTxPowerCSI_RS_r12_3[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_ds_ZeroTxPowerCSI_RS_r12_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4075 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4078 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3725 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3728 */
 };
 static asn_CHOICE_specifics_t asn_SPC_ds_ZeroTxPowerCSI_RS_r12_specs_3 = {
 	sizeof(struct CSI_RS_Config_v1250__ds_ZeroTxPowerCSI_RS_r12),
@@ -239,8 +239,8 @@ static ber_tlv_tag_t asn_DEF_CSI_RS_Config_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CSI_RS_Config_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* zeroTxPowerCSI-RS2-r12 at 4073 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ds-ZeroTxPowerCSI-RS-r12 at 4075 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* zeroTxPowerCSI-RS2-r12 at 3723 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ds-ZeroTxPowerCSI-RS-r12 at 3725 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CSI_RS_Config_v1250_specs_1 = {
 	sizeof(struct CSI_RS_Config_v1250),

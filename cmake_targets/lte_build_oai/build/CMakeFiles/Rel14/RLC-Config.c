@@ -37,8 +37,8 @@ static ber_tlv_tag_t asn_DEF_am_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_am_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-AM-RLC at 6083 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dl-AM-RLC at 6085 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-AM-RLC at 5493 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dl-AM-RLC at 5495 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_am_specs_2 = {
 	sizeof(struct RLC_Config__am),
@@ -103,8 +103,8 @@ static ber_tlv_tag_t asn_DEF_um_Bi_Directional_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_um_Bi_Directional_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-UM-RLC at 6087 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dl-UM-RLC at 6089 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ul-UM-RLC at 5497 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dl-UM-RLC at 5499 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_um_Bi_Directional_specs_5 = {
 	sizeof(struct RLC_Config__um_Bi_Directional),
@@ -160,7 +160,7 @@ static ber_tlv_tag_t asn_DEF_um_Uni_Directional_UL_tags_8[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_um_Uni_Directional_UL_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* ul-UM-RLC at 6092 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* ul-UM-RLC at 5502 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_um_Uni_Directional_UL_specs_8 = {
 	sizeof(struct RLC_Config__um_Uni_Directional_UL),
@@ -216,7 +216,7 @@ static ber_tlv_tag_t asn_DEF_um_Uni_Directional_DL_tags_10[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_um_Uni_Directional_DL_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* dl-UM-RLC at 6095 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* dl-UM-RLC at 5505 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_um_Uni_Directional_DL_specs_10 = {
 	sizeof(struct RLC_Config__um_Uni_Directional_DL),
@@ -295,10 +295,10 @@ static asn_TYPE_member_t asn_MBR_RLC_Config_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_RLC_Config_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* am at 6083 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* um-Bi-Directional at 6087 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* um-Uni-Directional-UL at 6092 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* um-Uni-Directional-DL at 6095 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* am at 5493 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* um-Bi-Directional at 5497 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* um-Uni-Directional-UL at 5502 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* um-Uni-Directional-DL at 5505 */
 };
 static asn_CHOICE_specifics_t asn_SPC_RLC_Config_specs_1 = {
 	sizeof(struct RLC_Config),

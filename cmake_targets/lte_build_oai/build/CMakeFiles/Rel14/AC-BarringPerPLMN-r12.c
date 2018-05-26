@@ -441,9 +441,9 @@ static ber_tlv_tag_t asn_DEF_ac_BarringInfo_r12_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ac_BarringInfo_r12_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ac-BarringForEmergency-r12 at 2683 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ac-BarringForMO-Signalling-r12 at 2684 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ac-BarringForMO-Data-r12 at 2685 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ac-BarringForEmergency-r12 at 2461 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ac-BarringForMO-Signalling-r12 at 2462 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ac-BarringForMO-Data-r12 at 2463 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ac_BarringInfo_r12_specs_3 = {
 	sizeof(struct AC_BarringPerPLMN_r12__ac_BarringInfo_r12),
@@ -704,14 +704,14 @@ static ber_tlv_tag_t asn_DEF_AC_BarringPerPLMN_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_AC_BarringPerPLMN_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-IdentityIndex-r12 at 2681 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ac-BarringInfo-r12 at 2683 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ac-BarringSkipForMMTELVoice-r12 at 2687 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ac-BarringSkipForMMTELVideo-r12 at 2688 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ac-BarringSkipForSMS-r12 at 2689 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ac-BarringForCSFB-r12 at 2690 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ssac-BarringForMMTEL-Voice-r12 at 2691 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ssac-BarringForMMTEL-Video-r12 at 2692 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-IdentityIndex-r12 at 2459 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ac-BarringInfo-r12 at 2461 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* ac-BarringSkipForMMTELVoice-r12 at 2465 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ac-BarringSkipForMMTELVideo-r12 at 2466 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* ac-BarringSkipForSMS-r12 at 2467 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* ac-BarringForCSFB-r12 at 2468 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* ssac-BarringForMMTEL-Voice-r12 at 2469 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* ssac-BarringForMMTEL-Video-r12 at 2470 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_AC_BarringPerPLMN_r12_specs_1 = {
 	sizeof(struct AC_BarringPerPLMN_r12),

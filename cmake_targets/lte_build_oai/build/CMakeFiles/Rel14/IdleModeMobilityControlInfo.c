@@ -208,7 +208,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_18[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_18[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* freqPriorityListExtEUTRA-r12 at 1346 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* freqPriorityListExtEUTRA-r12 at 1289 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_18 = {
 	sizeof(struct IdleModeMobilityControlInfo__ext1),
@@ -275,8 +275,8 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_20[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_20[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* freqPriorityListEUTRA-v1310 at 1348 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* freqPriorityListExtEUTRA-v1310 at 1349 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* freqPriorityListEUTRA-v1310 at 1291 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* freqPriorityListExtEUTRA-v1310 at 1292 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_20 = {
 	sizeof(struct IdleModeMobilityControlInfo__ext2),
@@ -405,15 +405,15 @@ static ber_tlv_tag_t asn_DEF_IdleModeMobilityControlInfo_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_IdleModeMobilityControlInfo_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* freqPriorityListEUTRA at 1336 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* freqPriorityListGERAN at 1337 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* freqPriorityListUTRA-FDD at 1338 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* freqPriorityListUTRA-TDD at 1339 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* bandClassPriorityListHRPD at 1340 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* bandClassPriorityList1XRTT at 1341 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* t320 at 1343 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext1 at 1346 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* ext2 at 1348 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* freqPriorityListEUTRA at 1279 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* freqPriorityListGERAN at 1280 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* freqPriorityListUTRA-FDD at 1281 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* freqPriorityListUTRA-TDD at 1282 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* bandClassPriorityListHRPD at 1283 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* bandClassPriorityList1XRTT at 1284 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* t320 at 1286 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* ext1 at 1289 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* ext2 at 1291 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_IdleModeMobilityControlInfo_specs_1 = {
 	sizeof(struct IdleModeMobilityControlInfo),

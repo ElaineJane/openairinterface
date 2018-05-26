@@ -446,8 +446,8 @@ static ber_tlv_tag_t asn_DEF_acdc_BarringConfig_r13_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_acdc_BarringConfig_r13_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ac-BarringFactor-r13 at 2714 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ac-BarringTime-r13 at 2716 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ac-BarringFactor-r13 at 2492 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ac-BarringTime-r13 at 2494 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_acdc_BarringConfig_r13_specs_3 = {
 	sizeof(struct BarringPerACDC_Category_r13__acdc_BarringConfig_r13),
@@ -512,8 +512,8 @@ static ber_tlv_tag_t asn_DEF_BarringPerACDC_Category_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_BarringPerACDC_Category_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* acdc-Category-r13 at 2711 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* acdc-BarringConfig-r13 at 2715 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* acdc-Category-r13 at 2489 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* acdc-BarringConfig-r13 at 2493 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_BarringPerACDC_Category_r13_specs_1 = {
 	sizeof(struct BarringPerACDC_Category_r13),

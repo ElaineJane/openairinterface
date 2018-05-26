@@ -1267,13 +1267,13 @@ static ber_tlv_tag_t asn_DEF_MeasParameters_v1310_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasParameters_v1310_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rs-SINR-Meas-r13 at 9388 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* whiteCellList-r13 at 9389 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* extendedMaxObjectId-r13 at 9390 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ul-PDCP-Delay-r13 at 9391 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* extendedFreqPriorities-r13 at 9392 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* multiBandInfoReport-r13 at 9393 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* rssi-AndChannelOccupancyReporting-r13 at 9394 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rs-SINR-Meas-r13 at 8437 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* whiteCellList-r13 at 8438 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* extendedMaxObjectId-r13 at 8439 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ul-PDCP-Delay-r13 at 8440 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* extendedFreqPriorities-r13 at 8441 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* multiBandInfoReport-r13 at 8442 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* rssi-AndChannelOccupancyReporting-r13 at 8443 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasParameters_v1310_specs_1 = {
 	sizeof(struct MeasParameters_v1310),

@@ -16,7 +16,6 @@
 #include <BOOLEAN.h>
 #include <NativeEnumerated.h>
 #include <NativeInteger.h>
-#include "P0-SL-r12.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -62,19 +61,16 @@ typedef enum SL_V2X_PreconfigCommPool_r14__numSubchannel_r14 {
 	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_n1	= 0,
 	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_n3	= 1,
 	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_n5	= 2,
-	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_n8	= 3,
-	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_n10	= 4,
-	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_n15	= 5,
-	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_n20	= 6,
+	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_n10	= 3,
+	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_n15	= 4,
+	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_n20	= 5,
+	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_spare2	= 6,
 	SL_V2X_PreconfigCommPool_r14__numSubchannel_r14_spare1	= 7
 } e_SL_V2X_PreconfigCommPool_r14__numSubchannel_r14;
 
 /* Forward declarations */
 struct SL_OffsetIndicator_r12;
-struct SL_CBR_PPPP_TxPreconfigList_r14;
-struct SL_P2X_ResourceSelectionConfig_r14;
-struct SL_SyncAllowed_r14;
-struct SL_RestrictResourceReservationPeriodList_r14;
+struct SL_TxParameters_r12;
 
 /* SL-V2X-PreconfigCommPool-r14 */
 typedef struct SL_V2X_PreconfigCommPool_r14 {
@@ -85,13 +81,8 @@ typedef struct SL_V2X_PreconfigCommPool_r14 {
 	long	 numSubchannel_r14;
 	long	 startRB_Subchannel_r14;
 	long	*startRB_PSCCH_Pool_r14	/* OPTIONAL */;
-	P0_SL_r12_t	 dataTxParameters_r14;
+	struct SL_TxParameters_r12	*dataTxParameters_r14	/* OPTIONAL */;
 	long	*zoneID_r14	/* OPTIONAL */;
-	long	*threshS_RSSI_CBR_r14	/* OPTIONAL */;
-	struct SL_CBR_PPPP_TxPreconfigList_r14	*cbr_pssch_TxConfigList_r14	/* OPTIONAL */;
-	struct SL_P2X_ResourceSelectionConfig_r14	*resourceSelectionConfigP2X_r14	/* OPTIONAL */;
-	struct SL_SyncAllowed_r14	*syncAllowed_r14	/* OPTIONAL */;
-	struct SL_RestrictResourceReservationPeriodList_r14	*restrictResourceReservationPeriod_r14	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -112,10 +103,7 @@ extern asn_TYPE_descriptor_t asn_DEF_SL_V2X_PreconfigCommPool_r14;
 
 /* Referred external types */
 #include "SL-OffsetIndicator-r12.h"
-#include "SL-CBR-PPPP-TxPreconfigList-r14.h"
-#include "SL-P2X-ResourceSelectionConfig-r14.h"
-#include "SL-SyncAllowed-r14.h"
-#include "SL-RestrictResourceReservationPeriodList-r14.h"
+#include "SL-TxParameters-r12.h"
 
 #endif	/* _SL_V2X_PreconfigCommPool_r14_H_ */
 #include <asn_internal.h>

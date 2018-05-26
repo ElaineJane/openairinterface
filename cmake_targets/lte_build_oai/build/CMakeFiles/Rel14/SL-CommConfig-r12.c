@@ -101,10 +101,10 @@ static ber_tlv_tag_t asn_DEF_scheduled_r12_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_scheduled_r12_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sl-RNTI-r12 at 10153 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mac-MainConfig-r12 at 10154 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sc-CommTxConfig-r12 at 10155 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* mcs-r12 at 10156 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sl-RNTI-r12 at 8999 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mac-MainConfig-r12 at 9000 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sc-CommTxConfig-r12 at 9001 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* mcs-r12 at 9002 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_scheduled_r12_specs_5 = {
 	sizeof(struct SL_CommConfig_r12__commTxResources_r12__setup__scheduled_r12),
@@ -171,8 +171,8 @@ static ber_tlv_tag_t asn_DEF_commTxPoolNormalDedicated_r12_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_commTxPoolNormalDedicated_r12_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolToReleaseList-r12 at 10161 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* poolToAddModList-r12 at 10162 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolToReleaseList-r12 at 9007 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* poolToAddModList-r12 at 9008 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_commTxPoolNormalDedicated_r12_specs_11 = {
 	sizeof(struct SL_CommConfig_r12__commTxResources_r12__setup__ue_Selected_r12__commTxPoolNormalDedicated_r12),
@@ -229,7 +229,7 @@ static ber_tlv_tag_t asn_DEF_ue_Selected_r12_tags_10[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ue_Selected_r12_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* commTxPoolNormalDedicated-r12 at 10161 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* commTxPoolNormalDedicated-r12 at 9007 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ue_Selected_r12_specs_10 = {
 	sizeof(struct SL_CommConfig_r12__commTxResources_r12__setup__ue_Selected_r12),
@@ -290,8 +290,8 @@ static asn_TYPE_member_t asn_MBR_setup_4[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scheduled-r12 at 10153 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-Selected-r12 at 10164 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scheduled-r12 at 8999 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-Selected-r12 at 9010 */
 };
 static asn_CHOICE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct SL_CommConfig_r12__commTxResources_r12__setup),
@@ -351,8 +351,8 @@ static asn_TYPE_member_t asn_MBR_commTxResources_r12_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_commTxResources_r12_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 10150 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 10157 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 8996 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 9003 */
 };
 static asn_CHOICE_specifics_t asn_SPC_commTxResources_r12_specs_2 = {
 	sizeof(struct SL_CommConfig_r12__commTxResources_r12),
@@ -416,8 +416,8 @@ static ber_tlv_tag_t asn_DEF_scheduled_v1310_tags_19[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_scheduled_v1310_tag2el_19[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* logicalChGroupInfoList-r13 at 10172 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* multipleTx-r13 at 10173 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* logicalChGroupInfoList-r13 at 9018 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* multipleTx-r13 at 9019 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_scheduled_v1310_specs_19 = {
 	sizeof(struct SL_CommConfig_r12__ext1__commTxResources_v1310__setup__scheduled_v1310),
@@ -483,8 +483,8 @@ static ber_tlv_tag_t asn_DEF_commTxPoolNormalDedicatedExt_r13_tags_23[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_commTxPoolNormalDedicatedExt_r13_tag2el_23[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolToReleaseListExt-r13 at 10177 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* poolToAddModListExt-r13 at 10178 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolToReleaseListExt-r13 at 9023 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* poolToAddModListExt-r13 at 9024 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_commTxPoolNormalDedicatedExt_r13_specs_23 = {
 	sizeof(struct SL_CommConfig_r12__ext1__commTxResources_v1310__setup__ue_Selected_v1310__commTxPoolNormalDedicatedExt_r13),
@@ -541,7 +541,7 @@ static ber_tlv_tag_t asn_DEF_ue_Selected_v1310_tags_22[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ue_Selected_v1310_tag2el_22[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* commTxPoolNormalDedicatedExt-r13 at 10177 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* commTxPoolNormalDedicatedExt-r13 at 9023 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ue_Selected_v1310_specs_22 = {
 	sizeof(struct SL_CommConfig_r12__ext1__commTxResources_v1310__setup__ue_Selected_v1310),
@@ -602,8 +602,8 @@ static asn_TYPE_member_t asn_MBR_setup_18[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_18[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scheduled-v1310 at 10172 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-Selected-v1310 at 10180 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scheduled-v1310 at 9018 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-Selected-v1310 at 9026 */
 };
 static asn_CHOICE_specifics_t asn_SPC_setup_specs_18 = {
 	sizeof(struct SL_CommConfig_r12__ext1__commTxResources_v1310__setup),
@@ -663,8 +663,8 @@ static asn_TYPE_member_t asn_MBR_commTxResources_v1310_16[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_commTxResources_v1310_tag2el_16[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 10169 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 10174 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 9015 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 9020 */
 };
 static asn_CHOICE_specifics_t asn_SPC_commTxResources_v1310_specs_16 = {
 	sizeof(struct SL_CommConfig_r12__ext1__commTxResources_v1310),
@@ -729,8 +729,8 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxResources-v1310 at 10169 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* commTxAllowRelayDedicated-r13 at 10183 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxResources-v1310 at 9015 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* commTxAllowRelayDedicated-r13 at 9029 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_15 = {
 	sizeof(struct SL_CommConfig_r12__ext1),
@@ -796,8 +796,8 @@ static ber_tlv_tag_t asn_DEF_SL_CommConfig_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_CommConfig_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxResources-r12 at 10150 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ext1 at 10182 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxResources-r12 at 8996 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ext1 at 9028 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_CommConfig_r12_specs_1 = {
 	sizeof(struct SL_CommConfig_r12),

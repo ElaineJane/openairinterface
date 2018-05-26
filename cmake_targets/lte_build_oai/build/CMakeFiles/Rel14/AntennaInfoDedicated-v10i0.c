@@ -197,7 +197,7 @@ static ber_tlv_tag_t asn_DEF_AntennaInfoDedicated_v10i0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_AntennaInfoDedicated_v10i0_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* maxLayersMIMO-r10 at 3649 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* maxLayersMIMO-r10 at 3333 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_AntennaInfoDedicated_v10i0_specs_1 = {
 	sizeof(struct AntennaInfoDedicated_v10i0),

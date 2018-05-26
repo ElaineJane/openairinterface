@@ -484,11 +484,11 @@ static ber_tlv_tag_t asn_DEF_BandCombinationParameters_r11_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_BandCombinationParameters_r11_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandParameterList-r11 at 9147 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedBandwidthCombinationSet-r11 at 9148 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* multipleTimingAdvance-r11 at 9149 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* simultaneousRx-Tx-r11 at 9150 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* bandInfoEUTRA-r11 at 9151 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* bandParameterList-r11 at 8235 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* supportedBandwidthCombinationSet-r11 at 8236 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* multipleTimingAdvance-r11 at 8237 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* simultaneousRx-Tx-r11 at 8238 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* bandInfoEUTRA-r11 at 8239 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_BandCombinationParameters_r11_specs_1 = {
 	sizeof(struct BandCombinationParameters_r11),

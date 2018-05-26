@@ -151,10 +151,10 @@ static ber_tlv_tag_t asn_DEF_setup_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tpc-SubframeSet-r12 at 6713 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p0-NominalPUSCH-SubframeSet2-r12 at 6714 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* alpha-SubframeSet2-r12 at 6715 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* p0-UE-PUSCH-SubframeSet2-r12 at 6716 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* tpc-SubframeSet-r12 at 6082 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* p0-NominalPUSCH-SubframeSet2-r12 at 6083 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* alpha-SubframeSet2-r12 at 6084 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* p0-UE-PUSCH-SubframeSet2-r12 at 6085 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct UplinkPowerControlDedicated_v1250__set2PowerControlParameter__setup),
@@ -215,8 +215,8 @@ static asn_TYPE_member_t asn_MBR_set2PowerControlParameter_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_set2PowerControlParameter_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6711 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6713 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 6080 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 6082 */
 };
 static asn_CHOICE_specifics_t asn_SPC_set2PowerControlParameter_specs_2 = {
 	sizeof(struct UplinkPowerControlDedicated_v1250__set2PowerControlParameter),
@@ -270,7 +270,7 @@ static ber_tlv_tag_t asn_DEF_UplinkPowerControlDedicated_v1250_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UplinkPowerControlDedicated_v1250_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* set2PowerControlParameter at 6711 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* set2PowerControlParameter at 6080 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UplinkPowerControlDedicated_v1250_specs_1 = {
 	sizeof(struct UplinkPowerControlDedicated_v1250),

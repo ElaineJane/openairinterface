@@ -40,9 +40,9 @@ static ber_tlv_tag_t asn_DEF_MeasIdToAddModExt_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasIdToAddModExt_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measId-v1250 at 7392 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measObjectId-r12 at 7393 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* reportConfigId-r12 at 7395 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measId-v1250 at 6685 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measObjectId-r12 at 6686 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* reportConfigId-r12 at 6688 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasIdToAddModExt_r12_specs_1 = {
 	sizeof(struct MeasIdToAddModExt_r12),

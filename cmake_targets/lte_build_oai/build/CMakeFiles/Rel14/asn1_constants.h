@@ -2,8 +2,6 @@
 #define __ASN1_CONSTANTS_H__
 #define min_val_IMSI_Digit  0
 #define max_val_IMSI_Digit  9
-#define min_val_SL_V2X_CommFreqList_r14  0
-#define max_val_SL_V2X_CommFreqList_r14  maxFreqV2X-1-r14
 #define min_val_SystemInfoValueTagSI_r13  0
 #define max_val_SystemInfoValueTagSI_r13  3
 #define min_val_BLER_Range_r12  0
@@ -36,8 +34,6 @@
 #define max_val_CSI_ProcessId_r11  maxCSI-Proc-r11
 #define min_val_ResourceConfig_r13  0
 #define max_val_ResourceConfig_r13  31
-#define min_val_NZP_TransmissionComb_r14  0
-#define max_val_NZP_TransmissionComb_r14  2
 #define min_val_CSI_RS_ConfigNZPId_r11  1
 #define max_val_CSI_RS_ConfigNZPId_r11  maxCSI-RS-NZP-r11
 #define min_val_CSI_RS_ConfigNZPId_v1310  minCSI-RS-NZP-r13
@@ -60,10 +56,10 @@
 #define max_val_N1PUCCH_AN_CS_r10    2047
 #define min_val_N1PUCCH_AN_InfoList_r13  0
 #define max_val_N1PUCCH_AN_InfoList_r13  2047
-#define min_val_SPS_ConfigIndex_r14  1
-#define max_val_SPS_ConfigIndex_r14  maxConfigSPS-r14
 #define min_val_N1PUCCH_AN_PersistentList  0
 #define max_val_N1PUCCH_AN_PersistentList  2047
+#define min_val_SrsCcGroupIndex  0
+#define max_val_SrsCcGroupIndex  3
 #define min_val_NextHopChainingCount  0
 #define max_val_NextHopChainingCount  7
 #define min_val_AdditionalSpectrumEmission  1
@@ -150,8 +146,6 @@
 #define max_val_ThresholdCDMA2000  63
 #define min_val_RSRP_Range  0
 #define max_val_RSRP_Range  97
-#define min_val_RSRP_Range_v1360  -17
-#define max_val_RSRP_Range_v1360  -1
 #define min_val_RSRP_RangeSL_r12  0
 #define max_val_RSRP_RangeSL_r12  13
 #define min_val_RSRP_RangeSL2_r12  0
@@ -178,18 +172,10 @@
 #define max_val_RRC_TransactionIdentifier  3
 #define min_val_MBSFN_AreaId_r12  0
 #define max_val_MBSFN_AreaId_r12  255
-#define min_val_SL_CBR_r14  0
-#define max_val_SL_CBR_r14  100
-#define min_val_Tx_ConfigIndex_r14  0
-#define max_val_Tx_ConfigIndex_r14  maxSL-V2X-TxConfig-1-r14
-#define min_val_SL_V2X_TxPoolReportIdentity_r14 1
-#define max_val_SL_V2X_TxPoolReportIdentity_r14 maxSL-PoolToMeasure-r14
 #define min_val_SL_OffsetIndicatorSync_r12  0
 #define max_val_SL_OffsetIndicatorSync_r12  39
-#define min_val_SL_OffsetIndicatorSync_v1430  40
-#define max_val_SL_OffsetIndicatorSync_v1430  159
-#define min_val_SL_OffsetIndicatorSync_r14  0
-#define max_val_SL_OffsetIndicatorSync_r14  159
+#define min_val_SL_OffsetIndicatorSync_v14xy  40
+#define max_val_SL_OffsetIndicatorSync_v14xy  159
 #define min_val_SL_Priority_r13  1
 #define max_val_SL_Priority_r13  8
 #define min_val_SLSSID_r12  0
@@ -212,9 +198,6 @@
 #define maxBands                     64  // Maximum number of bands listed in EUTRA UE caps
 #define maxBandwidthClass_r10        16  // Maximum number of supported CA BW classes per band
 #define maxBandwidthCombSet_r10      32  // Maximum number of bandwidth combination sets per
-#define maxCBR_Level_r14             16  // Maximum number of CBR levels 
-#define maxCBR_Level_minus_1_r14           15
-#define maxCBR_Report_r14            72  // Maximum number of CBR results in a report
 #define maxCDMA_BandClass            32  // Maximum value of the CDMA band classes
 #define maxCE_Level_r13              4   // Maximum number of CE levels
 #define maxCellBlack                 16  // Maximum number of blacklisted physical cell identity
@@ -240,7 +223,6 @@
 #define maxCellListGERAN             3   // Maximum number of lists of GERAN cells
 #define maxCellMeas                  32  // Maximum number of entries in each of the
 #define maxCellReport                8   // Maximum number of reported cells/CSI_RS resources
-#define maxConfigSPS_r14             8   // Maximum number of simultaneous SPS configurations
 #define maxCSI_RS_Meas_r12           96  // Maximum number of entries in the CSI_RS list
 #define maxDRB                       11  // Maximum number of Data Radio Bearers
 #define maxDS_Duration_r12           5   // Maximum number of subframes in a discovery signals
@@ -255,8 +237,6 @@
 #define maxFreq                      8   // Maximum number of carrier frequencies
 #define maxFreqIDC_r11               32  // Maximum number of carrier frequencies that are
 #define maxFreqMBMS_r11              5   // Maximum number of carrier frequencies for which an 
-#define maxFreqV2X_r14               8   // Maximum number of carrier frequencies for which V2X 
-#define maxFreqV2X_minus_1_r14                 7   // Highest index of frequencies
 #define maxGERAN_SI                  10  // Maximum number of GERAN SI blocks that can be
 #define maxGNFG                      16  // Maximum number of GERAN neighbour freq groups
 #define maxLCG_r13                   4   // Maximum number of logical channel groups
@@ -280,7 +260,6 @@
 #define maxPageRec                   16  // 
 #define maxPhysCellIdRange_r9        4   // Maximum number of physical cell identity ranges
 #define maxPLMN_r11                  6   // Maximum number of PLMNs
-#define maxPLMN_minus_1_r14                5   // Maximum number of PLMNs minus one
 #define maxPNOffset                  511 // Maximum number of CDMA2000 PNOffsets
 #define maxPMCH_PerMBSFN             15
 #define maxPSSCH_TxConfig_r14        16  // Maximum number of PSSCH TX configurations
@@ -294,7 +273,6 @@
 #define maxSCell_r10                 4   // Maximum number of SCells
 #define maxSCell_r13                 31  // Highest value of extended number range of SCells
 #define maxSC_MTCH_r13               1023    // Maximum number of SC_MTCHs in one cell
-#define maxSC_MTCH_BR_r14            128 // Maximum number of SC_MTCHs in one cell for feMTC
 #define maxSL_CommRxPoolNFreq_r13    32  // Maximum number of individual sidelink communication
 #define maxSL_CommRxPoolPreconf_v1310    12  // Maximum number of additional preconfigured
 #define maxSL_TxPool_r12Plus1_r13    5   // First additional individual sidelink
@@ -308,25 +286,16 @@
 #define maxSL_DiscSysInfoReportFreq_r13  8   // Maximum number of frequencies to include in a
 #define maxSL_DiscTxPoolPreconf_r13      4   // Maximum number of preconfigured sidelink
 #define maxSL_GP_r13             8   // Maximum number of gap patterns that can be requested
-#define maxSL_PoolToMeasure_r14      72  // Maximum number of TX resource pools for CBR
 #define maxSL_Prio_r13           8   // Maximum number of entries in sidelink priority list
 #define maxSL_RxPool_r12             16  // Maximum number of individual sidelink Rx resource pools
 #define maxSL_SyncConfig_r12         16  // Maximum number of sidelink Sync configurations
 #define maxSL_TF_IndexPair_r12   64  // Maximum number of sidelink Time Freq resource index
 #define maxSL_TxPool_r12             4   // Maximum number of individual sidelink Tx resource pools
-#define maxSL_V2X_RxPool_r14         16  // Maximum number of RX resource pools for
-#define maxSL_V2X_RxPoolPreconf_r14  16      // Maximum number of RX resource pools for
-#define maxSL_V2X_TxPool_r14         8   // Maximum number of TX resource pools for
-#define maxSL_V2X_TxPoolPreconf_r14  8       // Maximum number of TX resource pools for
+#define maxSL_V2X_RxPool_r14         16  // Maximum number of RX resource pools for 
+#define maxSL_V2X_RxPoolPreconf_r14  16      // Maximum number of RX resource pools for 
+#define maxSL_V2X_TxPool_r14         8   // Maximum number of TX resource pools for 
+#define maxSL_V2X_TxPoolPreconf_r14  8       // Maximum number of TX resource pools for 
 #define maxSL_V2X_SyncConfig_r14     16  // Maximum number of sidelink Sync configurations
-#define maxSL_V2X_CBRConfig_r14      4   // Maximum number of CBR range configurations 
-#define maxSL_V2X_CBRConfig_minus_1_r14    3
-#define maxSL_V2X_TxConfig_r14       64  // Maximum number of TX parameter configurations
-#define maxSL_V2X_TxConfig_minus_1_r14     63
-#define maxSL_V2X_CBRConfig2_r14         8   // Maximum number of CBR range configurations in
-#define maxSL_V2X_CBRConfig2_minus_1_r14   7
-#define maxSL_V2X_TxConfig2_r14      128 // Maximum number of TX parameter
-#define maxSL_V2X_TxConfig2_minus_1_r14    127
 #define maxSTAG_r11                  3   // Maximum number of STAGs
 #define maxServCell_r10              5   // Maximum number of Serving cells
 #define maxServCell_r13              32  // Highest value of extended number range of Serving cells
@@ -339,7 +308,6 @@
 #define maxSI_Message                32  // Maximum number of SI messages
 #define maxSimultaneousBands_r10     64  // Maximum number of simultaneously aggregated bands
 #define maxSubframePatternIDC_r11    8   // Maximum number of subframe reservation patterns
-#define maxTrafficPattern_r14        8   // Maximum number of periodical traffic patterns
 #define maxUTRA_FDD_Carrier          16  // Maximum number of UTRA FDD carrier frequencies
 #define maxUTRA_TDD_Carrier          16  // Maximum number of UTRA TDD carrier frequencies
 #define maxWLAN_Id_r12               16  // Maximum number of WLAN identifiers
@@ -347,20 +315,12 @@
 #define maxWLAN_Id_r13               32  // Maximum number of WLAN identifiers
 #define maxWLAN_Channels_r13         16  // maximum number of WLAN channels used in
 #define maxWLAN_CarrierInfo_r13      8   // Maximum number of WLAN Carrier Information
-#define maxWLAN_Id_Report_r14        32  // Maximum number of WLAN IDs to report
 #define min_val_FreqBandIndicator_NB_r13  1
 #define max_val_FreqBandIndicator_NB_r13   maxFBI2
-#define min_val_ReselectionThreshold_NB_v1360  32
-#define max_val_ReselectionThreshold_NB_v1360  63
 #define maxNPRACH_Resources_NB_r13   3   // Maximum number of NPRACH resources for NB_IoT
-#define maxNonAnchorCarriers_NB_r14  15  // Maximum number of non_anchor carriers for NB_IoT
 #define maxDRB_NB_r13                2   // Maximum number of Data Radio Bearers for NB_IoT
-#define maxNeighCell_SCPTM_NB_r14    8   // Maximum number of SCPTM neighbour cells
 #define maxNS_Pmax_NB_r13            4   // Maximum number of NS and P_Max values per band
-#define maxSC_MTCH_NB_r14            64  // Maximum number of SC_MTCHs in one cell for NB_IoT
 #define maxSI_Message_NB_r13         8   // Maximum number of SI messages for NB_IoT
 #define maxLogMeas_r10               4060// Maximum number of logged measurement entries
-#define min_val_Tx_PreconfigIndex_r14  0
-#define max_val_Tx_PreconfigIndex_r14  maxSL-V2X-TxConfig2-1-r14
 #define maxReestabInfo               32  // Maximum number of KeNB* and shortMAC_I forwarded
 #endif 

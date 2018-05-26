@@ -52,7 +52,7 @@ static ber_tlv_tag_t asn_DEF_UplinkPowerControlCommonSCell_v1130_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_UplinkPowerControlCommonSCell_v1130_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* deltaPreambleMsg3-r11 at 6664 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* deltaPreambleMsg3-r11 at 6033 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UplinkPowerControlCommonSCell_v1130_specs_1 = {
 	sizeof(struct UplinkPowerControlCommonSCell_v1130),

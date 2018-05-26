@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct UE_EUTRA_Capability_v1350_IEs;
+struct UE_EUTRA_Capability_v14xy_IEs;
 
 /* UE-EUTRA-Capability-v1340-IEs */
 typedef struct UE_EUTRA_Capability_v1340_IEs {
 	long	*ue_CategoryUL_v1340	/* OPTIONAL */;
-	struct UE_EUTRA_Capability_v1350_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct UE_EUTRA_Capability_v14xy_IEs	*nonCriticalExtension	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -39,7 +39,7 @@ extern asn_TYPE_descriptor_t asn_DEF_UE_EUTRA_Capability_v1340_IEs;
 #endif
 
 /* Referred external types */
-#include "UE-EUTRA-Capability-v1350-IEs.h"
+#include "UE-EUTRA-Capability-v14xy-IEs.h"
 
 #endif	/* _UE_EUTRA_Capability_v1340_IEs_H_ */
 #include <asn_internal.h>

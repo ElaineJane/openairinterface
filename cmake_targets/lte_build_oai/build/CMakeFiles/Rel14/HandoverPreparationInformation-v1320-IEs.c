@@ -29,7 +29,7 @@ static asn_TYPE_member_t asn_MBR_HandoverPreparationInformation_v1320_IEs_1[] = 
 	{ ATF_POINTER, 1, offsetof(struct HandoverPreparationInformation_v1320_IEs, nonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_HandoverPreparationInformation_v1430_IEs,
+		&asn_DEF_HandoverPreparationInformation_v14x0_IEs,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -41,9 +41,9 @@ static ber_tlv_tag_t asn_DEF_HandoverPreparationInformation_v1320_IEs_tags_1[] =
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_HandoverPreparationInformation_v1320_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* as-Config-v1320 at 13338 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* as-Context-v1320 at 13339 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 13340 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* as-Config-v1320 at 11550 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* as-Context-v1320 at 11551 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* nonCriticalExtension at 11552 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_HandoverPreparationInformation_v1320_IEs_specs_1 = {
 	sizeof(struct HandoverPreparationInformation_v1320_IEs),

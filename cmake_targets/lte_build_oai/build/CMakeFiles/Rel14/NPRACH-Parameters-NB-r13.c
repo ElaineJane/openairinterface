@@ -1935,16 +1935,16 @@ static ber_tlv_tag_t asn_DEF_NPRACH_Parameters_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_NPRACH_Parameters_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nprach-Periodicity-r13 at 12264 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* nprach-StartTime-r13 at 12266 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* nprach-SubcarrierOffset-r13 at 12268 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* nprach-NumSubcarriers-r13 at 12269 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* nprach-SubcarrierMSG3-RangeStart-r13 at 12270 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* maxNumPreambleAttemptCE-r13 at 12271 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* numRepetitionsPerPreambleAttempt-r13 at 12272 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* npdcch-NumRepetitions-RA-r13 at 12273 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* npdcch-StartSF-CSS-RA-r13 at 12276 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* npdcch-Offset-RA-r13 at 12277 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* nprach-Periodicity-r13 at 10652 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* nprach-StartTime-r13 at 10654 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* nprach-SubcarrierOffset-r13 at 10656 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* nprach-NumSubcarriers-r13 at 10657 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* nprach-SubcarrierMSG3-RangeStart-r13 at 10658 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* maxNumPreambleAttemptCE-r13 at 10659 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* numRepetitionsPerPreambleAttempt-r13 at 10660 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* npdcch-NumRepetitions-RA-r13 at 10661 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* npdcch-StartSF-CSS-RA-r13 at 10664 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* npdcch-Offset-RA-r13 at 10665 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_NPRACH_Parameters_NB_r13_specs_1 = {
 	sizeof(struct NPRACH_Parameters_NB_r13),

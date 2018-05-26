@@ -107,7 +107,7 @@ static ber_tlv_tag_t asn_DEF_IdleModeMobilityControlInfo_v9e0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_IdleModeMobilityControlInfo_v9e0_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* freqPriorityListEUTRA-v9e0 at 1355 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* freqPriorityListEUTRA-v9e0 at 1298 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_IdleModeMobilityControlInfo_v9e0_specs_1 = {
 	sizeof(struct IdleModeMobilityControlInfo_v9e0),

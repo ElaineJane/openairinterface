@@ -569,11 +569,11 @@ static ber_tlv_tag_t asn_DEF_MIMO_UE_Parameters_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MIMO_UE_Parameters_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* parametersTM9-r13 at 8912 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* parametersTM10-r13 at 8913 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* srs-EnhancementsTDD-r13 at 8914 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* srs-Enhancements-r13 at 8915 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* interferenceMeasRestriction-r13 at 8916 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* parametersTM9-r13 at 8049 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* parametersTM10-r13 at 8050 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* srs-EnhancementsTDD-r13 at 8051 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* srs-Enhancements-r13 at 8052 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* interferenceMeasRestriction-r13 at 8053 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MIMO_UE_Parameters_r13_specs_1 = {
 	sizeof(struct MIMO_UE_Parameters_r13),

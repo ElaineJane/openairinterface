@@ -551,9 +551,9 @@ static ber_tlv_tag_t asn_DEF_CIOT_OptimisationPLMN_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CIOT_OptimisationPLMN_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* up-CIoT-EPS-Optimisation-r13 at 2735 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cp-CIoT-EPS-Optimisation-r13 at 2736 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* attachWithoutPDN-Connectivity-r13 at 2737 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* up-CIoT-EPS-Optimisation-r13 at 2513 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cp-CIoT-EPS-Optimisation-r13 at 2514 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* attachWithoutPDN-Connectivity-r13 at 2515 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CIOT_OptimisationPLMN_r13_specs_1 = {
 	sizeof(struct CIOT_OptimisationPLMN_r13),

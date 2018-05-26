@@ -176,7 +176,7 @@ memb_maxMCS_PSSCH_r14_constraint_1(asn_TYPE_descriptor_t *td, const void *sptr,
 }
 
 static int
-memb_minSubChannel_NumberPSSCH_r14_constraint_1(asn_TYPE_descriptor_t *td, const void *sptr,
+memb_minRB_NumberPSSCH_r14_constraint_1(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	long value;
 	
@@ -189,7 +189,7 @@ memb_minSubChannel_NumberPSSCH_r14_constraint_1(asn_TYPE_descriptor_t *td, const
 	
 	value = *(const long *)sptr;
 	
-	if((value >= 1 && value <= 20)) {
+	if((value >= 1 && value <= 100)) {
 		/* Constraint check succeeded */
 		return 0;
 	} else {
@@ -201,7 +201,7 @@ memb_minSubChannel_NumberPSSCH_r14_constraint_1(asn_TYPE_descriptor_t *td, const
 }
 
 static int
-memb_maxSubchannel_NumberPSSCH_r14_constraint_1(asn_TYPE_descriptor_t *td, const void *sptr,
+memb_maxRB_NumberPSSCH_r14_constraint_1(asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	long value;
 	
@@ -214,7 +214,7 @@ memb_maxSubchannel_NumberPSSCH_r14_constraint_1(asn_TYPE_descriptor_t *td, const
 	
 	value = *(const long *)sptr;
 	
-	if((value >= 1 && value <= 20)) {
+	if((value >= 1 && value <= 100)) {
 		/* Constraint check succeeded */
 		return 0;
 	} else {
@@ -240,13 +240,13 @@ static asn_per_constraints_t asn_PER_memb_maxMCS_PSSCH_r14_constr_3 GCC_NOTUSED 
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_memb_minSubChannel_NumberPSSCH_r14_constr_4 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 5,  5,  1,  20 }	/* (1..20) */,
+static asn_per_constraints_t asn_PER_memb_minRB_NumberPSSCH_r14_constr_4 GCC_NOTUSED = {
+	{ APC_CONSTRAINED,	 7,  7,  1,  100 }	/* (1..100) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_per_constraints_t asn_PER_memb_maxSubchannel_NumberPSSCH_r14_constr_5 GCC_NOTUSED = {
-	{ APC_CONSTRAINED,	 5,  5,  1,  20 }	/* (1..20) */,
+static asn_per_constraints_t asn_PER_memb_maxRB_NumberPSSCH_r14_constr_5 GCC_NOTUSED = {
+	{ APC_CONSTRAINED,	 7,  7,  1,  100 }	/* (1..100) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
@@ -322,23 +322,23 @@ static asn_TYPE_member_t asn_MBR_SL_PSSCH_TxParameters_r14_1[] = {
 		0,
 		"maxMCS-PSSCH-r14"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct SL_PSSCH_TxParameters_r14, minSubChannel_NumberPSSCH_r14),
+	{ ATF_NOFLAGS, 0, offsetof(struct SL_PSSCH_TxParameters_r14, minRB_NumberPSSCH_r14),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
-		memb_minSubChannel_NumberPSSCH_r14_constraint_1,
-		&asn_PER_memb_minSubChannel_NumberPSSCH_r14_constr_4,
+		memb_minRB_NumberPSSCH_r14_constraint_1,
+		&asn_PER_memb_minRB_NumberPSSCH_r14_constr_4,
 		0,
-		"minSubChannel-NumberPSSCH-r14"
+		"minRB-NumberPSSCH-r14"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct SL_PSSCH_TxParameters_r14, maxSubchannel_NumberPSSCH_r14),
+	{ ATF_NOFLAGS, 0, offsetof(struct SL_PSSCH_TxParameters_r14, maxRB_NumberPSSCH_r14),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
-		memb_maxSubchannel_NumberPSSCH_r14_constraint_1,
-		&asn_PER_memb_maxSubchannel_NumberPSSCH_r14_constr_5,
+		memb_maxRB_NumberPSSCH_r14_constraint_1,
+		&asn_PER_memb_maxRB_NumberPSSCH_r14_constr_5,
 		0,
-		"maxSubchannel-NumberPSSCH-r14"
+		"maxRB-NumberPSSCH-r14"
 		},
 	{ ATF_NOFLAGS, 0, offsetof(struct SL_PSSCH_TxParameters_r14, allowedRetxNumberPSSCH_r14),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
@@ -349,35 +349,23 @@ static asn_TYPE_member_t asn_MBR_SL_PSSCH_TxParameters_r14_1[] = {
 		0,
 		"allowedRetxNumberPSSCH-r14"
 		},
-	{ ATF_POINTER, 1, offsetof(struct SL_PSSCH_TxParameters_r14, maxTxPower_r14),
-		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_SL_TxPower_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"maxTxPower-r14"
-		},
 };
-static int asn_MAP_SL_PSSCH_TxParameters_r14_oms_1[] = { 5 };
 static ber_tlv_tag_t asn_DEF_SL_PSSCH_TxParameters_r14_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_PSSCH_TxParameters_r14_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* minMCS-PSSCH-r14 at 10629 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* maxMCS-PSSCH-r14 at 10630 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* minSubChannel-NumberPSSCH-r14 at 10631 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* maxSubchannel-NumberPSSCH-r14 at 10632 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* allowedRetxNumberPSSCH-r14 at 10633 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* maxTxPower-r14 at 10634 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* minMCS-PSSCH-r14 at 9391 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* maxMCS-PSSCH-r14 at 9392 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* minRB-NumberPSSCH-r14 at 9393 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* maxRB-NumberPSSCH-r14 at 9394 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* allowedRetxNumberPSSCH-r14 at 9395 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_PSSCH_TxParameters_r14_specs_1 = {
 	sizeof(struct SL_PSSCH_TxParameters_r14),
 	offsetof(struct SL_PSSCH_TxParameters_r14, _asn_ctx),
 	asn_MAP_SL_PSSCH_TxParameters_r14_tag2el_1,
-	6,	/* Count of tags in the map */
-	asn_MAP_SL_PSSCH_TxParameters_r14_oms_1,	/* Optional members */
-	1, 0,	/* Root/Additions */
+	5,	/* Count of tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
@@ -405,7 +393,7 @@ asn_TYPE_descriptor_t asn_DEF_SL_PSSCH_TxParameters_r14 = {
 		/sizeof(asn_DEF_SL_PSSCH_TxParameters_r14_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_SL_PSSCH_TxParameters_r14_1,
-	6,	/* Elements count */
+	5,	/* Elements count */
 	&asn_SPC_SL_PSSCH_TxParameters_r14_specs_1	/* Additional specs */
 };
 

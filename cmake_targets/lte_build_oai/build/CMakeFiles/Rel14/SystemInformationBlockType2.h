@@ -50,12 +50,6 @@ typedef enum SystemInformationBlockType2__ext4__voiceServiceCauseIndication_r12 
 typedef enum SystemInformationBlockType2__ext6__useFullResumeID_r13 {
 	SystemInformationBlockType2__ext6__useFullResumeID_r13_true	= 0
 } e_SystemInformationBlockType2__ext6__useFullResumeID_r13;
-typedef enum SystemInformationBlockType2__ext7__unicastFreqHoppingInd_r13 {
-	SystemInformationBlockType2__ext7__unicastFreqHoppingInd_r13_true	= 0
-} e_SystemInformationBlockType2__ext7__unicastFreqHoppingInd_r13;
-typedef enum SystemInformationBlockType2__ext8__videoServiceCauseIndication_r14 {
-	SystemInformationBlockType2__ext8__videoServiceCauseIndication_r14_true	= 0
-} e_SystemInformationBlockType2__ext8__videoServiceCauseIndication_r14;
 
 /* Forward declarations */
 struct MBSFN_SubframeConfigList;
@@ -66,7 +60,6 @@ struct ACDC_BarringPerPLMN_List_r13;
 struct UDT_Restricting_r13;
 struct UDT_RestrictingPerPLMN_List_r13;
 struct CIOT_EPS_OptimisationInfo_r13;
-struct MBSFN_SubframeConfigList_v1430;
 
 /* SystemInformationBlockType2 */
 typedef struct SystemInformationBlockType2 {
@@ -139,19 +132,6 @@ typedef struct SystemInformationBlockType2 {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext6;
-	struct SystemInformationBlockType2__ext7 {
-		long	*unicastFreqHoppingInd_r13	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext7;
-	struct SystemInformationBlockType2__ext8 {
-		struct MBSFN_SubframeConfigList_v1430	*mbsfn_SubframeConfigList_v1430	/* OPTIONAL */;
-		long	*videoServiceCauseIndication_r14	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext8;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -164,8 +144,6 @@ typedef struct SystemInformationBlockType2 {
 /* extern asn_TYPE_descriptor_t asn_DEF_ac_BarringSkipForSMS_r12_32;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_voiceServiceCauseIndication_r12_36;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_useFullResumeID_r13_45;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_unicastFreqHoppingInd_r13_48;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_videoServiceCauseIndication_r14_52;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType2;
 
 #ifdef __cplusplus
@@ -181,7 +159,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType2;
 #include "UDT-Restricting-r13.h"
 #include "UDT-RestrictingPerPLMN-List-r13.h"
 #include "CIOT-EPS-OptimisationInfo-r13.h"
-#include "MBSFN-SubframeConfigList-v1430.h"
 
 #endif	/* _SystemInformationBlockType2_H_ */
 #include <asn_internal.h>

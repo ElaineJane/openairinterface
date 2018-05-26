@@ -54,7 +54,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* carrierFreq-v1090 at 481 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* carrierFreq-v1090 at 450 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_5 = {
 	sizeof(struct RSTD_InterFreqInfo_r10__ext1),
@@ -129,9 +129,9 @@ static ber_tlv_tag_t asn_DEF_RSTD_InterFreqInfo_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RSTD_InterFreqInfo_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq-r10 at 478 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measPRS-Offset-r10 at 479 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ext1 at 481 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq-r10 at 447 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measPRS-Offset-r10 at 448 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ext1 at 450 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RSTD_InterFreqInfo_r10_specs_1 = {
 	sizeof(struct RSTD_InterFreqInfo_r10),

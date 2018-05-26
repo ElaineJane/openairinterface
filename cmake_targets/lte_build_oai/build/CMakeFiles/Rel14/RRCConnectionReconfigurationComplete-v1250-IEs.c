@@ -177,6 +177,47 @@ asn_TYPE_descriptor_t asn_DEF_logMeasAvailableMBSFN_r12_2 = {
 	&asn_SPC_logMeasAvailableMBSFN_r12_specs_2	/* Additional specs */
 };
 
+static ber_tlv_tag_t asn_DEF_nonCriticalExtension_tags_4[] = {
+	(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static asn_SEQUENCE_specifics_t asn_SPC_nonCriticalExtension_specs_4 = {
+	sizeof(struct RRCConnectionReconfigurationComplete_v1250_IEs__nonCriticalExtension),
+	offsetof(struct RRCConnectionReconfigurationComplete_v1250_IEs__nonCriticalExtension, _asn_ctx),
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* Start extensions */
+	-1	/* Stop extensions */
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_nonCriticalExtension_4 = {
+	"nonCriticalExtension",
+	"nonCriticalExtension",
+	SEQUENCE_free,
+	SEQUENCE_print,
+	SEQUENCE_constraint,
+	SEQUENCE_decode_ber,
+	SEQUENCE_encode_der,
+	SEQUENCE_decode_xer,
+	SEQUENCE_encode_xer,
+	SEQUENCE_decode_uper,
+	SEQUENCE_encode_uper,
+	SEQUENCE_decode_aper,
+	SEQUENCE_encode_aper,
+	SEQUENCE_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_nonCriticalExtension_tags_4,
+	sizeof(asn_DEF_nonCriticalExtension_tags_4)
+		/sizeof(asn_DEF_nonCriticalExtension_tags_4[0]) - 1, /* 1 */
+	asn_DEF_nonCriticalExtension_tags_4,	/* Same as above */
+	sizeof(asn_DEF_nonCriticalExtension_tags_4)
+		/sizeof(asn_DEF_nonCriticalExtension_tags_4[0]), /* 2 */
+	0,	/* No PER visible constraints */
+	0, 0,	/* No members */
+	&asn_SPC_nonCriticalExtension_specs_4	/* Additional specs */
+};
+
 static asn_TYPE_member_t asn_MBR_RRCConnectionReconfigurationComplete_v1250_IEs_1[] = {
 	{ ATF_POINTER, 2, offsetof(struct RRCConnectionReconfigurationComplete_v1250_IEs, logMeasAvailableMBSFN_r12),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -189,8 +230,8 @@ static asn_TYPE_member_t asn_MBR_RRCConnectionReconfigurationComplete_v1250_IEs_
 		},
 	{ ATF_POINTER, 1, offsetof(struct RRCConnectionReconfigurationComplete_v1250_IEs, nonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_RRCConnectionReconfigurationComplete_v1430_IEs,
+		0,
+		&asn_DEF_nonCriticalExtension_4,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -202,8 +243,8 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionReconfigurationComplete_v1250_IEs_tags
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionReconfigurationComplete_v1250_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* logMeasAvailableMBSFN-r12 at 1105 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1106 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* logMeasAvailableMBSFN-r12 at 1055 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1056 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionReconfigurationComplete_v1250_IEs_specs_1 = {
 	sizeof(struct RRCConnectionReconfigurationComplete_v1250_IEs),

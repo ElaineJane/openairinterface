@@ -92,8 +92,8 @@ static ber_tlv_tag_t asn_DEF_SL_TF_IndexPair_r12b_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_TF_IndexPair_r12b_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discSF-Index-r12b at 10407 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* discPRB-Index-r12b at 10408 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discSF-Index-r12b at 9229 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* discPRB-Index-r12b at 9230 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_TF_IndexPair_r12b_specs_1 = {
 	sizeof(struct SL_TF_IndexPair_r12b),

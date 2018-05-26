@@ -30,7 +30,6 @@ typedef enum CRS_AssistanceInfo_r13__antennaPortsCount_r13 {
 
 /* Forward declarations */
 struct MBSFN_SubframeConfigList;
-struct MBSFN_SubframeConfigList_v1430;
 
 /* CRS-AssistanceInfo-r13 */
 typedef struct CRS_AssistanceInfo_r13 {
@@ -41,12 +40,6 @@ typedef struct CRS_AssistanceInfo_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct CRS_AssistanceInfo_r13__ext1 {
-		struct MBSFN_SubframeConfigList_v1430	*mbsfn_SubframeConfigList_v1430	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -62,7 +55,6 @@ extern asn_TYPE_descriptor_t asn_DEF_CRS_AssistanceInfo_r13;
 
 /* Referred external types */
 #include "MBSFN-SubframeConfigList.h"
-#include "MBSFN-SubframeConfigList-v1430.h"
 
 #endif	/* _CRS_AssistanceInfo_r13_H_ */
 #include <asn_internal.h>

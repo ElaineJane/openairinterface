@@ -372,8 +372,8 @@ static ber_tlv_tag_t asn_DEF_CE_Parameters_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CE_Parameters_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ce-ModeA-r13 at 9624 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ce-ModeB-r13 at 9625 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ce-ModeA-r13 at 8640 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ce-ModeB-r13 at 8641 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CE_Parameters_r13_specs_1 = {
 	sizeof(struct CE_Parameters_r13),

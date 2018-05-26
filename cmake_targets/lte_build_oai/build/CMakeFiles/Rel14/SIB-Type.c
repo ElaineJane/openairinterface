@@ -149,7 +149,7 @@ static asn_INTEGER_enum_map_t asn_MAP_SIB_Type_value2enum_1[] = {
 	{ 15,	15,	"sibType18-v1250" },
 	{ 16,	15,	"sibType19-v1250" },
 	{ 17,	15,	"sibType20-v1310" },
-	{ 18,	15,	"sibType21-v1430" }
+	{ 18,	15,	"sibType21-v14x0" }
 	/* This list is extensible */
 };
 static unsigned int asn_MAP_SIB_Type_enum2value_1[] = {
@@ -164,7 +164,7 @@ static unsigned int asn_MAP_SIB_Type_enum2value_1[] = {
 	15,	/* sibType18-v1250(15) */
 	16,	/* sibType19-v1250(16) */
 	17,	/* sibType20-v1310(17) */
-	18,	/* sibType21-v1430(18) */
+	18,	/* sibType21-v14x0(18) */
 	0,	/* sibType3(0) */
 	1,	/* sibType4(1) */
 	2,	/* sibType5(2) */

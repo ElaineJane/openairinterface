@@ -48,16 +48,16 @@ static asn_per_constraints_t asn_PER_type_commTxResources_r14_constr_2 GCC_NOTUS
 	0, 0	/* No PER value map */
 };
 static asn_TYPE_member_t asn_MBR_scheduled_r14_5[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup__scheduled_r14, sl_V_RNTI_r14),
+	{ ATF_NOFLAGS, 0, offsetof(struct SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup__scheduled_r14, sl_D_RNTI_r14),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_C_RNTI,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
-		"sl-V-RNTI-r14"
+		"sl-D-RNTI-r14"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup__scheduled_r14, mac_MainConfig_r14),
+	{ ATF_POINTER, 3, offsetof(struct SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup__scheduled_r14, mac_MainConfig_r14),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_MAC_MainConfigSL_r12,
@@ -94,17 +94,17 @@ static asn_TYPE_member_t asn_MBR_scheduled_r14_5[] = {
 		"logicalChGroupInfoList-r14"
 		},
 };
-static int asn_MAP_scheduled_r14_oms_5[] = { 2, 3 };
+static int asn_MAP_scheduled_r14_oms_5[] = { 1, 2, 3 };
 static ber_tlv_tag_t asn_DEF_scheduled_r14_tags_5[] = {
 	(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_scheduled_r14_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sl-V-RNTI-r14 at 10773 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mac-MainConfig-r14 at 10774 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* v2x-SchedulingPool-r14 at 10775 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* mcs-r14 at 10776 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* logicalChGroupInfoList-r14 at 10778 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sl-D-RNTI-r14 at 9539 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* mac-MainConfig-r14 at 9540 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* v2x-SchedulingPool-r14 at 9541 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* mcs-r14 at 9542 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* logicalChGroupInfoList-r14 at 9544 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_scheduled_r14_specs_5 = {
 	sizeof(struct SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup__scheduled_r14),
@@ -112,7 +112,7 @@ static asn_SEQUENCE_specifics_t asn_SPC_scheduled_r14_specs_5 = {
 	asn_MAP_scheduled_r14_tag2el_5,
 	5,	/* Count of tags in the map */
 	asn_MAP_scheduled_r14_oms_5,	/* Optional members */
-	2, 0,	/* Root/Additions */
+	3, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
@@ -180,9 +180,9 @@ static ber_tlv_tag_t asn_DEF_v2x_CommTxPoolNormalDedicated_r14_tags_12[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_v2x_CommTxPoolNormalDedicated_r14_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolToReleaseList-r14 at 10782 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* poolToAddModList-r14 at 10783 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* v2x-CommTxPoolSensingConfig-r14 at 10785 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolToReleaseList-r14 at 9548 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* poolToAddModList-r14 at 9549 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* v2x-CommTxPoolSensingConfig-r14 at 9551 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_v2x_CommTxPoolNormalDedicated_r14_specs_12 = {
 	sizeof(struct SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup__ue_Selected_r14__v2x_CommTxPoolNormalDedicated_r14),
@@ -239,7 +239,7 @@ static ber_tlv_tag_t asn_DEF_ue_Selected_r14_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ue_Selected_r14_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* v2x-CommTxPoolNormalDedicated-r14 at 10782 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* v2x-CommTxPoolNormalDedicated-r14 at 9548 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ue_Selected_r14_specs_11 = {
 	sizeof(struct SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup__ue_Selected_r14),
@@ -300,8 +300,8 @@ static asn_TYPE_member_t asn_MBR_setup_4[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scheduled-r14 at 10773 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-Selected-r14 at 10787 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* scheduled-r14 at 9539 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* ue-Selected-r14 at 9553 */
 };
 static asn_CHOICE_specifics_t asn_SPC_setup_specs_4 = {
 	sizeof(struct SL_V2X_ConfigDedicated_r14__commTxResources_r14__setup),
@@ -361,8 +361,8 @@ static asn_TYPE_member_t asn_MBR_commTxResources_r14_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_commTxResources_r14_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 10770 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 10778 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 9536 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 9544 */
 };
 static asn_CHOICE_specifics_t asn_SPC_commTxResources_r14_specs_2 = {
 	sizeof(struct SL_V2X_ConfigDedicated_r14__commTxResources_r14),
@@ -402,7 +402,7 @@ asn_TYPE_descriptor_t asn_DEF_commTxResources_r14_2 = {
 };
 
 static asn_TYPE_member_t asn_MBR_SL_V2X_ConfigDedicated_r14_1[] = {
-	{ ATF_POINTER, 5, offsetof(struct SL_V2X_ConfigDedicated_r14, commTxResources_r14),
+	{ ATF_POINTER, 2, offsetof(struct SL_V2X_ConfigDedicated_r14, commTxResources_r14),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_commTxResources_r14_2,
@@ -411,7 +411,7 @@ static asn_TYPE_member_t asn_MBR_SL_V2X_ConfigDedicated_r14_1[] = {
 		0,
 		"commTxResources-r14"
 		},
-	{ ATF_POINTER, 4, offsetof(struct SL_V2X_ConfigDedicated_r14, v2x_InterFreqInfoList_r14),
+	{ ATF_POINTER, 1, offsetof(struct SL_V2X_ConfigDedicated_r14, v2x_InterFreqInfoList_r14),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SL_InterFreqInfoListV2X_r14,
@@ -420,54 +420,24 @@ static asn_TYPE_member_t asn_MBR_SL_V2X_ConfigDedicated_r14_1[] = {
 		0,
 		"v2x-InterFreqInfoList-r14"
 		},
-	{ ATF_POINTER, 3, offsetof(struct SL_V2X_ConfigDedicated_r14, thresSL_TxPrioritization_r14),
-		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SL_Priority_r13,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"thresSL-TxPrioritization-r14"
-		},
-	{ ATF_POINTER, 2, offsetof(struct SL_V2X_ConfigDedicated_r14, typeTxSync_r14),
-		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SL_TypeTxSync_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"typeTxSync-r14"
-		},
-	{ ATF_POINTER, 1, offsetof(struct SL_V2X_ConfigDedicated_r14, cbr_DedicatedTxConfigList_r14),
-		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SL_CBR_CommonTxConfigList_r14,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"cbr-DedicatedTxConfigList-r14"
-		},
 };
-static int asn_MAP_SL_V2X_ConfigDedicated_r14_oms_1[] = { 0, 1, 2, 3, 4 };
+static int asn_MAP_SL_V2X_ConfigDedicated_r14_oms_1[] = { 0, 1 };
 static ber_tlv_tag_t asn_DEF_SL_V2X_ConfigDedicated_r14_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_V2X_ConfigDedicated_r14_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxResources-r14 at 10770 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* v2x-InterFreqInfoList-r14 at 10790 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* thresSL-TxPrioritization-r14 at 10791 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* typeTxSync-r14 at 10792 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* cbr-DedicatedTxConfigList-r14 at 10793 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commTxResources-r14 at 9536 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* v2x-InterFreqInfoList-r14 at 9556 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_V2X_ConfigDedicated_r14_specs_1 = {
 	sizeof(struct SL_V2X_ConfigDedicated_r14),
 	offsetof(struct SL_V2X_ConfigDedicated_r14, _asn_ctx),
 	asn_MAP_SL_V2X_ConfigDedicated_r14_tag2el_1,
-	5,	/* Count of tags in the map */
+	2,	/* Count of tags in the map */
 	asn_MAP_SL_V2X_ConfigDedicated_r14_oms_1,	/* Optional members */
-	5, 0,	/* Root/Additions */
-	4,	/* Start extensions */
-	6	/* Stop extensions */
+	2, 0,	/* Root/Additions */
+	1,	/* Start extensions */
+	3	/* Stop extensions */
 };
 asn_TYPE_descriptor_t asn_DEF_SL_V2X_ConfigDedicated_r14 = {
 	"SL-V2X-ConfigDedicated-r14",
@@ -493,7 +463,7 @@ asn_TYPE_descriptor_t asn_DEF_SL_V2X_ConfigDedicated_r14 = {
 		/sizeof(asn_DEF_SL_V2X_ConfigDedicated_r14_tags_1[0]), /* 1 */
 	0,	/* No PER visible constraints */
 	asn_MBR_SL_V2X_ConfigDedicated_r14_1,
-	5,	/* Elements count */
+	2,	/* Elements count */
 	&asn_SPC_SL_V2X_ConfigDedicated_r14_specs_1	/* Additional specs */
 };
 

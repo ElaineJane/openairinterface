@@ -178,33 +178,6 @@ typedef enum PDCP_Config__ext4__statusFeedback_r13__setup__statusPDU_Periodicity
 	PDCP_Config__ext4__statusFeedback_r13__setup__statusPDU_Periodicity_Offset_r13_ms5000	= 10,
 	PDCP_Config__ext4__statusFeedback_r13__setup__statusPDU_Periodicity_Offset_r13_ms25000	= 11
 } e_PDCP_Config__ext4__statusFeedback_r13__setup__statusPDU_Periodicity_Offset_r13;
-typedef enum PDCP_Config__ext5__ul_LWA_Config_r14_PR {
-	PDCP_Config__ext5__ul_LWA_Config_r14_PR_NOTHING,	/* No components present */
-	PDCP_Config__ext5__ul_LWA_Config_r14_PR_release,
-	PDCP_Config__ext5__ul_LWA_Config_r14_PR_setup
-} PDCP_Config__ext5__ul_LWA_Config_r14_PR;
-typedef enum PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14 {
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b0	= 0,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b100	= 1,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b200	= 2,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b400	= 3,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b800	= 4,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b1600	= 5,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b3200	= 6,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b6400	= 7,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b12800	= 8,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b25600	= 9,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b51200	= 10,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b102400	= 11,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b204800	= 12,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b409600	= 13,
-	PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14_b819200	= 14
-} e_PDCP_Config__ext5__ul_LWA_Config_r14__setup__ul_LWA_DataSplitThreshold_r14;
-typedef enum PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14_PR {
-	PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14_PR_NOTHING,	/* No components present */
-	PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14_PR_notUsed_r14,
-	PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14_PR_rohc_r14
-} PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14_PR;
 
 /* PDCP-Config */
 typedef struct PDCP_Config {
@@ -311,52 +284,6 @@ typedef struct PDCP_Config {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *ext4;
-	struct PDCP_Config__ext5 {
-		struct PDCP_Config__ext5__ul_LWA_Config_r14 {
-			PDCP_Config__ext5__ul_LWA_Config_r14_PR present;
-			union PDCP_Config__ext5__ul_LWA_Config_r14_u {
-				NULL_t	 release;
-				struct PDCP_Config__ext5__ul_LWA_Config_r14__setup {
-					BOOLEAN_t	 ul_LWA_DRB_ViaWLAN_r14;
-					long	*ul_LWA_DataSplitThreshold_r14	/* OPTIONAL */;
-					
-					/* Context for parsing across buffer boundaries */
-					asn_struct_ctx_t _asn_ctx;
-				} setup;
-			} choice;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *ul_LWA_Config_r14;
-		struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14 {
-			PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14_PR present;
-			union PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14_u {
-				NULL_t	 notUsed_r14;
-				struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14__rohc_r14 {
-					long	*maxCID_r14	/* DEFAULT 15 */;
-					struct PDCP_Config__ext5__uplinkOnlyHeaderCompression_r14__rohc_r14__profiles_r14 {
-						BOOLEAN_t	 profile0x0006_r14;
-						
-						/* Context for parsing across buffer boundaries */
-						asn_struct_ctx_t _asn_ctx;
-					} profiles_r14;
-					/*
-					 * This type is extensible,
-					 * possible extensions are below.
-					 */
-					
-					/* Context for parsing across buffer boundaries */
-					asn_struct_ctx_t _asn_ctx;
-				} rohc_r14;
-			} choice;
-			
-			/* Context for parsing across buffer boundaries */
-			asn_struct_ctx_t _asn_ctx;
-		} *uplinkOnlyHeaderCompression_r14;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext5;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -374,7 +301,6 @@ typedef struct PDCP_Config {
 /* extern asn_TYPE_descriptor_t asn_DEF_statusPDU_Periodicity_Type1_r13_102;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_statusPDU_Periodicity_Type2_r13_124;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_statusPDU_Periodicity_Offset_r13_146;	// (Use -fall-defs-global to expose) */
-/* extern asn_TYPE_descriptor_t asn_DEF_ul_LWA_DataSplitThreshold_r14_164;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_PDCP_Config;
 
 #ifdef __cplusplus

@@ -22,7 +22,7 @@
 /*******************************************************************************
  * This file had been created by asn1tostruct.py script v1.0.2
  * Please do not modify this file but regenerate it via script.
- * Created on: 2018-04-23 12:15:49.594546 by root
+ * Created on: 2018-05-26 08:04:57.116123 by root
  * from ['/home/momo/openairinterface5g/openair3/S1AP/MESSAGES/ASN1/R10.5/S1AP-PDU-Contents.asn']
  ******************************************************************************/
 #include "s1ap_common.h"

@@ -258,9 +258,9 @@ static ber_tlv_tag_t asn_DEF_setup_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eimta-RNTI-r12 at 4355 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eimta-CommandPeriodicity-r12 at 4356 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* eimta-CommandSubframeSet-r12 at 4357 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* eimta-RNTI-r12 at 3909 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* eimta-CommandPeriodicity-r12 at 3910 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* eimta-CommandSubframeSet-r12 at 3911 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_3 = {
 	sizeof(struct EIMTA_MainConfig_r12__setup),
@@ -321,8 +321,8 @@ static asn_TYPE_member_t asn_MBR_EIMTA_MainConfig_r12_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_EIMTA_MainConfig_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4353 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4355 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 3907 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 3909 */
 };
 static asn_CHOICE_specifics_t asn_SPC_EIMTA_MainConfig_r12_specs_1 = {
 	sizeof(struct EIMTA_MainConfig_r12),

@@ -372,8 +372,8 @@ static ber_tlv_tag_t asn_DEF_PUSCH_ConfigDedicatedSCell_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PUSCH_ConfigDedicatedSCell_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* groupHoppingDisabled-r10 at 5537 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dmrs-WithOCC-Activated-r10 at 5538 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* groupHoppingDisabled-r10 at 4999 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* dmrs-WithOCC-Activated-r10 at 5000 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PUSCH_ConfigDedicatedSCell_r10_specs_1 = {
 	sizeof(struct PUSCH_ConfigDedicatedSCell_r10),

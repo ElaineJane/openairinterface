@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_measResultSCell_r10_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResultSCell_r10_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrpResultSCell-r10 at 7700 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rsrqResultSCell-r10 at 7702 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rsrpResultSCell-r10 at 6979 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* rsrqResultSCell-r10 at 6981 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResultSCell_r10_specs_3 = {
 	sizeof(struct MeasResultServFreq_r10__measResultSCell_r10),
@@ -107,9 +107,9 @@ static ber_tlv_tag_t asn_DEF_measResultBestNeighCell_r10_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResultBestNeighCell_r10_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r10 at 7704 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rsrpResultNCell-r10 at 7705 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* rsrqResultNCell-r10 at 7707 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* physCellId-r10 at 6983 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* rsrpResultNCell-r10 at 6984 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* rsrqResultNCell-r10 at 6986 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResultBestNeighCell_r10_specs_6 = {
 	sizeof(struct MeasResultServFreq_r10__measResultBestNeighCell_r10),
@@ -175,8 +175,8 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measResultSCell-v1250 at 7709 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measResultBestNeighCell-v1250 at 7710 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measResultSCell-v1250 at 6988 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measResultBestNeighCell-v1250 at 6989 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_11 = {
 	sizeof(struct MeasResultServFreq_r10__ext1),
@@ -233,7 +233,7 @@ static ber_tlv_tag_t asn_DEF_measResultSCell_v1310_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResultSCell_v1310_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rs-sinr-Result-r13 at 7714 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rs-sinr-Result-r13 at 6993 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResultSCell_v1310_specs_15 = {
 	sizeof(struct MeasResultServFreq_r10__ext2__measResultSCell_v1310),
@@ -289,7 +289,7 @@ static ber_tlv_tag_t asn_DEF_measResultBestNeighCell_v1310_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResultBestNeighCell_v1310_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rs-sinr-Result-r13 at 7717 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rs-sinr-Result-r13 at 6996 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResultBestNeighCell_v1310_specs_17 = {
 	sizeof(struct MeasResultServFreq_r10__ext2__measResultBestNeighCell_v1310),
@@ -355,8 +355,8 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_14[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_14[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measResultSCell-v1310 at 7714 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measResultBestNeighCell-v1310 at 7717 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measResultSCell-v1310 at 6993 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* measResultBestNeighCell-v1310 at 6996 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_14 = {
 	sizeof(struct MeasResultServFreq_r10__ext2),
@@ -449,11 +449,11 @@ static ber_tlv_tag_t asn_DEF_MeasResultServFreq_r10_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasResultServFreq_r10_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* servFreqId-r10 at 7698 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultSCell-r10 at 7700 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measResultBestNeighCell-r10 at 7704 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext1 at 7709 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext2 at 7714 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* servFreqId-r10 at 6977 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measResultSCell-r10 at 6979 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* measResultBestNeighCell-r10 at 6983 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* ext1 at 6988 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext2 at 6993 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasResultServFreq_r10_specs_1 = {
 	sizeof(struct MeasResultServFreq_r10),

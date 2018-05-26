@@ -838,11 +838,11 @@ static ber_tlv_tag_t asn_DEF_cellAccessRelatedInfo_r13_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cellAccessRelatedInfo_r13_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-IdentityList-r13 at 11651 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* trackingAreaCode-r13 at 11652 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellIdentity-r13 at 11653 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* cellBarred-r13 at 11654 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* intraFreqReselection-r13 at 11655 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-IdentityList-r13 at 10290 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* trackingAreaCode-r13 at 10291 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellIdentity-r13 at 10292 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* cellBarred-r13 at 10293 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* intraFreqReselection-r13 at 10294 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cellAccessRelatedInfo_r13_specs_3 = {
 	sizeof(struct SystemInformationBlockType1_NB__cellAccessRelatedInfo_r13),
@@ -907,8 +907,8 @@ static ber_tlv_tag_t asn_DEF_cellSelectionInfo_r13_tags_13[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cellSelectionInfo_r13_tag2el_13[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-RxLevMin-r13 at 11658 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* q-QualMin-r13 at 11660 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* q-RxLevMin-r13 at 10297 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* q-QualMin-r13 at 10299 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cellSelectionInfo_r13_specs_13 = {
 	sizeof(struct SystemInformationBlockType1_NB__cellSelectionInfo_r13),
@@ -1137,6 +1137,47 @@ asn_TYPE_descriptor_t asn_DEF_si_WindowLength_r13_43 = {
 	&asn_SPC_si_WindowLength_r13_specs_43	/* Additional specs */
 };
 
+static ber_tlv_tag_t asn_DEF_nonCriticalExtension_tags_55[] = {
+	(ASN_TAG_CLASS_CONTEXT | (15 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static asn_SEQUENCE_specifics_t asn_SPC_nonCriticalExtension_specs_55 = {
+	sizeof(struct SystemInformationBlockType1_NB__nonCriticalExtension),
+	offsetof(struct SystemInformationBlockType1_NB__nonCriticalExtension, _asn_ctx),
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* Start extensions */
+	-1	/* Stop extensions */
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_nonCriticalExtension_55 = {
+	"nonCriticalExtension",
+	"nonCriticalExtension",
+	SEQUENCE_free,
+	SEQUENCE_print,
+	SEQUENCE_constraint,
+	SEQUENCE_decode_ber,
+	SEQUENCE_encode_der,
+	SEQUENCE_decode_xer,
+	SEQUENCE_encode_xer,
+	SEQUENCE_decode_uper,
+	SEQUENCE_encode_uper,
+	SEQUENCE_decode_aper,
+	SEQUENCE_encode_aper,
+	SEQUENCE_compare,
+	0,	/* Use generic outmost tag fetcher */
+	asn_DEF_nonCriticalExtension_tags_55,
+	sizeof(asn_DEF_nonCriticalExtension_tags_55)
+		/sizeof(asn_DEF_nonCriticalExtension_tags_55[0]) - 1, /* 1 */
+	asn_DEF_nonCriticalExtension_tags_55,	/* Same as above */
+	sizeof(asn_DEF_nonCriticalExtension_tags_55)
+		/sizeof(asn_DEF_nonCriticalExtension_tags_55[0]), /* 2 */
+	0,	/* No PER visible constraints */
+	0, 0,	/* No members */
+	&asn_SPC_nonCriticalExtension_specs_55	/* Additional specs */
+};
+
 static asn_TYPE_member_t asn_MBR_SystemInformationBlockType1_NB_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct SystemInformationBlockType1_NB, hyperSFN_MSB_r13),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
@@ -1275,8 +1316,8 @@ static asn_TYPE_member_t asn_MBR_SystemInformationBlockType1_NB_1[] = {
 		},
 	{ ATF_POINTER, 1, offsetof(struct SystemInformationBlockType1_NB, nonCriticalExtension),
 		(ASN_TAG_CLASS_CONTEXT | (15 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SystemInformationBlockType1_NB_v1350,
+		0,
+		&asn_DEF_nonCriticalExtension_55,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
@@ -1288,22 +1329,22 @@ static ber_tlv_tag_t asn_DEF_SystemInformationBlockType1_NB_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SystemInformationBlockType1_NB_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* hyperSFN-MSB-r13 at 11649 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellAccessRelatedInfo-r13 at 11651 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellSelectionInfo-r13 at 11658 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* p-Max-r13 at 11661 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* freqBandIndicator-r13 at 11662 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* freqBandInfo-r13 at 11663 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* multiBandInfoList-r13 at 11664 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* downlinkBitmap-r13 at 11665 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* eutraControlRegionSize-r13 at 11666 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* nrs-CRS-PowerOffset-r13 at 11667 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* schedulingInfoList-r13 at 11673 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* si-WindowLength-r13 at 11674 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* si-RadioFrameOffset-r13 at 11676 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* systemInfoValueTagList-r13 at 11677 */
-    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* lateNonCriticalExtension at 11678 */
-    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 } /* nonCriticalExtension at 11679 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* hyperSFN-MSB-r13 at 10288 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* cellAccessRelatedInfo-r13 at 10290 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cellSelectionInfo-r13 at 10297 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* p-Max-r13 at 10300 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* freqBandIndicator-r13 at 10301 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* freqBandInfo-r13 at 10302 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* multiBandInfoList-r13 at 10303 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* downlinkBitmap-r13 at 10304 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* eutraControlRegionSize-r13 at 10305 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* nrs-CRS-PowerOffset-r13 at 10306 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* schedulingInfoList-r13 at 10312 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* si-WindowLength-r13 at 10313 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* si-RadioFrameOffset-r13 at 10315 */
+    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* systemInfoValueTagList-r13 at 10316 */
+    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* lateNonCriticalExtension at 10317 */
+    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 } /* nonCriticalExtension at 10318 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SystemInformationBlockType1_NB_specs_1 = {
 	sizeof(struct SystemInformationBlockType1_NB),

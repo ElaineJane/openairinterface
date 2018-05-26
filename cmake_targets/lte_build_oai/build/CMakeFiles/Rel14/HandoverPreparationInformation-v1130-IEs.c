@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_HandoverPreparationInformation_v1130_IEs_tags_1[] =
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_HandoverPreparationInformation_v1130_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* as-Context-v1130 at 13327 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 13328 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* as-Context-v1130 at 11539 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 11540 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_HandoverPreparationInformation_v1130_IEs_specs_1 = {
 	sizeof(struct HandoverPreparationInformation_v1130_IEs),

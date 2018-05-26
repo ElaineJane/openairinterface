@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_SecurityModeCommand_r8_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SecurityModeCommand_r8_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* securityConfigSMC at 1716 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1717 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* securityConfigSMC at 1630 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1631 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SecurityModeCommand_r8_IEs_specs_1 = {
 	sizeof(struct SecurityModeCommand_r8_IEs),

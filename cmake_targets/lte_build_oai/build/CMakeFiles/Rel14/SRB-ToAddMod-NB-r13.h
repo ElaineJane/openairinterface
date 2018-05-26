@@ -34,9 +34,6 @@ typedef enum SRB_ToAddMod_NB_r13__logicalChannelConfig_r13_PR {
 	SRB_ToAddMod_NB_r13__logicalChannelConfig_r13_PR_defaultValue
 } SRB_ToAddMod_NB_r13__logicalChannelConfig_r13_PR;
 
-/* Forward declarations */
-struct RLC_Config_NB_v1430;
-
 /* SRB-ToAddMod-NB-r13 */
 typedef struct SRB_ToAddMod_NB_r13 {
 	struct SRB_ToAddMod_NB_r13__rlc_Config_r13 {
@@ -63,12 +60,6 @@ typedef struct SRB_ToAddMod_NB_r13 {
 	 * This type is extensible,
 	 * possible extensions are below.
 	 */
-	struct SRB_ToAddMod_NB_r13__ext1 {
-		struct RLC_Config_NB_v1430	*rlc_Config_v1430	/* OPTIONAL */;
-		
-		/* Context for parsing across buffer boundaries */
-		asn_struct_ctx_t _asn_ctx;
-	} *ext1;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -80,9 +71,6 @@ extern asn_TYPE_descriptor_t asn_DEF_SRB_ToAddMod_NB_r13;
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "RLC-Config-NB-v1430.h"
 
 #endif	/* _SRB_ToAddMod_NB_r13_H_ */
 #include <asn_internal.h>

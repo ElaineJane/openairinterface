@@ -99,8 +99,8 @@ static ber_tlv_tag_t asn_DEF_cgi_Info_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_cgi_Info_tag2el_4[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellGlobalId at 7779 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* routingAreaCode at 7780 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* cellGlobalId at 7054 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* routingAreaCode at 7055 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_cgi_Info_specs_4 = {
 	sizeof(struct MeasResultGERAN__cgi_Info),
@@ -157,7 +157,7 @@ static ber_tlv_tag_t asn_DEF_measResult_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_measResult_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rssi at 7783 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* rssi at 7058 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_measResult_specs_7 = {
 	sizeof(struct MeasResultGERAN__measResult),
@@ -240,10 +240,10 @@ static ber_tlv_tag_t asn_DEF_MeasResultGERAN_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MeasResultGERAN_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq at 7776 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* physCellId at 7777 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cgi-Info at 7779 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measResult at 7783 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* carrierFreq at 7051 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* physCellId at 7052 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* cgi-Info at 7054 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* measResult at 7058 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MeasResultGERAN_specs_1 = {
 	sizeof(struct MeasResultGERAN),

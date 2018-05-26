@@ -372,8 +372,8 @@ static ber_tlv_tag_t asn_DEF_PhyLayerParameters_v920_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PhyLayerParameters_v920_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* enhancedDualLayerFDD-r9 at 8810 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* enhancedDualLayerTDD-r9 at 8811 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* enhancedDualLayerFDD-r9 at 7967 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* enhancedDualLayerTDD-r9 at 7968 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PhyLayerParameters_v920_specs_1 = {
 	sizeof(struct PhyLayerParameters_v920),

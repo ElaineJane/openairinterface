@@ -593,10 +593,10 @@ static ber_tlv_tag_t asn_DEF_SchedulingInfo_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SchedulingInfo_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* si-Periodicity-r13 at 11703 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* si-RepetitionPattern-r13 at 11705 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sib-MappingInfo-r13 at 11707 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* si-TB-r13 at 11708 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* si-Periodicity-r13 at 10332 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* si-RepetitionPattern-r13 at 10334 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* sib-MappingInfo-r13 at 10336 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* si-TB-r13 at 10337 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SchedulingInfo_NB_r13_specs_1 = {
 	sizeof(struct SchedulingInfo_NB_r13),

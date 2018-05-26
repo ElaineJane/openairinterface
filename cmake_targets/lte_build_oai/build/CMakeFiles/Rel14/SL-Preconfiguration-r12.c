@@ -33,8 +33,8 @@ static ber_tlv_tag_t asn_DEF_preconfigComm_v1310_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_preconfigComm_v1310_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commRxPoolList-r13 at 13009 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* commTxPoolList-r13 at 13010 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commRxPoolList-r13 at 11269 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* commTxPoolList-r13 at 11270 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_preconfigComm_v1310_specs_7 = {
 	sizeof(struct SL_Preconfiguration_r12__ext1__preconfigComm_v1310),
@@ -101,8 +101,8 @@ static ber_tlv_tag_t asn_DEF_preconfigDisc_r13_tags_10[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_preconfigDisc_r13_tag2el_10[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discRxPoolList-r13 at 13013 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* discTxPoolList-r13 at 13014 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* discRxPoolList-r13 at 11273 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* discTxPoolList-r13 at 11274 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_preconfigDisc_r13_specs_10 = {
 	sizeof(struct SL_Preconfiguration_r12__ext1__preconfigDisc_r13),
@@ -178,9 +178,9 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preconfigComm-v1310 at 13009 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* preconfigDisc-r13 at 13013 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* preconfigRelay-r13 at 13016 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preconfigComm-v1310 at 11269 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* preconfigDisc-r13 at 11273 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* preconfigRelay-r13 at 11276 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_6 = {
 	sizeof(struct SL_Preconfiguration_r12__ext1),
@@ -264,10 +264,10 @@ static ber_tlv_tag_t asn_DEF_SL_Preconfiguration_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_Preconfiguration_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preconfigGeneral-r12 at 13004 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* preconfigSync-r12 at 13005 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* preconfigComm-r12 at 13006 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 13011 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preconfigGeneral-r12 at 11264 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* preconfigSync-r12 at 11265 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* preconfigComm-r12 at 11266 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 11271 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_Preconfiguration_r12_specs_1 = {
 	sizeof(struct SL_Preconfiguration_r12),

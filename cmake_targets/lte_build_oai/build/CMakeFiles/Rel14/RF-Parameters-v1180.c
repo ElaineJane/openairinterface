@@ -296,9 +296,9 @@ static ber_tlv_tag_t asn_DEF_RF_Parameters_v1180_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RF_Parameters_v1180_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* freqBandRetrieval-r11 at 9033 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* requestedBands-r11 at 9034 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* supportedBandCombinationAdd-r11 at 9035 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* freqBandRetrieval-r11 at 8137 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* requestedBands-r11 at 8138 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* supportedBandCombinationAdd-r11 at 8139 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RF_Parameters_v1180_specs_1 = {
 	sizeof(struct RF_Parameters_v1180),

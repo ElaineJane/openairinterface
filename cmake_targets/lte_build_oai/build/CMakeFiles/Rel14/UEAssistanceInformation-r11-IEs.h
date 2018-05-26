@@ -26,14 +26,15 @@ typedef enum UEAssistanceInformation_r11_IEs__powerPrefIndication_r11 {
 	UEAssistanceInformation_r11_IEs__powerPrefIndication_r11_lowPowerConsumption	= 1
 } e_UEAssistanceInformation_r11_IEs__powerPrefIndication_r11;
 
-/* Forward declarations */
-struct UEAssistanceInformation_v1430_IEs;
-
 /* UEAssistanceInformation-r11-IEs */
 typedef struct UEAssistanceInformation_r11_IEs {
 	long	*powerPrefIndication_r11	/* OPTIONAL */;
 	OCTET_STRING_t	*lateNonCriticalExtension	/* OPTIONAL */;
-	struct UEAssistanceInformation_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct UEAssistanceInformation_r11_IEs__nonCriticalExtension {
+		
+		/* Context for parsing across buffer boundaries */
+		asn_struct_ctx_t _asn_ctx;
+	} *nonCriticalExtension;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -46,9 +47,6 @@ extern asn_TYPE_descriptor_t asn_DEF_UEAssistanceInformation_r11_IEs;
 #ifdef __cplusplus
 }
 #endif
-
-/* Referred external types */
-#include "UEAssistanceInformation-v1430-IEs.h"
 
 #endif	/* _UEAssistanceInformation_r11_IEs_H_ */
 #include <asn_internal.h>

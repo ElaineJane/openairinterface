@@ -136,19 +136,19 @@ static asn_INTEGER_enum_map_t asn_MAP_SIB_Type_NB_r13_value2enum_1[] = {
 	{ 2,	15,	"sibType5-NB-r13" },
 	{ 3,	16,	"sibType14-NB-r13" },
 	{ 4,	16,	"sibType16-NB-r13" },
-	{ 5,	16,	"sibType15-NB-r14" },
-	{ 6,	16,	"sibType20-NB-r14" },
-	{ 7,	16,	"sibType22-NB-r14" }
+	{ 5,	6,	"spare3" },
+	{ 6,	6,	"spare2" },
+	{ 7,	6,	"spare1" }
 };
 static unsigned int asn_MAP_SIB_Type_NB_r13_enum2value_1[] = {
 	3,	/* sibType14-NB-r13(3) */
-	5,	/* sibType15-NB-r14(5) */
 	4,	/* sibType16-NB-r13(4) */
-	6,	/* sibType20-NB-r14(6) */
-	7,	/* sibType22-NB-r14(7) */
 	0,	/* sibType3-NB-r13(0) */
 	1,	/* sibType4-NB-r13(1) */
-	2	/* sibType5-NB-r13(2) */
+	2,	/* sibType5-NB-r13(2) */
+	7,	/* spare1(7) */
+	6,	/* spare2(6) */
+	5	/* spare3(5) */
 };
 static asn_INTEGER_specifics_t asn_SPC_SIB_Type_NB_r13_specs_1 = {
 	asn_MAP_SIB_Type_NB_r13_value2enum_1,	/* "tag" => N; sorted by tag */

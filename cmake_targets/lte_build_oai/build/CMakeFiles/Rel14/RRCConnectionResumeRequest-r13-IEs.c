@@ -141,8 +141,8 @@ static asn_TYPE_member_t asn_MBR_resumeIdentity_r13_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_resumeIdentity_r13_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* resumeID-r13 at 1532 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* truncatedResumeID-r13 at 1533 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* resumeID-r13 at 1470 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* truncatedResumeID-r13 at 1471 */
 };
 static asn_CHOICE_specifics_t asn_SPC_resumeIdentity_r13_specs_2 = {
 	sizeof(struct RRCConnectionResumeRequest_r13_IEs__resumeIdentity_r13),
@@ -223,10 +223,10 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionResumeRequest_r13_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionResumeRequest_r13_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* resumeIdentity-r13 at 1532 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* shortResumeMAC-I-r13 at 1535 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* resumeCause-r13 at 1536 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* spare at 1537 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* resumeIdentity-r13 at 1470 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* shortResumeMAC-I-r13 at 1473 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* resumeCause-r13 at 1474 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* spare at 1475 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionResumeRequest_r13_IEs_specs_1 = {
 	sizeof(struct RRCConnectionResumeRequest_r13_IEs),

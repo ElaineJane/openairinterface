@@ -22,7 +22,7 @@ static ber_tlv_tag_t asn_DEF_RLF_Report_v9e0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RLF_Report_v9e0_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* measResultListEUTRA-v9e0 at 2397 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* measResultListEUTRA-v9e0 at 2191 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RLF_Report_v9e0_specs_1 = {
 	sizeof(struct RLF_Report_v9e0),

@@ -232,10 +232,10 @@ static ber_tlv_tag_t asn_DEF_MBSFNAreaConfiguration_r9_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_MBSFNAreaConfiguration_r9_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commonSF-Alloc-r9 at 616 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commonSF-AllocPeriod-r9 at 618 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pmch-InfoList-r9 at 619 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* nonCriticalExtension at 620 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* commonSF-Alloc-r9 at 576 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* commonSF-AllocPeriod-r9 at 578 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pmch-InfoList-r9 at 579 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* nonCriticalExtension at 580 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MBSFNAreaConfiguration_r9_specs_1 = {
 	sizeof(struct MBSFNAreaConfiguration_r9),

@@ -33,8 +33,8 @@ static asn_TYPE_member_t asn_MBR_SL_DiscTxRefCarrierDedicated_r13_1[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_DiscTxRefCarrierDedicated_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pCell at 10412 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* sCell at 10414 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pCell at 9234 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* sCell at 9236 */
 };
 static asn_CHOICE_specifics_t asn_SPC_SL_DiscTxRefCarrierDedicated_r13_specs_1 = {
 	sizeof(struct SL_DiscTxRefCarrierDedicated_r13),

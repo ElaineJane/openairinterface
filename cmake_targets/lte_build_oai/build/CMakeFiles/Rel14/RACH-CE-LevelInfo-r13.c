@@ -461,8 +461,8 @@ static ber_tlv_tag_t asn_DEF_preambleMappingInfo_r13_tags_2[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_preambleMappingInfo_r13_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* firstPreamble-r13 at 5644 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* lastPreamble-r13 at 5645 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* firstPreamble-r13 at 5067 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* lastPreamble-r13 at 5068 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_preambleMappingInfo_r13_specs_2 = {
 	sizeof(struct RACH_CE_LevelInfo_r13__preambleMappingInfo_r13),
@@ -715,10 +715,10 @@ static ber_tlv_tag_t asn_DEF_RACH_CE_LevelInfo_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RACH_CE_LevelInfo_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preambleMappingInfo-r13 at 5644 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ra-ResponseWindowSize-r13 at 5647 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* mac-ContentionResolutionTimer-r13 at 5650 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* rar-HoppingConfig-r13 at 5652 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* preambleMappingInfo-r13 at 5067 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ra-ResponseWindowSize-r13 at 5070 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* mac-ContentionResolutionTimer-r13 at 5073 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* rar-HoppingConfig-r13 at 5075 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RACH_CE_LevelInfo_r13_specs_1 = {
 	sizeof(struct RACH_CE_LevelInfo_r13),

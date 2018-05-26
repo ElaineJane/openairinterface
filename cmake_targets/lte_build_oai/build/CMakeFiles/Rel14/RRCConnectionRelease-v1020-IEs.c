@@ -62,8 +62,8 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionRelease_v1020_IEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionRelease_v1020_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* extendedWaitTime-r10 at 1306 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1307 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* extendedWaitTime-r10 at 1249 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1250 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionRelease_v1020_IEs_specs_1 = {
 	sizeof(struct RRCConnectionRelease_v1020_IEs),

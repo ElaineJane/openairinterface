@@ -580,7 +580,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_8[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_8[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* n3PUCCH-AN-ListP1-r10 at 5283 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* n3PUCCH-AN-ListP1-r10 at 4757 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_8 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1020__pucch_Format_r10__format3_r10__twoAntennaPortActivatedPUCCH_Format3_r10__setup),
@@ -641,8 +641,8 @@ static asn_TYPE_member_t asn_MBR_twoAntennaPortActivatedPUCCH_Format3_r10_6[] = 
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_twoAntennaPortActivatedPUCCH_Format3_r10_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5281 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5284 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4755 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4758 */
 };
 static asn_CHOICE_specifics_t asn_SPC_twoAntennaPortActivatedPUCCH_Format3_r10_specs_6 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1020__pucch_Format_r10__format3_r10__twoAntennaPortActivatedPUCCH_Format3_r10),
@@ -707,8 +707,8 @@ static ber_tlv_tag_t asn_DEF_format3_r10_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_format3_r10_tag2el_3[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* n3PUCCH-AN-List-r10 at 5279 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* twoAntennaPortActivatedPUCCH-Format3-r10 at 5281 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* n3PUCCH-AN-List-r10 at 4753 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* twoAntennaPortActivatedPUCCH-Format3-r10 at 4755 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_format3_r10_specs_3 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1020__pucch_Format_r10__format3_r10),
@@ -814,7 +814,7 @@ static ber_tlv_tag_t asn_DEF_setup_tags_14[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_setup_tag2el_14[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* n1PUCCH-AN-CS-List-r10 at 5292 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* n1PUCCH-AN-CS-List-r10 at 4766 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_setup_specs_14 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1020__pucch_Format_r10__channelSelection_r10__n1PUCCH_AN_CS_r10__setup),
@@ -875,8 +875,8 @@ static asn_TYPE_member_t asn_MBR_n1PUCCH_AN_CS_r10_12[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_n1PUCCH_AN_CS_r10_tag2el_12[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 5289 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 5292 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* release at 4763 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* setup at 4766 */
 };
 static asn_CHOICE_specifics_t asn_SPC_n1PUCCH_AN_CS_r10_specs_12 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1020__pucch_Format_r10__channelSelection_r10__n1PUCCH_AN_CS_r10),
@@ -932,7 +932,7 @@ static ber_tlv_tag_t asn_DEF_channelSelection_r10_tags_11[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_channelSelection_r10_tag2el_11[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* n1PUCCH-AN-CS-r10 at 5289 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* n1PUCCH-AN-CS-r10 at 4763 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_channelSelection_r10_specs_11 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1020__pucch_Format_r10__channelSelection_r10),
@@ -994,8 +994,8 @@ static asn_TYPE_member_t asn_MBR_pucch_Format_r10_2[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_pucch_Format_r10_tag2el_2[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* format3-r10 at 5279 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* channelSelection-r10 at 5293 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* format3-r10 at 4753 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* channelSelection-r10 at 4767 */
 };
 static asn_CHOICE_specifics_t asn_SPC_pucch_Format_r10_specs_2 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1020__pucch_Format_r10),
@@ -1171,10 +1171,10 @@ static ber_tlv_tag_t asn_DEF_PUCCH_ConfigDedicated_v1020_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_PUCCH_ConfigDedicated_v1020_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pucch-Format-r10 at 5286 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* twoAntennaPortActivatedPUCCH-Format1a1b-r10 at 5296 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* simultaneousPUCCH-PUSCH-r10 at 5297 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* n1PUCCH-AN-RepP1-r10 at 5298 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* pucch-Format-r10 at 4760 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* twoAntennaPortActivatedPUCCH-Format1a1b-r10 at 4770 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* simultaneousPUCCH-PUSCH-r10 at 4771 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* n1PUCCH-AN-RepP1-r10 at 4772 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_PUCCH_ConfigDedicated_v1020_specs_1 = {
 	sizeof(struct PUCCH_ConfigDedicated_v1020),

@@ -24,7 +24,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_15[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_15[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* uplinkPowerControlCommon-v1020 at 5722 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* uplinkPowerControlCommon-v1020 at 5144 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_15 = {
 	sizeof(struct RadioResourceConfigCommon__ext1),
@@ -82,7 +82,7 @@ static ber_tlv_tag_t asn_DEF_ext2_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext2_tag2el_17[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* tdd-Config-v1130 at 5724 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* tdd-Config-v1130 at 5146 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext2_specs_17 = {
 	sizeof(struct RadioResourceConfigCommon__ext2),
@@ -140,7 +140,7 @@ static ber_tlv_tag_t asn_DEF_ext3_tags_19[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext3_tag2el_19[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pusch-ConfigCommon-v1270 at 5726 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* pusch-ConfigCommon-v1270 at 5148 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext3_specs_19 = {
 	sizeof(struct RadioResourceConfigCommon__ext3),
@@ -243,12 +243,12 @@ static ber_tlv_tag_t asn_DEF_ext4_tags_21[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext4_tag2el_21[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* prach-Config-v1310 at 5729 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* freqHoppingParameters-r13 at 5730 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pdsch-ConfigCommon-v1310 at 5731 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* pucch-ConfigCommon-v1310 at 5732 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* pusch-ConfigCommon-v1310 at 5733 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* uplinkPowerControlCommon-v1310 at 5734 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* prach-Config-v1310 at 5151 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* freqHoppingParameters-r13 at 5152 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pdsch-ConfigCommon-v1310 at 5153 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* pucch-ConfigCommon-v1310 at 5154 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* pusch-ConfigCommon-v1310 at 5155 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* uplinkPowerControlCommon-v1310 at 5156 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext4_specs_21 = {
 	sizeof(struct RadioResourceConfigCommon__ext4),
@@ -290,7 +290,7 @@ asn_TYPE_descriptor_t asn_DEF_ext4_21 = {
 };
 
 static asn_TYPE_member_t asn_MBR_ext5_28[] = {
-	{ ATF_POINTER, 4, offsetof(struct RadioResourceConfigCommon__ext5, highSpeedConfig_r14),
+	{ ATF_POINTER, 2, offsetof(struct RadioResourceConfigCommon__ext5, highSpeedConfig_r14),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_HighSpeedConfig_r14,
@@ -299,52 +299,32 @@ static asn_TYPE_member_t asn_MBR_ext5_28[] = {
 		0,
 		"highSpeedConfig-r14"
 		},
-	{ ATF_POINTER, 3, offsetof(struct RadioResourceConfigCommon__ext5, prach_Config_v1430),
+	{ ATF_POINTER, 1, offsetof(struct RadioResourceConfigCommon__ext5, prach_Config_v14xy),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_PRACH_Config_v1430,
+		&asn_DEF_PRACH_Config_v14xy,
 		0,	/* Defer constraints checking to the member type */
 		0,	/* No PER visible constraints */
 		0,
-		"prach-Config-v1430"
-		},
-	{ ATF_POINTER, 2, offsetof(struct RadioResourceConfigCommon__ext5, pucch_ConfigCommon_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_PUCCH_ConfigCommon_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"pucch-ConfigCommon-v1430"
-		},
-	{ ATF_POINTER, 1, offsetof(struct RadioResourceConfigCommon__ext5, tdd_Config_v1430),
-		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
-		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_TDD_Config_v1430,
-		0,	/* Defer constraints checking to the member type */
-		0,	/* No PER visible constraints */
-		0,
-		"tdd-Config-v1430"
+		"prach-Config-v14xy"
 		},
 };
-static int asn_MAP_ext5_oms_28[] = { 0, 1, 2, 3 };
+static int asn_MAP_ext5_oms_28[] = { 0, 1 };
 static ber_tlv_tag_t asn_DEF_ext5_tags_28[] = {
 	(ASN_TAG_CLASS_CONTEXT | (16 << 2)),
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext5_tag2el_28[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* highSpeedConfig-r14 at 5736 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prach-Config-v1430 at 5737 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pucch-ConfigCommon-v1430 at 5738 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* tdd-Config-v1430 at 5739 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* highSpeedConfig-r14 at 5158 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* prach-Config-v14xy at 5159 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext5_specs_28 = {
 	sizeof(struct RadioResourceConfigCommon__ext5),
 	offsetof(struct RadioResourceConfigCommon__ext5, _asn_ctx),
 	asn_MAP_ext5_tag2el_28,
-	4,	/* Count of tags in the map */
+	2,	/* Count of tags in the map */
 	asn_MAP_ext5_oms_28,	/* Optional members */
-	4, 0,	/* Root/Additions */
+	2, 0,	/* Root/Additions */
 	-1,	/* Start extensions */
 	-1	/* Stop extensions */
 };
@@ -373,7 +353,7 @@ asn_TYPE_descriptor_t asn_DEF_ext5_28 = {
 		/sizeof(asn_DEF_ext5_tags_28[0]), /* 2 */
 	0,	/* No PER visible constraints */
 	asn_MBR_ext5_28,
-	4,	/* Elements count */
+	2,	/* Elements count */
 	&asn_SPC_ext5_specs_28	/* Additional specs */
 };
 
@@ -537,23 +517,23 @@ static ber_tlv_tag_t asn_DEF_RadioResourceConfigCommon_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RadioResourceConfigCommon_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rach-ConfigCommon at 5709 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prach-Config at 5710 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pdsch-ConfigCommon at 5711 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* pusch-ConfigCommon at 5712 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* phich-Config at 5713 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pucch-ConfigCommon at 5714 */
-    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* soundingRS-UL-ConfigCommon at 5715 */
-    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* uplinkPowerControlCommon at 5716 */
-    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* antennaInfoCommon at 5717 */
-    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* p-Max at 5718 */
-    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* tdd-Config at 5719 */
-    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* ul-CyclicPrefixLength at 5720 */
-    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* ext1 at 5722 */
-    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* ext2 at 5724 */
-    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* ext3 at 5726 */
-    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 }, /* ext4 at 5729 */
-    { (ASN_TAG_CLASS_CONTEXT | (16 << 2)), 16, 0, 0 } /* ext5 at 5736 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rach-ConfigCommon at 5131 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* prach-Config at 5132 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* pdsch-ConfigCommon at 5133 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* pusch-ConfigCommon at 5134 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* phich-Config at 5135 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 }, /* pucch-ConfigCommon at 5136 */
+    { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 }, /* soundingRS-UL-ConfigCommon at 5137 */
+    { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 }, /* uplinkPowerControlCommon at 5138 */
+    { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 }, /* antennaInfoCommon at 5139 */
+    { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 }, /* p-Max at 5140 */
+    { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 }, /* tdd-Config at 5141 */
+    { (ASN_TAG_CLASS_CONTEXT | (11 << 2)), 11, 0, 0 }, /* ul-CyclicPrefixLength at 5142 */
+    { (ASN_TAG_CLASS_CONTEXT | (12 << 2)), 12, 0, 0 }, /* ext1 at 5144 */
+    { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 }, /* ext2 at 5146 */
+    { (ASN_TAG_CLASS_CONTEXT | (14 << 2)), 14, 0, 0 }, /* ext3 at 5148 */
+    { (ASN_TAG_CLASS_CONTEXT | (15 << 2)), 15, 0, 0 }, /* ext4 at 5151 */
+    { (ASN_TAG_CLASS_CONTEXT | (16 << 2)), 16, 0, 0 } /* ext5 at 5158 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RadioResourceConfigCommon_specs_1 = {
 	sizeof(struct RadioResourceConfigCommon),

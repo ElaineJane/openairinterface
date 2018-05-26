@@ -1340,8 +1340,8 @@ static asn_TYPE_member_t asn_MBR_interval_DLHoppingConfigCommonModeA_r13_5[] = {
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_interval_DLHoppingConfigCommonModeA_r13_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 5834 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 5835 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 5252 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 5253 */
 };
 static asn_CHOICE_specifics_t asn_SPC_interval_DLHoppingConfigCommonModeA_r13_specs_5 = {
 	sizeof(struct FreqHoppingParameters_r13__interval_DLHoppingConfigCommonModeA_r13),
@@ -1507,8 +1507,8 @@ static asn_TYPE_member_t asn_MBR_interval_DLHoppingConfigCommonModeB_r13_16[] = 
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_interval_DLHoppingConfigCommonModeB_r13_tag2el_16[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 5838 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 5839 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 5256 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 5257 */
 };
 static asn_CHOICE_specifics_t asn_SPC_interval_DLHoppingConfigCommonModeB_r13_specs_16 = {
 	sizeof(struct FreqHoppingParameters_r13__interval_DLHoppingConfigCommonModeB_r13),
@@ -1674,8 +1674,8 @@ static asn_TYPE_member_t asn_MBR_interval_ULHoppingConfigCommonModeA_r13_27[] = 
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_interval_ULHoppingConfigCommonModeA_r13_tag2el_27[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 5842 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 5843 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 5260 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 5261 */
 };
 static asn_CHOICE_specifics_t asn_SPC_interval_ULHoppingConfigCommonModeA_r13_specs_27 = {
 	sizeof(struct FreqHoppingParameters_r13__interval_ULHoppingConfigCommonModeA_r13),
@@ -1841,8 +1841,8 @@ static asn_TYPE_member_t asn_MBR_interval_ULHoppingConfigCommonModeB_r13_38[] = 
 		},
 };
 static asn_TYPE_tag2member_t asn_MAP_interval_ULHoppingConfigCommonModeB_r13_tag2el_38[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 5846 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 5847 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interval-FDD-r13 at 5264 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* interval-TDD-r13 at 5265 */
 };
 static asn_CHOICE_specifics_t asn_SPC_interval_ULHoppingConfigCommonModeB_r13_specs_38 = {
 	sizeof(struct FreqHoppingParameters_r13__interval_ULHoppingConfigCommonModeB_r13),
@@ -1942,12 +1942,12 @@ static ber_tlv_tag_t asn_DEF_FreqHoppingParameters_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_FreqHoppingParameters_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mpdcch-pdsch-HoppingNB-r13 at 5832 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* interval-DLHoppingConfigCommonModeA-r13 at 5834 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* interval-DLHoppingConfigCommonModeB-r13 at 5838 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* interval-ULHoppingConfigCommonModeA-r13 at 5842 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* interval-ULHoppingConfigCommonModeB-r13 at 5846 */
-    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* mpdcch-pdsch-HoppingOffset-r13 at 5849 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* mpdcch-pdsch-HoppingNB-r13 at 5250 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* interval-DLHoppingConfigCommonModeA-r13 at 5252 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* interval-DLHoppingConfigCommonModeB-r13 at 5256 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* interval-ULHoppingConfigCommonModeA-r13 at 5260 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* interval-ULHoppingConfigCommonModeB-r13 at 5264 */
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* mpdcch-pdsch-HoppingOffset-r13 at 5267 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_FreqHoppingParameters_r13_specs_1 = {
 	sizeof(struct FreqHoppingParameters_r13),

@@ -24,7 +24,7 @@ struct SCellToAddModListExt_r13;
 struct LWA_Configuration_r13;
 struct LWIP_Configuration_r13;
 struct RCLWI_Configuration_r13;
-struct RRCConnectionReconfiguration_v1430_IEs;
+struct RRCConnectionReconfiguration_v14x0_IEs;
 
 /* RRCConnectionReconfiguration-v1310-IEs */
 typedef struct RRCConnectionReconfiguration_v1310_IEs {
@@ -33,7 +33,7 @@ typedef struct RRCConnectionReconfiguration_v1310_IEs {
 	struct LWA_Configuration_r13	*lwa_Configuration_r13	/* OPTIONAL */;
 	struct LWIP_Configuration_r13	*lwip_Configuration_r13	/* OPTIONAL */;
 	struct RCLWI_Configuration_r13	*rclwi_Configuration_r13	/* OPTIONAL */;
-	struct RRCConnectionReconfiguration_v1430_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct RRCConnectionReconfiguration_v14x0_IEs	*nonCriticalExtension	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -52,7 +52,7 @@ extern asn_TYPE_descriptor_t asn_DEF_RRCConnectionReconfiguration_v1310_IEs;
 #include "LWA-Configuration-r13.h"
 #include "LWIP-Configuration-r13.h"
 #include "RCLWI-Configuration-r13.h"
-#include "RRCConnectionReconfiguration-v1430-IEs.h"
+#include "RRCConnectionReconfiguration-v14x0-IEs.h"
 
 #endif	/* _RRCConnectionReconfiguration_v1310_IEs_H_ */
 #include <asn_internal.h>

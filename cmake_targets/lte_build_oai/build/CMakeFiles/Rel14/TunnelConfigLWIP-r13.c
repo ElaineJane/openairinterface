@@ -54,7 +54,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_5[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* lwip-Counter-r13 at 6613 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* lwip-Counter-r13 at 5982 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_5 = {
 	sizeof(struct TunnelConfigLWIP_r13__ext1),
@@ -129,9 +129,9 @@ static ber_tlv_tag_t asn_DEF_TunnelConfigLWIP_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_TunnelConfigLWIP_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ip-Address-r13 at 6610 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ike-Identity-r13 at 6611 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ext1 at 6613 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* ip-Address-r13 at 5979 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* ike-Identity-r13 at 5980 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* ext1 at 5982 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_TunnelConfigLWIP_r13_specs_1 = {
 	sizeof(struct TunnelConfigLWIP_r13),

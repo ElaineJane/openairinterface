@@ -401,9 +401,9 @@ static ber_tlv_tag_t asn_DEF_QuantityConfigUTRA_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_QuantityConfigUTRA_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measQuantityUTRA-FDD at 7897 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measQuantityUTRA-TDD at 7898 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* filterCoefficient at 7899 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* measQuantityUTRA-FDD at 7162 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* measQuantityUTRA-TDD at 7163 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* filterCoefficient at 7164 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_QuantityConfigUTRA_specs_1 = {
 	sizeof(struct QuantityConfigUTRA),

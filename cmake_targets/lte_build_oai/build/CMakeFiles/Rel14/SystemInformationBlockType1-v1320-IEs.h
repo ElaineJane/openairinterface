@@ -62,7 +62,7 @@ typedef enum SystemInformationBlockType1_v1320_IEs__freqHoppingParametersDL_r13_
 } e_SystemInformationBlockType1_v1320_IEs__freqHoppingParametersDL_r13__interval_DLHoppingConfigCommonModeB_r13__interval_TDD_r13;
 
 /* Forward declarations */
-struct SystemInformationBlockType1_v1350_IEs;
+struct SystemInformationBlockType1_v14xy_IEs;
 
 /* SystemInformationBlockType1-v1320-IEs */
 typedef struct SystemInformationBlockType1_v1320_IEs {
@@ -93,7 +93,7 @@ typedef struct SystemInformationBlockType1_v1320_IEs {
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *freqHoppingParametersDL_r13;
-	struct SystemInformationBlockType1_v1350_IEs	*nonCriticalExtension	/* OPTIONAL */;
+	struct SystemInformationBlockType1_v14xy_IEs	*nonCriticalExtension	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
@@ -112,7 +112,7 @@ extern asn_TYPE_descriptor_t asn_DEF_SystemInformationBlockType1_v1320_IEs;
 #endif
 
 /* Referred external types */
-#include "SystemInformationBlockType1-v1350-IEs.h"
+#include "SystemInformationBlockType1-v14xy-IEs.h"
 
 #endif	/* _SystemInformationBlockType1_v1320_IEs_H_ */
 #include <asn_internal.h>

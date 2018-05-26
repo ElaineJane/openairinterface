@@ -32,8 +32,8 @@ static ber_tlv_tag_t asn_DEF_SL_DiscTxPoolDedicated_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_SL_DiscTxPoolDedicated_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolToReleaseList-r13 at 10393 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* poolToAddModList-r13 at 10394 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* poolToReleaseList-r13 at 9215 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* poolToAddModList-r13 at 9216 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SL_DiscTxPoolDedicated_r13_specs_1 = {
 	sizeof(struct SL_DiscTxPoolDedicated_r13),

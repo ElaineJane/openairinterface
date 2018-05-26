@@ -24,7 +24,7 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_7[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_7[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* uplinkPowerControlCommonPSCell-v1310 at 5750 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* uplinkPowerControlCommonPSCell-v1310 at 5170 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_7 = {
 	sizeof(struct RadioResourceConfigCommonPSCell_r12__ext1),
@@ -117,11 +117,11 @@ static ber_tlv_tag_t asn_DEF_RadioResourceConfigCommonPSCell_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RadioResourceConfigCommonPSCell_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* basicFields-r12 at 5744 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pucch-ConfigCommon-r12 at 5745 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rach-ConfigCommon-r12 at 5746 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* uplinkPowerControlCommonPSCell-r12 at 5747 */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 5750 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* basicFields-r12 at 5164 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* pucch-ConfigCommon-r12 at 5165 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* rach-ConfigCommon-r12 at 5166 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* uplinkPowerControlCommonPSCell-r12 at 5167 */
+    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ext1 at 5170 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RadioResourceConfigCommonPSCell_r12_specs_1 = {
 	sizeof(struct RadioResourceConfigCommonPSCell_r12),

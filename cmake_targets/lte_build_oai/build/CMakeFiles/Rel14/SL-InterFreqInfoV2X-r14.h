@@ -13,7 +13,6 @@
 
 /* Including external dependencies */
 #include "ARFCN-ValueEUTRA-r9.h"
-#include "P-Max.h"
 #include <NativeEnumerated.h>
 #include <constr_SEQUENCE.h>
 
@@ -22,28 +21,19 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum SL_InterFreqInfoV2X_r14__sl_Bandwidth_r14 {
-	SL_InterFreqInfoV2X_r14__sl_Bandwidth_r14_n6	= 0,
-	SL_InterFreqInfoV2X_r14__sl_Bandwidth_r14_n15	= 1,
-	SL_InterFreqInfoV2X_r14__sl_Bandwidth_r14_n25	= 2,
-	SL_InterFreqInfoV2X_r14__sl_Bandwidth_r14_n50	= 3,
-	SL_InterFreqInfoV2X_r14__sl_Bandwidth_r14_n75	= 4,
-	SL_InterFreqInfoV2X_r14__sl_Bandwidth_r14_n100	= 5
-} e_SL_InterFreqInfoV2X_r14__sl_Bandwidth_r14;
+typedef enum SL_InterFreqInfoV2X_r14__typeTxSync_r14 {
+	SL_InterFreqInfoV2X_r14__typeTxSync_r14_gnss	= 0,
+	SL_InterFreqInfoV2X_r14__typeTxSync_r14_enb	= 1
+} e_SL_InterFreqInfoV2X_r14__typeTxSync_r14;
 
 /* Forward declarations */
-struct PLMN_IdentityList;
 struct SL_CommResourcePoolV2X_r14;
-struct SL_V2X_UE_ConfigList_r14;
 
 /* SL-InterFreqInfoV2X-r14 */
 typedef struct SL_InterFreqInfoV2X_r14 {
-	struct PLMN_IdentityList	*plmn_IdentityList_r14	/* OPTIONAL */;
 	ARFCN_ValueEUTRA_r9_t	 v2x_CommCarrierFreq_r14;
-	P_Max_t	*sl_MaxTxPower_r14	/* OPTIONAL */;
-	long	*sl_Bandwidth_r14	/* OPTIONAL */;
+	long	*typeTxSync_r14	/* OPTIONAL */;
 	struct SL_CommResourcePoolV2X_r14	*v2x_SchedulingPool_r14	/* OPTIONAL */;
-	struct SL_V2X_UE_ConfigList_r14	*v2x_UE_ConfigList_r14	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -54,7 +44,7 @@ typedef struct SL_InterFreqInfoV2X_r14 {
 } SL_InterFreqInfoV2X_r14_t;
 
 /* Implementation */
-/* extern asn_TYPE_descriptor_t asn_DEF_sl_Bandwidth_r14_5;	// (Use -fall-defs-global to expose) */
+/* extern asn_TYPE_descriptor_t asn_DEF_typeTxSync_r14_3;	// (Use -fall-defs-global to expose) */
 extern asn_TYPE_descriptor_t asn_DEF_SL_InterFreqInfoV2X_r14;
 
 #ifdef __cplusplus
@@ -62,9 +52,7 @@ extern asn_TYPE_descriptor_t asn_DEF_SL_InterFreqInfoV2X_r14;
 #endif
 
 /* Referred external types */
-#include "PLMN-IdentityList.h"
 #include "SL-CommResourcePoolV2X-r14.h"
-#include "SL-V2X-UE-ConfigList-r14.h"
 
 #endif	/* _SL_InterFreqInfoV2X_r14_H_ */
 #include <asn_internal.h>

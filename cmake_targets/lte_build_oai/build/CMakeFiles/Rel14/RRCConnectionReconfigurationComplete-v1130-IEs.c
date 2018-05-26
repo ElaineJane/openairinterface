@@ -202,8 +202,8 @@ static ber_tlv_tag_t asn_DEF_RRCConnectionReconfigurationComplete_v1130_IEs_tags
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_RRCConnectionReconfigurationComplete_v1130_IEs_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* connEstFailInfoAvailable-r11 at 1100 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1101 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* connEstFailInfoAvailable-r11 at 1050 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nonCriticalExtension at 1051 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_RRCConnectionReconfigurationComplete_v1130_IEs_specs_1 = {
 	sizeof(struct RRCConnectionReconfigurationComplete_v1130_IEs),

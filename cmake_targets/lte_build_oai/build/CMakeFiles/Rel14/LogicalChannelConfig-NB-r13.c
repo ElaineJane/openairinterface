@@ -62,8 +62,8 @@ static ber_tlv_tag_t asn_DEF_LogicalChannelConfig_NB_r13_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_LogicalChannelConfig_NB_r13_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* priority-r13 at 12167 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* logicalChannelSR-Prohibit-r13 at 12168 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* priority-r13 at 10567 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* logicalChannelSR-Prohibit-r13 at 10568 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_LogicalChannelConfig_NB_r13_specs_1 = {
 	sizeof(struct LogicalChannelConfig_NB_r13),

@@ -93,8 +93,8 @@ static ber_tlv_tag_t asn_DEF_ext1_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_ext1_tag2el_6[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interferenceMeasRestriction-r13 at 4007 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* csi-IM-ConfigId-v1310 at 4008 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* interferenceMeasRestriction-r13 at 3661 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* csi-IM-ConfigId-v1310 at 3662 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ext1_specs_6 = {
 	sizeof(struct CSI_IM_ConfigExt_r12__ext1),
@@ -178,10 +178,10 @@ static ber_tlv_tag_t asn_DEF_CSI_IM_ConfigExt_r12_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CSI_IM_ConfigExt_r12_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-IM-ConfigId-v1250 at 4003 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* resourceConfig-r12 at 4004 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* subframeConfig-r12 at 4005 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 4007 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* csi-IM-ConfigId-v1250 at 3657 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* resourceConfig-r12 at 3658 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* subframeConfig-r12 at 3659 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* ext1 at 3661 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CSI_IM_ConfigExt_r12_specs_1 = {
 	sizeof(struct CSI_IM_ConfigExt_r12),

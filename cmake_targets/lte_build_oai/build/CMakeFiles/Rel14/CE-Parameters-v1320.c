@@ -730,10 +730,10 @@ static ber_tlv_tag_t asn_DEF_CE_Parameters_v1320_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_TYPE_tag2member_t asn_MAP_CE_Parameters_v1320_tag2el_1[] = {
-    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* intraFreqA3-CE-ModeA-r13 at 9629 */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* intraFreqA3-CE-ModeB-r13 at 9630 */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* intraFreqHO-CE-ModeA-r13 at 9631 */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* intraFreqHO-CE-ModeB-r13 at 9632 */
+    { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* intraFreqA3-CE-ModeA-r13 at 8645 */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* intraFreqA3-CE-ModeB-r13 at 8646 */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* intraFreqHO-CE-ModeA-r13 at 8647 */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* intraFreqHO-CE-ModeB-r13 at 8648 */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CE_Parameters_v1320_specs_1 = {
 	sizeof(struct CE_Parameters_v1320),
