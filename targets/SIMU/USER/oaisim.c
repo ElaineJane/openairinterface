@@ -1235,8 +1235,8 @@ main (int argc, char **argv)
   init_otg_pdcp_buffer ();
 
   init_seed (set_seed);
-
-  
+//Atten
+  //openair_rrc_ue_init();
 
  // init_openair1 ();
 

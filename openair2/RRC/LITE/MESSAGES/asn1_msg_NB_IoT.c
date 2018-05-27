@@ -728,7 +728,7 @@ uint8_t do_SIB23_NB_IoT(uint8_t Mod_id,
   //new
 /*  (*sib3_NB_IoT)->intraFreqCellReselectionInfo_r13.q_QualMin_r13 = CALLOC(1,sizeof(*(*sib3_NB_IoT)->intraFreqCellReselectionInfo_r13.q_QualMin_r13));
   *((*sib3_NB_IoT)->intraFreqCellReselectionInfo_r13.q_QualMin_r13)= 10; //a caso*/
-  (*sib3_NB_IoT)->intraFreqCellReselectionInfo_r13.q_QualMin_r13 = 
+ /* (*sib3_NB_IoT)->intraFreqCellReselectionInfo_r13.q_QualMin_r13 = 10;*/       //bug  the value may be negative
   (*sib3_NB_IoT)->intraFreqCellReselectionInfo_r13.p_Max_r13 = NULL;
   (*sib3_NB_IoT)->intraFreqCellReselectionInfo_r13.s_IntraSearchP_r13 = 31; // s_intraSearch --> s_intraSearchP!!! (they call in a different way)
   (*sib3_NB_IoT)->intraFreqCellReselectionInfo_r13.t_Reselection_r13=1;
@@ -746,11 +746,11 @@ uint8_t do_SIB23_NB_IoT(uint8_t Mod_id,
   bcch_message->message.choice.c1.choice.systemInformation_r13.criticalExtensions.choice.systemInformation_r13.sib_TypeAndInfo_r13.list.count=0;
 
   addseq_result = ASN_SEQUENCE_ADD(&bcch_message->message.choice.c1.choice.systemInformation_r13.criticalExtensions.choice.systemInformation_r13.sib_TypeAndInfo_r13.list,
-                   &sib2_NB_part);
+                   sib2_NB_part);
 
   printf("The result of add sequence:%d\n", addseq_result);
  addseq_result2 =  ASN_SEQUENCE_ADD(&bcch_message->message.choice.c1.choice.systemInformation_r13.criticalExtensions.choice.systemInformation_r13.sib_TypeAndInfo_r13.list,
-                   &sib3_NB_part);
+                   sib3_NB_part);
 printf("The result of add sequence:%d\n", addseq_result2);
 #ifdef XER_PRINT
   xer_fprint(stdout, &asn_DEF_BCCH_DL_SCH_Message_NB, (void*)bcch_message);
@@ -758,10 +758,10 @@ printf("The result of add sequence:%d\n", addseq_result2);
 /*NPUSCH_ConfigCommon_NB_r13_t *nprach = CALLOC(1,sizeof(struct  NPUSCH_ConfigCommon_NB_r13));
 memset(nprach,0,sizeof(struct  NPUSCH_ConfigCommon_NB_r13));
 memcpy(nprach,&((*sib2_NB_IoT)->radioResourceConfigCommon_r13.npusch_ConfigCommon_r13),sizeof(struct  NPUSCH_ConfigCommon_NB_r13));*/
-enc_rval = uper_encode_to_buffer(&asn_DEF_SystemInformationBlockType3_NB_r13, 
+/*enc_rval = uper_encode_to_buffer(&asn_DEF_SystemInformationBlockType3_NB_r13, 
                                   *sib3_NB_IoT,
                                   carrier->SIB23_NB_IoT,
-                                  1000);
+                                  1000);*/
 /*enc_rval = uper_encode_to_buffer(&asn_DEF_SystemInformationBlockType3_NB_r13, 
                                   *sib3_NB_IoT,
                                   carrier->SIB23_NB_IoT,
@@ -775,10 +775,10 @@ enc_rval = uper_encode_to_buffer(&asn_DEF_RadioResourceConfigCommonSIB_NB_r13,
                                   carrier->SIB23_NB_IoT,
                                   1000);*/
 
-/*  enc_rval = uper_encode_to_buffer(&asn_DEF_BCCH_DL_SCH_Message_NB,
+  enc_rval = uper_encode_to_buffer(&asn_DEF_BCCH_DL_SCH_Message_NB,
                                    (void*)bcch_message,
                                    carrier->SIB23_NB_IoT,
-                                   900);*/
+                                   1000);
 //  AssertFatal (enc_rval.encoded > 0, "ASN1 message encoding failed (%s, %lu)!\n",
 //               enc_rval.failed_type->name, enc_rval.encoded);
 

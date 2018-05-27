@@ -251,7 +251,7 @@ static void init_SI_UE_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8
   //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sizeof_SI[eNB_index] = 0;
   //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SIB1[eNB_index] = (uint8_t*)malloc16_clear( 32 );
   //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType1_t) );
-/*  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType2_t) );
+ /* UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType2_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib3[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType3_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib4[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType4_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib5[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType5_t) );
@@ -265,9 +265,9 @@ static void init_SI_UE_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib12[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType12_r9_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib13[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType13_r9_t) );
 #endif*/
-  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SI[eNB_index] = (uint8_t*)malloc16_clear( 64 );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SI[eNB_index] = (uint8_t*)malloc16_clear( 64 );
 
-  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].si[eNB_index] = (SystemInformation_t*)malloc16_clear( sizeof(SystemInformation_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].si[eNB_index] = (SystemInformation_t*)malloc16_clear( sizeof(SystemInformation_NB_t) );
 
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus = 0;
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIcnt    = 0;
@@ -2860,20 +2860,21 @@ int decode_BCCH_DLSCH_Message_NB_IoT(
       break;
 
     case BCCH_DL_SCH_MessageType__c1_PR_systemInformation:
-      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&1) == 1) {
+      printf("[UE] [SIB23] SIB23 message received and decode successfully!\n");
+      //if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&1) == 1) {
         // SIB1 with schedulingInfoList is available
 
-       // SystemInformation_t* si = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].si[eNB_index];
-        /*memcpy( si,
+        SystemInformation_NB_t* si = UE_rrc_inst_NB_IoT[0].si[eNB_index];
+        memcpy( si,
                 &bcch_message_nbiot->message.choice.c1.choice.systemInformation_r13,
-                sizeof(SystemInformation_t) );*/
+                sizeof(SystemInformation_NB_t) );
 
         LOG_D( RRC, "[UE %"PRIu8"] Decoding SI for frameP %"PRIu32"\n",
                ctxt_pP->module_id,
                ctxt_pP->frame );
 
-        //decode_SI_NB_IoT( ctxt_pP, eNB_index );
-      }
+        decode_SI_NB_IoT( ctxt_pP, eNB_index );
+     // }
 
       break;
 
@@ -5078,7 +5079,7 @@ void *rrc_ue_task( void *args_p )
 
 
       break;
-      //to get SIB1 or SI
+      //to get SIB1 or SI(SIB23)
       case RRC_BCCH_DLSCH_DATA_IND:
       printf("[UE] UE receive a message from ITTI --- RRC_BCCH_DLSCH_DATA_IND\n");
       LOG_D(RRC, "[UE %d] Received %s: frameP %d, eNB %d\n", ue_mod_id, msg_name,
