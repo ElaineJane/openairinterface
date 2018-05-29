@@ -505,7 +505,8 @@ void rrc_eNB_generate_RRCConnectionSetup_NB_IoT(
 
   //XXX MP:warning due to function still not completed at PHY (get_lte_frame_parms)
   //XXX this approach is gone most probably
-  NB_IoT_DL_FRAME_PARMS *fp = get_NB_IoT_frame_parms(ctxt_pP->module_id,CC_id);
+  //temperarily unused untill PHY build up
+ // NB_IoT_DL_FRAME_PARMS *fp = get_NB_IoT_frame_parms(ctxt_pP->module_id,CC_id);
   T(T_ENB_RRC_CONNECTION_SETUP, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
     T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
 
@@ -517,7 +518,7 @@ void rrc_eNB_generate_RRCConnectionSetup_NB_IoT(
                                  CC_id,
                                  (uint8_t*) eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].Srb0.Tx_buffer.Payload,
                                  rrc_eNB_get_next_transaction_identifier_NB_IoT(ctxt_pP->module_id),
-                                 fp,
+                                 //fp,
                                  SRB_configList, //MP:should contain only SRb1bis for the moment
                                  &ue_context_pP->ue_context.physicalConfigDedicated_NB_IoT);
 
@@ -525,13 +526,31 @@ void rrc_eNB_generate_RRCConnectionSetup_NB_IoT(
   LOG_F(RRC,"[MSG] RRC Connection Setup\n");
 
   for (cnt = 0; cnt < eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].Srb0.Tx_buffer.payload_size; cnt++) {
-    LOG_F(RRC,"%02x ", ((uint8_t*)eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0.Tx_buffer.Payload)[cnt]);
+    LOG_F(RRC,"%02x ", ((uint8_t*)eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].Srb0.Tx_buffer.Payload)[cnt]);
   }
 
   LOG_F(RRC,"\n");
   //////////////////////////////////
 #endif
+#if defined(ENABLE_ITTI)
 
+    MessageDef                         *message_p;
+
+    message_p = itti_alloc_new_message(TASK_RRC_ENB, RRC_MAC_CCCH_DATA_IND);
+         RRC_MAC_CCCH_DATA_IND (message_p).frame     = get_NB_IoT_frame();
+          RRC_MAC_CCCH_DATA_IND (message_p).sub_frame = get_NB_IoT_subframe();
+          RRC_MAC_CCCH_DATA_IND (message_p).sdu_size  = eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].Srb0.Tx_buffer.payload_size;
+          RRC_MAC_CCCH_DATA_IND (message_p).enb_index = 0;
+          RRC_MAC_CCCH_DATA_IND (message_p).rnti      = get_NB_IoT_rnti();
+          memset (RRC_MAC_CCCH_DATA_IND (message_p).sdu, 0, CCCH_SDU_SIZE);
+          memcpy (RRC_MAC_CCCH_DATA_IND (message_p).sdu, eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].Srb0.Tx_buffer.Payload, eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].Srb0.Tx_buffer.payload_size);
+          
+
+
+    itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, message_p);
+    printf("[UE] RRC_MAC_CCCH_DATA_IND message(RRCConnectionSetup) has been sent to UE\n");
+
+#endif
   // configure SRB1bis, PhysicalConfigDedicated, MAC_MainConfig for UE
 
   if (*SRB_configList != NULL) {
@@ -1608,7 +1627,7 @@ void rrc_eNB_generate_defaultRRCConnectionReconfiguration_NB_IoT(const protocol_
     return 1;
   }
 
-  uint16_t get_NB_IoT_rnti(void)
+  int get_NB_IoT_rnti(void)
   {
     return 0;
   }
@@ -1817,7 +1836,8 @@ char openair_rrc_eNB_configuration_NB_IoT(
 {
   protocol_ctxt_t ctxt;
   int             CC_id;
-
+  
+  
   PROTOCOL_CTXT_SET_BY_MODULE_ID(&ctxt, enb_mod_idP, ENB_FLAG_YES, NOT_A_RNTI, 0, 0,enb_mod_idP);
   LOG_I(RRC,
         PROTOCOL_RRC_CTXT_FMT" Init...\n",
@@ -1857,6 +1877,8 @@ while ( eNB_rrc_inst_NB_IoT == NULL ) {
   //no CBA
   printf("[eNB ]eNB has processed the RRC_CONFIGURATION_REQ message and start initializing system information!");
   //init SI
+ //may be this should not be here
+  ctxt.instance = 1;
   for (CC_id = 0; CC_id < MAX_NUM_CCs; CC_id++) {
     init_SI_NB_IoT(&ctxt, CC_id,configuration);
   }
@@ -1922,7 +1944,6 @@ int rrc_eNB_decode_ccch_NB_IoT(
 
 //#if defined(ENABLE_ITTI)....
 //#   if defined(DISABLE_ITTI_XER_PRINT)...
-
 
   for (i = 0; i < 8; i++) { //MP: FIXME why 8?
     LOG_T(RRC, "%x.", ((uint8_t *) & ul_ccch_msg_NB_IoT)[i]);
@@ -1998,6 +2019,7 @@ int rrc_eNB_decode_ccch_NB_IoT(
       break;
 
     case UL_CCCH_MessageType_NB__c1_PR_rrcConnectionRequest_r13: //MSG3
+      printf("[eNB]RRC Connection Request Message received.\n");
       T(T_ENB_RRC_CONNECTION_REQUEST, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
         T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
 
@@ -2177,6 +2199,7 @@ int rrc_eNB_decode_ccch_NB_IoT(
       ue_context_p->ue_context.Srb1bis.Srb_info.Srb_id = DCCH0_NB_IoT;
 
       //generate RRCConnectionSetup-NB
+      printf("Starting generate RRC Connection Setup NB-IoT\n");
       rrc_eNB_generate_RRCConnectionSetup_NB_IoT(ctxt_pP, ue_context_p, CC_id);
 
       LOG_I(RRC, PROTOCOL_RRC_CTXT_UE_FMT"CALLING RLC CONFIG SRB1bis and SRB1 (rbid %d, rbid %d)\n",
@@ -2191,9 +2214,9 @@ int rrc_eNB_decode_ccch_NB_IoT(
         MSC_AS_TIME_FMT" CONFIG_REQ UE %x SRB",
         MSC_AS_TIME_ARGS(ctxt_pP),
         ue_context_p->ue_context.rnti);
-
+      //Following Interface with other layer temperarily removed!
       //MP: we should not configure PDCP for SRB1bis but only for SRB1
-      rrc_pdcp_config_asn1_req_NB_IoT(ctxt_pP,
+      /*rrc_pdcp_config_asn1_req_NB_IoT(ctxt_pP,
                                       ue_context_p->ue_context.SRB_configList, //contain SRB1bis but used as SRB1
                                       (DRB_ToAddModList_NB_r13_t *) NULL,
                                       (DRB_ToReleaseList_NB_r13_t*) NULL,
@@ -2217,7 +2240,7 @@ int rrc_eNB_decode_ccch_NB_IoT(
                                     (DRB_ToAddModList_NB_r13_t*) NULL,
                                     (DRB_ToReleaseList_NB_r13_t*) NULL,
       							  SRB1BIS_FLAG_NO
-                                   );
+                                   );*/
 //#endif //NO_RRM
 
       break; //RRCConnectionSetup-NB
@@ -2273,6 +2296,9 @@ int rrc_eNB_decode_ccch_NB_IoT(
 
   return rval;
 }
+
+
+
 
 //-----------------------------------------------------------------------------
 int rrc_eNB_decode_dcch_NB_IoT(

@@ -5070,6 +5070,7 @@ void* rrc_enb_task(void* args_p)
   int                                 CC_id;
 
   protocol_ctxt_t                     ctxt;
+  ctxt.enb_flag = TRUE;
   itti_mark_task_ready(TASK_RRC_ENB);
   printf("RRC eNB Task is marked ready\n");
 
@@ -5090,7 +5091,9 @@ void* rrc_enb_task(void* args_p)
       break;
 
       /* Messages from MAC */
+      //RRC connection Request
     case RRC_MAC_CCCH_DATA_IND:
+
       PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt,
                                     instance,
                                     ENB_FLAG_YES,
@@ -5100,15 +5103,15 @@ void* rrc_enb_task(void* args_p)
       LOG_I(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Received %s\n",
             PROTOCOL_RRC_CTXT_UE_ARGS(&ctxt),
             msg_name_p);
-
+      ctxt.module_id=0;//This is added later ?WHY needed?
       CC_id = RRC_MAC_CCCH_DATA_IND(msg_p).CC_id;
-      srb_info_p = &eNB_rrc_inst[instance].carrier[CC_id].Srb0;
+      srb_info_p = &eNB_rrc_inst_NB_IoT[instance].carrier[CC_id].Srb0;
 
       memcpy(srb_info_p->Rx_buffer.Payload,
              RRC_MAC_CCCH_DATA_IND(msg_p).sdu,
              RRC_MAC_CCCH_DATA_IND(msg_p).sdu_size);
       srb_info_p->Rx_buffer.payload_size = RRC_MAC_CCCH_DATA_IND(msg_p).sdu_size;
-      rrc_eNB_decode_ccch(&ctxt, srb_info_p, CC_id);
+      rrc_eNB_decode_ccch_NB_IoT(&ctxt, srb_info_p, CC_id);
       break;
 
       /* Messages from PDCP */

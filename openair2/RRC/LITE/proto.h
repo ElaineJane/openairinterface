@@ -469,7 +469,7 @@ int get_NB_IoT_frame(void);
 
 int get_NB_IoT_subframe(void);
 
-uint16_t get_NB_IoT_rnti(void);
+int get_NB_IoT_rnti(void);
 
 
 /*-----------------------------------------------------------*/

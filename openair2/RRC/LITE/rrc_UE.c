@@ -54,6 +54,19 @@
 #include "DL-DCCH-Message.h"
 #include "BCCH-DL-SCH-Message.h"
 #include "PCCH-Message.h"
+
+/* NB-IoT */
+#include "UL-CCCH-Message-NB.h"
+#include "UL-DCCH-Message-NB.h"
+#include "DL-CCCH-Message-NB.h"
+#include "DL-DCCH-Message-NB.h"
+#include "EstablishmentCause-NB-r13.h"
+#include "RRCConnectionSetup-NB.h"
+#include "SRB-ToAddModList-NB-r13.h"
+#include "DRB-ToAddModList-NB-r13.h"
+#include "RRC/LITE/defs_NB_IoT.h"
+#include "RRCConnectionSetupComplete-NB.h"
+
 #if defined(Rel10) || defined(Rel14)
 #include "MCCH-Message.h"
 #endif
@@ -101,6 +114,8 @@ extern void *bigphys_malloc(int);
 #endif
 
 //#define XER_PRINT
+extern UE_RRC_INST_NB_IoT           *UE_rrc_inst_NB_IoT;
+
 
 extern int8_t dB_fixed2(uint32_t x,uint32_t y);
 
@@ -167,13 +182,13 @@ static void decode_MBSFNAreaConfiguration(module_id_t module_idP, uint8_t eNB_in
 #if defined(ENABLE_USE_MME) || ENABLE_RAL
 static Rrc_State_t rrc_get_state (module_id_t ue_mod_idP)
 {
-  return UE_rrc_inst[ue_mod_idP].RrcState;
+  return UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState;
 }
 #endif
 
 static Rrc_Sub_State_t rrc_get_sub_state (module_id_t ue_mod_idP)
 {
-  return UE_rrc_inst[ue_mod_idP].RrcSubState;
+  return UE_rrc_inst_NB_IoT[ue_mod_idP].RrcSubState;
 }
 
 static int rrc_set_state (module_id_t ue_mod_idP, Rrc_State_t state)
@@ -181,16 +196,16 @@ static int rrc_set_state (module_id_t ue_mod_idP, Rrc_State_t state)
   AssertFatal ((RRC_STATE_FIRST <= state) && (state <= RRC_STATE_LAST),
                "Invalid state %d!\n", state);
 
-  if (UE_rrc_inst[ue_mod_idP].RrcState != state) {
-    UE_rrc_inst[ue_mod_idP].RrcState = state;
+  if (UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState != state) {
+    UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState = state;
 
 #if defined(ENABLE_ITTI)
     {
       MessageDef *msg_p;
 
       msg_p = itti_alloc_new_message(TASK_RRC_UE, RRC_STATE_IND);
-      RRC_STATE_IND(msg_p).state = UE_rrc_inst[ue_mod_idP].RrcState;
-      RRC_STATE_IND(msg_p).sub_state = UE_rrc_inst[ue_mod_idP].RrcSubState;
+      RRC_STATE_IND(msg_p).state = UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState;
+      RRC_STATE_IND(msg_p).sub_state = UE_rrc_inst_NB_IoT[ue_mod_idP].RrcSubState;
 
       itti_send_msg_to_task(TASK_UNKNOWN, UE_MODULE_ID_TO_INSTANCE(ue_mod_idP), msg_p);
     }
@@ -245,23 +260,93 @@ static int rrc_set_sub_state( module_id_t ue_mod_idP, Rrc_Sub_State_t subState )
   return (0);
 }
 
+static int rrc_set_state_NB_IoT (module_id_t ue_mod_idP, Rrc_State_NB_IoT_t state)
+{
+  AssertFatal ((RRC_STATE_FIRST_NB_IoT <= state) && (state <= RRC_STATE_LAST_NB_IoT),
+               "Invalid state %d!\n", state);
+ printf("[Attention]UE RRC state %d\n", UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState);
+ printf("[Attention]UE RRC state to set  %d\n", state);
+  if (UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState != state) {
+    UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState = state;
+
+#if defined(ENABLE_ITTI)
+    {
+      MessageDef *msg_p;
+
+      msg_p = itti_alloc_new_message(TASK_RRC_UE, RRC_STATE_IND);
+      RRC_STATE_IND(msg_p).state = UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState;
+      RRC_STATE_IND(msg_p).sub_state = UE_rrc_inst_NB_IoT[ue_mod_idP].RrcSubState;
+
+      itti_send_msg_to_task(TASK_UNKNOWN, UE_MODULE_ID_TO_INSTANCE(ue_mod_idP), msg_p);
+    }
+#endif
+    return (1);
+  }
+
+  return (0);
+}
+
+//-----------------------------------------------------------------------------
+static int rrc_set_sub_state_NB_IoT( module_id_t ue_mod_idP, Rrc_Sub_State_NB_IoT_t subState )
+{
+#if (defined(ENABLE_ITTI) && (defined(ENABLE_USE_MME) || ENABLE_RAL))
+
+  switch (UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState) {
+  case RRC_STATE_INACTIVE_NB_IoT:
+    AssertFatal ((RRC_SUB_STATE_INACTIVE_FIRST_NB_IoT <= subState) && (subState <= RRC_SUB_STATE_INACTIVE_LAST_NB_IoT),
+                 "Invalid sub state %d for state %d!\n", subState, UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState);
+    break;
+
+  case RRC_STATE_IDLE_NB_IoT:
+    AssertFatal ((RRC_SUB_STATE_IDLE_FIRST_NB_IoT <= subState) && (subState <= RRC_SUB_STATE_IDLE_LAST_NB_IoT),
+                 "Invalid sub state %d for state %d!\n", subState, UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState);
+    break;
+
+  case RRC_STATE_CONNECTED_NB_IoT:
+    AssertFatal ((RRC_SUB_STATE_CONNECTED_FIRST <= subState) && (subState <= RRC_SUB_STATE_CONNECTED_LAST),
+                 "Invalid sub state %d for state %d!\n", subState, UE_rrc_inst_NB_IoT[ue_mod_idP].RrcState);
+    break;
+  }
+
+#endif
+
+  if (UE_rrc_inst_NB_IoT[ue_mod_idP].RrcSubState != subState) {
+    UE_rrc_inst_NB_IoT[ue_mod_idP].RrcSubState = subState;
+
+/*#if defined(ENABLE_ITTI)
+    {
+      MessageDef *msg_p;
+
+      msg_p = itti_alloc_new_message(TASK_RRC_UE, RRC_STATE_IND);
+      RRC_STATE_IND(msg_p).state = UE_rrc_inst[ue_mod_idP].RrcState;
+      RRC_STATE_IND(msg_p).sub_state = UE_rrc_inst[ue_mod_idP].RrcSubState;
+
+      itti_send_msg_to_task(TASK_UNKNOWN, UE_MODULE_ID_TO_INSTANCE(ue_mod_idP), msg_p);
+    }
+#endif*/
+    return (1);
+  }
+
+  return (0);
+}
+
 static void init_SI_UE_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index )
 {
-  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sizeof_SIB1[eNB_index] = 0;
-  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sizeof_SI[eNB_index] = 0;
-  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SIB1[eNB_index] = (uint8_t*)malloc16_clear( 32 );
-  //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType1_t) );
- /* UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType2_t) );
-  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib3[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType3_t) );
-  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib4[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType4_t) );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sizeof_SIB1[eNB_index] = 0;
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sizeof_SI[eNB_index] = 0;
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SIB1[eNB_index] = (uint8_t*)malloc16_clear( 32 );
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType1_NB_t ));
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType2_NB_r13_t ));
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib3[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType3_NB_r13_t ));
+ /* UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib4[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType4_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib5[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType5_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib6[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType6_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib7[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType7_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib8[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType8_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib9[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType9_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib10[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType10_t) );
-  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib11[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType11_t) );
-#if defined(Rel10) || defined(Rel14)
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib11[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType11_t) );*/
+/*#if defined(Rel10) || defined(Rel14)
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib12[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType12_r9_t) );
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib13[eNB_index] = malloc16_clear( sizeof(SystemInformationBlockType13_r9_t) );
 #endif*/
@@ -396,6 +481,70 @@ char openair_rrc_ue_init( const module_id_t ue_mod_idP, const unsigned char eNB_
   return 0;
 }
 
+
+char openair_rrc_ue_init_NB_IoT( const module_id_t ue_mod_idP, const unsigned char eNB_index )
+{
+  protocol_ctxt_t ctxt;
+  UE_rrc_inst_NB_IoT = (UE_RRC_INST_NB_IoT*) malloc16(sizeof(UE_RRC_INST_NB_IoT));
+    memset (UE_rrc_inst_NB_IoT, 0, sizeof(UE_RRC_INST_NB_IoT));
+    LOG_D(RRC, "ALLOCATE %d Bytes for UE_RRC_INST NB-IoT @ %p\n", (unsigned int)(sizeof(UE_RRC_INST_NB_IoT)), UE_rrc_inst_NB_IoT);
+
+//no CBA, no LOcalization, no MBMS flag
+
+    LOG_D(RRC,
+          "ALLOCATE %d Bytes for UE_RRC_INST_NB @ %p\n", (unsigned int)(sizeof(UE_RRC_INST_NB_IoT)), UE_rrc_inst_NB_IoT);
+
+
+  PROTOCOL_CTXT_SET_BY_MODULE_ID(&ctxt, ue_mod_idP, ENB_FLAG_NO, NOT_A_RNTI, 0, 0,eNB_index);
+  LOG_I(RRC,
+        PROTOCOL_RRC_CTXT_FMT" Init...\n",
+        PROTOCOL_RRC_CTXT_ARGS(&ctxt));
+  rrc_set_state_NB_IoT (ue_mod_idP, RRC_STATE_INACTIVE_NB_IoT);
+  rrc_set_sub_state_NB_IoT (ue_mod_idP, RRC_SUB_STATE_INACTIVE_NB_IoT);
+
+  LOG_D(RRC,"[UE %d] INIT State = RRC_IDLE (eNB %d)\n",ctxt.module_id,eNB_index);
+  UE_rrc_inst_NB_IoT[ctxt.module_id].Info[eNB_index].State=RRC_IDLE_NB_IoT;
+  UE_rrc_inst_NB_IoT[ctxt.module_id].Info[eNB_index].T300_active = 0;
+  UE_rrc_inst_NB_IoT[ctxt.module_id].Info[eNB_index].T304_active = 0;
+  UE_rrc_inst_NB_IoT[ctxt.module_id].Info[eNB_index].T310_active = 0;
+  UE_rrc_inst_NB_IoT[ctxt.module_id].Info[eNB_index].UE_index=0xffff;
+  UE_rrc_inst_NB_IoT[ctxt.module_id].Srb0[eNB_index].Active=0;
+  UE_rrc_inst_NB_IoT[ctxt.module_id].Srb1[eNB_index].Active=0;
+  UE_rrc_inst_NB_IoT[ctxt.module_id].Srb2[eNB_index].Active=0;
+  UE_rrc_inst_NB_IoT[ctxt.module_id].HandoverInfoUe.measFlag=1;
+  UE_rrc_inst_NB_IoT[ctxt.module_id].ciphering_algorithm = CipheringAlgorithm_r12_eea0;
+#if defined(Rel10) || defined(Rel14)
+  UE_rrc_inst_NB_IoT[ctxt.module_id].integrity_algorithm = SecurityAlgorithmConfig__integrityProtAlgorithm_eia0_v920;
+#else
+  UE_rrc_inst_NB_IoT[ctxt.module_id].integrity_algorithm = SecurityAlgorithmConfig__integrityProtAlgorithm_reserved;
+#endif
+
+  openair_rrc_ue_init_security(&ctxt);
+  init_SI_UE_NB_IoT(&ctxt,eNB_index);
+  LOG_D(RRC,PROTOCOL_RRC_CTXT_FMT"  INIT: phy_sync_2_ch_ind\n",
+        PROTOCOL_RRC_CTXT_ARGS(&ctxt));
+
+#ifndef NO_RRM
+  send_msg(&S_rrc,msg_rrc_phy_synch_to_CH_ind(ctxt.module_id,eNB_index,UE_rrc_inst_NB_IoT[ctxt.module_id].Mac_id));
+#endif
+
+#ifdef NO_RRM //init ch SRB0, SRB1 & BDTCH
+  openair_rrc_on_NB_IoT(&ctxt);
+#endif
+#ifdef CBA
+  int j;
+
+  for(j=0; j<NUM_MAX_CBA_GROUP; j++) {
+    UE_rrc_inst_NB_IoT[ue_mod_idP].cba_rnti[j] = 0x0000;
+  }
+
+  UE_rrc_inst_NB_IoT[ue_mod_idP].num_active_cba_groups = 0;
+#endif
+
+  return 0;
+}
+
+
 //-----------------------------------------------------------------------------
 void rrc_ue_generate_RRCConnectionRequest( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index )
 {
@@ -438,6 +587,68 @@ void rrc_ue_generate_RRCConnectionRequest( const protocol_ctxt_t* const ctxt_pP,
 }
 
 
+void rrc_ue_generate_RRCConnectionRequest_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index )
+{
+
+  uint8_t i=0,rv[6];
+
+  if(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size ==0) {
+
+    // Get RRCConnectionRequest, fill random for now
+    // Generate random byte stream for contention resolution
+    for (i=0; i<6; i++) {
+#ifdef SMBV
+      // if SMBV is configured the contention resolution needs to be fix for the connection procedure to succeed
+      rv[i]=i;
+#else
+      rv[i]=taus()&0xff;
+#endif
+      LOG_T(RRC,"%x.",rv[i]);
+    }
+
+    LOG_T(RRC,"\n");
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size =
+      do_RRCConnectionRequest_NB_IoT(
+        ctxt_pP->module_id,
+        (uint8_t*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.Payload,
+        rv);
+
+    LOG_I(RRC,"[UE %d] : Frame %d, Logical Channel UL-CCCH (SRB0), Generating RRCConnectionRequest (bytes %d, eNB %d)\n",
+          ctxt_pP->module_id, ctxt_pP->frame, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size, eNB_index);
+
+    for (i=0; i<UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size; i++) {
+      LOG_T(RRC,"%x.",UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.Payload[i]);
+    }
+
+    LOG_T(RRC,"\n");
+    /*UE_rrc_inst[ue_mod_idP].Srb0[Idx].Tx_buffer.Payload[i] = taus()&0xff;
+    UE_rrc_inst[ue_mod_idP].Srb0[Idx].Tx_buffer.payload_size =i; */
+
+                //To send message to ITTI (ENB)---------------------------RRCConnectionRequest
+#if defined(ENABLE_ITTI)
+
+    MessageDef                         *message_p;
+
+    message_p = itti_alloc_new_message(TASK_RRC_UE, RRC_MAC_CCCH_DATA_IND);
+         RRC_MAC_CCCH_DATA_IND (message_p).frame     = get_NB_IoT_frame();
+          RRC_MAC_CCCH_DATA_IND (message_p).sub_frame = get_NB_IoT_subframe();
+          RRC_MAC_CCCH_DATA_IND (message_p).sdu_size  = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size;
+          RRC_MAC_CCCH_DATA_IND (message_p).enb_index = 0;
+          RRC_MAC_CCCH_DATA_IND (message_p).rnti      = get_NB_IoT_rnti();
+          memset (RRC_MAC_CCCH_DATA_IND (message_p).sdu, 0, CCCH_SDU_SIZE);
+          memcpy (RRC_MAC_CCCH_DATA_IND (message_p).sdu, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.Payload, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size);
+          
+
+
+    itti_send_msg_to_task(TASK_RRC_ENB, ctxt_pP->instance, message_p);
+    printf("[UE] RRC_MAC_CCCH_DATA_IND message(RRCConnectionRequest) has been sent to eNB\n");
+
+#endif
+
+  }
+}
+
+
 mui_t rrc_mui=0;
 
 #if !(defined(ENABLE_ITTI) && defined(ENABLE_USE_MME))
@@ -471,6 +682,42 @@ static const char const nas_attach_req_guti[] = {
   0x01, 0x27, 0x11,
 };
 #endif
+
+
+
+static void rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id )
+{
+
+  uint8_t    buffer[100];
+  uint8_t    size;
+  const char * nas_msg;
+  int   nas_msg_length;
+
+#if defined(ENABLE_ITTI) && defined(ENABLE_USE_MME)
+  nas_msg         = (char*) UE_rrc_inst[ctxt_pP->module_id].initialNasMsg.data;
+  nas_msg_length  = UE_rrc_inst[ctxt_pP->module_id].initialNasMsg.length;
+#else
+  nas_msg         = nas_attach_req_imsi;
+  nas_msg_length  = sizeof(nas_attach_req_imsi);
+#endif
+
+  size = do_RRCConnectionSetupComplete_NB_IoT(ctxt_pP->module_id, buffer, Transaction_id, nas_msg_length, nas_msg);
+
+  LOG_I(RRC,"[UE %d][RAPROC] Frame %d : Logical Channel UL-DCCH (SRB1), Generating RRCConnectionSetupComplete (bytes%d, eNB %d)\n",
+        ctxt_pP->module_id,ctxt_pP->frame, size, eNB_index);
+  LOG_D(RLC,
+        "[FRAME %05d][RRC_UE][MOD %02d][][--- PDCP_DATA_REQ/%d Bytes (RRCConnectionSetupComplete to eNB %d MUI %d) --->][PDCP][MOD %02d][RB %02d]\n",
+        ctxt_pP->frame, ctxt_pP->module_id+NB_eNB_INST, size, eNB_index, rrc_mui, ctxt_pP->module_id+NB_eNB_INST, DCCH);
+  rrc_data_req (
+    ctxt_pP,
+    DCCH,
+    rrc_mui++,
+    SDU_CONFIRM_NO,
+    size,
+    buffer,
+    PDCP_TRANSMISSION_MODE_CONTROL);
+}
+
 
 //-----------------------------------------------------------------------------
 static void rrc_ue_generate_RRCConnectionSetupComplete( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id )
@@ -1584,7 +1831,371 @@ rrc_ue_process_radioResourceConfigDedicated(
 #endif
 }
 
+void
+rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
+  const protocol_ctxt_t* const ctxt_pP,
+  uint8_t eNB_index,
+  RadioResourceConfigDedicated_t* radioResourceConfigDedicated
+)
+//-----------------------------------------------------------------------------
+{
 
+  long SRB_id,DRB_id;
+  int i,cnt;
+  LogicalChannelConfig_t *SRB1_logicalChannelConfig,*SRB2_logicalChannelConfig;
+#ifdef CBA
+  uint8_t cba_found = 0;
+  uint16_t cba_RNTI;
+#endif
+
+  // Save physicalConfigDedicated if present
+  if (radioResourceConfigDedicated->physicalConfigDedicated) {
+    LOG_I(RRC,"Save physicalConfigDedicated if present \n");
+
+    if (UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index]) {
+#if 1
+        rrc_ue_update_radioResourceConfigDedicated(radioResourceConfigDedicated, ctxt_pP, eNB_index);
+#else
+      memcpy((char*)UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],(char*)radioResourceConfigDedicated->physicalConfigDedicated,
+             sizeof(struct PhysicalConfigDedicated));
+#endif
+    } else {
+      LOG_I(RRC,"Init physicalConfigDedicated UE_rrc_inst to radioResourceConfigDedicated->physicalConfigDedicated\n");
+      UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index] = radioResourceConfigDedicated->physicalConfigDedicated;
+    }
+  }
+
+  // Apply macMainConfig if present
+  if (radioResourceConfigDedicated->mac_MainConfig) {
+    if (radioResourceConfigDedicated->mac_MainConfig->present == RadioResourceConfigDedicated__mac_MainConfig_PR_explicitValue) {
+      if (UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index]) {
+        memcpy((char*)UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index],(char*)&radioResourceConfigDedicated->mac_MainConfig->choice.explicitValue,
+               sizeof(MAC_MainConfig_t));
+      } else {
+        UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index] = &radioResourceConfigDedicated->mac_MainConfig->choice.explicitValue;
+      }
+    }
+  }
+
+  // Apply spsConfig if present
+  if (radioResourceConfigDedicated->sps_Config) {
+    if (UE_rrc_inst[ctxt_pP->module_id].sps_Config[eNB_index]) {
+      memcpy(UE_rrc_inst[ctxt_pP->module_id].sps_Config[eNB_index],radioResourceConfigDedicated->sps_Config,
+             sizeof(struct SPS_Config));
+    } else {
+      UE_rrc_inst[ctxt_pP->module_id].sps_Config[eNB_index] = radioResourceConfigDedicated->sps_Config;
+    }
+  }
+
+#ifdef CBA
+
+  if (radioResourceConfigDedicated->cba_RNTI_vlola) {
+    cba_RNTI = (uint16_t) (((radioResourceConfigDedicated->cba_RNTI_vlola->buf[1]&0xff) << 8) |
+                           (radioResourceConfigDedicated->cba_RNTI_vlola->buf[0]&0xff));
+
+    for (i=0 ; i< NUM_MAX_CBA_GROUP; i++) {
+      if (UE_rrc_inst[ctxt_pP->module_id].cba_rnti[i] == cba_RNTI ) {
+        cba_found=1;
+        break;
+      } else if (UE_rrc_inst[ctxt_pP->module_id].cba_rnti[i] == 0 ) {
+        break;
+      }
+    }
+
+    if (cba_found==0) {
+      UE_rrc_inst[ctxt_pP->module_id].num_active_cba_groups++;
+      UE_rrc_inst[ctxt_pP->module_id].cba_rnti[i]=cba_RNTI;
+      LOG_D(RRC, "[UE %d] Frame %d: radioResourceConfigDedicated reveived CBA_RNTI = %x for group %d from eNB %d \n",
+            ctxt_pP->module_id,frameP, UE_rrc_inst[ctxt_pP->module_id].cba_rnti[i], i, eNB_index);
+    }
+  }
+
+#endif
+
+  // Establish SRBs if present
+  // loop through SRBToAddModList
+  if (radioResourceConfigDedicated->srb_ToAddModList) {
+    uint8_t *kRRCenc = NULL;
+    uint8_t *kRRCint = NULL;
+
+#if defined(ENABLE_SECURITY)
+    derive_key_rrc_enc(UE_rrc_inst[ctxt_pP->module_id].ciphering_algorithm,
+                       UE_rrc_inst[ctxt_pP->module_id].kenb, &kRRCenc);
+    derive_key_rrc_int(UE_rrc_inst[ctxt_pP->module_id].integrity_algorithm,
+                       UE_rrc_inst[ctxt_pP->module_id].kenb, &kRRCint);
+#endif
+    // Refresh SRBs
+    rrc_pdcp_config_asn1_req(ctxt_pP,
+                             radioResourceConfigDedicated->srb_ToAddModList,
+                             (DRB_ToAddModList_t*)NULL,
+                             (DRB_ToReleaseList_t*)NULL,
+                             UE_rrc_inst[ctxt_pP->module_id].ciphering_algorithm |
+                             (UE_rrc_inst[ctxt_pP->module_id].integrity_algorithm << 4),
+                             kRRCenc,
+                             kRRCint,
+                             NULL
+#if defined(Rel10) || defined(Rel14)
+                             ,(PMCH_InfoList_r9_t *)NULL
+#endif
+                             ,NULL);
+
+    // Refresh SRBs
+    rrc_rlc_config_asn1_req(ctxt_pP,
+                            radioResourceConfigDedicated->srb_ToAddModList,
+                            (DRB_ToAddModList_t*)NULL,
+                            (DRB_ToReleaseList_t*)NULL
+#if defined(Rel10) || defined(Rel14)
+                            ,(PMCH_InfoList_r9_t *)NULL
+#endif
+                           );
+
+#if ENABLE_RAL
+    // first msg that includes srb config
+    UE_rrc_inst[ctxt_pP->module_id].num_srb=radioResourceConfigDedicated->srb_ToAddModList->list.count;
+#endif
+
+    for (cnt=0; cnt<radioResourceConfigDedicated->srb_ToAddModList->list.count; cnt++) {
+      //  connection_reestablishment_ind.num_srb+=1;
+      SRB_id = radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt]->srb_Identity;
+      LOG_D(RRC,"[UE %d]: Frame %d SRB config cnt %d (SRB%ld)\n",ctxt_pP->module_id,ctxt_pP->frame,cnt,SRB_id);
+
+      if (SRB_id == 1) {
+        if (UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index]) {
+          memcpy(UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index],radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt],
+                 sizeof(struct SRB_ToAddMod));
+        } else {
+          UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index] = radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt];
+          rrc_ue_establish_srb1(ctxt_pP->module_id,ctxt_pP->frame,eNB_index,radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt]);
+
+          if (UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index]->logicalChannelConfig) {
+            if (UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index]->logicalChannelConfig->present == SRB_ToAddMod__logicalChannelConfig_PR_explicitValue) {
+              SRB1_logicalChannelConfig = &UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index]->logicalChannelConfig->choice.explicitValue;
+
+            } else {
+              SRB1_logicalChannelConfig = &SRB1_logicalChannelConfig_defaultValue;
+            }
+          } else {
+            SRB1_logicalChannelConfig = &SRB1_logicalChannelConfig_defaultValue;
+          }
+
+          LOG_I(RRC, "[FRAME %05d][RRC_UE][MOD %02d][][--- MAC_CONFIG_REQ  (SRB1 eNB %d) --->][MAC_UE][MOD %02d][]\n",
+                ctxt_pP->frame, ctxt_pP->module_id, eNB_index, ctxt_pP->module_id);
+          rrc_mac_config_req(ctxt_pP->module_id,0,ENB_FLAG_NO,0,eNB_index,
+                             (RadioResourceConfigCommonSIB_t *)NULL,
+                             UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],
+#if defined(Rel10) || defined(Rel14)
+                             (SCellToAddMod_r10_t *)NULL,
+                             //struct PhysicalConfigDedicatedSCell_r10 *physicalConfigDedicatedSCell_r10,
+#endif
+                             (MeasObjectToAddMod_t **)NULL,
+                             UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index],
+                             1,
+                             SRB1_logicalChannelConfig,
+                             (MeasGapConfig_t *)NULL,
+                             NULL,
+                             NULL,
+                             NULL,
+                             NULL,
+                             NULL,
+                             NULL,
+                             NULL,
+                             NULL
+#if defined(Rel10) || defined(Rel14)
+                             ,
+                             0,
+                             (MBSFN_AreaInfoList_r9_t *)NULL,
+                             (PMCH_InfoList_r9_t *)NULL
+#endif
+#ifdef CBA
+                             ,
+                             0,
+                             0
+#endif
+                            );
+        }
+      } else {
+        if (UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index]) {
+          memcpy(UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index],radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt],
+                 sizeof(struct SRB_ToAddMod));
+        } else {
+          UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index] = radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt];
+          rrc_ue_establish_srb2(ctxt_pP->module_id,ctxt_pP->frame,eNB_index,radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt]);
+
+          if (UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index]->logicalChannelConfig) {
+            if (UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index]->logicalChannelConfig->present == SRB_ToAddMod__logicalChannelConfig_PR_explicitValue) {
+              LOG_I(RRC,"Applying Explicit SRB2 logicalChannelConfig\n");
+              SRB2_logicalChannelConfig = &UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index]->logicalChannelConfig->choice.explicitValue;
+            } else {
+              LOG_I(RRC,"Applying default SRB2 logicalChannelConfig\n");
+              SRB2_logicalChannelConfig = &SRB2_logicalChannelConfig_defaultValue;
+            }
+          } else {
+            SRB2_logicalChannelConfig = &SRB2_logicalChannelConfig_defaultValue;
+          }
+
+          LOG_I(RRC, "[FRAME %05d][RRC_UE][MOD %02d][][--- MAC_CONFIG_REQ  (SRB2 eNB %d) --->][MAC_UE][MOD %02d][]\n",
+                ctxt_pP->frame,
+                ctxt_pP->module_id,
+                eNB_index,
+                ctxt_pP->module_id);
+          rrc_mac_config_req(ctxt_pP->module_id,0,ENB_FLAG_NO,0,eNB_index,
+                             (RadioResourceConfigCommonSIB_t *)NULL,
+                             UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],
+#if defined(Rel10) || defined(Rel14)
+                             (SCellToAddMod_r10_t *)NULL,
+                             //struct PhysicalConfigDedicatedSCell_r10 *physicalConfigDedicatedSCell_r10,
+#endif
+                             (MeasObjectToAddMod_t **)NULL,
+                             UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index],
+                             2,
+                             SRB2_logicalChannelConfig,
+                             UE_rrc_inst[ctxt_pP->module_id].measGapConfig[eNB_index],
+                             (TDD_Config_t *)NULL,
+                             (MobilityControlInfo_t *)NULL,
+                             NULL,
+                             NULL,
+                             NULL,
+                             NULL,
+                             NULL,
+                             NULL
+#if defined(Rel10) || defined(Rel14)
+                             ,
+                             0,
+                             (MBSFN_AreaInfoList_r9_t *)NULL,
+                             (PMCH_InfoList_r9_t *)NULL
+#endif
+#ifdef CBA
+                             ,
+                             0,
+                             0
+#endif
+                            );
+        }
+      }
+    }
+  }
+
+  // Establish DRBs if present
+  if (radioResourceConfigDedicated->drb_ToAddModList) {
+
+    if ( (UE_rrc_inst[ctxt_pP->module_id].defaultDRB == NULL) &&
+         (radioResourceConfigDedicated->drb_ToAddModList->list.count >= 1) ) {
+        // configure the first DRB ID as the default DRB ID
+        UE_rrc_inst[ctxt_pP->module_id].defaultDRB = malloc(sizeof(rb_id_t));
+        *UE_rrc_inst[ctxt_pP->module_id].defaultDRB = radioResourceConfigDedicated->drb_ToAddModList->list.array[0]->drb_Identity;
+        LOG_I(RRC,"[UE %d] default DRB = %d\n",ctxt_pP->module_id, *UE_rrc_inst[ctxt_pP->module_id].defaultDRB);
+      }
+
+    uint8_t *kUPenc = NULL;
+
+#if defined(ENABLE_SECURITY)
+    derive_key_up_enc(UE_rrc_inst[ctxt_pP->module_id].integrity_algorithm,
+                      UE_rrc_inst[ctxt_pP->module_id].kenb, &kUPenc);
+#endif
+
+    MSC_LOG_TX_MESSAGE(
+      MSC_RRC_UE,
+      MSC_PDCP_UE,
+      NULL,
+      0,
+      MSC_AS_TIME_FMT" CONFIG_REQ UE %x DRB (security %X)",
+      MSC_AS_TIME_ARGS(ctxt_pP),
+      ctxt_pP->rnti,
+      UE_rrc_inst[ctxt_pP->module_id].ciphering_algorithm |
+      (UE_rrc_inst[ctxt_pP->module_id].integrity_algorithm << 4));
+
+    // Refresh DRBs
+    rrc_pdcp_config_asn1_req(ctxt_pP,
+                             (SRB_ToAddModList_t*)NULL,
+                             radioResourceConfigDedicated->drb_ToAddModList,
+                             (DRB_ToReleaseList_t*)NULL,
+                             UE_rrc_inst[ctxt_pP->module_id].ciphering_algorithm |
+                             (UE_rrc_inst[ctxt_pP->module_id].integrity_algorithm << 4),
+                             NULL,
+                             NULL,
+                             kUPenc
+#if defined(Rel10) || defined(Rel14)
+                             ,(PMCH_InfoList_r9_t *)NULL
+#endif
+                             , UE_rrc_inst[ctxt_pP->module_id].defaultDRB);
+
+    // Refresh DRBs
+    rrc_rlc_config_asn1_req(ctxt_pP,
+                            (SRB_ToAddModList_t*)NULL,
+                            radioResourceConfigDedicated->drb_ToAddModList,
+                            (DRB_ToReleaseList_t*)NULL
+#if defined(Rel10) || defined(Rel14)
+                            ,(PMCH_InfoList_r9_t *)NULL
+#endif
+                           );
+
+    for (i=0; i<radioResourceConfigDedicated->drb_ToAddModList->list.count; i++) {
+      DRB_id   = radioResourceConfigDedicated->drb_ToAddModList->list.array[i]->drb_Identity-1;
+
+      if (UE_rrc_inst[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id]) {
+        memcpy(UE_rrc_inst[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id],
+               radioResourceConfigDedicated->drb_ToAddModList->list.array[i],
+               sizeof(struct DRB_ToAddMod));
+      } else {
+        UE_rrc_inst[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id] = radioResourceConfigDedicated->drb_ToAddModList->list.array[i];
+        rrc_ue_establish_drb(ctxt_pP->module_id,ctxt_pP->frame,eNB_index,radioResourceConfigDedicated->drb_ToAddModList->list.array[i]);
+        // MAC/PHY Configuration
+        LOG_I(RRC, "[FRAME %05d][RRC_UE][MOD %02d][][--- MAC_CONFIG_REQ (DRB %ld eNB %d) --->][MAC_UE][MOD %02d][]\n",
+              ctxt_pP->frame, ctxt_pP->module_id,
+              radioResourceConfigDedicated->drb_ToAddModList->list.array[i]->drb_Identity,
+              eNB_index,
+              ctxt_pP->module_id);
+        rrc_mac_config_req(ctxt_pP->module_id,0,ENB_FLAG_NO,0,eNB_index,
+                           (RadioResourceConfigCommonSIB_t *)NULL,
+                           UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],
+#if defined(Rel10) || defined(Rel14)
+                           (SCellToAddMod_r10_t *)NULL,
+                           //struct PhysicalConfigDedicatedSCell_r10 *physicalConfigDedicatedSCell_r10,
+#endif
+                           (MeasObjectToAddMod_t **)NULL,
+                           UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index],
+                           *UE_rrc_inst[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id]->logicalChannelIdentity,
+                           UE_rrc_inst[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id]->logicalChannelConfig,
+                           UE_rrc_inst[ctxt_pP->module_id].measGapConfig[eNB_index],
+                           (TDD_Config_t*)NULL,
+                           (MobilityControlInfo_t *)NULL,
+                           NULL,
+                           NULL,
+                           NULL,
+                           NULL,
+                           NULL,
+                           NULL
+#if defined(Rel10) || defined(Rel14)
+                           ,
+                           0,
+                           (MBSFN_AreaInfoList_r9_t *)NULL,
+                           (PMCH_InfoList_r9_t *)NULL
+#endif
+#ifdef CBA
+                           ,
+                           UE_rrc_inst[ue_mod_idP].num_active_cba_groups, //
+                           UE_rrc_inst[ue_mod_idP].cba_rnti[0]
+#endif
+                          );
+
+      }
+    }
+  }
+
+  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].State = RRC_CONNECTED;
+  LOG_I(RRC,"[UE %d] State = RRC_CONNECTED (eNB %d)\n",ctxt_pP->module_id,eNB_index);
+#if !defined(ENABLE_USE_MME) && defined(OAI_EMU)
+#    ifdef OAI_EMU
+  rrc_eNB_emulation_notify_ue_module_id(
+    ctxt_pP->module_id,
+    ctxt_pP->rnti,
+    UE_rrc_inst[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo.cellIdentity.buf[0],
+    UE_rrc_inst[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo.cellIdentity.buf[1],
+    UE_rrc_inst[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo.cellIdentity.buf[2],
+    UE_rrc_inst[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo.cellIdentity.buf[3]);
+#    endif /* OAI_EMU */
+#endif
+}
 //-----------------------------------------------------------------------------
 void
 rrc_ue_process_securityModeCommand(
@@ -4280,38 +4891,42 @@ static int decode_SI( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_in
 static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index )
 {
 
-  SystemInformation_t** si = &UE_rrc_inst_NB_IoT[ctxt_pP->module_id].si[eNB_index];
+  SystemInformation_NB_t** si = &UE_rrc_inst_NB_IoT[ctxt_pP->module_id].si[eNB_index];
   int new_sib = 0;
-  SystemInformationBlockType1_t* sib1 = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index];
+  SystemInformationBlockType1_NB_t* sib1 = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index];
 
   VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_RRC_UE_DECODE_SI, VCD_FUNCTION_IN );
 
   // Dump contents
-  if ((*si)->criticalExtensions.present == SystemInformation__criticalExtensions_PR_systemInformation_r8) {
-    LOG_D( RRC, "[UE] (*si)->criticalExtensions.choice.systemInformation_r8.sib_TypeAndInfo.list.count %d\n",
-           (*si)->criticalExtensions.choice.systemInformation_r8.sib_TypeAndInfo.list.count );
+  if ((*si)->criticalExtensions.present == SystemInformation_NB__criticalExtensions_PR_systemInformation_r13) {
+    LOG_D( RRC, "[UE] (*si)->criticalExtensions.choice.systemInformation_r13.sib_TypeAndInfo.list.count %d\n",
+           (*si)->criticalExtensions.choice.systemInformation_r13.sib_TypeAndInfo_r13.list.count );
   } else {
-    LOG_D( RRC, "[UE] Unknown criticalExtension version (not Rel8)\n" );
+    LOG_D( RRC, "[UE] Unknown criticalExtension version (not Rel13)\n" );
     return -1;
   }
 
-  for (int i=0; i<(*si)->criticalExtensions.choice.systemInformation_r8.sib_TypeAndInfo.list.count; i++) {
+  for (int i=0; i<(*si)->criticalExtensions.choice.systemInformation_r13.sib_TypeAndInfo_r13.list.count; i++) {
     LOG_D( RRC, "SI count %d\n", i );
-    struct SystemInformation_r8_IEs__sib_TypeAndInfo__Member *typeandinfo;
-    typeandinfo = (*si)->criticalExtensions.choice.systemInformation_r8.sib_TypeAndInfo.list.array[i];
+    struct SystemInformation_NB_r13_IEs__sib_TypeAndInfo_r13__Member *typeandinfo;
+    typeandinfo = (*si)->criticalExtensions.choice.systemInformation_r13.sib_TypeAndInfo_r13.list.array[i];
 
+/*struct SystemInformation_NB_r13_IEs__sib_TypeAndInfo_r13__Member *typeandinfo=(*si)->criticalExtensions.choice.systemInformation_r13.sib_TypeAndInfo_r13.list.array[i];
+    
+
+*/
     switch(typeandinfo->present) {
-    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib2:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&2) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=2;
+    case SystemInformation_NB_r13_IEs__sib_TypeAndInfo_r13__Member_PR_sib2_r13:
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&2) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=2;
   new_sib=1;
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index], &typeandinfo->choice.sib2, sizeof(SystemInformationBlockType2_t) );
+  memcpy(&UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index], &typeandinfo->choice.sib2_r13, sizeof(SystemInformationBlockType2_NB_r13_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB2 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
-  dump_sib2( UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index] );
+  //dump_sib2( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index] );
   LOG_I( RRC, "[FRAME %05"PRIu32"][RRC_UE][MOD %02"PRIu8"][][--- MAC_CONFIG_REQ (SIB2 params  eNB %"PRIu8") --->][MAC_UE][MOD %02"PRIu8"][]\n",
          ctxt_pP->frame, ctxt_pP->module_id, eNB_index, ctxt_pP->module_id );
-  rrc_mac_config_req(ctxt_pP->module_id, 0, ENB_FLAG_NO, 0, eNB_index,
-         &UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index]->radioResourceConfigCommon,
+  /*rrc_mac_config_req(ctxt_pP->module_id, 0, ENB_FLAG_NO, 0, eNB_index,
+         &UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index]->radioResourceConfigCommon,
          (struct PhysicalConfigDedicated *)NULL,
 #if defined(Rel10) || defined(Rel14)
          (SCellToAddMod_r10_t *)NULL,
@@ -4325,10 +4940,10 @@ static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t
          (MobilityControlInfo_t *)NULL,
          NULL,
          NULL,
-         UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index]->freqInfo.ul_CarrierFreq,
-         UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index]->freqInfo.ul_Bandwidth,
-         &UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index]->freqInfo.additionalSpectrumEmission,
-         UE_rrc_inst[ctxt_pP->module_id].sib2[eNB_index]->mbsfn_SubframeConfigList
+         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index]->freqInfo.ul_CarrierFreq,
+         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index]->freqInfo.ul_Bandwidth,
+         &UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index]->freqInfo.additionalSpectrumEmission,
+         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index]->mbsfn_SubframeConfigList
 #if defined(Rel10) || defined(Rel14)
          ,0,
          (MBSFN_AreaInfoList_r9_t *)NULL,
@@ -4338,20 +4953,21 @@ static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t
          ,0,
          0
 #endif
-         );
+         );*/
   // After SI is received, prepare RRCConnectionRequest
-#if defined(Rel10) || defined(Rel14)
+/*#if defined(Rel10) || defined(Rel14)
 
-  if (UE_rrc_inst[ctxt_pP->module_id].MBMS_flag < 3) // see -Q option
-#endif
-#if !(defined(ENABLE_ITTI) && defined(ENABLE_USE_MME))
+  if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].MBMS_flag < 3) // see -Q option
+#endif*/
+/*#if !(defined(ENABLE_ITTI) && defined(ENABLE_USE_MME))
     rrc_ue_generate_RRCConnectionRequest( ctxt_pP, eNB_index );
-  
-#endif
-  
-  if (UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].State == RRC_IDLE) {
+   
+#endif*/
+
+ if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].State == RRC_IDLE_NB_IoT) {
     LOG_I( RRC, "[UE %d] Received SIB1/SIB2/SIB3 Switching to RRC_SI_RECEIVED\n", ctxt_pP->module_id );
-    UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].State = RRC_SI_RECEIVED;
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].State = RRC_SI_RECEIVED_NB_IoT;}
+    /* 
 #if ENABLE_RAL
     {
       MessageDef                            *message_ral_p = NULL;
@@ -4378,95 +4994,95 @@ static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t
       itti_send_msg_to_task (TASK_RAL_UE, UE_MODULE_ID_TO_INSTANCE(ctxt_pP->module_id), message_ral_p);
     }
 #endif
-  }
+  }*/
       }
-      break; // case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib2
+      break; 
 
-    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib3:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&4) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=4;
+    case SystemInformation_NB_r13_IEs__sib_TypeAndInfo_r13__Member_PR_sib3_r13:
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&4) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=4;
   new_sib=1;
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib3[eNB_index], &typeandinfo->choice.sib3, sizeof(SystemInformationBlockType3_t) );
+  memcpy(&UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib3[eNB_index], &typeandinfo->choice.sib3_r13, sizeof(SystemInformationBlockType3_NB_r13_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB3 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
-  dump_sib3( UE_rrc_inst[ctxt_pP->module_id].sib3[eNB_index] );
-
+  //dump_sib3( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib3[eNB_index] );
+  rrc_ue_generate_RRCConnectionRequest_NB_IoT(ctxt_pP,eNB_index);
       }
       break;
 
-    case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib4:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&8) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=8;
+   /* case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib4:
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&8) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=8;
   new_sib=1;
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib4[eNB_index], &typeandinfo->choice.sib4, sizeof(SystemInformationBlockType4_t) );
+  memcpy( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib4[eNB_index], &typeandinfo->choice.sib4, sizeof(SystemInformationBlockType4_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB4 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
       }
 
       break;
 
     case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib5:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&16) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=16;
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&16) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=16;
   new_sib=1;
      
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib5[eNB_index], &typeandinfo->choice.sib5, sizeof(SystemInformationBlockType5_t) );
+  memcpy( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib5[eNB_index], &typeandinfo->choice.sib5, sizeof(SystemInformationBlockType5_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB5 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
-  dump_sib5(UE_rrc_inst[ctxt_pP->module_id].sib5[eNB_index]);
+  dump_sib5(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib5[eNB_index]);
       }
       break;
 
     case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib6:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&32) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=32;
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&32) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=32;
   new_sib=1;
      
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib6[eNB_index], &typeandinfo->choice.sib6, sizeof(SystemInformationBlockType6_t) );
+  memcpy( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib6[eNB_index], &typeandinfo->choice.sib6, sizeof(SystemInformationBlockType6_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB6 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
       }
       break;
 
     case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib7:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&64) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=64;
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&64) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=64;
   new_sib=1;
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib7[eNB_index], &typeandinfo->choice.sib7, sizeof(SystemInformationBlockType7_t) );
+  memcpy( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib7[eNB_index], &typeandinfo->choice.sib7, sizeof(SystemInformationBlockType7_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB7 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
       }
       break;
 
     case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib8:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&128) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=128;
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&128) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=128;
   new_sib=1;
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib8[eNB_index], &typeandinfo->choice.sib8, sizeof(SystemInformationBlockType8_t) );
+  memcpy( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib8[eNB_index], &typeandinfo->choice.sib8, sizeof(SystemInformationBlockType8_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB8 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
       }
       break;
 
     case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib9:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&256) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=256;
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&256) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=256;
   new_sib=1;
       
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib9[eNB_index], &typeandinfo->choice.sib9, sizeof(SystemInformationBlockType9_t) );
+  memcpy( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib9[eNB_index], &typeandinfo->choice.sib9, sizeof(SystemInformationBlockType9_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB9 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
       }
       break;
 
     case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib10:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&512) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=512;
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&512) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=512;
   new_sib=1;
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib10[eNB_index], &typeandinfo->choice.sib10, sizeof(SystemInformationBlockType10_t) );
+  memcpy( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib10[eNB_index], &typeandinfo->choice.sib10, sizeof(SystemInformationBlockType10_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB10 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
       }
       break;
 
     case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib11:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&1024) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=1024;
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&1024) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=1024;
   new_sib=1;
 
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib11[eNB_index], &typeandinfo->choice.sib11, sizeof(SystemInformationBlockType11_t) );
+  memcpy( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib11[eNB_index], &typeandinfo->choice.sib11, sizeof(SystemInformationBlockType11_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB11 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
       }
       break;
@@ -4474,22 +5090,22 @@ static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t
 #if defined(Rel10) || defined(Rel14)
 
     case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib12_v920:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&2048) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=2048;
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&2048) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=2048;
   new_sib=1;
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib12[eNB_index], &typeandinfo->choice.sib12_v920, sizeof(SystemInformationBlockType12_r9_t) );
+  memcpy( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib12[eNB_index], &typeandinfo->choice.sib12_v920, sizeof(SystemInformationBlockType12_r9_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB12 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
       }
       break;
   
     case SystemInformation_r8_IEs__sib_TypeAndInfo__Member_PR_sib13_v920:
-      if ((UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus&4096) == 0) {
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus|=4096;
+      if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&4096) == 0) {
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=4096;
   new_sib=1;
   
-  memcpy( UE_rrc_inst[ctxt_pP->module_id].sib13[eNB_index], &typeandinfo->choice.sib13_v920, sizeof(SystemInformationBlockType13_r9_t) );
+  memcpy( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib13[eNB_index], &typeandinfo->choice.sib13_v920, sizeof(SystemInformationBlockType13_r9_t) );
   LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB13 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
-  dump_sib13( UE_rrc_inst[ctxt_pP->module_id].sib13[eNB_index] );
+  dump_sib13( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib13[eNB_index] );
   // adding here function to store necessary parameters for using in decode_MCCH_Message + maybe transfer to PHY layer
   LOG_I( RRC, "[FRAME %05"PRIu32"][RRC_UE][MOD %02"PRIu8"][][--- MAC_CONFIG_REQ (SIB13 params eNB %"PRIu8") --->][MAC_UE][MOD %02"PRIu8"][]\n",
          ctxt_pP->frame, ctxt_pP->module_id, eNB_index, ctxt_pP->module_id);
@@ -4511,7 +5127,7 @@ static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t
          NULL,
          (MBSFN_SubframeConfigList_t *)NULL,
          0,
-         &UE_rrc_inst[ctxt_pP->module_id].sib13[eNB_index]->mbsfn_AreaInfoList_r9,
+         &UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib13[eNB_index]->mbsfn_AreaInfoList_r9,
          (PMCH_InfoList_r9_t *)NULL
 #ifdef CBA
          ,0,
@@ -4520,29 +5136,165 @@ static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t
          );
   break;
       }
-#endif
+#endif*/
     default:
       break;
     }
 
   }
   if (new_sib == 1) {
-    UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIcnt++;
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIcnt++;
 
-    if (UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIcnt == sib1->schedulingInfoList.list.count)
-      rrc_set_sub_state( ctxt_pP->module_id, RRC_SUB_STATE_IDLE_SIB_COMPLETE );
+    if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIcnt == sib1->schedulingInfoList_r13.list.count)
+      rrc_set_sub_state( ctxt_pP->module_id, RRC_SUB_STATE_IDLE_SIB_COMPLETE_NB_IoT );
 
     LOG_I(RRC,"SIStatus %x, SIcnt %d/%d\n", 
-    UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIStatus,
-    UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].SIcnt,
-    sib1->schedulingInfoList.list.count);
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus,
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIcnt,
+    sib1->schedulingInfoList_r13.list.count);
   }
 
   VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME(VCD_SIGNAL_DUMPER_FUNCTIONS_RRC_UE_DECODE_SI  , VCD_FUNCTION_OUT);
   return 0;
 }
 
+/** \brief Decodes DL-CCCH message and invokes appropriate routine to handle the message
+    \param ctxt_pP Running context
+    \param Srb_info Pointer to SRB_INFO structure (SRB0)
+    \param eNB_index Index of corresponding eNB/CH*/
+int rrc_ue_decode_ccch_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const SRB_INFO_NB_IoT* const Srb_info, const uint8_t eNB_index )
+{
+    printf("[UE]Start decode DL CCCH.....\n");
+    DL_CCCH_Message_NB_t* dl_ccch_msg=NULL;
+  asn_dec_rval_t dec_rval;
+  int rval=0;
 
+  VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME(VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_CCCH, VCD_FUNCTION_IN);
+  //  LOG_D(RRC,"[UE %d] Decoding DL-CCCH message (%d bytes), State %d\n",ue_mod_idP,Srb_info->Rx_buffer.payload_size,
+  //  UE_rrc_inst[ue_mod_idP].Info[eNB_index].State);
+
+  dec_rval = uper_decode(NULL,
+                         &asn_DEF_DL_CCCH_Message_NB,
+                         (void**)&dl_ccch_msg,
+                         (uint8_t*)Srb_info->Rx_buffer.Payload,
+                         100,0,0);
+
+#ifdef XER_PRINT
+  xer_fprint(stdout,&asn_DEF_DL_CCCH_Message_NB,(void*)dl_ccch_msg);
+#endif
+
+#if defined(ENABLE_ITTI)
+# if defined(DISABLE_ITTI_XER_PRINT)
+  {
+    MessageDef *msg_p;
+
+    msg_p = itti_alloc_new_message (TASK_RRC_UE, RRC_DL_CCCH_MESSAGE);
+    memcpy (&msg_p->ittiMsg, (void *) dl_ccch_msg, sizeof(RrcDlCcchMessage));
+
+    itti_send_msg_to_task (TASK_UNKNOWN, ctxt_pP->instance, msg_p);
+  }
+# else
+  {
+    char        message_string[10000];
+    size_t      message_string_size;
+
+    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_DL_CCCH_Message_NB, (void *)dl_ccch_msg)) > 0) {
+      MessageDef *msg_p;
+
+      msg_p = itti_alloc_new_message_sized (TASK_RRC_UE, RRC_DL_CCCH, message_string_size + sizeof (IttiMsgText));
+      msg_p->ittiMsg.rrc_dl_ccch.size = message_string_size;
+      memcpy(&msg_p->ittiMsg.rrc_dl_ccch.text, message_string, message_string_size);
+
+      itti_send_msg_to_task(TASK_UNKNOWN, ctxt_pP->instance, msg_p);
+    }
+  }
+# endif
+#endif
+
+  if ((dec_rval.code != RC_OK) && (dec_rval.consumed==0)) {
+    LOG_E(RRC,"[UE %d] Frame %d : Failed to decode DL-CCCH-Message-NB (%zu bytes)\n",ctxt_pP->module_id,ctxt_pP->frame,dec_rval.consumed);
+    VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME(VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_CCCH, VCD_FUNCTION_OUT);
+    return -1;
+  }
+
+  if (dl_ccch_msg->message.present == DL_CCCH_MessageType_NB_PR_c1) {
+
+    if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].State == RRC_SI_RECEIVED_NB_IoT) {
+
+      switch (dl_ccch_msg->message.choice.c1.present) {
+
+      case DL_CCCH_MessageType_NB__c1_PR_NOTHING:
+        LOG_I(RRC, "[UE%d] Frame %d : Received PR_NOTHING on DL-CCCH-Message-NB\n",
+              ctxt_pP->module_id,
+              ctxt_pP->frame);
+        rval = 0;
+        break;
+
+      case DL_CCCH_MessageType_NB__c1_PR_rrcConnectionReestablishment_r13:
+        LOG_I(RRC,
+              "[UE%d] Frame %d : Logical Channel DL-CCCH (SRB0), Received RRCConnectionReestablishment\n",
+              ctxt_pP->module_id,
+              ctxt_pP->frame);
+        rval = 0;
+        break;
+
+      case DL_CCCH_MessageType_NB__c1_PR_rrcConnectionReestablishmentReject_r13:
+        LOG_I(RRC,
+              "[UE%d] Frame %d : Logical Channel DL-CCCH (SRB0), Received RRCConnectionReestablishmentReject\n",
+              ctxt_pP->module_id,
+              ctxt_pP->frame);
+        rval = 0;
+        break;
+
+      case DL_CCCH_MessageType_NB__c1_PR_rrcConnectionReject_r13:
+        LOG_I(RRC,
+              "[UE%d] Frame %d : Logical Channel DL-CCCH (SRB0), Received RRCConnectionReject \n",
+              ctxt_pP->module_id,
+              ctxt_pP->frame);
+        rval = 0;
+        break;
+
+      case DL_CCCH_MessageType_NB__c1_PR_rrcConnectionSetup_r13:
+        LOG_I(RRC,
+              "[UE%d][RAPROC] Frame %d : Logical Channel DL-CCCH (SRB0), Received RRCConnectionSetup RNTI %x\n",
+              ctxt_pP->module_id,
+              ctxt_pP->frame,
+              ctxt_pP->rnti);
+        // Get configuration
+        printf("[UE]RRCConnectionSetup Message Received\n");
+        // Release T300 timer
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].T300_active = 0;
+        //FIXME:it seems like i never start T300
+ /*       rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
+          ctxt_pP,
+          eNB_index,
+          &dl_ccch_msg->message.choice.c1.choice.rrcConnectionSetup.criticalExtensions.choice.c1.choice.rrcConnectionSetup_r8.radioResourceConfigDedicated);*/
+
+        rrc_set_state (ctxt_pP->module_id, RRC_STATE_CONNECTED_NB_IoT);
+        rrc_set_sub_state (ctxt_pP->module_id, RRC_SUB_STATE_CONNECTED_NB_IoT);
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].rnti = ctxt_pP->rnti;
+/*        rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT(
+          ctxt_pP,
+          eNB_index,
+          dl_ccch_msg->message.choice.c1.choice.rrcConnectionSetup.rrc_TransactionIdentifier);*/
+
+        rval = 0;
+        break;
+
+      default:
+        LOG_E(RRC, "[UE%d] Frame %d : Unknown message\n",
+              ctxt_pP->module_id,
+              ctxt_pP->frame);
+        rval = -1;
+        break;
+      }
+    }
+  }
+
+  VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME(VCD_SIGNAL_DUMPER_FUNCTIONS_UE_DECODE_CCCH, VCD_FUNCTION_OUT);
+  return rval;
+
+}
 // layer 3 filtering of RSRP (EUTRA) measurements: 36.331, Sec. 5.5.3.2
 //-----------------------------------------------------------------------------
 void ue_meas_filtering( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index )
@@ -4944,6 +5696,8 @@ int decode_MCCH_Message( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB
   return 0;
 }
 
+
+
 //-----------------------------------------------------------------------------
 static void decode_MBSFNAreaConfiguration( module_id_t ue_mod_idP, uint8_t eNB_index, frame_t frameP, uint8_t mbsfn_sync_area )
 {
@@ -5030,7 +5784,7 @@ void *rrc_ue_task( void *args_p )
   instance_t    instance;
   unsigned int  ue_mod_id;
   int           result;
-  SRB_INFO     *srb_info_p;
+  SRB_INFO_NB_IoT     *srb_info_p;
  char *str;
   protocol_ctxt_t  ctxt;
 
@@ -5076,7 +5830,9 @@ void *rrc_ue_task( void *args_p )
                                  RRC_BCCH_BCH_DATA_IND (msg_p).rsrq,
                                  RRC_BCCH_BCH_DATA_IND (msg_p).rsrp);
       printf("[UE] [MIB]Successfully decode MIB\n");
-
+      //Attention: this is temperary and should be down in cell selection
+      openair_rrc_ue_init_NB_IoT(ue_mod_id,RRC_BCCH_BCH_DATA_IND (msg_p).enb_index);
+      // it should be moved to cell selection module in overall simulator
 
       break;
       //to get SIB1 or SI(SIB23)
@@ -5137,6 +5893,7 @@ void *rrc_ue_task( void *args_p )
       UE_rrc_inst[ue_mod_id].Srb0[RRC_MAC_CCCH_DATA_CNF (msg_p).enb_index].Tx_buffer.payload_size = 0;
       break;
 
+// RRC connection setup message received
     case RRC_MAC_CCCH_DATA_IND:
       LOG_D(RRC, "[UE %d] RNTI %x Received %s: frameP %d, eNB %d\n",
             ue_mod_id,
@@ -5145,14 +5902,16 @@ void *rrc_ue_task( void *args_p )
             RRC_MAC_CCCH_DATA_IND (msg_p).frame,
             RRC_MAC_CCCH_DATA_IND (msg_p).enb_index);
 
-      srb_info_p = &UE_rrc_inst[ue_mod_id].Srb0[RRC_MAC_CCCH_DATA_IND (msg_p).enb_index];
+      srb_info_p = &UE_rrc_inst_NB_IoT[ue_mod_id].Srb0[RRC_MAC_CCCH_DATA_IND (msg_p).enb_index];
 
       memcpy (srb_info_p->Rx_buffer.Payload, RRC_MAC_CCCH_DATA_IND (msg_p).sdu,
               RRC_MAC_CCCH_DATA_IND (msg_p).sdu_size);
       srb_info_p->Rx_buffer.payload_size = RRC_MAC_CCCH_DATA_IND (msg_p).sdu_size;
       //      PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt, instance, ENB_FLAG_NO, RRC_MAC_CCCH_DATA_IND (msg_p).rnti, RRC_MAC_CCCH_DATA_IND (msg_p).frame, 0);
       PROTOCOL_CTXT_SET_BY_MODULE_ID(&ctxt, ue_mod_id, ENB_FLAG_NO, RRC_MAC_CCCH_DATA_IND (msg_p).rnti, RRC_MAC_CCCH_DATA_IND (msg_p).frame, 0, RRC_MAC_CCCH_DATA_IND (msg_p).enb_index);
-      rrc_ue_decode_ccch (&ctxt,
+
+      printf("[UE]RRC DL CCCH Message received!\n");
+      rrc_ue_decode_ccch_NB_IoT (&ctxt,
                           srb_info_p,
                           RRC_MAC_CCCH_DATA_IND (msg_p).enb_index);
       break;

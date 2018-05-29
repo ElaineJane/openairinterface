@@ -46,7 +46,7 @@
 
 #define RRC_BCCH_BCH_DATA_IND(mSGpTR)           (mSGpTR)->ittiMsg.rrc_bcch_bch_data_ind
 #define RRC_BCCH_DLSCH_DATA_IND(mSGpTR)           (mSGpTR)->ittiMsg.rrc_bcch_dlsch_data_ind
-
+//#define RRC_UL_CCCH_DATA_IND(mSGpTR)           (mSGpTR)->ittiMsg.rrc_ul_ccch_data_ind
 // Some constants from "LAYER2/MAC/defs.h"
 #define BCCH_SDU_SIZE                           (512)
 #define CCCH_SDU_SIZE                           (512)

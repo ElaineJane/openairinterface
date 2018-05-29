@@ -808,7 +808,7 @@ uint8_t do_RRCConnectionSetup_NB_IoT(
   int                              CC_id,
   uint8_t*                   const buffer, //Srb0.Tx_buffer.Payload
   const uint8_t                    Transaction_id,
-  const NB_IoT_DL_FRAME_PARMS* const frame_parms, // maybe not used
+  //const NB_IoT_DL_FRAME_PARMS* const frame_parms, // maybe not used
   SRB_ToAddModList_NB_r13_t**             SRB_configList_NB_IoT, //for both SRB1bis and SRB1
   struct PhysicalConfigDedicated_NB_r13** physicalConfigDedicated_NB_IoT
 )
@@ -1506,6 +1506,180 @@ uint8_t do_RRCConnectionRelease_NB_IoT(
   return((enc_rval.encoded+7)/8);
 }
 
+uint8_t do_RRCConnectionRequest_NB_IoT(uint8_t Mod_id, uint8_t *buffer,uint8_t *rv)
+{
+  printf("This is in Function: do_RRCConnectionRequest_NB_IoT()\n");
+
+  asn_enc_rval_t enc_rval;
+  uint8_t buf[5],buf2[3];
+  uint8_t ecause=0;
+ buf2[0]=0x00;
+ buf2[1]=0x00;
+ buf2[2]=0x00;
+
+  UL_CCCH_Message_NB_t ul_ccch_msg;
+
+  RRCConnectionRequest_NB_t *rrcConnectionRequest;
+
+  memset((void *)&ul_ccch_msg,0,sizeof(UL_CCCH_Message_NB_t));
+
+  ul_ccch_msg.message.present           = UL_CCCH_MessageType_NB_PR_c1;
+  ul_ccch_msg.message.choice.c1.present = UL_CCCH_MessageType_NB__c1_PR_rrcConnectionRequest_r13;
+  rrcConnectionRequest          = &ul_ccch_msg.message.choice.c1.choice.rrcConnectionRequest_r13;
+
+  rrcConnectionRequest->criticalExtensions.present = RRCConnectionRequest_NB__criticalExtensions_PR_rrcConnectionRequest_r13;
+  
+
+  if (1) {
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.present = InitialUE_Identity_PR_randomValue;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.randomValue.size = 5;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.randomValue.bits_unused = 0;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.randomValue.buf = buf;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.randomValue.buf[0] = rv[0];
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.randomValue.buf[1] = rv[1];
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.randomValue.buf[2] = rv[2];
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.randomValue.buf[3] = rv[3];
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.randomValue.buf[4] = rv[4];
+  } else {
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.present = InitialUE_Identity_PR_s_TMSI;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.mmec.size = 1;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.mmec.bits_unused = 0;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.mmec.buf = buf;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.mmec.buf[0] = 0x12;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.m_TMSI.size = 4;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.m_TMSI.bits_unused = 0;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.m_TMSI.buf = &buf[1];
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.m_TMSI.buf[0] = 0x34;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.m_TMSI.buf[1] = 0x56;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.m_TMSI.buf[2] = 0x78;
+    rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.ue_Identity_r13.choice.s_TMSI.m_TMSI.buf[3] = 0x9a;
+  }
+
+  rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.establishmentCause_r13 = EstablishmentCause_NB_r13_mo_Signalling; //EstablishmentCause_mo_Data;
+  
+  rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.spare.size=3;
+  rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.spare.bits_unused = 2;
+  rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.spare.buf = buf2;
+  rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.spare.buf[0] = buf2[0];
+  rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.spare.buf[1] = buf2[1];
+  rrcConnectionRequest->criticalExtensions.choice.rrcConnectionRequest_r13.spare.buf[2] = buf2[2];
+  
+
+ 
+  enc_rval = uper_encode_to_buffer(&asn_DEF_UL_CCCH_Message_NB,
+                                   (void*)&ul_ccch_msg,
+                                   buffer,
+                                   200);
+  AssertFatal (enc_rval.encoded > 0, "ASN1 message encoding failed (%s, %lu)!\n",
+               enc_rval.failed_type->name, enc_rval.encoded);
+
+/*#if defined(ENABLE_ITTI)
+# if !defined(DISABLE_XER_SPRINT)
+  {
+    char        message_string[20000];
+    size_t      message_string_size;
+
+    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_UL_CCCH_Message, (void *) &ul_ccch_msg)) > 0) {
+      MessageDef *msg_p;
+
+      msg_p = itti_alloc_new_message_sized (TASK_RRC_UE, RRC_UL_CCCH, message_string_size + sizeof (IttiMsgText));
+      msg_p->ittiMsg.rrc_ul_ccch.size = message_string_size;
+      memcpy(&msg_p->ittiMsg.rrc_ul_ccch.text, message_string, message_string_size);
+
+      itti_send_msg_to_task(TASK_UNKNOWN, NB_eNB_INST + Mod_id, msg_p);
+    }
+  }
+# endif
+#endif*/
+
+#ifdef USER_MODE
+  LOG_D(RRC,"[UE] RRCConnectionRequest Encoded %d bits (%d bytes), ecause %d\n",enc_rval.encoded,(enc_rval.encoded+7)/8,ecause);
+#endif
+
+  return((enc_rval.encoded+7)/8);
+}
+
+
+uint8_t do_RRCConnectionSetupComplete_NB_IoT(uint8_t Mod_id, uint8_t* buffer, const uint8_t Transaction_id, const int dedicatedInfoNASLength,
+                                             const char* dedicatedInfoNAS)
+ {
+    asn_enc_rval_t enc_rval;
+
+  UL_DCCH_Message_t ul_dcch_msg;
+
+  RRCConnectionSetupComplete_t *rrcConnectionSetupComplete;
+
+  memset((void *)&ul_dcch_msg,0,sizeof(UL_DCCH_Message_t));
+
+  ul_dcch_msg.message.present           = UL_DCCH_MessageType_PR_c1;
+  ul_dcch_msg.message.choice.c1.present = UL_DCCH_MessageType__c1_PR_rrcConnectionSetupComplete;
+  rrcConnectionSetupComplete            = &ul_dcch_msg.message.choice.c1.choice.rrcConnectionSetupComplete;
+
+  rrcConnectionSetupComplete->rrc_TransactionIdentifier = Transaction_id;
+  rrcConnectionSetupComplete->criticalExtensions.present = RRCConnectionSetupComplete__criticalExtensions_PR_c1;
+  rrcConnectionSetupComplete->criticalExtensions.choice.c1.present = RRCConnectionSetupComplete__criticalExtensions__c1_PR_rrcConnectionSetupComplete_r8;
+
+  rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.nonCriticalExtension=CALLOC(1,
+      sizeof(*rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.nonCriticalExtension));
+
+  if(usim_test == 0)
+      rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.selectedPLMN_Identity= 2;
+  else
+      rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.selectedPLMN_Identity= 1;
+
+  rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME =
+    NULL;//calloc(1,sizeof(*rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME));
+  /*
+    rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->plmn_Identity=NULL;
+    rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmegi.buf = calloc(2,1);
+    rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmegi.buf[0] = 0x0;
+    rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmegi.buf[1] = 0x1;
+    rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmegi.size=2;
+    rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmegi.bits_unused=0;
+  */
+  memset(&rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.dedicatedInfoNAS,0,sizeof(OCTET_STRING_t));
+  OCTET_STRING_fromBuf(&rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.dedicatedInfoNAS,
+                       dedicatedInfoNAS, dedicatedInfoNASLength);
+
+  /*
+    rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmec.buf = calloc(1,1);
+    rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmec.buf[0] = 0x98;
+    rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmec.size=1;
+    rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmec.bits_unused=0;
+  */
+
+  enc_rval = uper_encode_to_buffer(&asn_DEF_UL_DCCH_Message,
+                                   (void*)&ul_dcch_msg,
+                                   buffer,
+                                   100);
+  AssertFatal (enc_rval.encoded > 0, "ASN1 message encoding failed (%s, %lu)!\n",
+               enc_rval.failed_type->name, enc_rval.encoded);
+
+#if defined(ENABLE_ITTI)
+# if !defined(DISABLE_XER_SPRINT)
+  {
+    char        message_string[20000];
+    size_t      message_string_size;
+
+    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_UL_DCCH_Message, (void *) &ul_dcch_msg)) > 0) {
+      MessageDef *msg_p;
+
+      msg_p = itti_alloc_new_message_sized (TASK_RRC_UE, RRC_UL_DCCH, message_string_size + sizeof (IttiMsgText));
+      msg_p->ittiMsg.rrc_ul_dcch.size = message_string_size;
+      memcpy(&msg_p->ittiMsg.rrc_ul_dcch.text, message_string, message_string_size);
+
+      itti_send_msg_to_task(TASK_UNKNOWN, NB_eNB_INST + Mod_id, msg_p);
+    }
+  }
+# endif
+#endif
+
+#ifdef USER_MODE
+  LOG_D(RRC,"RRCConnectionSetupComplete Encoded %d bits (%d bytes)\n",enc_rval.encoded,(enc_rval.encoded+7)/8);
+#endif
+
+  return((enc_rval.encoded+7)/8);
+ }
 
 // -----??????--------------------
 #ifndef USER_MODE

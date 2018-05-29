@@ -263,6 +263,41 @@ void openair_rrc_top_init_eNB_NB_IoT(void)//MP: XXX Raymond put this directly th
 
 }
 
+void
+openair_rrc_on_NB_IoT(
+  const protocol_ctxt_t* const ctxt_pP
+)
+//-----------------------------------------------------------------------------
+{
+  unsigned short i;
+  int            CC_id;
+
+  if (ctxt_pP->enb_flag == ENB_FLAG_YES) {
+    LOG_I(RRC, PROTOCOL_RRC_CTXT_FMT" OPENAIR RRC IN....\n",
+          PROTOCOL_RRC_CTXT_ARGS(ctxt_pP));
+    for (CC_id = 0; CC_id < MAX_NUM_CCs; CC_id++) {
+      rrc_config_buffer (&eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].SI, BCCH, 1);
+      eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].SI.Active = 1;
+      rrc_config_buffer (&eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].Srb0, CCCH, 1);
+      eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].Srb0.Active = 1;
+    }
+  } else {
+    LOG_I(RRC, PROTOCOL_RRC_CTXT_FMT" OPENAIR RRC IN....\n",
+          PROTOCOL_RRC_CTXT_ARGS(ctxt_pP));
+
+    for (i = 0; i < NB_eNB_INST; i++) {
+      LOG_D(RRC, PROTOCOL_RRC_CTXT_FMT" Activating CCCH (eNB %d)\n",
+            PROTOCOL_RRC_CTXT_ARGS(ctxt_pP), i);
+      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[i].Srb_id = CCCH;
+      //memcpy (&UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[i].Rx_buffer, &CCCH_LCHAN_DESC, LCHAN_DESC_SIZE);
+      //memcpy (&UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[i].Tx_buffer, &CCCH_LCHAN_DESC, LCHAN_DESC_SIZE);
+      rrc_config_buffer (&UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[i], CCCH, 1);
+      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[i].Active = 1;
+    }
+  }
+}
+
+
 //-----------------------------------------------------------------------------
 //XXX MP: most probably is not needed
 RRC_status_t rrc_rx_tx_NB_IoT(
@@ -289,7 +324,7 @@ RRC_status_t rrc_rx_tx_NB_IoT(
               "[UE %d][RAPROC] Frame %d T300 Count %d ms\n", ctxt_pP->module_id, ctxt_pP->frame, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].T300_cnt);
 
       if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].T300_cnt
-          == T300_NB_IoT[UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[enb_indexP]->ue_TimersAndConstants.t300]) {
+          == T300_NB_IoT[UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[enb_indexP]->ue_TimersAndConstants_r13.t300_r13]) {
         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].T300_active = 0;
         // ALLOW CCCH to be used
         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[enb_indexP].Tx_buffer.payload_size = 0;
@@ -303,7 +338,7 @@ RRC_status_t rrc_rx_tx_NB_IoT(
 
     if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].SIStatus&2)>0) {
       if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].N310_cnt
-          == N310_NB_IoT[UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[enb_indexP]->ue_TimersAndConstants.n310]) {
+          == N310_NB_IoT[UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[enb_indexP]->ue_TimersAndConstants_r13.n310_r13]) {
 	LOG_I(RRC,"Activating T310_NB_IoT\n");
         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].T310_active = 1;
       }
@@ -318,7 +353,7 @@ RRC_status_t rrc_rx_tx_NB_IoT(
 
     if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].T310_active == 1) {
       if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].N311_cnt
-          == N311_NB_IoT[UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[enb_indexP]->ue_TimersAndConstants.n311]) {
+          == N311_NB_IoT[UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[enb_indexP]->ue_TimersAndConstants_r13.n311_r13]) {
         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].T310_active = 0;
         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].N311_cnt = 0;
       }
@@ -327,7 +362,7 @@ RRC_status_t rrc_rx_tx_NB_IoT(
         LOG_D(RRC, "[UE %d] Frame %d T310_NB_IoT Count %d ms\n", ctxt_pP->module_id, ctxt_pP->frame, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].T310_cnt);
       }
 
-      if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].T310_cnt    == T310_NB_IoT[UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[enb_indexP]->ue_TimersAndConstants.t310]) {
+      if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].T310_cnt    == T310_NB_IoT[UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[enb_indexP]->ue_TimersAndConstants_r13.t310_r13]) {
         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[enb_indexP].T310_active = 0;
         rrc_t310_expiration_NB_IoT (ctxt_pP, enb_indexP); //FIXME: maybe is required a NB_iot version of this function
         VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME(VCD_SIGNAL_DUMPER_FUNCTIONS_RRC_RX_TX,VCD_FUNCTION_OUT);

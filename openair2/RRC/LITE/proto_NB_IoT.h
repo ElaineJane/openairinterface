@@ -68,10 +68,21 @@ RRC_status_t rrc_rx_tx_NB_IoT(protocol_ctxt_t* const ctxt_pP, const uint8_t  enb
 //long binary_search_float(float elements[], long numElem, float value);--> used only at UE side
 
 
-
+/** \brief Decodes DL-CCCH message and invokes appropriate routine to handle the message
+    \param ctxt_pP Running context
+    \param Srb_info Pointer to SRB_INFO structure (SRB0)
+    \param eNB_index Index of corresponding eNB/CH*/
+int rrc_ue_decode_ccch_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const SRB_INFO_NB_IoT* const Srb_info, const uint8_t eNB_index );
 //---------------------------------------
 
+static void rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id );
 
+void
+rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
+  const protocol_ctxt_t* const ctxt_pP,
+  uint8_t eNB_index,
+  RadioResourceConfigDedicated_t* radioResourceConfigDedicated
+);
 //defined in L2_interface
 //called by rx_sdu only in case of CCCH message (e.g RRCConnectionRequest-NB)
 int8_t mac_rrc_data_ind_eNB_NB_IoT(

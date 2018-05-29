@@ -96,7 +96,7 @@ SET(CMAKE_TARGET_DEFINITIONS
   "OPENAIR_LTE"
   "PACKAGE_BUGREPORT=\"openair4g-devel@lists.eurecom.fr\""
   "PACKAGE_NAME=\"oaisim\""
-  "PACKAGE_VERSION=\"Branch: develop-nb-iot Abrev. Hash: 58ba493 Date: Sat May 26 08:01:54 2018 +0800\""
+  "PACKAGE_VERSION=\"Branch: develop-nb-iot Abrev. Hash: a9d7dac Date: Sun May 27 10:36:26 2018 +0800\""
   "PC_DSP"
   "PC_TARGET"
   "PDCP_USE_NETLINK"

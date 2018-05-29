@@ -509,19 +509,19 @@ typedef struct UE_RRC_INST_NB_IoT_s {
   SystemInformationBlockType1_NB_t *sib1[NB_CNX_UE];
   SystemInformation_NB_t *si[NB_CNX_UE]; //!< Temporary storage for an SI message. Decoding happens in decode_SI().
   
- SystemInformationBlockType2_t *sib2[NB_CNX_UE];
-  /*
-  SystemInformationBlockType3_t *sib3[NB_CNX_UE];
-  SystemInformationBlockType4_t *sib4[NB_CNX_UE];
+ SystemInformationBlockType2_NB_r13_t *sib2[NB_CNX_UE];
+  
+  SystemInformationBlockType3_NB_r13_t *sib3[NB_CNX_UE];
+  /*SystemInformationBlockType4_t *sib4[NB_CNX_UE];
   SystemInformationBlockType5_t *sib5[NB_CNX_UE];
   SystemInformationBlockType6_t *sib6[NB_CNX_UE];
   SystemInformationBlockType7_t *sib7[NB_CNX_UE];
   SystemInformationBlockType8_t *sib8[NB_CNX_UE];
   SystemInformationBlockType9_t *sib9[NB_CNX_UE];
   SystemInformationBlockType10_t *sib10[NB_CNX_UE];
-  SystemInformationBlockType11_t *sib11[NB_CNX_UE];
+  SystemInformationBlockType11_t *sib11[NB_CNX_UE];*/
 
-#if defined(Rel10) || defined(Rel14)
+/*#if defined(Rel10) || defined(Rel14)
   uint8_t                           MBMS_flag;
   uint8_t *MCCH_MESSAGE[NB_CNX_UE];
   uint8_t sizeof_MCCH_MESSAGE[NB_CNX_UE];
@@ -529,24 +529,24 @@ typedef struct UE_RRC_INST_NB_IoT_s {
   MBSFNAreaConfiguration_r9_t       *mcch_message[NB_CNX_UE];
   SystemInformationBlockType12_r9_t *sib12[NB_CNX_UE];
   SystemInformationBlockType13_r9_t *sib13[NB_CNX_UE];
-#endif
+#endif*/
 #ifdef CBA
   uint8_t                         num_active_cba_groups;
   uint16_t                        cba_rnti[NUM_MAX_CBA_GROUP];
 #endif
   uint8_t                         num_srb;
   struct SRB_ToAddMod             *SRB1_config[NB_CNX_UE];
-  struct SRB_ToAddMod             *SRB2_config[NB_CNX_UE];
+  struct SRB_ToAddMod             *SRB1bis_config[NB_CNX_UE];
   struct DRB_ToAddMod             *DRB_config[NB_CNX_UE][8];
   rb_id_t                         *defaultDRB; // remember the ID of the default DRB
-  MeasObjectToAddMod_t            *MeasObj[NB_CNX_UE][MAX_MEAS_OBJ];
-  struct ReportConfigToAddMod     *ReportConfig[NB_CNX_UE][MAX_MEAS_CONFIG];
-  */
+  //MeasObjectToAddMod_t            *MeasObj[NB_CNX_UE][MAX_MEAS_OBJ];
+  //struct ReportConfigToAddMod     *ReportConfig[NB_CNX_UE][MAX_MEAS_CONFIG];
+  
   struct QuantityConfig           *QuantityConfig[NB_CNX_UE];
-  /*
-  struct MeasIdToAddMod           *MeasId[NB_CNX_UE][MAX_MEAS_ID];
-  MEAS_REPORT_LIST      *measReportList[NB_CNX_UE][MAX_MEAS_ID];
-  uint32_t           measTimer[NB_CNX_UE][MAX_MEAS_ID][6]; // 6 neighboring cells
+  
+  //struct MeasIdToAddMod           *MeasId[NB_CNX_UE][MAX_MEAS_ID];
+ //MEAS_REPORT_LIST      *measReportList[NB_CNX_UE][MAX_MEAS_ID];
+  //uint32_t           measTimer[NB_CNX_UE][MAX_MEAS_ID][6]; // 6 neighboring cells
   RSRP_Range_t                    s_measure;
   struct MeasConfig__speedStatePars *speedStatePars;
   struct PhysicalConfigDedicated  *physicalConfigDedicated[NB_CNX_UE];
@@ -571,7 +571,7 @@ typedef struct UE_RRC_INST_NB_IoT_s {
   // Used integrity/ciphering algorithms //
   CipheringAlgorithm_r12_t                          ciphering_algorithm;
   e_SecurityAlgorithmConfig__integrityProtAlgorithm integrity_algorithm;
-  */
+  
 } UE_RRC_INST_NB_IoT;
 
 
