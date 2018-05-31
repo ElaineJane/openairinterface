@@ -535,9 +535,9 @@ typedef struct UE_RRC_INST_NB_IoT_s {
   uint16_t                        cba_rnti[NUM_MAX_CBA_GROUP];
 #endif
   uint8_t                         num_srb;
-  struct SRB_ToAddMod             *SRB1_config[NB_CNX_UE];
-  struct SRB_ToAddMod             *SRB1bis_config[NB_CNX_UE];
-  struct DRB_ToAddMod             *DRB_config[NB_CNX_UE][8];
+  struct SRB_ToAddMod_NB_r13             *SRB1_config[NB_CNX_UE];
+  struct SRB_ToAddMod_NB_r13             *SRB1bis_config[NB_CNX_UE];
+  struct DRB_ToAddMod_NB_r13             *DRB_config[NB_CNX_UE][8];
   rb_id_t                         *defaultDRB; // remember the ID of the default DRB
   //MeasObjectToAddMod_t            *MeasObj[NB_CNX_UE][MAX_MEAS_OBJ];
   //struct ReportConfigToAddMod     *ReportConfig[NB_CNX_UE][MAX_MEAS_CONFIG];
@@ -549,7 +549,7 @@ typedef struct UE_RRC_INST_NB_IoT_s {
   //uint32_t           measTimer[NB_CNX_UE][MAX_MEAS_ID][6]; // 6 neighboring cells
   RSRP_Range_t                    s_measure;
   struct MeasConfig__speedStatePars *speedStatePars;
-  struct PhysicalConfigDedicated  *physicalConfigDedicated[NB_CNX_UE];
+  struct PhysicalConfigDedicated_NB_r13  *physicalConfigDedicated_r13[NB_CNX_UE];
   struct SPS_Config               *sps_Config[NB_CNX_UE];
   MAC_MainConfig_t                *mac_MainConfig[NB_CNX_UE];
   MeasGapConfig_t                 *measGapConfig[NB_CNX_UE];

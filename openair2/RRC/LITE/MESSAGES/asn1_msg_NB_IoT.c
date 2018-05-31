@@ -93,7 +93,8 @@ int errno;
 # endif
 #endif
 
-
+extern unsigned char NB_eNB_INST;
+extern uint8_t usim_test;
 
 /*do_MIB_NB_NB_IoT*/
 uint8_t do_MIB_NB_IoT(uint8_t Mod_id, int CC_id,
@@ -1605,29 +1606,29 @@ uint8_t do_RRCConnectionSetupComplete_NB_IoT(uint8_t Mod_id, uint8_t* buffer, co
  {
     asn_enc_rval_t enc_rval;
 
-  UL_DCCH_Message_t ul_dcch_msg;
+  UL_DCCH_Message_NB_t ul_dcch_msg;
 
-  RRCConnectionSetupComplete_t *rrcConnectionSetupComplete;
+  RRCConnectionSetupComplete_NB_t *rrcConnectionSetupComplete;
 
-  memset((void *)&ul_dcch_msg,0,sizeof(UL_DCCH_Message_t));
+  memset((void *)&ul_dcch_msg,0,sizeof(UL_DCCH_Message_NB_t));
 
-  ul_dcch_msg.message.present           = UL_DCCH_MessageType_PR_c1;
-  ul_dcch_msg.message.choice.c1.present = UL_DCCH_MessageType__c1_PR_rrcConnectionSetupComplete;
-  rrcConnectionSetupComplete            = &ul_dcch_msg.message.choice.c1.choice.rrcConnectionSetupComplete;
+  ul_dcch_msg.message.present           = UL_DCCH_MessageType_NB_PR_c1;
+  ul_dcch_msg.message.choice.c1.present = UL_DCCH_MessageType_NB__c1_PR_rrcConnectionSetupComplete_r13;
+  rrcConnectionSetupComplete            = &ul_dcch_msg.message.choice.c1.choice.rrcConnectionSetupComplete_r13;
 
   rrcConnectionSetupComplete->rrc_TransactionIdentifier = Transaction_id;
-  rrcConnectionSetupComplete->criticalExtensions.present = RRCConnectionSetupComplete__criticalExtensions_PR_c1;
-  rrcConnectionSetupComplete->criticalExtensions.choice.c1.present = RRCConnectionSetupComplete__criticalExtensions__c1_PR_rrcConnectionSetupComplete_r8;
+  rrcConnectionSetupComplete->criticalExtensions.present = RRCConnectionSetupComplete_NB__criticalExtensions_PR_rrcConnectionSetupComplete_r13;
 
-  rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.nonCriticalExtension=CALLOC(1,
-      sizeof(*rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.nonCriticalExtension));
+
+  rrcConnectionSetupComplete->criticalExtensions.choice.rrcConnectionSetupComplete_r13.nonCriticalExtension=CALLOC(1,
+      sizeof(*rrcConnectionSetupComplete->criticalExtensions.choice.rrcConnectionSetupComplete_r13.nonCriticalExtension));
 
   if(usim_test == 0)
-      rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.selectedPLMN_Identity= 2;
+      rrcConnectionSetupComplete->criticalExtensions.choice.rrcConnectionSetupComplete_r13.selectedPLMN_Identity_r13= 2;
   else
-      rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.selectedPLMN_Identity= 1;
+      rrcConnectionSetupComplete->criticalExtensions.choice.rrcConnectionSetupComplete_r13.selectedPLMN_Identity_r13= 1;
 
-  rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME =
+  rrcConnectionSetupComplete->criticalExtensions.choice.rrcConnectionSetupComplete_r13.registeredMME_r13 =
     NULL;//calloc(1,sizeof(*rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME));
   /*
     rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->plmn_Identity=NULL;
@@ -1637,8 +1638,8 @@ uint8_t do_RRCConnectionSetupComplete_NB_IoT(uint8_t Mod_id, uint8_t* buffer, co
     rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmegi.size=2;
     rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmegi.bits_unused=0;
   */
-  memset(&rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.dedicatedInfoNAS,0,sizeof(OCTET_STRING_t));
-  OCTET_STRING_fromBuf(&rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.dedicatedInfoNAS,
+  memset(&rrcConnectionSetupComplete->criticalExtensions.choice.rrcConnectionSetupComplete_r13.dedicatedInfoNAS_r13,0,sizeof(OCTET_STRING_t));
+  OCTET_STRING_fromBuf(&rrcConnectionSetupComplete->criticalExtensions.choice.rrcConnectionSetupComplete_r13.dedicatedInfoNAS_r13,
                        dedicatedInfoNAS, dedicatedInfoNASLength);
 
   /*
@@ -1648,7 +1649,7 @@ uint8_t do_RRCConnectionSetupComplete_NB_IoT(uint8_t Mod_id, uint8_t* buffer, co
     rrcConnectionSetupComplete->criticalExtensions.choice.c1.choice.rrcConnectionSetupComplete_r8.registeredMME->mmec.bits_unused=0;
   */
 
-  enc_rval = uper_encode_to_buffer(&asn_DEF_UL_DCCH_Message,
+  enc_rval = uper_encode_to_buffer(&asn_DEF_UL_DCCH_Message_NB,
                                    (void*)&ul_dcch_msg,
                                    buffer,
                                    100);
@@ -1661,7 +1662,7 @@ uint8_t do_RRCConnectionSetupComplete_NB_IoT(uint8_t Mod_id, uint8_t* buffer, co
     char        message_string[20000];
     size_t      message_string_size;
 
-    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_UL_DCCH_Message, (void *) &ul_dcch_msg)) > 0) {
+    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_UL_DCCH_Message_NB, (void *) &ul_dcch_msg)) > 0) {
       MessageDef *msg_p;
 
       msg_p = itti_alloc_new_message_sized (TASK_RRC_UE, RRC_UL_DCCH, message_string_size + sizeof (IttiMsgText));

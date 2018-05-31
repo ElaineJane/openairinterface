@@ -81,7 +81,7 @@ void
 rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
   const protocol_ctxt_t* const ctxt_pP,
   uint8_t eNB_index,
-  RadioResourceConfigDedicated_t* radioResourceConfigDedicated
+  RadioResourceConfigDedicated_NB_r13_t* radioResourceConfigDedicated
 );
 //defined in L2_interface
 //called by rx_sdu only in case of CCCH message (e.g RRCConnectionRequest-NB)

@@ -947,9 +947,9 @@ clean: CMakeFiles/generate_T.dir/clean
 # Target rules for target CMakeFiles/lte-softmodem.dir
 
 # All Build rule for target.
-CMakeFiles/lte-softmodem.dir/all: CMakeFiles/ITTI.dir/all
-CMakeFiles/lte-softmodem.dir/all: CMakeFiles/S1AP_LIB.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/S1AP_ENB.dir/all
+CMakeFiles/lte-softmodem.dir/all: CMakeFiles/S1AP_LIB.dir/all
+CMakeFiles/lte-softmodem.dir/all: CMakeFiles/ITTI.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/HASHTABLE.dir/all
 CMakeFiles/lte-softmodem.dir/all: CMakeFiles/SECU_OSA.dir/all
@@ -1355,9 +1355,9 @@ clean: CMakeFiles/oai_usrpdevif.dir/clean
 # Target rules for target CMakeFiles/oaisim.dir
 
 # All Build rule for target.
-CMakeFiles/oaisim.dir/all: CMakeFiles/ITTI.dir/all
-CMakeFiles/oaisim.dir/all: CMakeFiles/S1AP_LIB.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/S1AP_ENB.dir/all
+CMakeFiles/oaisim.dir/all: CMakeFiles/S1AP_LIB.dir/all
+CMakeFiles/oaisim.dir/all: CMakeFiles/ITTI.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/X2AP_LIB.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/oaisim.dir/all: CMakeFiles/HASHTABLE.dir/all
@@ -1419,8 +1419,8 @@ CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/PHY.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/L2.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/LFDS.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/SIMU.dir/all
-CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/SIMU_ETH.dir/all
 CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/LFDS7.dir/all
+CMakeFiles/oaisim_nos1.dir/all: CMakeFiles/SIMU_ETH.dir/all
 	$(MAKE) -f CMakeFiles/oaisim_nos1.dir/build.make CMakeFiles/oaisim_nos1.dir/depend
 	$(MAKE) -f CMakeFiles/oaisim_nos1.dir/build.make CMakeFiles/oaisim_nos1.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/momo/openairinterface5g/cmake_targets/oaisim_noS1_build_oai/build/CMakeFiles  97
@@ -1945,9 +1945,9 @@ clean: CMakeFiles/test_aes128_ctr_encrypt.dir/clean
 # Target rules for target CMakeFiles/test_epc_generate_scenario.dir
 
 # All Build rule for target.
-CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/ITTI.dir/all
-CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/S1AP_LIB.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/S1AP_ENB.dir/all
+CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/S1AP_LIB.dir/all
+CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/ITTI.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/X2AP_LIB.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/test_epc_generate_scenario.dir/all: CMakeFiles/HASHTABLE.dir/all
@@ -1994,8 +1994,8 @@ clean: CMakeFiles/test_epc_generate_scenario.dir/clean
 # Target rules for target CMakeFiles/test_epc_play_scenario.dir
 
 # All Build rule for target.
-CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/ITTI.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/S1AP_LIB.dir/all
+CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/ITTI.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/X2AP_LIB.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/RRC_LIB.dir/all
 CMakeFiles/test_epc_play_scenario.dir/all: CMakeFiles/HASHTABLE.dir/all

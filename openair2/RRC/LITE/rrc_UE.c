@@ -1464,6 +1464,93 @@ rrc_ue_update_radioResourceConfigDedicated(RadioResourceConfigDedicated_t* radio
     }
 
 }
+
+
+void
+rrc_ue_update_radioResourceConfigDedicated_NB_IoT(RadioResourceConfigDedicated_NB_r13_t* radioResourceConfigDedicated,
+        const protocol_ctxt_t* const ctxt_pP,
+        uint8_t eNB_index)
+{
+    PhysicalConfigDedicated_NB_r13_t* physicalConfigDedicated2 = NULL;
+
+    physicalConfigDedicated2 = CALLOC(1,sizeof(*physicalConfigDedicated2));
+    physicalConfigDedicated2->npusch_ConfigDedicated_r13         = CALLOC(1,sizeof(*physicalConfigDedicated2->npusch_ConfigDedicated_r13));
+    physicalConfigDedicated2->npdcch_ConfigDedicated_r13         = CALLOC(1,sizeof(*physicalConfigDedicated2->npdcch_ConfigDedicated_r13));
+    physicalConfigDedicated2->carrierConfigDedicated_r13         = CALLOC(1,sizeof(*physicalConfigDedicated2->carrierConfigDedicated_r13));
+    physicalConfigDedicated2->uplinkPowerControlDedicated_r13              = CALLOC(1,sizeof(*physicalConfigDedicated2->uplinkPowerControlDedicated_r13));
+    
+
+    // Update npusch_ConfigDedicated_r13
+    if(radioResourceConfigDedicated->physicalConfigDedicated_r13->npusch_ConfigDedicated_r13 != NULL)
+    {
+        LOG_I(RRC,"Update npusch_ConfigDedicated_r13 config \n");
+
+        if(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->npusch_ConfigDedicated_r13 == NULL)
+            UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->npusch_ConfigDedicated_r13 = CALLOC(1,sizeof(NPUSCH_ConfigDedicated_NB_r13_t));
+
+        memcpy((char*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->npusch_ConfigDedicated_r13,
+                (char*)radioResourceConfigDedicated->physicalConfigDedicated_r13->npusch_ConfigDedicated_r13,
+                sizeof(physicalConfigDedicated2->npusch_ConfigDedicated_r13));
+    }
+    else
+    {
+        LOG_I(RRC,"Keep old config for npusch_ConfigDedicated_r13\n");
+    }
+
+    // Update npdcch_ConfigDedicated_r13
+    if(radioResourceConfigDedicated->physicalConfigDedicated_r13->npdcch_ConfigDedicated_r13 != NULL)
+    {
+        LOG_I(RRC,"Update npdcch_ConfigDedicated_r13 config \n");
+
+        if(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->npdcch_ConfigDedicated_r13 == NULL)
+            UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->npdcch_ConfigDedicated_r13 = CALLOC(1,sizeof(NPDCCH_ConfigDedicated_NB_r13_t));
+
+        memcpy((char*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->npdcch_ConfigDedicated_r13,
+                (char*)radioResourceConfigDedicated->physicalConfigDedicated_r13->npdcch_ConfigDedicated_r13,
+                sizeof(physicalConfigDedicated2->npdcch_ConfigDedicated_r13));
+    }
+    else
+    {
+        LOG_I(RRC,"Keep old config for npdcch_ConfigDedicated_r13\n");
+    }
+
+    // Update carrierConfigDedicated_r13
+    if(radioResourceConfigDedicated->physicalConfigDedicated_r13->carrierConfigDedicated_r13 != NULL)
+    {
+        LOG_I(RRC,"Update carrierConfigDedicated_r13 config \n");
+        if(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->carrierConfigDedicated_r13 == NULL)
+            UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->carrierConfigDedicated_r13 = CALLOC(1,sizeof(CarrierConfigDedicated_NB_r13_t));
+
+        memcpy((char*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->carrierConfigDedicated_r13,
+                (char*)radioResourceConfigDedicated->physicalConfigDedicated_r13->carrierConfigDedicated_r13,
+                sizeof(physicalConfigDedicated2->carrierConfigDedicated_r13));
+    }
+    else
+    {
+        LOG_I(RRC,"Keep old config for carrierConfigDedicated_r13\n");
+    }
+
+
+    // Update uplinkPowerControlDedicated_r13
+    if(radioResourceConfigDedicated->physicalConfigDedicated_r13->uplinkPowerControlDedicated_r13 != NULL)
+    {
+        LOG_I(RRC,"Update uplinkPowerControlDedicated_r13 config \n");
+
+        if(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->uplinkPowerControlDedicated_r13 == NULL)
+            UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->uplinkPowerControlDedicated_r13 = CALLOC(1,sizeof(UplinkPowerControlDedicated_NB_r13_t));
+
+        memcpy((char*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]->uplinkPowerControlDedicated_r13,
+                (char*)radioResourceConfigDedicated->physicalConfigDedicated_r13->uplinkPowerControlDedicated_r13,
+                sizeof(physicalConfigDedicated2->uplinkPowerControlDedicated_r13));
+    }
+    else
+    {
+        LOG_I(RRC,"Keep old config for uplinkPowerControlDedicated_r13\n");
+    }
+
+  
+
+}
 //-----------------------------------------------------------------------------
 void
 rrc_ue_process_radioResourceConfigDedicated(
@@ -1835,109 +1922,101 @@ void
 rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
   const protocol_ctxt_t* const ctxt_pP,
   uint8_t eNB_index,
-  RadioResourceConfigDedicated_t* radioResourceConfigDedicated
+  RadioResourceConfigDedicated_NB_r13_t* radioResourceConfigDedicated
 )
 //-----------------------------------------------------------------------------
 {
 
   long SRB_id,DRB_id;
   int i,cnt;
-  LogicalChannelConfig_t *SRB1_logicalChannelConfig,*SRB2_logicalChannelConfig;
+  LogicalChannelConfig_NB_r13_t *SRB1_logicalChannelConfig,*SRB2_logicalChannelConfig;
 #ifdef CBA
   uint8_t cba_found = 0;
   uint16_t cba_RNTI;
 #endif
 
   // Save physicalConfigDedicated if present
-  if (radioResourceConfigDedicated->physicalConfigDedicated) {
+  if (radioResourceConfigDedicated->physicalConfigDedicated_r13) {
     LOG_I(RRC,"Save physicalConfigDedicated if present \n");
 
-    if (UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index]) {
+    if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]) {
 #if 1
-        rrc_ue_update_radioResourceConfigDedicated(radioResourceConfigDedicated, ctxt_pP, eNB_index);
+        rrc_ue_update_radioResourceConfigDedicated_NB_IoT(radioResourceConfigDedicated, ctxt_pP, eNB_index);/////////////////////////////////////////////////////////////////////
 #else
-      memcpy((char*)UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],(char*)radioResourceConfigDedicated->physicalConfigDedicated,
+      memcpy((char*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],(char*)radioResourceConfigDedicated->physicalConfigDedicated,
              sizeof(struct PhysicalConfigDedicated));
 #endif
     } else {
-      LOG_I(RRC,"Init physicalConfigDedicated UE_rrc_inst to radioResourceConfigDedicated->physicalConfigDedicated\n");
-      UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index] = radioResourceConfigDedicated->physicalConfigDedicated;
+      LOG_I(RRC,"Init physicalConfigDedicated UE_rrc_inst_NB_IoT to radioResourceConfigDedicated->physicalConfigDedicated\n");
+      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index] = radioResourceConfigDedicated->physicalConfigDedicated_r13;
     }
   }
 
   // Apply macMainConfig if present
-  if (radioResourceConfigDedicated->mac_MainConfig) {
-    if (radioResourceConfigDedicated->mac_MainConfig->present == RadioResourceConfigDedicated__mac_MainConfig_PR_explicitValue) {
-      if (UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index]) {
-        memcpy((char*)UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index],(char*)&radioResourceConfigDedicated->mac_MainConfig->choice.explicitValue,
-               sizeof(MAC_MainConfig_t));
+  if (radioResourceConfigDedicated->mac_MainConfig_r13) {
+    if (radioResourceConfigDedicated->mac_MainConfig_r13->present == RadioResourceConfigDedicated_NB_r13__mac_MainConfig_r13_PR_explicitValue_r13) {
+      if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].mac_MainConfig[eNB_index]) {
+        memcpy((char*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].mac_MainConfig[eNB_index],(char*)&radioResourceConfigDedicated->mac_MainConfig_r13->choice.explicitValue_r13,
+               sizeof(MAC_MainConfig_NB_r13_t));
       } else {
-        UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index] = &radioResourceConfigDedicated->mac_MainConfig->choice.explicitValue;
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].mac_MainConfig[eNB_index] = &radioResourceConfigDedicated->mac_MainConfig_r13->choice.explicitValue_r13;
       }
     }
   }
 
-  // Apply spsConfig if present
-  if (radioResourceConfigDedicated->sps_Config) {
-    if (UE_rrc_inst[ctxt_pP->module_id].sps_Config[eNB_index]) {
-      memcpy(UE_rrc_inst[ctxt_pP->module_id].sps_Config[eNB_index],radioResourceConfigDedicated->sps_Config,
-             sizeof(struct SPS_Config));
-    } else {
-      UE_rrc_inst[ctxt_pP->module_id].sps_Config[eNB_index] = radioResourceConfigDedicated->sps_Config;
-    }
-  }
+  
 
-#ifdef CBA
+/*#ifdef CBA
 
   if (radioResourceConfigDedicated->cba_RNTI_vlola) {
     cba_RNTI = (uint16_t) (((radioResourceConfigDedicated->cba_RNTI_vlola->buf[1]&0xff) << 8) |
                            (radioResourceConfigDedicated->cba_RNTI_vlola->buf[0]&0xff));
 
     for (i=0 ; i< NUM_MAX_CBA_GROUP; i++) {
-      if (UE_rrc_inst[ctxt_pP->module_id].cba_rnti[i] == cba_RNTI ) {
+      if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].cba_rnti[i] == cba_RNTI ) {
         cba_found=1;
         break;
-      } else if (UE_rrc_inst[ctxt_pP->module_id].cba_rnti[i] == 0 ) {
+      } else if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].cba_rnti[i] == 0 ) {
         break;
       }
     }
 
     if (cba_found==0) {
-      UE_rrc_inst[ctxt_pP->module_id].num_active_cba_groups++;
-      UE_rrc_inst[ctxt_pP->module_id].cba_rnti[i]=cba_RNTI;
+      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].num_active_cba_groups++;
+      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].cba_rnti[i]=cba_RNTI;
       LOG_D(RRC, "[UE %d] Frame %d: radioResourceConfigDedicated reveived CBA_RNTI = %x for group %d from eNB %d \n",
-            ctxt_pP->module_id,frameP, UE_rrc_inst[ctxt_pP->module_id].cba_rnti[i], i, eNB_index);
+            ctxt_pP->module_id,frameP, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].cba_rnti[i], i, eNB_index);
     }
   }
 
-#endif
+#endif*/
 
   // Establish SRBs if present
   // loop through SRBToAddModList
-  if (radioResourceConfigDedicated->srb_ToAddModList) {
+  if (radioResourceConfigDedicated->srb_ToAddModList_r13) {
     uint8_t *kRRCenc = NULL;
     uint8_t *kRRCint = NULL;
 
 #if defined(ENABLE_SECURITY)
-    derive_key_rrc_enc(UE_rrc_inst[ctxt_pP->module_id].ciphering_algorithm,
-                       UE_rrc_inst[ctxt_pP->module_id].kenb, &kRRCenc);
-    derive_key_rrc_int(UE_rrc_inst[ctxt_pP->module_id].integrity_algorithm,
-                       UE_rrc_inst[ctxt_pP->module_id].kenb, &kRRCint);
+    derive_key_rrc_enc(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].ciphering_algorithm,
+                       UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb, &kRRCenc);
+    derive_key_rrc_int(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].integrity_algorithm,
+                       UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb, &kRRCint);
 #endif
-    // Refresh SRBs
+/*    // Refresh SRBs
     rrc_pdcp_config_asn1_req(ctxt_pP,
                              radioResourceConfigDedicated->srb_ToAddModList,
                              (DRB_ToAddModList_t*)NULL,
                              (DRB_ToReleaseList_t*)NULL,
-                             UE_rrc_inst[ctxt_pP->module_id].ciphering_algorithm |
-                             (UE_rrc_inst[ctxt_pP->module_id].integrity_algorithm << 4),
+                             UE_rrc_inst_NB_IoT[ctxt_pP->module_id].ciphering_algorithm |
+                             (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].integrity_algorithm << 4),
                              kRRCenc,
                              kRRCint,
                              NULL
 #if defined(Rel10) || defined(Rel14)
                              ,(PMCH_InfoList_r9_t *)NULL
 #endif
-                             ,NULL);
+                             ,NULL);////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Refresh SRBs
     rrc_rlc_config_asn1_req(ctxt_pP,
@@ -1947,29 +2026,29 @@ rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
 #if defined(Rel10) || defined(Rel14)
                             ,(PMCH_InfoList_r9_t *)NULL
 #endif
-                           );
+                           );///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #if ENABLE_RAL
     // first msg that includes srb config
-    UE_rrc_inst[ctxt_pP->module_id].num_srb=radioResourceConfigDedicated->srb_ToAddModList->list.count;
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].num_srb=radioResourceConfigDedicated->srb_ToAddModList_r13->list.count;
 #endif
 
-    for (cnt=0; cnt<radioResourceConfigDedicated->srb_ToAddModList->list.count; cnt++) {
+    for (cnt=0; cnt<radioResourceConfigDedicated->srb_ToAddModList_r13->list.count; cnt++) {
       //  connection_reestablishment_ind.num_srb+=1;
-      SRB_id = radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt]->srb_Identity;
-      LOG_D(RRC,"[UE %d]: Frame %d SRB config cnt %d (SRB%ld)\n",ctxt_pP->module_id,ctxt_pP->frame,cnt,SRB_id);
+     // SRB_id = radioResourceConfigDedicated->srb_ToAddModList_r13->list.array[cnt]->srb_Identity;
+     // LOG_D(RRC,"[UE %d]: Frame %d SRB config cnt %d (SRB%ld)\n",ctxt_pP->module_id,ctxt_pP->frame,cnt,SRB_id);
 
       if (SRB_id == 1) {
-        if (UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index]) {
-          memcpy(UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index],radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt],
-                 sizeof(struct SRB_ToAddMod));
+        if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB1_config[eNB_index]) {
+          memcpy(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB1_config[eNB_index],radioResourceConfigDedicated->srb_ToAddModList_r13->list.array[cnt],
+                 sizeof(struct SRB_ToAddModList_NB_r13));
         } else {
-          UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index] = radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt];
-          rrc_ue_establish_srb1(ctxt_pP->module_id,ctxt_pP->frame,eNB_index,radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt]);
-
-          if (UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index]->logicalChannelConfig) {
-            if (UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index]->logicalChannelConfig->present == SRB_ToAddMod__logicalChannelConfig_PR_explicitValue) {
-              SRB1_logicalChannelConfig = &UE_rrc_inst[ctxt_pP->module_id].SRB1_config[eNB_index]->logicalChannelConfig->choice.explicitValue;
+          UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB1_config[eNB_index] = radioResourceConfigDedicated->srb_ToAddModList_r13->list.array[cnt];
+          /*rrc_ue_establish_srb1(ctxt_pP->module_id,ctxt_pP->frame,eNB_index,radioResourceConfigDedicated->srb_ToAddModList_r13->list.array[cnt]);/////////////////////////////////////////////////////
+*/
+          if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB1_config[eNB_index]->logicalChannelConfig_r13) {
+            if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB1_config[eNB_index]->logicalChannelConfig_r13->present == SRB_ToAddMod_NB_r13__logicalChannelConfig_r13_PR_explicitValue) {
+              SRB1_logicalChannelConfig = &UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB1_config[eNB_index]->logicalChannelConfig_r13->choice.explicitValue;
 
             } else {
               SRB1_logicalChannelConfig = &SRB1_logicalChannelConfig_defaultValue;
@@ -1980,15 +2059,15 @@ rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
 
           LOG_I(RRC, "[FRAME %05d][RRC_UE][MOD %02d][][--- MAC_CONFIG_REQ  (SRB1 eNB %d) --->][MAC_UE][MOD %02d][]\n",
                 ctxt_pP->frame, ctxt_pP->module_id, eNB_index, ctxt_pP->module_id);
-          rrc_mac_config_req(ctxt_pP->module_id,0,ENB_FLAG_NO,0,eNB_index,
+          /*rrc_mac_config_req(ctxt_pP->module_id,0,ENB_FLAG_NO,0,eNB_index,
                              (RadioResourceConfigCommonSIB_t *)NULL,
-                             UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],
+                             UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],
 #if defined(Rel10) || defined(Rel14)
                              (SCellToAddMod_r10_t *)NULL,
                              //struct PhysicalConfigDedicatedSCell_r10 *physicalConfigDedicatedSCell_r10,
 #endif
                              (MeasObjectToAddMod_t **)NULL,
-                             UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index],
+                             UE_rrc_inst_NB_IoT[ctxt_pP->module_id].mac_MainConfig[eNB_index],
                              1,
                              SRB1_logicalChannelConfig,
                              (MeasGapConfig_t *)NULL,
@@ -2011,20 +2090,20 @@ rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
                              0,
                              0
 #endif
-                            );
+                            );////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
         }
       } else {
-        if (UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index]) {
-          memcpy(UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index],radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt],
-                 sizeof(struct SRB_ToAddMod));
+       /* if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB2_config[eNB_index]) {
+          memcpy(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB2_config[eNB_index],radioResourceConfigDedicated->srb_ToAddModList_r13->list.array[cnt],
+                 sizeof(struct SRB_ToAddModList_NB_r13));
         } else {
-          UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index] = radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt];
-          rrc_ue_establish_srb2(ctxt_pP->module_id,ctxt_pP->frame,eNB_index,radioResourceConfigDedicated->srb_ToAddModList->list.array[cnt]);
+          UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB2_config[eNB_index] = radioResourceConfigDedicated->srb_ToAddModList_r13->list.array[cnt];
+          rrc_ue_establish_srb2(ctxt_pP->module_id,ctxt_pP->frame,eNB_index,radioResourceConfigDedicated->srb_ToAddModList_r13->list.array[cnt]);//////////////////////////////////////////////
 
-          if (UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index]->logicalChannelConfig) {
-            if (UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index]->logicalChannelConfig->present == SRB_ToAddMod__logicalChannelConfig_PR_explicitValue) {
+          if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB2_config[eNB_index]->logicalChannelConfig) {
+            if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB2_config[eNB_index]->logicalChannelConfig->present == SRB_ToAddMod__logicalChannelConfig_PR_explicitValue) {
               LOG_I(RRC,"Applying Explicit SRB2 logicalChannelConfig\n");
-              SRB2_logicalChannelConfig = &UE_rrc_inst[ctxt_pP->module_id].SRB2_config[eNB_index]->logicalChannelConfig->choice.explicitValue;
+              SRB2_logicalChannelConfig = &UE_rrc_inst_NB_IoT[ctxt_pP->module_id].SRB2_config[eNB_index]->logicalChannelConfig->choice.explicitValue;
             } else {
               LOG_I(RRC,"Applying default SRB2 logicalChannelConfig\n");
               SRB2_logicalChannelConfig = &SRB2_logicalChannelConfig_defaultValue;
@@ -2040,16 +2119,16 @@ rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
                 ctxt_pP->module_id);
           rrc_mac_config_req(ctxt_pP->module_id,0,ENB_FLAG_NO,0,eNB_index,
                              (RadioResourceConfigCommonSIB_t *)NULL,
-                             UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],
+                             UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],
 #if defined(Rel10) || defined(Rel14)
                              (SCellToAddMod_r10_t *)NULL,
                              //struct PhysicalConfigDedicatedSCell_r10 *physicalConfigDedicatedSCell_r10,
 #endif
                              (MeasObjectToAddMod_t **)NULL,
-                             UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index],
+                             UE_rrc_inst_NB_IoT[ctxt_pP->module_id].mac_MainConfig[eNB_index],
                              2,
                              SRB2_logicalChannelConfig,
-                             UE_rrc_inst[ctxt_pP->module_id].measGapConfig[eNB_index],
+                             UE_rrc_inst_NB_IoT[ctxt_pP->module_id].measGapConfig[eNB_index],
                              (TDD_Config_t *)NULL,
                              (MobilityControlInfo_t *)NULL,
                              NULL,
@@ -2069,28 +2148,28 @@ rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
                              0,
                              0
 #endif
-                            );
-        }
+                            );/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        }*/
       }
     }
   }
 
   // Establish DRBs if present
-  if (radioResourceConfigDedicated->drb_ToAddModList) {
+  if (radioResourceConfigDedicated->drb_ToAddModList_r13) {
 
-    if ( (UE_rrc_inst[ctxt_pP->module_id].defaultDRB == NULL) &&
-         (radioResourceConfigDedicated->drb_ToAddModList->list.count >= 1) ) {
+    if ( (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].defaultDRB == NULL) &&
+         (radioResourceConfigDedicated->drb_ToAddModList_r13->list.count >= 1) ) {
         // configure the first DRB ID as the default DRB ID
-        UE_rrc_inst[ctxt_pP->module_id].defaultDRB = malloc(sizeof(rb_id_t));
-        *UE_rrc_inst[ctxt_pP->module_id].defaultDRB = radioResourceConfigDedicated->drb_ToAddModList->list.array[0]->drb_Identity;
-        LOG_I(RRC,"[UE %d] default DRB = %d\n",ctxt_pP->module_id, *UE_rrc_inst[ctxt_pP->module_id].defaultDRB);
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].defaultDRB = malloc(sizeof(rb_id_t));
+        *UE_rrc_inst_NB_IoT[ctxt_pP->module_id].defaultDRB = radioResourceConfigDedicated->drb_ToAddModList_r13->list.array[0]->drb_Identity_r13;
+        LOG_I(RRC,"[UE %d] default DRB = %d\n",ctxt_pP->module_id, *UE_rrc_inst_NB_IoT[ctxt_pP->module_id].defaultDRB);
       }
 
     uint8_t *kUPenc = NULL;
 
 #if defined(ENABLE_SECURITY)
-    derive_key_up_enc(UE_rrc_inst[ctxt_pP->module_id].integrity_algorithm,
-                      UE_rrc_inst[ctxt_pP->module_id].kenb, &kUPenc);
+    derive_key_up_enc(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].integrity_algorithm,
+                      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb, &kUPenc);//////////////////////////////////////////////////////////////////////////////////////////////
 #endif
 
     MSC_LOG_TX_MESSAGE(
@@ -2101,23 +2180,23 @@ rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
       MSC_AS_TIME_FMT" CONFIG_REQ UE %x DRB (security %X)",
       MSC_AS_TIME_ARGS(ctxt_pP),
       ctxt_pP->rnti,
-      UE_rrc_inst[ctxt_pP->module_id].ciphering_algorithm |
-      (UE_rrc_inst[ctxt_pP->module_id].integrity_algorithm << 4));
+      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].ciphering_algorithm |
+      (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].integrity_algorithm << 4));
 
     // Refresh DRBs
-    rrc_pdcp_config_asn1_req(ctxt_pP,
+    /*rrc_pdcp_config_asn1_req(ctxt_pP,
                              (SRB_ToAddModList_t*)NULL,
                              radioResourceConfigDedicated->drb_ToAddModList,
                              (DRB_ToReleaseList_t*)NULL,
-                             UE_rrc_inst[ctxt_pP->module_id].ciphering_algorithm |
-                             (UE_rrc_inst[ctxt_pP->module_id].integrity_algorithm << 4),
+                             UE_rrc_inst_NB_IoT[ctxt_pP->module_id].ciphering_algorithm |
+                             (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].integrity_algorithm << 4),
                              NULL,
                              NULL,
                              kUPenc
 #if defined(Rel10) || defined(Rel14)
                              ,(PMCH_InfoList_r9_t *)NULL
 #endif
-                             , UE_rrc_inst[ctxt_pP->module_id].defaultDRB);
+                             , UE_rrc_inst_NB_IoT[ctxt_pP->module_id].defaultDRB);////////////////////////////////////////////////////////////////////////////////////////////
 
     // Refresh DRBs
     rrc_rlc_config_asn1_req(ctxt_pP,
@@ -2127,36 +2206,36 @@ rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
 #if defined(Rel10) || defined(Rel14)
                             ,(PMCH_InfoList_r9_t *)NULL
 #endif
-                           );
+                           );////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+    for (i=0; i<radioResourceConfigDedicated->drb_ToAddModList_r13->list.count; i++) {
+      DRB_id   = radioResourceConfigDedicated->drb_ToAddModList_r13->list.array[i]->drb_Identity_r13-1;
 
-    for (i=0; i<radioResourceConfigDedicated->drb_ToAddModList->list.count; i++) {
-      DRB_id   = radioResourceConfigDedicated->drb_ToAddModList->list.array[i]->drb_Identity-1;
-
-      if (UE_rrc_inst[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id]) {
-        memcpy(UE_rrc_inst[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id],
-               radioResourceConfigDedicated->drb_ToAddModList->list.array[i],
-               sizeof(struct DRB_ToAddMod));
+      if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id]) {
+        memcpy(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id],
+               radioResourceConfigDedicated->drb_ToAddModList_r13->list.array[i],
+               sizeof(struct DRB_ToAddModList_NB_r13));
       } else {
-        UE_rrc_inst[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id] = radioResourceConfigDedicated->drb_ToAddModList->list.array[i];
-        rrc_ue_establish_drb(ctxt_pP->module_id,ctxt_pP->frame,eNB_index,radioResourceConfigDedicated->drb_ToAddModList->list.array[i]);
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id] = radioResourceConfigDedicated->drb_ToAddModList_r13->list.array[i];
+       /* rrc_ue_establish_drb(ctxt_pP->module_id,ctxt_pP->frame,eNB_index,radioResourceConfigDedicated->drb_ToAddModList_r13->list.array[i]);*/
         // MAC/PHY Configuration
         LOG_I(RRC, "[FRAME %05d][RRC_UE][MOD %02d][][--- MAC_CONFIG_REQ (DRB %ld eNB %d) --->][MAC_UE][MOD %02d][]\n",
               ctxt_pP->frame, ctxt_pP->module_id,
-              radioResourceConfigDedicated->drb_ToAddModList->list.array[i]->drb_Identity,
+              radioResourceConfigDedicated->drb_ToAddModList_r13->list.array[i]->drb_Identity_r13,
               eNB_index,
               ctxt_pP->module_id);
-        rrc_mac_config_req(ctxt_pP->module_id,0,ENB_FLAG_NO,0,eNB_index,
+       /* rrc_mac_config_req(ctxt_pP->module_id,0,ENB_FLAG_NO,0,eNB_index,
                            (RadioResourceConfigCommonSIB_t *)NULL,
-                           UE_rrc_inst[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],
+                           UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated[eNB_index],
 #if defined(Rel10) || defined(Rel14)
                            (SCellToAddMod_r10_t *)NULL,
                            //struct PhysicalConfigDedicatedSCell_r10 *physicalConfigDedicatedSCell_r10,
 #endif
                            (MeasObjectToAddMod_t **)NULL,
-                           UE_rrc_inst[ctxt_pP->module_id].mac_MainConfig[eNB_index],
-                           *UE_rrc_inst[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id]->logicalChannelIdentity,
-                           UE_rrc_inst[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id]->logicalChannelConfig,
-                           UE_rrc_inst[ctxt_pP->module_id].measGapConfig[eNB_index],
+                           UE_rrc_inst_NB_IoT[ctxt_pP->module_id].mac_MainConfig[eNB_index],
+                           *UE_rrc_inst_NB_IoT[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id]->logicalChannelIdentity,
+                           UE_rrc_inst_NB_IoT[ctxt_pP->module_id].DRB_config[eNB_index][DRB_id]->logicalChannelConfig,
+                           UE_rrc_inst_NB_IoT[ctxt_pP->module_id].measGapConfig[eNB_index],
                            (TDD_Config_t*)NULL,
                            (MobilityControlInfo_t *)NULL,
                            NULL,
@@ -2173,26 +2252,26 @@ rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
 #endif
 #ifdef CBA
                            ,
-                           UE_rrc_inst[ue_mod_idP].num_active_cba_groups, //
-                           UE_rrc_inst[ue_mod_idP].cba_rnti[0]
+                           UE_rrc_inst_NB_IoT[ue_mod_idP].num_active_cba_groups, //
+                           UE_rrc_inst_NB_IoT[ue_mod_idP].cba_rnti[0]
 #endif
-                          );
-
+                          );///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
       }
     }
   }
 
-  UE_rrc_inst[ctxt_pP->module_id].Info[eNB_index].State = RRC_CONNECTED;
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].State = RRC_CONNECTED_NB_IoT;
   LOG_I(RRC,"[UE %d] State = RRC_CONNECTED (eNB %d)\n",ctxt_pP->module_id,eNB_index);
 #if !defined(ENABLE_USE_MME) && defined(OAI_EMU)
 #    ifdef OAI_EMU
-  rrc_eNB_emulation_notify_ue_module_id(
+  rrc_eNB_emulation_notify_ue_module_id_NB_IoT(
     ctxt_pP->module_id,
     ctxt_pP->rnti,
-    UE_rrc_inst[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo.cellIdentity.buf[0],
-    UE_rrc_inst[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo.cellIdentity.buf[1],
-    UE_rrc_inst[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo.cellIdentity.buf[2],
-    UE_rrc_inst[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo.cellIdentity.buf[3]);
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[0],
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[1],
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[2],
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[3]);////////////////////////////////////////////////////////////////////////
 #    endif /* OAI_EMU */
 #endif
 }
@@ -5265,10 +5344,10 @@ int rrc_ue_decode_ccch_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const SRB_I
         // Release T300 timer
         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].T300_active = 0;
         //FIXME:it seems like i never start T300
- /*       rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
+        rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
           ctxt_pP,
           eNB_index,
-          &dl_ccch_msg->message.choice.c1.choice.rrcConnectionSetup.criticalExtensions.choice.c1.choice.rrcConnectionSetup_r8.radioResourceConfigDedicated);*/
+          &dl_ccch_msg->message.choice.c1.choice.rrcConnectionSetup_r13.criticalExtensions.choice.c1.choice.rrcConnectionSetup_r13.radioResourceConfigDedicated_r13);
 
         rrc_set_state (ctxt_pP->module_id, RRC_STATE_CONNECTED_NB_IoT);
         rrc_set_sub_state (ctxt_pP->module_id, RRC_SUB_STATE_CONNECTED_NB_IoT);
