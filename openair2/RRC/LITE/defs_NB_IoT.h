@@ -216,7 +216,7 @@ typedef struct RB_INFO_NB_IoT_s {
 } RB_INFO_NB_IoT;
 
 typedef struct SRB_INFO_NB_IoT_s {
-  uint16_t Srb_id;  //=Lchan_id---> useful for distinguish between SRB1 and SRB1bis?
+  uint16_t Srb_id;  //=Lchan_id---> useful for distinguish between SRB1 and SRB1bis?   
   RRC_BUFFER_NB_IoT Rx_buffer;
   RRC_BUFFER_NB_IoT Tx_buffer;
   //LCHAN_DESC Lchan_desc[2]; no more used
@@ -410,6 +410,7 @@ typedef struct {
 
   SRB_INFO_NB_IoT                          SI;
   SRB_INFO_NB_IoT                          Srb0;
+  SRB_INFO_NB_IoT                          Srb1bis;
 
   uint8_t                           **MCCH_MESSAGE; //  probably not needed , but added to remove errors
   uint8_t                           sizeof_MCCH_MESSAGE[8];// but added to remove errors
@@ -494,7 +495,7 @@ typedef struct UE_RRC_INST_NB_IoT_s {
   
   SRB_INFO_NB_IoT                 Srb0[NB_SIG_CNX_UE];
   SRB_INFO_TABLE_ENTRY_NB_IoT     Srb1[NB_CNX_UE];
-  SRB_INFO_TABLE_ENTRY_NB_IoT     Srb2[NB_CNX_UE];
+  SRB_INFO_TABLE_ENTRY_NB_IoT     Srb1bis[NB_CNX_UE];
   HANDOVER_INFO_UE_NB_IoT         HandoverInfoUe;
 
  MasterInformationBlock_NB_t *mib[NB_CNX_UE];

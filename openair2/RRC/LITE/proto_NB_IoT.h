@@ -424,6 +424,15 @@ int rrc_eNB_decode_dcch_NB_IoT(
   const sdu_size_t             sdu_sizeP
 );
 
+
+/**\brief Entry routine to decode a UL-DCCH-Message-NB.  Invokes PER decoder and parses message.
+   \param ctxt_pP Context
+   \param Rx_sdu Pointer Received Message
+   \param sdu_size Size of incoming SDU*/
+int rrc_ue_decode_dcch_NB_IoT(
+ const protocol_ctxt_t* const ctxt_pP, const SRB_INFO_NB_IoT* const Srb_info, const uint8_t eNB_index 
+);
+
 /**\brief Generate RRCConnectionReestablishmentReject-NB
    \param ctxt_pP       Running context
    \param ue_context_pP UE context

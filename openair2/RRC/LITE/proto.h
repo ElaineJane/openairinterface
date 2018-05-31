@@ -471,5 +471,11 @@ int get_NB_IoT_subframe(void);
 
 int get_NB_IoT_rnti(void);
 
-
+void rrc_eNB_emulation_notify_ue_module_id_NB_IoT(
+  const module_id_t ue_module_idP,
+  const rnti_t      rntiP,
+  const uint8_t     cell_identity_byte0P,
+  const uint8_t     cell_identity_byte1P,
+  const uint8_t     cell_identity_byte2P,
+  const uint8_t     cell_identity_byte3P);
 /*-----------------------------------------------------------*/

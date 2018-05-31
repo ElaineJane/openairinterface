@@ -1182,6 +1182,7 @@ void rrc_eNB_process_RRCConnectionSetupComplete_NB_IoT(
   } else
 #endif
   {
+    printf("[eNB] rrc_eNB_process_RRCConnectionSetupComplete_NB_IoT finished, To send security mode command.\n");
     // RRC loop back (no S1AP), send SecurityModeCommand to UE
     rrc_eNB_generate_SecurityModeCommand_NB_IoT(
       ctxt_pP,
@@ -1249,14 +1250,35 @@ void rrc_eNB_generate_SecurityModeCommand_NB_IoT(
     rrc_eNB_mui_NB_IoT,
     size);
 
-  rrc_data_req_NB_IoT( //to PDCP
+#if defined(ENABLE_ITTI)
+
+    MessageDef                         *message_p;
+
+    message_p = itti_alloc_new_message(TASK_RRC_ENB, RRC_MAC_DCCH_DATA_IND);
+         RRC_MAC_DCCH_DATA_IND (message_p).frame     = get_NB_IoT_frame();
+          RRC_MAC_DCCH_DATA_IND (message_p).sub_frame = get_NB_IoT_subframe();
+          RRC_MAC_DCCH_DATA_IND (message_p).sdu_size  = size;
+          RRC_MAC_DCCH_DATA_IND (message_p).enb_index = 0;
+          RRC_MAC_DCCH_DATA_IND (message_p).rnti      = get_NB_IoT_rnti();
+          memset (RRC_MAC_DCCH_DATA_IND (message_p).sdu, 0, DCCH_SDU_SIZE);
+          memcpy (RRC_MAC_DCCH_DATA_IND (message_p).sdu, buffer,size);
+          
+
+
+    itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, message_p);
+    printf("[UE] RRC_MAC_DCCH_DATA_IND message(RRCConnectionSetupComplete-NB) has been sent to eNB\n");
+
+  #endif
+
+
+ /* rrc_data_req_NB_IoT( //to PDCP
 	       ctxt_pP,
 	       DCCH0_NB_IoT,//MP:through SRB1bis
 	       rrc_eNB_mui_NB_IoT++,
 	       SDU_CONFIRM_NO,
 	       size,
 	       buffer,
-		   PDCP_TRANSMISSION_MODE_TRANSPARENT);
+		   PDCP_TRANSMISSION_MODE_TRANSPARENT);*/
 
 }
 
@@ -2363,12 +2385,12 @@ int rrc_eNB_decode_dcch_NB_IoT(
   ue_context_p = rrc_eNB_get_ue_context_NB_IoT(
                    &eNB_rrc_inst_NB_IoT[ctxt_pP->module_id],
                    ctxt_pP->rnti);
-/*
+
   if (ul_dcch_msg_NB_IoT->message.present == UL_DCCH_MessageType_NB_PR_c1) {
 
     switch (ul_dcch_msg_NB_IoT->message.choice.c1.present) {
     case UL_DCCH_MessageType_NB__c1_PR_NOTHING:   /* No components present */
-      /*break;
+      break;
 
       //no measurement reports
 
@@ -2405,7 +2427,7 @@ int rrc_eNB_decode_dcch_NB_IoT(
 	/*NN: revise the condition */
 
    //MP: RRC_RECONFIGURED_NB_IoT indicate if the default/dedicated bearer has been/not established
-/*
+
         if (ue_context_p->ue_context.Status == RRC_RECONFIGURED_NB_IoT){ // a dedicated bearers has been established
 	  dedicated_DRB = 1;
 	  LOG_I(RRC,
@@ -2460,8 +2482,8 @@ int rrc_eNB_decode_dcch_NB_IoT(
       }
 
       LOG_F(RRC,"\n");
-#endif*/
-/*
+#endif
+
       MSC_LOG_RX_MESSAGE(
         MSC_RRC_ENB,
         MSC_RRC_UE,
@@ -2482,7 +2504,7 @@ int rrc_eNB_decode_dcch_NB_IoT(
 
     case UL_DCCH_MessageType_NB__c1_PR_rrcConnectionSetupComplete_r13:
     	//MP: Ts 36.331 V14.2.1 RRCConnectionSetupComplete is transmitted over SRB1bis (pag 585)
-
+        printf("[eNB]RRC rrcConnectionSetupComplete_r13 message decoded successfully!\n");
 #ifdef RRC_MSG_PRINT
       LOG_F(RRC,"[MSG] RRCConnectionSetupComplete-NB\n");
 
@@ -2531,12 +2553,12 @@ int rrc_eNB_decode_dcch_NB_IoT(
 
       break;
 
-    case UL_DCCH_MessageType_NB__c1_PR_securityModeComplete_r13:*/
+    case UL_DCCH_MessageType_NB__c1_PR_securityModeComplete_r13:
 
     	/* R2-163262 3GPP NB-IOT Ad-hoc Meeting #2
     	 * After receiving the SMC and performing the security activation, the UE shall use the SRB1.
     	 */
-/*
+
       T(T_ENB_RRC_SECURITY_MODE_COMPLETE, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
         T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
 
@@ -2585,7 +2607,7 @@ int rrc_eNB_decode_dcch_NB_IoT(
       break;
 
     case UL_DCCH_MessageType_NB__c1_PR_securityModeFailure_r13:
-*/
+
     	//MP: Security Mode failure should be received over SRB1bis since the security activation fails
     	/*(see R2-163262)
     	The SRB1-bis (no PDCP) is used for SecurityModeCommand and SecurityModeFailure messages,
@@ -2599,7 +2621,7 @@ int rrc_eNB_decode_dcch_NB_IoT(
     	 * 2> continue using the configuration used prior to the reception of the SecurityModeCommand message,
     	 *  i.e. neither apply integrity protection nor ciphering.
     	 * 2> submit the SecurityModeFailure message to lower layers for transmission, upon which the procedure ends
-    	 
+    	 */
 
       T(T_ENB_RRC_SECURITY_MODE_FAILURE, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
         T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
@@ -2704,8 +2726,8 @@ int rrc_eNB_decode_dcch_NB_IoT(
 #ifdef XER_PRINT
       xer_fprint(stdout, &asn_DEF_UL_DCCH_Message_NB, (void *)ul_dcch_msg);
 #endif
-      LOG_I(RRC, "got UE capabilities for UE %x\n", ctxt_pP->rnti);*/
-/*
+      LOG_I(RRC, "got UE capabilities for UE %x\n", ctxt_pP->rnti);
+
 
       //FIXME MP: ueCapabilityInformation different w.r.t LTE --> how to decode it?
       dec_rval = uper_decode(NULL,
@@ -2832,7 +2854,7 @@ int rrc_eNB_decode_dcch_NB_IoT(
           __FILE__, __LINE__);
     return -1;
   }
-*/
+
 }
 
 

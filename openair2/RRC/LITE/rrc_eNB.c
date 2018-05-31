@@ -794,9 +794,9 @@ void rrc_eNB_emulation_notify_ue_module_id_NB_IoT(
                            rntiP
                          );
 
-          if (NULL != ue_context_p) {
+/*          if (NULL != ue_context_p) {
             oai_emulation.info.eNB_ue_local_uid_to_ue_module_id[enb_module_id][ue_context_p->local_uid] = ue_module_idP;
-          }
+          }*/
 
           //return;
         }
@@ -5115,7 +5115,7 @@ void* rrc_enb_task(void* args_p)
   const char                         *msg_name_p;
   instance_t                          instance;
   int                                 result;
-  SRB_INFO                           *srb_info_p;
+  SRB_INFO_NB_IoT                           *srb_info_p;
   int                                 CC_id;
 
   protocol_ctxt_t                     ctxt;
@@ -5161,6 +5161,30 @@ void* rrc_enb_task(void* args_p)
              RRC_MAC_CCCH_DATA_IND(msg_p).sdu_size);
       srb_info_p->Rx_buffer.payload_size = RRC_MAC_CCCH_DATA_IND(msg_p).sdu_size;
       rrc_eNB_decode_ccch_NB_IoT(&ctxt, srb_info_p, CC_id);
+      break;
+
+    case RRC_MAC_DCCH_DATA_IND:
+              printf("[eNB]Uplink DCCH message received!(rrcConnectionSetupComplete-NB received!)\n");
+              PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt,
+                                    instance,
+                                    ENB_FLAG_YES,
+                                    RRC_MAC_DCCH_DATA_IND(msg_p).rnti,
+                                    msg_p->ittiMsgHeader.lte_time.frame,
+                                    msg_p->ittiMsgHeader.lte_time.slot);
+              LOG_I(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Received %s\n",
+                    PROTOCOL_RRC_CTXT_UE_ARGS(&ctxt),
+                    msg_name_p);
+              ctxt.module_id=0;//This is added later ?WHY needed?
+              CC_id = RRC_MAC_DCCH_DATA_IND(msg_p).CC_id;
+              srb_info_p = &eNB_rrc_inst_NB_IoT[instance].carrier[CC_id].Srb1bis;
+              srb_info_p->Srb_id = 1;  //In fact srb1bis
+
+              memcpy(srb_info_p->Rx_buffer.Payload,
+                     RRC_MAC_DCCH_DATA_IND(msg_p).sdu,
+                     RRC_MAC_DCCH_DATA_IND(msg_p).sdu_size);
+              srb_info_p->Rx_buffer.payload_size = RRC_MAC_DCCH_DATA_IND(msg_p).sdu_size;
+              rrc_eNB_decode_dcch_NB_IoT(&ctxt, srb_info_p->Srb_id,srb_info_p->Rx_buffer.Payload, srb_info_p->Rx_buffer.payload_size);
+
       break;
 
       /* Messages from PDCP */

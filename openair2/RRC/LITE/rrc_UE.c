@@ -510,7 +510,7 @@ char openair_rrc_ue_init_NB_IoT( const module_id_t ue_mod_idP, const unsigned ch
   UE_rrc_inst_NB_IoT[ctxt.module_id].Info[eNB_index].UE_index=0xffff;
   UE_rrc_inst_NB_IoT[ctxt.module_id].Srb0[eNB_index].Active=0;
   UE_rrc_inst_NB_IoT[ctxt.module_id].Srb1[eNB_index].Active=0;
-  UE_rrc_inst_NB_IoT[ctxt.module_id].Srb2[eNB_index].Active=0;
+  UE_rrc_inst_NB_IoT[ctxt.module_id].Srb1bis[eNB_index].Active=0;
   UE_rrc_inst_NB_IoT[ctxt.module_id].HandoverInfoUe.measFlag=1;
   UE_rrc_inst_NB_IoT[ctxt.module_id].ciphering_algorithm = CipheringAlgorithm_r12_eea0;
 #if defined(Rel10) || defined(Rel14)
@@ -694,28 +694,52 @@ static void rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT( const protocol_ct
   int   nas_msg_length;
 
 #if defined(ENABLE_ITTI) && defined(ENABLE_USE_MME)
-  nas_msg         = (char*) UE_rrc_inst[ctxt_pP->module_id].initialNasMsg.data;
-  nas_msg_length  = UE_rrc_inst[ctxt_pP->module_id].initialNasMsg.length;
+  nas_msg         = (char*) UE_rrc_inst_NB_IoT[ctxt_pP->module_id].initialNasMsg.data;
+  nas_msg_length  = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].initialNasMsg.length;
 #else
   nas_msg         = nas_attach_req_imsi;
   nas_msg_length  = sizeof(nas_attach_req_imsi);
 #endif
 
-  size = do_RRCConnectionSetupComplete_NB_IoT(ctxt_pP->module_id, buffer, Transaction_id, nas_msg_length, nas_msg);
+  size = do_RRCConnectionSetupComplete_NB_IoT(ctxt_pP->module_id, (uint8_t*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.Payload, Transaction_id, nas_msg_length, nas_msg);
+ UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size = size;
 
   LOG_I(RRC,"[UE %d][RAPROC] Frame %d : Logical Channel UL-DCCH (SRB1), Generating RRCConnectionSetupComplete (bytes%d, eNB %d)\n",
         ctxt_pP->module_id,ctxt_pP->frame, size, eNB_index);
   LOG_D(RLC,
         "[FRAME %05d][RRC_UE][MOD %02d][][--- PDCP_DATA_REQ/%d Bytes (RRCConnectionSetupComplete to eNB %d MUI %d) --->][PDCP][MOD %02d][RB %02d]\n",
         ctxt_pP->frame, ctxt_pP->module_id+NB_eNB_INST, size, eNB_index, rrc_mui, ctxt_pP->module_id+NB_eNB_INST, DCCH);
-  rrc_data_req (
+  //Send ITTI message to PDCP
+  /*rrc_data_req (
     ctxt_pP,
     DCCH,
     rrc_mui++,
     SDU_CONFIRM_NO,
     size,
     buffer,
-    PDCP_TRANSMISSION_MODE_CONTROL);
+    PDCP_TRANSMISSION_MODE_CONTROL);*/
+
+  //Send RRCConnectionSetupComplete-NB to eNB
+    #if defined(ENABLE_ITTI)
+
+    MessageDef                         *message_p;
+
+    message_p = itti_alloc_new_message(TASK_RRC_UE, RRC_MAC_DCCH_DATA_IND);
+         RRC_MAC_DCCH_DATA_IND (message_p).frame     = get_NB_IoT_frame();
+          RRC_MAC_DCCH_DATA_IND (message_p).sub_frame = get_NB_IoT_subframe();
+          RRC_MAC_DCCH_DATA_IND (message_p).sdu_size  = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size;
+          RRC_MAC_DCCH_DATA_IND (message_p).enb_index = 0;
+          RRC_MAC_DCCH_DATA_IND (message_p).rnti      = get_NB_IoT_rnti();
+          memset (RRC_MAC_DCCH_DATA_IND (message_p).sdu, 0, DCCH_SDU_SIZE);
+          memcpy (RRC_MAC_DCCH_DATA_IND (message_p).sdu, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.Payload, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size);
+          
+
+
+    itti_send_msg_to_task(TASK_RRC_ENB, ctxt_pP->instance, message_p);
+    printf("[UE] RRC_MAC_DCCH_DATA_IND message(RRCConnectionSetupComplete-NB) has been sent to eNB\n");
+
+  #endif
+
 }
 
 
@@ -4036,6 +4060,15 @@ static int decode_SIB1_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8
     LOG_I( RRC, "Found Unknown operator (no entry in internal table)\n" );
   }
 
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.size = 4;
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.bits_unused = 4;
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.buf = sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.buf;
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[0] = sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[0];
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[1] = sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[1];
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[2] = sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[2];
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index]->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[3] = sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[3];
+
+
   LOG_I( RRC, "cellAccessRelatedInfo_r13.cellIdentity_r13         : raw:%"PRIu32" decoded:%02x.%02x.%02x.%02x\n",
          BIT_STRING_to_uint32( &sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13 ),
          sib1_nb->cellAccessRelatedInfo_r13.cellIdentity_r13.buf[0],
@@ -5352,10 +5385,10 @@ int rrc_ue_decode_ccch_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const SRB_I
         rrc_set_state (ctxt_pP->module_id, RRC_STATE_CONNECTED_NB_IoT);
         rrc_set_sub_state (ctxt_pP->module_id, RRC_SUB_STATE_CONNECTED_NB_IoT);
         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].rnti = ctxt_pP->rnti;
-/*        rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT(
+       rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT(
           ctxt_pP,
           eNB_index,
-          dl_ccch_msg->message.choice.c1.choice.rrcConnectionSetup.rrc_TransactionIdentifier);*/
+          dl_ccch_msg->message.choice.c1.choice.rrcConnectionSetup_r13.rrc_TransactionIdentifier);
 
         rval = 0;
         break;
@@ -5994,6 +6027,28 @@ void *rrc_ue_task( void *args_p )
                           srb_info_p,
                           RRC_MAC_CCCH_DATA_IND (msg_p).enb_index);
       break;
+
+  case RRC_MAC_DCCH_DATA_IND:
+        LOG_D(RRC, "[UE %d] RNTI %x Received %s: frameP %d, eNB %d\n",
+              ue_mod_id,
+              RRC_MAC_DCCH_DATA_IND (msg_p).rnti,
+              msg_name,
+              RRC_MAC_DCCH_DATA_IND (msg_p).frame,
+              RRC_MAC_DCCH_DATA_IND (msg_p).enb_index);
+
+        srb_info_p = &UE_rrc_inst_NB_IoT[ue_mod_id].Srb1bis[RRC_MAC_DCCH_DATA_IND (msg_p).enb_index].Srb_info;
+        srb_info_p->Srb_id = 3;
+        memcpy (srb_info_p->Rx_buffer.Payload, RRC_MAC_DCCH_DATA_IND (msg_p).sdu,
+                RRC_MAC_DCCH_DATA_IND (msg_p).sdu_size);
+        srb_info_p->Rx_buffer.payload_size = RRC_MAC_DCCH_DATA_IND (msg_p).sdu_size;
+        //      PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt, instance, ENB_FLAG_NO, RRC_MAC_CCCH_DATA_IND (msg_p).rnti, RRC_MAC_CCCH_DATA_IND (msg_p).frame, 0);
+        PROTOCOL_CTXT_SET_BY_MODULE_ID(&ctxt, ue_mod_id, ENB_FLAG_NO, RRC_MAC_DCCH_DATA_IND (msg_p).rnti, RRC_MAC_DCCH_DATA_IND (msg_p).frame, 0, RRC_MAC_DCCH_DATA_IND (msg_p).enb_index);
+
+        printf("[UE]RRC DL CCCH Message received!\n");
+        rrc_ue_decode_dcch_NB_IoT (&ctxt,
+                            srb_info_p,
+                            RRC_MAC_DCCH_DATA_IND (msg_p).enb_index);
+        break;
 
 # if defined(Rel10) || defined(Rel14)
 

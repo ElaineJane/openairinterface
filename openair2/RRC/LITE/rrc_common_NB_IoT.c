@@ -47,6 +47,14 @@
 #include "RRC/LITE/defs_NB_IoT.h"
 //#include "RRC/LITE/vars_NB_IoT.h"
 
+/* NB-IoT */
+#include "UL-CCCH-Message-NB.h"
+#include "UL-DCCH-Message-NB.h"
+#include "DL-CCCH-Message-NB.h"
+#include "DL-DCCH-Message-NB.h"
+#include "T.h"
+#include "msc.h"
+
 #ifdef LOCALIZATION
 #include <sys/time.h>
 #endif
@@ -82,26 +90,26 @@ void rrc_t310_expiration_NB_IoT(
     UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Rx_buffer.payload_size = 0;
     UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.payload_size = 0;
 
-    if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb2[eNB_index].Active == 1) {
+    if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1bis[eNB_index].Active == 1) {
       msg ("[RRC Inst %d] eNB_index %d, Remove RB %d\n ", ctxt_pP->module_id, eNB_index,
-           UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb2[eNB_index].Srb_info.Srb_id);
+           UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1bis[eNB_index].Srb_info.Srb_id);
       rrc_pdcp_config_req (ctxt_pP, // MP
                            SRB_FLAG_YES,
                            CONFIG_ACTION_REMOVE,
-                           UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb2[eNB_index].Srb_info.Srb_id,
+                           UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1bis[eNB_index].Srb_info.Srb_id,
                            0);
 
       rrc_rlc_config_req_NB_IoT(
     		  	  	  	  	        ctxt_pP,
 							                  SRB_FLAG_YES,
 							                  CONFIG_ACTION_REMOVE,
-							                  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb2[eNB_index].Srb_info.Srb_id,
+							                  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1bis[eNB_index].Srb_info.Srb_id,
 							                  Rlc_info_am_NB_IoT);
 
 
-      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb2[eNB_index].Active = 0;
-      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb2[eNB_index].Status = IDLE;
-      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb2[eNB_index].Next_check_frame = 0;
+      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1bis[eNB_index].Active = 0;
+      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1bis[eNB_index].Status = IDLE;
+      UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1bis[eNB_index].Next_check_frame = 0;
     }
   } else { // Restablishment procedure
     LOG_D(RRC, "Timer 310 expired, trying RRCRestablishment ...\n");
@@ -462,4 +470,132 @@ RRC_status_t rrc_rx_tx_NB_IoT(
 }
 
 
+int rrc_ue_decode_dcch_NB_IoT(
+const protocol_ctxt_t* const ctxt_pP, 
+const SRB_INFO_NB_IoT* const Srb_info, 
+const uint8_t eNB_index 
+)
+{
+     asn_dec_rval_t                      dec_rval;
+  DL_DCCH_Message_NB_t                  *dl_dcch_msg_NB_IoT = NULL;
+  UE_Capability_NB_r13_t              *UE_Capability_NB = NULL;
+  int i;
+  struct rrc_eNB_ue_context_NB_IoT_s*        ue_context_p = NULL;
 
+  int dedicated_DRB=0;
+
+  T(T_ENB_RRC_DL_DCCH_DATA_IN, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
+    T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
+
+  if ((Srb_info->Srb_id != 1) && (Srb_info->Srb_id != 3)) {
+    LOG_E(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Received message on SRB%d, should not have ...\n",
+          PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
+          Srb_info->Srb_id);
+  } else {
+    LOG_D(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Received message on SRB%d\n",
+          PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
+          Srb_info->Srb_id);
+  }
+
+  LOG_D(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Decoding UL-DCCH Message-NB\n",
+        PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP));
+  dec_rval = uper_decode(
+               NULL,
+               &asn_DEF_DL_DCCH_Message_NB,
+               (void**)&dl_dcch_msg_NB_IoT,
+               Srb_info->Rx_buffer.Payload,
+               Srb_info->Rx_buffer.payload_size,
+               0,
+               0);
+
+//#if defined(ENABLE_ITTI)
+//#   if defined(DISABLE_ITTI_XER_PRINT)
+
+  
+    for (i = 0; i < Srb_info->Rx_buffer.payload_size; i++) {
+      LOG_T(RRC, "%x.", Srb_info->Rx_buffer.Payload[i]);
+    }
+
+    LOG_T(RRC, "\n");
+  
+
+  if ((dec_rval.code != RC_OK) && (dec_rval.consumed == 0)) {
+    LOG_E(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Failed to decode UL-DCCH (%zu bytes)\n",
+          PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
+          dec_rval.consumed);
+    return -1;
+  }
+
+  ue_context_p = rrc_eNB_get_ue_context_NB_IoT(
+                   &eNB_rrc_inst_NB_IoT[ctxt_pP->module_id],
+                   ctxt_pP->rnti);
+
+  if (dl_dcch_msg_NB_IoT->message.present == DL_DCCH_MessageType_NB_PR_c1) {
+
+    switch (dl_dcch_msg_NB_IoT->message.choice.c1.present) {
+    case DL_DCCH_MessageType_NB__c1_PR_NOTHING:   /* No components present */
+      break;
+
+      //no measurement reports
+
+
+    case DL_DCCH_MessageType_NB__c1_PR_securityModeCommand_r13:
+
+      /* R2-163262 3GPP NB-IOT Ad-hoc Meeting #2
+       * After receiving the SMC and performing the security activation, the UE shall use the SRB1.
+       */
+    printf("[UE] SecurityModeCommand Received\n");
+      T(T_ENB_RRC_SECURITY_MODE_COMPLETE, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
+        T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
+
+#ifdef RRC_MSG_PRINT
+      LOG_F(RRC,"[MSG] RRC SecurityModeComplete-NB\n");
+
+/*      for (i = 0; i < Srb_info->Rx_buffer.payload_size; i++) eNB->pusch_vars[UE_id]{
+        LOG_F(RRC,"%02x ", ((uint8_t*)Srb_info->Rx_buffer.Payload)[i]);
+      }*/
+
+      LOG_F(RRC,"\n");
+#endif
+
+      
+
+      LOG_I(RRC,
+            PROTOCOL_RRC_CTXT_UE_FMT" received securityModeComplete-NB on UL-DCCH %d from UE\n",
+            PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
+            DCCH0_NB_IoT);
+      LOG_D(RRC,
+            PROTOCOL_RRC_CTXT_UE_FMT" RLC RB %02d --- RLC_DATA_IND %d bytes "
+            "(securityModeComplete-NB) ---> RRC_eNB\n",
+            PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
+            DCCH0_NB_IoT,//through SRB1bis
+            Srb_info->Rx_buffer.payload_size);
+#ifdef XER_PRINT
+      xer_fprint(stdout, &asn_DEF_DL_DCCH_Message_NB, (void *)dl_dcch_msg_NB_IoT);
+#endif
+
+
+      //rrc_ue_generate_SecurityModeComplete_NB_IoT(ctxt_pP, ue_context_p);
+
+      break;
+
+
+    default:
+
+      T(T_ENB_RRC_UNKNOW_MESSAGE, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
+        T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
+
+      LOG_E(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Unknown message %s:%u\n",
+            PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
+            __FILE__, __LINE__);
+      return -1;
+    }
+
+    return 0;
+  } else {
+    LOG_E(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Unknown error %s:%u\n",
+          PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
+          __FILE__, __LINE__);
+    return -1;
+  }
+}
