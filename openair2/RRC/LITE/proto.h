@@ -98,6 +98,8 @@ rrc_ue_generate_RRCConnectionRequest(
   const uint8_t                eNB_index
 );
 
+
+
 /** \brief process the received rrcConnectionReconfiguration message at UE
     \param ctxt_pP Running context
     \param *rrcConnectionReconfiguration pointer to the sturcture

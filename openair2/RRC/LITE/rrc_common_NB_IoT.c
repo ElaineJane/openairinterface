@@ -71,6 +71,8 @@ extern mui_t rrc_eNB_mui;
 //binary_search_float
 
 
+void rrc_ue_process_securityModeCommand_NB_IoT( const protocol_ctxt_t* const ctxt_pP, SecurityModeCommand_t* const securityModeCommand, const uint8_t eNB_index );
+void rrc_ue_process_RRCConnectionResume_NB_IoT( const protocol_ctxt_t* const ctxt_pP, RRCConnectionResume_NB_t* const rrcConnectionResume, const uint8_t eNB_index );
 //--------------
 //MP: Most probably is not needed (old code)
 //-----------------------------------------------------------------------------
@@ -479,9 +481,10 @@ const uint8_t eNB_index
      asn_dec_rval_t                      dec_rval;
   DL_DCCH_Message_NB_t                  *dl_dcch_msg_NB_IoT = NULL;
   UE_Capability_NB_r13_t              *UE_Capability_NB = NULL;
+  ResumeIdentity_r13_t              *resumeId = NULL;
   int i;
   struct rrc_eNB_ue_context_NB_IoT_s*        ue_context_p = NULL;
-
+  uint32_t id[2];
   int dedicated_DRB=0;
 
   T(T_ENB_RRC_DL_DCCH_DATA_IN, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
@@ -497,14 +500,15 @@ const uint8_t eNB_index
           Srb_info->Srb_id);
   }
 
-  LOG_D(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Decoding UL-DCCH Message-NB\n",
+  LOG_D(RRC, PROTOCOL_RRC_CTXT_UE_FMT" Decoding DL-DCCH Message-NB\n",
         PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP));
   dec_rval = uper_decode(
                NULL,
                &asn_DEF_DL_DCCH_Message_NB,
                (void**)&dl_dcch_msg_NB_IoT,
-               Srb_info->Rx_buffer.Payload,
-               Srb_info->Rx_buffer.payload_size,
+               (uint8_t*)Srb_info->Rx_buffer.Payload,
+               1000,
+              //Srb_info->Rx_buffer.payload_size,
                0,
                0);
 
@@ -538,6 +542,42 @@ const uint8_t eNB_index
 
       //no measurement reports
 
+    case DL_DCCH_MessageType_NB__c1_PR_rrcConnectionRelease_r13:
+      printf("[UE] RRCConnectionRelease-NB message received\n" );
+      if(dl_dcch_msg_NB_IoT->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.releaseCause_r13 == ReleaseCause_NB_r13_rrc_Suspend)
+      {
+
+        printf("[UE]eNB request to suspend RRC Connection\n");
+        resumeId = dl_dcch_msg_NB_IoT->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13;
+        id[0]=resumeId->buf[0];
+        id[1] = (resumeId->buf[1]<<24) | (resumeId->buf[1]<<16) | (resumeId->buf[1]<<8) | (resumeId->buf[1]);
+       printf("ResumeId=%02x%08x\n", id[0], id[1]);
+       rrc_ue_generate_RRCConnectionResumeRequest_NB_IoT(ctxt_pP, eNB_index,resumeId);
+      }else
+      {
+        printf("[UE] eNB requests to release RRC Connection\n");
+         /*#if defined(ENABLE_ITTI)
+              msg_p = itti_alloc_new_message(TASK_RRC_UE, NAS_CONN_RELEASE_IND);
+
+              if ((dl_dcch_msg->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.present
+                   == RRCConnectionRelease__criticalExtensions_PR_c1)
+                  && (dl_dcch_msg->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.choice.c1.present
+                      == RRCConnectionRelease__criticalExtensions__c1_PR_rrcConnectionRelease_r8)) {
+                NAS_CONN_RELEASE_IND(msg_p).cause =
+                  dl_dcch_msg->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.releaseCause;
+              }
+
+              itti_send_msg_to_task(TASK_NAS_UE, ctxt_pP->instance, msg_p);
+        #if ENABLE_RAL
+                msg_p = itti_alloc_new_message(TASK_RRC_UE, RRC_RAL_CONNECTION_RELEASE_IND);
+                RRC_RAL_CONNECTION_RELEASE_IND(msg_p).ue_id = ctxt_pP->module_id;
+                itti_send_msg_to_task(TASK_RAL_UE, ctxt_pP->instance, msg_p);
+        #endif
+      #endif*/
+      }
+      
+     
+      break;
 
     case DL_DCCH_MessageType_NB__c1_PR_securityModeCommand_r13:
 
@@ -575,8 +615,21 @@ const uint8_t eNB_index
 #endif
 
 
-      //rrc_ue_generate_SecurityModeComplete_NB_IoT(ctxt_pP, ue_context_p);
+     rrc_ue_process_securityModeCommand_NB_IoT(ctxt_pP, &dl_dcch_msg_NB_IoT->message.choice.c1.choice.securityModeCommand_r13, eNB_index);
 
+      break;
+
+    case DL_DCCH_MessageType_NB__c1_PR_rrcConnectionReconfiguration_r13:
+      printf("[UE] RRC Connection Reconfiguration Message received\n" );
+      //Process Function
+      
+
+      break;
+
+   case DL_DCCH_MessageType_NB__c1_PR_rrcConnectionResume_r13:
+      printf("[UE] RRC Connection Resume Message received\n" );
+      //Process Function
+      rrc_ue_process_RRCConnectionResume_NB_IoT(ctxt_pP, &dl_dcch_msg_NB_IoT->message.choice.c1.choice.rrcConnectionResume_r13, eNB_index);
       break;
 
 
@@ -597,5 +650,241 @@ const uint8_t eNB_index
           PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
           __FILE__, __LINE__);
     return -1;
+  }
+}
+
+void rrc_ue_process_RRCConnectionResume_NB_IoT( const protocol_ctxt_t* const ctxt_pP, RRCConnectionResume_NB_t* const rrcConnectionResume, const uint8_t eNB_index )
+{
+  //Resume UE context and radio bearer
+      LOG_I(RRC,
+              "[UE%d][RAPROC] Frame %d : Logical Channel DL-DCCH (SRB1), Received RRCConnectionResume\n",
+              ctxt_pP->module_id,
+              ctxt_pP->frame);
+        // Get configuration
+        printf("[UE]RRCConnectionResume Message Received\n");
+        // Release T300 timer 
+        //not sure if needed
+        //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].T300_active = 0;
+        //FIXME:it seems like i never start T300
+        rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
+          ctxt_pP,
+          eNB_index,
+          &rrcConnectionResume->criticalExtensions.choice.c1.choice.rrcConnectionResume_r13.radioResourceConfigDedicated_r13);
+
+        /*rrc_set_state_NB_IoT (ctxt_pP->module_id, RRC_STATE_CONNECTED_NB_IoT);
+        rrc_set_sub_state_NB_IoT (ctxt_pP->module_id, RRC_SUB_STATE_CONNECTED_NB_IoT);
+        //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].rnti = ctxt_pP->rnti;
+  //generate RRCConnectionResumeComplete
+       rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT(ctxt_pP,
+          eNB_index,
+          rrcConnectionResume->rrc_TransactionIdentifier);*/
+
+}
+
+void rrc_ue_process_securityModeCommand_NB_IoT( const protocol_ctxt_t* const ctxt_pP, SecurityModeCommand_t* const securityModeCommand, const uint8_t eNB_index )
+{
+  asn_enc_rval_t enc_rval;
+
+  UL_DCCH_Message_NB_t ul_dcch_msg;
+  //SecurityModeCommand_t securityModeCommand;
+  uint8_t buffer[200];
+  int i, securityMode;
+
+  LOG_I(RRC,"[UE %d] Frame %d: Receiving from SRB1 (DL-DCCH), Processing securityModeCommand (eNB %d)\n",
+        ctxt_pP->module_id,ctxt_pP->frame,eNB_index);
+
+  switch (securityModeCommand->criticalExtensions.choice.c1.choice.securityModeCommand_r8.securityConfigSMC.securityAlgorithmConfig.cipheringAlgorithm) {
+  case CipheringAlgorithm_r12_eea0:
+    LOG_I(RRC,"[UE %d] Security algorithm is set to eea0\n",
+          ctxt_pP->module_id);
+    securityMode= CipheringAlgorithm_r12_eea0;
+    break;
+
+  case CipheringAlgorithm_r12_eea1:
+    LOG_I(RRC,"[UE %d] Security algorithm is set to eea1\n",ctxt_pP->module_id);
+    securityMode= CipheringAlgorithm_r12_eea1;
+    break;
+
+  case CipheringAlgorithm_r12_eea2:
+    LOG_I(RRC,"[UE %d] Security algorithm is set to eea2\n",
+          ctxt_pP->module_id);
+    securityMode = CipheringAlgorithm_r12_eea2;
+    break;
+
+  default:
+    LOG_I(RRC,"[UE %d] Security algorithm is set to none\n",ctxt_pP->module_id);
+    securityMode = CipheringAlgorithm_r12_spare1;
+    break;
+  }
+
+  switch (securityModeCommand->criticalExtensions.choice.c1.choice.securityModeCommand_r8.securityConfigSMC.securityAlgorithmConfig.integrityProtAlgorithm) {
+  case SecurityAlgorithmConfig__integrityProtAlgorithm_eia1:
+    LOG_I(RRC,"[UE %d] Integrity protection algorithm is set to eia1\n",ctxt_pP->module_id);
+    securityMode |= 1 << 5;
+    break;
+
+  case SecurityAlgorithmConfig__integrityProtAlgorithm_eia2:
+    LOG_I(RRC,"[UE %d] Integrity protection algorithm is set to eia2\n",ctxt_pP->module_id);
+    securityMode |= 1 << 6;
+    break;
+
+  default:
+    LOG_I(RRC,"[UE %d] Integrity protection algorithm is set to none\n",ctxt_pP->module_id);
+    securityMode |= 0x70 ;
+    break;
+  }
+
+  LOG_D(RRC,"[UE %d] security mode is %x \n",ctxt_pP->module_id, securityMode);
+
+  /* Store the parameters received */
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].ciphering_algorithm =
+    securityModeCommand->criticalExtensions.choice.c1.choice.securityModeCommand_r8.securityConfigSMC.securityAlgorithmConfig.cipheringAlgorithm;
+  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].integrity_algorithm =
+    securityModeCommand->criticalExtensions.choice.c1.choice.securityModeCommand_r8.securityConfigSMC.securityAlgorithmConfig.integrityProtAlgorithm;
+
+  memset((void *)&ul_dcch_msg,0,sizeof(UL_DCCH_Message_NB_t));
+  //memset((void *)&SecurityModeCommand,0,sizeof(SecurityModeCommand_t));
+
+  ul_dcch_msg.message.present           = UL_DCCH_MessageType_NB_PR_c1;
+
+  if (securityMode >= NO_SECURITY_MODE) {
+    ul_dcch_msg.message.choice.c1.present = UL_DCCH_MessageType_NB__c1_PR_securityModeComplete_r13;
+  } else {
+    ul_dcch_msg.message.choice.c1.present = UL_DCCH_MessageType_NB__c1_PR_securityModeFailure_r13;
+  }
+
+
+#if defined(ENABLE_SECURITY)
+  uint8_t *kRRCenc = NULL;
+  uint8_t *kUPenc = NULL;
+  uint8_t *kRRCint = NULL;
+  pdcp_t *pdcp_p = NULL;
+  hash_key_t key = HASHTABLE_NOT_A_KEY_VALUE;
+  hashtable_rc_t h_rc;
+
+  key = PDCP_COLL_KEY_VALUE(ctxt_pP->module_id, ctxt_pP->rnti,
+      ctxt_pP->enb_flag, DCCH, SRB_FLAG_YES);
+  h_rc = hashtable_get(pdcp_coll_p, key, (void**) &pdcp_p);
+
+  if (h_rc == HASH_TABLE_OK) {
+    LOG_D(RRC, "PDCP_COLL_KEY_VALUE() returns valid key = %ld\n", key);
+
+    LOG_D(RRC, "driving kRRCenc, kRRCint and kUPenc from KeNB="
+        "%02x%02x%02x%02x"
+        "%02x%02x%02x%02x"
+        "%02x%02x%02x%02x"
+        "%02x%02x%02x%02x"
+        "%02x%02x%02x%02x"
+        "%02x%02x%02x%02x"
+        "%02x%02x%02x%02x"
+        "%02x%02x%02x%02x\n",
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[0],  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[1],  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[2],  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[3],
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[4],  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[5],  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[6],  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[7],
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[8],  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[9],  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[10], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[11],
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[12], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[13], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[14], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[15],
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[16], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[17], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[18], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[19],
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[20], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[21], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[22], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[23],
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[24], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[25], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[26], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[27],
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[28], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[29], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[30], UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb[31]);
+
+    derive_key_rrc_enc(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].ciphering_algorithm,
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb, &kRRCenc);
+    derive_key_rrc_int(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].integrity_algorithm,
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb, &kRRCint);
+    derive_key_up_enc(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].ciphering_algorithm,
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].kenb, &kUPenc);
+
+    if (securityMode != 0xff) {
+      pdcp_config_set_security(ctxt_pP, pdcp_p, 0, 0,
+          UE_rrc_inst_NB_IoT[ctxt_pP->module_id].ciphering_algorithm
+              | (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].integrity_algorithm << 4),
+          kRRCenc, kRRCint, kUPenc);
+    } else {
+      LOG_W(RRC, "skipped pdcp_config_set_security() as securityMode == 0x%02x",
+          securityMode);
+    }
+  } else {
+    LOG_W(RRC, "Could not get PDCP instance where key=0x%ld\n", key);
+  }
+
+#endif //#if defined(ENABLE_SECURITY)
+
+  if (securityModeCommand->criticalExtensions.present == SecurityModeCommand__criticalExtensions_PR_c1) {
+    if (securityModeCommand->criticalExtensions.choice.c1.present == SecurityModeCommand__criticalExtensions__c1_PR_securityModeCommand_r8) {
+
+      ul_dcch_msg.message.choice.c1.choice.securityModeComplete_r13.rrc_TransactionIdentifier = securityModeCommand->rrc_TransactionIdentifier;
+      ul_dcch_msg.message.choice.c1.choice.securityModeComplete_r13.criticalExtensions.present = SecurityModeCommand__criticalExtensions_PR_c1;
+      ul_dcch_msg.message.choice.c1.choice.securityModeComplete_r13.criticalExtensions.choice.securityModeComplete_r8.nonCriticalExtension =NULL;
+
+      LOG_I(RRC,"[UE %d] Frame %d: Receiving from SRB1 (DL-DCCH), encoding securityModeComplete (eNB %d)\n",
+            ctxt_pP->module_id,ctxt_pP->frame,eNB_index);
+
+      enc_rval = uper_encode_to_buffer(&asn_DEF_UL_DCCH_Message_NB,
+                                       (void*)&ul_dcch_msg,
+                                       buffer,
+                                       100);
+      AssertFatal (enc_rval.encoded > 0, "ASN1 message encoding failed (%s, %jd)!\n",
+                   enc_rval.failed_type->name, enc_rval.encoded);
+
+#ifdef XER_PRINT
+      xer_fprint(stdout, &asn_DEF_UL_DCCH_Message_NB, (void*)&ul_dcch_msg);
+#endif
+#if defined(ENABLE_ITTI)
+
+    MessageDef                         *message_p;
+
+    message_p = itti_alloc_new_message(TASK_RRC_UE, RRC_MAC_DCCH_DATA_IND);
+         RRC_MAC_DCCH_DATA_IND (message_p).frame     = get_NB_IoT_frame();
+          RRC_MAC_DCCH_DATA_IND (message_p).sub_frame = get_NB_IoT_subframe();
+          RRC_MAC_DCCH_DATA_IND (message_p).sdu_size  = enc_rval.encoded;
+          RRC_MAC_DCCH_DATA_IND (message_p).enb_index = 0;
+          RRC_MAC_DCCH_DATA_IND (message_p).rnti      = get_NB_IoT_rnti();
+          memset (RRC_MAC_DCCH_DATA_IND (message_p).sdu, 0, DCCH_SDU_SIZE);
+          memcpy (RRC_MAC_DCCH_DATA_IND (message_p).sdu, buffer,enc_rval.encoded);
+          
+
+
+    itti_send_msg_to_task(TASK_RRC_ENB, ctxt_pP->instance, message_p);
+    printf("[UE] RRC_MAC_DCCH_DATA_IND message(SecurityModeComplete) has been sent to eNB\n");
+
+  #endif
+
+/*#if defined(ENABLE_ITTI)
+# if !defined(DISABLE_XER_SPRINT)
+      {
+        char        message_string[20000];
+        size_t      message_string_size;
+
+        if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_UL_DCCH_Message_NB, (void *) &ul_dcch_msg)) > 0) {
+          MessageDef *msg_p;
+
+          msg_p = itti_alloc_new_message_sized (TASK_RRC_UE, RRC_UL_DCCH, message_string_size + sizeof (IttiMsgText));
+          msg_p->ittiMsg.rrc_ul_dcch.size = message_string_size;
+          memcpy(&msg_p->ittiMsg.rrc_ul_dcch.text, message_string, message_string_size);
+
+          itti_send_msg_to_task(TASK_UNKNOWN, ctxt_pP->instance, msg_p);
+        }
+      }
+# endif
+#endif*/
+
+#ifdef USER_MODE
+      LOG_D(RRC, "securityModeComplete Encoded %zd bits (%zd bytes)\n", enc_rval.encoded, (enc_rval.encoded+7)/8);
+#endif
+
+      for (i = 0; i < (enc_rval.encoded + 7) / 8; i++) {
+        LOG_T(RRC, "%02x.", buffer[i]);
+      }
+
+      LOG_T(RRC, "\n");
+     /* rrc_data_req (
+        ctxt_pP,
+        DCCH,
+        rrc_mui++,
+        SDU_CONFIRM_NO,
+        (enc_rval.encoded + 7) / 8,
+        buffer,
+        PDCP_TRANSMISSION_MODE_CONTROL);*/
+    }
   }
 }

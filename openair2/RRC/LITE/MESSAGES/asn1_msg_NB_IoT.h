@@ -111,6 +111,16 @@ routine only generates an mo-data establishment cause.
 uint8_t do_RRCConnectionRequest_NB_IoT(uint8_t Mod_id, uint8_t *buffer,uint8_t *rv);
 
 
+/**(UE-SIDE)
+\brief Generate an RRCConnectionRequest-NB UL-CCCH-Message (UE) based on random string or S-TMSI.  This
+routine only generates an mo-data establishment cause.
+@param buffer Pointer to PER-encoded ASN.1 description of UL-DCCH-Message PDU
+@param rv 5 byte random string or S-TMSI
+@param Mod_id
+@returns Size of encoded bit stream in bytes*/
+
+uint8_t do_RRCConnectionResumeRequest_NB_IoT(uint8_t Mod_id, uint8_t *buffer,uint8_t *rv);
+
 /**(UE -SIDE)
 \brief Generate an RRCConnectionSetupComplete-NB UL-DCCH-Message (UE)
 @param Mod_id
@@ -161,6 +171,26 @@ uint8_t do_RRCConnectionSetup_NB_IoT(
   struct PhysicalConfigDedicated_NB_r13** physicalConfigDedicated_NB_IoT //in order to be configured--> stanno puntando alla physicalConfigDedicated dell ue_context
 );
 
+
+/**
+\brief Generate an RRCConnectionSetup-NB DL-CCCH-Message (eNB).  This routine configures SRB_ToAddMod (SRB1/SRB1bis-NB) and
+PhysicalConfigDedicated-NB IEs.
+@param ctxt_pP Running context
+@param ue_context_pP UE context
+@param CC_id         Component Carrier ID
+@param buffer Pointer to PER-encoded ASN.1 description of DL-CCCH-Message PDU
+@param transmission_mode Transmission mode for UE (1-9)
+@param UE_id UE index for this message
+@param Transaction_id Transaction_ID for this message
+@param SRB_configList Pointer (returned) to SRB1_config/SRB1bis_config(later) IEs for this UE
+@param physicalConfigDedicated_NB Pointer (returned) to PhysicalConfigDedicated-NB IE for this UE
+@returns Size of encoded bit stream in bytes*/
+
+uint8_t do_RRCConnectionResume_NB_IoT(
+  const protocol_ctxt_t*        const ctxt_pP,
+    uint8_t* const buffer,
+    uint8_t                             Transaction_id
+    );
 
 /**
  * For which SRB is used in NB-IoT??

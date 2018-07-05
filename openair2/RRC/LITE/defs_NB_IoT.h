@@ -411,6 +411,7 @@ typedef struct {
   SRB_INFO_NB_IoT                          SI;
   SRB_INFO_NB_IoT                          Srb0;
   SRB_INFO_NB_IoT                          Srb1bis;
+  SRB_INFO_TABLE_ENTRY_NB_IoT               Srb1;
 
   uint8_t                           **MCCH_MESSAGE; //  probably not needed , but added to remove errors
   uint8_t                           sizeof_MCCH_MESSAGE[8];// but added to remove errors

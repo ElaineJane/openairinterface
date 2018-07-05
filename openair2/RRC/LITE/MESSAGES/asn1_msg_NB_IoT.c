@@ -1012,6 +1012,57 @@ uint8_t do_RRCConnectionSetup_NB_IoT(
  return((enc_rval.encoded+7)/8);
 }
 
+/*do_RRCConnectionResume_NB_IoT--> */
+uint8_t do_RRCConnectionResume_NB_IoT(
+  const protocol_ctxt_t*        const ctxt_pP,
+    uint8_t* const buffer,
+    uint8_t                             Transaction_id)
+
+{
+
+  asn_enc_rval_t enc_rval;
+  uint8_t ecause=0;
+
+  
+  DL_DCCH_Message_NB_t dl_dcch_msg_NB_IoT;
+  RRCConnectionResume_NB_t *rrcConnectionResume_NB;
+
+
+  memset(&dl_dcch_msg_NB_IoT,0,sizeof(DL_DCCH_Message_NB_t));
+
+  dl_dcch_msg_NB_IoT.message.present           = DL_DCCH_MessageType_NB_PR_c1;
+  dl_dcch_msg_NB_IoT.message.choice.c1.present = DL_DCCH_MessageType_NB__c1_PR_rrcConnectionResume_r13;
+  rrcConnectionResume_NB          = &dl_dcch_msg_NB_IoT.message.choice.c1.choice.rrcConnectionResume_r13;
+
+  // RRCConnectionReconfiguration
+  rrcConnectionResume_NB->rrc_TransactionIdentifier = Transaction_id;
+  rrcConnectionResume_NB->criticalExtensions.present = RRCConnectionResume_NB__criticalExtensions_PR_c1;
+  rrcConnectionResume_NB->criticalExtensions.choice.c1.present =RRCConnectionResume_NB__criticalExtensions__c1_PR_rrcConnectionResume_r13 ;
+
+
+
+  rrcConnectionResume_NB->criticalExtensions.choice.c1.choice.rrcConnectionResume_r13.nextHopChainingCount_r13 = 0;
+
+
+#ifdef XER_PRINT
+ xer_fprint(stdout, &asn_DEF_DL_DCCH_Message_NB, (void*)&dl_dcch_msg_NB_IoT);
+#endif
+ enc_rval = uper_encode_to_buffer(&asn_DEF_DL_DCCH_Message_NB,
+                                  (void*)&dl_dcch_msg_NB_IoT,
+                                  buffer,
+                                  100);
+ AssertFatal (enc_rval.encoded > 0, "ASN1 message encoding failed (%s, %lu)!\n",
+              enc_rval.failed_type->name, enc_rval.encoded);
+
+
+#ifdef USER_MODE
+ LOG_D(RRC,"RRCConnectionResume-NB Encoded %d bits (%d bytes), ecause %d\n",
+       enc_rval.encoded,(enc_rval.encoded+7)/8,ecause);
+#endif
+
+ return((enc_rval.encoded+7)/8);
+}
+
 /*do_SecurityModeCommand - exactly the same as previous implementation*/
 uint8_t do_SecurityModeCommand_NB_IoT(
   const protocol_ctxt_t* const ctxt_pP,
@@ -1137,7 +1188,7 @@ uint8_t do_UECapabilityEnquiry_NB_IoT(
  * including any associated dedicated NAS information.*/
 uint16_t do_RRCConnectionReconfiguration_NB_IoT(
   const protocol_ctxt_t*        const ctxt_pP,
-    uint8_t                            *buffer,
+    uint8_t* const buffer,
     uint8_t                             Transaction_id,
     SRB_ToAddModList_NB_r13_t          *SRB1_list_NB, //SRB_ConfigList2 (default)--> only SRB1
     DRB_ToAddModList_NB_r13_t          *DRB_list_NB_IoT, //DRB_ConfigList (default)
@@ -1207,6 +1258,7 @@ uint16_t do_RRCConnectionReconfiguration_NB_IoT(
 #ifdef XER_PRINT
   xer_fprint(stdout,&asn_DEF_DL_DCCH_Message_NB,(void*)&dl_dcch_msg_NB_IoT);
 #endif
+
 
 //#if defined(ENABLE_ITTI)
 //# if !defined(DISABLE_XER_SPRINT)...
@@ -1507,13 +1559,78 @@ uint8_t do_RRCConnectionRelease_NB_IoT(
   return((enc_rval.encoded+7)/8);
 }
 
+uint8_t do_RRCConnectionSuspend_NB_IoT(
+  uint8_t                             Mod_id,
+  uint8_t                            *buffer,
+ const uint8_t                             Transaction_id)
+{
+
+  asn_enc_rval_t enc_rval;
+  uint8_t resumeidbuf[5];
+  DL_DCCH_Message_NB_t dl_dcch_msg_NB_IoT;
+  RRCConnectionRelease_NB_t *rrcConnectionRelease_NB_IoT;
+ ResumeIdentity_r13_t *resumeId = CALLOC(1,sizeof(ResumeIdentity_r13_t));
+
+  int i = 0;
+  for (i=0;i<5;i++)
+  {
+    resumeidbuf[i]=0x11+i;
+  }
+
+  resumeId->bits_unused=0;
+  resumeId->size = 5;
+  resumeId->buf = MALLOC(5);
+  resumeId->buf[0] = 0x01;
+  resumeId->buf[1] = 0x01;
+  resumeId->buf[2] = 0x01;
+  resumeId->buf[3] = 0x01;
+  resumeId->buf[4] = 0x01;
+
+
+  memset(&dl_dcch_msg_NB_IoT,0,sizeof(DL_DCCH_Message_NB_t));
+
+  dl_dcch_msg_NB_IoT.message.present           = DL_DCCH_MessageType_NB_PR_c1;
+  dl_dcch_msg_NB_IoT.message.choice.c1.present = DL_DCCH_MessageType_NB__c1_PR_rrcConnectionRelease_r13;
+  rrcConnectionRelease_NB_IoT                  = &dl_dcch_msg_NB_IoT.message.choice.c1.choice.rrcConnectionRelease_r13;
+
+  // RRCConnectionRelease
+  rrcConnectionRelease_NB_IoT->rrc_TransactionIdentifier = Transaction_id;
+  rrcConnectionRelease_NB_IoT->criticalExtensions.present = RRCConnectionRelease_NB__criticalExtensions_PR_c1;
+  rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.present =RRCConnectionRelease_NB__criticalExtensions__c1_PR_rrcConnectionRelease_r13 ;
+
+  rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.releaseCause_r13 = ReleaseCause_NB_r13_rrc_Suspend;
+
+rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13 = resumeId;
+  /*rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13.size = 5;
+  rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13.bits_unused = 0;
+  rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13.buf = resumeidbuf;
+  rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13->buf[0] = resumeidbuf[0];
+  rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13->buf[1] = resumeidbuf[1];
+ rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13->buf[2] = resumeidbuf[2];
+ rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13->buf[3] = resumeidbuf[3];
+ rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13->buf[4] = resumeidbuf[4];*/
+  rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.redirectedCarrierInfo_r13 = NULL;
+  rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.extendedWaitTime_r13 = NULL;
+
+  //Why allocate memory for non critical extension?
+  rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.nonCriticalExtension=CALLOC(1,
+      sizeof(*rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.nonCriticalExtension));
+
+  enc_rval = uper_encode_to_buffer(&asn_DEF_DL_DCCH_Message_NB,
+                                   (void*)&dl_dcch_msg_NB_IoT,
+                                   buffer,
+                                   RRC_BUF_SIZE);//check
+
+  return((enc_rval.encoded+7)/8);
+}
+
 uint8_t do_RRCConnectionRequest_NB_IoT(uint8_t Mod_id, uint8_t *buffer,uint8_t *rv)
 {
   printf("This is in Function: do_RRCConnectionRequest_NB_IoT()\n");
 
   asn_enc_rval_t enc_rval;
-  uint8_t buf[5],buf2[3];
-  uint8_t ecause=0;
+uint8_t buf[5],buf2[3];
+uint8_t ecause=0;
  buf2[0]=0x00;
  buf2[1]=0x00;
  buf2[2]=0x00;
@@ -1595,6 +1712,93 @@ uint8_t do_RRCConnectionRequest_NB_IoT(uint8_t Mod_id, uint8_t *buffer,uint8_t *
 
 #ifdef USER_MODE
   LOG_D(RRC,"[UE] RRCConnectionRequest Encoded %d bits (%d bytes), ecause %d\n",enc_rval.encoded,(enc_rval.encoded+7)/8,ecause);
+#endif
+
+  return((enc_rval.encoded+7)/8);
+}
+
+
+uint8_t do_RRCConnectionResumeRequest_NB_IoT(uint8_t Mod_id, uint8_t *buffer,ResumeIdentity_r13_t* resumeId)
+{
+  printf("This is in Function: do_RRCConnectionResumeRequest_NB_IoT()\n");
+
+  asn_enc_rval_t enc_rval;
+uint8_t buf[5],buf2[2],shortmac[2];
+uint8_t ecause=0;
+ buf2[0]=0x00;
+ buf2[1]=0x00;
+ shortmac[0] = 0x5a;
+ shortmac[1] = 0x5a;
+
+
+  UL_CCCH_Message_NB_t ul_ccch_msg;
+
+  RRCConnectionResumeRequest_NB_t *rrcConnectionResumeRequest;
+
+  memset((void *)&ul_ccch_msg,0,sizeof(UL_CCCH_Message_NB_t));
+
+  ul_ccch_msg.message.present           = UL_CCCH_MessageType_NB_PR_c1;
+  ul_ccch_msg.message.choice.c1.present = UL_CCCH_MessageType_NB__c1_PR_rrcConnectionResumeRequest_r13;
+  rrcConnectionResumeRequest          = &ul_ccch_msg.message.choice.c1.choice.rrcConnectionResumeRequest_r13;
+
+  rrcConnectionResumeRequest->criticalExtensions.present = RRCConnectionResumeRequest_NB__criticalExtensions_PR_rrcConnectionResumeRequest_r13;
+  
+
+//Config Resume ID
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.resumeID_r13 = *resumeId;
+/*    rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.resumeID_r13.size = 5;
+    rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.resumeID_r13.bits_unused=0;
+    rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.resumeID_r13.buf = resumeId->buf;
+    rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.resumeID_r13.buf[0] = resumeId->buf[0];
+    rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.resumeID_r13.buf[1] = resumeId->bufbuf[1];
+    rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.resumeID_r13.buf[2] = resumeId->bufbuf[2];
+    rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.resumeID_r13.buf[3] = resumeId->bufbuf[3];
+    rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.resumeID_r13.buf[4] = resumeId->bufbuf[4];*/
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.shortResumeMAC_I_r13.size = 2;
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.shortResumeMAC_I_r13.bits_unused = 0;
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.shortResumeMAC_I_r13.buf = shortmac;
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.shortResumeMAC_I_r13.buf[0] = shortmac[0];
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.shortResumeMAC_I_r13.buf[1] = shortmac[1];
+
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.resumeCause_r13 = EstablishmentCause_NB_r13_mo_Signalling; //EstablishmentCause_mo_Data;
+  
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.spare.size=2;
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.spare.bits_unused = 7;
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.spare.buf = buf2;
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.spare.buf[0] = buf2[0];
+  rrcConnectionResumeRequest->criticalExtensions.choice.rrcConnectionResumeRequest_r13.spare.buf[1] = buf2[1];
+  
+  
+
+ 
+  enc_rval = uper_encode_to_buffer(&asn_DEF_UL_CCCH_Message_NB,
+                                   (void*)&ul_ccch_msg,
+                                   buffer,
+                                   200);
+  AssertFatal (enc_rval.encoded > 0, "ASN1 message encoding failed (%s, %lu)!\n",
+               enc_rval.failed_type->name, enc_rval.encoded);
+
+/*#if defined(ENABLE_ITTI)
+# if !defined(DISABLE_XER_SPRINT)
+  {
+    char        message_string[20000];
+    size_t      message_string_size;
+
+    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_UL_CCCH_Message, (void *) &ul_ccch_msg)) > 0) {
+      MessageDef *msg_p;
+
+      msg_p = itti_alloc_new_message_sized (TASK_RRC_UE, RRC_UL_CCCH, message_string_size + sizeof (IttiMsgText));
+      msg_p->ittiMsg.rrc_ul_ccch.size = message_string_size;
+      memcpy(&msg_p->ittiMsg.rrc_ul_ccch.text, message_string, message_string_size);
+
+      itti_send_msg_to_task(TASK_UNKNOWN, NB_eNB_INST + Mod_id, msg_p);
+    }
+  }
+# endif
+#endif*/
+
+#ifdef USER_MODE
+  LOG_D(RRC,"[UE] RRCConnectionResumeRequest Encoded %d bits (%d bytes), ecause %d\n",enc_rval.encoded,(enc_rval.encoded+7)/8,ecause);
 #endif
 
   return((enc_rval.encoded+7)/8);

@@ -74,7 +74,7 @@ RRC_status_t rrc_rx_tx_NB_IoT(protocol_ctxt_t* const ctxt_pP, const uint8_t  enb
     \param eNB_index Index of corresponding eNB/CH*/
 int rrc_ue_decode_ccch_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const SRB_INFO_NB_IoT* const Srb_info, const uint8_t eNB_index );
 //---------------------------------------
-
+static void rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id );
 static void rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id );
 
 void
@@ -444,6 +444,12 @@ void rrc_eNB_generate_RRCConnectionReestablishmentReject_NB_IoT(
 );
 
 void rrc_eNB_generate_RRCConnectionReject_NB_IoT(
+  const protocol_ctxt_t* const ctxt_pP,
+  rrc_eNB_ue_context_NB_IoT_t*          const ue_context_pP,
+  const int                    CC_id
+);
+
+void rrc_eNB_generate_RRCConnectionResume_NB_IoT(
   const protocol_ctxt_t* const ctxt_pP,
   rrc_eNB_ue_context_NB_IoT_t*          const ue_context_pP,
   const int                    CC_id

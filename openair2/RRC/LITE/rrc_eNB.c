@@ -5184,7 +5184,7 @@ void* rrc_enb_task(void* args_p)
                      RRC_MAC_DCCH_DATA_IND(msg_p).sdu_size);
               srb_info_p->Rx_buffer.payload_size = RRC_MAC_DCCH_DATA_IND(msg_p).sdu_size;
               rrc_eNB_decode_dcch_NB_IoT(&ctxt, srb_info_p->Srb_id,srb_info_p->Rx_buffer.Payload, srb_info_p->Rx_buffer.payload_size);
-
+              memset(srb_info_p->Rx_buffer.Payload,0,srb_info_p->Rx_buffer.payload_size);
       break;
 
       /* Messages from PDCP */
