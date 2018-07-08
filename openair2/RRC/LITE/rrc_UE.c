@@ -147,7 +147,7 @@ static int decode_SIB1_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8
  *  \param Transaction_id Transaction identifier
  */
 static void rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id );
-static void rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id );
+//static void rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id );
 /** \brief Generates/Encodes RRCConnnectionResumeComplete message at UE
  *  \param ctxt_pP Running context
  *  \param eNB_index Index of corresponding eNB/CH
@@ -594,6 +594,36 @@ void rrc_ue_generate_RRCConnectionRequest( const protocol_ctxt_t* const ctxt_pP,
   }
 }
 
+void rrc_ue_process_RRCConnectionRelease_NB_IoT( const protocol_ctxt_t* const ctxt_pP, RRCConnectionRelease_NB_t* const rrcConnectionRelease_NB_IoT, const uint8_t eNB_index )
+{
+  #if defined(ENABLE_ITTI)
+        rrc_set_state_NB_IoT (ctxt_pP->module_id, RRC_STATE_IDLE_NB_IoT);
+        rrc_set_sub_state_NB_IoT (ctxt_pP->module_id, RRC_SUB_STATE_IDLE_NB_IoT);
+                  
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].State = RRC_IDLE_NB_IoT;
+        
+          LOG_I(RRC, PROTOCOL_RRC_CTXT_UE_FMT" UE State = RRC_STATE_IDLE_NB_IoT \n",
+                PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP));
+
+        //Send message to NAS layer
+              /*msg_p = itti_alloc_new_message(TASK_RRC_UE, NAS_CONN_RELEASE_IND);
+
+              if ((dl_dcch_msg->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.present
+                   == RRCConnectionRelease__criticalExtensions_PR_c1)
+                  && (dl_dcch_msg->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.choice.c1.present
+                      == RRCConnectionRelease__criticalExtensions__c1_PR_rrcConnectionRelease_r8)) {
+                NAS_CONN_RELEASE_IND(msg_p).cause =
+                  dl_dcch_msg->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.releaseCause;
+              }
+
+              itti_send_msg_to_task(TASK_NAS_UE, ctxt_pP->instance, msg_p);
+        #if ENABLE_RAL
+                msg_p = itti_alloc_new_message(TASK_RRC_UE, RRC_RAL_CONNECTION_RELEASE_IND);
+                RRC_RAL_CONNECTION_RELEASE_IND(msg_p).ue_id = ctxt_pP->module_id;
+                itti_send_msg_to_task(TASK_RAL_UE, ctxt_pP->instance, msg_p);
+        #endif*/
+      #endif
+}
 
 void rrc_ue_generate_RRCConnectionRequest_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index )
 {
@@ -649,7 +679,7 @@ void rrc_ue_generate_RRCConnectionRequest_NB_IoT( const protocol_ctxt_t* const c
 
 
     itti_send_msg_to_task(TASK_RRC_ENB, ctxt_pP->instance, message_p);
-    printf("[UE] RRC_MAC_CCCH_DATA_IND message(RRCConnectionRequest) has been sent to eNB\n");
+    printf("[UE] RRC_MAC_CCCH_DATA_IND message(RRCConnectionRequest-NB) is sent to eNB\n");
 
 #endif
 
@@ -663,7 +693,7 @@ void rrc_ue_generate_RRCConnectionResumeRequest_NB_IoT( const protocol_ctxt_t* c
 {
 
   uint8_t i=0,rv[6];
- printf("[UE] Start generate do_RRCConnectionResumeRequest_NB_IoT\n");
+ printf("[UE] Generating RRCConnectionResumeRequest_NB\n");
   if(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size ==0) {
         
 
@@ -684,7 +714,7 @@ void rrc_ue_generate_RRCConnectionResumeRequest_NB_IoT( const protocol_ctxt_t* c
         (uint8_t*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.Payload,
         ResumeId);
 
-    LOG_I(RRC,"[UE %d] : Frame %d, Logical Channel UL-CCCH (SRB0), Generating RRCConnectionRequest (bytes %d, eNB %d)\n",
+    LOG_I(RRC,"[UE %d] : Frame %d, Logical Channel UL-CCCH (SRB0), Generating RRCConnectionResumeRequest-NB (bytes %d, eNB %d)\n",
           ctxt_pP->module_id, ctxt_pP->frame, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size, eNB_index);
 
     for (i=0; i<UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size; i++) {
@@ -712,7 +742,7 @@ void rrc_ue_generate_RRCConnectionResumeRequest_NB_IoT( const protocol_ctxt_t* c
 
 
     itti_send_msg_to_task(TASK_RRC_ENB, ctxt_pP->instance, message_p);
-    printf("[UE] RRC_MAC_CCCH_DATA_IND message(RRCConnectionResumeRequest) has been sent to eNB\n");
+    printf("[UE] RRC_MAC_CCCH_DATA_IND message(RRCConnectionResumeRequest) is sent to eNB\n");
 
 #endif
       memset(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.Payload,0,UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb0[eNB_index].Tx_buffer.payload_size);
@@ -773,14 +803,14 @@ static void rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT( const protocol_ct
   nas_msg         = nas_attach_req_imsi;
   nas_msg_length  = sizeof(nas_attach_req_imsi);
 #endif
-
+  printf("[UE] Generating RRCConnectionSetupComplete-NB\n" );
   size = do_RRCConnectionSetupComplete_NB_IoT(ctxt_pP->module_id, (uint8_t*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.Payload, Transaction_id, nas_msg_length, nas_msg);
  UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.payload_size = size;
 
-  LOG_I(RRC,"[UE %d][RAPROC] Frame %d : Logical Channel UL-DCCH (SRB1), Generating RRCConnectionSetupComplete (bytes%d, eNB %d)\n",
+  LOG_I(RRC,"[UE %d][RAPROC] Frame %d : Logical Channel UL-DCCH (SRB1bis), Generating RRCConnectionSetupComplete-NB (bytes%d, eNB %d)\n",
         ctxt_pP->module_id,ctxt_pP->frame, size, eNB_index);
   LOG_D(RLC,
-        "[FRAME %05d][RRC_UE][MOD %02d][][--- PDCP_DATA_REQ/%d Bytes (RRCConnectionSetupComplete to eNB %d MUI %d) --->][PDCP][MOD %02d][RB %02d]\n",
+        "[FRAME %05d][RRC_UE][MOD %02d][][--- PDCP_DATA_REQ/%d Bytes (RRCConnectionSetupComplete-NB to eNB %d MUI %d) --->][PDCP][MOD %02d][RB %02d]\n",
         ctxt_pP->frame, ctxt_pP->module_id+NB_eNB_INST, size, eNB_index, rrc_mui, ctxt_pP->module_id+NB_eNB_INST, DCCH);
   //Send ITTI message to PDCP
   /*rrc_data_req (
@@ -809,7 +839,7 @@ static void rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT( const protocol_ct
 
 
     itti_send_msg_to_task(TASK_RRC_ENB, ctxt_pP->instance, message_p);
-    printf("[UE] RRC_MAC_DCCH_DATA_IND message(RRCConnectionSetupComplete-NB) has been sent to eNB\n");
+    printf("[UE] RRC_MAC_DCCH_DATA_IND message(RRCConnectionSetupComplete-NB) is sent to eNB\n");
 
   #endif
     memset(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.Payload,0,UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.payload_size);
@@ -817,7 +847,7 @@ static void rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT( const protocol_ct
 
 }
 
-static void rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id )
+void rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id )
 {
 
   uint8_t    buffer[100];
@@ -832,15 +862,38 @@ static void rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT( const protocol_c
   nas_msg         = nas_attach_req_imsi;
   nas_msg_length  = sizeof(nas_attach_req_imsi);
 #endif
-printf("[UE] Start generating RRCConnectionResumeComplete!\n");
-  /*size = do_RRCConnectionSetupComplete_NB_IoT(ctxt_pP->module_id, (uint8_t*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.Payload, Transaction_id, nas_msg_length, nas_msg);
- UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.payload_size = size;*/
+printf("[UE] Generating RRCConnectionResumeComplete-NB!\n");
+  size = do_RRCConnectionResumeComplete_NB_IoT(ctxt_pP->module_id, (uint8_t*)UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.Payload, Transaction_id, nas_msg_length, nas_msg);
+ UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.payload_size = size;
 
-  LOG_I(RRC,"[UE %d][RAPROC] Frame %d : Logical Channel UL-DCCH (SRB1), Generating RRCConnectionSetupComplete (bytes%d, eNB %d)\n",
+  LOG_I(RRC,"[UE %d][RAPROC] Frame %d : Logical Channel UL-DCCH (SRB1), Generating RRCConnectionResumeComplete-NB (bytes%d, eNB %d)\n",
         ctxt_pP->module_id,ctxt_pP->frame, size, eNB_index);
   LOG_D(RLC,
-        "[FRAME %05d][RRC_UE][MOD %02d][][--- PDCP_DATA_REQ/%d Bytes (RRCConnectionSetupComplete to eNB %d MUI %d) --->][PDCP][MOD %02d][RB %02d]\n",
+        "[FRAME %05d][RRC_UE][MOD %02d][][--- PDCP_DATA_REQ/%d Bytes (RRCConnectionSetupComplete-NB to eNB %d MUI %d) --->][PDCP][MOD %02d][RB %02d]\n",
         ctxt_pP->frame, ctxt_pP->module_id+NB_eNB_INST, size, eNB_index, rrc_mui, ctxt_pP->module_id+NB_eNB_INST, DCCH);
+
+ #if defined(ENABLE_ITTI)
+
+    MessageDef                         *message_p;
+
+    message_p = itti_alloc_new_message(TASK_RRC_UE, RRC_MAC_DCCH_DATA_IND);
+         RRC_MAC_DCCH_DATA_IND (message_p).frame     = get_NB_IoT_frame();
+          RRC_MAC_DCCH_DATA_IND (message_p).sub_frame = get_NB_IoT_subframe();
+          RRC_MAC_DCCH_DATA_IND (message_p).sdu_size  = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.payload_size;
+          RRC_MAC_DCCH_DATA_IND (message_p).enb_index = 0;
+          RRC_MAC_DCCH_DATA_IND (message_p).rnti      = get_NB_IoT_rnti();
+          memset (RRC_MAC_DCCH_DATA_IND (message_p).sdu, 0, DCCH_SDU_SIZE);
+          memcpy (RRC_MAC_DCCH_DATA_IND (message_p).sdu, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.Payload, UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.payload_size);
+          
+
+
+    itti_send_msg_to_task(TASK_RRC_ENB, ctxt_pP->instance, message_p);
+    printf("[UE] RRC_MAC_DCCH_DATA_IND message(RRCConnectionResumeComplete-NB) is sent to eNB\n");
+
+  #endif
+    memset(UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.Payload,0,UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.payload_size);
+    UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Srb1[eNB_index].Srb_info.Tx_buffer.payload_size = 0;
+
   //Send ITTI message to PDCP
   /*rrc_data_req (
     ctxt_pP,
@@ -2095,7 +2148,7 @@ rrc_ue_process_radioResourceConfigDedicated_NB_IoT(
 
   // Save physicalConfigDedicated if present
   if (radioResourceConfigDedicated->physicalConfigDedicated_r13) {
-    LOG_I(RRC,"Save physicalConfigDedicated if present \n");
+    LOG_I(RRC,"Save physicalConfigDedicated\n");
 
     if (UE_rrc_inst_NB_IoT[ctxt_pP->module_id].physicalConfigDedicated_r13[eNB_index]) {
 #if 1
@@ -3689,7 +3742,7 @@ int decode_BCCH_DLSCH_Message_NB_IoT(
   if (bcch_message_nbiot->message.present) {
     switch (bcch_message_nbiot->message.choice.c1.present) {
     case BCCH_DL_SCH_MessageType_NB__c1_PR_systemInformationBlockType1_r13:
-      printf("[UE] SIB1-NB message received by UE!\n");
+      printf("[UE] UE received SIB1-NB message\n");
       if ((ctxt_pP->frame % 2) == 0) {
         // even frame
         //if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&1) == 0) {
@@ -3708,7 +3761,7 @@ int decode_BCCH_DLSCH_Message_NB_IoT(
       break;
 
     case BCCH_DL_SCH_MessageType__c1_PR_systemInformation:
-      printf("[UE] [SIB23] SIB23 message received and decode successfully!\n");
+      printf("[UE] [SI] UE received SI \n");
       //if ((UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus&1) == 1) {
         // SIB1 with schedulingInfoList is available
 
@@ -4141,7 +4194,7 @@ static int decode_SIB1( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_
 static int decode_SIB1_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t rsrq, const uint8_t rsrp, SystemInformationBlockType1_NB_t* sib1_nb)
 {
   //SystemInformationBlockType1_NB_t* sib1_nb = UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib1[eNB_index];
-  printf("[UE] Start decode SIB1\n");
+  printf("[UE] Reading SIB1\n");
 
   VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME( VCD_SIGNAL_DUMPER_FUNCTIONS_RRC_UE_DECODE_SIB1, VCD_FUNCTION_IN );
 
@@ -5167,10 +5220,10 @@ static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t
   UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].SIStatus|=2;
   new_sib=1;
   memcpy(&UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index], &typeandinfo->choice.sib2_r13, sizeof(SystemInformationBlockType2_NB_r13_t) );
-  LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB2 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );
+  /*LOG_I( RRC, "[UE %"PRIu8"] Frame %"PRIu32" Found SIB2 from eNB %"PRIu8"\n", ctxt_pP->module_id, ctxt_pP->frame, eNB_index );*/
   //dump_sib2( UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index] );
-  LOG_I( RRC, "[FRAME %05"PRIu32"][RRC_UE][MOD %02"PRIu8"][][--- MAC_CONFIG_REQ (SIB2 params  eNB %"PRIu8") --->][MAC_UE][MOD %02"PRIu8"][]\n",
-         ctxt_pP->frame, ctxt_pP->module_id, eNB_index, ctxt_pP->module_id );
+/*  LOG_I( RRC, "[FRAME %05"PRIu32"][RRC_UE][MOD %02"PRIu8"][][--- MAC_CONFIG_REQ (SIB2 params  eNB %"PRIu8") --->][MAC_UE][MOD %02"PRIu8"][]\n",
+         ctxt_pP->frame, ctxt_pP->module_id, eNB_index, ctxt_pP->module_id );*/
   /*rrc_mac_config_req(ctxt_pP->module_id, 0, ENB_FLAG_NO, 0, eNB_index,
          &UE_rrc_inst_NB_IoT[ctxt_pP->module_id].sib2[eNB_index]->radioResourceConfigCommon,
          (struct PhysicalConfigDedicated *)NULL,
@@ -5410,7 +5463,7 @@ static int decode_SI_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t
     \param eNB_index Index of corresponding eNB/CH*/
 int rrc_ue_decode_ccch_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const SRB_INFO_NB_IoT* const Srb_info, const uint8_t eNB_index )
 {
-    printf("[UE]Start decode DL CCCH.....\n");
+    printf("[UE]Start decoding DL CCCH.....\n");
     DL_CCCH_Message_NB_t* dl_ccch_msg=NULL;
   asn_dec_rval_t dec_rval;
   int rval=0;
@@ -5494,7 +5547,7 @@ int rrc_ue_decode_ccch_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const SRB_I
 
       case DL_CCCH_MessageType_NB__c1_PR_rrcConnectionReject_r13:
         LOG_I(RRC,
-              "[UE%d] Frame %d : Logical Channel DL-CCCH (SRB0), Received RRCConnectionReject \n",
+              "[UE%d] Frame %d : Logical Channel DL-CCCH (SRB0), Received RRCConnectionReject-NB \n",
               ctxt_pP->module_id,
               ctxt_pP->frame);
         rval = 0;
@@ -5502,12 +5555,12 @@ int rrc_ue_decode_ccch_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const SRB_I
 
       case DL_CCCH_MessageType_NB__c1_PR_rrcConnectionSetup_r13:
         LOG_I(RRC,
-              "[UE%d][RAPROC] Frame %d : Logical Channel DL-CCCH (SRB0), Received RRCConnectionSetup RNTI %x\n",
+              "[UE%d][RAPROC] Frame %d : Logical Channel DL-CCCH (SRB0), Received RRCConnectionSetup-NB RNTI %x\n",
               ctxt_pP->module_id,
               ctxt_pP->frame,
               ctxt_pP->rnti);
         // Get configuration
-        printf("[UE]RRCConnectionSetup Message Received\n");
+        printf("[UE] RRCConnectionSetup-NB Message Received\n");
         // Release T300 timer
         UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].T300_active = 0;
         //FIXME:it seems like i never start T300
@@ -6037,7 +6090,7 @@ void *rrc_ue_task( void *args_p )
   
 
   itti_mark_task_ready (TASK_RRC_UE);
-  printf("UE RRC task is marked ready!\n");
+  //printf("UE RRC task is marked ready!\n");
 
   while(1) {
     // Wait for a message
@@ -6059,7 +6112,7 @@ void *rrc_ue_task( void *args_p )
       /*Message from eNB RRC  */
       //to get the MIB
     case RRC_BCCH_BCH_DATA_IND:
-    printf("[UE] UE receive a message from ITTI --- RRC_BCCH_BCH_DATA_IND\n");
+    printf("[UE] UE received a message --- RRC_BCCH_BCH_DATA_IND\n");
       LOG_D(RRC, "[UE %d] Received %s: frameP %d, eNB %d\n", ue_mod_id, msg_name,
             RRC_BCCH_BCH_DATA_IND (msg_p).frame, RRC_BCCH_BCH_DATA_IND (msg_p).enb_index);
 
@@ -6075,7 +6128,7 @@ void *rrc_ue_task( void *args_p )
                                  //get_NB_IoT_MIB_size(),
                                  RRC_BCCH_BCH_DATA_IND (msg_p).rsrq,
                                  RRC_BCCH_BCH_DATA_IND (msg_p).rsrp);
-      printf("[UE] [MIB]Successfully decode MIB\n");
+      printf("[UE] [MIB] Decode MIB successfully!\n");
       //Attention: this is temperary and should be down in cell selection
       openair_rrc_ue_init_NB_IoT(ue_mod_id,RRC_BCCH_BCH_DATA_IND (msg_p).enb_index);
       // it should be moved to cell selection module in overall simulator
@@ -6083,7 +6136,7 @@ void *rrc_ue_task( void *args_p )
       break;
       //to get SIB1 or SI(SIB23)
       case RRC_BCCH_DLSCH_DATA_IND:
-      printf("[UE] UE receive a message from ITTI --- RRC_BCCH_DLSCH_DATA_IND\n");
+      printf("[UE] UE received a message --- RRC_BCCH_DLSCH_DATA_IND\n");
       LOG_D(RRC, "[UE %d] Received %s: frameP %d, eNB %d\n", ue_mod_id, msg_name,
             RRC_BCCH_DLSCH_DATA_IND (msg_p).frame, RRC_BCCH_DLSCH_DATA_IND (msg_p).enb_index);
 

@@ -5121,7 +5121,7 @@ void* rrc_enb_task(void* args_p)
   protocol_ctxt_t                     ctxt;
   ctxt.enb_flag = TRUE;
   itti_mark_task_ready(TASK_RRC_ENB);
-  printf("RRC eNB Task is marked ready\n");
+  //printf("RRC eNB Task is marked ready\n");
 
   while (1) {
     // Wait for a message
@@ -5164,7 +5164,7 @@ void* rrc_enb_task(void* args_p)
       break;
 
     case RRC_MAC_DCCH_DATA_IND:
-              printf("[eNB]Uplink DCCH message received!(rrcConnectionSetupComplete-NB received!)\n");
+              
               PROTOCOL_CTXT_SET_BY_INSTANCE(&ctxt,
                                     instance,
                                     ENB_FLAG_YES,

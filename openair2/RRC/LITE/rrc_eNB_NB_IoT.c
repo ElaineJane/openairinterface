@@ -178,13 +178,13 @@ void rrc_eNB_generate_RRCConnectionRelease_NB_IoT(
 )
 //-----------------------------------------------------------------------------
 {
-
+   
   uint8_t                             buffer[RRC_BUF_SIZE];
   uint16_t                            size;
 
   T(T_ENB_RRC_CONNECTION_RELEASE, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
     T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
-
+  printf("[eNB] Generating rrcConnectionRelease-NB\n");
   memset(buffer, 0, RRC_BUF_SIZE);
 
   size = do_RRCConnectionRelease_NB_IoT(ctxt_pP->module_id,
@@ -234,7 +234,7 @@ void rrc_eNB_generate_RRCConnectionRelease_NB_IoT(
 
 
     itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, message_p);
-    printf("[eNB] RRC_MAC_DCCH_DATA_IND message(rrcConnectionRelease-NB) has been sent to UE \n");
+    printf("[eNB] RRC_MAC_DCCH_DATA_IND message(RRCConnectionRelease-NB) is sent to UE \n");
 
   #endif
 
@@ -273,12 +273,12 @@ void rrc_eNB_generate_RRCConnectionSuspend_NB_IoT(
   ue_context_pP->ue_context.ue_release_timer_thres=100;
 
   LOG_I(RRC,
-        PROTOCOL_RRC_CTXT_UE_FMT" Logical Channel DL-DCCH, Generate RRCConnectionRelease-NB (bytes %d)\n",
+        PROTOCOL_RRC_CTXT_UE_FMT" Logical Channel DL-DCCH, Generate RRCConnectionSuspend-NB (bytes %d)\n",
         PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
         size);
 
   LOG_D(RRC,
-        PROTOCOL_RRC_CTXT_UE_FMT" --- PDCP_DATA_REQ/%d Bytes (rrcConnectionRelease-NB MUI %d) --->[PDCP][RB %u]\n",
+        PROTOCOL_RRC_CTXT_UE_FMT" --- PDCP_DATA_REQ/%d Bytes (rrcConnectionSuspend-NB MUI %d) --->[PDCP][RB %u]\n",
         PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
         size,
         rrc_eNB_mui_NB_IoT,
@@ -289,7 +289,7 @@ void rrc_eNB_generate_RRCConnectionSuspend_NB_IoT(
     MSC_RRC_UE,
     buffer,
     size,
-    MSC_AS_TIME_FMT" rrcConnectionRelease-NB UE %x MUI %d size %u",
+    MSC_AS_TIME_FMT" rrcConnectionSuspend-NB UE %x MUI %d size %u",
     MSC_AS_TIME_ARGS(ctxt_pP),
     ue_context_pP->ue_context.rnti,
     rrc_eNB_mui_NB_IoT,
@@ -311,7 +311,7 @@ void rrc_eNB_generate_RRCConnectionSuspend_NB_IoT(
 
 
     itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, message_p);
-    printf("[eNB] RRC_MAC_DCCH_DATA_IND message(rrcConnectionRelease-NB) has been sent to UE \n");
+    printf("[eNB] RRC_MAC_DCCH_DATA_IND message(RRCConnectionSuspend-NB) is sent to UE \n");
 
   #endif
 
@@ -587,7 +587,7 @@ void rrc_eNB_generate_RRCConnectionSetup_NB_IoT(
 	//connection setup involve the establishment of SRB1 and SRB1bis (but srb1bis is established implicitly)
 	//XXX: this message should go through SRB0 to see this--> uper_encode
 	//XXX: they are assuming that 2 RLC-AM entities are used for SRB1 and SRB1bis
-
+ printf("[eNB] Generating RRCConnectionSetup_NB\n");
 
 
 //  SRB_ToAddMod_NB_r13_t                     *SRB1_config; //may not needed now
@@ -645,7 +645,7 @@ void rrc_eNB_generate_RRCConnectionSetup_NB_IoT(
 
 
     itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, message_p);
-    printf("[UE] RRC_MAC_CCCH_DATA_IND message(RRCConnectionSetup) has been sent to UE\n");
+    printf("[UE] RRC_MAC_CCCH_DATA_IND message(RRCConnectionSetup-NB) is sent to UE\n");
 
 #endif
   // configure SRB1bis, PhysicalConfigDedicated, MAC_MainConfig for UE
@@ -742,7 +742,7 @@ void rrc_eNB_generate_RRCConnectionResume_NB_IoT(
   //XXX: this message should go through SRB1 to see this--> uper_encode
   //XXX: they are assuming that 2 RLC-AM entities are used for SRB1 and SRB1bis
 
-printf("[eNB] Start generate RRCConnectionResume-NB!\n");
+printf("[eNB] Generating RRCConnectionResume-NB!\n");
 
 //  SRB_ToAddMod_NB_r13_t                     *SRB1_config; //may not needed now
 //  LogicalChannelConfig_NB_r13_t             *SRB1_logicalChannelConfig;
@@ -817,7 +817,7 @@ printf("[eNB] Start generate RRCConnectionResume-NB!\n");
 
 
     itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, message_p);
-    printf("[UE] RRC_MAC_CCCH_DATA_IND message(RRCConnectionResume) has been sent to UE\n");
+    printf("[UE] RRC_MAC_CCCH_DATA_IND message(RRCConnectionResume-NB) is sent to UE\n");
 
 #endif
   // configure SRB1bis, PhysicalConfigDedicated, MAC_MainConfig for UE
@@ -1395,7 +1395,7 @@ void rrc_eNB_process_RRCConnectionSetupComplete_NB_IoT(
   } else
 #endif
   {
-    printf("[eNB] rrc_eNB_process_RRCConnectionSetupComplete_NB_IoT finished, To send security mode command.\n");
+    //printf("[eNB] rrc_eNB_process_RRCConnectionSetupComplete_NB_IoT finished, To send security mode command.\n");
     // RRC loop back (no S1AP), send SecurityModeCommand to UE
     rrc_eNB_generate_SecurityModeCommand_NB_IoT(
       ctxt_pP,
@@ -1418,8 +1418,7 @@ void rrc_eNB_generate_SecurityModeCommand_NB_IoT(
 	 * The SRB1-bis (no PDCP) is used for SecurityModeCommand and SecurityModeFailure messages
 	 * The SRB1 (full PDCP) is used for SecurityModeComplete message
 	 */
-
-
+ printf("[eNB] Generating SecurityModeCommand-NB\n");
   uint8_t                             buffer[100];
   uint8_t                             size;
 
@@ -1483,7 +1482,7 @@ void rrc_eNB_generate_SecurityModeCommand_NB_IoT(
 
 
     itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, message_p);
-    printf("[UE] RRC_MAC_DCCH_DATA_IND message(RRCConnectionSetupComplete-NB) has been sent to eNB\n");
+    printf("[UE] RRC_MAC_DCCH_DATA_IND message(SecurityModeCommand-NB) is sent to eNB\n");
 
   #endif
 
@@ -1944,7 +1943,7 @@ static void init_SI_NB_IoT(
 
 
     itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, message_p);
-    printf("[eNB] RRC_BCCH_BCH_DATA_IND message has been sent to UE\n");
+    printf("[eNB] RRC_BCCH_BCH_DATA_IND message is sent to UE\n");
 
 #endif
 
@@ -1990,7 +1989,7 @@ static void init_SI_NB_IoT(
           memcpy (RRC_BCCH_DLSCH_DATA_IND (sib1_message_p).sdu, eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].SIB1_NB_IoT, eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sizeof_SIB1_NB_IoT);
           
     itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, sib1_message_p);
-    printf("[eNB] RRC_BCCH_DLSCH_DATA_IND (SIB 1) message has been sent to UE\n");
+    printf("[eNB] RRC_BCCH_DLSCH_DATA_IND (SIB 1) message is sent to UE\n");
    sleep(3); //wait for UE processing the SIB1 message
 
 #endif
@@ -2031,7 +2030,7 @@ static void init_SI_NB_IoT(
                 memcpy (RRC_BCCH_DLSCH_DATA_IND (sib23_message_p).sdu, eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].SIB23_NB_IoT, eNB_rrc_inst_NB_IoT[ctxt_pP->module_id].carrier[CC_id].sizeof_SIB23_NB_IoT);
                 
           itti_send_msg_to_task(TASK_RRC_UE, ctxt_pP->instance, sib23_message_p);
-          printf("[eNB] RRC_BCCH_DLSCH_DATA_IND (SIB 23) message has been sent to UE\n");
+          printf("[eNB] RRC_BCCH_DLSCH_DATA_IND (SIB 23) message is sent to UE\n");
          sleep(3); //wait for UE processing the SIB1 message
 
         #endif
@@ -2132,7 +2131,7 @@ while ( eNB_rrc_inst_NB_IoT == NULL ) {
   LOG_I(RRC, PROTOCOL_RRC_CTXT_FMT" NB-IoT Rel13 detected\n",PROTOCOL_RRC_CTXT_ARGS(&ctxt));
 
   //no CBA
-  printf("[eNB ]eNB has processed the RRC_CONFIGURATION_REQ message and start initializing system information!");
+  printf("[eNB] eNB processes the RRC_CONFIGURATION_REQ message and starts initializing system information!\n");
   //init SI
  //may be this should not be here
   ctxt.instance = 1;
@@ -2276,7 +2275,7 @@ int rrc_eNB_decode_ccch_NB_IoT(
       break;
 
     case UL_CCCH_MessageType_NB__c1_PR_rrcConnectionRequest_r13: //MSG3
-      printf("[eNB]RRC Connection Request Message received.\n");
+      printf("[eNB] RRCConnectionRequest-NB Message received.\n");
       T(T_ENB_RRC_CONNECTION_REQUEST, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
         T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
 
@@ -2456,12 +2455,12 @@ int rrc_eNB_decode_ccch_NB_IoT(
       ue_context_p->ue_context.Srb1bis.Srb_info.Srb_id = DCCH0_NB_IoT;
 
       //generate RRCConnectionSetup-NB
-      printf("Starting generate RRC Connection Setup NB-IoT\n");
+     
       rrc_eNB_generate_RRCConnectionSetup_NB_IoT(ctxt_pP, ue_context_p, CC_id);
 
-      LOG_I(RRC, PROTOCOL_RRC_CTXT_UE_FMT"CALLING RLC CONFIG SRB1bis and SRB1 (rbid %d, rbid %d)\n",
+  /*    LOG_I(RRC, PROTOCOL_RRC_CTXT_UE_FMT"CALLING RLC CONFIG SRB1bis and SRB1 (rbid %d, rbid %d)\n",
             PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
-            DCCH0_NB_IoT, DCCH1_NB_IoT);
+            DCCH0_NB_IoT, DCCH1_NB_IoT);*/
 
       MSC_LOG_TX_MESSAGE(
         MSC_RRC_ENB,
@@ -2504,7 +2503,7 @@ int rrc_eNB_decode_ccch_NB_IoT(
 
     case UL_CCCH_MessageType_NB__c1_PR_rrcConnectionResumeRequest_r13:
     	// TS 36.331 accept the resume, or switch back to a Connection setup or reject the request
-        printf("[eNB]RRCConnectionResumeRequest-NB Received\n");
+        printf("[eNB] UL CCCH Message Received --- RRCConnectionResumeRequest-NB\n");
     	T(T_ENB_RRC_CONNECTION_RESUME_REQUEST, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
     	        T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
 
@@ -2518,7 +2517,7 @@ int rrc_eNB_decode_ccch_NB_IoT(
     	      LOG_F(RRC,"\n");
     	#endif
 
-    LOG_D(RRC, PROTOCOL_RRC_CTXT_UE_FMT"MAC_eNB--- MAC_DATA_IND (rrcConnectionResumeRequest-NB on SRB0) --> RRC_eNB\n",
+    LOG_D(RRC, PROTOCOL_RRC_CTXT_UE_FMT"MAC_eNB--- MAC_DATA_IND (RRCConnectionResumeRequest-NB on SRB0) --> RRC_eNB\n",
     	                  PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP));
     rrcConnectionResumeRequest_NB_IoT=
     	              &ul_ccch_msg_NB_IoT->message.choice.c1.choice.rrcConnectionResumeRequest_r13.criticalExtensions.choice.rrcConnectionResumeRequest_r13;
@@ -2750,7 +2749,8 @@ int rrc_eNB_decode_dcch_NB_IoT(
 
     case UL_DCCH_MessageType_NB__c1_PR_rrcConnectionSetupComplete_r13:
     	//MP: Ts 36.331 V14.2.1 RRCConnectionSetupComplete is transmitted over SRB1bis (pag 585)
-        printf("[eNB]RRC rrcConnectionSetupComplete_r13 message received successfully!\n");
+        
+        printf("[eNB]UL DCCH message received --- RRCConnectionSetupComplete-NB)\n");
 #ifdef RRC_MSG_PRINT
       LOG_F(RRC,"[MSG] RRCConnectionSetupComplete-NB\n");
 
@@ -2804,7 +2804,8 @@ int rrc_eNB_decode_dcch_NB_IoT(
     	/* R2-163262 3GPP NB-IOT Ad-hoc Meeting #2
     	 * After receiving the SMC and performing the security activation, the UE shall use the SRB1.
     	 */
-      printf("[eNB]SecurityModeComplete message received successfully and AS security is set up!\n");
+     printf("[eNB]UL DCCH message received --- SecurityModeComplete-NB)\n");
+      
       T(T_ENB_RRC_SECURITY_MODE_COMPLETE, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
         T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
 
@@ -3053,7 +3054,7 @@ int rrc_eNB_decode_dcch_NB_IoT(
     case UL_DCCH_MessageType_NB__c1_PR_rrcConnectionResumeComplete_r13:
 
     	//will be not possible because for the moment we reject any ConnectionResumeRequest
-
+      printf("[eNB] UL DCCH Message Received --- RRCConnectionResumeComplete-NB\n");
     	T(T_ENB_RRC_CONNECTION_RESUME_COMPLETE, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
     	        T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
 
@@ -3083,6 +3084,7 @@ int rrc_eNB_decode_dcch_NB_IoT(
     	            PROTOCOL_RRC_CTXT_UE_ARGS(ctxt_pP),
     	            DCCH0_NB_IoT, //check
     	            sdu_sizeP);
+            rrc_eNB_generate_RRCConnectionRelease_NB_IoT(ctxt_pP, ue_context_p);
 
 	break;
 

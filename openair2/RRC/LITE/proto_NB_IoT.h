@@ -35,11 +35,18 @@
 #include "rlc.h"
 #include "extern_NB_IoT.h"
 #include "LAYER2/MAC/defs_NB_IoT.h"
+
+#include "UL-CCCH-Message-NB.h"
+#include "UL-DCCH-Message-NB.h"
+#include "DL-CCCH-Message-NB.h"
+#include "DL-DCCH-Message-NB.h"
 /*NOTE: no static function should be declared in this header file (e.g. init_SI_NB)*/
 
 uint8_t *get_NB_IoT_MIB(void);
 
 void init_testing_NB_IoT(uint8_t Mod_id, int CC_id, rrc_eNB_carrier_data_NB_IoT_t *carrier, RrcConfigurationReq *configuration, uint32_t frame, uint32_t hyper_frame);
+
+
 
 /*------------------------common_nb_iot.c----------------------------------------*/
 
@@ -74,7 +81,7 @@ RRC_status_t rrc_rx_tx_NB_IoT(protocol_ctxt_t* const ctxt_pP, const uint8_t  enb
     \param eNB_index Index of corresponding eNB/CH*/
 int rrc_ue_decode_ccch_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const SRB_INFO_NB_IoT* const Srb_info, const uint8_t eNB_index );
 //---------------------------------------
-static void rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id );
+//static void rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id );
 static void rrc_ue_generate_RRCConnectionSetupComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id );
 
 void
@@ -535,5 +542,11 @@ int8_t mac_rrc_data_req_eNB_NB_IoT(
   uint8_t   flag
 );
 
+
+
+void rrc_ue_process_RRCConnectionResume_NB_IoT( const protocol_ctxt_t* const ctxt_pP, RRCConnectionResume_NB_t* const rrcConnectionResume, const uint8_t eNB_index );
+void rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT( const protocol_ctxt_t* const ctxt_pP, const uint8_t eNB_index, const uint8_t Transaction_id );
+void rrc_ue_process_securityModeCommand_NB_IoT( const protocol_ctxt_t* const ctxt_pP, SecurityModeCommand_t* const securityModeCommand, const uint8_t eNB_index );
+void rrc_ue_process_RRCConnectionRelease_NB_IoT( const protocol_ctxt_t* const ctxt_pP, RRCConnectionRelease_NB_t* const rrcConnectionRelease_NB_IoT, const uint8_t eNB_index );
 
 

@@ -556,7 +556,7 @@ uint8_t do_SIB23_NB_IoT(uint8_t Mod_id,
  }
 
 
-  LOG_I(RRC,"[NB-IoT %d] Configuration SIB2/3\n", Mod_id);
+  LOG_I(RRC,"[NB-IoT %d] Configure SIB2/3\n", Mod_id);
 
  
 
@@ -749,10 +749,10 @@ uint8_t do_SIB23_NB_IoT(uint8_t Mod_id,
   addseq_result = ASN_SEQUENCE_ADD(&bcch_message->message.choice.c1.choice.systemInformation_r13.criticalExtensions.choice.systemInformation_r13.sib_TypeAndInfo_r13.list,
                    sib2_NB_part);
 
-  printf("The result of add sequence:%d\n", addseq_result);
+  //printf("The result of add sequence:%d\n", addseq_result);
  addseq_result2 =  ASN_SEQUENCE_ADD(&bcch_message->message.choice.c1.choice.systemInformation_r13.criticalExtensions.choice.systemInformation_r13.sib_TypeAndInfo_r13.list,
                    sib3_NB_part);
-printf("The result of add sequence:%d\n", addseq_result2);
+//printf("The result of add sequence:%d\n", addseq_result2);
 #ifdef XER_PRINT
   xer_fprint(stdout, &asn_DEF_BCCH_DL_SCH_Message_NB, (void*)bcch_message);
 #endif
@@ -1061,6 +1061,76 @@ uint8_t do_RRCConnectionResume_NB_IoT(
 #endif
 
  return((enc_rval.encoded+7)/8);
+}
+
+
+uint8_t do_RRCConnectionResumeComplete_NB_IoT(uint8_t Mod_id, uint8_t *buffer, const uint8_t Transaction_id, const int dedicatedInfoNASLength, const char *dedicatedInfoNAS)
+{
+  long selected_plmn;
+
+  asn_enc_rval_t enc_rval;
+
+  UL_DCCH_Message_NB_t ul_dcch_msg;
+
+  RRCConnectionResumeComplete_NB_t *rrcConnectionResumeComplete_r13;
+
+  memset((void *)&ul_dcch_msg,0,sizeof(UL_DCCH_Message_NB_t));
+
+  ul_dcch_msg.message.present           = UL_DCCH_MessageType_NB_PR_c1;
+  ul_dcch_msg.message.choice.c1.present = UL_DCCH_MessageType_NB__c1_PR_rrcConnectionResumeComplete_r13;
+  rrcConnectionResumeComplete_r13            = &ul_dcch_msg.message.choice.c1.choice.rrcConnectionResumeComplete_r13;
+
+  rrcConnectionResumeComplete_r13->rrc_TransactionIdentifier = Transaction_id;
+  rrcConnectionResumeComplete_r13->criticalExtensions.present = RRCConnectionResumeComplete_NB__criticalExtensions_PR_rrcConnectionResumeComplete_r13;
+  
+  rrcConnectionResumeComplete_r13->criticalExtensions.choice.rrcConnectionResumeComplete_r13.nonCriticalExtension=CALLOC(1,
+      sizeof(*rrcConnectionResumeComplete_r13->criticalExtensions.choice.rrcConnectionResumeComplete_r13.nonCriticalExtension));
+  
+  if(usim_test == 0)
+      selected_plmn =2;
+  else
+     selected_plmn = 1;
+
+  rrcConnectionResumeComplete_r13->criticalExtensions.choice.rrcConnectionResumeComplete_r13.selectedPLMN_Identity_r13= &selected_plmn;
+
+
+  
+  /*memset(&rrcConnectionResumeComplete_r13->criticalExtensions.choice.rrcConnectionResumeComplete_r13.dedicatedInfoNAS_r13,0,sizeof(OCTET_STRING_t));*/
+/*  OCTET_STRING_fromBuf(&rrcConnectionResumeComplete_r13->criticalExtensions.choice.rrcConnectionResumeComplete_r13.dedicatedInfoNAS_r13,
+                       dedicatedInfoNAS, dedicatedInfoNASLength);*/
+
+  enc_rval = uper_encode_to_buffer(&asn_DEF_UL_DCCH_Message_NB,
+                                   (void*)&ul_dcch_msg,
+                                   buffer,
+                                   500);
+  AssertFatal (enc_rval.encoded > 0, "ASN1 message encoding failed (%s, %lu)!\n",
+               enc_rval.failed_type->name, enc_rval.encoded);
+/*
+#if defined(ENABLE_ITTI)
+# if !defined(DISABLE_XER_SPRINT)
+  {
+    char        message_string[20000];
+    size_t      message_string_size;
+
+    if ((message_string_size = xer_sprint(message_string, sizeof(message_string), &asn_DEF_UL_DCCH_Message_NB, (void *) &ul_dcch_msg)) > 0) {
+      MessageDef *msg_p;
+
+      msg_p = itti_alloc_new_message_sized (TASK_RRC_UE, RRC_UL_DCCH, message_string_size + sizeof (IttiMsgText));
+      msg_p->ittiMsg.rrc_ul_dcch.size = message_string_size;
+      memcpy(&msg_p->ittiMsg.rrc_ul_dcch.text, message_string, message_string_size);
+
+      itti_send_msg_to_task(TASK_UNKNOWN, NB_eNB_INST + Mod_id, msg_p);
+    }
+  }
+# endif
+#endif*/
+
+#ifdef USER_MODE
+  LOG_D(RRC,"RRCConnectionResumeComplete Encoded %d bits (%d bytes)\n",enc_rval.encoded,(enc_rval.encoded+7)/8);
+#endif
+
+  return((enc_rval.encoded+7)/8);
+
 }
 
 /*do_SecurityModeCommand - exactly the same as previous implementation*/
@@ -1626,7 +1696,7 @@ rrcConnectionRelease_NB_IoT->criticalExtensions.choice.c1.choice.rrcConnectionRe
 
 uint8_t do_RRCConnectionRequest_NB_IoT(uint8_t Mod_id, uint8_t *buffer,uint8_t *rv)
 {
-  printf("This is in Function: do_RRCConnectionRequest_NB_IoT()\n");
+  printf("[UE] Encoding RRCConnectionRequest_NB\n");
 
   asn_enc_rval_t enc_rval;
 uint8_t buf[5],buf2[3];

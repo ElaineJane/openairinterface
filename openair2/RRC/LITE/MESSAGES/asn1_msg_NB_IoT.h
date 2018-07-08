@@ -192,6 +192,13 @@ uint8_t do_RRCConnectionResume_NB_IoT(
     uint8_t                             Transaction_id
     );
 
+
+uint8_t do_RRCConnectionResumeComplete_NB_IoT(
+  uint8_t Mod_id, uint8_t *buffer, 
+  const uint8_t Transaction_id, 
+  const int dedicatedInfoNASLength, 
+  const char *dedicatedInfoNAS);
+
 /**
  * For which SRB is used in NB-IoT??
 \brief Generate an RRCConnectionReconfiguration-NB DL-DCCH-Message (eNB).  This routine configures SRBToAddMod-NB (SRB1) and one DRBToAddMod-NB

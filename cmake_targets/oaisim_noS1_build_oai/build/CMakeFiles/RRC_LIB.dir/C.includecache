@@ -32679,6 +32679,14 @@ extern_NB_IoT.h
 /home/momo/openairinterface5g/openair2/RRC/LITE/extern_NB_IoT.h
 LAYER2/MAC/defs_NB_IoT.h
 /home/momo/openairinterface5g/openair2/RRC/LITE/LAYER2/MAC/defs_NB_IoT.h
+UL-CCCH-Message-NB.h
+/home/momo/openairinterface5g/openair2/RRC/LITE/UL-CCCH-Message-NB.h
+UL-DCCH-Message-NB.h
+/home/momo/openairinterface5g/openair2/RRC/LITE/UL-DCCH-Message-NB.h
+DL-CCCH-Message-NB.h
+/home/momo/openairinterface5g/openair2/RRC/LITE/DL-CCCH-Message-NB.h
+DL-DCCH-Message-NB.h
+/home/momo/openairinterface5g/openair2/RRC/LITE/DL-DCCH-Message-NB.h
 
 /home/momo/openairinterface5g/openair2/RRC/LITE/rrc_rrm_interface.h
 sys/socket.h

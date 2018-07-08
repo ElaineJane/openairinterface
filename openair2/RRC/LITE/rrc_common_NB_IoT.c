@@ -43,7 +43,7 @@
 #include "pdcp.h"
 #include "UTIL/LOG/vcd_signal_dumper.h"
 //#include "rrc_eNB_UE_context.h"
-//#include "proto_NB_IoT.h"
+#include "RRC/LITE/proto_NB_IoT.h"
 #include "RRC/LITE/defs_NB_IoT.h"
 //#include "RRC/LITE/vars_NB_IoT.h"
 
@@ -71,8 +71,7 @@ extern mui_t rrc_eNB_mui;
 //binary_search_float
 
 
-void rrc_ue_process_securityModeCommand_NB_IoT( const protocol_ctxt_t* const ctxt_pP, SecurityModeCommand_t* const securityModeCommand, const uint8_t eNB_index );
-void rrc_ue_process_RRCConnectionResume_NB_IoT( const protocol_ctxt_t* const ctxt_pP, RRCConnectionResume_NB_t* const rrcConnectionResume, const uint8_t eNB_index );
+
 //--------------
 //MP: Most probably is not needed (old code)
 //-----------------------------------------------------------------------------
@@ -543,37 +542,24 @@ const uint8_t eNB_index
       //no measurement reports
 
     case DL_DCCH_MessageType_NB__c1_PR_rrcConnectionRelease_r13:
-      printf("[UE] RRCConnectionRelease-NB message received\n" );
+       //printf("[UE] RRCConnectionRelease-NB message received\n" );
       if(dl_dcch_msg_NB_IoT->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.releaseCause_r13 == ReleaseCause_NB_r13_rrc_Suspend)
       {
 
-        printf("[UE]eNB request to suspend RRC Connection\n");
+        printf("[UE] DL DCCH Message Received --- RRCConnectionSuspend-NB\n");
+        printf("[UE] eNB request to suspend RRC connection\n");
         resumeId = dl_dcch_msg_NB_IoT->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.resumeIdentity_r13;
         id[0]=resumeId->buf[0];
         id[1] = (resumeId->buf[1]<<24) | (resumeId->buf[1]<<16) | (resumeId->buf[1]<<8) | (resumeId->buf[1]);
-       printf("ResumeId=%02x%08x\n", id[0], id[1]);
+        printf("ResumeId=%02x%08x\n", id[0], id[1]);
+        UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].State = RRC_IDLE_NB_IoT;
+        LOG_I(RRC,"[UE %d] State = RRC_IDLE (eNB %d)\n",ctxt_pP->module_id,eNB_index);
        rrc_ue_generate_RRCConnectionResumeRequest_NB_IoT(ctxt_pP, eNB_index,resumeId);
       }else
       {
-        printf("[UE] eNB requests to release RRC Connection\n");
-         /*#if defined(ENABLE_ITTI)
-              msg_p = itti_alloc_new_message(TASK_RRC_UE, NAS_CONN_RELEASE_IND);
-
-              if ((dl_dcch_msg->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.present
-                   == RRCConnectionRelease__criticalExtensions_PR_c1)
-                  && (dl_dcch_msg->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.choice.c1.present
-                      == RRCConnectionRelease__criticalExtensions__c1_PR_rrcConnectionRelease_r8)) {
-                NAS_CONN_RELEASE_IND(msg_p).cause =
-                  dl_dcch_msg->message.choice.c1.choice.rrcConnectionRelease_r13.criticalExtensions.choice.c1.choice.rrcConnectionRelease_r13.releaseCause;
-              }
-
-              itti_send_msg_to_task(TASK_NAS_UE, ctxt_pP->instance, msg_p);
-        #if ENABLE_RAL
-                msg_p = itti_alloc_new_message(TASK_RRC_UE, RRC_RAL_CONNECTION_RELEASE_IND);
-                RRC_RAL_CONNECTION_RELEASE_IND(msg_p).ue_id = ctxt_pP->module_id;
-                itti_send_msg_to_task(TASK_RAL_UE, ctxt_pP->instance, msg_p);
-        #endif
-      #endif*/
+        printf("[UE] DL DCCH Message Received --- RRCConnectionRelease-NB\n");
+        printf("[UE] eNB request to release RRC connection\n");
+         rrc_ue_process_RRCConnectionRelease_NB_IoT(ctxt_pP, &dl_dcch_msg_NB_IoT->message.choice.c1.choice.rrcConnectionRelease_r13,eNB_index);
       }
       
      
@@ -584,7 +570,7 @@ const uint8_t eNB_index
       /* R2-163262 3GPP NB-IOT Ad-hoc Meeting #2
        * After receiving the SMC and performing the security activation, the UE shall use the SRB1.
        */
-    printf("[UE] SecurityModeCommand Received\n");
+    printf("[UE] SecurityModeCommand-NB received\n");
       T(T_ENB_RRC_SECURITY_MODE_COMPLETE, T_INT(ctxt_pP->module_id), T_INT(ctxt_pP->frame),
         T_INT(ctxt_pP->subframe), T_INT(ctxt_pP->rnti));
 
@@ -627,9 +613,13 @@ const uint8_t eNB_index
       break;
 
    case DL_DCCH_MessageType_NB__c1_PR_rrcConnectionResume_r13:
-      printf("[UE] RRC Connection Resume Message received\n" );
+      printf("[UE] DL DCCH Message Received --- rrcConnectionResume-NB\n" );
       //Process Function
       rrc_ue_process_RRCConnectionResume_NB_IoT(ctxt_pP, &dl_dcch_msg_NB_IoT->message.choice.c1.choice.rrcConnectionResume_r13, eNB_index);
+      //generate RRCConnectionResumeComplete
+       rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT(ctxt_pP,
+          eNB_index,
+          dl_dcch_msg_NB_IoT->message.choice.c1.choice.rrcConnectionResume_r13.rrc_TransactionIdentifier);
       break;
 
 
@@ -657,11 +647,11 @@ void rrc_ue_process_RRCConnectionResume_NB_IoT( const protocol_ctxt_t* const ctx
 {
   //Resume UE context and radio bearer
       LOG_I(RRC,
-              "[UE%d][RAPROC] Frame %d : Logical Channel DL-DCCH (SRB1), Received RRCConnectionResume\n",
+              "[UE%d][RAPROC] Frame %d : Logical Channel DL-DCCH (SRB1), Received RRCConnectionResume-NB\n",
               ctxt_pP->module_id,
               ctxt_pP->frame);
         // Get configuration
-        printf("[UE]RRCConnectionResume Message Received\n");
+        //printf("[UE]RRCConnectionResume Message Received\n");
         // Release T300 timer 
         //not sure if needed
         //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].T300_active = 0;
@@ -671,13 +661,10 @@ void rrc_ue_process_RRCConnectionResume_NB_IoT( const protocol_ctxt_t* const ctx
           eNB_index,
           &rrcConnectionResume->criticalExtensions.choice.c1.choice.rrcConnectionResume_r13.radioResourceConfigDedicated_r13);
 
-        /*rrc_set_state_NB_IoT (ctxt_pP->module_id, RRC_STATE_CONNECTED_NB_IoT);
-        rrc_set_sub_state_NB_IoT (ctxt_pP->module_id, RRC_SUB_STATE_CONNECTED_NB_IoT);
+        //rrc_set_state_NB_IoT (ctxt_pP->module_id, RRC_STATE_CONNECTED_NB_IoT);
+        //rrc_set_sub_state_NB_IoT (ctxt_pP->module_id, RRC_SUB_STATE_CONNECTED_NB_IoT);
         //UE_rrc_inst_NB_IoT[ctxt_pP->module_id].Info[eNB_index].rnti = ctxt_pP->rnti;
-  //generate RRCConnectionResumeComplete
-       rrc_ue_generate_RRCConnectionResumeComplete_NB_IoT(ctxt_pP,
-          eNB_index,
-          rrcConnectionResume->rrc_TransactionIdentifier);*/
+  
 
 }
 
@@ -690,7 +677,7 @@ void rrc_ue_process_securityModeCommand_NB_IoT( const protocol_ctxt_t* const ctx
   uint8_t buffer[200];
   int i, securityMode;
 
-  LOG_I(RRC,"[UE %d] Frame %d: Receiving from SRB1 (DL-DCCH), Processing securityModeCommand (eNB %d)\n",
+  LOG_I(RRC,"[UE %d] Frame %d: Receiving from SRB1bis (DL-DCCH), Processing securityModeCommand (eNB %d)\n",
         ctxt_pP->module_id,ctxt_pP->frame,eNB_index);
 
   switch (securityModeCommand->criticalExtensions.choice.c1.choice.securityModeCommand_r8.securityConfigSMC.securityAlgorithmConfig.cipheringAlgorithm) {
@@ -888,3 +875,4 @@ void rrc_ue_process_securityModeCommand_NB_IoT( const protocol_ctxt_t* const ctx
     }
   }
 }
+
